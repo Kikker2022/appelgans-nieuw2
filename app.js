@@ -48,9 +48,11 @@ vak.classList.remove("speler1");
 vak.classList.remove("speler2");
 }
 
+// speler 1
 const speler1 = document.getElementById("vak-" + positie1);
 speler1.textContent = "🔵 " + positie1;
 
+// speler 2
 const speler2 = document.getElementById("vak-" + positie2);
 speler2.textContent += " 🔴";
 
@@ -79,46 +81,61 @@ positie = positie2;
 
 if (positie > 42) positie = 42;
 
-if (beurt === 1) positie1 = positie;
-else positie2 = positie;
+let bericht = "";
 
 // speciale vakjes
 
 if (positie === 6 || positie === 31) {
-worpTekst.textContent = "🪿 Ganzenvak! Nog een keer!";
-updateBord();
-return;
+bericht = "🪿 Ganzenvak! Nog een keer!";
 }
 
 if (positie === 12) {
 positie += 3;
-worpTekst.textContent = "⭐ 3 vakjes vooruit!";
+bericht = "⭐ 3 vakjes vooruit!";
 }
 
 if (positie === 19) {
 positie = 10;
-worpTekst.textContent = "⬅️ Terug naar 10";
+bericht = "⬅️ Terug naar 10";
 }
 
 if (positie === 25) {
-worpTekst.textContent = "⚡ Nog een beurt!";
+bericht = "⚡ Nog een beurt!";
 }
 
 if (positie === 37) {
 positie -= 5;
-worpTekst.textContent = "⬅️ 5 vakjes terug";
+bericht = "⬅️ 5 vakjes terug";
 }
 
 if (positie >= 42) {
-worpTekst.textContent = "🎉 Team " + beurt + " wint!";
-updateBord();
-return;
+bericht = "🎉 Team " + beurt + " wint!";
 }
 
+// positie terugzetten
 if (beurt === 1) positie1 = positie;
 else positie2 = positie;
 
+// bericht + kleur
+worpTekst.textContent = "Team " + beurt + " gooide: " + worp;
+
+if (bericht !== "") {
+
+worpTekst.textContent += " | " + bericht;
+
+if (beurt === 1) {
+worpTekst.style.color = "blue";
+} else {
+worpTekst.style.color = "red";
+}
+
+} else {
+worpTekst.style.color = "black";
+}
+
 updateBord();
+
+if (positie >= 42) return;
 
 huidigeVraag = alleVragen[Math.floor(Math.random() * alleVragen.length)];
 
@@ -127,7 +144,7 @@ antwoordTekst.textContent = "";
 
 // beurt wisselen behalve bij extra beurt
 
-if (positie !== 25) {
+if (!(positie === 6 || positie === 31 || positie === 25)) {
 beurt = beurt === 1 ? 2 : 1;
 }
 
