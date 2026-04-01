@@ -9,29 +9,48 @@ const bord = document.getElementById("bord");
 let positie = 1;
 let huidigeVraag = null;
 
-// Bord maken
+// ganzen vakjes
+const ganzenVakjes = [6, 31];
+
+// bord maken
 for (let i = 1; i <= 42; i++) {
 const vakje = document.createElement("div");
-vakje.className = "vakje";
+vakje.classList.add("vakje");
 vakje.id = "vak-" + i;
-vakje.innerHTML = i;
+
+if (ganzenVakjes.includes(i)) {
+vakje.textContent = "🪿 " + i;
+} else {
+vakje.textContent = i;
+}
+
 bord.appendChild(vakje);
 }
 
 function updateBord() {
 
-document.querySelectorAll(".vakje").forEach((vak, index) => {
-vak.classList.remove("speler");
-vak.innerHTML = index + 1;
-});
+// reset bord
+for (let i = 1; i <= 42; i++) {
 
+const vak = document.getElementById("vak-" + i);
+
+if (ganzenVakjes.includes(i)) {
+vak.textContent = "🪿 " + i;
+} else {
+vak.textContent = i;
+}
+
+vak.classList.remove("speler");
+}
+
+// speler plaatsen
 const spelerVak = document.getElementById("vak-" + positie);
+spelerVak.textContent = "🟢 " + positie;
 spelerVak.classList.add("speler");
-spelerVak.innerHTML = "🪿<br>" + positie;
 
 }
 
-// speler meteen tonen
+// startpositie
 updateBord();
 
 dobbelsteenKnop.addEventListener("click", () => {
@@ -44,7 +63,31 @@ if (positie > 42) {
 positie = 42;
 }
 
-worpTekst.textContent = "Je gooide: " + worp + " | Positie: " + positie;
+// ganzenvakjes
+if (positie === 6 || positie === 31) {
+worpTekst.textContent = "🪿 Ganzenvak! Gooi nog een keer!";
+updateBord();
+return;
+}
+
+// vooruit vakje
+if (positie === 12) {
+positie += 3;
+worpTekst.textContent = "Bonus! 3 vakjes vooruit";
+}
+
+// terug vakje
+if (positie === 19) {
+positie = 10;
+worpTekst.textContent = "Terug naar vak 10";
+}
+
+// finish
+if (positie === 42) {
+worpTekst.textContent = "🎉 Je hebt gewonnen!";
+}
+
+worpTekst.textContent += " | Positie: " + positie;
 
 updateBord();
 
@@ -55,9 +98,10 @@ antwoordTekst.textContent = "";
 
 });
 
-// Antwoord tonen bij klik op vraag
 vraagTekst.addEventListener("click", () => {
+
 if (huidigeVraag) {
 antwoordTekst.textContent = "Antwoord: " + huidigeVraag.antwoord;
 }
+
 });
