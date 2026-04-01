@@ -48,15 +48,11 @@ vak.classList.remove("speler1");
 vak.classList.remove("speler2");
 }
 
-// speler 1
 const speler1 = document.getElementById("vak-" + positie1);
 speler1.textContent = "🔵 " + positie1;
-speler1.classList.add("speler1");
 
-// speler 2
 const speler2 = document.getElementById("vak-" + positie2);
 speler2.textContent += " 🔴";
-speler2.classList.add("speler2");
 
 score1Tekst.textContent = "Team 1: " + positie1;
 score2Tekst.textContent = "Team 2: " + positie2;
@@ -71,40 +67,56 @@ dobbelsteenKnop.addEventListener("click", () => {
 
 let worp = Math.floor(Math.random() * 6) + 1;
 
+let positie;
+
 if (beurt === 1) {
 positie1 += worp;
-if (positie1 > 42) positie1 = 42;
+positie = positie1;
 } else {
 positie2 += worp;
-if (positie2 > 42) positie2 = 42;
+positie = positie2;
 }
 
-// ganzenvakjes
-let huidigePositie = beurt === 1 ? positie1 : positie2;
+if (positie > 42) positie = 42;
 
-if (huidigePositie === 6 || huidigePositie === 31) {
+if (beurt === 1) positie1 = positie;
+else positie2 = positie;
+
+// speciale vakjes
+
+if (positie === 6 || positie === 31) {
 worpTekst.textContent = "🪿 Ganzenvak! Nog een keer!";
 updateBord();
 return;
 }
 
-if (huidigePositie === 12) {
-if (beurt === 1) positie1 += 3;
-else positie2 += 3;
+if (positie === 12) {
+positie += 3;
+worpTekst.textContent = "⭐ 3 vakjes vooruit!";
 }
 
-if (huidigePositie === 19) {
-if (beurt === 1) positie1 = 10;
-else positie2 = 10;
+if (positie === 19) {
+positie = 10;
+worpTekst.textContent = "⬅️ Terug naar 10";
 }
 
-if (positie1 === 42 || positie2 === 42) {
+if (positie === 25) {
+worpTekst.textContent = "⚡ Nog een beurt!";
+}
+
+if (positie === 37) {
+positie -= 5;
+worpTekst.textContent = "⬅️ 5 vakjes terug";
+}
+
+if (positie >= 42) {
 worpTekst.textContent = "🎉 Team " + beurt + " wint!";
 updateBord();
 return;
 }
 
-worpTekst.textContent = "Team " + beurt + " gooide: " + worp;
+if (beurt === 1) positie1 = positie;
+else positie2 = positie;
 
 updateBord();
 
@@ -113,7 +125,11 @@ huidigeVraag = alleVragen[Math.floor(Math.random() * alleVragen.length)];
 vraagTekst.textContent = "Vraag: " + huidigeVraag.vraag;
 antwoordTekst.textContent = "";
 
+// beurt wisselen behalve bij extra beurt
+
+if (positie !== 25) {
 beurt = beurt === 1 ? 2 : 1;
+}
 
 });
 
