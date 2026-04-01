@@ -8,10 +8,10 @@ const bord = document.getElementById("bord");
 
 let positie = 1;
 
-// bord maken
+// Bord maken
 for (let i = 1; i <= 42; i++) {
-let vakje = document.createElement("div");
-vakje.classList.add("vakje");
+const vakje = document.createElement("div");
+vakje.className = "vakje";
 vakje.id = "vak-" + i;
 vakje.textContent = i;
 bord.appendChild(vakje);
@@ -19,22 +19,22 @@ bord.appendChild(vakje);
 
 function updateBord() {
 
-document.querySelectorAll(".vakje").forEach(v => {
-v.classList.remove("speler");
-v.textContent = v.id.replace("vak-",""); // reset nummer
+document.querySelectorAll(".vakje").forEach(vak => {
+vak.classList.remove("speler");
+vak.textContent = vak.id.replace("vak-","");
 });
 
-if (positie > 0) {
-let spelerVak = document.getElementById("vak-" + positie);
+const spelerVak = document.getElementById("vak-" + positie);
 spelerVak.classList.add("speler");
 spelerVak.textContent = "🪿 " + positie;
-}
 
 }
+
+updateBord();
 
 dobbelsteenKnop.addEventListener("click", () => {
 
-let worp = Math.floor(Math.random() * 6) + 1;
+const worp = Math.floor(Math.random() * 6) + 1;
 
 positie += worp;
 
@@ -46,11 +46,9 @@ worpTekst.textContent = "Je gooide: " + worp + " | Positie: " + positie;
 
 updateBord();
 
-let randomVraag = alleVragen[Math.floor(Math.random() * alleVragen.length)];
+const randomVraag = alleVragen[Math.floor(Math.random() * alleVragen.length)];
 
 vraagTekst.textContent = "Vraag: " + randomVraag.vraag;
 antwoordTekst.textContent = "Antwoord: " + randomVraag.antwoord;
 
 });
-
-updateBord();
