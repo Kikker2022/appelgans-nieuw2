@@ -1,5 +1,3 @@
-console.log("Nieuwe versie geladen");
-
 import { alleVragen } from "./data/vragen.js";
 
 const dobbelsteenKnop = document.getElementById("dobbelsteen");
