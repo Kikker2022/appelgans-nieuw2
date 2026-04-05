@@ -24,64 +24,27 @@ function tekenBord(){
 
 bord.innerHTML="";
 
-for(let i=1;i<=42;i++){
+let volgorde = [];
 
-let vak = document.createElement("div");
-vak.classList.add("vakje");
+for(let rij=0; rij<6; rij++){
 
-if(i===1) vak.classList.add("start");
-if(i===42) vak.classList.add("finish");
+let start = rij * 7 + 1;
 
-if(ganzenVakjes.includes(i)){
-vak.classList.add("gans");
-vak.textContent="🪿";
-}else{
-vak.textContent=i;
+let rijVakjes = [];
+
+for(let i=0; i<7; i++){
+rijVakjes.push(start + i);
 }
 
-if(i===positie1){
-vak.innerHTML="🔵";
+if(rij % 2 === 1){
+rijVakjes.reverse();
 }
 
-if(i===positie2){
-vak.innerHTML="🔴";
-}
-
-if(i===positie1 && i===positie2){
-vak.innerHTML="🔵🔴";
-}
-
-bord.appendChild(vak);
+volgorde = volgorde.concat(rijVakjes);
 
 }
 
-}
-
-function tekenBord(){
-
-bord.innerHTML="";
-
-let vakjes = [];
-
-for(let i=1;i<=42;i++){
-vakjes.push(i);
-}
-
-let slang = [];
-
-for(let r=0;r<6;r++){
-
-let rij = vakjes.slice(r*7,(r+1)*7);
-
-if(r%2===1){
-rij.reverse();
-}
-
-slang = slang.concat(rij);
-
-}
-
-slang.forEach(i=>{
+volgorde.forEach(i=>{
 
 let vak = document.createElement("div");
 vak.classList.add("vakje");
@@ -113,6 +76,8 @@ bord.appendChild(vak);
 });
 
 }
+
+tekenBord();
 
 dobbelsteen.addEventListener("click",()=>{
 
