@@ -19,7 +19,13 @@ let speler = 1;
 let nogEenKeer = false;
 
 
-// bord maken
+// team kleuren tonen
+
+score1.innerHTML = "🔵 1";
+score2.innerHTML = "🔴 1";
+
+
+// bord tekenen
 
 function tekenBord() {
 
@@ -29,23 +35,29 @@ for (let i = 1; i <= 42; i++) {
 
 let vak = document.createElement("div");
 vak.classList.add("vakje");
-vak.textContent = i;
 
-if (i === positie1) {
-vak.textContent = "🔵";
-vak.classList.add("team1");
+let inhoud = i;
+
+if (i === positie1) inhoud = "🔵";
+if (i === positie2) inhoud = "🔴";
+
+if (i === positie1 && i === positie2) {
+inhoud = "🔵 🔴";
 }
 
-if (i === positie2) {
-vak.textContent = "🔴";
-vak.classList.add("team2");
-}
+vak.innerHTML = inhoud;
 
 bord.appendChild(vak);
 
 }
 
 }
+
+
+// ganzenbord slangvorm
+
+bord.style.display = "grid";
+bord.style.gridTemplateColumns = "repeat(7, 70px)";
 
 tekenBord();
 
@@ -64,13 +76,13 @@ if (speler === 1) {
 
 positie1 += worp;
 ganzen(1);
-score1.textContent = positie1;
+score1.innerHTML = "🔵 " + positie1;
 
 } else {
 
 positie2 += worp;
 ganzen(2);
-score2.textContent = positie2;
+score2.innerHTML = "🔴 " + positie2;
 
 }
 
@@ -96,10 +108,11 @@ function toonVraag() {
 let random = alleVragen[Math.floor(Math.random() * alleVragen.length)];
 
 vraag.textContent = "Vraag: " + random.vraag;
-antwoord.textContent = "";
 
-antwoord.onclick = () => {
-antwoord.textContent = "Antwoord: " + random.antwoord;
+antwoord.innerHTML = "<button id='antwoordBtn'>Toon antwoord</button>";
+
+document.getElementById("antwoordBtn").onclick = () => {
+antwoord.innerHTML = "Antwoord: " + random.antwoord;
 };
 
 }
