@@ -57,7 +57,62 @@ bord.appendChild(vak);
 
 }
 
-tekenBord();
+function tekenBord(){
+
+bord.innerHTML="";
+
+let vakjes = [];
+
+for(let i=1;i<=42;i++){
+vakjes.push(i);
+}
+
+let slang = [];
+
+for(let r=0;r<6;r++){
+
+let rij = vakjes.slice(r*7,(r+1)*7);
+
+if(r%2===1){
+rij.reverse();
+}
+
+slang = slang.concat(rij);
+
+}
+
+slang.forEach(i=>{
+
+let vak = document.createElement("div");
+vak.classList.add("vakje");
+
+if(i===1) vak.classList.add("start");
+if(i===42) vak.classList.add("finish");
+
+if(ganzenVakjes.includes(i)){
+vak.classList.add("gans");
+vak.textContent="🪿";
+}else{
+vak.textContent=i;
+}
+
+if(i===positie1){
+vak.innerHTML="🔵";
+}
+
+if(i===positie2){
+vak.innerHTML="🔴";
+}
+
+if(i===positie1 && i===positie2){
+vak.innerHTML="🔵🔴";
+}
+
+bord.appendChild(vak);
+
+});
+
+}
 
 dobbelsteen.addEventListener("click",()=>{
 
