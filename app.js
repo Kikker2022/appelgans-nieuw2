@@ -1,5 +1,3 @@
-export default[
-
 import vragen from "./data/vragen.js";
 
 const dobbelsteen = document.getElementById("dobbelsteen");
@@ -156,5 +154,3 @@ if(s===1) positie1=pos;
 else positie2=pos;
 
 }
-
-];
