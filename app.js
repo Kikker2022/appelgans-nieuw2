@@ -16,14 +16,39 @@ let score2 = 0;
 let team = 1;
 
 function maakBord() {
+
 bord.innerHTML = "";
-for (let i = 1; i <= 42; i++) {
+
+let nummer = 1;
+
+for (let rij = 0; rij < 6; rij++) {
+
+let rijArray = [];
+
+for (let kolom = 0; kolom < 7; kolom++) {
+
+rijArray.push(nummer);
+nummer++;
+
+}
+
+if (rij % 2 === 1) {
+rijArray.reverse();
+}
+
+rijArray.forEach(nr => {
+
 const vak = document.createElement("div");
 vak.classList.add("vak");
-vak.id = "vak" + i;
-vak.textContent = i;
+vak.id = "vak" + nr;
+vak.textContent = nr;
+
 bord.appendChild(vak);
+
+});
+
 }
+
 }
 
 function updateBord() {
