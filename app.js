@@ -23,6 +23,27 @@ bord.appendChild(vak);
 maakBord();
 
 function updateBord() {
+
+document.querySelectorAll(".vak").forEach(v => {
+v.innerHTML = v.textContent;
+});
+
+if (positie1 > 0) {
+const vak = document.getElementById("vak"+positie1);
+const bol = document.createElement("div");
+bol.classList.add("speler","team1");
+vak.appendChild(bol);
+}
+
+if (positie2 > 0) {
+const vak = document.getElementById("vak"+positie2);
+const bol = document.createElement("div");
+bol.classList.add("speler","team2");
+vak.appendChild(bol);
+}
+
+}
+
 document.querySelectorAll(".vak").forEach(v => {
 v.classList.remove("team1");
 v.classList.remove("team2");
