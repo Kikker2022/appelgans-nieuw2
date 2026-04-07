@@ -6,8 +6,14 @@ const antwoordEl = document.getElementById("antwoord");
 const gooiBtn = document.getElementById("gooi");
 const beurtEl = document.getElementById("beurt");
 
+const score1El = document.getElementById("score1");
+const score2El = document.getElementById("score2");
+
 let positie1 = 0;
 let positie2 = 0;
+let score1 = 0;
+let score2 = 0;
+
 let team = 1;
 
 function maakBord() {
@@ -57,10 +63,14 @@ const worp = Math.floor(Math.random()*6)+1;
 
 if (team === 1) {
 positie1 += worp;
+score1++;
+score1El.textContent = score1;
 team = 2;
 }
 else {
 positie2 += worp;
+score2++;
+score2El.textContent = score2;
 team = 1;
 }
 
