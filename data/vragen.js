@@ -6,23 +6,23 @@ antwoord: "Amsterdam"
 },
 
 {
-vraag: "Hoeveel provincies heeft Nederland?",
+vraag: "Hoeveel dagen heeft een week?",
+antwoord: "7"
+},
+
+{
+vraag: "Wat is 2 + 2?",
+antwoord: "4"
+},
+
+{
+vraag: "Welke kleur krijg je van blauw en geel?",
+antwoord: "Groen"
+},
+
+{
+vraag: "Hoeveel maanden heeft een jaar?",
 antwoord: "12"
-},
-
-{
-vraag: "Wat meet een tachymeter?",
-antwoord: "Afstanden en hoeken"
-},
-
-{
-vraag: "Waar staat RTK voor?",
-antwoord: "Realtime Kinematic"
-},
-
-{
-vraag: "Wat is de hoogste berg van Nederland?",
-antwoord: "Vaalserberg"
 }
 
 ];
