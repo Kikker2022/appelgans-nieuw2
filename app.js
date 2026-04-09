@@ -15,6 +15,8 @@ let score1 = 0;
 let score2 = 0;
 let team = 1;
 
+const ganzen = [5, 9, 14, 18, 23, 27, 32, 36, 41];
+
 function maakBord() {
 
 bord.innerHTML = "";
@@ -26,10 +28,8 @@ for (let rij = 0; rij < 6; rij++) {
 let rijArray = [];
 
 for (let kolom = 0; kolom < 7; kolom++) {
-
 rijArray.push(nummer);
 nummer++;
-
 }
 
 if (rij % 2 === 1) {
@@ -41,7 +41,12 @@ rijArray.forEach(nr => {
 const vak = document.createElement("div");
 vak.classList.add("vak");
 vak.id = "vak" + nr;
+
+if (ganzen.includes(nr)) {
+vak.textContent = "🪿";
+} else {
 vak.textContent = nr;
+}
 
 bord.appendChild(vak);
 
@@ -54,7 +59,15 @@ bord.appendChild(vak);
 function updateBord() {
 
 document.querySelectorAll(".vak").forEach(v => {
-v.innerHTML = v.textContent;
+
+const nr = v.id.replace("vak", "");
+
+if (ganzen.includes(Number(nr))) {
+v.innerHTML = "🪿";
+} else {
+v.innerHTML = nr;
+}
+
 });
 
 if (positie1 > 0) {
@@ -88,15 +101,29 @@ gooiBtn.addEventListener("click", () => {
 const worp = Math.floor(Math.random() * 6) + 1;
 
 if (team === 1) {
+
 positie1 += worp;
+
+if (ganzen.includes(positie1)) {
+positie1 += worp;
+}
+
 score1++;
 score1El.textContent = score1;
 team = 2;
+
 } else {
+
 positie2 += worp;
+
+if (ganzen.includes(positie2)) {
+positie2 += worp;
+}
+
 score2++;
 score2El.textContent = score2;
 team = 1;
+
 }
 
 updateBord();
