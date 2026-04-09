@@ -132,9 +132,17 @@ if (team === 1) {
 positie1 += worp;
 positie1 = bounceBack(positie1);
 
+updateBord();
+
 if (ganzen.includes(positie1)) {
+
+setTimeout(() => {
 positie1 += worp;
 positie1 = bounceBack(positie1);
+updateBord();
+checkFinish();
+}, 500);
+
 }
 
 score1++;
@@ -146,9 +154,17 @@ team = 2;
 positie2 += worp;
 positie2 = bounceBack(positie2);
 
+updateBord();
+
 if (ganzen.includes(positie2)) {
+
+setTimeout(() => {
 positie2 += worp;
 positie2 = bounceBack(positie2);
+updateBord();
+checkFinish();
+}, 500);
+
 }
 
 score2++;
@@ -157,7 +173,6 @@ team = 1;
 
 }
 
-updateBord();
 nieuweVraag();
 checkFinish();
 
