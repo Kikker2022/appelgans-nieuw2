@@ -52,7 +52,7 @@ if (nr === finish) {
 vak.textContent = "🏁";
 }
 else if (nr === put) {
-vak.innerHTML = `<span class="put">🕳</span>`;
+vak.innerHTML = `<span class="put">🪣</span>`;
 }
 else if (ganzen.includes(nr)) {
 vak.innerHTML = `<span class="gans">🪿</span>`;
@@ -79,7 +79,7 @@ if (nr === finish) {
 v.textContent = "🏁";
 }
 else if (nr === put) {
-v.innerHTML = `<span class="put">🕳</span>`;
+v.innerHTML = `<span class="put">🪣</span>`;
 }
 else if (ganzen.includes(nr)) {
 v.innerHTML = `<span class="gans">🪿</span>`;
@@ -160,7 +160,7 @@ positie1 = bounceBack(positie1);
 updateBord();
 
 if (positie1 === put) {
-alert("🕳 Team 1 valt in de put! Beurt overslaan");
+alert("🪣 Team 1 valt in de put! Beurt overslaan");
 skip1 = true;
 }
 
@@ -171,7 +171,7 @@ positie1 += worp;
 positie1 = bounceBack(positie1);
 updateBord();
 checkFinish();
-}, 900);   // <-- langzamer gemaakt
+}, 900);
 
 }
 
@@ -187,7 +187,7 @@ positie2 = bounceBack(positie2);
 updateBord();
 
 if (positie2 === put) {
-alert("🕳 Team 2 valt in de put! Beurt overslaan");
+alert("🪣 Team 2 valt in de put! Beurt overslaan");
 skip2 = true;
 }
 
@@ -198,7 +198,7 @@ positie2 += worp;
 positie2 = bounceBack(positie2);
 updateBord();
 checkFinish();
-}, 900);   // <-- langzamer gemaakt
+}, 900);
 
 }
 
