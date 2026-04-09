@@ -43,7 +43,7 @@ vak.classList.add("vak");
 vak.id = "vak" + nr;
 
 if (ganzen.includes(nr)) {
-vak.textContent = "🪿";
+vak.innerHTML = `<span class="gans">🪿</span>`;
 } else {
 vak.textContent = nr;
 }
@@ -63,7 +63,7 @@ document.querySelectorAll(".vak").forEach(v => {
 const nr = v.id.replace("vak", "");
 
 if (ganzen.includes(Number(nr))) {
-v.innerHTML = "🪿";
+v.innerHTML = `<span class="gans">🪿</span>`;
 } else {
 v.innerHTML = nr;
 }
