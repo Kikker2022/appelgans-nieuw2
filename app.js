@@ -14,8 +14,8 @@ let positie2 = 0;
 let score1 = 0;
 let score2 = 0;
 
-let skip1 = false;
-let skip2 = false;
+let skip1 = 0;
+let skip2 = 0;
 
 let team = 1;
 
@@ -23,6 +23,7 @@ const finish = 42;
 const put = 19;
 const brug = 6;
 const brugNaar = 12;
+const gevangenis = 31;
 
 const ganzen = [5, 9, 14, 18, 23, 27, 32, 36, 41];
 
@@ -60,6 +61,9 @@ vak.innerHTML = `<span class="put">🪣</span>`;
 else if (nr === brug) {
 vak.innerHTML = `<span class="brug">🌉</span>`;
 }
+else if (nr === gevangenis) {
+vak.innerHTML = `<span class="gevangenis">🔒</span>`;
+}
 else if (ganzen.includes(nr)) {
 vak.innerHTML = `<span class="gans">🪿</span>`;
 }
@@ -89,6 +93,9 @@ v.innerHTML = `<span class="put">🪣</span>`;
 }
 else if (nr === brug) {
 v.innerHTML = `<span class="brug">🌉</span>`;
+}
+else if (nr === gevangenis) {
+v.innerHTML = `<span class="gevangenis">🔒</span>`;
 }
 else if (ganzen.includes(nr)) {
 v.innerHTML = `<span class="gans">🪿</span>`;
@@ -145,15 +152,15 @@ return pos;
 
 gooiBtn.addEventListener("click", () => {
 
-if (team === 1 && skip1) {
-skip1 = false;
+if (team === 1 && skip1 > 0) {
+skip1--;
 team = 2;
 beurtEl.textContent = "Team 2 is aan de beurt";
 return;
 }
 
-if (team === 2 && skip2) {
-skip2 = false;
+if (team === 2 && skip2 > 0) {
+skip2--;
 team = 1;
 beurtEl.textContent = "Team 1 is aan de beurt";
 return;
@@ -175,8 +182,13 @@ updateBord();
 }
 
 if (positie1 === put) {
-alert("🪣 Team 1 valt in de put! Beurt overslaan");
-skip1 = true;
+alert("🪣 Team 1 valt in de put! 1 beurt overslaan");
+skip1 = 1;
+}
+
+if (positie1 === gevangenis) {
+alert("🔒 Team 1 in gevangenis! 2 beurten overslaan");
+skip1 = 2;
 }
 
 if (ganzen.includes(positie1)) {
@@ -208,8 +220,13 @@ updateBord();
 }
 
 if (positie2 === put) {
-alert("🪣 Team 2 valt in de put! Beurt overslaan");
-skip2 = true;
+alert("🪣 Team 2 valt in de put! 1 beurt overslaan");
+skip2 = 1;
+}
+
+if (positie2 === gevangenis) {
+alert("🔒 Team 2 in gevangenis! 2 beurten overslaan");
+skip2 = 2;
 }
 
 if (ganzen.includes(positie2)) {
