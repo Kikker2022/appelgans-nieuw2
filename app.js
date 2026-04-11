@@ -21,6 +21,9 @@ let team = 1;
 
 const finish = 42;
 const put = 19;
+const brug = 6;
+const brugNaar = 12;
+
 const ganzen = [5, 9, 14, 18, 23, 27, 32, 36, 41];
 
 function maakBord() {
@@ -54,6 +57,9 @@ vak.textContent = "🏁";
 else if (nr === put) {
 vak.innerHTML = `<span class="put">🪣</span>`;
 }
+else if (nr === brug) {
+vak.innerHTML = `<span class="brug">🌉</span>`;
+}
 else if (ganzen.includes(nr)) {
 vak.innerHTML = `<span class="gans">🪿</span>`;
 }
@@ -80,6 +86,9 @@ v.textContent = "🏁";
 }
 else if (nr === put) {
 v.innerHTML = `<span class="put">🪣</span>`;
+}
+else if (nr === brug) {
+v.innerHTML = `<span class="brug">🌉</span>`;
 }
 else if (ganzen.includes(nr)) {
 v.innerHTML = `<span class="gans">🪿</span>`;
@@ -159,6 +168,12 @@ positie1 = bounceBack(positie1);
 
 updateBord();
 
+if (positie1 === brug) {
+alert("🌉 Brug! Ga naar vak 12");
+positie1 = brugNaar;
+updateBord();
+}
+
 if (positie1 === put) {
 alert("🪣 Team 1 valt in de put! Beurt overslaan");
 skip1 = true;
@@ -185,6 +200,12 @@ positie2 += worp;
 positie2 = bounceBack(positie2);
 
 updateBord();
+
+if (positie2 === brug) {
+alert("🌉 Brug! Ga naar vak 12");
+positie2 = brugNaar;
+updateBord();
+}
 
 if (positie2 === put) {
 alert("🪣 Team 2 valt in de put! Beurt overslaan");
