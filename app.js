@@ -1,11 +1,11 @@
 import vragen from "./data/vragen.js";
 
-const dobbelsteen = document.getElementById("dobbelsteen");
 const bord = document.getElementById("bord");
 const vraagEl = document.getElementById("vraag");
 const antwoordEl = document.getElementById("antwoord");
 const gooiBtn = document.getElementById("gooi");
 const beurtEl = document.getElementById("beurt");
+const dobbelsteen = document.getElementById("dobbelsteen");
 
 const score1El = document.getElementById("score1");
 const score2El = document.getElementById("score2");
@@ -151,27 +151,33 @@ return finish - (pos - finish);
 return pos;
 }
 
-gooiBtn.addEventListener("click", () => {
+function updateBeurt() {
 
-if (team === 1 && skip1 > 0) {
-skip1--;
-team = 2;
 beurtEl.textContent = "Team " + team + " is aan de beurt";
 
 beurtEl.classList.remove("team1Beurt","team2Beurt");
 
 if(team === 1){
 beurtEl.classList.add("team1Beurt");
-} else {
+}else{
 beurtEl.classList.add("team2Beurt");
 }
+
+}
+
+gooiBtn.addEventListener("click", () => {
+
+if (team === 1 && skip1 > 0) {
+skip1--;
+team = 2;
+updateBeurt();
 return;
 }
 
 if (team === 2 && skip2 > 0) {
 skip2--;
 team = 1;
-beurtEl.textContent = "Team 1 is aan de beurt";
+updateBeurt();
 return;
 }
 
@@ -198,12 +204,12 @@ updateBord();
 }
 
 if (positie1 === put) {
-alert("🪣 Team 1 valt in de put! 1 beurt overslaan");
+alert("🪣 Team 1 valt in de put!");
 skip1 = 1;
 }
 
 if (positie1 === gevangenis) {
-alert("🔒 Team 1 in gevangenis! 2 beurten overslaan");
+alert("🔒 Team 1 in gevangenis!");
 skip1 = 2;
 }
 
@@ -236,12 +242,12 @@ updateBord();
 }
 
 if (positie2 === put) {
-alert("🪣 Team 2 valt in de put! 1 beurt overslaan");
+alert("🪣 Team 2 valt in de put!");
 skip2 = 1;
 }
 
 if (positie2 === gevangenis) {
-alert("🔒 Team 2 in gevangenis! 2 beurten overslaan");
+alert("🔒 Team 2 in gevangenis!");
 skip2 = 2;
 }
 
@@ -264,9 +270,9 @@ team = 1;
 
 nieuweVraag();
 checkFinish();
-
-beurtEl.textContent = "Team " + team + " is aan de beurt";
+updateBeurt();
 
 });
 
 maakBord();
+updateBeurt();
