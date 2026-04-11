@@ -93,3 +93,9 @@ background: red;
 .vak {
 position: relative;
 }
+
+.brug {
+font-size: 32px;
+display: block;
+text-align: center;
+}
