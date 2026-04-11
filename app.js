@@ -1,5 +1,6 @@
 import vragen from "./data/vragen.js";
 
+const dobbelsteen = document.getElementById("dobbelsteen");
 const bord = document.getElementById("bord");
 const vraagEl = document.getElementById("vraag");
 const antwoordEl = document.getElementById("antwoord");
@@ -167,6 +168,13 @@ return;
 }
 
 const worp = Math.floor(Math.random() * 6) + 1;
+
+dobbelsteen.textContent = ["⚀","⚁","⚂","⚃","⚄","⚅"][worp-1];
+dobbelsteen.classList.add("roll");
+
+setTimeout(() => {
+dobbelsteen.classList.remove("roll");
+}, 600);
 
 if (team === 1) {
 
