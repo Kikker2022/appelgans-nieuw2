@@ -20,7 +20,7 @@ let skip2 = 0;
 
 let team = 1;
 
-const finish = 42;
+const finish = 140;
 const put = 19;
 const brug = 6;
 const brugNaar = 12;
