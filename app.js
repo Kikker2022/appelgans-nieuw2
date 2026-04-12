@@ -34,11 +34,14 @@ bord.innerHTML = "";
 
 let nummer = 1;
 
-for (let rij = 0; rij < 6; rij++) {
+const rijen = 14;
+const kolommen = 10;
+
+for (let rij = 0; rij < rijen; rij++) {
 
 let rijArray = [];
 
-for (let kolom = 0; kolom < 7; kolom++) {
+for (let kolom = 0; kolom < kolommen; kolom++) {
 rijArray.push(nummer);
 nummer++;
 }
