@@ -1,3 +1,5 @@
+console.log("Nieuwe App.js geladen");
+
 import vragen from "./data/vragen.js";
 
 const bord = document.getElementById("bord");
