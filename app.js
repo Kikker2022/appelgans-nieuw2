@@ -26,8 +26,11 @@ const brug = 6;
 const brugNaar = 12;
 const gevangenis = 31;
 
-const ganzen = [5, 9, 14, 18, 23, 27, 32, 36, 41];
+const ganzen = [];
 
+for (let i = 9; i < 140; i += 9) {
+ganzen.push(i);
+}
 function maakBord() {
 
 bord.innerHTML = "";
