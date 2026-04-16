@@ -132,12 +132,27 @@ beurtEl.textContent = "Team " + team + " is aan de beurt";
 
 beurtEl.classList.remove("team1Beurt","team2Beurt");
 
-if(team === 1){
-beurtEl.classList.add("team1Beurt");
-}else{
-beurtEl.classList.add("team2Beurt");
+posities[team] += worp;
+posities[team] = bounceBack(posities[team]);
+
+if(ganzen.includes(posities[team])){
+alert("🪿 Gans! Nog een keer vooruit!");
+posities[team] += worp;
 }
 
+if(putten.includes(posities[team])){
+alert("🪣 In de put!");
+}
+
+if(gevangenissen.includes(posities[team])){
+alert("🔒 Gevangenis!");
+}
+
+team++;
+
+if(team > 3){
+team = 0;
+}
 }
 
 gooiBtn.addEventListener("click", () => {
