@@ -1,5 +1,3 @@
-console.log("Nieuwe App.js geladen");
-
 import vragen from "./data/vragen.js";
 
 const bord = document.getElementById("bord");
@@ -9,21 +7,15 @@ const gooiBtn = document.getElementById("gooi");
 const beurtEl = document.getElementById("beurt");
 const dobbelsteen = document.getElementById("dobbelsteen");
 
-const score1El = document.getElementById("score1");
-const score2El = document.getElementById("score2");
+const finish = 140;
 
+// 4 teams
 let posities = [0,0,0,0];
-
-let score1 = 0;
-let score2 = 0;
-
-let skip1 = 0;
-let skip2 = 0;
+let skip = [0,0,0,0];
 
 let team = 0;
 
-const finish = 140;
-
+// vakken
 const putten = [13, 38, 64, 89, 115];
 const bruggen = [6, 52, 97];
 const gevangenissen = [31, 78, 124];
@@ -33,22 +25,22 @@ for (let i = 9; i < finish; i += 9) {
 ganzen.push(i);
 }
 
-function maakBord() {
+function maakBord(){
 
 bord.innerHTML = "";
 
 let nummer = 1;
 
-for (let rij = 0; rij < 14; rij++) {
+for(let rij = 0; rij < 14; rij++){
 
 let rijArray = [];
 
-for (let kolom = 0; kolom < 10; kolom++) {
+for(let kolom = 0; kolom < 10; kolom++){
 rijArray.push(nummer);
 nummer++;
 }
 
-if (rij % 2 === 1) {
+if(rij % 2 === 1){
 rijArray.reverse();
 }
 
@@ -58,11 +50,11 @@ const vak = document.createElement("div");
 vak.classList.add("vak");
 vak.id = "vak" + nr;
 
-if (nr === finish) vak.innerHTML = "🏁";
-else if (putten.includes(nr)) vak.innerHTML = "🪣";
-else if (bruggen.includes(nr)) vak.innerHTML = "🌉";
-else if (gevangenissen.includes(nr)) vak.innerHTML = "🔒";
-else if (ganzen.includes(nr)) vak.innerHTML = "🪿";
+if(nr === finish) vak.innerHTML = "🏁";
+else if(putten.includes(nr)) vak.innerHTML = "<span>🪣</span>";
+else if(bruggen.includes(nr)) vak.innerHTML = "<span>🌉</span>";
+else if(gevangenissen.includes(nr)) vak.innerHTML = "<span>🔒</span>";
+else if(ganzen.includes(nr)) vak.innerHTML = "<span>🪿</span>";
 else vak.innerHTML = nr;
 
 bord.appendChild(vak);
@@ -79,20 +71,25 @@ document.querySelectorAll(".vak").forEach(v => {
 
 const nr = Number(v.id.replace("vak",""));
 
-if (nr === finish) v.innerHTML = "🏁";
-else if (putten.includes(nr)) v.innerHTML = "🪣";
-else if (bruggen.includes(nr)) v.innerHTML = "🌉";
-else if (gevangenissen.includes(nr)) v.innerHTML = "🔒";
-else if (ganzen.includes(nr)) v.innerHTML = "🪿";
+if(nr === finish) v.innerHTML = "🏁";
+else if(putten.includes(nr)) v.innerHTML = "<span>🪣</span>";
+else if(bruggen.includes(nr)) v.innerHTML = "<span>🌉</span>";
+else if(gevangenissen.includes(nr)) v.innerHTML = "<span>🔒</span>";
+else if(ganzen.includes(nr)) v.innerHTML = "<span>🪿</span>";
 else v.innerHTML = nr;
 
 });
 
-posities.forEach((positie, index) => {
+// spelers plaatsen
+posities.forEach((positie, index)=>{
 
 if(positie > 0){
-document.getElementById("vak"+positie)
-.innerHTML += `<div class="speler team${index+1}"></div>`;
+const vak = document.getElementById("vak"+positie);
+
+const speler = document.createElement("div");
+speler.classList.add("speler","team"+(index+1));
+
+vak.appendChild(speler);
 }
 
 });
@@ -107,113 +104,80 @@ return pos;
 }
 
 function nieuweVraag(){
+
 const random = vragen[Math.floor(Math.random()*vragen.length)];
+
 vraagEl.textContent = random.vraag;
 antwoordEl.textContent = random.antwoord;
+
 }
 
 function checkFinish(){
 
-if(positie1 === finish){
-alert("🎉 Team 1 wint!");
+posities.forEach((pos,index)=>{
+
+if(pos === finish){
+alert("🎉 Team " + (index+1) + " wint!");
 gooiBtn.disabled = true;
 }
 
-if(positie2 === finish){
-alert("🎉 Team 2 wint!");
-gooiBtn.disabled = true;
-}
+});
 
 }
-
-function updateBeurt(){
 
 function updateBeurt(){
 
 beurtEl.textContent = "Team " + (team+1) + " is aan de beurt";
 
 }
-beurtEl.classList.remove("team1Beurt","team2Beurt");
+
+gooiBtn.addEventListener("click", () => {
+
+if(skip[team] > 0){
+skip[team]--;
+team++;
+
+if(team > 3) team = 0;
+
+updateBeurt();
+return;
+}
+
+const worp = Math.floor(Math.random()*6)+1;
+
+dobbelsteen.textContent = ["⚀","⚁","⚂","⚃","⚄","⚅"][worp-1];
 
 posities[team] += worp;
 posities[team] = bounceBack(posities[team]);
 
+// gans
 if(ganzen.includes(posities[team])){
-alert("🪿 Gans! Nog een keer vooruit!");
+alert("🪿 Gans! Nog een keer vooruit");
 posities[team] += worp;
 }
 
+// put
 if(putten.includes(posities[team])){
-alert("🪣 In de put!");
+alert("🪣 In de put! Beurt overslaan");
+skip[team] = 1;
 }
 
+// gevangenis
 if(gevangenissen.includes(posities[team])){
-alert("🔒 Gevangenis!");
+alert("🔒 Gevangenis! 2 beurten overslaan");
+skip[team] = 2;
+}
+
+// brug
+if(bruggen.includes(posities[team])){
+alert("🌉 Brug! Extra vooruit");
+posities[team] += 5;
 }
 
 team++;
 
 if(team > 3){
 team = 0;
-}
-}
-
-gooiBtn.addEventListener("click", () => {
-
-const worp = Math.floor(Math.random()*6)+1;
-
-dobbelsteen.textContent = ["⚀","⚁","⚂","⚃","⚄","⚅"][worp-1];
-
-if(team === 1){
-
-positie1 += worp;
-positie1 = bounceBack(positie1);
-
-if(ganzen.includes(positie1)){
-alert("🪿 Gans! Nog een keer vooruit!");
-positie1 += worp;
-}
-
-if(putten.includes(positie1)){
-alert("🪣 In de put! Beurt overslaan");
-skip1 = 1;
-}
-
-if(gevangenissen.includes(positie1)){
-alert("🔒 Gevangenis! 2 beurten overslaan");
-skip1 = 2;
-}
-
-score1++;
-score1El.textContent = score1;
-
-team = 2;
-
-}else{
-
-positie2 += worp;
-positie2 = bounceBack(positie2);
-
-if(ganzen.includes(positie2)){
-alert("🪿 Gans! Nog een keer vooruit!");
-positie2 += worp;
-}
-
-if(putten.includes(positie2)){
-alert("🪣 In de put! Beurt overslaan");
-skip2 = 1;
-}
-
-if(gevangenissen.includes(positie2)){
-alert("🔒 Gevangenis! 2 beurten overslaan");
-skip2 = 2;
-}
-
-score2++;
-score2El.textContent = score2;
-
-team = 1;
-
 }
 
 updateBord();
