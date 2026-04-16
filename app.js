@@ -12,8 +12,7 @@ const dobbelsteen = document.getElementById("dobbelsteen");
 const score1El = document.getElementById("score1");
 const score2El = document.getElementById("score2");
 
-let positie1 = 0;
-let positie2 = 0;
+let posities = [0,0,0,0];
 
 let score1 = 0;
 let score2 = 0;
@@ -21,7 +20,7 @@ let score2 = 0;
 let skip1 = 0;
 let skip2 = 0;
 
-let team = 1;
+let team = 0;
 
 const finish = 140;
 
@@ -89,15 +88,14 @@ else v.innerHTML = nr;
 
 });
 
-if (positie1 > 0){
-document.getElementById("vak"+positie1)
-.innerHTML += `<div class="speler team1"></div>`;
+posities.forEach((positie, index) => {
+
+if(positie > 0){
+document.getElementById("vak"+positie)
+.innerHTML += `<div class="speler team${index+1}"></div>`;
 }
 
-if (positie2 > 0){
-document.getElementById("vak"+positie2)
-.innerHTML += `<div class="speler team2"></div>`;
-}
+});
 
 }
 
