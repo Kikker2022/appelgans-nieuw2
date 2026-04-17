@@ -86,3 +86,31 @@ padding: 8px;
 font-weight: bold;
 font-size: clamp(12px, 3vw, 16px);
 }
+
+header {
+background: white;
+padding: 6px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+font-size: clamp(16px,3vw,22px);
+margin: 4px 0;
+}
+
+#spelinfo {
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+#beurt {
+font-weight: bold;
+font-size: clamp(12px,2.5vw,16px);
+}
+
+#gooi {
+font-size: clamp(16px,4vw,22px);
+padding: 10px 18px;
+background: #4CAF50;
+}
