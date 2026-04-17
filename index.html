@@ -2,23 +2,24 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Appelgans</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>🪿 Appelgans</h1>
+<header>
 
-<div id="beurt" class="team1Beurt">
-Team 1 is aan de beurt
+<h1>🪿 Appelgans gemeente Ooststellingwerf</h1>
+
+<div id="spelinfo">
+<div id="beurt">Team 1 is aan de beurt</div>
+<div id="dobbelsteen">⚀</div>
+<button id="gooi">🎲 Gooi</button>
 </div>
 
-<div id="dobbelsteen">🎲</div>
-
-<button id="gooi">Gooi</button>
-
-<div id="bord"></div>
+</header>
 
 <div id="score">
 Team 1: 0  
@@ -27,8 +28,10 @@ Team 3: 0
 Team 4: 0  
 </div>
 
-<h2 id="vraag"></h2>
-<p id="antwoord"></p>
+<div id="bord"></div>
+
+<div id="vraag"></div>
+<div id="antwoord"></div>
 
 <script type="module" src="app.js"></script>
 
