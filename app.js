@@ -15,16 +15,15 @@ const meldingOk = document.getElementById("melding-ok");
 const finish = 140;
 
 // geluiden
-const geluidDobbel = new Audio("sounds/dobbel.mp3");
-const geluidGans = new Audio("sounds/gans.mp3");
-const geluidFinish = new Audio("sounds/finish.mp3");
+const geluidDobbel = new Audio("./sounds/dobbel.mp3");
+const geluidGans = new Audio("./sounds/gans.mp3");
+const geluidFinish = new Audio("./sounds/finish.mp3");
 
 let posities = [0,0,0,0];
 let skip = [0,0,0,0];
 
 let team = 0;
 
-// vakken
 const putten = [13, 38, 64, 89, 115];
 const bruggen = [6, 52, 97];
 const gevangenissen = [31, 78, 124];
@@ -199,12 +198,16 @@ setTimeout(() => {
 if(ganzen.includes(posities[team])){
 
 geluidGans.play();
-
 toonMelding("🪿 " + teamNaam() + " op een gans!");
 
-posities[team] += worp;
-
 updateBord();
+
+setTimeout(()=>{
+
+posities[team] += worp;
+updateBord();
+
+},600);
 
 }
 
@@ -212,16 +215,20 @@ if(bruggen.includes(posities[team])){
 
 toonMelding("🌉 " + teamNaam() + " over de brug +5");
 
-posities[team] += 5;
-
 updateBord();
+
+setTimeout(()=>{
+
+posities[team] += 5;
+updateBord();
+
+},600);
 
 }
 
 if(putten.includes(posities[team])){
 
 toonMelding("🪣 " + teamNaam() + " zit in de put");
-
 skip[team] = 1;
 
 }
@@ -229,7 +236,6 @@ skip[team] = 1;
 if(gevangenissen.includes(posities[team])){
 
 toonMelding("🔒 " + teamNaam() + " in gevangenis");
-
 skip[team] = 2;
 
 }
@@ -243,7 +249,7 @@ updateScore();
 updateBeurt();
 nieuweVraag();
 
-}, 800);
+},600);
 
 });
 
