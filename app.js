@@ -71,19 +71,19 @@ function maakBord(){
                 vak.classList.add("finish");
             }
             else if(ganzen.includes(nr)){
-                vak.innerHTML = "🪿<br>" + nr;
+               vak.innerHTML = `<span class="icoon">🪿</span>${nr}`;
                 vak.classList.add("gans");
             }
             else if(bruggen.includes(nr)){
-                vak.innerHTML = "🌉<br>" + nr;
+                vak.innerHTML = `<span class="icoon">🌉</span>${nr}`;
                 vak.classList.add("brug");
             }
             else if(putten.includes(nr)){
-                vak.innerHTML = "🪣<br>" + nr;
+                vak.innerHTML = `<span class="icoon">🪣</span>${nr}`;
                 vak.classList.add("put");
             }
             else if(gevangenissen.includes(nr)){
-                vak.innerHTML = "🔒<br>" + nr;
+                vak.innerHTML = `<span class="icoon">🔒</span>${nr}`;
                 vak.classList.add("gevangenis");
             }
             else {
