@@ -14,14 +14,13 @@ const meldingOk = document.getElementById("melding-ok");
 
 const finish = 140;
 
-// ✅ GELUIDEN (correct)
+// geluiden
 const dobbelGeluid = new Audio("sounds/dobbel.mp3");
 const finishGeluid = new Audio("sounds/finish.mp3");
 const gansGeluid = new Audio("sounds/gans.mp3");
 
 let posities = [0,0,0,0];
 let skip = [0,0,0,0];
-
 let team = 0;
 
 const putten = [13, 38, 64, 89, 115];
@@ -104,10 +103,7 @@ function updateBord(){
 
 function updateScore(){
     scoreEl.innerHTML = `
-    Team 1: ${posities[0]}
-    Team 2: ${posities[1]}
-    Team 3: ${posities[2]}
-    Team 4: ${posities[3]}
+    🔴 ${posities[0]} | 🔵 ${posities[1]} | 🟢 ${posities[2]} | 🟠 ${posities[3]}
     `;
 }
 
@@ -129,15 +125,35 @@ function checkFinish(){
         if(pos === finish){
             finishGeluid.currentTime = 0;
             finishGeluid.play();
-
-            toonMelding("🎉 Team " + (index+1) + " wint!");
+            toonMelding("🎉 " + ["🔴","🔵","🟢","🟠"][index] + " wint!");
             gooiBtn.disabled = true;
         }
     });
 }
 
 function updateBeurt(){
-   beurtEl.innerHTML = `<strong>${teamNaam()}</strong> is aan de beurt`;
+    beurtEl.innerHTML = `<strong>${teamNaam()}</strong> is aan de beurt`;
+}
+
+// 🔥 NIEUW: animatie
+function beweegSpeler(stappen, callback){
+    let teller = 0;
+
+    const interval = setInterval(() => {
+
+        posities[team]++;
+        posities[team] = bounceBack(posities[team]);
+
+        updateBord();
+
+        teller++;
+
+        if(teller >= stappen){
+            clearInterval(interval);
+            if(callback) callback();
+        }
+
+    }, 300);
 }
 
 gooiBtn.addEventListener("click", () => {
@@ -153,62 +169,45 @@ gooiBtn.addEventListener("click", () => {
 
     const worp = Math.floor(Math.random()*6)+1;
 
-    // ✅ dobbel geluid
     dobbelGeluid.currentTime = 0;
     dobbelGeluid.play();
 
     dobbelsteen.textContent = ["⚀","⚁","⚂","⚃","⚄","⚅"][worp-1];
 
-   function beweegSpeler(stappen, callback){
+    // 🔥 animatie
+    beweegSpeler(worp, () => {
 
-    let teller = 0;
-
-    const interval = setInterval(() => {
-
-        beweegSpeler(worp, () => {
-
-        teller++;
-
-        if(teller >= stappen){
-            clearInterval(interval);
-            if(callback) callback();
-        }
-
-    }, 300); // snelheid (lager = sneller)
-
-}
-
-    setTimeout(() => {
-        });
-
-        // 🪿 GANS
         if(ganzen.includes(posities[team])){
             gansGeluid.currentTime = 0;
             gansGeluid.play();
 
-            toonMelding("🪿 " + teamNaam() + " → nog eens " + worp + " vooruit!");
+            toonMelding("🪿 " + teamNaam() + " → nog eens " + worp);
 
-            posities[team] += worp;
-            posities[team] = bounceBack(posities[team]);
-            updateBord();
+            beweegSpeler(worp, () => vervolg());
+        } else {
+            vervolg();
         }
 
-        // 🌉 BRUG
+    });
+
+    function vervolg(){
+
         if(bruggen.includes(posities[team])){
-            toonMelding("🌉 " + teamNaam() + " → +5 vakjes");
+            toonMelding("🌉 " + teamNaam() + " → +5");
 
-            posities[team] += 5;
-            posities[team] = bounceBack(posities[team]);
-            updateBord();
+            beweegSpeler(5, () => afronden());
+        } else {
+            afronden();
         }
+    }
 
-        // 🪣 PUT
+    function afronden(){
+
         if(putten.includes(posities[team])){
             toonMelding("🪣 " + teamNaam() + " → 1 beurt overslaan");
             skip[team] = 1;
         }
 
-        // 🔒 GEVANGENIS
         if(gevangenissen.includes(posities[team])){
             toonMelding("🔒 " + teamNaam() + " → 2 beurten overslaan");
             skip[team] = 2;
@@ -221,9 +220,7 @@ gooiBtn.addEventListener("click", () => {
         updateScore();
         updateBeurt();
         nieuweVraag();
-
-   beweegSpeler(worp, () => {
-   ...
+    }
 
 });
 
