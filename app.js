@@ -14,14 +14,15 @@ const meldingOk = document.getElementById("melding-ok");
 
 const finish = 140;
 
-// 🔊 geluiden
+// geluiden
 const dobbelGeluid = new Audio("sounds/dobbel.mp3");
 const finishGeluid = new Audio("sounds/finish.mp3");
 const gansGeluid = new Audio("sounds/gans.mp3");
 
-function speelGeluid(geluid){
-    geluid.currentTime = 0;
-    geluid.play().catch(()=>{});
+// veilige play
+function speelGeluid(g){
+    g.currentTime = 0;
+    g.play().catch(()=>{});
 }
 
 let posities = [0,0,0,0];
@@ -38,7 +39,7 @@ for (let i = 9; i < finish; i += 9) {
 }
 
 function teamNaam(){
-    const kleuren = ["🔴 Rood", "🔵 Blauw", "🟢 Groen", "🟠 Oranje"];
+    const kleuren = ["🔴 Rood","🔵 Blauw","🟢 Groen","🟠 Oranje"];
     return kleuren[team];
 }
 
@@ -59,33 +60,34 @@ function maakBord(){
 
         for(let kolom = 0; kolom < 10; kolom++){
 
+            const nr = nummer;
+
             const vak = document.createElement("div");
             vak.classList.add("vak");
+            vak.id = "vak" + nr;
 
-            vak.id = "vak" + nummer;
-
-            if(nummer === finish){
+            if(nr === finish){
                 vak.innerHTML = "🏁";
                 vak.classList.add("finish");
             }
-            else if(ganzen.includes(nummer)){
-                vak.innerHTML = nummer;
+            else if(ganzen.includes(nr)){
+                vak.innerHTML = nr;
                 vak.classList.add("gans");
             }
-            else if(bruggen.includes(nummer)){
-                vak.innerHTML = nummer;
+            else if(bruggen.includes(nr)){
+                vak.innerHTML = nr;
                 vak.classList.add("brug");
             }
-            else if(putten.includes(nummer)){
-                vak.innerHTML = nummer;
+            else if(putten.includes(nr)){
+                vak.innerHTML = nr;
                 vak.classList.add("put");
             }
-            else if(gevangenissen.includes(nummer)){
-                vak.innerHTML = nummer;
+            else if(gevangenissen.includes(nr)){
+                vak.innerHTML = nr;
                 vak.classList.add("gevangenis");
             }
             else {
-                vak.innerHTML = nummer;
+                vak.innerHTML = nr;
             }
 
             bord.appendChild(vak);
@@ -100,29 +102,13 @@ function updateBord(){
 
         v.className = "vak";
 
-        if(nr === finish){
-            v.innerHTML = "🏁";
-            v.classList.add("finish");
-        }
-        else if(ganzen.includes(nr)){
-            v.innerHTML = nr;
-            v.classList.add("gans");
-        }
-        else if(bruggen.includes(nr)){
-            v.innerHTML = nr;
-            v.classList.add("brug");
-        }
-        else if(putten.includes(nr)){
-            v.innerHTML = nr;
-            v.classList.add("put");
-        }
-        else if(gevangenissen.includes(nr)){
-            v.innerHTML = nr;
-            v.classList.add("gevangenis");
-        }
-        else {
-            v.innerHTML = nr;
-        }
+        if(nr === finish) v.classList.add("finish");
+        else if(ganzen.includes(nr)) v.classList.add("gans");
+        else if(bruggen.includes(nr)) v.classList.add("brug");
+        else if(putten.includes(nr)) v.classList.add("put");
+        else if(gevangenissen.includes(nr)) v.classList.add("gevangenis");
+
+        v.innerHTML = (nr === finish) ? "🏁" : nr;
     });
 
     posities.forEach((positie, index)=>{
@@ -168,7 +154,6 @@ function updateBeurt(){
     beurtEl.innerHTML = `<strong>${teamNaam()}</strong> is aan de beurt`;
 }
 
-// 🔥 animatie
 function beweegSpeler(stappen, callback){
     let teller = 0;
 
