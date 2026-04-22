@@ -14,12 +14,12 @@ const meldingOk = document.getElementById("melding-ok");
 
 const finish = 140;
 
-// geluiden
+// 🔊 GELUIDEN
 const dobbelGeluid = new Audio("sounds/dobbel.mp3");
 const finishGeluid = new Audio("sounds/finish.mp3");
 const gansGeluid = new Audio("sounds/gans.mp3");
 
-// veilige play
+// veilige play (voorkomt browser errors)
 function speelGeluid(g){
     g.currentTime = 0;
     g.play().catch(()=>{});
@@ -33,6 +33,7 @@ const putten = [13, 38, 64, 89, 115];
 const bruggen = [6, 52, 97];
 const gevangenissen = [31, 78, 124];
 
+// 🪿 ganzen
 const ganzen = [];
 for (let i = 9; i < finish; i += 9) {
     ganzen.push(i);
@@ -52,16 +53,15 @@ meldingOk.addEventListener("click", () => {
     melding.style.display = "none";
 });
 
+// 🧱 BORD MAKEN (links → rechts)
 function maakBord(){
     bord.innerHTML = "";
     let nummer = 1;
 
     for(let rij = 0; rij < 14; rij++){
-
         for(let kolom = 0; kolom < 10; kolom++){
 
             const nr = nummer;
-
             const vak = document.createElement("div");
             vak.classList.add("vak");
             vak.id = "vak" + nr;
@@ -71,19 +71,19 @@ function maakBord(){
                 vak.classList.add("finish");
             }
             else if(ganzen.includes(nr)){
-                vak.innerHTML = nr;
+                vak.innerHTML = "🪿<br>" + nr;
                 vak.classList.add("gans");
             }
             else if(bruggen.includes(nr)){
-                vak.innerHTML = nr;
+                vak.innerHTML = "🌉<br>" + nr;
                 vak.classList.add("brug");
             }
             else if(putten.includes(nr)){
-                vak.innerHTML = nr;
+                vak.innerHTML = "🪣<br>" + nr;
                 vak.classList.add("put");
             }
             else if(gevangenissen.includes(nr)){
-                vak.innerHTML = nr;
+                vak.innerHTML = "🔒<br>" + nr;
                 vak.classList.add("gevangenis");
             }
             else {
@@ -96,19 +96,36 @@ function maakBord(){
     }
 }
 
+// 🔄 bord updaten
 function updateBord(){
     document.querySelectorAll(".vak").forEach(v => {
         const nr = Number(v.id.replace("vak",""));
 
         v.className = "vak";
 
-        if(nr === finish) v.classList.add("finish");
-        else if(ganzen.includes(nr)) v.classList.add("gans");
-        else if(bruggen.includes(nr)) v.classList.add("brug");
-        else if(putten.includes(nr)) v.classList.add("put");
-        else if(gevangenissen.includes(nr)) v.classList.add("gevangenis");
-
-        v.innerHTML = (nr === finish) ? "🏁" : nr;
+        if(nr === finish){
+            v.innerHTML = "🏁";
+            v.classList.add("finish");
+        }
+        else if(ganzen.includes(nr)){
+            v.innerHTML = "🪿<br>" + nr;
+            v.classList.add("gans");
+        }
+        else if(bruggen.includes(nr)){
+            v.innerHTML = "🌉<br>" + nr;
+            v.classList.add("brug");
+        }
+        else if(putten.includes(nr)){
+            v.innerHTML = "🪣<br>" + nr;
+            v.classList.add("put");
+        }
+        else if(gevangenissen.includes(nr)){
+            v.innerHTML = "🔒<br>" + nr;
+            v.classList.add("gevangenis");
+        }
+        else {
+            v.innerHTML = nr;
+        }
     });
 
     posities.forEach((positie, index)=>{
@@ -154,6 +171,7 @@ function updateBeurt(){
     beurtEl.innerHTML = `<strong>${teamNaam()}</strong> is aan de beurt`;
 }
 
+// 🎞️ animatie
 function beweegSpeler(stappen, callback){
     let teller = 0;
 
