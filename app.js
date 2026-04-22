@@ -14,7 +14,7 @@ const meldingOk = document.getElementById("melding-ok");
 
 const finish = 140;
 
-// geluiden
+// ✅ GELUIDEN (correct)
 const dobbelGeluid = new Audio("sounds/dobbel.mp3");
 const finishGeluid = new Audio("sounds/finish.mp3");
 const gansGeluid = new Audio("sounds/gans.mp3");
@@ -30,231 +30,182 @@ const gevangenissen = [31, 78, 124];
 
 const ganzen = [];
 for (let i = 9; i < finish; i += 9) {
-ganzen.push(i);
+    ganzen.push(i);
 }
 
 function teamNaam(){
-return "Team " + (team+1);
+    return "Team " + (team+1);
 }
 
 function toonMelding(tekst){
-meldingTekst.textContent = tekst;
-melding.style.display = "flex";
+    meldingTekst.textContent = tekst;
+    melding.style.display = "flex";
 }
 
 meldingOk.addEventListener("click", () => {
-melding.style.display = "none";
+    melding.style.display = "none";
 });
 
 function maakBord(){
+    bord.innerHTML = "";
+    let nummer = 1;
 
-bord.innerHTML = "";
+    for(let rij = 0; rij < 14; rij++){
+        let rijArray = [];
 
-let nummer = 1;
+        for(let kolom = 0; kolom < 10; kolom++){
+            rijArray.push(nummer);
+            nummer++;
+        }
 
-for(let rij = 0; rij < 14; rij++){
+        if(rij % 2 === 1){
+            rijArray.reverse();
+        }
 
-let rijArray = [];
+        rijArray.forEach(nr => {
+            const vak = document.createElement("div");
+            vak.classList.add("vak");
+            vak.id = "vak" + nr;
 
-for(let kolom = 0; kolom < 10; kolom++){
-rijArray.push(nummer);
-nummer++;
-}
+            if(nr === finish) vak.innerHTML = "🏁";
+            else if(putten.includes(nr)) vak.innerHTML = "🪣";
+            else if(bruggen.includes(nr)) vak.innerHTML = "🌉";
+            else if(gevangenissen.includes(nr)) vak.innerHTML = "🔒";
+            else if(ganzen.includes(nr)) vak.innerHTML = "🪿";
+            else vak.innerHTML = nr;
 
-if(rij % 2 === 1){
-rijArray.reverse();
-}
-
-rijArray.forEach(nr => {
-
-const vak = document.createElement("div");
-vak.classList.add("vak");
-vak.id = "vak" + nr;
-
-if(nr === finish) vak.innerHTML = "🏁";
-else if(putten.includes(nr)) vak.innerHTML = "<span>🪣</span>";
-else if(bruggen.includes(nr)) vak.innerHTML = "<span>🌉</span>";
-else if(gevangenissen.includes(nr)) vak.innerHTML = "<span>🔒</span>";
-else if(ganzen.includes(nr)) vak.innerHTML = "<span>🪿</span>";
-else vak.innerHTML = nr;
-
-bord.appendChild(vak);
-
-});
-
-}
-
+            bord.appendChild(vak);
+        });
+    }
 }
 
 function updateBord(){
+    document.querySelectorAll(".vak").forEach(v => {
+        const nr = Number(v.id.replace("vak",""));
 
-document.querySelectorAll(".vak").forEach(v => {
+        if(nr === finish) v.innerHTML = "🏁";
+        else if(putten.includes(nr)) v.innerHTML = "🪣";
+        else if(bruggen.includes(nr)) v.innerHTML = "🌉";
+        else if(gevangenissen.includes(nr)) v.innerHTML = "🔒";
+        else if(ganzen.includes(nr)) v.innerHTML = "🪿";
+        else v.innerHTML = nr;
+    });
 
-const nr = Number(v.id.replace("vak",""));
-
-if(nr === finish) v.innerHTML = "🏁";
-else if(putten.includes(nr)) v.innerHTML = "<span>🪣</span>";
-else if(bruggen.includes(nr)) v.innerHTML = "<span>🌉</span>";
-else if(gevangenissen.includes(nr)) v.innerHTML = "<span>🔒</span>";
-else if(ganzen.includes(nr)) v.innerHTML = "<span>🪿</span>";
-else v.innerHTML = nr;
-
-});
-
-posities.forEach((positie, index)=>{
-
-if(positie > 0){
-
-const vak = document.getElementById("vak"+positie);
-
-const speler = document.createElement("div");
-speler.classList.add("speler","team"+(index+1));
-
-vak.appendChild(speler);
-
-}
-
-});
-
+    posities.forEach((positie, index)=>{
+        if(positie > 0){
+            const vak = document.getElementById("vak"+positie);
+            const speler = document.createElement("div");
+            speler.classList.add("speler","team"+(index+1));
+            vak.appendChild(speler);
+        }
+    });
 }
 
 function updateScore(){
-
-scoreEl.innerHTML = `
-Team 1: ${posities[0]}
-Team 2: ${posities[1]}
-Team 3: ${posities[2]}
-Team 4: ${posities[3]}
-`;
-
+    scoreEl.innerHTML = `
+    Team 1: ${posities[0]}
+    Team 2: ${posities[1]}
+    Team 3: ${posities[2]}
+    Team 4: ${posities[3]}
+    `;
 }
 
 function bounceBack(pos){
-if(pos > finish){
-return finish - (pos - finish);
-}
-return pos;
+    if(pos > finish){
+        return finish - (pos - finish);
+    }
+    return pos;
 }
 
 function nieuweVraag(){
-
-const random = vragen[Math.floor(Math.random()*vragen.length)];
-
-vraagEl.textContent = random.vraag;
-antwoordEl.textContent = random.antwoord;
-
+    const random = vragen[Math.floor(Math.random()*vragen.length)];
+    vraagEl.textContent = random.vraag;
+    antwoordEl.textContent = random.antwoord;
 }
 
 function checkFinish(){
+    posities.forEach((pos,index)=>{
+        if(pos === finish){
+            finishGeluid.currentTime = 0;
+            finishGeluid.play();
 
-posities.forEach((pos,index)=>{
-
-if(pos === finish){
-
-finishGeluid.play();
-toonMelding("🎉 Team " + (index+1) + " wint!");
-
-gooiBtn.disabled = true;
-
-}
-
-});
-
+            toonMelding("🎉 Team " + (index+1) + " wint!");
+            gooiBtn.disabled = true;
+        }
+    });
 }
 
 function updateBeurt(){
-beurtEl.textContent = teamNaam() + " is aan de beurt";
+    beurtEl.textContent = teamNaam() + " is aan de beurt";
 }
 
 gooiBtn.addEventListener("click", () => {
 
-if(skip[team] > 0){
+    if(skip[team] > 0){
+        toonMelding(teamNaam() + " moet een beurt overslaan");
+        skip[team]--;
 
-toonMelding(teamNaam() + " moet een beurt overslaan");
+        team = (team + 1) % 4;
+        updateBeurt();
+        return;
+    }
 
-skip[team]--;
+    const worp = Math.floor(Math.random()*6)+1;
 
-team++;
-if(team > 3) team = 0;
+    // ✅ dobbel geluid
+    dobbelGeluid.currentTime = 0;
+    dobbelGeluid.play();
 
-updateBeurt();
+    dobbelsteen.textContent = ["⚀","⚁","⚂","⚃","⚄","⚅"][worp-1];
 
-return;
-}
+    posities[team] += worp;
+    posities[team] = bounceBack(posities[team]);
+    updateBord();
 
-const worp = Math.floor(Math.random()*6)+1;
+    setTimeout(() => {
 
-dobbelGeluid.play();
-  
-dobbelsteen.textContent = ["⚀","⚁","⚂","⚃","⚄","⚅"][worp-1];
+        // 🪿 GANS
+        if(ganzen.includes(posities[team])){
+            gansGeluid.currentTime = 0;
+            gansGeluid.play();
 
-posities[team] += worp; // bij gans
-posities[team] = bounceBack(posities[team]);
+            toonMelding("🪿 " + teamNaam() + " → nog eens " + worp + " vooruit!");
 
-posities[team] += worp;
-posities[team] = bounceBack(posities[team]);
-updateBord();
+            posities[team] += worp;
+            posities[team] = bounceBack(posities[team]);
+            updateBord();
+        }
 
-setTimeout(() => {
+        // 🌉 BRUG
+        if(bruggen.includes(posities[team])){
+            toonMelding("🌉 " + teamNaam() + " → +5 vakjes");
 
-if(ganzen.includes(posities[team])){
+            posities[team] += 5;
+            posities[team] = bounceBack(posities[team]);
+            updateBord();
+        }
 
-gansGeluid.play();
-toonMelding("🪿 " + teamNaam() + " op een gans!");
+        // 🪣 PUT
+        if(putten.includes(posities[team])){
+            toonMelding("🪣 " + teamNaam() + " → 1 beurt overslaan");
+            skip[team] = 1;
+        }
 
-updateBord();
+        // 🔒 GEVANGENIS
+        if(gevangenissen.includes(posities[team])){
+            toonMelding("🔒 " + teamNaam() + " → 2 beurten overslaan");
+            skip[team] = 2;
+        }
 
-setTimeout(()=>{
+        checkFinish();
 
-posities[team] += worp;
-updateBord();
+        team = (team + 1) % 4;
 
-},600);
+        updateScore();
+        updateBeurt();
+        nieuweVraag();
 
-}
-
-if(bruggen.includes(posities[team])){
-
-toonMelding("🌉 " + teamNaam() + " over de brug +5");
-
-updateBord();
-
-setTimeout(()=>{
-
-posities[team] += 5;
-posities[team] = bounceBack(posities[team]);
-updateBord();
-  
-updateBord();
-
-},600);
-
-}
-
-if(putten.includes(posities[team])){
-
-toonMelding("🪣 " + teamNaam() + " zit in de put");
-skip[team] = 1;
-
-}
-
-if(gevangenissen.includes(posities[team])){
-
-toonMelding("🔒 " + teamNaam() + " in gevangenis");
-skip[team] = 2;
-
-}
-
-checkFinish();
-
-team++;
-if(team > 3) team = 0;
-
-updateScore();
-updateBeurt();
-nieuweVraag();
-
-},600);
+    }, 600);
 
 });
 
