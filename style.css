@@ -62,6 +62,12 @@ font-weight: bold;
 font-size: clamp(14px, 3vw, 26px);
 }
 
+.icoon {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 2px;
+}
+
 /* finish */
 #vak140 {
 font-size: clamp(18px, 4vw, 34px);
