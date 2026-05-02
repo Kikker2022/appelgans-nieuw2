@@ -139,5 +139,7 @@ gooiBtn.addEventListener("click", gooiDobbelsteen);
 
 maakBord();
 updateBord();
+
+
 updateScore();
 updateBeurt();
