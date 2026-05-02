@@ -15,9 +15,9 @@ const meldingOk = document.getElementById("melding-ok");
 const finish = 140;
 
 // 🔊 GELUIDEN
-const dobbelGeluid = new Audio("sounds/dobbel.mp3");
-const finishGeluid = new Audio("sounds/finish.mp3");
-const gansGeluid = new Audio("sounds/gans.mp3");
+const dobbelGeluid = new Audio("/dobbel.mp3");
+const finishGeluid = new Audio("/finish.mp3");
+const gansGeluid = new Audio("/gans.mp3");
 
 // veilige play (voorkomt browser errors)
 function speelGeluid(g){
