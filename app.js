@@ -381,6 +381,49 @@ document
 explanationText.innerText =
 "Verklaring: " +
 currentQuestion.uitleg;
+setTimeout(async ()=>{
+
+showScreen(screen3);
+
+const team = teams[currentTeam];
+
+for(let i=0;i<lastRoll;i++){
+
+if(team.position < TOTAL_CELLS){
+
+team.position++;
+
+updateBoard();
+
+await sleep(350);
+
+}
+
+}
+
+await handleSpecial(team);
+
+if(team.position >= TOTAL_CELLS){
+
+soundWin.play();
+
+showPopup(
+`${team.icon} heeft gewonnen!`
+);
+
+return;
+
+}
+
+nextTurn();
+
+setTimeout(()=>{
+
+showScreen(screen1);
+
+},4000);
+
+},2500);
 
 }
 
