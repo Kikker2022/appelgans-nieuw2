@@ -11,6 +11,8 @@ const TOTAL_CELLS = 140;
 
 let currentTeam = 0;
 
+let lastRoll = 0;
+
 const teams = [
 { color:"blue", icon:"🔵", position:0, skipTurns:0 },
 { color:"red", icon:"🔴", position:0, skipTurns:0 },
