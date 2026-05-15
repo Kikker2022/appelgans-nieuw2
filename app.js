@@ -383,4 +383,14 @@ currentQuestion.uitleg;
 
 }
 
+function showScreen(screen){
+
+screen1.classList.add("hidden");
+screen2.classList.add("hidden");
+screen3.classList.add("hidden");
+
+screen.classList.remove("hidden");
+
+}
+
 createBoard();
