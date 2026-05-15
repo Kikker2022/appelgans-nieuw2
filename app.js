@@ -341,10 +341,14 @@ function sleep(ms){
 return new Promise(resolve=>setTimeout(resolve,ms));
 }
 
-function checkAnswer(choice){
+async function checkAnswer(choice){
 
 const correct =
 currentQuestion.correct;
+
+btnA.disabled = true;
+btnB.disabled = true;
+btnC.disabled = true;
 
 if(choice === correct){
 
@@ -353,6 +357,57 @@ document
 "btn" + choice.toUpperCase()
 )
 .classList.add("correct");
+
+explanationText.innerText =
+"✅ Goed! " +
+currentQuestion.uitleg;
+
+/* wachten */
+await sleep(2500);
+
+/* bord tonen */
+showScreen(screen3);
+
+const team = teams[currentTeam];
+
+/* langzaam bewegen */
+for(let i=0;i<lastRoll;i++){
+
+if(team.position < TOTAL_CELLS){
+
+team.position++;
+
+updateBoard();
+
+await sleep(350);
+
+}
+
+}
+
+/* speciale vakken */
+await handleSpecial(team);
+
+if(team.position >= TOTAL_CELLS){
+
+soundWin.play();
+
+showPopup(
+`${team.icon} heeft gewonnen!`
+);
+
+return;
+
+}
+
+/* terug naar scherm 1 */
+nextTurn();
+
+setTimeout(()=>{
+
+showScreen(screen1);
+
+},3500);
 
 }else{
 
@@ -368,26 +423,18 @@ document
 )
 .classList.add("correct");
 
-}
-
 explanationText.innerText =
-"Verklaring: " +
+"❌ Fout! " +
 currentQuestion.uitleg;
-setTimeout(async ()=>{
 
-showScreen(screen3);
+/* GEEN beweging */
+setTimeout(()=>{
 
-const team = teams[currentTeam];
+nextTurn();
 
-for(let i=0;i<lastRoll;i++){
+showScreen(screen1);
 
-if(team.position < TOTAL_CELLS){
-
-team.position++;
-
-updateBoard();
-
-await sleep(350);
+},3500);
 
 }
 
