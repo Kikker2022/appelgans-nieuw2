@@ -27,17 +27,34 @@
 </div>
 
 <div id="questionBox">
+
 <h2>Vraag</h2>
 
 <p id="question">
 Vraag verschijnt hier...
 </p>
 
-<button onclick="showAnswer()">
-Toon antwoord
+<div id="answers">
+
+<button class="answerBtn" id="btnA"
+onclick="checkAnswer('a')">
+A
 </button>
 
-<p id="answer"></p>
+<button class="answerBtn" id="btnB"
+onclick="checkAnswer('b')">
+B
+</button>
+
+<button class="answerBtn" id="btnC"
+onclick="checkAnswer('c')">
+C
+</button>
+
+</div>
+
+<p id="explanation"></p>
+
 </div>
 
 <div id="popup"></div>
