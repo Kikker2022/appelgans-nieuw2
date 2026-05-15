@@ -22,7 +22,8 @@ h1{
 /* BOARD */
 #board{
   display:grid;
-  grid-template-columns:repeat(7, 42px);
+  #board{
+  grid-template-columns:repeat(8, 38px);
   gap:0;
   row-gap:0;
   column-gap:0;
@@ -134,10 +135,9 @@ button{
   }
 
   .cell{
-    width:38px;
-    height:38px;
-    font-size:8px;
-  }
+  width:38px;
+  height:38px;
+}
 
   .cell span{
     font-size:12px;
