@@ -25,8 +25,9 @@ top:10px;
 
 #board{
 display:grid;
-grid-template-columns:repeat(10,52px);
-gap:6px;
+grid-template-columns:repeat(7,44px);
+gap:0px;
+justify-content:center;
 }
 
 .cell{
