@@ -13,7 +13,19 @@ const board = document.getElementById("board");
 const turnText = document.getElementById("turn");
 const diceText = document.getElementById("diceResult");
 const questionText = document.getElementById("question");
-const answerText = document.getElementById("answer");
+const explanationText =
+document.getElementById("explanation");
+
+const btnA =
+document.getElementById("btnA");
+
+const btnB =
+document.getElementById("btnB");
+
+const btnC =
+document.getElementById("btnC");
+
+let currentQuestion = null;
 const popup = document.getElementById("popup");
 
 const soundGans = new Audio("public/gans.mp3");
@@ -286,13 +298,22 @@ updateBoard();
 
 function loadQuestion(){
 
-const q=vragen[Math.floor(Math.random()*vragen.length)];
+const q =
+vragen[Math.floor(Math.random() * vragen.length)];
 
-questionText.innerText=q.vraag;
+currentQuestion = q;
 
-answerText.innerText=q.antwoord;
+questionText.innerText = q.vraag;
 
-answerText.style.display="none";
+btnA.innerText = "A: " + q.a;
+btnB.innerText = "B: " + q.b;
+btnC.innerText = "C: " + q.c;
+
+btnA.className = "answerBtn";
+btnB.className = "answerBtn";
+btnC.className = "answerBtn";
+
+explanationText.innerText = "";
 
 }
 
@@ -316,6 +337,41 @@ popup.style.display="none";
 
 function sleep(ms){
 return new Promise(resolve=>setTimeout(resolve,ms));
+}
+
+function checkAnswer(choice){
+
+const correct =
+currentQuestion.correct;
+
+if(choice === correct){
+
+document
+.getElementById(
+"btn" + choice.toUpperCase()
+)
+.classList.add("correct");
+
+}else{
+
+document
+.getElementById(
+"btn" + choice.toUpperCase()
+)
+.classList.add("wrong");
+
+document
+.getElementById(
+"btn" + correct.toUpperCase()
+)
+.classList.add("correct");
+
+}
+
+explanationText.innerText =
+"Verklaring: " +
+currentQuestion.uitleg;
+
 }
 
 createBoard();
