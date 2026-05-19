@@ -183,6 +183,20 @@ uitleg: "Appelscha ligt in Zuidoost-Friesland vlak tegen de provinciegrens met D
 },
 
 {
+categorie:"Drenthe",
+
+vraag: "Welke plaats ligt het dichtst bij Assen?",
+
+a: "Boven Smilde",
+b: "Hyker Smilde",
+c: "Hooger Smilde",
+
+correct: "a",
+
+uitleg: "Boven Smilde ligt het dichtst tegen Assen aan."
+},
+
+{
 categorie:"Fryslân",
 vraag: "Welke Friese schrijver en dichter kwam uit de Stellingwerven-regio?",
 
@@ -210,6 +224,20 @@ uitleg: "Oosterwolde is bestuurlijk het centrum van Ooststellingwerf en huisvest
 },
 
 {
+categorie:"Fryslân",
+  
+vraag: "In welke plaats is de Friesche vrijheidsstrijder en volksheld Grutte Pier geboren?",
+
+a: "Haulerwijk",
+b: "Appelscha",
+c: "Kimswerd",
+
+correct: "c",
+
+uitleg: "Grutte Pier werd in 1480 in Kimswerd geboren en overleed in 1520 in Snits."
+},
+
+{
 categorie:"Groningen",
   
 vraag: "Welk natuurgebied ligt vlak bij Appelscha en staat bekend om kraanvogels?",
@@ -221,6 +249,20 @@ c: "Lauwersmeer",
 correct: "a",
 
 uitleg: "Het Fochteloërveen is een bijzonder hoogveengebied waar tegenwoordig weer kraanvogels broeden."
+},
+
+{
+categorie:"Groningen",
+  
+vraag: "Welk dorp werd in september 2011 verkozen tot "Leukste dorp van Groningen"?",
+
+a: "Zevenhuizen",
+b: "Winsum",
+c: "Niekerk",
+
+correct: "a",
+
+uitleg: "Zevenhuizen werd in 2011 verkozen tot Leukste dorp van Groningen en Niekerk in 2013. Winsum werd door de ANWB uitgeroepen tot Mooiste dorp van Nederland "
 },
 
 {
