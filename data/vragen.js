@@ -16,6 +16,20 @@ uitleg: "Appelscha is het bekendste toeristische dorp van Ooststellingwerf, onde
 
 {
 categorie:"Ooststellingwerf",
+
+vraag: "Waarom bezoeken veel mensen Appelscha tijdens vakanties?",
+
+a: "Vanwege de grote haven",
+b: "Door natuur, rust en recreatie",
+c: "Vanwege wolkenkrabbers",
+
+correct: "b",
+
+uitleg: "Appelscha staat bekend om natuurtoerisme, campings, fietsroutes en rustige recreatiegebieden."
+}
+  
+{
+categorie:"Ooststellingwerf",
   
 vraag: "In welk natuurgebied ligt Appelscha grotendeels?",
 
@@ -59,90 +73,6 @@ uitleg: "De motorcross in Appelscha is al jarenlang populair en trekt deelnemers
 {
 categorie:"Ooststellingwerf",
   
-vraag: "Welke taal of streektaal hoor je veel in Ooststellingwerf?",
-
-a: "Stellingwerfs",
-b: "Limburgs",
-c: "Twents",
-
-correct: "a",
-
-uitleg: "Het Stellingwerfs is een Nedersaksische streektaal die veel gesproken wordt in Oost- en Weststellingwerf."
-},
-
-{
-categorie:"Ooststellingwerf",
-  
-vraag: "Welke zandvlakte bij Appelscha staat bekend als een soort ‘Friese Sahara’?",
-
-a: "De Kale Duinen",
-b: "Het Fochteloërveen",
-c: "De Holtingerveldse Heide",
-
-correct: "a",
-
-uitleg: "De Kale Duinen bestaan uit stuifzandgebieden en lijken door het open zandlandschap soms op een kleine woestijn."
-},
-
-{
-categorie:"Drenthe",
-
-vraag: "Welke provincie grenst direct aan Appelscha?",
-
-a: "Groningen",
-b: "Overijssel",
-c: "Drenthe",
-
-correct: "c",
-
-uitleg: "Appelscha ligt in Zuidoost-Friesland vlak tegen de provinciegrens met Drenthe aan."
-},
-
-{
-categorie:"Fryslân",
-  
-vraag: "Welke plaats is de hoofdplaats van de gemeente Ooststellingwerf?",
-
-a: "Oosterwolde",
-b: "Appelscha",
-c: "Oldeberkoop",
-
-correct: "a",
-
-uitleg: "Oosterwolde is bestuurlijk het centrum van Ooststellingwerf en huisvest onder andere het gemeentehuis."
-},
-
-{
-categorie:"Ooststellingwerf",
-  
-vraag: "Welke bekende wielrenner woonde lange tijd in Appelscha?",
-
-a: "Joop Zoetemelk",
-b: "Johan van der Velde",
-c: "Hennie Kuiper",
-
-correct: "b",
-
-uitleg: "Johan van der Velde, voormalig profwielrenner en etappewinnaar in de Tour de France, woonde jarenlang in Appelscha."
-},
-
-{
-categorie:"Groningen",
-  
-vraag: "Welk natuurgebied ligt vlak bij Appelscha en staat bekend om kraanvogels?",
-
-a: "Fochteloërveen",
-b: "Alde Feanen",
-c: "Lauwersmeer",
-
-correct: "a",
-
-uitleg: "Het Fochteloërveen is een bijzonder hoogveengebied waar tegenwoordig weer kraanvogels broeden."
-},
-
-{
-categorie:"Ooststellingwerf",
-  
 vraag: "Welke recreatieve activiteit is populair in het Drents-Friese Wold?",
 
 a: "Gletsjerskiën",
@@ -155,31 +85,17 @@ uitleg: "Het Drents-Friese Wold heeft uitgebreide mountainbikeroutes die populai
 },
 
 {
-categorie:"Educatief",
+categorie:"Ooststellingwerf",
   
-vraag: "Welke kleur heeft de beroemde uitkijktoren van Appelscha grotendeels?",
+vraag: "Welke taal of streektaal hoor je veel in Ooststellingwerf?",
 
-a: "Rood",
-b: "Zwart",
-c: "Wit",
+a: "Stellingwerfs",
+b: "Limburgs",
+c: "Twents",
 
 correct: "a",
 
-uitleg: "De Bosbergtoren heeft opvallende rode elementen waardoor hij al van grote afstand herkenbaar is."
-},
-
-{
-categorie:"Educatief",
-  
-vraag: "Wat is een belangrijk kenmerk van de Kale Duinen?",
-
-a: "Veel hoge bergen",
-b: "Stuifzand en heide",
-c: "Grote meren",
-
-correct: "b",
-
-uitleg: "De Kale Duinen bestaan vooral uit zandverstuivingen, heidevelden en bosranden."
+uitleg: "Het Stellingwerfs is een Nedersaksische streektaal die veel gesproken wordt in Oost- en Weststellingwerf."
 },
 
 {
@@ -211,20 +127,6 @@ uitleg: "Het Buitencentrum Drents-Friese Wold organiseert excursies en geeft inf
 },
 
 {
-categorie:"Educatief",
-  
-vraag: "Welke gemeente ligt direct naast Ooststellingwerf?",
-
-a: "Westerveld",
-b: "Dantumadiel",
-c: "Waadhoeke",
-
-correct: "a",
-
-uitleg: "De Drentse gemeente Westerveld grenst direct aan Ooststellingwerf in het zuiden."
-},
-
-{
 categorie:"Ooststellingwerf",
   
 vraag: "Welke bekende sportevenementen worden regelmatig in Appelscha georganiseerd?",
@@ -239,16 +141,45 @@ uitleg: "Door de bosrijke omgeving worden in Appelscha regelmatig mountainbike- 
 },
 
 {
-categorie:"Educatief",
-vraag: "Wat maakt het Fochteloërveen internationaal bijzonder?",
+categorie:"Ooststellingwerf",
+  
+vraag: "Welke bekende wielrenner woonde lange tijd in Appelscha?",
 
-a: "Het is één van de laatste hoogveengebieden",
-b: "Het heeft actieve vulkanen",
-c: "Het ligt onder zeeniveau",
+a: "Joop Zoetemelk",
+b: "Johan van der Velde",
+c: "Hennie Kuiper",
+
+correct: "b",
+
+uitleg: "Johan van der Velde, voormalig profwielrenner en etappewinnaar in de Tour de France, woonde jarenlang in Appelscha."
+},
+  
+{
+categorie:"Ooststellingwerf",
+  
+vraag: "Welke zandvlakte bij Appelscha staat bekend als een soort ‘Friese Sahara’?",
+
+a: "De Kale Duinen",
+b: "Het Fochteloërveen",
+c: "De Holtingerveldse Heide",
 
 correct: "a",
 
-uitleg: "Het Fochteloërveen is één van de best bewaarde hoogveengebieden van West-Europa."
+uitleg: "De Kale Duinen bestaan uit stuifzandgebieden en lijken door het open zandlandschap soms op een kleine woestijn."
+},
+
+{
+categorie:"Drenthe",
+
+vraag: "Welke provincie grenst direct aan Appelscha?",
+
+a: "Groningen",
+b: "Overijssel",
+c: "Drenthe",
+
+correct: "c",
+
+uitleg: "Appelscha ligt in Zuidoost-Friesland vlak tegen de provinciegrens met Drenthe aan."
 },
 
 {
@@ -263,19 +194,88 @@ correct: "a",
 
 uitleg: "Fedde Schurer was een bekende Friese schrijver, dichter en journalist met sterke banden met Zuidoost-Friesland."
 },
+  
+{
+categorie:"Fryslân",
+  
+vraag: "Welke plaats is de hoofdplaats van de gemeente Ooststellingwerf?",
+
+a: "Oosterwolde",
+b: "Appelscha",
+c: "Oldeberkoop",
+
+correct: "a",
+
+uitleg: "Oosterwolde is bestuurlijk het centrum van Ooststellingwerf en huisvest onder andere het gemeentehuis."
+},
 
 {
-categorie:"Ooststellingwerf",
+categorie:"Groningen",
+  
+vraag: "Welk natuurgebied ligt vlak bij Appelscha en staat bekend om kraanvogels?",
 
-vraag: "Waarom bezoeken veel mensen Appelscha tijdens vakanties?",
+a: "Fochteloërveen",
+b: "Alde Feanen",
+c: "Lauwersmeer",
 
-a: "Vanwege de grote haven",
-b: "Door natuur, rust en recreatie",
-c: "Vanwege wolkenkrabbers",
+correct: "a",
+
+uitleg: "Het Fochteloërveen is een bijzonder hoogveengebied waar tegenwoordig weer kraanvogels broeden."
+},
+
+{
+categorie:"Educatief",
+  
+vraag: "Welke kleur heeft de beroemde uitkijktoren van Appelscha grotendeels?",
+
+a: "Rood",
+b: "Zwart",
+c: "Wit",
+
+correct: "a",
+
+uitleg: "De Bosbergtoren heeft opvallende rode elementen waardoor hij al van grote afstand herkenbaar is."
+},
+
+{
+categorie:"Educatief",
+  
+vraag: "Wat is een belangrijk kenmerk van de Kale Duinen?",
+
+a: "Veel hoge bergen",
+b: "Stuifzand en heide",
+c: "Grote meren",
 
 correct: "b",
 
-uitleg: "Appelscha staat bekend om natuurtoerisme, campings, fietsroutes en rustige recreatiegebieden."
-}
+uitleg: "De Kale Duinen bestaan vooral uit zandverstuivingen, heidevelden en bosranden."
+},
+
+{
+categorie:"Educatief",
+  
+vraag: "Welke gemeente ligt direct naast Ooststellingwerf?",
+
+a: "Westerveld",
+b: "Dantumadiel",
+c: "Waadhoeke",
+
+correct: "a",
+
+uitleg: "De Drentse gemeente Westerveld grenst direct aan Ooststellingwerf in het zuiden."
+},
+
+{
+categorie:"Educatief",
+vraag: "Wat maakt het Fochteloërveen internationaal bijzonder?",
+
+a: "Het is één van de laatste hoogveengebieden",
+b: "Het heeft actieve vulkanen",
+c: "Het ligt onder zeeniveau",
+
+correct: "a",
+
+uitleg: "Het Fochteloërveen is één van de best bewaarde hoogveengebieden van West-Europa."
+},
 
 ];
