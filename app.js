@@ -1,19 +1,15 @@
 let currentTeam = 0;
 
-let positions = [0, 0, 0, 0];
-
-let skipTurns = [0, 0, 0, 0];
+let positions = [0,0,0,0];
 
 let currentRoll = 0;
 
 let selectedCategory = "Ooststellingwerf";
 
-let gameStarted = false;
-
 let currentQuestion = null;
 
 
-// DOM ELEMENTEN
+// ELEMENTEN
 const board = document.getElementById("board");
 const turnText = document.getElementById("turn");
 const diceText = document.getElementById("diceResult");
@@ -23,6 +19,7 @@ const answerButtons = document.getElementById("answerButtons");
 const explanationText = document.getElementById("explanation");
 
 const categorySelect = document.getElementById("categorySelect");
+const activeCategory = document.getElementById("activeCategory");
 
 const screen1 = document.getElementById("screen1");
 const screen2 = document.getElementById("screen2");
@@ -33,236 +30,176 @@ const screen3 = document.getElementById("screen3");
 const soundDice = new Audio("public/sounds/dice.mp3");
 const soundCorrect = new Audio("public/sounds/correct.mp3");
 const soundWrong = new Audio("public/sounds/wrong.mp3");
-const soundGans = new Audio("public/sounds/gans.mp3");
-const soundFinish = new Audio("public/sounds/finish.mp3");
 
 
-// SPECIALE VAKKEN
+// SPECIALS
 const specialTiles = {
-  6: "gans",
-  12: "gans",
-  18: "herberg",
-  19: "put",
-  25: "skip",
-  31: "brug",
-  37: "gans",
-  52: "gevangenis",
-  79: "put",
-  95: "put",
-  111: "gevangenis",
-  140: "finish"
+6:"gans",
+12:"gans",
+18:"herberg",
+19:"put",
+25:"skip",
+31:"brug",
+37:"gans",
+52:"gevangenis",
+79:"put",
+95:"put",
+111:"gevangenis",
+140:"finish"
 };
 
 
-// BORD MAKEN
-for (let i = 1; i <= 140; i++) {
-  const cell = document.createElement("div");
-  cell.classList.add("cell");
+// BOARD
+for(let i=1;i<=140;i++){
 
-  if (specialTiles[i]) {
-    cell.classList.add("special");
-    cell.innerHTML = i;
-  } else {
-    cell.innerHTML = i;
-  }
+const cell = document.createElement("div");
+cell.classList.add("cell");
 
-  board.appendChild(cell);
+if(specialTiles[i]){
+cell.classList.add("special");
+cell.innerText = i;
+} else {
+cell.innerText = i;
+}
+
+board.appendChild(cell);
 }
 
 
-// CATEGORIE SELECTIE
-categorySelect.addEventListener("change", function () {
-  if (gameStarted) return;
-  selectedCategory = categorySelect.value;
+// CATEGORIE
+categorySelect.addEventListener("change", () => {
+selectedCategory = categorySelect.value;
+updateCategory();
 });
+
+function updateCategory(){
+activeCategory.innerText = "Categorie: " + selectedCategory;
+}
 
 
 // DOBBELEN
-function rollDice() {
+function rollDice(){
 
-  currentRoll = Math.floor(Math.random() * 6) + 1;
+currentRoll = Math.floor(Math.random()*6)+1;
 
-  diceText.innerText = "🎲 Gegooid: " + currentRoll;
+diceText.innerText = "🎲 " + currentRoll;
 
-  soundDice.play();
+soundDice.play();
 
-  gameStarted = true;
+showScreen(2);
 
-  categorySelect.disabled = true;
-
-  showScreen(2);
-
-  loadQuestion();
+loadQuestion();
 }
 
 
-// VRAGEN LADEN
-function loadQuestion() {
+// VRAGEN
+function loadQuestion(){
 
-  const pool = vragen.filter(q => q.categorie === selectedCategory);
+const pool = vragen.filter(q => q.categorie === selectedCategory);
 
-  currentQuestion = pool[Math.floor(Math.random() * pool.length)];
+currentQuestion = pool[Math.floor(Math.random()*pool.length)];
 
-  questionText.innerText = currentQuestion.vraag;
+questionText.innerText = currentQuestion.vraag;
 
-  answerButtons.innerHTML = "";
+answerButtons.innerHTML = "";
 
-  const options = [
-    { key: "a", text: currentQuestion.a },
-    { key: "b", text: currentQuestion.b },
-    { key: "c", text: currentQuestion.c }
-  ];
+["a","b","c"].forEach(key => {
 
-  options.forEach(opt => {
+const btn = document.createElement("button");
+btn.className = "answerButton";
 
-    const btn = document.createElement("button");
-    btn.classList.add("answerButton");
+btn.innerText = key.toUpperCase() + ") " + currentQuestion[key];
 
-    btn.innerText = opt.key.toUpperCase() + ") " + opt.text;
+btn.onclick = () => checkAnswer(key);
 
-    btn.onclick = () => checkAnswer(opt.key, btn);
+answerButtons.appendChild(btn);
 
-    answerButtons.appendChild(btn);
-  });
+});
 
-  explanationText.innerText = "";
+explanationText.innerText = "";
 }
 
 
-// ANTWOORD CONTROLEREN
-function checkAnswer(choice, btn) {
+// ANTWOORD
+function checkAnswer(choice){
 
-  const buttons = document.querySelectorAll(".answerButton");
+const buttons = document.querySelectorAll(".answerButton");
 
-  buttons.forEach(b => b.disabled = true);
+buttons.forEach(b => b.disabled = true);
 
-  buttons.forEach(b => {
+buttons.forEach(b => {
+if(b.innerText.startsWith(currentQuestion.correct.toUpperCase())){
+b.style.background = "green";
+}
+});
 
-    if (b.innerText.startsWith(currentQuestion.correct.toUpperCase())) {
-      b.style.background = "green";
-    }
-
-    if (b === btn && choice !== currentQuestion.correct) {
-      b.style.background = "red";
-    }
-  });
-
-  explanationText.innerText = currentQuestion.uitleg;
-
-  if (choice === currentQuestion.correct) {
-
-    soundCorrect.play();
-
-    setTimeout(() => {
-      movePlayer();
-    }, 2000);
-
-  } else {
-
-    soundWrong.play();
-
-    setTimeout(() => {
-      nextTurn();
-      showScreen(1);
-    }, 2000);
-  }
+if(choice === currentQuestion.correct){
+soundCorrect.play();
+setTimeout(movePlayer,1500);
+} else {
+soundWrong.play();
+setTimeout(nextTurn,1500);
+}
 }
 
 
-// SPELER VERPLAATSEN
-async function movePlayer() {
+// BEWEGEN
+function movePlayer(){
 
-  showScreen(3);
+showScreen(3);
 
-  for (let i = 0; i < currentRoll; i++) {
-    positions[currentTeam]++;
-    updateBoard();
-    await sleep(200);
-  }
+for(let i=0;i<currentRoll;i++){
+positions[currentTeam]++;
+updateBoard();
+}
 
-  handleSpecial();
+nextTurn();
 }
 
 
-// SPECIALE VAKKEN
-function handleSpecial() {
+// BOARD UPDATE
+function updateBoard(){
 
-  const tile = specialTiles[positions[currentTeam]];
+const cells = document.querySelectorAll(".cell");
 
-  if (tile === "gans") {
-    soundGans.play();
-    positions[currentTeam] += 6;
-  }
+cells.forEach(c=>{
+c.innerHTML = c.innerHTML.replace(/🔴|🔵|🟢|🟡/g,"");
+});
 
-  if (tile === "skip") {
-    skipTurns[currentTeam] = 1;
-  }
+const icons = ["🔴","🔵","🟢","🟡"];
 
-  if (tile === "gevangenis") {
-    skipTurns[currentTeam] = 2;
-  }
-
-  if (tile === "finish") {
-    soundFinish.play();
-    alert("Team wint!");
-    return;
-  }
-
-  setTimeout(() => {
-    nextTurn();
-    showScreen(1);
-  }, 1500);
+positions.forEach((pos,i)=>{
+if(pos>0 && cells[pos-1]){
+cells[pos-1].innerHTML += "<br>"+icons[i];
+}
+});
 }
 
 
-// VOLGENDE BEURT
-function nextTurn() {
-  currentTeam++;
+// TURN
+function nextTurn(){
 
-  if (currentTeam > 3) currentTeam = 0;
+currentTeam++;
+if(currentTeam>3) currentTeam=0;
 
-  turnText.innerText = "Team " + (currentTeam + 1) + " is aan de beurt";
-}
-
-
-// BORD UPDATE
-function updateBoard() {
-
-  const cells = document.querySelectorAll(".cell");
-
-  cells.forEach(c => {
-    c.innerHTML = c.innerHTML.replace(/🔴|🔵|🟢|🟡/g, "");
-  });
-
-  const icons = ["🔴", "🔵", "🟢", "🟡"];
-
-  positions.forEach((pos, i) => {
-    if (pos > 0 && cells[pos - 1]) {
-      cells[pos - 1].innerHTML += "<br>" + icons[i];
-    }
-  });
+turnText.innerText = "Team " + (currentTeam+1);
+showScreen(1);
 }
 
 
 // SCHERMEN
-function showScreen(n) {
+function showScreen(n){
 
-  screen1.style.display = "none";
-  screen2.style.display = "none";
-  screen3.style.display = "none";
+screen1.classList.remove("active");
+screen2.classList.remove("active");
+screen3.classList.remove("active");
 
-  if (n === 1) screen1.style.display = "block";
-  if (n === 2) screen2.style.display = "block";
-  if (n === 3) screen3.style.display = "block";
-}
-
-
-// WACHTEN
-function sleep(ms) {
-  return new Promise(res => setTimeout(res, ms));
+if(n===1) screen1.classList.add("active");
+if(n===2) screen2.classList.add("active");
+if(n===3) screen3.classList.add("active");
 }
 
 
 // START
-updateBoard();
+updateCategory();
 showScreen(1);
