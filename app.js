@@ -1,5 +1,5 @@
-let currentTeam = 0;
-let positions = [0,0,0,0];
+let currentTeam = 1;
+let positions = [0, 0, 0, 0];
 
 let currentRoll = 0;
 let selectedCategory = "Ooststellingwerf";
@@ -8,7 +8,6 @@ let currentQuestion = null;
 
 // ELEMENTEN
 const board = document.getElementById("board");
-
 const turnText = document.getElementById("turn");
 const diceText = document.getElementById("diceResult");
 
@@ -23,13 +22,15 @@ const screen2 = document.getElementById("screen2");
 const screen3 = document.getElementById("screen3");
 
 
-// GELUIDEN (controleer pad!)
+// GELUIDEN (jouw structuur behouden!)
 const soundDice = new Audio("public/sounds/dice.mp3");
 const soundCorrect = new Audio("public/sounds/correct.mp3");
 const soundWrong = new Audio("public/sounds/wrong.mp3");
+const soundGans = new Audio("public/sounds/gans.mp3");
+const soundFinish = new Audio("public/sounds/finish.mp3");
 
 
-// SPECIALS
+// SPECIAL TILES (zoals jij had)
 const specialTiles = {
 6:"gans",
 12:"gans",
@@ -47,7 +48,7 @@ const specialTiles = {
 
 
 // ======================
-// SCHERM FUNCTIE (CRUCIAAL)
+// SCHERMEN (BELANGRIJK HERSTEL)
 // ======================
 function showScreen(n){
 
@@ -66,7 +67,9 @@ if(n === 3) screen3.style.display = "block";
 showScreen(1);
 
 
+// ======================
 // CATEGORIE
+// ======================
 categorySelect.addEventListener("change", () => {
 selectedCategory = categorySelect.value;
 });
@@ -77,13 +80,12 @@ selectedCategory = categorySelect.value;
 // ======================
 function rollDice(){
 
-currentRoll = Math.floor(Math.random()*6)+1;
+currentRoll = Math.floor(Math.random() * 6) + 1;
 
-diceText.innerText = "🎲 Gegooid: " + currentRoll;
+diceText.innerText = "🎲 Je gooide: " + currentRoll;
 
 soundDice.play();
 
-// altijd naar vraag scherm
 showScreen(2);
 
 loadQuestion();
@@ -100,21 +102,21 @@ q.categorie === selectedCategory
 );
 
 currentQuestion =
-pool[Math.floor(Math.random()*pool.length)];
+pool[Math.floor(Math.random() * pool.length)];
 
 questionText.innerText = currentQuestion.vraag;
 
 answerButtons.innerHTML = "";
 
-["a","b","c"].forEach(key => {
+["a","b","c"].forEach(k => {
 
 const btn = document.createElement("button");
 
 btn.className = "answerButton";
 
-btn.innerText = key.toUpperCase() + ") " + currentQuestion[key];
+btn.innerText = k.toUpperCase() + ") " + currentQuestion[k];
 
-btn.onclick = () => checkAnswer(key);
+btn.onclick = () => checkAnswer(k);
 
 answerButtons.appendChild(btn);
 
@@ -125,7 +127,7 @@ explanationText.innerText = "";
 
 
 // ======================
-// ANTWOORD CHECK
+// ANTWOORD
 // ======================
 function checkAnswer(choice){
 
@@ -147,21 +149,15 @@ if(choice === currentQuestion.correct){
 
 soundCorrect.play();
 
-setTimeout(() => {
-
-movePlayer();
-
-}, 1200);
+setTimeout(() => movePlayer(), 1200);
 
 }else{
 
 soundWrong.play();
 
 setTimeout(() => {
-
 nextTurn();
 showScreen(1);
-
 }, 1200);
 
 }
@@ -170,44 +166,71 @@ showScreen(1);
 
 
 // ======================
-// VERPLAATSEN (BELANGRIJK)
+// VERPLAATSEN (jouw oude flow)
 // ======================
 function movePlayer(){
 
 showScreen(3);
 
 for(let i=0;i<currentRoll;i++){
+
 positions[currentTeam]++;
 updateBoard();
+
 }
 
-setTimeout(() => {
 
-nextTurn();
-showScreen(1);
-
-}, 800);
+// special tile check
+handleSpecial();
 
 }
 
 
 // ======================
-// BOARD UPDATE
+// SPECIAL TILES (HERSTELD LOGISCH)
+// ======================
+function handleSpecial(){
+
+let pos = positions[currentTeam];
+let tile = specialTiles[pos];
+
+if(tile === "gans"){
+soundGans.play();
+positions[currentTeam] += 6;
+updateBoard();
+}
+
+if(tile === "finish"){
+soundFinish.play();
+alert("Team wint!");
+return;
+}
+
+setTimeout(() => {
+nextTurn();
+showScreen(1);
+}, 1200);
+
+}
+
+
+// ======================
+// BOARD UPDATE (BELANGRIJK HERSTEL)
 // ======================
 function updateBoard(){
 
 const cells = document.querySelectorAll(".cell");
 
+const icons = ["🔴","🔵","🟢","🟡"];
+
 cells.forEach(c => {
 c.innerHTML = c.innerHTML.replace(/🔴|🔵|🟢|🟡/g,"");
 });
 
-const icons = ["🔴","🔵","🟢","🟡"];
-
 positions.forEach((pos,i)=>{
 
-if(pos>0 && cells[pos-1]){
-cells[pos-1].innerHTML += "<br>"+icons[i];
+if(pos > 0 && cells[pos-1]){
+cells[pos-1].innerHTML += "<br>" + icons[i];
 }
 
 });
@@ -216,16 +239,18 @@ cells[pos-1].innerHTML += "<br>"+icons[i];
 
 
 // ======================
-// TURN
+// VOLGENDE BEURT
 // ======================
 function nextTurn(){
 
 currentTeam++;
 
-if(currentTeam > 3) currentTeam = 0;
+if(currentTeam > 3){
+currentTeam = 0;
+}
 
 turnText.innerText =
-"Team " + (currentTeam+1) + " is aan de beurt";
+"Team " + (currentTeam + 1) + " is aan de beurt";
 
 }
 
@@ -233,10 +258,6 @@ turnText.innerText =
 // ======================
 // INIT BOARD (BELANGRIJK)
 // ======================
-function initBoard(){
-
-board.innerHTML = "";
-
 for(let i=1;i<=140;i++){
 
 const cell = document.createElement("div");
@@ -245,15 +266,10 @@ cell.className = "cell";
 
 if(specialTiles[i]){
 cell.classList.add("special");
-cell.innerText = i;
-}else{
-cell.innerText = i;
 }
+
+cell.innerText = i;
 
 board.appendChild(cell);
-}
 
 }
-
-initBoard();
-updateBoard();
