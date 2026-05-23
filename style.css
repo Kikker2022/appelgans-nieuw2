@@ -1,17 +1,17 @@
 body {
 margin: 0;
-font-family: Arial;
+font-family: Arial, sans-serif;
 background: #dff5df;
 text-align: center;
+}
+
+h1 {
+margin: 10px 0;
 }
 
 .screen {
 display: none;
 padding: 10px;
-}
-
-.screen.active {
-display: block;
 }
 
 #board {
@@ -20,27 +20,52 @@ grid-template-columns: repeat(8, 1fr);
 gap: 2px;
 max-width: 100vw;
 margin: 10px auto;
+padding: 5px;
 }
 
 .cell {
+height: 38px;
+border: 1px solid #666;
 background: #c8efc8;
-border: 1px solid #888;
-height: 40px;
 font-size: 10px;
 display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+font-weight: bold;
 }
 
 .special {
 background: #ffe066;
 }
 
+/* TEAMS */
+.team0 {
+background: #ff4d4d;
+}
+
+.team1 {
+background: #4da6ff;
+}
+
+.team2 {
+background: #4dff88;
+}
+
+.team3 {
+background: #ffd24d;
+}
+
+
+/* KNOPPEN */
 button {
 padding: 12px;
 font-size: 16px;
 margin: 8px;
+border: none;
+border-radius: 8px;
+background: #2e8b57;
+color: white;
 }
 
 .answerButton {
@@ -52,13 +77,15 @@ font-size: 16px;
 background: #4682b4;
 color: white;
 border: none;
+border-radius: 6px;
+}
+
+#question {
+font-size: 20px;
+margin: 10px;
 }
 
 #explanation {
 margin-top: 10px;
 font-size: 16px;
-}
-
-#diceResult {
-font-weight: bold;
 }
