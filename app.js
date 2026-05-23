@@ -1,79 +1,36 @@
 let currentTeam = 0;
 
-let selectedCategory =
-"Ooststellingwerf";
+let positions = [0, 0, 0, 0];
 
-let lastRoll = 0;
+let skipTurns = [0, 0, 0, 0];
+
+let currentRoll = 0;
+
+let selectedCategory = "Ooststellingwerf";
+
+let gameStarted = false;
+
 let currentQuestion = null;
 
-const TOTAL_CELLS = 140;
+const board = document.getElementById("board");
 
-/* ===== TEAMS ===== */
+const turnText = document.getElementById("turn");
 
-const teams = [
-{
-name: "Blauw",
-color: "blue",
-icon: "🔵",
-position: 0,
-skipTurns: 0
-},
-{
-name: "Rood",
-color: "red",
-icon: "🔴",
-position: 0,
-skipTurns: 0
-},
-{
-name: "Groen",
-color: "green",
-icon: "🟢",
-position: 0,
-skipTurns: 0
-},
-{
-name: "Paars",
-color: "purple",
-icon: "🟣",
-position: 0,
-skipTurns: 0
-}
-];
+const diceText = document.getElementById("diceResult");
 
-/* ===== HTML ===== */
+const questionText = document.getElementById("question");
 
-const board =
-document.getElementById("board");
-
-const turnText =
-document.getElementById("turn");
-
-const diceText =
-document.getElementById("diceResult");
-
-const statusMessage =
-document.getElementById("statusMessage");
-
-const questionText =
-document.getElementById("question");
+const answerButtons =
+document.getElementById("answerButtons");
 
 const explanationText =
 document.getElementById("explanation");
 
-const btnA =
-document.getElementById("btnA");
+const activeCategory =
+document.getElementById("activeCategory");
 
-const btnB =
-document.getElementById("btnB");
-
-const btnC =
-document.getElementById("btnC");
-
-const popup =
-document.getElementById("popup");
-
-/* ===== SCHERMEN ===== */
+const categorySelect =
+document.getElementById("categorySelect");
 
 const screen1 =
 document.getElementById("screen1");
@@ -84,432 +41,512 @@ document.getElementById("screen2");
 const screen3 =
 document.getElementById("screen3");
 
-/* ===== GELUIDEN ===== */
+
+
+// GELUIDEN
+
+const soundDice =
+new Audio("sounds/dice.mp3");
+
+const soundCorrect =
+new Audio("sounds/correct.mp3");
+
+const soundWrong =
+new Audio("sounds/wrong.mp3");
 
 const soundGans =
-new Audio("public/gans.mp3");
+new Audio("sounds/gans.mp3");
 
-const soundBridge =
-new Audio("public/brug.mp3");
+const soundBrug =
+new Audio("sounds/brug.mp3");
 
 const soundPut =
-new Audio("public/put.mp3");
+new Audio("sounds/put.mp3");
 
 const soundPrison =
-new Audio("public/gevangenis.mp3");
+new Audio("sounds/gevangenis.mp3");
 
-const soundInn =
-new Audio("public/herberg.mp3");
+const soundHerberg =
+new Audio("sounds/herberg.mp3");
 
-const soundWin =
-new Audio("public/finish.mp3");
+const soundFinish =
+new Audio("sounds/finish.mp3");
 
-/* ===== SPECIALE VAKKEN ===== */
+
+
+// SPECIALE VAKKEN
 
 const specialTiles = {
 
-6:"gans",
-12:"gans",
-18:"brug",
-25:"herberg",
-31:"gans",
-37:"brug",
-42:"gans",
-52:"gevangenis",
-58:"gans",
-63:"gans",
-79:"brug",
-80:"gans",
-95:"put",
-101:"gans",
-111:"gevangenis",
-119:"gans",
-130:"gans",
-140:"finish"
+6: "gans",
+12: "gans",
+18: "herberg",
+19: "put",
+25: "beurtoverslaan",
+31: "brug",
+37: "gans",
+52: "gevangenis",
+79: "put",
+95: "put",
+111: "gevangenis",
+140: "finish"
 
 };
 
-/* ===== HULPFUNCTIES ===== */
 
-function sleep(ms){
-return new Promise(resolve =>
-setTimeout(resolve, ms));
-}
 
-function showScreen(screen){
+// BORD MAKEN
 
-screen1.classList.add("hidden");
-screen2.classList.add("hidden");
-screen3.classList.add("hidden");
-
-screen.classList.remove("hidden");
-
-}
-
-function showPopup(text){
-
-popup.innerText = text;
-popup.style.display = "block";
-
-setTimeout(()=>{
-popup.style.display = "none";
-},3000);
-
-}
-
-/* ===== BORD MAKEN ===== */
-
-for(let i=1; i<=TOTAL_CELLS; i++){
+for(let i = 1; i <= 140; i++) {
 
 const cell =
 document.createElement("div");
 
 cell.classList.add("cell");
 
-if(specialTiles[i]){
 
-cell.classList.add(
-specialTiles[i]
-);
+
+if(specialTiles[i]) {
+
+cell.classList.add("special");
+
+
+
+if(specialTiles[i] === "gans") {
+
+cell.classList.add("gans");
+
+cell.innerHTML = i + "<br>🪿";
 
 }
 
-let icon = "";
 
-if(specialTiles[i] === "gans"){
-icon = "🪿";
+
+else if(specialTiles[i] === "brug") {
+
+cell.classList.add("brug");
+
+cell.innerHTML = i + "<br>🌉";
+
 }
 
-if(specialTiles[i] === "brug"){
-icon = "🌉";
+
+
+else if(specialTiles[i] === "put") {
+
+cell.classList.add("put");
+
+cell.innerHTML = i + "<br>🕳️";
+
 }
 
-if(specialTiles[i] === "put"){
-icon = "🕳";
+
+
+else if(specialTiles[i] === "gevangenis") {
+
+cell.classList.add("gevangenis");
+
+cell.innerHTML = i + "<br>⛓️";
+
 }
 
-if(specialTiles[i] === "gevangenis"){
-icon = "🔒";
+
+
+else if(specialTiles[i] === "herberg") {
+
+cell.classList.add("herberg");
+
+cell.innerHTML = i + "<br>🍺";
+
 }
 
-if(specialTiles[i] === "herberg"){
-icon = "🍺";
+
+
+else if(specialTiles[i] === "beurtoverslaan") {
+
+cell.classList.add("overslaan");
+
+cell.innerHTML = i + "<br>⏭️";
+
 }
 
-if(specialTiles[i] === "finish"){
-icon = "🏁";
+
+
+else if(specialTiles[i] === "finish") {
+
+cell.classList.add("finish");
+
+cell.innerHTML = i + "<br>🏆";
+
 }
 
-cell.innerHTML =
-`
-<div>${i}</div>
-<span>${icon}</span>
-<div class="pawns"></div>
-`;
+}
+
+
+
+else {
+
+cell.innerHTML = i;
+
+}
+
+
 
 board.appendChild(cell);
 
 }
 
-/* ===== UPDATE BORD ===== */
 
-function updateBoard(){
 
-const pawns =
-document.querySelectorAll(".pawns");
+updateBoard();
 
-pawns.forEach(p=>{
-p.innerHTML = "";
-});
+updateCategoryDisplay();
 
-teams.forEach(team=>{
+showScreen(1);
 
-if(team.position > 0){
 
-const cell =
-document.querySelectorAll(".cell")
-[team.position - 1];
 
-const pawn =
-document.createElement("div");
+// CATEGORIE WIJZIGEN
 
-pawn.classList.add(
-"pawn",
-team.color
+categorySelect.addEventListener(
+"change",
+
+function(){
+
+if(gameStarted) return;
+
+selectedCategory =
+categorySelect.value;
+
+updateCategoryDisplay();
+
+}
+
 );
 
-cell
-.querySelector(".pawns")
-.appendChild(pawn);
 
-}
 
-});
+// DOBBELEN
 
-}
+function rollDice() {
 
-/* ===== BEURT ===== */
+if(skipTurns[currentTeam] > 0){
 
-function updateTurn(){
+skipTurns[currentTeam]--;
 
-const team =
-teams[currentTeam];
+alert(
+"Dit team moet een beurt overslaan."
+);
 
-turnText.innerText =
-team.icon + " is aan de beurt";
-
-}
-
-function nextTurn(){
-
-currentTeam++;
-
-if(currentTeam >= teams.length){
-currentTeam = 0;
-}
-
-const team =
-teams[currentTeam];
-
-if(team.skipTurns > 0){
-
-team.skipTurns--;
-
-statusMessage.innerText =
-team.icon +
-" moet een beurt overslaan.";
-
-nextTurn();
+nextTeam();
 
 return;
 
 }
 
-diceText.innerText = "";
-updateTurn();
+
+
+if(!gameStarted){
+
+gameStarted = true;
+
+lockCategory();
 
 }
 
-/* ===== DOBBELEN ===== */
 
-function rollDice(){
 
-const roll =
+currentRoll =
 Math.floor(Math.random() * 6) + 1;
 
-lastRoll = roll;
+
+
+soundDice.play();
+
+
 
 diceText.innerText =
-"🎲 Je gooide: " + roll;
+"🎲 Gegooid: " +
+currentRoll;
 
-statusMessage.innerText = "";
 
-setTimeout(()=>{
 
-showScreen(screen2);
+showScreen(2);
+
+
 
 loadQuestion();
 
-},1500);
-
 }
 
-/* ===== VRAGEN ===== */
 
-function loadQuestion(){
 
-const actieveVragen =
+// VRAGEN LADEN
+
+function loadQuestion() {
+
+const filteredQuestions =
 vragen.filter(
-v => v.categorie === selectedCategory
+
+q =>
+q.categorie ===
+selectedCategory
+
 );
 
-const q =
-actieveVragen[
+
+
+currentQuestion =
+filteredQuestions[
 Math.floor(
 Math.random() *
-actieveVragen.length
+filteredQuestions.length
 )
 ];
 
-currentQuestion = q;
+
 
 questionText.innerText =
-q.vraag;
+currentQuestion.vraag;
 
-btnA.innerText =
-"A: " + q.a;
 
-btnB.innerText =
-"B: " + q.b;
 
-btnC.innerText =
-"C: " + q.c;
+answerButtons.innerHTML = "";
 
-btnA.className =
-"answerBtn";
 
-btnB.className =
-"answerBtn";
 
-btnC.className =
-"answerBtn";
+const answers = [
 
-btnA.disabled = false;
-btnB.disabled = false;
-btnC.disabled = false;
+{
+key:"a",
+text:currentQuestion.a
+},
+
+{
+key:"b",
+text:currentQuestion.b
+},
+
+{
+key:"c",
+text:currentQuestion.c
+}
+
+];
+
+
+
+answers.forEach(answer => {
+
+const button =
+document.createElement("button");
+
+button.classList.add(
+"answerButton"
+);
+
+button.innerText =
+answer.key +
+") " +
+answer.text;
+
+
+
+button.onclick =
+function(){
+
+checkAnswer(
+answer.key,
+button
+);
+
+};
+
+
+
+answerButtons.appendChild(
+button
+);
+
+});
+
+
 
 explanationText.innerText = "";
 
 }
 
-/* ===== ANTWOORD CONTROLEREN ===== */
 
-async function checkAnswer(choice){
 
-btnA.disabled = true;
-btnB.disabled = true;
-btnC.disabled = true;
+// ANTWOORD CONTROLEREN
 
-const correct =
-currentQuestion.correct;
+function checkAnswer(
+chosen,
+clickedButton
+){
 
-if(choice === correct){
+const buttons =
+document.querySelectorAll(
+".answerButton"
+);
 
-document
-.getElementById(
-"btn" + choice.toUpperCase()
+
+
+buttons.forEach(button => {
+
+button.disabled = true;
+
+});
+
+
+
+buttons.forEach(button => {
+
+if(
+button.innerText.startsWith(
+currentQuestion.correct
 )
-.classList.add("correct");
+){
+
+button.style.background =
+"green";
+
+}
+
+
+
+else if(button === clickedButton){
+
+button.style.background =
+"red";
+
+}
+
+});
+
+
 
 explanationText.innerText =
-"✅ Goed! " +
 currentQuestion.uitleg;
 
-await sleep(2500);
 
-showScreen(screen3);
 
-const team =
-teams[currentTeam];
+if(
+chosen ===
+currentQuestion.correct
+){
 
-/* langzaam bewegen */
+soundCorrect.play();
 
-for(let i=0; i<lastRoll; i++){
 
-if(team.position < TOTAL_CELLS){
 
-team.position++;
+setTimeout(function(){
+
+movePlayer();
+
+}, 2500);
+
+}
+
+
+
+else {
+
+soundWrong.play();
+
+
+
+setTimeout(function(){
+
+nextTeam();
+
+showScreen(1);
+
+}, 2500);
+
+}
+
+}
+
+
+
+// SPELER VERPLAATSEN
+
+async function movePlayer(){
+
+showScreen(3);
+
+
+
+for(
+let i = 0;
+i < currentRoll;
+i++
+){
+
+positions[currentTeam]++;
+
+
 
 updateBoard();
+
+
 
 await sleep(350);
 
 }
 
+
+
+handleSpecialTile();
+
 }
 
-/* speciale vakken */
 
-await handleSpecial(team);
 
-/* gewonnen */
+// SPECIALE VAKKEN
 
-if(team.position >= TOTAL_CELLS){
+async function handleSpecialTile(){
 
-soundWin.play();
+let pos =
+positions[currentTeam];
 
-showPopup(
-team.icon +
-" heeft gewonnen!"
-);
+let tile =
+specialTiles[pos];
+
+
+
+if(!tile){
+
+finishTurn();
 
 return;
 
 }
 
-/* volgende beurt */
 
-nextTurn();
 
-setTimeout(()=>{
+// GANS
 
-showScreen(screen1);
-
-},3500);
-
-}else{
-
-document
-.getElementById(
-"btn" + choice.toUpperCase()
-)
-.classList.add("wrong");
-
-document
-.getElementById(
-"btn" + correct.toUpperCase()
-)
-.classList.add("correct");
-
-explanationText.innerText =
-"❌ Fout! " +
-currentQuestion.uitleg;
-
-setTimeout(()=>{
-
-nextTurn();
-
-showScreen(screen1);
-
-},3500);
-
-}
-
-}
-
-/* ===== SPECIALE VAKKEN ===== */
-
-async function handleSpecial(team){
-
-const type =
-specialTiles[team.position];
-
-if(!type){
-return;
-}
-
-const categorySelect =
-document.getElementById(
-"categorySelect"
-);
-
-categorySelect.addEventListener(
-"change",
-function(){
-
-selectedCategory =
-categorySelect.value;
-
-}
-);
-  
-/* GANS */
-
-if(type === "gans"){
+if(tile === "gans"){
 
 soundGans.play();
 
-statusMessage.innerText =
-team.icon +
-" landde op een gans! +6";
 
-await sleep(1500);
 
-for(let i=0; i<6; i++){
+showMessage(
+"🪿 Gans! Ga 6 vakjes vooruit!"
+);
 
-if(team.position < TOTAL_CELLS){
 
-team.position++;
+
+await sleep(2500);
+
+
+
+for(let i=0;i<6;i++){
+
+positions[currentTeam]++;
 
 updateBoard();
 
@@ -519,78 +556,317 @@ await sleep(350);
 
 }
 
-}
 
-/* BRUG */
 
-if(type === "brug"){
+// BRUG
 
-soundBridge.play();
+if(tile === "brug"){
 
-statusMessage.innerText =
-team.icon +
-" over de brug naar vak 30!";
+soundBrug.play();
 
-await sleep(2000);
 
-while(team.position < 30){
 
-team.position++;
+showMessage(
+"🌉 Brug! Ga naar vak 30!"
+);
+
+
+
+await sleep(2500);
+
+
+
+while(
+positions[currentTeam] < 30
+){
+
+positions[currentTeam]++;
 
 updateBoard();
 
-await sleep(250);
+await sleep(200);
 
 }
 
 }
 
-/* HERBERG */
 
-if(type === "herberg"){
 
-soundInn.play();
+// PUT
 
-team.skipTurns = 1;
-
-statusMessage.innerText =
-team.icon +
-" moet 1 beurt overslaan.";
-
-}
-
-/* PUT */
-
-if(type === "put"){
+if(tile === "put"){
 
 soundPut.play();
 
-team.skipTurns = 1;
 
-statusMessage.innerText =
-team.icon +
-" zit in de put!";
+
+skipTurns[currentTeam] = 1;
+
+
+
+showMessage(
+"🕳️ In de put! 1 beurt overslaan."
+);
 
 }
 
-/* GEVANGENIS */
 
-if(type === "gevangenis"){
+
+// GEVANGENIS
+
+if(tile === "gevangenis"){
 
 soundPrison.play();
 
-team.skipTurns = 2;
 
-statusMessage.innerText =
-team.icon +
-" zit in de gevangenis!";
+
+skipTurns[currentTeam] = 2;
+
+
+
+showMessage(
+"⛓️ Gevangenis! 2 beurten overslaan."
+);
+
+}
+
+
+
+// HERBERG
+
+if(tile === "herberg"){
+
+soundHerberg.play();
+
+
+
+skipTurns[currentTeam] = 1;
+
+
+
+showMessage(
+"🍺 Herberg! 1 beurt rusten."
+);
+
+}
+
+
+
+// EXTRA OVERSLAAN
+
+if(tile === "beurtoverslaan"){
+
+soundPut.play();
+
+
+
+skipTurns[currentTeam] = 1;
+
+
+
+showMessage(
+"⏭️ Beurt overslaan!"
+);
+
+}
+
+
+
+// FINISH
+
+if(
+positions[currentTeam] >= 140
+){
+
+soundFinish.play();
+
+
+
+showMessage(
+"🏆 Team wint het spel!"
+);
+
+
+
+return;
+
+}
+
+
+
+finishTurn();
+
+}
+
+
+
+// BEURT AFRONDEN
+
+function finishTurn(){
+
+setTimeout(function(){
+
+nextTeam();
+
+showScreen(1);
+
+}, 3000);
+
+}
+
+
+
+// VOLGEND TEAM
+
+function nextTeam(){
+
+currentTeam++;
+
+
+
+if(currentTeam > 3){
+
+currentTeam = 0;
+
+}
+
+
+
+turnText.innerText =
+"Beurt: Team " +
+(currentTeam + 1);
+
+}
+
+
+
+// BORD BIJWERKEN
+
+function updateBoard(){
+
+const cells =
+document.querySelectorAll(
+".cell"
+);
+
+
+
+cells.forEach(cell => {
+
+cell.innerHTML =
+cell.innerHTML
+.replace("🔴","")
+.replace("🔵","")
+.replace("🟢","")
+.replace("🟡","");
+
+});
+
+
+
+const teamIcons = [
+
+"🔴",
+"🔵",
+"🟢",
+"🟡"
+
+];
+
+
+
+positions.forEach((pos,index)=>{
+
+if(pos > 0){
+
+cells[pos - 1].innerHTML +=
+"<br>" +
+teamIcons[index];
+
+}
+
+});
+
+}
+
+
+
+// CATEGORIE TONEN
+
+function updateCategoryDisplay(){
+
+activeCategory.innerText =
+"Categorie: " +
+selectedCategory;
+
+}
+
+
+
+// CATEGORIE VERGRENDELEN
+
+function lockCategory(){
+
+categorySelect.disabled = true;
+
+}
+
+
+
+// SCHERMEN
+
+function showScreen(number){
+
+screen1.style.display = "none";
+
+screen2.style.display = "none";
+
+screen3.style.display = "none";
+
+
+
+if(number === 1){
+
+screen1.style.display = "block";
+
+}
+
+
+
+if(number === 2){
+
+screen2.style.display = "block";
+
+}
+
+
+
+if(number === 3){
+
+screen3.style.display = "block";
 
 }
 
 }
 
-/* ===== START ===== */
 
-updateTurn();
-updateBoard();
-showScreen(screen1);
+
+// MELDINGEN
+
+function showMessage(text){
+
+diceText.innerText = text;
+
+}
+
+
+
+// WACHTFUNCTIE
+
+function sleep(ms){
+
+return new Promise(resolve =>
+setTimeout(resolve, ms)
+);
+
+}
