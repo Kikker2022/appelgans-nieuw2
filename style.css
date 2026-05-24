@@ -1,91 +1,179 @@
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: #e8f5e9;
-text-align: center;
+body{
+  margin:0;
+  padding:10px;
+  font-family: Arial, sans-serif;
+  background:#eef7ee;
 }
 
-h1 {
-margin: 10px 0;
+/* TITEL */
+h1{
+  text-align:center;
+  font-size:26px;
+  margin:10px 0;
 }
 
-.screen {
-display: none;
-padding: 10px;
+/* SPEL CONTAINER */
+#gameContainer{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
-.screen.active {
-display: block;
+/* ====== BOARD ====== */
+#board{
+  display:grid;
+  grid-template-columns:repeat(8, 38px);
+  gap:0;
+  margin:0 auto;
+  padding:0;
 }
 
-
-/* BORD */
-#board {
-display: grid;
-grid-template-columns: repeat(8, 1fr);
-gap: 2px;
-max-width: 100vw;
-margin: 10px auto;
+/* ====== CEL ====== */
+.cell{
+  width:38px;
+  height:38px;
+  background:#e9ffe9;
+  border:1px solid #666;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-size:8px;
+  line-height:1;
+  position:relative;
 }
 
-.cell {
-height: 40px;
-border: 1px solid #777;
-background: white;
-font-size: 10px;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+/* ICONEN */
+.cell span{
+  font-size:12px;
+  line-height:1;
 }
 
+/* ====== ACTIE VAKKEN ====== */
+.gans{ background:#ffe680; }
+.brug{ background:#9be7ff; }
+.put{ background:#c7b6ff; }
+.herberg{ background:#ffd3a6; }
+.gevangenis{ background:#ffb3b3; }
+.dood{ background:#c9ffc9; }
+.finish{ background:#ffe600; }
 
-/* SPECIALS */
-.special {
-background: #ffd54f;
+/* ====== PIONNEN ====== */
+.pawns{
+  position:absolute;
+  bottom:1px;
+  display:flex;
+  gap:1px;
 }
 
-
-/* TEAMS (BELANGRIJK: kleuren i.p.v. tekst) */
-.team0 { background: red; }
-.team1 { background: blue; }
-.team2 { background: green; }
-.team3 { background: orange; }
-
-
-/* KNOPPEN */
-button {
-padding: 12px;
-font-size: 16px;
-margin: 8px;
-border-radius: 8px;
-border: none;
-background: #2e7d32;
-color: white;
+.pawn{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  border:1px solid white;
 }
 
+.blue{ background:blue; }
+.red{ background:red; }
+.green{ background:green; }
+.purple{ background:purple; }
 
-/* ANTWOORDEN */
-.answerButton {
-display: block;
-width: 90%;
-margin: 8px auto;
-padding: 12px;
-font-size: 16px;
-background: #1976d2;
-color: white;
-border: none;
-border-radius: 6px;
+/* ====== KNOPPEN ====== */
+button{
+  width:100%;
+  padding:14px;
+  font-size:18px;
+  border:none;
+  border-radius:10px;
+  background:#0077ff;
+  color:white;
+  margin-top:10px;
 }
 
-
-/* TEKST */
-#question {
-font-size: 18px;
-margin: 10px;
+/* ====== PANEEL ====== */
+#controls, #questionBox, #popup{
+  width:95%;
+  max-width:320px;
+  background:white;
+  padding:10px;
+  margin:8px auto;
+  border-radius:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.15);
 }
 
-#explanation {
-margin-top: 10px;
-font-size: 14px;
+/* POPUP */
+#popup{
+  display:none;
+  font-weight:bold;
+  text-align:center;
+}
+
+/* VRAAG */
+#question{
+  font-size:16px;
+  min-height:60px;
+}
+
+#answer{
+  display:none;
+  font-weight:bold;
+  color:green;
+}
+
+/* ====== MOBIEL ====== */
+@media (max-width: 500px){
+
+  #board{
+    grid-template-columns:repeat(8, 34px);
+  }
+
+  .cell{
+    width:34px;
+    height:34px;
+    font-size:7px;
+  }
+
+  .cell span{
+    font-size:10px;
+  }
+
+  .pawn{
+    width:7px;
+    height:7px;
+  }
+
+  .answerBtn{
+  display:block;
+  width:100%;
+  margin-top:10px;
+  text-align:left;
+  background:#dddddd;
+  color:black;
+  font-size:16px;
+}
+
+.correct{
+  background:green !important;
+  color:white !important;
+}
+
+.wrong{
+  background:red !important;
+  color:white !important;
+}
+
+#explanation{
+  margin-top:15px;
+  font-weight:bold;
+  font-size:15px;
+}
+
+  .screen{
+  width:100%;
+  text-align:center;
+}
+
+.hidden{
+  display:none;
+}
 }
