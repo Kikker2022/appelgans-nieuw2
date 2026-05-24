@@ -1,4 +1,8 @@
 let currentTeam = 0;
+
+let selectedCategory =
+"Ooststellingwerf";
+
 let lastRoll = 0;
 let currentQuestion = null;
 
@@ -314,11 +318,16 @@ loadQuestion();
 
 function loadQuestion(){
 
+const actieveVragen =
+vragen.filter(
+v => v.categorie === selectedCategory
+);
+
 const q =
-vragen[
+actieveVragen[
 Math.floor(
 Math.random() *
-vragen.length
+actieveVragen.length
 )
 ];
 
@@ -469,6 +478,21 @@ if(!type){
 return;
 }
 
+const categorySelect =
+document.getElementById(
+"categorySelect"
+);
+
+categorySelect.addEventListener(
+"change",
+function(){
+
+selectedCategory =
+categorySelect.value;
+
+}
+);
+  
 /* GANS */
 
 if(type === "gans"){
