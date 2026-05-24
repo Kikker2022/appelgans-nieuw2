@@ -90,6 +90,8 @@ categorySelect.value;
 
 /* ===== SCHERMEN ===== */
 
+const screen0 = document.getElementById("screen0");
+
 const screen1 =
 document.getElementById("screen1");
 
@@ -146,6 +148,21 @@ const specialTiles = {
 
 /* ===== HULPFUNCTIES ===== */
 
+function startGame() {
+
+selectedCategory =
+document.getElementById("categorySelect").value;
+
+// lock categorie
+document.getElementById("categorySelect").disabled = true;
+
+// naar spel
+showScreen(screen1);
+
+updateTurn();
+
+}
+
 function sleep(ms){
 return new Promise(resolve =>
 setTimeout(resolve, ms));
@@ -153,6 +170,7 @@ setTimeout(resolve, ms));
 
 function showScreen(screen){
 
+screen0.classList.add("hidden");
 screen1.classList.add("hidden");
 screen2.classList.add("hidden");
 screen3.classList.add("hidden");
@@ -450,8 +468,7 @@ nextTurn();
 
 setTimeout(()=>{
 
-showScreen(screen1);
-
+showScreen(screen0);
 },3500);
 
 }else{
