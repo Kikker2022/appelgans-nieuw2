@@ -73,6 +73,21 @@ document.getElementById("btnC");
 const popup =
 document.getElementById("popup");
 
+const categorySelect =
+document.getElementById(
+"categorySelect"
+);
+
+categorySelect.addEventListener(
+"change",
+function(){
+
+selectedCategory =
+categorySelect.value;
+
+}
+);
+
 /* ===== SCHERMEN ===== */
 
 const screen1 =
@@ -302,6 +317,8 @@ lastRoll = roll;
 diceText.innerText =
 "🎲 Je gooide: " + roll;
 
+categorySelect.disabled = true;
+
 statusMessage.innerText = "";
 
 setTimeout(()=>{
@@ -477,21 +494,6 @@ specialTiles[team.position];
 if(!type){
 return;
 }
-
-const categorySelect =
-document.getElementById(
-"categorySelect"
-);
-
-categorySelect.addEventListener(
-"change",
-function(){
-
-selectedCategory =
-categorySelect.value;
-
-}
-);
   
 /* GANS */
 
