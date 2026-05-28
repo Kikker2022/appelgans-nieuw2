@@ -23,8 +23,8 @@ margin:10px 0;
   padding: 20px;
 }
 
-.hidden{
-display:none;
+.hidden {
+  display: none !important;
 }
 
 /* ===== BORD ===== */
