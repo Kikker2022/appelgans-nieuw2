@@ -1,8 +1,6 @@
 let currentTeam = 0;
 
 let selectedCategory = "Ooststellingwerf";
-let categoryLocked = false;
-
 let activeTeams = 4;
 
 let lastRoll = 0;
@@ -10,16 +8,12 @@ let currentQuestion = null;
 
 const TOTAL_CELLS = 140;
 
-/* TEAMS */
-
 const teams = [
 { name: "Blauw", color: "blue", icon: "🔵", position: 0, skipTurns: 0 },
 { name: "Rood", color: "red", icon: "🔴", position: 0, skipTurns: 0 },
 { name: "Groen", color: "green", icon: "🟢", position: 0, skipTurns: 0 },
 { name: "Paars", color: "purple", icon: "🟣", position: 0, skipTurns: 0 }
 ];
-
-/* ELEMENTS */
 
 const board = document.getElementById("board");
 const turnText = document.getElementById("turn");
@@ -39,16 +33,12 @@ const screen1 = document.getElementById("screen1");
 const screen2 = document.getElementById("screen2");
 const screen3 = document.getElementById("screen3");
 
-/* AUDIO */
-
 const soundGans = new Audio("public/gans.mp3");
 const soundBridge = new Audio("public/brug.mp3");
 const soundPut = new Audio("public/put.mp3");
 const soundPrison = new Audio("public/gevangenis.mp3");
 const soundInn = new Audio("public/herberg.mp3");
 const soundWin = new Audio("public/finish.mp3");
-
-/* SCREEN CONTROL */
 
 function showScreen(screen) {
 screen0.classList.add("hidden");
@@ -58,50 +48,29 @@ screen3.classList.add("hidden");
 screen.classList.remove("hidden");
 }
 
-/* START GAME */
-
 function startGame() {
-
 selectedCategory = document.getElementById("categorySelect").value;
 activeTeams = parseInt(document.getElementById("teamCount").value);
 
-categoryLocked = true;
-
 document.getElementById("categorySelect").disabled = true;
 document.getElementById("teamCount").disabled = true;
-
-document.getElementById("categorySelect").style.pointerEvents = "none";
-document.getElementById("teamCount").style.pointerEvents = "none";
-
-document.getElementById("categorySelect").style.opacity = "0.6";
-document.getElementById("teamCount").style.opacity = "0.6";
 
 showScreen(screen1);
 updateTurn();
 }
 
-/* ACTIVE TEAMS */
-
 function getActiveTeams() {
 return teams.slice(0, activeTeams);
 }
-
-/* TURN */
 
 function updateTurn() {
 const team = getActiveTeams()[currentTeam];
 turnText.innerText = team.icon + " is aan de beurt";
 }
 
-/* NEXT TURN */
-
 function nextTurn() {
-
 currentTeam++;
-
-if (currentTeam >= activeTeams) {
-currentTeam = 0;
-}
+if (currentTeam >= activeTeams) currentTeam = 0;
 
 const team = getActiveTeams()[currentTeam];
 
@@ -119,10 +88,7 @@ diceText.innerText = "";
 updateTurn();
 }
 
-/* DICE */
-
 function rollDice() {
-
 const roll = Math.floor(Math.random() * 6) + 1;
 lastRoll = roll;
 
@@ -134,10 +100,7 @@ loadQuestion();
 }, 1500);
 }
 
-/* QUESTIONS */
-
 function loadQuestion() {
-
 const actieveVragen = vragen.filter(v => v.categorie === selectedCategory);
 const q = actieveVragen[Math.floor(Math.random() * actieveVragen.length)];
 
@@ -160,10 +123,7 @@ btnC.className = "answerBtn";
 explanationText.innerText = "";
 }
 
-/* ANSWER */
-
 async function checkAnswer(choice) {
-
 btnA.disabled = true;
 btnB.disabled = true;
 btnC.disabled = true;
@@ -218,10 +178,7 @@ showScreen(screen1);
 }
 }
 
-/* SPECIAL TILES */
-
 async function handleSpecial(team) {
-
 const type = specialTiles[team.position];
 if (!type) return;
 
@@ -258,8 +215,6 @@ soundInn.play();
 team.skipTurns = 1;
 }
 }
-
-/* INIT */
 
 updateBoard();
 showScreen(screen0);
