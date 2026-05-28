@@ -151,48 +151,25 @@ const specialTiles = {
 
 function startGame() {
 
-selectedCategory =
-document.getElementById(
-"categorySelect"
-).value;
+selectedCategory = document.getElementById("categorySelect").value;
 
-activeTeams =
-parseInt(
-document.getElementById(
-"teamCount"
-).value
-);
+activeTeams = parseInt(document.getElementById("teamCount").value);
 
-// lock instellingen
-document.getElementById(
-"categorySelect"
-).disabled = true;
+const categorySelect = document.getElementById("categorySelect");
+const teamCountSelect = document.getElementById("teamCount");
 
-document.getElementById(
-"teamCount"
-).disabled = true;
+categorySelect.disabled = true;
+teamCountSelect.disabled = true;
 
-document.getElementById("categorySelect").disabled = true;
-document.getElementById("teamCount").disabled = true;
-document.getElementById(
-"categorySelect"
-).style.pointerEvents = "none";
+categorySelect.style.pointerEvents = "none";
+categorySelect.style.opacity = "0.6";
 
-document.getElementById(
-"categorySelect"
-).style.opacity = "0.6";
+teamCountSelect.style.pointerEvents = "none";
+teamCountSelect.style.opacity = "0.6";
 
-document.getElementById(
-"teamCount"
-).style.pointerEvents = "none";
+categorySelect.onchange = null;
 
-document.getElementById(
-"teamCount"
-).style.opacity = "0.6";
-
-// start spel
 showScreen(screen1);
-
 updateTurn();
 
 }
