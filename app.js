@@ -486,7 +486,7 @@ nextTurn();
 
 setTimeout(()=>{
 
-showScreen(screen0);
+showScreen(screen1);
 },3500);
 
 }else{
