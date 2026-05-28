@@ -10,40 +10,16 @@ let currentQuestion = null;
 
 const TOTAL_CELLS = 140;
 
-/* ===== TEAMS ===== */
+/* TEAMS */
 
 const teams = [
-{
-name: "Blauw",
-color: "blue",
-icon: "🔵",
-position: 0,
-skipTurns: 0
-},
-{
-name: "Rood",
-color: "red",
-icon: "🔴",
-position: 0,
-skipTurns: 0
-},
-{
-name: "Groen",
-color: "green",
-icon: "🟢",
-position: 0,
-skipTurns: 0
-},
-{
-name: "Paars",
-color: "purple",
-icon: "🟣",
-position: 0,
-skipTurns: 0
-}
+{ name: "Blauw", color: "blue", icon: "🔵", position: 0, skipTurns: 0 },
+{ name: "Rood", color: "red", icon: "🔴", position: 0, skipTurns: 0 },
+{ name: "Groen", color: "green", icon: "🟢", position: 0, skipTurns: 0 },
+{ name: "Paars", color: "purple", icon: "🟣", position: 0, skipTurns: 0 }
 ];
 
-/* ===== HTML ===== */
+/* ELEMENTS */
 
 const board = document.getElementById("board");
 const turnText = document.getElementById("turn");
@@ -58,14 +34,12 @@ const btnC = document.getElementById("btnC");
 
 const popup = document.getElementById("popup");
 
-/* ===== SCHERMEN ===== */
-
 const screen0 = document.getElementById("screen0");
 const screen1 = document.getElementById("screen1");
 const screen2 = document.getElementById("screen2");
 const screen3 = document.getElementById("screen3");
 
-/* ===== GELUIDEN ===== */
+/* AUDIO */
 
 const soundGans = new Audio("public/gans.mp3");
 const soundBridge = new Audio("public/brug.mp3");
@@ -74,20 +48,17 @@ const soundPrison = new Audio("public/gevangenis.mp3");
 const soundInn = new Audio("public/herberg.mp3");
 const soundWin = new Audio("public/finish.mp3");
 
-/* ===== SCHERMEN ===== */
+/* SCREEN CONTROL */
 
-function showScreen(screen){
-
+function showScreen(screen) {
 screen0.classList.add("hidden");
 screen1.classList.add("hidden");
 screen2.classList.add("hidden");
 screen3.classList.add("hidden");
-
 screen.classList.remove("hidden");
-
 }
 
-/* ===== START GAME ===== */
+/* START GAME */
 
 function startGame() {
 
@@ -96,7 +67,6 @@ activeTeams = parseInt(document.getElementById("teamCount").value);
 
 categoryLocked = true;
 
-/* lock UI */
 document.getElementById("categorySelect").disabled = true;
 document.getElementById("teamCount").disabled = true;
 
@@ -108,81 +78,67 @@ document.getElementById("teamCount").style.opacity = "0.6";
 
 showScreen(screen1);
 updateTurn();
-
 }
 
-/* ===== TEAMS FILTER ===== */
+/* ACTIVE TEAMS */
 
-function getActiveTeams(){
+function getActiveTeams() {
 return teams.slice(0, activeTeams);
 }
 
-/* ===== UPDATE TURN ===== */
+/* TURN */
 
-function updateTurn(){
-
+function updateTurn() {
 const team = getActiveTeams()[currentTeam];
-
 turnText.innerText = team.icon + " is aan de beurt";
-
 }
 
-/* ===== NEXT TURN ===== */
+/* NEXT TURN */
 
-function nextTurn(){
+function nextTurn() {
 
 currentTeam++;
 
-if(currentTeam >= activeTeams){
+if (currentTeam >= activeTeams) {
 currentTeam = 0;
 }
 
 const team = getActiveTeams()[currentTeam];
 
-if(team.skipTurns > 0){
-
+if (team.skipTurns > 0) {
 team.skipTurns--;
-
 statusMessage.innerText = team.icon + " moet een beurt overslaan.";
-
-setTimeout(()=>{
+setTimeout(() => {
 nextTurn();
 showScreen(screen1);
-},1500);
-
+}, 1500);
 return;
 }
 
 diceText.innerText = "";
 updateTurn();
-
 }
 
-/* ===== DOBBELEN ===== */
+/* DICE */
 
-function rollDice(){
+function rollDice() {
 
 const roll = Math.floor(Math.random() * 6) + 1;
-
 lastRoll = roll;
 
 diceText.innerText = "🎲 Je gooide: " + roll;
 
-setTimeout(()=>{
-
+setTimeout(() => {
 showScreen(screen2);
 loadQuestion();
-
-},1500);
-
+}, 1500);
 }
 
-/* ===== VRAGEN ===== */
+/* QUESTIONS */
 
-function loadQuestion(){
+function loadQuestion() {
 
 const actieveVragen = vragen.filter(v => v.categorie === selectedCategory);
-
 const q = actieveVragen[Math.floor(Math.random() * actieveVragen.length)];
 
 currentQuestion = q;
@@ -193,21 +149,20 @@ btnA.innerText = "A: " + q.a;
 btnB.innerText = "B: " + q.b;
 btnC.innerText = "C: " + q.c;
 
-btnA.className = "answerBtn";
-btnB.className = "answerBtn";
-btnC.className = "answerBtn";
-
 btnA.disabled = false;
 btnB.disabled = false;
 btnC.disabled = false;
 
-explanationText.innerText = "";
+btnA.className = "answerBtn";
+btnB.className = "answerBtn";
+btnC.className = "answerBtn";
 
+explanationText.innerText = "";
 }
 
-/* ===== ANTWOORD ===== */
+/* ANSWER */
 
-async function checkAnswer(choice){
+async function checkAnswer(choice) {
 
 btnA.disabled = true;
 btnB.disabled = true;
@@ -215,7 +170,7 @@ btnC.disabled = true;
 
 const correct = currentQuestion.correct;
 
-if(choice === correct){
+if (choice === correct) {
 
 document.getElementById("btn" + choice.toUpperCase()).classList.add("correct");
 
@@ -227,99 +182,84 @@ showScreen(screen3);
 
 const team = getActiveTeams()[currentTeam];
 
-for(let i=0;i<lastRoll;i++){
-
-if(team.position < TOTAL_CELLS){
-
+for (let i = 0; i < lastRoll; i++) {
+if (team.position < TOTAL_CELLS) {
 team.position++;
 updateBoard();
 await sleep(250);
-
 }
-
 }
 
 await handleSpecial(team);
 
-if(team.position >= TOTAL_CELLS){
-
+if (team.position >= TOTAL_CELLS) {
 soundWin.play();
 showPopup(team.icon + " heeft gewonnen!");
 return;
-
 }
 
 nextTurn();
 
-setTimeout(()=>{
+setTimeout(() => {
 showScreen(screen1);
-},2500);
+}, 2500);
 
-}else{
+} else {
 
 document.getElementById("btn" + choice.toUpperCase()).classList.add("wrong");
 document.getElementById("btn" + correct.toUpperCase()).classList.add("correct");
 
 explanationText.innerText = "Fout! " + currentQuestion.uitleg;
 
-setTimeout(()=>{
+setTimeout(() => {
 nextTurn();
 showScreen(screen1);
-},2500);
-
+}, 2500);
+}
 }
 
-}
+/* SPECIAL TILES */
 
-/* ===== SPECIAL TILES ===== */
-
-async function handleSpecial(team){
+async function handleSpecial(team) {
 
 const type = specialTiles[team.position];
-if(!type) return;
+if (!type) return;
 
-if(type === "gans"){
-
+if (type === "gans") {
 soundGans.play();
-
-for(let i=0;i<6;i++){
+for (let i = 0; i < 6; i++) {
 team.position++;
 updateBoard();
 await sleep(200);
 }
-
 }
 
-if(type === "brug"){
-
+if (type === "brug") {
 soundBridge.play();
-
-while(team.position < 30){
+while (team.position < 30) {
 team.position++;
 updateBoard();
 await sleep(150);
 }
-
 }
 
-if(type === "put"){
+if (type === "put") {
 soundPut.play();
 team.skipTurns = 1;
 }
 
-if(type === "gevangenis"){
+if (type === "gevangenis") {
 soundPrison.play();
 team.skipTurns = 2;
 }
 
-if(type === "herberg"){
+if (type === "herberg") {
 soundInn.play();
 team.skipTurns = 1;
 }
-
 }
 
-/* ===== INIT ===== */
+/* INIT */
 
 updateBoard();
 showScreen(screen0);
