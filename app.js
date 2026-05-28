@@ -612,4 +612,4 @@ team.icon +
 
 updateTurn();
 updateBoard();
-showScreen(screen1);
+showScreen(screen0);
