@@ -1,8 +1,6 @@
 let currentTeam = 0;
 let activeTeams = 4;
-
-let selectedCategory =
-"Ooststellingwerf";
+let categoryLocked = false;
 
 let lastRoll = 0;
 let currentQuestion = null;
@@ -152,7 +150,12 @@ const specialTiles = {
 function startGame() {
 
 selectedCategory = document.getElementById("categorySelect").value;
+categoryLocked = true;
 
+if (!categoryLocked) {
+  selectedCategory = document.getElementById("categorySelect").value;
+}
+  
 activeTeams = parseInt(document.getElementById("teamCount").value);
 
 const categorySelect = document.getElementById("categorySelect");
