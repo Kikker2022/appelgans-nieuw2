@@ -172,7 +172,25 @@ document.getElementById(
 "teamCount"
 ).disabled = true;
 
-// naar spel
+document.getElementById("categorySelect").disabled = true;
+document.getElementById("teamCount").disabled = true;
+document.getElementById(
+"categorySelect"
+).style.pointerEvents = "none";
+
+document.getElementById(
+"categorySelect"
+).style.opacity = "0.6";
+
+document.getElementById(
+"teamCount"
+).style.pointerEvents = "none";
+
+document.getElementById(
+"teamCount"
+).style.opacity = "0.6";
+
+// start spel
 showScreen(screen1);
 
 updateTurn();
