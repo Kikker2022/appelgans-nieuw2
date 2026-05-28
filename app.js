@@ -1,4 +1,5 @@
 let currentTeam = 0;
+let activeTeams = 4;
 
 let selectedCategory =
 "Ooststellingwerf";
@@ -151,10 +152,25 @@ const specialTiles = {
 function startGame() {
 
 selectedCategory =
-document.getElementById("categorySelect").value;
+document.getElementById(
+"categorySelect"
+).value;
 
-// lock categorie
-document.getElementById("categorySelect").disabled = true;
+activeTeams =
+parseInt(
+document.getElementById(
+"teamCount"
+).value
+);
+
+// lock instellingen
+document.getElementById(
+"categorySelect"
+).disabled = true;
+
+document.getElementById(
+"teamCount"
+).disabled = true;
 
 // naar spel
 showScreen(screen1);
@@ -255,7 +271,9 @@ pawns.forEach(p=>{
 p.innerHTML = "";
 });
 
-teams.forEach(team=>{
+teams
+.slice(0, activeTeams)
+.forEach(team=>{
 
 if(team.position > 0){
 
@@ -297,7 +315,7 @@ function nextTurn(){
 
 currentTeam++;
 
-if(currentTeam >= teams.length){
+if(currentTeam >= activeTeams){
 currentTeam = 0;
 }
 
