@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Appelgans</title>
-
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,121 +11,89 @@
 
 <h1>🪿 Appelgans</h1>
 
-<!-- SCHERM 0 -->
 <div id="screen0" class="hidden">
-  <h2>Start spel</h2>
 
-  <p>Kies categorie:</p>
-  <p>Aantal teams:</p>
+<h2>Start spel</h2>
 
-<h3>Teamnamen</h3>
-
+<p>Aantal teams</p>
 <select id="teamCount" onchange="updateTeamInputs()">
-  <option value="2">2 teams</option>
-  <option value="3">3 teams</option>
-  <option value="4" selected>4 teams</option>
+<option value="2">2 teams</option>
+<option value="3">3 teams</option>
+<option value="4" selected>4 teams</option>
 </select>
 
 <h3>Teamnamen</h3>
 
 <div id="teamInputs">
 
-  <div class="teamInput" data-team="1">
-    <p>Team 1</p>
-    <input id="team1Name" value="Blauw">
-  </div>
+<div class="teamInput" data-team="1">
+<input id="team1Name" value="Blauw">
+</div>
 
-  <div class="teamInput" data-team="2">
-    <p>Team 2</p>
-    <input id="team2Name" value="Rood">
-  </div>
+<div class="teamInput" data-team="2">
+<input id="team2Name" value="Rood">
+</div>
 
-  <div class="teamInput" data-team="3">
-    <p>Team 3</p>
-    <input id="team3Name" value="Groen">
-  </div>
+<div class="teamInput" data-team="3">
+<input id="team3Name" value="Groen">
+</div>
 
-  <div class="teamInput" data-team="4">
-    <p>Team 4</p>
-    <input id="teamName" value="Paars">
-  </div>
+<div class="teamInput" data-team="4">
+<input id="team4Name" value="Paars">
+</div>
 
 </div>
 
-  <select id="categorySelect">
-    <option value="Ooststellingwerf">Ooststellingwerf</option>
-    <option value="Fryslân">Fryslân</option>
-    <option value="Groningen">Groningen</option>
-    <option value="Drenthe">Drenthe</option>
-    <option value="Educatief">Educatief</option>
-  </select>
+<p>Categorie</p>
 
-  <br><br>
+<select id="categorySelect">
+<option value="Ooststellingwerf">Ooststellingwerf</option>
+<option value="Fryslân">Fryslân</option>
+<option value="Groningen">Groningen</option>
+<option value="Drenthe">Drenthe</option>
+<option value="Educatief">Educatief</option>
+</select>
 
-  <button onclick="startGame()">Start spel</button>
+<br><br>
+
+<button onclick="startGame()">Start spel</button>
+
 </div>
-  
-<!-- SCHERM 1 -->
+
 <div id="screen1" class="hidden">
 
 <h2 id="turn"></h2>
 
 <p id="currentCategory"></p>
 
-<br>
-
-<button onclick="rollDice()">
-🎲 Gooi dobbelsteen
-</button>
+<button onclick="rollDice()">🎲 Gooi dobbelsteen</button>
 
 <p id="diceResult"></p>
-
 <p id="statusMessage"></p>
 
 </div>
 
-
-<!-- SCHERM 2 -->
 <div id="screen2" class="hidden">
 
 <h2>Vraag</h2>
 
 <p id="question"></p>
 
-<button id="btnA"
-class="answerBtn"
-onclick="checkAnswer('a')">
-A
-</button>
-
-<button id="btnB"
-class="answerBtn"
-onclick="checkAnswer('b')">
-B
-</button>
-
-<button id="btnC"
-class="answerBtn"
-onclick="checkAnswer('c')">
-C
-</button>
+<button id="btnA" onclick="checkAnswer('a')" class="answerBtn"></button>
+<button id="btnB" onclick="checkAnswer('b')" class="answerBtn"></button>
+<button id="btnC" onclick="checkAnswer('c')" class="answerBtn"></button>
 
 <p id="explanation"></p>
 
 </div>
 
-
-<!-- SCHERM 3 -->
 <div id="screen3" class="hidden">
 
 <div id="board"></div>
 
 </div>
 
-
-<!-- POPUP -->
 <div id="popup"></div>
-
 
 <script src="data/vragen.js"></script>
 <script src="app.js"></script>
