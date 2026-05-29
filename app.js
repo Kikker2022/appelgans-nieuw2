@@ -141,6 +141,8 @@ const specialTiles = {
 
 function startGame() {
 
+updateTeamInputs();
+
 selectedCategory = document.getElementById("categorySelect").value;
 activeTeams = parseInt(document.getElementById("teamCount").value);
 
@@ -167,6 +169,16 @@ updateTurn();
 document.getElementById("currentCategory").innerText =
 "Categorie: " + selectedCategory;
 
+}
+
+function updateTeamInputs() {
+const count = parseInt(document.getElementById("teamCount").value);
+const inputs = document.querySelectorAll(".teamInput");
+
+inputs.forEach(el => {
+const nr = parseInt(el.dataset.team);
+el.style.display = nr <= count ? "block" : "none";
+});
 }
 
 function sleep(ms){
