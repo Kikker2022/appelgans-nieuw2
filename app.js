@@ -142,8 +142,12 @@ const specialTiles = {
 function startGame() {
 
 selectedCategory = document.getElementById("categorySelect").value;
-
 activeTeams = parseInt(document.getElementById("teamCount").value);
+
+teams[0].name = document.getElementById("team1Name").value;
+teams[1].name = document.getElementById("team2Name").value;
+teams[2].name = document.getElementById("team3Name").value;
+teams[3].name = document.getElementById("team4Name").value;
 
 const categorySelect = document.getElementById("categorySelect");
 const teamCountSelect = document.getElementById("teamCount");
@@ -152,12 +156,10 @@ categorySelect.disabled = true;
 teamCountSelect.disabled = true;
 
 categorySelect.style.pointerEvents = "none";
-categorySelect.style.opacity = "0.6";
-
 teamCountSelect.style.pointerEvents = "none";
-teamCountSelect.style.opacity = "0.6";
 
-categorySelect.onchange = null;
+categorySelect.style.opacity = "0.6";
+teamCountSelect.style.opacity = "0.6";
 
 showScreen(screen1);
 updateTurn();
@@ -294,8 +296,7 @@ function updateTurn(){
 const team =
 teams[currentTeam];
 
-turnText.innerText =
-team.icon + " is aan de beurt";
+turnText.innerText = team.icon + " " + team.name + " is aan de beurt";
 
 }
 
