@@ -162,6 +162,9 @@ categorySelect.onchange = null;
 showScreen(screen1);
 updateTurn();
 
+document.getElementById("currentCategory").innerText =
+"Categorie: " + selectedCategory;
+
 }
 
 function sleep(ms){
