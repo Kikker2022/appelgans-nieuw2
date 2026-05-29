@@ -79,16 +79,6 @@ document.getElementById(
 "categorySelect"
 );
 
-categorySelect.addEventListener(
-"change",
-function(){
-
-selectedCategory =
-categorySelect.value;
-
-}
-);
-
 /* ===== SCHERMEN ===== */
 
 const screen0 = document.getElementById("screen0");
