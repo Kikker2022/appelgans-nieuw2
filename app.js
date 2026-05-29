@@ -141,6 +141,8 @@ const specialTiles = {
 
 function startGame() {
 
+try {
+
 updateTeamInputs();
 
 selectedCategory = document.getElementById("categorySelect").value;
@@ -151,23 +153,24 @@ teams[1].name = document.getElementById("team2Name").value;
 teams[2].name = document.getElementById("team3Name").value;
 teams[3].name = document.getElementById("team4Name").value;
 
-const categorySelect = document.getElementById("categorySelect");
-const teamCountSelect = document.getElementById("teamCount");
+document.getElementById("categorySelect").disabled = true;
+document.getElementById("teamCount").disabled = true;
 
-categorySelect.disabled = true;
-teamCountSelect.disabled = true;
+document.getElementById("categorySelect").style.pointerEvents = "none";
+document.getElementById("teamCount").style.pointerEvents = "none";
 
-categorySelect.style.pointerEvents = "none";
-teamCountSelect.style.pointerEvents = "none";
-
-categorySelect.style.opacity = "0.6";
-teamCountSelect.style.opacity = "0.6";
+document.getElementById("categorySelect").style.opacity = "0.6";
+document.getElementById("teamCount").style.opacity = "0.6";
 
 showScreen(screen1);
 updateTurn();
 
 document.getElementById("currentCategory").innerText =
 "Categorie: " + selectedCategory;
+
+} catch (e) {
+console.log("STARTGAME ERROR:", e);
+}
 
 }
 
