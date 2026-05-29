@@ -33,11 +33,37 @@
 <p>Team 4</p>
 <input id="team4Name" value="Paars">
 
-<select id="teamCount">
+<select id="teamCount" onchange="updateTeamInputs()">
   <option value="2">2 teams</option>
   <option value="3">3 teams</option>
   <option value="4" selected>4 teams</option>
 </select>
+
+<h3>Teamnamen</h3>
+
+<div id="teamInputs">
+
+  <div class="teamInput" data-team="1">
+    <p>Team 1</p>
+    <input id="team1Name" value="Blauw">
+  </div>
+
+  <div class="teamInput" data-team="2">
+    <p>Team 2</p>
+    <input id="team2Name" value="Rood">
+  </div>
+
+  <div class="teamInput" data-team="3">
+    <p>Team 3</p>
+    <input id="team3Name" value="Groen">
+  </div>
+
+  <div class="teamInput" data-team="4">
+    <p>Team 4</p>
+    <input id="teamName" value="Paars">
+  </div>
+
+</div>
 
   <select id="categorySelect">
     <option value="Ooststellingwerf">Ooststellingwerf</option>
