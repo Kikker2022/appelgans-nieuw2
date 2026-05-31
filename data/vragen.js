@@ -189,6 +189,20 @@ uitleg:"Het Fries is een officiële rijkstaal."
 {
 categorie:"Fryslân",
 
+vraag:"Waar staat het Jopie Huisman museum in Fryslân?",
+
+a:"Bakkeveen",
+b:"Bolsward",
+c:"Workum",
+
+correct:"c",
+
+uitleg:"Jopie Huisman was een bekende schilder die vooral realistische, zeer gedetailleerde stillevens van simpele voorwerpen schilderde. Zijn geboorteplaats is waar tevens zijn museum is gevestigd: Workum."
+},
+  
+{
+categorie:"Fryslân",
+
 vraag:"Welke beroemde tocht verbindt elf Friese steden?",
 
 a:"Friese Merenroute",
