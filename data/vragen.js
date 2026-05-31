@@ -615,6 +615,20 @@ uitleg:"Nederland bestaat uit twaalf provincies."
 {
 categorie:"Educatief",
 
+vraag:"Wat hing men in Kampen, rond 1649-1663, tijdens de bouw, in de kerktoren om het gras op de omlopen te bestrijden??",
+
+a:"Een koe",
+b:"Een grasmaaier",
+c:"Een afdekkleed",
+
+correct:"a",
+
+uitleg:"Het was een koe: de koe had halverwege zijn tong ver uit de mond hangen, waardoor de inwoners dachten dat hij zin had aan het malse grag. Bij aankomst bovenin bleek de koe gestikt te zijn."
+},
+  
+{
+categorie:"Educatief",
+
 vraag:"Welke planeet heet de rode planeet?",
 
 a:"Mars",
