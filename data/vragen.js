@@ -33,6 +33,20 @@ uitleg:"Appelscha staat bekend om natuurtoerisme, campings en fietsroutes."
 {
 categorie:"Ooststellingwerf",
 
+vraag:"Hoe hoog sta je op de bosbergtoren in Appelscha?",
+
+a:"80 meter",
+b:"50 meter",
+c:"23 meter",
+
+correct:"b",
+
+uitleg:"De toren steekt 33 meter boven de grond uit, maar omdat de Bosberg zelf zo'n 20 tot 26 meter hoog is, sta je op de top op ruim 50 meter boven NAP."
+},
+  
+{
+categorie:"Ooststellingwerf",
+
 vraag:"In welk natuurgebied ligt Appelscha grotendeels?",
 
 a:"De Weerribben",
@@ -226,6 +240,20 @@ c:"Leeuwarden",
 correct:"c",
 
 uitleg:"Leeuwarden-Friesland was Culturele Hoofdstad van Europa."
+},
+
+{
+categorie:"Fryslân",
+
+vraag:"Waar vindt de jaarlijkse strontrace plaats?",
+
+a:"Koudum",
+b:"Workum",
+c:"Drachten",
+
+correct:"b",
+
+uitleg:"In Workum wordt de jaarlijkse strontrace gehouden ter herinnering aan de schippers die vroeger met zeil_ en spierkracht naar de bollenvelden in Warmond voeren. De Bollenstreek had deze mest hard nodig ."
 },
 
 {
