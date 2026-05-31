@@ -699,6 +699,20 @@ uitleg:"Een uur bestaat uit zestig minuten."
 {
 categorie:"Educatief",
 
+vraag:"op welk Nederlands eiland staat een begraafplaats voor 70 Georgische militairen?",
+
+a:"Ameland",
+b:"Rottumeroog",
+c:"Texel",
+
+correct:"c",
+
+uitleg:"De befraafplaats staat in Oudeschild op Texel.De militairen vochten aan onze zijde en zijn gesneuveld tijdens de opstand van 6 t/m 12 april t/m 12 mei 1945 tegen de Duitse bezetter."
+},
+
+{
+categorie:"Educatief",
+
 vraag:"Wat is het grootste oceaan ter wereld?",
 
 a:"Atlantische Oceaan",
