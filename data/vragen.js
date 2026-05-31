@@ -623,7 +623,7 @@ c:"Een afdekkleed",
 
 correct:"a",
 
-uitleg:"Het was een koe: de koe had halverwege zijn tong ver uit de mond hangen, waardoor de inwoners dachten dat hij zin had aan het malse grag. Bij aankomst bovenin bleek de koe gestikt te zijn."
+uitleg:"Het was een koe: de koe werd aan een touw om zijn hals naar boven getrokken. Halverwege zijn tong ver uit de mond hangen, waardoor de inwoners dachten dat hij zin had aan het malse gras. Bij aankomst bovenin bleek de koe gestikt te zijn en het lugubere voorval wordt nog jaarlijks herdacht."
 },
   
 {
