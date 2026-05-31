@@ -81,6 +81,9 @@ document.getElementById(
 
 /* ===== SCHERMEN ===== */
 
+const welcomeScreen =
+document.getElementById("welcomeScreen");
+
 const screen0 = document.getElementById("screen0");
 
 const screen1 =
@@ -191,6 +194,7 @@ setTimeout(resolve, ms));
 
 function showScreen(screen){
 
+welcomeScreen.classList.add("hidden");
 screen0.classList.add("hidden");
 screen1.classList.add("hidden");
 screen2.classList.add("hidden");
@@ -634,4 +638,10 @@ team.icon +
 
 updateTurn();
 updateBoard();
-showScreen(screen0);
+document.getElementById("welcomeScreen")
+.classList.remove("hidden");
+
+screen0.classList.add("hidden");
+screen1.classList.add("hidden");
+screen2.classList.add("hidden");
+screen3.classList.add("hidden");
