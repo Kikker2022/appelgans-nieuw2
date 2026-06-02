@@ -75,20 +75,6 @@ uitleg:"De Bosbergtoren biedt uitzicht over Friesland en Drenthe."
 {
 categorie:"Ooststellingwerf",
 
-vraag:"Welke sport trekt jaarlijks veel bezoekers naar Appelscha?",
-
-a:"Motorcross",
-b:"Schaatsen",
-c:"Roeien",
-
-correct:"a",
-
-uitleg:"De motorcross in Appelscha trekt bezoekers uit heel Nederland."
-},
-
-{
-categorie:"Ooststellingwerf",
-
 vraag:"Welke recreatieve activiteit is populair in het Drents-Friese Wold?",
 
 a:"Gletsjerskiën",
@@ -157,34 +143,6 @@ uitleg:"Johan van der Velde woonde jarenlang in Appelscha."
 },
 
 /// FRYSLAN
-
-{
-categorie:"Fryslân",
-
-vraag:"Wat is de hoofdstad van Fryslân?",
-
-a:"Sneek",
-b:"Leeuwarden",
-c:"Drachten",
-
-correct:"b",
-
-uitleg:"Leeuwarden is de hoofdstad van Fryslân."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Welke taal is officieel erkend in Fryslân?",
-
-a:"Drents",
-b:"Fries",
-c:"Gronings",
-
-correct:"b",
-
-uitleg:"Het Fries is een officiële rijkstaal."
-},
 
 {
 categorie:"Fryslân",
