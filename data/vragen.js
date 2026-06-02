@@ -147,6 +147,20 @@ uitleg:"Johan van der Velde woonde jarenlang in Appelscha."
 {
 categorie:"Fryslân",
 
+vraag:"Waar staat het Jopie Huisman museum in Fryslân?",
+
+a:"Bakkeveen",
+b:"Bolsward",
+c:"Workum",
+
+correct:"c",
+
+uitleg:"Jopie Huisman was een bekende schilder die vooral realistische, zeer gedetailleerde stillevens van simpele voorwerpen schilderde. Zijn geboorteplaats is waar tevens zijn museum is gevestigd: Workum."
+},
+  
+{
+categorie:"Fryslân",
+
 vraag:"Yn hokker jier waard Ljouwert útroppen ta Kulturele Haadstêd fan Europa?",
 
 a:"2016",
@@ -1967,7 +1981,7 @@ uitleg:"Stoarmfloeden en see-ynbraak foarmen it Fryske lânskip."
 {
 categorie:"Fryslân",
 
-vraag:"Wat wie histoarysk sjoen de wichtichste bestjoerlike haadstêd fan Fryslân fan de lette midsiuwen ôf?",
+vraag:"Wat was historisch gezien de belangrijkste bestuurlijke hoofdstad van Fryslân vanaf de late middeleeuwen?",
 
 a:"Ljouwert",
 b:"Snits",
@@ -1975,148 +1989,260 @@ c:"Stavoren",
 
 correct:"a",
 
-uitleg:"Ljouwert groeide út ta it bestjoerlike sintrum fan Fryslân en bleau dat oant hjoed-de-dei."
+uitleg:"Ljouwert groeide uit tot het bestuurlijke centrum van Fryslân en bleef dat tot nu toe."
 },
 
 {
 categorie:"Fryslân",
 
-vraag:"Hoe wurdt it gebiet East-Fryslân (Ostfriesland) histoarysk it bêste omskreaun?",
+vraag:"Hoe wordt het gebied Oost-Friesland (Ostfriesland) historisch gezien het best omschreven?",
 
-a:"In part fan de Nederlânske provinsje Fryslân",
-b:"In part fan Dútslân mei Fryske kulturele woartels",
-c:"In Skandinavyske regio",
+a:"Een deel van de Nederlandse provincie Fryslân",
+b:"Een deel van Duitsland met Friese culturele wortels",
+c:"Een Scandinavische regio",
 
 correct:"b",
 
-uitleg:"East-Fryslân leit yn Dútslân, mar hat sterke histoaryske Fryske kulturele bannen."
+uitleg:"Oost-Friesland ligt in Duitsland maar heeft sterke historische Friese culturele banden."
 },
 
 {
 categorie:"Fryslân",
 
-vraag:"Wat is de oarsprong fan Fryske achternammen dy’t einigje op '-stra' of '-ma'?",
+vraag:"Wat is de oorsprong van Friese achternamen die eindigen op '-stra' of '-ma'?",
 
-a:"Se ferwize nei in persoan of plak fan komôf",
-b:"Se binne willekeurich keazen yn de 19e iuw",
-c:"Se komme út it Latyn",
+a:"Ze verwijzen naar een persoon of plaats van herkomst",
+b:"Ze zijn willekeurig gekozen in de 19e eeuw",
+c:"Ze komen uit het Latijn",
 
 correct:"a",
 
-uitleg:"-stra en -ma ferwize faak nei ôfstamming of plak fan komôf yn âlde Fryske nammen."
+uitleg:"-stra en -ma verwijzen vaak naar afstamming of plaats van herkomst in oude Friese namen."
 },
 
 {
 categorie:"Fryslân",
 
-vraag:"Hokker rivier spile histoarysk in wichtige rol yn konflikten en grinsfoarming yn súdeast-Fryslân?",
+vraag:"Welke rivier speelde historisch een belangrijke rol in conflicten en grensvorming in zuidoost-Fryslân?",
 
 a:"De Tsjonger",
-b:"De Ryn",
+b:"De Rijn",
 c:"De Eems",
 
 correct:"a",
 
-uitleg:"De Tsjonger (Kuunder) wie lange tiid in natuerlike grins en konfliktgebiet."
+uitleg:"De Tsjonger (Kuunder) vormde lange tijd een natuurlijke grens en conflictgebied."
 },
 
 {
 categorie:"Fryslân",
 
-vraag:"Hokker rol hie Fryslân yn relaasje ta it Nederlânske keningshûs yn de 16e en 17e iuw?",
+vraag:"Welke rol had Fryslân in relatie tot het Nederlandse koningshuis in de 16e en 17e eeuw?",
 
-a:"It levere steedhâlders út it Hûs Oranje-Nassau",
-b:"It wie in folslein ûnôfhinklik keninkryk",
-c:"It hie gjin inkele ferbining mei it keningshûs",
+a:"Het leverde stadhouders uit het Huis Oranje-Nassau",
+b:"Het was volledig onafhankelijk koninkrijk",
+c:"Het had geen enkele band met het koningshuis",
 
 correct:"a",
 
-uitleg:"Fryslân hie steedhâlders út it Hûs Oranje-Nassau binnen de Republyk fan de Sân Feriene Provinsjes."
+uitleg:"Fryslân had stadhouders uit het Huis Oranje-Nassau binnen de Republiek der Zeven Provinciën."
 },
 
 {
 categorie:"Fryslân",
 
-vraag:"Hokker stêd wurdt histoarysk soms sjoen as in iere bestjoerlike sintrum fan Fryslân foardat Ljouwert dominant waard?",
+vraag:"Welke stad wordt historisch gezien soms als vroeg bestuurlijk centrum van Fryslân genoemd vóór de dominantie van Leeuwarden?",
 
-a:"Starum",
+a:"Stavoren",
 b:"Drachten",
-c:"It Hearrenfean",
+c:"Heerenveen",
 
 correct:"a",
 
-uitleg:"Starum wie yn de iere midsiuwen in wichtich hannels- en bestjoersplak."
+uitleg:"Stavoren was in de vroege middeleeuwen een belangrijk handels- en bestuurscentrum."
 },
 
 {
 categorie:"Fryslân",
 
-vraag:"Wat wie in wichtige funksje fan de Fryske grietenijen yn de âlde bestjoersstruktuer?",
+vraag:"Wat was een belangrijke functie van de Friese grietenijen in de oude bestuursstructuur?",
 
-a:"Lokale rjochtspraak en bestjoer",
-b:"Militêre ferdigening tsjin Dútslân",
-c:"Religieuze stjoering",
+a:"Lokale rechtspraak en bestuur",
+b:"Militaire verdediging tegen Duitsland",
+c:"Religieuze aansturing",
 
 correct:"a",
 
-uitleg:"Grietenijen wiene lokale bestjoers- en rjochtsgebieten yn histoarysk Fryslân."
+uitleg:"Grietenijen waren lokale bestuurs- en rechtsgebieden in historisch Fryslân."
 },
 
 {
 categorie:"Fryslân",
 
-vraag:"Hokker histoaryske ûntwikkeling soarge derfoar dat Fryske identiteit sterker waard yn de 19e iuw?",
+vraag:"Welke historische ontwikkeling zorgde ervoor dat Friese identiteit sterker werd in de 19e eeuw?",
 
-a:"De opkomst fan taal- en kultuerbewegingen",
-b:"De yndustriële revolúsje yn Dútslân",
-c:"De ynfiering fan de euro",
+a:"De opkomst van taal- en cultuurbewegingen",
+b:"De industriële revolutie in Duitsland",
+c:"De invoering van de euro",
 
 correct:"a",
 
-uitleg:"De 19e iuw brocht sterke Fryske taal- en kultuerbewegingen."
+uitleg:"De 19e eeuw bracht sterke taal- en cultuurbewegingen in Fryslân."
 },
 
 {
 categorie:"Fryslân",
 
-vraag:"Wat wie in wichtige oarsaak fan konflikten yn it gebiet lâns de Tsjonger yn de midsiuwen?",
+vraag:"Wat was een belangrijke oorzaak van conflicten in het gebied langs de Tsjonger in de middeleeuwen?",
 
-a:"Grins- en wetterbehear tusken gebieten",
+a:"Grens- en waterbeheer tussen gebieden",
 b:"Goudwinning",
-c:"Sâltoarloggen",
+c:"Zoutoorlogen",
 
 correct:"a",
 
-uitleg:"Konflikten ûntstienen faak troch grins- en wetterproblemen om rivieren en feanlân."
+uitleg:"Conflicten ontstonden vaak door grens- en waterbeheer rond rivieren en veengebieden."
 },
 
 {
 categorie:"Fryslân",
 
-vraag:"Hokker útspraak oer Fryske famyljes mei '-ma' of '-stra' nammen is it meast korrekt?",
+vraag:"Welke uitspraak over Friese families met '-ma' of '-stra' namen is het meest correct?",
 
-a:"Se jouwe faak ôfkomst of in plak fan komôf oan",
-b:"Se betsjutte altyd in berop",
-c:"Se binne altyd fan adelike oarsprong",
+a:"Ze duiden vaak op afstamming of een plaatsnaam",
+b:"Ze betekenen altijd beroep",
+c:"Ze zijn altijd van adellijke oorsprong",
 
 correct:"a",
 
-uitleg:"-ma en -stra ferwize meastal nei ôfkomst of plak fan komôf, net per se adel of berop."
+uitleg:"-ma en -stra geven vaak afstamming of herkomst aan, niet per se adel of beroep."
+},
+  
+{
+categorie:"Fryslân",
+
+vraag:"Welke beroemde tocht verbindt elf Friese steden?",
+
+a:"Friese Merenroute",
+b:"Elfstedentocht",
+c:"Noorderronde",
+
+correct:"b",
+
+uitleg:"De Elfstedentocht is wereldwijd bekend."
 },
 
 {
 categorie:"Fryslân",
 
-vraag:"Wêr stiet it Jopie Huisman Museum yn Fryslân?",
+vraag:"Welke Friese sport wordt met traditionele zeilboten gehouden?",
 
-a:"Bakkeveen",
-b:"Boalsert",
-c:"Warkum",
+a:"Skûtsjesilen",
+b:"Curling",
+c:"Suppen",
+
+correct:"a",
+
+uitleg:"Skûtsjesilen is een traditionele Friese watersport."
+},
+
+{
+categorie:"Fryslân",
+
+vraag:"Welke Friese held vocht tegen de Hollanders?",
+
+a:"Willem Barentsz",
+b:"Grutte Pier",
+c:"Michiel de Ruyter",
+
+correct:"b",
+
+uitleg:"Grutte Pier is één van de bekendste Friese volkshelden."
+},
+
+{
+categorie:"Fryslân",
+
+vraag:"Welke stad was Culturele Hoofdstad van Europa in 2018?",
+
+a:"Drachten",
+b:"Franeker",
+c:"Leeuwarden",
 
 correct:"c",
 
-uitleg:"Jopie Huisman wie in Fryske skilder bekend om realistyske stillevens. Syn museum stiet yn syn berteplak Warkum."
-}
+uitleg:"Leeuwarden-Friesland was Culturele Hoofdstad van Europa."
+},
+
+{
+categorie:"Fryslân",
+
+vraag:"Waar vindt de jaarlijkse strontrace plaats?",
+
+a:"Koudum",
+b:"Workum",
+c:"Drachten",
+
+correct:"b",
+
+uitleg:"In Workum wordt de jaarlijkse strontrace gehouden ter herinnering aan de schippers die vroeger met zeil_ en spierkracht naar de bollenvelden in Warmond voeren. De Bollenstreek had deze mest hard nodig ."
+},
+
+{
+categorie:"Fryslân",
+
+vraag:"Welke watersportplaats ligt in Fryslân?",
+
+a:"Sneek",
+b:"Emmen",
+c:"Apeldoorn",
+
+correct:"a",
+
+uitleg:"Sneek staat bekend om watersport."
+},
+
+{
+categorie:"Fryslân",
+
+vraag:"Welke Waddeneilanden horen bij Fryslân?",
+
+a:"Texel en Vlieland",
+b:"Ameland en Schiermonnikoog",
+c:"Texel en Terschelling",
+
+correct:"b",
+
+uitleg:"Ameland en Schiermonnikoog horen bij Fryslân."
+},
+
+{
+categorie:"Fryslân",
+
+vraag:"Wat is een skûtsje?",
+
+a:"Een schaats",
+b:"Een Friese zeilboot",
+c:"Een molen",
+
+correct:"b",
+
+uitleg:"Een skûtsje is een traditioneel Fries vrachtschip."
+},
+
+{
+categorie:"Fryslân",
+
+vraag:"Welke Friese schrijver was ook journalist?",
+
+a:"Fedde Schurer",
+b:"Theo Thijssen",
+c:"Multatuli",
+
+correct:"a",
+
+uitleg:"Fedde Schurer was schrijver, dichter en journalist."
+},
 
 /// GRONINGEN
 
