@@ -2631,6 +2631,3842 @@ uitleg:"Een uur bestaat uit zestig minuten."
 {
 categorie:"Pubquiz",
 
+vraag:"Welk land heeft de langste kustlijn ter wereld?",
+
+a:"Rusland",
+b:"Canada",
+c:"Australië",
+
+correct:"b",
+
+uitleg:"Canada heeft ruim 200.000 kilometer kustlijn."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke Romeinse keizer stond bekend om zijn poging zijn paard senator te maken?",
+
+a:"Nero",
+b:"Caligula",
+c:"Hadrianus",
+
+correct:"b",
+
+uitleg:"Caligula zou zijn paard Incitatus grote eerbewijzen hebben gegeven."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke artiest bracht in 1985 het album 'Brothers in Arms' uit?",
+
+a:"Dire Straits",
+b:"Genesis",
+c:"ELO",
+
+correct:"a",
+
+uitleg:"Brothers in Arms werd een van de best verkochte albums ooit."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Hoe heet het grootste levende knaagdier ter wereld?",
+
+a:"Mara",
+b:"Capibara",
+c:"Bever",
+
+correct:"b",
+
+uitleg:"De capibara kan meer dan 60 kilo wegen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"In welke sport wordt gestreden om de Stanley Cup?",
+
+a:"Basketbal",
+b:"Ijshockey",
+c:"Baseball",
+
+correct:"b",
+
+uitleg:"De Stanley Cup is de belangrijkste prijs in de NHL."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke hoofdstad ligt aan de rivier de Moldau?",
+
+a:"Boedapest",
+b:"Praag",
+c:"Bratislava",
+
+correct:"b",
+
+uitleg:"De Moldau stroomt dwars door Praag."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke Amerikaanse president trad af vanwege het Watergate-schandaal?",
+
+a:"Richard Nixon",
+b:"Gerald Ford",
+c:"Jimmy Carter",
+
+correct:"a",
+
+uitleg:"Nixon trad af in 1974."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist werd doof maar bleef muziek schrijven?",
+
+a:"Mozart",
+b:"Beethoven",
+c:"Haydn",
+
+correct:"b",
+
+uitleg:"Beethoven componeerde zijn latere werken terwijl hij vrijwel doof was."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welk dier heeft de grootste ogen van alle dieren?",
+
+a:"Reuzeninktvis",
+b:"Potvis",
+c:"Struisvogel",
+
+correct:"a",
+
+uitleg:"De ogen van een reuzeninktvis kunnen meer dan 25 cm groot zijn."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"In welk jaar begon officieel de Eerste Wereldoorlog?",
+
+a:"1912",
+b:"1914",
+c:"1916",
+
+correct:"b",
+
+uitleg:"De oorlog begon na de aanslag in Sarajevo."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke tennisser won als eerste 14 Grand Slam-titels?",
+
+a:"Pete Sampras",
+b:"Björn Borg",
+c:"Andre Agassi",
+
+correct:"a",
+
+uitleg:"Sampras zette lange tijd het record op 14."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Wat is de hoofdstad van Kazachstan?",
+
+a:"Almaty",
+b:"Astana",
+c:"Bisjkek",
+
+correct:"b",
+
+uitleg:"Astana heet sinds 2022 weer officieel Astana."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Wie was de eerste bondskanselier van West-Duitsland?",
+
+a:"Helmut Kohl",
+b:"Konrad Adenauer",
+c:"Willy Brandt",
+
+correct:"b",
+
+uitleg:"Adenauer werd bondskanselier in 1949."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Van welke band was Sting de frontman voordat hij solo ging?",
+
+a:"The Police",
+b:"U2",
+c:"Simple Minds",
+
+correct:"a",
+
+uitleg:"Sting werd wereldberoemd met The Police."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welk zoogdier kan vliegen?",
+
+a:"Vliegende eekhoorn",
+b:"Vleermuis",
+c:"Suikereekhoorn",
+
+correct:"b",
+
+uitleg:"De vleermuis is het enige echt vliegende zoogdier."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welk land won het WK voetbal van 2010?",
+
+a:"Nederland",
+b:"Spanje",
+c:"Duitsland",
+
+correct:"b",
+
+uitleg:"Spanje versloeg Nederland met 1-0 na verlenging."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier mondt uit in de Zwarte Zee?",
+
+a:"Donau",
+b:"Loire",
+c:"Po",
+
+correct:"a",
+
+uitleg:"De Donau stroomt door tien landen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Wie werd bekend als de IJzeren Dame?",
+
+a:"Angela Merkel",
+b:"Margaret Thatcher",
+c:"Indira Gandhi",
+
+correct:"b",
+
+uitleg:"Thatcher was premier van het Verenigd Koninkrijk."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke Britse band scoorde de hit 'Bohemian Rhapsody'?",
+
+a:"Queen",
+b:"The Who",
+c:"Status Quo",
+
+correct:"a",
+
+uitleg:"Bohemian Rhapsody verscheen in 1975."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welk dier kan zijn tong niet uitsteken?",
+
+a:"Krokodil",
+b:"Olifant",
+c:"Nijlpaard",
+
+correct:"a",
+
+uitleg:"De tong van een krokodil zit vast aan de onderkant van de bek."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad organiseerde de Olympische Zomerspelen van 1992?",
+
+a:"Barcelona",
+b:"Atlanta",
+c:"Seoul",
+
+correct:"a",
+
+uitleg:"Barcelona organiseerde de succesvolle Spelen van 1992."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke woestijn is de grootste hete woestijn ter wereld?",
+
+a:"Gobi",
+b:"Sahara",
+c:"Kalahari",
+
+correct:"b",
+
+uitleg:"De Sahara beslaat ongeveer 9 miljoen km²."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke Franse leider kroonde zichzelf tot keizer in 1804?",
+
+a:"Lodewijk XVI",
+b:"Napoleon Bonaparte",
+c:"Charles de Gaulle",
+
+correct:"b",
+
+uitleg:"Napoleon zette zelf de kroon op zijn hoofd."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke zanger bracht het album 'Purple Rain' uit?",
+
+a:"Prince",
+b:"David Bowie",
+c:"Elton John",
+
+correct:"a",
+
+uitleg:"Purple Rain verscheen in 1984."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Hoe heet de snelste vogel ter wereld tijdens een duikvlucht?",
+
+a:"Steenarend",
+b:"Slechtvalk",
+c:"Albatros",
+
+correct:"b",
+
+uitleg:"Een slechtvalk haalt snelheden van meer dan 300 km/u."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welk land heeft de grootste bewezen oliereserves ter wereld?",
+
+a:"Saoedi-Arabië",
+b:"Venezuela",
+c:"Rusland",
+
+correct:"b",
+
+uitleg:"Venezuela beschikt officieel over de grootste bewezen oliereserves ter wereld."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke historische veldslag vond plaats in 1815 in België?",
+
+a:"Waterloo",
+b:"Verdun",
+c:"Austerlitz",
+
+correct:"a",
+
+uitleg:"Bij Waterloo werd Napoleon definitief verslagen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Wie was de leadzanger van Nirvana?",
+
+a:"Eddie Vedder",
+b:"Kurt Cobain",
+c:"Chris Cornell",
+
+correct:"b",
+
+uitleg:"Kurt Cobain was frontman van de grungeband Nirvana."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welk dier heeft de langste draagtijd?",
+
+a:"Afrikaanse olifant",
+b:"Neushoorn",
+c:"Walvis",
+
+correct:"a",
+
+uitleg:"De draagtijd van een Afrikaanse olifant bedraagt ongeveer 22 maanden."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke Nederlandse schaatser won olympisch goud op de 10.000 meter in 1998 en 2002?",
+
+a:"Jochem Uytdehaage",
+b:"Gianni Romme",
+c:"Rintje Ritsma",
+
+correct:"b",
+
+uitleg:"Gianni Romme won tweemaal olympisch goud op deze afstand."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke hoofdstad ligt aan de rivier de Taag?",
+
+a:"Madrid",
+b:"Lissabon",
+c:"Porto",
+
+correct:"b",
+
+uitleg:"De Taag mondt uit in de Atlantische Oceaan bij Lissabon."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Wie was de laatste leider van de Sovjet-Unie?",
+
+a:"Boris Jeltsin",
+b:"Leonid Brezjnev",
+c:"Michail Gorbatsjov",
+
+correct:"c",
+
+uitleg:"Gorbatsjov was de laatste president van de Sovjet-Unie."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band bracht het album 'The Dark Side of the Moon' uit?",
+
+a:"Pink Floyd",
+b:"Deep Purple",
+c:"Genesis",
+
+correct:"a",
+
+uitleg:"Het album verscheen in 1973 en is een van de succesvolste ooit."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Hoe heet het grootste koraalrif ter wereld?",
+
+a:"Belize Barrier Reef",
+b:"Great Barrier Reef",
+c:"Red Sea Reef",
+
+correct:"b",
+
+uitleg:"Het Great Barrier Reef ligt voor de kust van Australië."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"In welke sport wordt de term 'birdie' gebruikt?",
+
+a:"Golf",
+b:"Bowlen",
+c:"Snooker",
+
+correct:"a",
+
+uitleg:"Een birdie betekent één slag onder par."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke Chinese dynastie bouwde grote delen van de huidige Chinese Muur?",
+
+a:"Ming",
+b:"Qing",
+c:"Han",
+
+correct:"a",
+
+uitleg:"De Ming-dynastie versterkte en verbouwde grote delen van de muur."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke zee ligt tussen Afrika en het Arabisch Schiereiland?",
+
+a:"Rode Zee",
+b:"Arabische Zee",
+c:"Zwarte Zee",
+
+correct:"a",
+
+uitleg:"De Rode Zee scheidt Afrika van Azië."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Wie schreef het nummer 'Hotel California'?",
+
+a:"Fleetwood Mac",
+b:"The Eagles",
+c:"Chicago",
+
+correct:"b",
+
+uitleg:"Hotel California werd een wereldhit voor The Eagles."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welk dier kan onafhankelijk met beide ogen verschillende richtingen op kijken?",
+
+a:"Kameleon",
+b:"Uil",
+c:"Lynx",
+
+correct:"a",
+
+uitleg:"Kameleons kunnen hun ogen onafhankelijk van elkaar bewegen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke voetbalclub won als eerste de UEFA Champions League onder die naam?",
+
+a:"AC Milan",
+b:"Olympique Marseille",
+c:"Ajax",
+
+correct:"b",
+
+uitleg:"Marseille won de eerste Champions League-finale in 1993."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke ontdekkingsreiziger leidde de eerste expeditie die de aarde rondvoer?",
+
+a:"Christoffel Columbus",
+b:"Ferdinand Magellaan",
+c:"James Cook",
+
+correct:"b",
+
+uitleg:"Magellaan begon de reis; zijn bemanning voltooide deze."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Hoe heet het parlement van Israël?",
+
+a:"Knesset",
+b:"Duma",
+c:"Majlis",
+
+correct:"a",
+
+uitleg:"De Knesset bestaat uit 120 leden."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke artiest stond bekend als 'The King of Pop'?",
+
+a:"Elvis Presley",
+b:"Michael Jackson",
+c:"Prince",
+
+correct:"b",
+
+uitleg:"Michael Jackson kreeg wereldwijd deze bijnaam."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welk land heeft de grootste populatie tijgers in het wild?",
+
+a:"India",
+b:"China",
+c:"Indonesië",
+
+correct:"a",
+
+uitleg:"Meer dan 70% van alle wilde tijgers leeft in India."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"In welke sport wordt gespeeld om de Davis Cup?",
+
+a:"Tennis",
+b:"Hockey",
+c:"Rugby",
+
+correct:"a",
+
+uitleg:"De Davis Cup is het landentoernooi voor herentennis."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad was de hoofdstad van het Byzantijnse Rijk?",
+
+a:"Athene",
+b:"Constantinopel",
+c:"Rome",
+
+correct:"b",
+
+uitleg:"Constantinopel is het huidige Istanbul."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Wie was de eerste mens in de ruimte?",
+
+a:"Neil Armstrong",
+b:"Joeri Gagarin",
+c:"Valentina Teresjkova",
+
+correct:"b",
+
+uitleg:"De Sovjetkosmonaut Joeri Gagarin vloog in 1961 de ruimte in."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke Britse artiest scoorde hits met 'Rocket Man' en 'Your Song'?",
+
+a:"David Bowie",
+b:"Elton John",
+c:"Rod Stewart",
+
+correct:"b",
+
+uitleg:"Elton John behoort tot de succesvolste artiesten ooit."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welk dier heeft het grootste landterritorium van alle katachtigen?",
+
+a:"Leeuw",
+b:"Luipaard",
+c:"Tijger",
+
+correct:"c",
+
+uitleg:"Tijgers kunnen territoria van honderden vierkante kilometers hebben."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke wielrenner won als eerste vijf keer de Tour de France?",
+
+a:"Bernard Hinault",
+b:"Jacques Anquetil",
+c:"Eddy Merckx",
+
+correct:"b",
+
+uitleg:"Jacques Anquetil was de eerste renner met vijf Tourzeges."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welk land heeft de meeste actieve vulkanen ter wereld?",
+
+a:"Japan",
+b:"Indonesië",
+c:"Chili",
+
+correct:"b",
+
+uitleg:"Indonesië ligt op de Ring van Vuur en heeft meer actieve vulkanen dan enig ander land."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke farao liet vermoedelijk de Grote Piramide van Gizeh bouwen?",
+
+a:"Cheops",
+b:"Toetanchamon",
+c:"Ramses II",
+
+correct:"a",
+
+uitleg:"De Grote Piramide wordt toegeschreven aan farao Cheops (Khufu)."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band bracht het album 'Rumours' uit?",
+
+a:"The Eagles",
+b:"Fleetwood Mac",
+c:"Supertramp",
+
+correct:"b",
+
+uitleg:"Rumours uit 1977 behoort tot de best verkochte albums ooit."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welk zoogdier heeft de krachtigste beet gemeten ten opzichte van zijn lichaamsgrootte?",
+
+a:"Tasmaanse duivel",
+b:"Nijlpaard",
+c:"Leeuw",
+
+correct:"a",
+
+uitleg:"De Tasmaanse duivel heeft een uitzonderlijk sterke beet voor zijn formaat."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"In welke sport wordt gespeeld om de America's Cup?",
+
+a:"Roeien",
+b:"Zeilen",
+c:"Waterpolo",
+
+correct:"b",
+
+uitleg:"De America's Cup is de oudste internationale sporttrofee."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Wat is de hoofdstad van Myanmar?",
+
+a:"Yangon",
+b:"Mandalay",
+c:"Naypyidaw",
+
+correct:"c",
+
+uitleg:"Sinds 2005 is Naypyidaw de officiële hoofdstad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Wie was de eerste vrouwelijke premier van het Verenigd Koninkrijk?",
+
+a:"Theresa May",
+b:"Margaret Thatcher",
+c:"Liz Truss",
+
+correct:"b",
+
+uitleg:"Margaret Thatcher werd premier in 1979."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef de Vier Jaargetijden?",
+
+a:"Antonio Vivaldi",
+b:"Johann Sebastian Bach",
+c:"Georg Friedrich Händel",
+
+correct:"a",
+
+uitleg:"De Vier Jaargetijden behoren tot de bekendste klassieke werken."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke vogel heeft de grootste spanwijdte van alle levende vogels?",
+
+a:"Andescondor",
+b:"Koningsalbatros",
+c:"Wandelalbatros",
+
+correct:"c",
+
+uitleg:"De wandelalbatros kan een spanwijdte van meer dan 3,5 meter bereiken."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke Nederlandse club won als eerste de Europa Cup I?",
+
+a:"PSV",
+b:"Feyenoord",
+c:"Ajax",
+
+correct:"b",
+
+uitleg:"Feyenoord won de Europa Cup I in 1970."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad stond vroeger bekend als Byzantium?",
+
+a:"Athene",
+b:"Istanbul",
+c:"Alexandrië",
+
+correct:"b",
+
+uitleg:"Byzantium werd later Constantinopel en vervolgens Istanbul."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke Amerikaanse president werd vermoord in Dallas in 1963?",
+
+a:"John F. Kennedy",
+b:"Lyndon Johnson",
+c:"Richard Nixon",
+
+correct:"a",
+
+uitleg:"Kennedy werd op 22 november 1963 doodgeschoten."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Van welke band was Bono de zanger?",
+
+a:"INXS",
+b:"U2",
+c:"Simple Minds",
+
+correct:"b",
+
+uitleg:"Bono is al sinds de oprichting de frontman van U2."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welk dier staat bekend als het grootste landroofdier ter wereld?",
+
+a:"IJsbeer",
+b:"Kodiakbeer",
+c:"Siberische tijger",
+
+correct:"a",
+
+uitleg:"De ijsbeer geldt als het grootste landroofdier."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Hoeveel spelers telt een honkbalteam op het veld?",
+
+a:"8",
+b:"9",
+c:"10",
+
+correct:"b",
+
+uitleg:"Een honkbalteam heeft negen spelers in het veld."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier stroomt door Wenen, Bratislava en Boedapest?",
+
+a:"Elbe",
+b:"Donau",
+c:"Dnjepr",
+
+correct:"b",
+
+uitleg:"De Donau verbindt meerdere Europese hoofdsteden."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Hoe heet het lagerhuis van het Duitse parlement?",
+
+a:"Bundesrat",
+b:"Bundestag",
+c:"Reichstag",
+
+correct:"b",
+
+uitleg:"De Bundestag wordt rechtstreeks gekozen door de bevolking."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke artiest bracht het album 'Born in the U.S.A.' uit?",
+
+a:"Bruce Springsteen",
+b:"Billy Joel",
+c:"Tom Petty",
+
+correct:"a",
+
+uitleg:"Het album verscheen in 1984."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke haaiensoort is de grootste ter wereld?",
+
+a:"Witte haai",
+b:"Walvishaai",
+c:"Basking shark",
+
+correct:"b",
+
+uitleg:"De walvishaai kan meer dan 12 meter lang worden."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke atleet won olympisch goud op de 100 meter in 2008, 2012 én 2016?",
+
+a:"Yohan Blake",
+b:"Justin Gatlin",
+c:"Usain Bolt",
+
+correct:"c",
+
+uitleg:"Usain Bolt won drie opeenvolgende olympische titels op de 100 meter."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Wat is de kleinste onafhankelijke staat ter wereld?",
+
+a:"Monaco",
+b:"San Marino",
+c:"Vaticaanstad",
+
+correct:"c",
+
+uitleg:"Vaticaanstad heeft een oppervlakte van ongeveer 0,44 km²."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog werd uitgevochten tussen Noord- en Zuid-Amerikaanse staten van 1861 tot 1865?",
+
+a:"Mexicaans-Amerikaanse Oorlog",
+b:"Amerikaanse Burgeroorlog",
+c:"Oorlog van 1812",
+
+correct:"b",
+
+uitleg:"De Burgeroorlog ging onder andere over slavernij en staatsrechten."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke Britse groep scoorde een wereldhit met 'Take On Me'?",
+
+a:"Duran Duran",
+b:"A-ha",
+c:"Tears for Fears",
+
+correct:"b",
+
+uitleg:"A-ha komt uit Noorwegen en scoorde in 1985 een wereldhit."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welk dier kan het hoogste springen ten opzichte van zijn lichaamslengte?",
+
+a:"Kangoeroe",
+b:"Vlo",
+c:"Lynx",
+
+correct:"b",
+
+uitleg:"Een vlo kan meer dan honderd keer zijn eigen lichaamslengte springen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke golfer won als eerste de moderne Career Grand Slam drie keer?",
+
+a:"Jack Nicklaus",
+b:"Tiger Woods",
+c:"Gary Player",
+
+correct:"b",
+
+uitleg:"Tiger Woods won alle vier majors meerdere keren en voltooide de Career Grand Slam drie keer."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad werd in 1994 de hoofdstad van Kazachstan (verplaatst vanuit Almaty)?",
+
+a:"Astana",
+b:"Shymkent",
+c:"Karaganda",
+
+correct:"a",
+
+uitleg:"Astana (nu Nur-Sultan genoemd geweest) werd de hoofdstad in 1997, maar de verplaatsing begon halverwege de jaren '90."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef 'Boléro'?",
+
+a:"Claude Debussy",
+b:"Maurice Ravel",
+c:"Igor Stravinsky",
+
+correct:"b",
+
+uitleg:"Boléro is een van de bekendste werken van Maurice Ravel."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke planeet in ons zonnestelsel heeft de meeste manen?",
+
+a:"Jupiter",
+b:"Saturnus",
+c:"Uranus",
+
+correct:"b",
+
+uitleg:"Saturnus heeft (tot nu toe bekende) de meeste manen in ons zonnestelsel."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog eindigde met de Vrede van Westfalen in 1648?",
+
+a:"De Tachtigjarige Oorlog",
+b:"De Dertigjarige Oorlog",
+c:"Beide A en B",
+
+correct:"c",
+
+uitleg:"De Vrede van Westfalen maakte een einde aan beide conflicten."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke schilder maakte 'De Nachtwacht'?",
+
+a:"Johannes Vermeer",
+b:"Rembrandt van Rijn",
+c:"Frans Hals",
+
+correct:"b",
+
+uitleg:"Rembrandt schilderde 'De Nachtwacht' in 1642."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke vogel is het nationale symbool van de Verenigde Staten?",
+
+a:"Zeearend",
+b:"Rode kardinaal",
+c:"Steenarend",
+
+correct:"a",
+
+uitleg:"De bald eagle (zeearend) is het nationale symbool van de VS."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke club won de eerste FIFA Wereldbeker in 1930?",
+
+a:"Brazilië",
+b:"Uruguay",
+c:"Argentinië",
+
+correct:"b",
+
+uitleg:"Uruguay won het eerste WK voetbal in eigen land."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier is de langste van Afrika?",
+
+a:"Nijl",
+b:"Congo",
+c:"Niger",
+
+correct:"a",
+
+uitleg:"De Nijl wordt meestal beschouwd als de langste rivier van Afrika."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke artiest staat bekend om het album 'Thriller'?",
+
+a:"Prince",
+b:"Michael Jackson",
+c:"Stevie Wonder",
+
+correct:"b",
+
+uitleg:"Thriller is het best verkochte album aller tijden."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke wetenschapper formuleerde de relativiteitstheorie?",
+
+a:"Isaac Newton",
+b:"Albert Einstein",
+c:"Niels Bohr",
+
+correct:"b",
+
+uitleg:"Einstein ontwikkelde de speciale en algemene relativiteitstheorie."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Canada?",
+
+a:"Toronto",
+b:"Ottawa",
+c:"Montreal",
+
+correct:"b",
+
+uitleg:"Ottawa is de politieke hoofdstad van Canada."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sport wordt gespeeld op Wimbledon?",
+
+a:"Tennis",
+b:"Badminton",
+c:"Golf",
+
+correct:"a",
+
+uitleg:"Wimbledon is het bekendste tennistoernooi ter wereld."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke zee ligt tussen Italië en de Balkan?",
+
+a:"Adriatische Zee",
+b:"Ionische Zee",
+c:"Egeïsche Zee",
+
+correct:"a",
+
+uitleg:"De Adriatische Zee scheidt Italië van de Balkan."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band maakte 'Bohemian Rhapsody'?",
+
+a:"The Rolling Stones",
+b:"Queen",
+c:"Led Zeppelin",
+
+correct:"b",
+
+uitleg:"Queen bracht dit iconische nummer uit in 1975."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welk dier is het snelste landdier ter wereld?",
+
+a:"Leeuw",
+b:"Gepard",
+c:"Antilope",
+
+correct:"b",
+
+uitleg:"De cheeta (gepard) kan snelheden tot ~110 km/u halen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog vond plaats van 1914 tot 1918?",
+
+a:"Eerste Wereldoorlog",
+b:"Tweede Wereldoorlog",
+c:"Koreaanse Oorlog",
+
+correct:"a",
+
+uitleg:"De Eerste Wereldoorlog duurde van 1914 tot 1918."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke Nederlandse stad staat bekend als 'Mokum'?",
+
+a:"Rotterdam",
+b:"Amsterdam",
+c:"Utrecht",
+
+correct:"b",
+
+uitleg:"'Mokum' is Jiddisch voor 'stad', vaak gebruikt voor Amsterdam."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke maan van Saturnus heeft een dikke atmosfeer en is groter dan Mercurius?",
+
+a:"Titan",
+b:"Enceladus",
+c:"Rhea",
+
+correct:"a",
+
+uitleg:"Titan is de grootste maan van Saturnus."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sporter wordt 'The Greatest' genoemd?",
+
+a:"Mike Tyson",
+b:"Muhammad Ali",
+c:"Floyd Mayweather",
+
+correct:"b",
+
+uitleg:"Muhammad Ali stond bekend als 'The Greatest'."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke uitvinding wordt toegeschreven aan Alexander Graham Bell?",
+
+a:"Telefoon",
+b:"Telegraaf",
+c:"Radio",
+
+correct:"a",
+
+uitleg:"Bell patenteerde de telefoon in 1876."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Australië?",
+
+a:"Sydney",
+b:"Melbourne",
+c:"Canberra",
+
+correct:"c",
+
+uitleg:"Canberra is speciaal gebouwd als hoofdstad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog stond bekend als de 'Golfoorlog' van 1990-1991?",
+
+a:"Irak vs Koeweit en coalitie",
+b:"Iran-Irak oorlog",
+c:"Afghanistan oorlog",
+
+correct:"a",
+
+uitleg:"Irak viel Koeweit binnen, waarna een internationale coalitie ingreep."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band komt uit Zweden en won Eurovisie in 1974?",
+
+a:"ABBA",
+b:"Roxette",
+c:"Ace of Base",
+
+correct:"a",
+
+uitleg:"ABBA won met 'Waterloo'."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke boom staat bekend als de grootste levende organisme op aarde (klonaal)?",
+
+a:"Sequoia",
+b:"Pando (trillende populier)",
+c:"Baobab",
+
+correct:"b",
+
+uitleg:"Pando in de VS is een gigantisch klonaal populierenstelsel."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke Franse leider kroonde zichzelf tot keizer in 1804?",
+
+a:"Lodewijk XVI",
+b:"Napoleon Bonaparte",
+c:"Charles de Gaulle",
+
+correct:"b",
+
+uitleg:"Napoleon kroonde zichzelf in de Notre-Dame."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oceaan is het diepst ter wereld?",
+
+a:"Atlantische Oceaan",
+b:"Indische Oceaan",
+c:"Stille Oceaan",
+
+correct:"c",
+
+uitleg:"De Stille Oceaan bevat de Marianentrog, het diepste punt op aarde."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef de 'Ode an die Freude' (Symfonie nr. 9)?",
+
+a:"Mozart",
+b:"Beethoven",
+c:"Schubert",
+
+correct:"b",
+
+uitleg:"Beethoven gebruikte Schillers tekst in zijn 9e symfonie."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad was in 2012 de gaststad van de Olympische Spelen?",
+
+a:"Beijing",
+b:"Londen",
+c:"Rio de Janeiro",
+
+correct:"b",
+
+uitleg:"De Olympische Spelen van 2012 werden in Londen gehouden."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke planeet staat het dichtst bij de zon?",
+
+a:"Venus",
+b:"Mercurius",
+c:"Mars",
+
+correct:"b",
+
+uitleg:"Mercurius is de binnenste planeet van ons zonnestelsel."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke zee ligt tussen Spanje en Noord-Afrika?",
+
+a:"Zwarte Zee",
+b:"Middellandse Zee",
+c:"Adriatische Zee",
+
+correct:"b",
+
+uitleg:"De Middellandse Zee scheidt Europa en Afrika."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke artiest bracht het album 'Back in Black' uit?",
+
+a:"AC/DC",
+b:"Metallica",
+c:"Iron Maiden",
+
+correct:"a",
+
+uitleg:"'Back in Black' is een van de best verkochte rockalbums ooit."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke diergroep behoort de walvis tot?",
+
+a:"Vissen",
+b:"Zoogdieren",
+c:"Amfibieën",
+
+correct:"b",
+
+uitleg:"Walvissen zijn zeezoogdieren en moeten ademhalen via longen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog eindigde in 1945?",
+
+a:"Eerste Wereldoorlog",
+b:"Tweede Wereldoorlog",
+c:"Koude Oorlog",
+
+correct:"b",
+
+uitleg:"De Tweede Wereldoorlog eindigde in 1945."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad staat bekend als de 'Stad van de Lichtjes' en ligt in Frankrijk?",
+
+a:"Parijs",
+b:"Lyon",
+c:"Nice",
+
+correct:"a",
+
+uitleg:"Parijs wordt vaak de Stad van het Licht genoemd."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sport gebruikt de term 'Grand Slam' voor vier grote toernooien?",
+
+a:"Golf",
+b:"Tennis",
+c:"Snooker",
+
+correct:"b",
+
+uitleg:"In tennis verwijst Grand Slam naar de vier major-toernooien."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier stroomt door Londen?",
+
+a:"Seine",
+b:"Thames",
+c:"Rijn",
+
+correct:"b",
+
+uitleg:"De Thames (Theems) stroomt door Londen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band maakte het nummer 'Stairway to Heaven'?",
+
+a:"Led Zeppelin",
+b:"Pink Floyd",
+c:"The Who",
+
+correct:"a",
+
+uitleg:"'Stairway to Heaven' is een klassieker van Led Zeppelin."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke vogel is het nationale symbool van Rusland?",
+
+a:"Goudarend",
+b:"Dubbelkoppige adelaar",
+c:"Sperwer",
+
+correct:"b",
+
+uitleg:"De dubbelkoppige adelaar is een historisch Russisch symbool."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sporter won 9 gouden olympische medailles in atletiek?",
+
+a:"Carl Lewis",
+b:"Usain Bolt",
+c:"Paavo Nurmi",
+
+correct:"a",
+
+uitleg:"Carl Lewis won meerdere gouden medailles in sprint en verspringen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Spanje?",
+
+a:"Barcelona",
+b:"Madrid",
+c:"Sevilla",
+
+correct:"b",
+
+uitleg:"Madrid is de hoofdstad en grootste stad van Spanje."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog was de Vietnamoorlog?",
+
+a:"Burgeroorlog in Vietnam met VS-betrokkenheid",
+b:"Oorlog tussen Vietnam en China",
+c:"Oorlog tussen Laos en Cambodja",
+
+correct:"a",
+
+uitleg:"De Vietnamoorlog was een conflict tussen Noord- en Zuid-Vietnam met Amerikaanse interventie."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke schilder maakte 'De Sterrennacht'?",
+
+a:"Pablo Picasso",
+b:"Vincent van Gogh",
+c:"Claude Monet",
+
+correct:"b",
+
+uitleg:"Van Gogh schilderde 'De Sterrennacht' in 1889."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke land heeft de meeste inwoners ter wereld?",
+
+a:"India",
+b:"China",
+c:"VS",
+
+correct:"a",
+
+uitleg:"India heeft sinds 2023 de grootste bevolking ter wereld."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke zee ligt tussen Japan en Korea?",
+
+a:"Japanse Zee",
+b:"Oost-Chinese Zee",
+c:"Filippijnse Zee",
+
+correct:"a",
+
+uitleg:"De Japanse Zee ligt tussen Japan en het Koreaanse schiereiland."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef de 'Matthäus-Passion'?",
+
+a:"Bach",
+b:"Vivaldi",
+c:"Händel",
+
+correct:"a",
+
+uitleg:"Johann Sebastian Bach schreef dit meesterwerk."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sport wordt gespeeld op Roland Garros?",
+
+a:"Tennis",
+b:"Voetbal",
+c:"Handbal",
+
+correct:"a",
+
+uitleg:"Roland Garros is het Franse grandslam-tennistoernooi."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Egypte?",
+
+a:"Alexandrië",
+b:"Caïro",
+c:"Gizeh",
+
+correct:"b",
+
+uitleg:"Caïro is de grootste stad en hoofdstad van Egypte."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke dier is het grootste op aarde?",
+
+a:"Afrikaanse olifant",
+b:"Blauwe vinvis",
+c:"Potvis",
+
+correct:"b",
+
+uitleg:"De blauwe vinvis is het grootste dier dat ooit heeft geleefd."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog stond bekend als de Koude Oorlog?",
+
+a:"Ideologische strijd tussen VS en Sovjet-Unie",
+b:"Oorlog in Korea",
+c:"Oorlog in Vietnam",
+
+correct:"a",
+
+uitleg:"De Koude Oorlog was een periode van geopolitieke spanning zonder directe oorlog."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier is de langste ter wereld volgens veel moderne metingen (met Amazonestelsel)?",
+
+a:"Nijl",
+b:"Amazonerivier",
+c:"Yangtze",
+
+correct:"b",
+
+uitleg:"De Amazone wordt vaak als langste of water rijkste rivier beschouwd, afhankelijk van meetmethode."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef de 'Vier Jaargetijden'?",
+
+a:"Vivaldi",
+b:"Bach",
+c:"Mozart",
+
+correct:"a",
+
+uitleg:"Antonio Vivaldi componeerde 'Le quattro stagioni'."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog duurde van 1337 tot 1453?",
+
+a:"Honderdjarige Oorlog",
+b:"Tachtigjarige Oorlog",
+c:"Dertigjarige Oorlog",
+
+correct:"a",
+
+uitleg:"Frankrijk en Engeland vochten meer dan een eeuw om macht en gebied."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de zetel van de Verenigde Naties?",
+
+a:"New York",
+b:"Genève",
+c:"Wenen",
+
+correct:"a",
+
+uitleg:"Het VN-hoofdkwartier staat in New York."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke planeet staat bekend om zijn ringenstelsel?",
+
+a:"Saturnus",
+b:"Jupiter",
+c:"Neptunus",
+
+correct:"a",
+
+uitleg:"Saturnus heeft het meest opvallende ringenstelsel."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band bracht 'Imagine' uit?",
+
+a:"John Lennon",
+b:"The Beatles",
+c:"The Rolling Stones",
+
+correct:"a",
+
+uitleg:"'Imagine' is een solonummer van John Lennon."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke diersoort is een axolotl?",
+
+a:"Vis",
+b:"Amfibie",
+c:"Reptiel",
+
+correct:"b",
+
+uitleg:"De axolotl is een salamanderachtig amfibie dat zijn larvale kenmerken behoudt."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Italië?",
+
+a:"Milaan",
+b:"Rome",
+c:"Napels",
+
+correct:"b",
+
+uitleg:"Rome is de politieke en historische hoofdstad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sporter staat bekend als 'The Bolt'?",
+
+a:"Usain Bolt",
+b:"Carl Lewis",
+c:"Justin Gatlin",
+
+correct:"a",
+
+uitleg:"Usain Bolt is de snelste sprinter ooit."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke zee ligt tussen Turkije en Griekenland?",
+
+a:"Egeïsche Zee",
+b:"Adriatische Zee",
+c:"Zwarte Zee",
+
+correct:"a",
+
+uitleg:"De Egeïsche Zee ligt tussen beide landen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke schilder maakte 'Guernica'?",
+
+a:"Picasso",
+b:"Dalí",
+c:"Miró",
+
+correct:"a",
+
+uitleg:"Pablo Picasso schilderde dit anti-oorlogswerk."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke land heeft de meeste eilanden ter wereld?",
+
+a:"Zweden",
+b:"Indonesië",
+c:"Canada",
+
+correct:"a",
+
+uitleg:"Zweden heeft tienduizenden eilanden."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog eindigde met de val van de Berlijnse Muur (symbolisch)?",
+
+a:"Koude Oorlog",
+b:"Eerste Wereldoorlog",
+c:"Vietnamoorlog",
+
+correct:"a",
+
+uitleg:"De val van de muur symboliseerde het einde van de Koude Oorlog."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke vogel kan het snelst duiken tijdens een aanval?",
+
+a:"Slechtvalk",
+b:"Zeearend",
+c:"Uil",
+
+correct:"a",
+
+uitleg:"De slechtvalk is het snelste dier ter wereld in duikvlucht."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Zuid-Afrika (bestuurlijk)?",
+
+a:"Pretoria",
+b:"Kaapstad",
+c:"Johannesburg",
+
+correct:"a",
+
+uitleg:"Zuid-Afrika heeft meerdere hoofdsteden; Pretoria is de uitvoerende hoofdstad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef 'De Toverfluit'?",
+
+a:"Mozart",
+b:"Beethoven",
+c:"Haydn",
+
+correct:"a",
+
+uitleg:"Mozart schreef deze beroemde opera."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier stroomt door Parijs?",
+
+a:"Seine",
+b:"Rijn",
+c:"Loire",
+
+correct:"a",
+
+uitleg:"De Seine loopt dwars door Parijs."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke dier is het grootste landdier?",
+
+a:"Afrikaanse olifant",
+b:"Nijlpaard",
+c:"Neushoorn",
+
+correct:"a",
+
+uitleg:"De Afrikaanse olifant is het grootste landdier."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band komt uit Ierland en maakte 'With or Without You'?",
+
+a:"U2",
+b:"The Cranberries",
+c:"Snow Patrol",
+
+correct:"a",
+
+uitleg:"U2 is een Ierse rockband."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Rusland?",
+
+a:"Sint-Petersburg",
+b:"Moskou",
+c:"Novosibirsk",
+
+correct:"b",
+
+uitleg:"Moskou is de politieke hoofdstad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sport wordt gespeeld met 11 spelers per team en een bal?",
+
+a:"Voetbal",
+b:"Rugby",
+c:"Hockey",
+
+correct:"a",
+
+uitleg:"Voetbal is wereldwijd de populairste teamsport."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog begon in 1939?",
+
+a:"Eerste Wereldoorlog",
+b:"Tweede Wereldoorlog",
+c:"Koude Oorlog",
+
+correct:"b",
+
+uitleg:"De Tweede Wereldoorlog begon met de inval van Polen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke planeet staat bekend als de 'rode planeet'?",
+
+a:"Mars",
+b:"Venus",
+c:"Jupiter",
+
+correct:"a",
+
+uitleg:"Mars lijkt rood door ijzeroxide op het oppervlak."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke dier leeft het langst van alle zoogdieren?",
+
+a:"Groenlandse walvis",
+b:"Olifant",
+c:"Mens",
+
+correct:"a",
+
+uitleg:"Groenlandse walvissen kunnen meer dan 200 jaar oud worden."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Duitsland?",
+
+a:"Berlijn",
+b:"Hamburg",
+c:"Frankfurt",
+
+correct:"a",
+
+uitleg:"Berlijn is de hoofdstad van Duitsland."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier stroomt door Boedapest?",
+
+a:"Donau",
+b:"Rijn",
+c:"Tisza",
+
+correct:"a",
+
+uitleg:"De Donau splitst Boedapest in Buda en Pest."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef de '1812 Overture'?",
+
+a:"Tchaikovsky",
+b:"Rachmaninov",
+c:"Stravinsky",
+
+correct:"a",
+
+uitleg:"Tchaikovsky schreef dit beroemde orkeststuk."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog vond plaats van 1701 tot 1714?",
+
+a:"Spaanse Successieoorlog",
+b:"Honderdjarige Oorlog",
+c:"Oorlog van de Oostenrijkse Successie",
+
+correct:"a",
+
+uitleg:"Een Europese oorlog over de Spaanse troonopvolging."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Turkije?",
+
+a:"Istanbul",
+b:"Ankara",
+c:"Izmir",
+
+correct:"b",
+
+uitleg:"Ankara is de politieke hoofdstad van Turkije."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke planeet heeft de kortste dag in ons zonnestelsel?",
+
+a:"Jupiter",
+b:"Saturnus",
+c:"Mars",
+
+correct:"a",
+
+uitleg:"Jupiter draait in ongeveer 10 uur om zijn as."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band maakte het album 'Dark Side of the Moon'?",
+
+a:"Pink Floyd",
+b:"Queen",
+c:"The Doors",
+
+correct:"a",
+
+uitleg:"Dit is een van de best verkochte albums ooit."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke diersoort is de blauwe vinvis?",
+
+a:"Vogel",
+b:"Zoogdier",
+c:"Vis",
+
+correct:"b",
+
+uitleg:"De blauwe vinvis is een zeezoogdier."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad ligt op twee continenten?",
+
+a:"Istanbul",
+b:"Cairo",
+c:"Athene",
+
+correct:"a",
+
+uitleg:"Istanbul ligt in Europa én Azië."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sporter won 23 Grand Slam titels?",
+
+a:"Roger Federer",
+b:"Novak Djokovic",
+c:"Rafael Nadal",
+
+correct:"b",
+
+uitleg:"Djokovic heeft het record voor meeste Grand Slam titels."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke zee ligt tussen Iran en Saoedi-Arabië?",
+
+a:"Perzische Golf",
+b:"Rode Zee",
+c:"Kaspische Zee",
+
+correct:"a",
+
+uitleg:"De Perzische Golf ligt in het Midden-Oosten."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke schilder maakte 'De Schreeuw'?",
+
+a:"Edvard Munch",
+b:"Van Gogh",
+c:"Klimt",
+
+correct:"a",
+
+uitleg:"'De Schreeuw' is een expressionistisch werk van Munch."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke land heeft de meeste mensen in Afrika?",
+
+a:"Nigeria",
+b:"Egypte",
+c:"Ethiopië",
+
+correct:"a",
+
+uitleg:"Nigeria is het meest bevolkte land van Afrika."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog duurde van 1815 tot 1914 als relatieve Europese vredeperiode?",
+
+a:"Pax Britannica",
+b:"Napoleontische oorlogen",
+c:"Koude Oorlog",
+
+correct:"a",
+
+uitleg:"Pax Britannica was een periode van Britse dominantie en relatieve vrede."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke vogel kan achteruit vliegen?",
+
+a:"Kolibrie",
+b:"Zwaluw",
+c:"Specht",
+
+correct:"a",
+
+uitleg:"Kolibries zijn uniek in hun vliegcapaciteiten."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Portugal?",
+
+a:"Porto",
+b:"Lissabon",
+c:"Coimbra",
+
+correct:"b",
+
+uitleg:"Lissabon is de hoofdstad van Portugal."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef 'Carmen'?",
+
+a:"Bizet",
+b:"Verdi",
+c:"Puccini",
+
+correct:"a",
+
+uitleg:"Georges Bizet schreef de opera Carmen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier is de langste van Zuid-Amerika volgens sommige metingen?",
+
+a:"Amazonerivier",
+b:"Orinoco",
+c:"Paraná",
+
+correct:"a",
+
+uitleg:"De Amazone wordt vaak als langste beschouwd."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke dier is de grootste roofkat?",
+
+a:"Tijger",
+b:"Leeuw",
+c:"Jaguar",
+
+correct:"a",
+
+uitleg:"De Siberische tijger is de grootste roofkat."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Polen?",
+
+a:"Krakau",
+b:"Warschau",
+c:"Gdansk",
+
+correct:"b",
+
+uitleg:"Warschau is de politieke hoofdstad van Polen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sport wordt gespeeld met een puck?",
+
+a:"IJshockey",
+b:"Rugby",
+c:"Handbal",
+
+correct:"a",
+
+uitleg:"IJshockey gebruikt een puck in plaats van een bal."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog begon in 1812 tegen Rusland?",
+
+a:"Napoleontische invasie van Rusland",
+b:"Eerste Wereldoorlog",
+c:"Krimoorlog",
+
+correct:"a",
+
+uitleg:"Napoleon viel Rusland binnen in 1812."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke planeet staat bekend om zijn blauwe kleur door methaan?",
+
+a:"Neptunus",
+b:"Uranus",
+c:"Beide",
+
+correct:"c",
+
+uitleg:"Beide planeten lijken blauw door methaan in de atmosfeer."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Zweden?",
+
+a:"Göteborg",
+b:"Stockholm",
+c:"Malmö",
+
+correct:"b",
+
+uitleg:"Stockholm is de hoofdstad van Zweden."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke dier leeft in een groep die een 'troep' heet?",
+
+a:"Olifant",
+b:"Leeuw",
+c:"Wolf",
+
+correct:"b",
+
+uitleg:"Leeuwen leven in troepen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band maakte 'Hotel California'?",
+
+a:"Eagles",
+b:"Fleetwood Mac",
+c:"The Beach Boys",
+
+correct:"a",
+
+uitleg:"Eagles brachten dit iconische nummer uit in 1976."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier stroomt door Wenen?",
+
+a:"Elbe",
+b:"Donau",
+c:"Sava",
+
+correct:"b",
+
+uitleg:"De Donau stroomt door Wenen en meerdere Europese hoofdsteden."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef de opera 'De Barbier van Sevilla'?",
+
+a:"Rossini",
+b:"Verdi",
+c:"Mozart",
+
+correct:"a",
+
+uitleg:"Gioachino Rossini componeerde deze beroemde opera."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog stond bekend als de 'Oorlog van de Drie Rijken'?",
+
+a:"Chinese burgeroorlog (Three Kingdoms-periode)",
+b:"Russische Burgeroorlog",
+c:"Engelse Burgeroorlog",
+
+correct:"a",
+
+uitleg:"De Three Kingdoms-periode was een historische Chinese burgeroorlog."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Noorwegen?",
+
+a:"Bergen",
+b:"Oslo",
+c:"Trondheim",
+
+correct:"b",
+
+uitleg:"Oslo is de politieke en economische hoofdstad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke planeet heeft de hoogste berg in het zonnestelsel?",
+
+a:"Mars",
+b:"Venus",
+c:"Mercurius",
+
+correct:"a",
+
+uitleg:"Olympus Mons op Mars is de hoogste berg."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band maakte het album 'Nevermind'?",
+
+a:"Nirvana",
+b:"Pearl Jam",
+c:"Soundgarden",
+
+correct:"a",
+
+uitleg:"'Nevermind' bracht grunge wereldwijd onder aandacht."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke diersoort is een axolotl biologisch gezien?",
+
+a:"Salamander (amfibie)",
+b:"Vis",
+c:"Reptiel",
+
+correct:"a",
+
+uitleg:"De axolotl is een neotenische salamander."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Griekenland?",
+
+a:"Thessaloniki",
+b:"Athene",
+c:"Patras",
+
+correct:"b",
+
+uitleg:"Athene is de historische en politieke hoofdstad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sporter won 8 gouden olympische medailles in Peking 2008?",
+
+a:"Usain Bolt",
+b:"Michael Phelps",
+c:"Mark Spitz",
+
+correct:"b",
+
+uitleg:"Michael Phelps domineerde het zwemmen in 2008."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke zee ligt tussen Afrika en het Arabisch Schiereiland?",
+
+a:"Rode Zee",
+b:"Zwarte Zee",
+c:"Caribische Zee",
+
+correct:"a",
+
+uitleg:"De Rode Zee scheidt Afrika en Azië."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke schilder maakte 'Het Laatste Avondmaal'?",
+
+a:"Leonardo da Vinci",
+b:"Michelangelo",
+c:"Raphael",
+
+correct:"a",
+
+uitleg:"Da Vinci schilderde dit iconische werk."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke land heeft de meeste officiële talen?",
+
+a:"Zuid-Afrika",
+b:"India",
+c:"Zwitserland",
+
+correct:"a",
+
+uitleg:"Zuid-Afrika heeft 11 officiële talen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog begon in 1914?",
+
+a:"Eerste Wereldoorlog",
+b:"Tweede Wereldoorlog",
+c:"Frans-Duitse Oorlog",
+
+correct:"a",
+
+uitleg:"De Eerste Wereldoorlog begon in 1914."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke vogel is de grootste ter wereld?",
+
+a:"Struisvogel",
+b:"Emoe",
+c:"Condor",
+
+correct:"a",
+
+uitleg:"De struisvogel is de grootste levende vogel."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van België?",
+
+a:"Antwerpen",
+b:"Brussel",
+c:"Gent",
+
+correct:"b",
+
+uitleg:"Brussel is de hoofdstad van België."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef 'De Zwanenmeer'?",
+
+a:"Tchaikovsky",
+b:"Brahms",
+c:"Debussy",
+
+correct:"a",
+
+uitleg:"Tchaikovsky componeerde het beroemde ballet."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier stroomt door Berlijn?",
+
+a:"Spree",
+b:"Rijn",
+c:"Elbe",
+
+correct:"a",
+
+uitleg:"De Spree loopt door Berlijn."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke dier is het grootste landroofdier?",
+
+a:"IJsbeer",
+b:"Grizzlybeer",
+c:"Tijger",
+
+correct:"a",
+
+uitleg:"De ijsbeer is het grootste landroofdier."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Finland?",
+
+a:"Helsinki",
+b:"Turku",
+c:"Tampere",
+
+correct:"a",
+
+uitleg:"Helsinki is de hoofdstad van Finland."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sport wordt gespeeld op de Tour de France?",
+
+a:"Wielrennen",
+b:"Hardlopen",
+c:"Motorsport",
+
+correct:"a",
+
+uitleg:"De Tour de France is een wielerwedstrijd."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog eindigde in 1918?",
+
+a:"Eerste Wereldoorlog",
+b:"Frans-Pruisische Oorlog",
+c:"Koreaanse Oorlog",
+
+correct:"a",
+
+uitleg:"De Eerste Wereldoorlog eindigde in 1918."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke planeet staat bekend om zijn grote rode vlek?",
+
+a:"Jupiter",
+b:"Mars",
+c:"Saturnus",
+
+correct:"a",
+
+uitleg:"De Grote Rode Vlek is een storm op Jupiter."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band maakte 'Smells Like Teen Spirit'?",
+
+a:"Nirvana",
+b:"Metallica",
+c:"Pearl Jam",
+
+correct:"a",
+
+uitleg:"Nirvana maakte dit grunge-anthem."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Denemarken?",
+
+a:"Aarhus",
+b:"Kopenhagen",
+c:"Odense",
+
+correct:"b",
+
+uitleg:"Kopenhagen is de hoofdstad van Denemarken."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke dier leeft het langst gemiddeld onder zoogdieren?",
+
+a:"Groenlandse walvis",
+b:"Olifant",
+c:"Mens",
+
+correct:"a",
+
+uitleg:"Groenlandse walvissen kunnen meer dan 200 jaar oud worden."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier stroomt door Rome?",
+
+a:"Tiber",
+b:"Arno",
+c:"Po",
+
+correct:"a",
+
+uitleg:"De Tiber stroomt door Rome en mondt uit in de Tyrreense Zee."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef 'Boléro'?",
+
+a:"Ravel",
+b:"Debussy",
+c:"Saint-Saëns",
+
+correct:"a",
+
+uitleg:"Maurice Ravel componeerde de beroemde 'Boléro'."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog begon in 1756 en eindigde in 1763?",
+
+a:"Zevenjarige Oorlog",
+b:"Spaanse Successieoorlog",
+c:"Oostenrijkse Successieoorlog",
+
+correct:"a",
+
+uitleg:"De Zevenjarige Oorlog was een wereldwijde conflict tussen Europese mogendheden."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Hongarije?",
+
+a:"Boedapest",
+b:"Debrecen",
+c:"Szeged",
+
+correct:"a",
+
+uitleg:"Boedapest ontstond uit Buda en Pest."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke planeet staat het verst van de zon in ons zonnestelsel?",
+
+a:"Neptunus",
+b:"Uranus",
+c:"Pluto",
+
+correct:"a",
+
+uitleg:"Neptunus is de verste officiële planeet."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band maakte 'Bohemian Rhapsody'?",
+
+a:"Queen",
+b:"The Beatles",
+c:"Led Zeppelin",
+
+correct:"a",
+
+uitleg:"Queen bracht dit iconische nummer uit in 1975."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke diersoort is de grootste haai?",
+
+a:"Walvishaai",
+b:"Witte haai",
+c:"Tijgerhaai",
+
+correct:"a",
+
+uitleg:"De walvishaai is de grootste vis ter wereld."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Tsjechië?",
+
+a:"Praag",
+b:"Brno",
+c:"Ostrava",
+
+correct:"a",
+
+uitleg:"Praag is de historische hoofdstad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sporter wordt de 'King of Clay' genoemd?",
+
+a:"Roger Federer",
+b:"Rafael Nadal",
+c:"Novak Djokovic",
+
+correct:"b",
+
+uitleg:"Nadal domineert op gravelbanen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke zee ligt tussen Italië en de Balkan?",
+
+a:"Adriatische Zee",
+b:"Ionische Zee",
+c:"Tyrreense Zee",
+
+correct:"a",
+
+uitleg:"De Adriatische Zee scheidt Italië en de Balkan."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke schilder maakte 'De Nachtwacht'?",
+
+a:"Rembrandt",
+b:"Vermeer",
+c:"Frans Hals",
+
+correct:"a",
+
+uitleg:"Rembrandt schilderde dit meesterwerk in 1642."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke land heeft de grootste bevolking van Europa?",
+
+a:"Rusland",
+b:"Duitsland",
+c:"Frankrijk",
+
+correct:"a",
+
+uitleg:"Rusland heeft het grootste inwonertal van Europa."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog duurde van 1919 tot 1939 als interbellumperiode spanning?",
+
+a:"Interbellum (geen officiële oorlog)",
+b:"Koude Oorlog",
+c:"Tweede Wereldoorlog",
+
+correct:"a",
+
+uitleg:"Dit was geen echte oorlog maar een spanningsperiode tussen wereldoorlogen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke vogel kan het hardst vliegen in horizontale vlucht?",
+
+a:"Gierzwaluw",
+b:"Slechtvalk",
+c:"Arend",
+
+correct:"a",
+
+uitleg:"De gierzwaluw is extreem snel in horizontale vlucht."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Zwitserland?",
+
+a:"Bern",
+b:"Zürich",
+c:"Genève",
+
+correct:"a",
+
+uitleg:"Bern is de federale hoofdstad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef 'Carmina Burana'?",
+
+a:"Carl Orff",
+b:"Bach",
+c:"Handel",
+
+correct:"a",
+
+uitleg:"Carl Orff baseerde dit werk op middeleeuwse teksten."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier stroomt door Amsterdam?",
+
+a:"Amstel",
+b:"IJssel",
+c:"Vecht",
+
+correct:"a",
+
+uitleg:"De stad Amsterdam is vernoemd naar de Amstel."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke dier is het snelste landdier?",
+
+a:"Cheetah",
+b:"Antilope",
+c:"Leeuw",
+
+correct:"a",
+
+uitleg:"De cheetah kan tot 100–120 km/u halen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van IJsland?",
+
+a:"Reykjavik",
+b:"Akureyri",
+c:"Keflavik",
+
+correct:"a",
+
+uitleg:"Reykjavik is de noordelijkste hoofdstad ter wereld."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sport wordt gespeeld met 15 spelers per team in rugby union?",
+
+a:"Rugby union",
+b:"American football",
+c:"Hockey",
+
+correct:"a",
+
+uitleg:"Rugby union speelt met 15 spelers per team."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog begon in 1991 in de Balkan-regio?",
+
+a:"Joegoslavische oorlogen",
+b:"Eerste Wereldoorlog",
+c:"Koude Oorlog",
+
+correct:"a",
+
+uitleg:"De Joegoslavische oorlogen begonnen na het uiteenvallen van Joegoslavië."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke planeet heeft de meeste manen (bekend tot nu toe)?",
+
+a:"Saturnus",
+b:"Jupiter",
+c:"Uranus",
+
+correct:"b",
+
+uitleg:"Jupiter heeft de meeste bekende manen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band maakte 'Wonderwall'?",
+
+a:"Oasis",
+b:"Blur",
+c:"Radiohead",
+
+correct:"a",
+
+uitleg:"Oasis bracht dit Britpop-nummer uit."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Kroatië?",
+
+a:"Zagreb",
+b:"Split",
+c:"Dubrovnik",
+
+correct:"a",
+
+uitleg:"Zagreb is de hoofdstad en grootste stad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke dier leeft in een groep die een 'roedel' heet?",
+
+a:"Wolf",
+b:"Leeuw",
+c:"Olifant",
+
+correct:"a",
+
+uitleg:"Wolven leven in roedels met een sociale structuur."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier stroomt door Lissabon?",
+
+a:"Douro",
+b:"Taag",
+c:"Guadiana",
+
+correct:"b",
+
+uitleg:"De Taag (Tejo) stroomt door Lissabon en mondt uit in de Atlantische Oceaan."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef de opera 'La Traviata'?",
+
+a:"Verdi",
+b:"Puccini",
+c:"Rossini",
+
+correct:"a",
+
+uitleg:"Giuseppe Verdi componeerde 'La Traviata'."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog vond plaats van 1910 tot 1920 in Mexico?",
+
+a:"Mexicaanse Revolutie",
+b:"Spaans-Amerikaanse Oorlog",
+c:"Mexicaanse Onafhankelijkheidsoorlog",
+
+correct:"a",
+
+uitleg:"De Mexicaanse Revolutie was een grote sociale en politieke omwenteling."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Australië?",
+
+a:"Sydney",
+b:"Melbourne",
+c:"Canberra",
+
+correct:"c",
+
+uitleg:"Canberra is speciaal gebouwd als hoofdstad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke planeet heeft de sterkste winden in het zonnestelsel?",
+
+a:"Neptunus",
+b:"Saturnus",
+c:"Jupiter",
+
+correct:"a",
+
+uitleg:"Neptunus heeft windsnelheden tot boven 2000 km/u."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band maakte het album 'Abbey Road'?",
+
+a:"The Beatles",
+b:"The Rolling Stones",
+c:"The Who",
+
+correct:"a",
+
+uitleg:"'Abbey Road' is een van de laatste albums van The Beatles."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke diersoort is een koala?",
+
+a:"Beer",
+b:"Buideldier",
+c:"Knaagdier",
+
+correct:"b",
+
+uitleg:"Koala’s zijn buideldieren uit Australië."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Slovenië?",
+
+a:"Ljubljana",
+b:"Zagreb",
+c:"Bratislava",
+
+correct:"a",
+
+uitleg:"Ljubljana is de hoofdstad van Slovenië."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sporter staat bekend als 'The King' in basketbal?",
+
+a:"Michael Jordan",
+b:"LeBron James",
+c:"Kobe Bryant",
+
+correct:"b",
+
+uitleg:"LeBron James wordt vaak 'King James' genoemd."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke zee ligt tussen Griekenland en Turkije?",
+
+a:"Egeïsche Zee",
+b:"Ionische Zee",
+c:"Adriatische Zee",
+
+correct:"a",
+
+uitleg:"De Egeïsche Zee ligt tussen Griekenland en Turkije."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke schilder maakte 'De Zonnebloemen'?",
+
+a:"Van Gogh",
+b:"Monet",
+c:"Gauguin",
+
+correct:"a",
+
+uitleg:"Vincent van Gogh schilderde de Zonnebloemen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke land heeft de meeste officiële talen wereldwijd?",
+
+a:"Bolivia",
+b:"Zuid-Afrika",
+c:"India",
+
+correct:"c",
+
+uitleg:"India heeft honderden talen en veel officiële erkenningen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog begon in 2003 in Irak?",
+
+a:"Irakoorlog",
+b:"Golfoorlog",
+c:"Afghanistanoorlog",
+
+correct:"a",
+
+uitleg:"De Irakoorlog begon met de invasie door de VS en bondgenoten."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke vogel staat bekend om zijn ‘lachende’ geluid?",
+
+a:"Kookaburra",
+b:"Papegaai",
+c:"Uil",
+
+correct:"a",
+
+uitleg:"De kookaburra maakt een opvallend lachend geluid."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Maleisië?",
+
+a:"Kuala Lumpur",
+b:"Singapore",
+c:"Jakarta",
+
+correct:"a",
+
+uitleg:"Kuala Lumpur is de hoofdstad van Maleisië."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef 'Die Zauberflöte'?",
+
+a:"Mozart",
+b:"Beethoven",
+c:"Schubert",
+
+correct:"a",
+
+uitleg:"Mozart schreef deze beroemde opera."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier stroomt door Cairo?",
+
+a:"Nijl",
+b:"Eufraat",
+c:"Tigris",
+
+correct:"a",
+
+uitleg:"De Nijl stroomt door Caïro."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke dier is het grootste roofdier op land?",
+
+a:"IJsbeer",
+b:"Grizzlybeer",
+c:"Tijger",
+
+correct:"a",
+
+uitleg:"De ijsbeer is het grootste landroofdier."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Peru?",
+
+a:"Lima",
+b:"Cusco",
+c:"Arequipa",
+
+correct:"a",
+
+uitleg:"Lima is de hoofdstad van Peru."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sport wordt gespeeld op Wimbledon?",
+
+a:"Tennis",
+b:"Golf",
+c:"Cricket",
+
+correct:"a",
+
+uitleg:"Wimbledon is het oudste tennistoernooi ter wereld."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog eindigde in 1815?",
+
+a:"Napoleontische Oorlogen",
+b:"Honderdjarige Oorlog",
+c:"Krimoorlog",
+
+correct:"a",
+
+uitleg:"De Napoleontische Oorlogen eindigden bij Waterloo."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke planeet heeft een dag die langer duurt dan zijn jaar?",
+
+a:"Venus",
+b:"Mercurius",
+c:"Mars",
+
+correct:"a",
+
+uitleg:"Venus draait extreem langzaam om zijn as."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band maakte 'Sweet Child O' Mine'?",
+
+a:"Guns N' Roses",
+b:"AC/DC",
+c:"Metallica",
+
+correct:"a",
+
+uitleg:"Guns N' Roses bracht dit nummer uit in 1987."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Indonesië (toekomstige hoofdstad verplaatst)?",
+
+a:"Jakarta",
+b:"Nusantara",
+c:"Bali",
+
+correct:"a",
+
+uitleg:"Jakarta is nog steeds de huidige hoofdstad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke dier leeft het langst van alle gewervelden?",
+
+a:"Groenlandse haai",
+b:"Schildpad",
+c:"Olifant",
+
+correct:"a",
+
+uitleg:"De Groenlandse haai kan meer dan 400 jaar oud worden."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier stroomt door Berlijn en Hamburg?",
+
+a:"Elbe",
+b:"Rijn",
+c:"Oder",
+
+correct:"a",
+
+uitleg:"De Elbe stroomt door Hamburg en komt uit in de Noordzee."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef de 'Mattheus Passion'?",
+
+a:"Bach",
+b:"Handel",
+c:"Vivaldi",
+
+correct:"a",
+
+uitleg:"Johann Sebastian Bach componeerde de Mattheus Passion."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog stond bekend als de Amerikaanse Burgeroorlog?",
+
+a:"1861–1865 conflict tussen Noord en Zuid",
+b:"Eerste Wereldoorlog",
+c:"Onafhankelijkheidsoorlog",
+
+correct:"a",
+
+uitleg:"De Amerikaanse Burgeroorlog ging over slavernij en staatsrechten."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Egypte?",
+
+a:"Caïro",
+b:"Alexandrië",
+c:"Gizeh",
+
+correct:"a",
+
+uitleg:"Caïro is de grootste stad en hoofdstad van Egypte."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke planeet staat bekend om zijn extreem sterke magnetisch veld?",
+
+a:"Jupiter",
+b:"Saturnus",
+c:"Neptunus",
+
+correct:"a",
+
+uitleg:"Jupiter heeft het sterkste magnetische veld van alle planeten."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band maakte 'Stairway to Heaven'?",
+
+a:"Led Zeppelin",
+b:"Pink Floyd",
+c:"The Doors",
+
+correct:"a",
+
+uitleg:"Led Zeppelin bracht dit iconische nummer uit."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke diersoort is de grootste op aarde?",
+
+a:"Blauwe vinvis",
+b:"Afrikaanse olifant",
+c:"Potvis",
+
+correct:"a",
+
+uitleg:"De blauwe vinvis is het grootste dier ooit."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Oostenrijk?",
+
+a:"Wenen",
+b:"Salzburg",
+c:"Innsbruck",
+
+correct:"a",
+
+uitleg:"Wenen is de politieke en culturele hoofdstad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sporter won 7 Tour de France-titels (later afgenomen)?",
+
+a:"Lance Armstrong",
+b:"Miguel Indurain",
+c:"Eddy Merckx",
+
+correct:"a",
+
+uitleg:"Armstrong werd later gediskwalificeerd wegens doping."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke zee ligt tussen Japan en Korea?",
+
+a:"Japanse Zee",
+b:"Oost-Chinese Zee",
+c:"Filipijnse Zee",
+
+correct:"a",
+
+uitleg:"De Japanse Zee ligt tussen Japan en het Koreaanse schiereiland."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke schilder maakte 'Meisje met de parel'?",
+
+a:"Vermeer",
+b:"Rembrandt",
+c:"Frans Hals",
+
+correct:"a",
+
+uitleg:"Johannes Vermeer schilderde dit beroemde werk."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke land heeft de grootste oppervlakte ter wereld?",
+
+a:"Canada",
+b:"Rusland",
+c:"China",
+
+correct:"b",
+
+uitleg:"Rusland is het grootste land ter wereld qua oppervlakte."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog begon in 1917 voor de VS?",
+
+a:"Eerste Wereldoorlog",
+b:"Tweede Wereldoorlog",
+c:"Vietnamoorlog",
+
+correct:"a",
+
+uitleg:"De VS trad in 1917 toe tot de Eerste Wereldoorlog."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke vogel kan het beste navigeren over lange afstanden?",
+
+a:"Albatros",
+b:"Duif",
+c:"Zwaluw",
+
+correct:"a",
+
+uitleg:"Albatrossen kunnen duizenden kilometers over zee vliegen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Argentinië?",
+
+a:"Buenos Aires",
+b:"Córdoba",
+c:"Rosario",
+
+correct:"a",
+
+uitleg:"Buenos Aires is de hoofdstad en grootste stad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke componist schreef 'Symfonie nr. 9 (Ode an die Freude)'?",
+
+a:"Beethoven",
+b:"Mozart",
+c:"Schumann",
+
+correct:"a",
+
+uitleg:"Beethoven schreef deze wereldberoemde symfonie."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke rivier stroomt door Londen?",
+
+a:"Theems",
+b:"Severn",
+c:"Tyne",
+
+correct:"a",
+
+uitleg:"De Theems stroomt door Londen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke dier is het meest giftige ter wereld?",
+
+a:"Pijlgifkikker",
+b:"Koningscobra",
+c:"Zeeanemoon",
+
+correct:"a",
+
+uitleg:"De pijlgifkikker heeft extreem sterk gif."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Vietnam?",
+
+a:"Hanoi",
+b:"Ho Chi Minhstad",
+c:"Da Nang",
+
+correct:"a",
+
+uitleg:"Hanoi is de politieke hoofdstad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke sport wordt gespeeld in de Super Bowl?",
+
+a:"American football",
+b:"Rugby",
+c:"Baseball",
+
+correct:"a",
+
+uitleg:"De Super Bowl is de finale van de NFL."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke oorlog eindigde in 1945?",
+
+a:"Tweede Wereldoorlog",
+b:"Eerste Wereldoorlog",
+c:"Koreaanse Oorlog",
+
+correct:"a",
+
+uitleg:"De Tweede Wereldoorlog eindigde in 1945."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke planeet heeft de meeste bekende ringen?",
+
+a:"Saturnus",
+b:"Jupiter",
+c:"Uranus",
+
+correct:"a",
+
+uitleg:"Saturnus heeft het meest opvallende ringenstelsel."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke band maakte 'Let It Be'?",
+
+a:"The Beatles",
+b:"Queen",
+c:"The Rolling Stones",
+
+correct:"a",
+
+uitleg:"The Beatles brachten dit nummer uit in 1970."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke stad is de hoofdstad van Colombia?",
+
+a:"Bogotá",
+b:"Medellín",
+c:"Cali",
+
+correct:"a",
+
+uitleg:"Bogotá is de politieke en grootste stad."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke dier leeft in een groep die een 'kudde' heet?",
+
+a:"Olifant",
+b:"Leeuw",
+c:"Wolf",
+
+correct:"a",
+
+uitleg:"Olifanten leven in hechte kuddes."
+},
+
+{
+categorie:"Pubquiz",
+
 vraag:"op welk Nederlands eiland staat een begraafplaats voor 70 Georgische militairen?",
 
 a:"Ameland",
