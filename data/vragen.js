@@ -2247,13 +2247,13 @@ uitleg:"Fedde Schurer was schrijver, dichter en journalist."
 /// GRONINGEN
 
 {
-categorie:"Groningen",
+categorie:"Algemeen",
 
 vraag:"Wat is de hoofdstad van Groningen?",
 
 a:"Veendam",
 b:"Winschoten",
-c:"Groningen",
+c:"Algemeen",
 
 correct:"c",
 
@@ -2261,7 +2261,7 @@ uitleg:"De stad Groningen is de hoofdstad van de provincie."
 },
 
 {
-categorie:"Groningen",
+categorie:"Algemeen",
 
 vraag:"Welke universiteit staat in Groningen?",
 
@@ -2275,7 +2275,7 @@ uitleg:"De Rijksuniversiteit Groningen bestaat sinds 1614."
 },
 
 {
-categorie:"Groningen",
+categorie:"Algemeen",
 
 vraag:"Welke toren staat bekend als de Olle Grieze?",
 
@@ -2289,7 +2289,7 @@ uitleg:"De Martinitoren wordt lokaal Olle Grieze genoemd."
 },
 
 {
-categorie:"Groningen",
+categorie:"Algemeen",
 
 vraag:"Waar staat Groningen bekend om?",
 
@@ -2303,7 +2303,7 @@ uitleg:"Groningen is bekend vanwege aardgaswinning."
 },
 
 {
-categorie:"Groningen",
+categorie:"Algemeen",
 
 vraag:"Welke zee grenst aan Groningen?",
 
@@ -2317,7 +2317,7 @@ uitleg:"De Waddenzee ligt aan de noordkant van Groningen."
 },
 
 {
-categorie:"Groningen",
+categorie:"Algemeen",
 
 vraag:"Welke voetbalclub speelt betaald voetbal in Groningen?",
 
@@ -2331,7 +2331,7 @@ uitleg:"FC Groningen speelt in het betaalde voetbal."
 },
 
 {
-categorie:"Groningen",
+categorie:"Algemeen",
 
 vraag:"Welke provincie grenst aan Groningen?",
 
@@ -2345,7 +2345,7 @@ uitleg:"Drenthe ligt direct onder Groningen."
 },
 
 {
-categorie:"Groningen",
+categorie:"Algemeen",
 
 vraag:"Welke plaats won de titel Mooiste dorp van Nederland?",
 
@@ -2359,7 +2359,7 @@ uitleg:"Winsum won deze titel van de ANWB."
 },
 
 {
-categorie:"Groningen",
+categorie:"Algemeen",
 
 vraag:"Welke vogel broedt in het Fochteloërveen?",
 
@@ -2373,12 +2373,12 @@ uitleg:"Kraanvogels broeden weer in het Fochteloërveen."
 },
 
 {
-categorie:"Groningen",
+categorie:"Algemeen",
 
 vraag:"Welke stad staat bekend als studentenstad?",
 
 a:"Assen",
-b:"Groningen",
+b:"Algemeen",
 c:"Drachten",
 
 correct:"b",
@@ -2531,7 +2531,7 @@ uitleg:"Het Pieterpad loopt door meerdere Drentse gebieden."
 /// EDUCATIEF
 
 {
-categorie:"Educatief",
+categorie:"Pubquiz",
 
 vraag:"Hoeveel provincies heeft Nederland?",
 
@@ -2545,7 +2545,7 @@ uitleg:"Nederland bestaat uit twaalf provincies."
 },
 
 {
-categorie:"Educatief",
+categorie:"Pubquiz",
 
 vraag:"Wat hing men in Kampen, rond 1649-1663, tijdens de bouw, in de kerktoren om het gras op de omlopen te bestrijden??",
 
@@ -2559,7 +2559,7 @@ uitleg:"Het was een koe: de koe werd aan een touw om zijn hals naar boven getrok
 },
   
 {
-categorie:"Educatief",
+categorie:"Pubquiz",
 
 vraag:"Welke planeet heet de rode planeet?",
 
@@ -2573,7 +2573,7 @@ uitleg:"Mars lijkt rood door ijzeroxide."
 },
 
 {
-categorie:"Educatief",
+categorie:"Pubquiz",
 
 vraag:"Hoeveel dagen telt een schrikkeljaar?",
 
@@ -2587,7 +2587,7 @@ uitleg:"Een schrikkeljaar heeft een extra dag in februari."
 },
 
 {
-categorie:"Educatief",
+categorie:"Pubquiz",
 
 vraag:"Wat is de hoofdstad van Duitsland?",
 
@@ -2601,7 +2601,7 @@ uitleg:"Berlijn is de hoofdstad van Duitsland."
 },
 
 {
-categorie:"Educatief",
+categorie:"Pubquiz",
 
 vraag:"Welke taal spreekt men vooral in Brazilië?",
 
@@ -2615,7 +2615,7 @@ uitleg:"Brazilië was vroeger een Portugese kolonie."
 },
 
 {
-categorie:"Educatief",
+categorie:"Pubquiz",
 
 vraag:"Hoeveel minuten zitten er in een uur?",
 
@@ -2629,7 +2629,7 @@ uitleg:"Een uur bestaat uit zestig minuten."
 },
 
 {
-categorie:"Educatief",
+categorie:"Pubquiz",
 
 vraag:"op welk Nederlands eiland staat een begraafplaats voor 70 Georgische militairen?",
 
@@ -2643,7 +2643,7 @@ uitleg:"De befraafplaats staat in Oudeschild op Texel.De militairen vochten aan 
 },
 
 {
-categorie:"Educatief",
+categorie:"Pubquiz",
 
 vraag:"Wat is het grootste oceaan ter wereld?",
 
@@ -2657,7 +2657,7 @@ uitleg:"De Stille Oceaan is het grootste oceaangebied."
 },
 
 {
-categorie:"Educatief",
+categorie:"Pubquiz",
 
 vraag:"Welke kleur krijg je door blauw en geel te mengen?",
 
@@ -2671,7 +2671,7 @@ uitleg:"Blauw en geel vormen samen groen."
 },
 
 {
-categorie:"Educatief",
+categorie:"Pubquiz",
 
 vraag:"Wat is de langste rivier van Europa?",
 
@@ -2685,7 +2685,7 @@ uitleg:"De Wolga is de langste rivier van Europa."
 },
 
 {
-categorie:"Educatief",
+categorie:"Pubquiz",
 
 vraag:"Welke gas hebben mensen nodig om te leven?",
 
