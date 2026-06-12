@@ -1741,7 +1741,7 @@ uitleg:"Keatsen is in âlde Fryske sport mei in bal en slachtechnyk."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker midsiuwske oerstreaming yn 1362 stie ek bekend as de ‘Grutte Mandrenke’ en rekke ek Fryslân swier?",
 
@@ -1755,7 +1755,7 @@ uitleg: "De Allerhilligenfloed fan 1362 feroarsake grutte feroarings oan de Noar
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Fryske stêd wie yn de 16e iuw in wichtich bestjoerssintrum ûnder de Saksyske hartoggen?",
 
@@ -1769,7 +1769,7 @@ uitleg: "Ljouwert groeide ûnder Saksysk bestjoer út ta it sintrum fan Fryslân
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker wetterferbining foarme yn de midsiuwen in wichtige hannelsrûte tusken Fryslân en de Sudersee?",
 
@@ -1783,7 +1783,7 @@ uitleg: "De Middelsee wie in wichtige see-ynslach foar hannel en ferkear."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Fryske famylje spile in wichtige rol yn de taal- en kultuerbeweging fan de 19e iuw?",
 
@@ -1797,7 +1797,7 @@ uitleg: "De Halbertsma’s wiene tige ynfloedryk yn taal en literatuer."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Fryske stêd krige yn 1426 stedsrjochten en groeide út ta in hannelsintrum yn de Gouden Iuw?",
 
@@ -1811,7 +1811,7 @@ uitleg: "Snits ûntjoech him ta in wichtich hannelsintrum."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker term waard brûkt foar de âlde Fryske bestjoerlike gebieten?",
 a: "Grietenijen",
@@ -1824,7 +1824,7 @@ uitleg: "Grietenijen wiene de midsiuwske bestjoerlike ienheden yn Fryslân."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Fryske stêd wie it sintrum fan de Admiraliteit fan Fryslân?",
 a: "Harns",
@@ -1837,7 +1837,7 @@ uitleg: "Harns wie in wichtige havenstêd foar de Admiraliteit."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker ramp yn 1287 feroarsake grutte feroarings oan de Fryske kust?",
 a: "Sint-Nikolaasfloed",
@@ -1850,7 +1850,7 @@ uitleg: "De Sint-Nikolaasfloed hie grutte ynfloed op de kustline."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker ferneamde Fryske tradysje giet oer fier oer wetter springen?",
 a: "Fierljeppen",
@@ -1863,7 +1863,7 @@ uitleg: "Fierljeppen is in tradisjonele Fryske sport."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd is ferbûn mei de dea fan Bonifatius yn 754?",
 a: "Dokkum",
@@ -1876,7 +1876,7 @@ uitleg: "Bonifatius waard yn Dokkum fermoarde."
 }
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker wettersneed yn 1362, bekend as de Grutte Mandrânke, feroarsake grutte feroarings oan de Fryske kust en waard ek bûten Fryslân fielt?",
 
@@ -1890,7 +1890,7 @@ correct: "b",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Fryske stêd waard yn de Saksyske tiid it wichtichste bestjoerssintrum fan it gebiet?",
 
@@ -1904,7 +1904,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hoe hjitte de midsiuwske wettersleat dy’t Fryslân ferbûn mei de Sudersee?",
 
@@ -1918,7 +1918,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker famylje hie in grutte rol yn de Fryske taalbeweging fan de 19e iuw?",
 
@@ -1932,7 +1932,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Fryske stêd krige yn de 15e iuw stedsrjochten en waard in wichtich hannelsplak?",
 
@@ -1946,7 +1946,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hoe hjitte de âlde Fryske bestjoersienheden?",
 
@@ -1960,7 +1960,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker havenstêd wie sintraal yn de Admiraliteit fan Fryslân?",
 
@@ -1974,7 +1974,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker ramp yn 1287 feroare grutte parten fan de Fryske kust?",
 
@@ -1988,7 +1988,7 @@ correct: "b",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Fryske stêd spile in rol yn de Upstalsboom-tradysje?",
 
@@ -2002,7 +2002,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Ta hokker taalfamylje heart it Frysk?",
 
@@ -2016,7 +2016,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wa wurdt sjoen as symboal fan ferset tsjin Saksysk bewâld?",
 
@@ -2030,7 +2030,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie in wichtich skipsbou sintrum yn de Gouden Iuw?",
 
@@ -2044,7 +2044,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker dialekt wurdt sprutsen yn de Stellingwerven?",
 
@@ -2058,7 +2058,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker maatregel makke grutte dielen fan Fryslân lân?",
 
@@ -2072,7 +2072,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie in wichtich Hânzesintrum?",
 
@@ -2086,7 +2086,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker religieuze beweging hie grutte ynfloed yn de 16e iuw?",
 
@@ -2100,7 +2100,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker rivier wie in wichtige grins yn Súdeast-Fryslân?",
 
@@ -2114,7 +2114,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd waard sintrum fan de Fryske taalbeweging yn de 19e iuw?",
 
@@ -2128,7 +2128,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wat foar wettergebiet wie wichtich foar hannel yn Fryslân?",
 
@@ -2142,7 +2142,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker beweging kaam op foar Fryske kultuer yn de 20e iuw?",
 
@@ -2156,7 +2156,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd is histoarysk ferbûn mei de dea fan Bonifatius yn 754?",
 
@@ -2170,7 +2170,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker sport is it fierljeppen?",
 
@@ -2184,7 +2184,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker havenstêd wie wichtich yn de 17e iuwske skipfeart?",
 
@@ -2198,7 +2198,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie it bestjoerssintrum fan Fryslân yn de Republyk?",
 
@@ -2212,7 +2212,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wat feroarsake de formaasje fan terpen yn Fryslân?",
 
@@ -2226,7 +2226,7 @@ correct: "a",
 }
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker midsiuwske wettersneed wurdt yn Noard-Jeropa ek wol de Grutte Mandrânke neamd en trof Fryslân swier?",
 
@@ -2240,7 +2240,7 @@ correct: "b",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Fryske stêd waard yn de Saksyske perioade it wichtichste bestjoerssintrum?",
 
@@ -2254,7 +2254,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hoe hjitte de midsiuwske seearm dy’t Fryslân ferbûn mei de Sudersee?",
 
@@ -2268,7 +2268,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker famylje wie tige wichtich yn de Fryske taalbeweging fan de 19e iuw?",
 
@@ -2282,7 +2282,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd krige yn 1426 stedsrjochten en waard in wichtich hannelsplak?",
 
@@ -2296,7 +2296,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hoe hjitte de âlde Fryske bestjoersgebieten?",
 
@@ -2310,7 +2310,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie sintraal yn de Admiraliteit fan Fryslân?",
 
@@ -2324,7 +2324,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker ramp yn 1287 feroare de Fryske kust sterk?",
 
@@ -2338,7 +2338,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Fryske stêd spile in rol yn de Upstalsboom-tradysje?",
 
@@ -2352,7 +2352,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Ta hokker taalfamylje heart it Frysk?",
 
@@ -2366,7 +2366,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wa is in symboal fan ferset tsjin Saksysk bewâld?",
 
@@ -2380,7 +2380,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie wichtich foar skipsbou yn de Gouden Iuw?",
 
@@ -2394,7 +2394,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker dialekt wurdt sprutsen yn de Stellingwerven?",
 
@@ -2408,7 +2408,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wat makke grutte dielen fan Fryslân lân?",
 
@@ -2422,7 +2422,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie in wichtich Hânzesintrum?",
 
@@ -2436,7 +2436,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker religieuze beweging feroare Fryslân yn de 16e iuw?",
 
@@ -2450,7 +2450,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker rivier wie in wichtige grins yn Súdeast-Fryslân?",
 
@@ -2464,7 +2464,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd waard sintrum fan de Fryske taalbeweging?",
 
@@ -2478,7 +2478,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wat foar wettergebiet wie wichtich foar hannel?",
 
@@ -2492,7 +2492,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker beweging kaam op foar Fryske kultuer yn de 20e iuw?",
 
@@ -2506,7 +2506,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd is ferbûn mei de dea fan Bonifatius?",
 
@@ -2520,7 +2520,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker sport is fierljeppen?",
 
@@ -2534,7 +2534,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker havenstêd wie wichtich yn de 17e iuw?",
 
@@ -2548,7 +2548,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie it bestjoerssintrum fan Fryslân?",
 
@@ -2562,7 +2562,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wat feroarsake de formaasje fan terpen?",
 
@@ -2576,7 +2576,7 @@ correct: "a",
 }
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Fryske stêd wie yn de 16e iuw in wichtich bestjoerssintrum ûnder de Saksyske hartoggen?",
 
@@ -2590,7 +2590,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hoe hjitte de wetterrin dy’t eartiids de Middelsee ferbûn mei de Sudersee?",
 
@@ -2604,7 +2604,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Fryske famylje wie wichtich foar taal en literatuer yn de 19e iuw?",
 
@@ -2618,7 +2618,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie in wichtich hannelsplak yn de Hanze-perioade?",
 
@@ -2632,7 +2632,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hoe hjitte de Friese bestjoersienheden yn de midsiuwen?",
 
@@ -2646,7 +2646,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie sintraal foar de Admiraliteit fan Fryslân?",
 
@@ -2660,7 +2660,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker ramp yn 1287 feroare de kust fan Fryslân sterk?",
 
@@ -2674,7 +2674,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd spile in rol yn de Frije Fryske rjochtstradysje?",
 
@@ -2688,7 +2688,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Ta hokker taalgroep heart it Frysk?",
 
@@ -2702,7 +2702,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wa wurdt sjoen as in symboal fan ferset tsjin Saksysk bewâld?",
 
@@ -2716,7 +2716,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie wichtich foar skipsbou yn de Gouden Iuw?",
 
@@ -2730,7 +2730,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker dialekt wurdt sprutsen yn de Stellingwerven?",
 
@@ -2744,7 +2744,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wat makke grutte gebieten fan Fryslân geskikt foar lânbou?",
 
@@ -2758,7 +2758,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie in wichtich Hânzesintrum?",
 
@@ -2772,7 +2772,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker religieuze beweging feroare Fryslân yn de 16e iuw?",
 
@@ -2786,7 +2786,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker rivier wie in wichtige grins yn Súdeast-Fryslân?",
 
@@ -2800,7 +2800,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd waard it sintrum fan de Fryske taalbeweging?",
 
@@ -2814,7 +2814,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wat foar wettergebiet wie wichtich foar hannel yn Fryslân?",
 
@@ -2828,7 +2828,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker beweging kaam op foar Fryske identiteit yn de 20e iuw?",
 
@@ -2842,7 +2842,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd is ferbûn mei de dea fan Bonifatius?",
 
@@ -2856,7 +2856,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wat is fierljeppen?",
 
@@ -2870,7 +2870,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker havenstêd wie wichtich yn de 17e iuw?",
 
@@ -2884,7 +2884,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie it bestjoerssintrum fan Fryslân?",
 
@@ -2898,7 +2898,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wat feroarsake de formaasje fan terpen?",
 
@@ -2912,7 +2912,7 @@ correct: "a",
 }
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker midsiuwske wettersneed wurdt ek wol de Grutte Mandrânke neamd en trof de Fryske kust swier yn 1362?",
 
@@ -2926,7 +2926,7 @@ correct: "b",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd waard ûnder de Saksyske tiid it wichtichste bestjoerssintrum fan Fryslân?",
 
@@ -2940,7 +2940,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hoe hjitte de eartiidske seearm dy’t Fryslân ferbûn mei de Sudersee?",
 
@@ -2954,7 +2954,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker famylje spile in grutte rol yn de Fryske taalbeweging fan de 19e iuw?",
 
@@ -2968,7 +2968,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd waard yn 1426 in wichtige hannelsstêd yn Fryslân?",
 
@@ -2982,7 +2982,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hoe hjitte de midsiuwske Fryske bestjoersienheden?",
 
@@ -2996,7 +2996,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker havenstêd wie sintraal yn de Admiraliteit fan Fryslân?",
 
@@ -3010,7 +3010,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker ramp yn 1287 feroare de Fryske kust sterk?",
 
@@ -3024,7 +3024,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd spile in rol yn de Fryske rjochtstradysje sûnder sintraal gesach?",
 
@@ -3038,7 +3038,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Ta hokker taalfamylje heart it Frysk?",
 
@@ -3052,7 +3052,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wa wurdt sjoen as symboal fan ferset tsjin Saksysk bewâld?",
 
@@ -3066,7 +3066,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie wichtich foar skipsbou yn de Gouden Iuw?",
 
@@ -3080,7 +3080,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker dialekt wurdt sprutsen yn de Stellingwerven?",
 
@@ -3094,7 +3094,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wat makke grutte gebieten fan Fryslân geskikt foar lânbou?",
 
@@ -3108,7 +3108,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie in wichtich Hânzesintrum?",
 
@@ -3122,7 +3122,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker religieuze beweging feroare Fryslân yn de 16e iuw?",
 
@@ -3136,7 +3136,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker rivier wie in wichtige natuerlike grins yn Súdeast-Fryslân?",
 
@@ -3150,7 +3150,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd waard it sintrum fan de Fryske taalbeweging?",
 
@@ -3164,7 +3164,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wat foar wettergebiet wie wichtich foar hannel yn Fryslân?",
 
@@ -3178,7 +3178,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker beweging kaam op foar Fryske identiteit yn de 20e iuw?",
 
@@ -3192,7 +3192,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd is ferbûn mei de dea fan Bonifatius?",
 
@@ -3206,7 +3206,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wat is fierljeppen?",
 
@@ -3220,7 +3220,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker havenstêd wie wichtich yn de 17e iuw?",
 
@@ -3234,7 +3234,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd is al iuwen it bestjoerssintrum fan Fryslân?",
 
@@ -3248,7 +3248,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Wat feroarsake de formaasje fan terpen?",
 
@@ -3262,7 +3262,7 @@ correct: "a",
 }
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese wettekode út de midsiuwen waard net sintraal opsteld mar regionaal tapast yn ferskate gouwen?",
 
@@ -3276,7 +3276,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese stêd hie yn de 17e iuw in grutte rol yn de produksje fan skippersseilen en touwurk?",
 
@@ -3290,7 +3290,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker wittenskipper út Frjentsjer waard bekend troch syn wurk yn de astronomy yn de 17e iuw?",
 
@@ -3304,7 +3304,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese beweging fersette him yn de 19e iuw tsjin it ferlies fan de Fryske taal yn it ûnderwiis?",
 
@@ -3318,7 +3318,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker seegebiet waard yn de iere midsiuwen troch stoarmfloeden foar in grut part yn lân feroare?",
 
@@ -3332,7 +3332,7 @@ correct: "b",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese skilder út de 17e iuw waard bekend om syn seestikken en havenscènes?",
 
@@ -3346,7 +3346,7 @@ correct: "b",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese stêd hie histoarysk in wichtige rol yn de hannel mei Skandinaavje?",
 
@@ -3360,7 +3360,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker religieuze sekte hie yn de 16e iuw yn Fryslân in sterke oanhing yn plattelânsgebieten?",
 
@@ -3374,7 +3374,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese útspraak is ferbûn mei de Slach by Warns (1345)?",
 
@@ -3388,7 +3388,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker stêd wie yn de 18e iuw in wichtich sintrum foar kennis en heger ûnderwiis yn Fryslân?",
 
@@ -3402,7 +3402,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese wettersport ûntstie út it brûken fan tradisjonele skûten foar frachtferfier?",
 
@@ -3416,7 +3416,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese ekonomyske sektor groeide sterk troch de ûntwettering fan feangebieten?",
 
@@ -3430,7 +3430,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese skriuwer is bekend fan it fers 'De Alde Friezen'?",
 
@@ -3444,7 +3444,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese regio stie bekend om syn eigen taalvariant dy't sterk ôfwiket fan it Westerlauwersk Frysk?",
 
@@ -3458,7 +3458,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese wetterbehearstechnyk waard brûkt om see-ynfloeden tsjin te hâlden foar moderne diken?",
 
@@ -3472,7 +3472,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese stêd wie yn de midsiuwen ferneamd om har rjochtbanken en regionale gearkomsten?",
 
@@ -3486,7 +3486,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese histoaryske perioade kaam nei 1498 en brocht Saksysk bestjoer?",
 
@@ -3500,7 +3500,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese rivier wurdt ek wol de Kuunder neamd?",
 
@@ -3514,7 +3514,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese beweging sette him yn foar literêre standerdisaasje yn de 20e iuw?",
 
@@ -3528,7 +3528,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese haven wie wichtich foar hannel yn hûden en lear yn de 17e iuw?",
 
@@ -3542,7 +3542,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese dichter wurdt beskôge as ien fan de grûnlizzers fan moderne Fryske literatuer?",
 
@@ -3556,7 +3556,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese sport is ûntstien as tradisjonele doarpskompetysje mei in bal en keatspalm?",
 
@@ -3570,7 +3570,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese bestjoersstruktuer ferfong de grietenijen yn de Napoleontyske tiid?",
 
@@ -3584,7 +3584,7 @@ correct: "a",
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 
 vraag: "Hokker Friese wetterskippen ûntstiene om mienskiplik wetterbehear te regeljen?",
 
@@ -4798,7 +4798,7 @@ uitleg:"Boalsert hie in sterke ambachtstradysje."
 }
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Wa boude yn 1781 it ferneamde planetarium fan Eise Eisinga yn Frjentsjer?",
 a: "Eise Eisinga",
 b: "Willem Loré",
@@ -4808,7 +4808,7 @@ uitleg: "Eise Eisinga boude it âldste noch wurkjende planetarium fan de wrâld.
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker Waadeilân stie earder bekend om syn grutte rol yn de hûning- en pearelfiskerij?",
 a: "Skylge",
 b: "It Amelân",
@@ -4818,7 +4818,7 @@ uitleg: "Skylge hie histoarysk in wichtige posysje yn fiskerij en hannel."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Wat is de namme fan it âldste noch besteande Fryske literêre selskip út de 19e iuw?",
 a: "Selskip foar Fryske Taal en Skriftekennis",
 b: "Fryske Akademy",
@@ -4828,7 +4828,7 @@ uitleg: "Dit selskip waard yn 1844 oprjochte foar taalbehâld."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker stêd is bekend om de âlde skiednis mei de Slach by Warns yn 1345?",
 a: "Starum",
 b: "Boalsert",
@@ -4838,7 +4838,7 @@ uitleg: "De Slach by Warns wurdt faak keppele oan Súdwest-Fryslân."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker Fryske skriuwer skreau ‘Rimen en Teltsjes’ mei de bruorren Halbertsma?",
 a: "Joost Halbertsma",
 b: "Tsjalling Hiddes",
@@ -4848,7 +4848,7 @@ uitleg: "De Halbertsma-bruorren binne wichtich foar de Fryske literatuer."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Wat is de namme fan it grutte wetter tusken Fryslân en de Waadeilannen?",
 a: "Waadsee",
 b: "Noardsee",
@@ -4858,7 +4858,7 @@ uitleg: "De Waadsee is UNESCO-wrâlderfgoed."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker doarp is bekend om it âldste houten tsjerkje fan Fryslân?",
 a: "Ljussens",
 b: "Jorwert",
@@ -4868,7 +4868,7 @@ uitleg: "Ljussens hat in hiel âld houten tsjerkje."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker útfining fan Cornelis Lely makke de Sudersee foar in grut part lân?",
 a: "Ofslútdyk",
 b: "Afsluitkanaal",
@@ -4878,7 +4878,7 @@ uitleg: "De Ofslútdyk waard yn 1932 foltôge."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker Fryske sport wurdt spile mei in bal en houten slachstôk?",
 a: "Keatsen",
 b: "Fierljeppen",
@@ -4888,7 +4888,7 @@ uitleg: "Keatsen is in tradisjonele Fryske sport."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker stêd wie eartiids in wichtich hannelsplak nei de Eastsee?",
 a: "Harns",
 b: "Dokkum",
@@ -4898,7 +4898,7 @@ uitleg: "Harns hie sterke maritime hannel."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Wat is de âlde Latynske namme foar Fryslân?",
 a: "Fryslân",
 b: "Frisia",
@@ -4908,7 +4908,7 @@ uitleg: "Frisia waard brûkt yn Romeinske boarnen."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker stêd hat de Blokhuispoort finzenis?",
 a: "Ljouwert",
 b: "Snits",
@@ -4918,7 +4918,7 @@ uitleg: "De Blokhuispoort is in âlde finzenis yn Ljouwert."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker Waadeilân is it grutste?",
 a: "Skylge",
 b: "It Amelân",
@@ -4928,7 +4928,7 @@ uitleg: "Skylge is it grutste Waadeilân."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker dichter wurdt sjoen as Frysk nasjonaal symboal?",
 a: "Piter Jelles Troelstra",
 b: "Gysbert Japicx",
@@ -4938,7 +4938,7 @@ uitleg: "Troelstra wie ek polityk aktyf."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker natoergebiet leit yn Noard-Fryslân?",
 a: "Lauwersseegebiet",
 b: "Drents-Friese Wâld",
@@ -4948,7 +4948,7 @@ uitleg: "It Lauwersseegebiet is in wichtich natoergebiet."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker tradisjonele boat wurdt brûkt by Skûtsjesilen?",
 a: "Skûtsje",
 b: "Praam",
@@ -4958,7 +4958,7 @@ uitleg: "It skûtsje is in âlde frachtskip."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker stêd hat de famylje Van Harinxma stins?",
 a: "Snits",
 b: "Dokkum",
@@ -4968,7 +4968,7 @@ uitleg: "Snits hat histoaryske stinzen."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Ut hokker taal komt it moderne Frysk?",
 a: "Aldfrysk",
 b: "Middelnederlânsk",
@@ -4978,7 +4978,7 @@ uitleg: "Aldfrysk is de basis fan it moderne Frysk."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker wetter leit tusken Fryslân en de Waadeilannen?",
 a: "Waadsee",
 b: "Noardsee",
@@ -4988,7 +4988,7 @@ uitleg: "De Waadsee is in getijdegebiet."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Wa is Grutte Pier?",
 a: "Pier Gerlofs Donia",
 b: "Jancko Douwama",
@@ -4998,7 +4998,7 @@ uitleg: "Grutte Pier wie in frijheidsstrider."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker stêd is startpunt fan de Elfstedentocht?",
 a: "Ljouwert",
 b: "Snits",
@@ -5008,7 +5008,7 @@ uitleg: "De start is yn Ljouwert."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker rivier leit yn Súd-Fryslân?",
 a: "Tsjonger",
 b: "Lauwers",
@@ -5018,7 +5018,7 @@ uitleg: "De Tsjonger is in natuerlike grins."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker museum fertelt Fryske skiednis?",
 a: "Fries Museum",
 b: "Natuurmuseum Fryslân",
@@ -5028,7 +5028,7 @@ uitleg: "It Fries Museum is it haadmuseum."
 },
 
 {
-categorie: "Fryslân",
+categorie:"Fryslân",
 vraag: "Hokker stêd hat âlde grachten en hannelsskiednis?",
 a: "Snits",
 b: "Drachten",
