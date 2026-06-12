@@ -1886,7 +1886,7 @@ c: "St. Elisabethfloed",
 
 correct: "b",
 
-útleg: "De Allerhilligenfloed fan 1362 feroare de hiele Noardseekust sterk."
+uitleg: "De Allerhilligenfloed fan 1362 feroare de hiele Noardseekust sterk."
 },
 
 {
@@ -1900,7 +1900,7 @@ c: "Harns",
 
 correct: "a",
 
-útleg: "Ljouwert groeide út ta it bestjoerssintrum ûnder de Saksen."
+uitleg: "Ljouwert groeide út ta it bestjoerssintrum ûnder de Saksen."
 },
 
 {
@@ -1914,7 +1914,7 @@ c: "De Dollard",
 
 correct: "a",
 
-útleg: "De Middelsee wie in wichtige seearm foar hannel."
+uitleg: "De Middelsee wie in wichtige seearm foar hannel."
 },
 
 {
@@ -1928,7 +1928,7 @@ c: "Camstra",
 
 correct: "a",
 
-útleg: "De Halbertsma’s wiene tige ynfloedryk yn taal en literatuer."
+uitleg: "De Halbertsma’s wiene tige ynfloedryk yn taal en literatuer."
 },
 
 {
@@ -1942,7 +1942,7 @@ c: "Boalsert",
 
 correct: "a",
 
-útleg: "Snits ûntwikkele him ta in sterke hannelsstêd."
+uitleg: "Snits ûntwikkele him ta in sterke hannelsstêd."
 },
 
 {
@@ -1956,7 +1956,7 @@ c: "Kwartieren",
 
 correct: "a",
 
-útleg: "Grietenijen wiene de lokale bestjoersgebieten."
+uitleg: "Grietenijen wiene de lokale bestjoersgebieten."
 },
 
 {
@@ -1970,7 +1970,7 @@ c: "Dokkum",
 
 correct: "a",
 
-útleg: "Harns wie in wichtige marinehaven."
+uitleg: "Harns wie in wichtige marinehaven."
 },
 
 {
@@ -1984,7 +1984,7 @@ c: "Allerhilligenfloed",
 
 correct: "b",
 
-útleg: "De Sint-Nikolaasfloed feroarsake grutte ferneatiging."
+uitleg: "De Sint-Nikolaasfloed feroarsake grutte ferneatiging."
 },
 
 {
@@ -1998,7 +1998,7 @@ c: "Dokkum",
 
 correct: "a",
 
-útleg: "Boalsert hie in wichtige rol yn regionale gearkomsten."
+uitleg: "Boalsert hie in wichtige rol yn regionale gearkomsten."
 },
 
 {
@@ -2012,7 +2012,7 @@ c: "Slavysk",
 
 correct: "a",
 
-útleg: "It Frysk heart ta de West-Germaanske talen."
+uitleg: "It Frysk heart ta de West-Germaanske talen."
 },
 
 {
@@ -2026,7 +2026,7 @@ c: "Piter Stuyvesant",
 
 correct: "a",
 
-útleg: "Jancko Douwama stie foar Fryske autonomy."
+uitleg: "Jancko Douwama stie foar Fryske autonomy."
 },
 
 {
@@ -2040,7 +2040,7 @@ c: "Drachten",
 
 correct: "a",
 
-útleg: "Harns wie in sterke maritime stêd."
+uitleg: "Harns wie in sterke maritime stêd."
 },
 
 {
@@ -2054,7 +2054,7 @@ c: "Westerlauwersk Frysk",
 
 correct: "a",
 
-útleg: "Stellingwerfsk heart ta it Nedersaksysk."
+uitleg: "Stellingwerfsk heart ta it Nedersaksysk."
 },
 
 {
@@ -2068,7 +2068,7 @@ c: "Kanaalboarjen",
 
 correct: "a",
 
-útleg: "Troch ynpoldering waard wetter lân."
+uitleg: "Troch ynpoldering waard wetter lân."
 },
 
 {
@@ -2082,7 +2082,7 @@ c: "Emmeloard",
 
 correct: "a",
 
-útleg: "Snits wie in wichtige Hânzestêd."
+uitleg: "Snits wie in wichtige Hânzestêd."
 },
 
 {
@@ -2096,7 +2096,7 @@ c: "Humanisme",
 
 correct: "a",
 
-útleg: "De Reformaasje feroare tsjerke en maatskippij."
+uitleg: "De Reformaasje feroare tsjerke en maatskippij."
 },
 
 {
@@ -2110,7 +2110,7 @@ c: "Maas",
 
 correct: "a",
 
-útleg: "De Tsjonger wie in natuerlike grinsrivier."
+uitleg: "De Tsjonger wie in natuerlike grinsrivier."
 },
 
 {
@@ -2124,7 +2124,7 @@ c: "Harns",
 
 correct: "a",
 
-útleg: "Ljouwert waard it kulturele sintrum."
+uitleg: "Ljouwert waard it kulturele sintrum."
 },
 
 {
@@ -2138,7 +2138,7 @@ c: "Bergen",
 
 correct: "a",
 
-útleg: "It wetternetwurk wie krúsjaal foar hannel."
+uitleg: "It wetternetwurk wie krúsjaal foar hannel."
 },
 
 {
@@ -2152,7 +2152,7 @@ c: "Frije Stêden Ried",
 
 correct: "a",
 
-útleg: "De FNB sette him yn foar taal en identiteit."
+uitleg: "De FNB sette him yn foar taal en identiteit."
 },
 
 {
@@ -2166,7 +2166,7 @@ c: "Ljouwert",
 
 correct: "a",
 
-útleg: "Bonifatius waard yn Dokkum fermoarde."
+uitleg: "Bonifatius waard yn Dokkum fermoarde."
 },
 
 {
@@ -2180,7 +2180,7 @@ c: "Skûtsjesilen",
 
 correct: "a",
 
-útleg: "Fierljeppen is in tradisjonele Fryske sport."
+uitleg: "Fierljeppen is in tradisjonele Fryske sport."
 },
 
 {
@@ -2194,7 +2194,7 @@ c: "Boalsert",
 
 correct: "a",
 
-útleg: "Harns wie in wichtige seehaven."
+uitleg: "Harns wie in wichtige seehaven."
 },
 
 {
@@ -2208,7 +2208,7 @@ c: "Snits",
 
 correct: "a",
 
-útleg: "Ljouwert wie it politike sintrum."
+uitleg: "Ljouwert wie it politike sintrum."
 },
 
 {
@@ -2222,7 +2222,7 @@ c: "Fulkanen",
 
 correct: "a",
 
-útleg: "Terpen waarden boud tsjin heech wetter."
+uitleg: "Terpen waarden boud tsjin heech wetter."
 }
 
 {
@@ -2236,7 +2236,7 @@ c: "Sint-Nikolaasfloed",
 
 correct: "b",
 
-útleg: "De Allerhilligenfloed fan 1362 feroare grutte parten fan de kust."
+uitleg: "De Allerhilligenfloed fan 1362 feroare grutte parten fan de kust."
 },
 
 {
@@ -2250,7 +2250,7 @@ c: "Dokkum",
 
 correct: "a",
 
-útleg: "Ljouwert waard it politike sintrum fan Fryslân."
+uitleg: "Ljouwert waard it politike sintrum fan Fryslân."
 },
 
 {
@@ -2264,7 +2264,7 @@ c: "De Dollard",
 
 correct: "a",
 
-útleg: "De Middelsee wie in wichtige hannelsrûte."
+uitleg: "De Middelsee wie in wichtige hannelsrûte."
 },
 
 {
@@ -2278,7 +2278,7 @@ c: "Camstra",
 
 correct: "a",
 
-útleg: "De Halbertsma’s stimulearren taal en literatuer."
+uitleg: "De Halbertsma’s stimulearren taal en literatuer."
 },
 
 {
@@ -2292,7 +2292,7 @@ c: "Boalsert",
 
 correct: "a",
 
-útleg: "Snits groeide út ta in hannelsstêd."
+uitleg: "Snits groeide út ta in hannelsstêd."
 },
 
 {
@@ -2306,7 +2306,7 @@ c: "Ambachten",
 
 correct: "a",
 
-útleg: "Grietenijen wiene lokale bestjoersienheden."
+uitleg: "Grietenijen wiene lokale bestjoersienheden."
 },
 
 {
@@ -2320,7 +2320,7 @@ c: "Dokkum",
 
 correct: "a",
 
-útleg: "Harns wie in wichtige marinehaven."
+uitleg: "Harns wie in wichtige marinehaven."
 },
 
 {
@@ -2334,7 +2334,7 @@ c: "Sint-Lúsiafloed",
 
 correct: "a",
 
-útleg: "De Sint-Nikolaasfloed hie grutte gefolgen foar de kustline."
+uitleg: "De Sint-Nikolaasfloed hie grutte gefolgen foar de kustline."
 },
 
 {
@@ -2348,7 +2348,7 @@ c: "Dokkum",
 
 correct: "a",
 
-útleg: "Boalsert wie wichtich yn regionale gearkomsten."
+uitleg: "Boalsert wie wichtich yn regionale gearkomsten."
 },
 
 {
@@ -2362,7 +2362,7 @@ c: "Slavysk",
 
 correct: "a",
 
-útleg: "It Frysk heart ta de West-Germaanske talen."
+uitleg: "It Frysk heart ta de West-Germaanske talen."
 },
 
 {
@@ -2376,7 +2376,7 @@ c: "Piter Stuyvesant",
 
 correct: "a",
 
-útleg: "Jancko Douwama stie foar Fryske autonomy."
+uitleg: "Jancko Douwama stie foar Fryske autonomy."
 },
 
 {
@@ -2390,7 +2390,7 @@ c: "Drachten",
 
 correct: "a",
 
-útleg: "Harns wie in sterke maritime stêd."
+uitleg: "Harns wie in sterke maritime stêd."
 },
 
 {
@@ -2404,7 +2404,7 @@ c: "Westerlauwersk Frysk",
 
 correct: "a",
 
-útleg: "Stellingwerfsk is Nedersaksysk."
+uitleg: "Stellingwerfsk is Nedersaksysk."
 },
 
 {
@@ -2418,7 +2418,7 @@ c: "Rivierûntjouwing",
 
 correct: "a",
 
-útleg: "Ynpoldering feroare wetter yn lân."
+uitleg: "Ynpoldering feroare wetter yn lân."
 },
 
 {
@@ -2432,7 +2432,7 @@ c: "Emmeloard",
 
 correct: "a",
 
-útleg: "Snits hie in sterke hannelsposysje."
+uitleg: "Snits hie in sterke hannelsposysje."
 },
 
 {
@@ -2446,7 +2446,7 @@ c: "Humanisme",
 
 correct: "a",
 
-útleg: "De Reformaasje feroare tsjerke en bestjoer."
+uitleg: "De Reformaasje feroare tsjerke en bestjoer."
 },
 
 {
@@ -2460,7 +2460,7 @@ c: "Maas",
 
 correct: "a",
 
-útleg: "De Tsjonger wie in natuerlike grinsrivier."
+uitleg: "De Tsjonger wie in natuerlike grinsrivier."
 },
 
 {
@@ -2474,7 +2474,7 @@ c: "Harns",
 
 correct: "a",
 
-útleg: "Ljouwert waard it kulturele sintrum."
+uitleg: "Ljouwert waard it kulturele sintrum."
 },
 
 {
@@ -2488,7 +2488,7 @@ c: "Woastynen",
 
 correct: "a",
 
-útleg: "It wetternetwurk wie essinsjeel foar hannel."
+uitleg: "It wetternetwurk wie essinsjeel foar hannel."
 },
 
 {
@@ -2502,7 +2502,7 @@ c: "Frije Stêden Ried",
 
 correct: "a",
 
-útleg: "De FNB stimulearre taal en identiteit."
+uitleg: "De FNB stimulearre taal en identiteit."
 },
 
 {
@@ -2516,7 +2516,7 @@ c: "Ljouwert",
 
 correct: "a",
 
-útleg: "Bonifatius waard yn Dokkum fermoarde."
+uitleg: "Bonifatius waard yn Dokkum fermoarde."
 },
 
 {
@@ -2530,7 +2530,7 @@ c: "Skûtsjesilen",
 
 correct: "a",
 
-útleg: "Fierljeppen is in tradisjonele Fryske sport."
+uitleg: "Fierljeppen is in tradisjonele Fryske sport."
 },
 
 {
@@ -2544,7 +2544,7 @@ c: "Boalsert",
 
 correct: "a",
 
-útleg: "Harns wie in wichtige seehaven."
+uitleg: "Harns wie in wichtige seehaven."
 },
 
 {
@@ -2558,7 +2558,7 @@ c: "Snits",
 
 correct: "a",
 
-útleg: "Ljouwert wie it politike sintrum."
+uitleg: "Ljouwert wie it politike sintrum."
 },
 
 {
@@ -2572,7 +2572,7 @@ c: "Fulkanen",
 
 correct: "a",
 
-útleg: "Terpen waarden boud tsjin heech wetter."
+uitleg: "Terpen waarden boud tsjin heech wetter."
 }
 
 {
@@ -2586,7 +2586,7 @@ c: "Dokkum",
 
 correct: "a",
 
-útleg: "Ljouwert waard ûnder Saksysk bewâld it bestjoerlik sintrum."
+uitleg: "Ljouwert waard ûnder Saksysk bewâld it bestjoerlik sintrum."
 },
 
 {
@@ -2600,7 +2600,7 @@ c: "De Tsjonger",
 
 correct: "a",
 
-útleg: "De Boarn spile in rol yn âlde wetterferbiningen."
+uitleg: "De Boarn spile in rol yn âlde wetterferbiningen."
 },
 
 {
@@ -2614,7 +2614,7 @@ c: "Camstra",
 
 correct: "a",
 
-útleg: "De Halbertsma’s wiene grut yn de Fryske literatuer."
+uitleg: "De Halbertsma’s wiene grut yn de Fryske literatuer."
 },
 
 {
@@ -2628,7 +2628,7 @@ c: "Heerenveen",
 
 correct: "a",
 
-útleg: "Snits wie in wichtige Hanzestêd."
+uitleg: "Snits wie in wichtige Hanzestêd."
 },
 
 {
@@ -2642,7 +2642,7 @@ c: "Departeminten",
 
 correct: "a",
 
-útleg: "Grietenijen wiene lokale bestjoersgebieten."
+uitleg: "Grietenijen wiene lokale bestjoersgebieten."
 },
 
 {
@@ -2656,7 +2656,7 @@ c: "Dokkum",
 
 correct: "a",
 
-útleg: "Harns wie in wichtige marinehaven."
+uitleg: "Harns wie in wichtige marinehaven."
 },
 
 {
@@ -2670,7 +2670,7 @@ c: "Sint-Lúsiafloed",
 
 correct: "a",
 
-útleg: "De Sint-Nikolaasfloed hie grutte gefolgen foar de kust."
+uitleg: "De Sint-Nikolaasfloed hie grutte gefolgen foar de kust."
 },
 
 {
@@ -2684,7 +2684,7 @@ c: "Dokkum",
 
 correct: "a",
 
-útleg: "Boalsert hie in sterke juridyske tradysje."
+uitleg: "Boalsert hie in sterke juridyske tradysje."
 },
 
 {
@@ -2698,7 +2698,7 @@ c: "Finno-Oegrysk",
 
 correct: "a",
 
-útleg: "It Frysk heart ta de West-Germaanske talen."
+uitleg: "It Frysk heart ta de West-Germaanske talen."
 },
 
 {
@@ -2712,7 +2712,7 @@ c: "Willem fan Oranje",
 
 correct: "a",
 
-útleg: "Jancko Douwama stie foar Fryske autonomy."
+uitleg: "Jancko Douwama stie foar Fryske autonomy."
 },
 
 {
@@ -2726,7 +2726,7 @@ c: "Drachten",
 
 correct: "a",
 
-útleg: "Harns hie in sterke maritime yndustry."
+uitleg: "Harns hie in sterke maritime yndustry."
 },
 
 {
@@ -2740,7 +2740,7 @@ c: "Westerlauwersk Frysk",
 
 correct: "a",
 
-útleg: "Stellingwerfsk is Nedersaksysk fan oarsprong."
+uitleg: "Stellingwerfsk is Nedersaksysk fan oarsprong."
 },
 
 {
@@ -2754,7 +2754,7 @@ c: "Berchfoarming",
 
 correct: "a",
 
-útleg: "Ynpoldering makke lân út wetter."
+uitleg: "Ynpoldering makke lân út wetter."
 },
 
 {
@@ -2768,7 +2768,7 @@ c: "Heerenveen",
 
 correct: "a",
 
-útleg: "Snits wie in sterke hannelsstêd."
+uitleg: "Snits wie in sterke hannelsstêd."
 },
 
 {
@@ -2782,7 +2782,7 @@ c: "Humanisme",
 
 correct: "a",
 
-útleg: "De Reformaasje feroare tsjerke en bestjoer."
+uitleg: "De Reformaasje feroare tsjerke en bestjoer."
 },
 
 {
@@ -2796,7 +2796,7 @@ c: "Maas",
 
 correct: "a",
 
-útleg: "De Tsjonger wie in natuerlike grins."
+uitleg: "De Tsjonger wie in natuerlike grins."
 },
 
 {
@@ -2810,7 +2810,7 @@ c: "Harns",
 
 correct: "a",
 
-útleg: "Ljouwert wie it kulturele sintrum."
+uitleg: "Ljouwert wie it kulturele sintrum."
 },
 
 {
@@ -2824,7 +2824,7 @@ c: "Woastinen",
 
 correct: "a",
 
-útleg: "It wetternetwurk makke hannel mooglik."
+uitleg: "It wetternetwurk makke hannel mooglik."
 },
 
 {
@@ -2838,7 +2838,7 @@ c: "Frije Steaten Ried",
 
 correct: "a",
 
-útleg: "De FNB stimulearre taal en kultuer."
+uitleg: "De FNB stimulearre taal en kultuer."
 },
 
 {
@@ -2852,7 +2852,7 @@ c: "Ljouwert",
 
 correct: "a",
 
-útleg: "Bonifatius waard yn Dokkum fermoarde."
+uitleg: "Bonifatius waard yn Dokkum fermoarde."
 },
 
 {
@@ -2866,7 +2866,7 @@ c: "Skûtsjesilen",
 
 correct: "a",
 
-útleg: "Fierljeppen is in tradisjonele Fryske sport."
+uitleg: "Fierljeppen is in tradisjonele Fryske sport."
 },
 
 {
@@ -2880,7 +2880,7 @@ c: "Boalsert",
 
 correct: "a",
 
-útleg: "Harns wie in wichtige seehaven."
+uitleg: "Harns wie in wichtige seehaven."
 },
 
 {
@@ -2894,7 +2894,7 @@ c: "Snits",
 
 correct: "a",
 
-útleg: "Ljouwert is al iuwen it bestjoerlik sintrum."
+uitleg: "Ljouwert is al iuwen it bestjoerlik sintrum."
 },
 
 {
@@ -2908,7 +2908,7 @@ c: "Iistiid",
 
 correct: "a",
 
-útleg: "Terpen waarden boud tsjin heech wetter."
+uitleg: "Terpen waarden boud tsjin heech wetter."
 }
 
 {
@@ -2922,7 +2922,7 @@ c: "Sint-Nikolaasfloed",
 
 correct: "b",
 
-útleg: "De Allerhilligenfloed fan 1362 feroare grutte parten fan de kustline."
+uitleg: "De Allerhilligenfloed fan 1362 feroare grutte parten fan de kustline."
 },
 
 {
@@ -2936,7 +2936,7 @@ c: "Harns",
 
 correct: "a",
 
-útleg: "Ljouwert waard it politike en bestjoerlike sintrum."
+uitleg: "Ljouwert waard it politike en bestjoerlike sintrum."
 },
 
 {
@@ -2950,7 +2950,7 @@ c: "De Lauwers",
 
 correct: "a",
 
-útleg: "De Middelsee wie in wichtige wetterferbining yn de midsiuwen."
+uitleg: "De Middelsee wie in wichtige wetterferbining yn de midsiuwen."
 },
 
 {
@@ -2964,7 +2964,7 @@ c: "Camstra",
 
 correct: "a",
 
-útleg: "De Halbertsma’s stimulearren Fryske taal en literatuer."
+uitleg: "De Halbertsma’s stimulearren Fryske taal en literatuer."
 },
 
 {
@@ -2978,7 +2978,7 @@ c: "Drachten",
 
 correct: "a",
 
-útleg: "Snits groeide út ta in sterke hannelsstêd."
+uitleg: "Snits groeide út ta in sterke hannelsstêd."
 },
 
 {
@@ -2992,7 +2992,7 @@ c: "Provinsjes",
 
 correct: "a",
 
-útleg: "Grietenijen wiene lokale bestjoersgebieten."
+uitleg: "Grietenijen wiene lokale bestjoersgebieten."
 },
 
 {
@@ -3006,7 +3006,7 @@ c: "Dokkum",
 
 correct: "a",
 
-útleg: "Harns wie in wichtige marinehaven."
+uitleg: "Harns wie in wichtige marinehaven."
 },
 
 {
@@ -3020,7 +3020,7 @@ c: "Sint-Lúsiafloed",
 
 correct: "a",
 
-útleg: "De Sint-Nikolaasfloed hie grutte ynfloed op de kustline."
+uitleg: "De Sint-Nikolaasfloed hie grutte ynfloed op de kustline."
 },
 
 {
@@ -3034,7 +3034,7 @@ c: "Dokkum",
 
 correct: "a",
 
-útleg: "Boalsert hie in sterke juridyske tradysje yn de Frije Fryske tiid."
+uitleg: "Boalsert hie in sterke juridyske tradysje yn de Frije Fryske tiid."
 },
 
 {
@@ -3048,7 +3048,7 @@ c: "Slavysk",
 
 correct: "a",
 
-útleg: "It Frysk heart ta de West-Germaanske talen."
+uitleg: "It Frysk heart ta de West-Germaanske talen."
 },
 
 {
@@ -3062,7 +3062,7 @@ c: "Willem fan Oranje",
 
 correct: "a",
 
-útleg: "Jancko Douwama stie foar Fryske autonomy."
+uitleg: "Jancko Douwama stie foar Fryske autonomy."
 },
 
 {
@@ -3076,7 +3076,7 @@ c: "Drachten",
 
 correct: "a",
 
-útleg: "Harns wie in sterke maritime stêd."
+uitleg: "Harns wie in sterke maritime stêd."
 },
 
 {
@@ -3090,7 +3090,7 @@ c: "Westerlauwersk Frysk",
 
 correct: "a",
 
-útleg: "Stellingwerfsk is in Nedersaksysk dialekt."
+uitleg: "Stellingwerfsk is in Nedersaksysk dialekt."
 },
 
 {
@@ -3104,7 +3104,7 @@ c: "Berchfoarming",
 
 correct: "a",
 
-útleg: "Ynpoldering makke lân út wetter."
+uitleg: "Ynpoldering makke lân út wetter."
 },
 
 {
@@ -3118,7 +3118,7 @@ c: "Emmeloard",
 
 correct: "a",
 
-útleg: "Snits wie in wichtige hannelsstêd."
+uitleg: "Snits wie in wichtige hannelsstêd."
 },
 
 {
@@ -3132,7 +3132,7 @@ c: "Humanisme",
 
 correct: "a",
 
-útleg: "De Reformaasje feroare tsjerke en bestjoer."
+uitleg: "De Reformaasje feroare tsjerke en bestjoer."
 },
 
 {
@@ -3146,7 +3146,7 @@ c: "Maas",
 
 correct: "a",
 
-útleg: "De Tsjonger wie in grinsrivier."
+uitleg: "De Tsjonger wie in grinsrivier."
 },
 
 {
@@ -3160,7 +3160,7 @@ c: "Harns",
 
 correct: "a",
 
-útleg: "Ljouwert wie it kulturele sintrum."
+uitleg: "Ljouwert wie it kulturele sintrum."
 },
 
 {
@@ -3174,7 +3174,7 @@ c: "Woastinen",
 
 correct: "a",
 
-útleg: "It wetternetwurk makke hannel mooglik."
+uitleg: "It wetternetwurk makke hannel mooglik."
 },
 
 {
@@ -3188,7 +3188,7 @@ c: "Frije Stêden Ried",
 
 correct: "a",
 
-útleg: "De FNB stimulearre taal en kultuer."
+uitleg: "De FNB stimulearre taal en kultuer."
 },
 
 {
@@ -3202,7 +3202,7 @@ c: "Ljouwert",
 
 correct: "a",
 
-útleg: "Bonifatius waard yn Dokkum fermoarde."
+uitleg: "Bonifatius waard yn Dokkum fermoarde."
 },
 
 {
@@ -3216,7 +3216,7 @@ c: "Skûtsjesilen",
 
 correct: "a",
 
-útleg: "Fierljeppen is in tradisjonele Fryske sport."
+uitleg: "Fierljeppen is in tradisjonele Fryske sport."
 },
 
 {
@@ -3230,7 +3230,7 @@ c: "Boalsert",
 
 correct: "a",
 
-útleg: "Harns wie in wichtige seehaven."
+uitleg: "Harns wie in wichtige seehaven."
 },
 
 {
@@ -3244,7 +3244,7 @@ c: "Snits",
 
 correct: "a",
 
-útleg: "Ljouwert is it politike sintrum fan Fryslân."
+uitleg: "Ljouwert is it politike sintrum fan Fryslân."
 },
 
 {
@@ -3258,7 +3258,7 @@ c: "Iistiid",
 
 correct: "a",
 
-útleg: "Terpen waarden boud tsjin heech wetter."
+uitleg: "Terpen waarden boud tsjin heech wetter."
 }
 
 {
@@ -3272,7 +3272,7 @@ c: "Lex Frisiae",
 
 correct: "a",
 
-útleg: "It Fryske lânrjocht bestie út ferskate regionale rjochtstradysjes."
+uitleg: "It Fryske lânrjocht bestie út ferskate regionale rjochtstradysjes."
 },
 
 {
@@ -3286,7 +3286,7 @@ c: "Boalsert",
 
 correct: "a",
 
-útleg: "Snits wie bekend om ambachten foar de skippersfeart."
+uitleg: "Snits wie bekend om ambachten foar de skippersfeart."
 },
 
 {
@@ -3300,7 +3300,7 @@ c: "Harmen Sytstra",
 
 correct: "a",
 
-útleg: "Eise Eisinga boude it planetarium yn Franeker."
+uitleg: "Eise Eisinga boude it planetarium yn Franeker."
 },
 
 {
@@ -3314,7 +3314,7 @@ c: "Friese Hervormingskring",
 
 correct: "a",
 
-útleg: "It Selskip sette him yn foar taalbehâld en ûnderwiis."
+uitleg: "It Selskip sette him yn foar taalbehâld en ûnderwiis."
 },
 
 {
@@ -3328,7 +3328,7 @@ c: "De Waddenmar",
 
 correct: "b",
 
-útleg: "De Middelsee ferdwûn troch oanwaaks en bediking."
+uitleg: "De Middelsee ferdwûn troch oanwaaks en bediking."
 },
 
 {
@@ -3342,7 +3342,7 @@ c: "Sikke Douwes",
 
 correct: "b",
 
-útleg: "Avercamp skildere winter- en iislandskippen."
+uitleg: "Avercamp skildere winter- en iislandskippen."
 },
 
 {
@@ -3356,7 +3356,7 @@ c: "Drachten",
 
 correct: "a",
 
-útleg: "Harns hie sterke hannelsferbiningen oer see."
+uitleg: "Harns hie sterke hannelsferbiningen oer see."
 },
 
 {
@@ -3370,7 +3370,7 @@ c: "Anglikanen",
 
 correct: "a",
 
-útleg: "De Mennisten hiene in sterke posysje yn Fryslân."
+uitleg: "De Mennisten hiene in sterke posysje yn Fryslân."
 },
 
 {
@@ -3384,7 +3384,7 @@ c: "Nea knibbelje",
 
 correct: "a",
 
-útleg: "De slach is symboal foar Fryske frijheid."
+uitleg: "De slach is symboal foar Fryske frijheid."
 },
 
 {
@@ -3398,7 +3398,7 @@ c: "Ljouwert",
 
 correct: "a",
 
-útleg: "Franeker hie in universiteit oant 1811."
+uitleg: "Franeker hie in universiteit oant 1811."
 },
 
 {
@@ -3412,7 +3412,7 @@ c: "Keatsen",
 
 correct: "a",
 
-útleg: "Skûtsjesilen komt fan frachtskippen."
+uitleg: "Skûtsjesilen komt fan frachtskippen."
 },
 
 {
@@ -3426,7 +3426,7 @@ c: "Diamanthannel",
 
 correct: "a",
 
-útleg: "Droechlizzing makke grutskalige lânbou mooglik."
+uitleg: "Droechlizzing makke grutskalige lânbou mooglik."
 },
 
 {
@@ -3440,7 +3440,7 @@ c: "Obe Postma",
 
 correct: "a",
 
-útleg: "Halbertsma skreau oer Fryske identiteit."
+uitleg: "Halbertsma skreau oer Fryske identiteit."
 },
 
 {
@@ -3454,7 +3454,7 @@ c: "De Wâlden",
 
 correct: "a",
 
-útleg: "It Bildts is in mingtaal mei Hollânske ynfloeden."
+uitleg: "It Bildts is in mingtaal mei Hollânske ynfloeden."
 },
 
 {
@@ -3468,7 +3468,7 @@ c: "Deltawurken",
 
 correct: "a",
 
-útleg: "Terpen wiene keunstmjittige wenhichten."
+uitleg: "Terpen wiene keunstmjittige wenhichten."
 },
 
 {
@@ -3482,7 +3482,7 @@ c: "Dokkum",
 
 correct: "a",
 
-útleg: "Boalsert wie in juridysk sintrum."
+uitleg: "Boalsert wie in juridysk sintrum."
 },
 
 {
@@ -3496,7 +3496,7 @@ c: "Frije tiid",
 
 correct: "a",
 
-útleg: "Nei 1498 kaam Saksysk bewâld."
+uitleg: "Nei 1498 kaam Saksysk bewâld."
 },
 
 {
@@ -3510,7 +3510,7 @@ c: "Linde",
 
 correct: "a",
 
-útleg: "Kuunder is de Nederlânske namme foar de Tsjonger."
+uitleg: "Kuunder is de Nederlânske namme foar de Tsjonger."
 },
 
 {
@@ -3524,7 +3524,7 @@ c: "Fryske Ried",
 
 correct: "a",
 
-útleg: "De Fryske Akademy die wittenskiplik taalwurk."
+uitleg: "De Fryske Akademy die wittenskiplik taalwurk."
 },
 
 {
@@ -3538,7 +3538,7 @@ c: "Stavoren",
 
 correct: "a",
 
-útleg: "Harns hie in brede hannelsbasis."
+uitleg: "Harns hie in brede hannelsbasis."
 },
 
 {
@@ -3552,7 +3552,7 @@ c: "Obe Postma",
 
 correct: "a",
 
-útleg: "Kalma wie in wichtige literêre fernijer."
+uitleg: "Kalma wie in wichtige literêre fernijer."
 },
 
 {
@@ -3566,7 +3566,7 @@ c: "Kaatsbalhockey",
 
 correct: "a",
 
-útleg: "Keatsen is in âlde Fryske balsport."
+uitleg: "Keatsen is in âlde Fryske balsport."
 },
 
 {
@@ -3580,7 +3580,7 @@ c: "Distrikten",
 
 correct: "a",
 
-útleg: "Napoleon yntrodusearre gemeenten."
+uitleg: "Napoleon yntrodusearre gemeenten."
 },
 
 {
@@ -3594,7 +3594,7 @@ c: "Provinsjes",
 
 correct: "a",
 
-útleg: "Wetterskippen regelje wetterbehear."
+uitleg: "Wetterskippen regelje wetterbehear."
 }
 
 {
@@ -5035,6 +5035,26 @@ b: "Drachten",
 c: "Heech",
 correct: "a",
 uitleg: "Snits is ferneamd om wetter en hannel."
+}
+
+{
+categorie: "Fryslân",
+vraag: "Hokker Friese wettekode út de midsiuwen waard net sintraal opsteld mar regionaal tapast yn ferskate gouwen?",
+a: "Frysk lânrjocht",
+b: "Codex Saxonicus",
+c: "Lex Frisiae",
+correct: "a",
+uitleg: "It Fryske lânrjocht bestie út ferskate regionale rjochtstradysjes."
+},
+
+{
+categorie: "Fryslân",
+vraag: "Hokker Friese stêd hie yn de 17e iuw in grutte rol yn de produksje fan skippersseilen en touwurk?",
+a: "Snits",
+b: "Harns",
+c: "Boalsert",
+correct: "a",
+uitleg: "Snits wie bekend om ambachten foar de skippersfeart."
 }
 
 {
