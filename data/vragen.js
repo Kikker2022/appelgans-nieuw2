@@ -5089,6 +5089,5564 @@ uitleg:"De Rijksuniversiteit Groningen bestaat sinds 1614."
 },
 
 {
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse wielrenner won de eerste Nederlandse Tour de France eindzege in 1968?",
+
+a: "Jan Janssen",
+b: "Joop Zoetemelk",
+c: "Hennie Kuiper",
+
+correct: "a",
+
+uitleg: "Jan Janssen won de Tour de France in 1968."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse voetbalclub won als eerste de Europa Cup I?",
+
+a: "Feyenoord",
+b: "Ajax",
+c: "PSV",
+
+correct: "a",
+
+uitleg: "Feyenoord won in 1970 als eerste Nederlandse club de Europa Cup I."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse atleet won goud op de 400m horden tijdens de Olympische Spelen van 1992?",
+
+a: "Edwin Moses",
+b: "Geen Nederlander won deze afstand",
+c: "Gregory Sedoc",
+
+correct: "b",
+
+uitleg: "Er was geen Nederlandse olympische kampioen op dit onderdeel."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse schaatser won drie gouden medailles op de Winterspelen van 2014?",
+
+a: "Sven Kramer",
+b: "Ireen Wüst",
+c: "Michel Mulder",
+
+correct: "b",
+
+uitleg: "Ireen Wüst won meerdere gouden medailles in Sotsji."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse bank ontstond uit de fusie van Postbank en NMB in 1991?",
+
+a: "ABN AMRO",
+b: "ING",
+c: "Rabobank",
+
+correct: "b",
+
+uitleg: "ING ontstond uit NMB en Postbank."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse stad organiseerde de Olympische Spelen van 1928?",
+
+a: "Amsterdam",
+b: "Rotterdam",
+c: "Den Haag",
+
+correct: "a",
+
+uitleg: "Amsterdam was gaststad in 1928."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse voetballer maakte de legendarische volley in de EK-finale van 1988?",
+
+a: "Marco van Basten",
+b: "Ruud Gullit",
+c: "Frank Rijkaard",
+
+correct: "a",
+
+uitleg: "Van Basten scoorde tegen de Sovjet-Unie."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse Formule 1-coureur werd wereldkampioen in 2021?",
+
+a: "Max Verstappen",
+b: "Nyck de Vries",
+c: "Jos Verstappen",
+
+correct: "a",
+
+uitleg: "Max Verstappen won zijn eerste titel in 2021."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse wielrenner won de Giro d’Italia in 2017?",
+
+a: "Tom Dumoulin",
+b: "Mathieu van der Poel",
+c: "Dylan van Baarle",
+
+correct: "a",
+
+uitleg: "Dumoulin won de Giro in 2017."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse voetbalclub won de Champions League in 1995?",
+
+a: "Ajax",
+b: "PSV",
+c: "Feyenoord",
+
+correct: "a",
+
+uitleg: "Ajax won de Champions League in 1995."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse luchthaven is de grootste van Nederland?",
+
+a: "Eindhoven Airport",
+b: "Schiphol",
+c: "Rotterdam The Hague Airport",
+
+correct: "b",
+
+uitleg: "Schiphol is de grootste luchthaven."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse politicus was premier van 1982 tot 1994?",
+
+a: "Ruud Lubbers",
+b: "Wim Kok",
+c: "Dries van Agt",
+
+correct: "a",
+
+uitleg: "Lubbers was de langstzittende premier."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse voetbalclub speelt in stadion De Kuip?",
+
+a: "Ajax",
+b: "Feyenoord",
+c: "Sparta Rotterdam",
+
+correct: "b",
+
+uitleg: "Feyenoord speelt in De Kuip."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse schaatser won goud op de 10.000 meter in Sotsji 2014?",
+
+a: "Sven Kramer",
+b: "Jorrit Bergsma",
+c: "Bob de Jong",
+
+correct: "b",
+
+uitleg: "Bergsma won goud op de 10.000 meter."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse voetbalclub won de UEFA Cup in 2002?",
+
+a: "Feyenoord",
+b: "PSV",
+c: "Ajax",
+
+correct: "a",
+
+uitleg: "Feyenoord won de UEFA Cup in 2002."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse stad is zetel van de regering en het parlement?",
+
+a: "Den Haag",
+b: "Amsterdam",
+c: "Utrecht",
+
+correct: "a",
+
+uitleg: "Den Haag is het politieke centrum."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse wielrenner won Parijs-Roubaix in 1983?",
+
+a: "Hennie Kuiper",
+b: "Jan Raas",
+c: "Joop Zoetemelk",
+
+correct: "a",
+
+uitleg: "Kuiper won Parijs-Roubaix."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse bank werd genationaliseerd tijdens de kredietcrisis van 2008?",
+
+a: "ABN AMRO",
+b: "ING",
+c: "SNS Bank",
+
+correct: "a",
+
+uitleg: "ABN AMRO werd deels genationaliseerd."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse zwemmer won goud op de 100m vrije slag in 2000?",
+
+a: "Pieter van den Hoogenband",
+b: "Inge de Bruijn",
+c: "Maarten van der Weijden",
+
+correct: "a",
+
+uitleg: "Van den Hoogenband won goud in Sydney."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse partij werd opgericht in 1966 door Hans van Mierlo?",
+
+a: "D66",
+b: "VVD",
+c: "PvdA",
+
+correct: "a",
+
+uitleg: "D66 werd opgericht in 1966."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse supermarktketen groeide uit tot een van de grootste door overnames van C1000?",
+
+a: "Jumbo",
+b: "Albert Heijn",
+c: "Plus",
+
+correct: "a",
+
+uitleg: "Jumbo groeide sterk via overnames."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse schaatser won meerdere olympische titels in 2018?",
+
+a: "Kjeld Nuis",
+b: "Sven Kramer",
+c: "Kai Verbij",
+
+correct: "a",
+
+uitleg: "Nuis won goud op 1000m en 1500m."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse stad is de zetel van het Internationaal Gerechtshof?",
+
+a: "Den Haag",
+b: "Amsterdam",
+c: "Rotterdam",
+
+correct: "a",
+
+uitleg: "Het ICJ zit in Den Haag."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse Formule 1-coureur won wereldtitels in 2022 en 2023?",
+
+a: "Max Verstappen",
+b: "Nyck de Vries",
+c: "Robin Frijns",
+
+correct: "a",
+
+uitleg: "Verstappen won meerdere wereldtitels."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"In welk jaar werd de euro als chartale munt ingevoerd in Nederland?",
+
+a:"1999",
+b:"2002",
+c:"2004",
+
+correct:"b",
+
+uitleg:"In 2002 werd de euro contant ingevoerd in Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse autofabrikant bestond tot 1993 en stond bekend om de DAF personenauto’s?",
+
+a:"DAF",
+b:"Spyker",
+c:"VDL",
+
+correct:"a",
+
+uitleg:"DAF maakte personenauto’s tot de overname door Volvo in 1975; vrachtwagens bleven bestaan."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is de gemiddelde lengte van de Afsluitdijk?",
+
+a:"18 km",
+b:"32 km",
+c:"55 km",
+
+correct:"b",
+
+uitleg:"De Afsluitdijk is ongeveer 32 kilometer lang."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank fuseerde in 1991 tot ABN AMRO?",
+
+a:"ABN en AMRO",
+b:"ING en Rabobank",
+c:"Postbank en NMB",
+
+correct:"a",
+
+uitleg:"ABN en AMRO fuseerden tot ABN AMRO."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"In welk jaar werd de Europese Unie officieel opgericht (Verdrag van Maastricht)?",
+
+a:"1992",
+b:"1989",
+c:"2001",
+
+correct:"a",
+
+uitleg:"Het Verdrag van Maastricht werd in 1992 ondertekend."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse premier voerde de Wassenaarse Akkoorden in de jaren 80 mede uit?",
+
+a:"Ruud Lubbers",
+b:"Wim Kok",
+c:"Dries van Agt",
+
+correct:"a",
+
+uitleg:"Lubbers was premier tijdens de uitvoering van het akkoord."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is de maximale snelheid op Nederlandse snelwegen sinds 2020 overdag?",
+
+a:"100 km/u",
+b:"120 km/u",
+c:"130 km/u",
+
+correct:"a",
+
+uitleg:"Overdag geldt 100 km/u."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke luchthaven is de grootste van Nederland?",
+
+a:"Eindhoven Airport",
+b:"Schiphol",
+c:"Rotterdam The Hague Airport",
+
+correct:"b",
+
+uitleg:"Schiphol is de grootste luchthaven."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse multinational ontstond uit Koninklijke Olie en Shell Transport?",
+
+a:"Shell",
+b:"Unilever",
+c:"Heineken",
+
+correct:"a",
+
+uitleg:"Shell ontstond uit deze fusie in 1907."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke provincie is qua oppervlakte de grootste van Nederland?",
+
+a:"Friesland",
+b:"Gelderland",
+c:"Noord-Brabant",
+
+correct:"b",
+
+uitleg:"Gelderland is de grootste provincie."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"In welk jaar kreeg Nederland algemeen kiesrecht voor mannen?",
+
+a:"1917",
+b:"1919",
+c:"1922",
+
+correct:"a",
+
+uitleg:"In 1917 werd het mannenkiesrecht ingevoerd."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse automerk werd in 2012 failliet verklaard?",
+
+a:"Spyker",
+b:"DAF",
+c:"NedCar",
+
+correct:"a",
+
+uitleg:"Spyker ging in 2012 failliet."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke rivier vormt een belangrijke scheepvaartroute naar Duitsland?",
+
+a:"Maas",
+b:"Rijn",
+c:"IJssel",
+
+correct:"b",
+
+uitleg:"De Rijn is een belangrijke internationale vaarroute."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat was de belangrijkste economische sector in Nederland in de jaren 50?",
+
+a:"Industrie",
+b:"Landbouw",
+c:"Dienstensector",
+
+correct:"b",
+
+uitleg:"Na de oorlog was landbouw nog dominant."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad werd zwaar getroffen door de watersnoodramp van 1953?",
+
+a:"Rotterdam",
+b:"Zierikzee",
+c:"Utrecht",
+
+correct:"b",
+
+uitleg:"Zierikzee en Zeeland werden zwaar getroffen."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse energiegasbel werd ontdekt in 1959?",
+
+a:"Groningen",
+b:"Drenthe",
+c:"Twente",
+
+correct:"a",
+
+uitleg:"Het Groningse gasveld werd ontdekt in 1959."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke politieke partij werd opgericht in 1966?",
+
+a:"D66",
+b:"CDA",
+c:"VVD",
+
+correct:"a",
+
+uitleg:"D66 werd opgericht in 1966."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse premier trad af na de IRT-affaire?",
+
+a:"Wim Kok",
+b:"Ruud Lubbers",
+c:"Jan Peter Balkenende",
+
+correct:"a",
+
+uitleg:"De affaire speelde onder het kabinet-Kok."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse autofabriek stond in Born?",
+
+a:"NedCar",
+b:"DAF",
+c:"VDL Bus",
+
+correct:"a",
+
+uitleg:"NedCar stond in Born (Limburg)."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het bestuurlijke centrum van de EU in Nederland?",
+
+a:"Den Haag",
+b:"Amsterdam",
+c:"Brussel",
+
+correct:"a",
+
+uitleg:"Den Haag is de politieke hoofdstad."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse spoorwegmaatschappij werd in 1995 geprivatiseerd?",
+
+a:"NS",
+b:"GVB",
+c:"Arriva",
+
+correct:"a",
+
+uitleg:"NS werd toen hervormd en deels geprivatiseerd."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse economie werd sterk beïnvloed door de oliecrisis van 1973?",
+
+a:"Industrie en transport",
+b:"Landbouw alleen",
+c:"Toerisme",
+
+correct:"a",
+
+uitleg:"De oliecrisis had brede economische impact."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad heeft de grootste haven van Europa?",
+
+a:"Rotterdam",
+b:"Amsterdam",
+c:"Vlissingen",
+
+correct:"a",
+
+uitleg:"Rotterdam is de grootste haven van Europa."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse politieke leider voerde de 'paarse kabinetten' aan in de jaren 90?",
+
+a:"Wim Kok",
+b:"Mark Rutte",
+c:"Dries van Agt",
+
+correct:"a",
+
+uitleg:"Wim Kok leidde de paarse kabinetten."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse digitale infrastructuur werd rond 2000 sterk uitgebreid?",
+
+a:"Glasvezelnetwerk",
+b:"Spoornetwerk",
+c:"Gasnetwerk",
+
+correct:"a",
+
+uitleg:"Nederland investeerde sterk in glasvezel."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt sinds 2006 de marktwerking in de zorg?",
+
+a:"Zorgverzekeringswet",
+b:"Wet Big",
+c:"AWBZ",
+
+correct:"a",
+
+uitleg:"De Zorgverzekeringswet introduceerde marktwerking in 2006."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse autofabrikant produceert de elektrische Lightyear One (prototypefase)?",
+
+a:"Lightyear",
+b:"Tesla Nederland",
+c:"VDL Nedcar",
+
+correct:"a",
+
+uitleg:"Lightyear is een Nederlandse start-up gericht op zonneauto’s."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse economische sector groeide het sterkst sinds 2000?",
+
+a:"Landbouw",
+b:"Dienstensector",
+c:"Zware industrie",
+
+correct:"b",
+
+uitleg:"De dienstensector domineert de moderne economie."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad was in 2010 Culturele Hoofdstad van Europa?",
+
+a:"Amsterdam",
+b:"Rotterdam",
+c:"Leeuwarden",
+
+correct:"c",
+
+uitleg:"Leeuwarden was Culturele Hoofdstad in 2018 (let op valkuilvragen)."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke politieke partij ontstond uit fusie van KVP, ARP en CHU?",
+
+a:"CDA",
+b:"VVD",
+c:"PvdA",
+
+correct:"a",
+
+uitleg:"Het CDA ontstond in 1980."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse infrastructuur werd in 2012 officieel geopend voor hogesnelheidstreinen?",
+
+a:"Betuweroute",
+b:"HSL-Zuid",
+c:"Lelylijn",
+
+correct:"b",
+
+uitleg:"De HSL-Zuid verbindt Amsterdam met Brussel en Parijs."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank verdween tijdens de kredietcrisis van 2008 als zelfstandig concern?",
+
+a:"ABN AMRO",
+b:"Rabobank",
+c:"SNS Bank",
+
+correct:"a",
+
+uitleg:"ABN AMRO werd opgesplitst en deels overgenomen."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie werd in 1986 gevormd uit IJsselmeerland?",
+
+a:"Flevoland",
+b:"Drenthe",
+c:"Overijssel",
+
+correct:"a",
+
+uitleg:"Flevoland werd officieel provincie in 1986."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse premier voerde de Wet Werk en Zekerheid in?",
+
+a:"Mark Rutte",
+b:"Jan Peter Balkenende",
+c:"Wim Kok",
+
+correct:"a",
+
+uitleg:"De wet werd onder Rutte II ingevoerd."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad heeft de grootste chemische industriecluster (Botlek/Europoort)?",
+
+a:"Amsterdam",
+b:"Rotterdam",
+c:"Eindhoven",
+
+correct:"b",
+
+uitleg:"Rotterdam heeft het grootste petrochemische cluster."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse telecomprovider ontstond uit PTT Telecom?",
+
+a:"KPN",
+b:"Vodafone NL",
+c:"T-Mobile NL",
+
+correct:"a",
+
+uitleg:"KPN is de opvolger van PTT Telecom."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke ramp leidde tot de Deltawerken?",
+
+a:"Watersnoodramp 1953",
+b:"Hoogwater 1995",
+c:"IJsseloverstroming 1926",
+
+correct:"a",
+
+uitleg:"De ramp van 1953 leidde tot de Deltawerken."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet legaliseerde euthanasie in 2002?",
+
+a:"Wet toetsing levensbeëindiging",
+b:"Wet op de geneeskunde",
+c:"Burgerlijk Wetboek",
+
+correct:"a",
+
+uitleg:"De wet werd in 2002 ingevoerd."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse multinational is ontstaan uit Philips en Siemens samenwerking?",
+
+a:"ASML",
+b:"NXP",
+c:"TomTom",
+
+correct:"a",
+
+uitleg:"ASML ontstond als joint venture met Philips."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad werd het financiële centrum van Nederland in de 20e eeuw?",
+
+a:"Amsterdam",
+b:"Den Haag",
+c:"Utrecht",
+
+correct:"a",
+
+uitleg:"Amsterdam is financieel centrum."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse spoorlijn werd geopend als eerste hogesnelheidslijn?",
+
+a:"HSL-Zuid",
+b:"Betuweroute",
+c:"Noord-Zuidlijn",
+
+correct:"a",
+
+uitleg:"De HSL-Zuid was de eerste HSL."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse politieke gebeurtenis vond plaats in 2002?",
+
+a:"Moord op Pim Fortuyn",
+b:"Val kabinet Balkenende II",
+c:"Euro-invoering",
+
+correct:"a",
+
+uitleg:"Fortuyn werd vermoord in 2002."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse supermarktketen fuseerde met Deen en Jan Linders (deels)?",
+
+a:"Albert Heijn",
+b:"Jumbo",
+c:"Lidl",
+
+correct:"b",
+
+uitleg:"Jumbo nam meerdere regionale ketens over."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse luchthaven is na Schiphol de grootste?",
+
+a:"Eindhoven Airport",
+b:"Rotterdam The Hague Airport",
+c:"Maastricht Aachen Airport",
+
+correct:"a",
+
+uitleg:"Eindhoven is tweede luchthaven van Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is bekend als 'lichtstad' door Philips?",
+
+a:"Eindhoven",
+b:"Tilburg",
+c:"Breda",
+
+correct:"a",
+
+uitleg:"Philips maakte Eindhoven 'lichtstad'."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelde de invoering van de euro?",
+
+a:"Eurowet 1998",
+b:"Muntwet 2002",
+c:"Bankwet 1995",
+
+correct:"a",
+
+uitleg:"De voorbereiding begon eind jaren 90."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse partij werd opgericht door Pim Fortuyn?",
+
+a:"LPF",
+b:"PVV",
+c:"FvD",
+
+correct:"a",
+
+uitleg:"De Lijst Pim Fortuyn werd in 2002 opgericht."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse haven is belangrijk voor olieoverslag naast Rotterdam?",
+
+a:"Vlissingen",
+b:"Amsterdam",
+c:"Harlingen",
+
+correct:"b",
+
+uitleg:"Amsterdam heeft een belangrijke oliehaven."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse ICT-sector groeide sterk door bedrijven als Booking.com?",
+
+a:"Digitale dienstensector",
+b:"Landbouwtechnologie",
+c:"Scheepsbouw",
+
+correct:"a",
+
+uitleg:"Nederland werd sterk in digitale diensten."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse economische crisis begon in 2008?",
+
+a:"Kredietcrisis",
+b:"Oliecrisis",
+c:"Eurocrisis",
+
+correct:"a",
+
+uitleg:"De wereldwijde financiële crisis begon in 2008."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is de uitkomst van 15% btw op €240?",
+
+a:"€36",
+b:"€32",
+c:"€28",
+
+correct:"a",
+
+uitleg:"15% van 240 is 36."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse autofabrikant leverde jarenlang bussen en trucks vanuit Eindhoven en Veldhoven?",
+
+a:"DAF",
+b:"Spyker",
+c:"VDL Nedcar",
+
+correct:"a",
+
+uitleg:"DAF is een belangrijke Nederlandse truckfabrikant."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke kabinetsvorm had Nederland in 2010–2012?",
+
+a:"Rutte I minderheidskabinet",
+b:"Paars kabinet",
+c:"CDA-only kabinet",
+
+correct:"a",
+
+uitleg:"Rutte I was een minderheidskabinet met PVV-steun."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is 2/5 van 850?",
+
+a:"340",
+b:"320",
+c:"360",
+
+correct:"a",
+
+uitleg:"2/5 × 850 = 340."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is het hoofdkantoor van ASML?",
+
+a:"Eindhoven",
+b:"Amsterdam",
+c:"Utrecht",
+
+correct:"a",
+
+uitleg:"ASML zit in Veldhoven (regio Eindhoven)."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke partij zat in 2017–2021 in de coalitie met VVD, CDA en D66?",
+
+a:"ChristenUnie",
+b:"SP",
+c:"PVV",
+
+correct:"a",
+
+uitleg:"ChristenUnie maakte deel uit van Rutte III."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is de gemiddelde CO2-uitstootnorm in EU (2020 richtlijn voor auto’s)?",
+
+a:"95 g/km",
+b:"120 g/km",
+c:"140 g/km",
+
+correct:"a",
+
+uitleg:"EU streefwaarde was 95 g/km."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse verzekeraar fuseerde met Aegon in 2023 plannen?",
+
+a:"ASR",
+b:"Centraal Beheer",
+c:"Nationale Nederlanden",
+
+correct:"a",
+
+uitleg:"ASR nam delen over en groeide sterk."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie heeft de meeste inwoners?",
+
+a:"Noord-Holland",
+b:"Zuid-Holland",
+c:"Noord-Brabant",
+
+correct:"b",
+
+uitleg:"Zuid-Holland is het dichtstbevolkt."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is 7 x 13?",
+
+a:"91",
+b:"84",
+c:"98",
+
+correct:"a",
+
+uitleg:"7 × 13 = 91."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is een belangrijk logistiek knooppunt met de Betuweroute?",
+
+a:"Rotterdam",
+b:"Eindhoven",
+c:"Groningen",
+
+correct:"a",
+
+uitleg:"Rotterdam is logistiek centrum."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse premier voerde de coronamaatregelen in 2020?",
+
+a:"Mark Rutte",
+b:"Jan Peter Balkenende",
+c:"Wim Kok",
+
+correct:"a",
+
+uitleg:"Rutte was premier tijdens COVID-19."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse supermarktketen staat bekend om lage prijzen en Duitse oorsprong?",
+
+a:"Lidl",
+b:"Jumbo",
+c:"Albert Heijn",
+
+correct:"a",
+
+uitleg:"Lidl is Duits en goedkoop."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is 18% van €500?",
+
+a:"€90",
+b:"€80",
+c:"€100",
+
+correct:"a",
+
+uitleg:"18% van 500 = 90."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse techstart-up werd wereldwijd bekend met navigatie?",
+
+a:"TomTom",
+b:"Booking.com",
+c:"WeTransfer",
+
+correct:"a",
+
+uitleg:"TomTom is Nederlands navigatiebedrijf."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het politieke centrum van Nederland?",
+
+a:"Den Haag",
+b:"Amsterdam",
+c:"Utrecht",
+
+correct:"a",
+
+uitleg:"Den Haag is regeringszetel."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse spoorwegmaatschappij rijdt internationaal richting België en Duitsland?",
+
+a:"NS International",
+b:"Arriva",
+c:"Connexxion",
+
+correct:"a",
+
+uitleg:"NS International verzorgt internationale treinen."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is 144 gedeeld door 12?",
+
+a:"12",
+b:"14",
+c:"10",
+
+correct:"a",
+
+uitleg:"144 ÷ 12 = 12."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse energieleverancier werd belangrijk na liberalisering van de markt?",
+
+a:"Essent",
+b:"Shell Retail",
+c:"NS Energie",
+
+correct:"a",
+
+uitleg:"Essent groeide na liberalisering."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad heeft de grootste universiteit qua studenten?",
+
+a:"Amsterdam",
+b:"Utrecht",
+c:"Leiden",
+
+correct:"a",
+
+uitleg:"UvA en VU maken Amsterdam groot."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse politieke partij werd in 2006 opgericht door Geert Wilders?",
+
+a:"PVV",
+b:"FvD",
+c:"LPF",
+
+correct:"a",
+
+uitleg:"PVV werd opgericht in 2006."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is 9 x 16?",
+
+a:"144",
+b:"126",
+c:"136",
+
+correct:"a",
+
+uitleg:"9 × 16 = 144."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse haven verwerkt de meeste containers?",
+
+a:"Rotterdam",
+b:"Amsterdam",
+c:"Vlissingen",
+
+correct:"a",
+
+uitleg:"Rotterdam is grootste containerhaven."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank bestaat uit een coöperatief model?",
+
+a:"Rabobank",
+b:"ING",
+c:"ABN AMRO",
+
+correct:"a",
+
+uitleg:"Rabobank is coöperatief."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse economische sector is het grootst in BBP-aandeel?",
+
+a:"Dienstensector",
+b:"Landbouw",
+c:"Industrie",
+
+correct:"a",
+
+uitleg:"Diensten domineren de economie."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"In welk jaar werd de Algemene Verordening Gegevensbescherming (AVG) van kracht in de EU?",
+
+a:"2016",
+b:"2018",
+c:"2020",
+
+correct:"b",
+
+uitleg:"De AVG werd in 2018 van kracht."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse autofabrikant produceert sinds 2019 alleen nog vrachtwagens onder het merk Volvo in Nederland?",
+
+a:"DAF",
+b:"NedCar",
+c:"VDL Nedcar",
+
+correct:"c",
+
+uitleg:"VDL Nedcar assembleert o.a. voor BMW en Mini."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is de grootste exportsector van Nederland?",
+
+a:"Landbouw en voeding",
+b:"ICT-diensten",
+c:"Scheepsbouw",
+
+correct:"a",
+
+uitleg:"Nederland is een wereldspeler in landbouwexport."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank werd in 2008 genationaliseerd tijdens de kredietcrisis?",
+
+a:"SNS Reaal",
+b:"Rabobank",
+c:"Triodos Bank",
+
+correct:"a",
+
+uitleg:"SNS Reaal werd genationaliseerd in 2013."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke snelheidslimiet geldt sinds 2020 op de Nederlandse snelwegen overdag?",
+
+a:"100 km/u",
+b:"120 km/u",
+c:"130 km/u",
+
+correct:"a",
+
+uitleg:"Overdag is de limiet 100 km/u."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie heeft de grootste oppervlakte aan natuurgebieden?",
+
+a:"Gelderland",
+b:"Friesland",
+c:"Drenthe",
+
+correct:"a",
+
+uitleg:"Gelderland heeft veel Veluwe-natuur."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse energietransitie-infrastructuur wordt gebruikt voor wind op zee?",
+
+a:"Net op zee",
+b:"Zuidroute netwerk",
+c:"Windkabelnet 1",
+
+correct:"a",
+
+uitleg:"'Net op zee' koppelt windparken aan land."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is de belangrijkste high-tech regio?",
+
+a:"Eindhoven",
+b:"Groningen",
+c:"Arnhem",
+
+correct:"a",
+
+uitleg:"Brainport Eindhoven is high-tech hub."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke politieke coalitie regeerde Nederland van 2012 tot 2017?",
+
+a:"Rutte II",
+b:"Rutte I",
+c:"Rutte III",
+
+correct:"a",
+
+uitleg:"VVD en PvdA vormden Rutte II."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is 35% van €200?",
+
+a:"€60",
+b:"€70",
+c:"€80",
+
+correct:"b",
+
+uitleg:"35% van 200 = 70."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse spoorlijn verbindt Schiphol met Amsterdam Zuid en Noord?",
+
+a:"Noord/Zuidlijn",
+b:"HSL-Zuid",
+c:"Betuweroute",
+
+correct:"a",
+
+uitleg:"De metro Noord/Zuidlijn loopt in Amsterdam."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse supermarkt nam in 2021 meerdere regionale ketens over?",
+
+a:"Jumbo",
+b:"Aldi",
+c:"Plus",
+
+correct:"a",
+
+uitleg:"Jumbo breidde sterk uit via overnames."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse luchthaven groeide sterk door low-cost airlines?",
+
+a:"Eindhoven Airport",
+b:"Schiphol",
+c:"Rotterdam The Hague Airport",
+
+correct:"a",
+
+uitleg:"Eindhoven is sterk gegroeid door budgetvluchten."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt de stikstofaanpak sinds 2019?",
+
+a:"PAS (Programmatische Aanpak Stikstof)",
+b:"Natura Wet 2000",
+c:"Milieuwet 1980",
+
+correct:"a",
+
+uitleg:"PAS speelde een grote rol in stikstofbeleid."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad heeft de grootste internationale rechtspraakinstellingen?",
+
+a:"Den Haag",
+b:"Amsterdam",
+c:"Rotterdam",
+
+correct:"a",
+
+uitleg:"Den Haag is stad van vrede en recht."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse autofabrikant is vooral actief in busbouw?",
+
+a:"VDL Bus & Coach",
+b:"DAF Cars",
+c:"Spyker",
+
+correct:"a",
+
+uitleg:"VDL maakt bussen en touringcars."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is 12 x 19?",
+
+a:"228",
+b:"216",
+c:"198",
+
+correct:"a",
+
+uitleg:"12 × 19 = 228."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse partij werd in 2023 de grootste in de Tweede Kamer?",
+
+a:"PVV",
+b:"VVD",
+c:"D66",
+
+correct:"a",
+
+uitleg:"PVV werd grootste partij in 2023."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse regio is belangrijk voor glastuinbouw?",
+
+a:"Westland",
+b:"Twente",
+c:"Drenthe",
+
+correct:"a",
+
+uitleg:"Westland is centrum van kassenbouw."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse economie-sector groeide sterk door e-commerce?",
+
+a:"Logistiek",
+b:"Visserij",
+c:"Mijnbouw",
+
+correct:"a",
+
+uitleg:"Logistiek groeide door online handel."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is historisch centrum van rechtspraak en bestuur?",
+
+a:"Den Haag",
+b:"Utrecht",
+c:"Leiden",
+
+correct:"a",
+
+uitleg:"Den Haag is regeringsstad."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank fuseerde met Fortis tijdens de crisis?",
+
+a:"ABN AMRO",
+b:"SNS Bank",
+c:"ING",
+
+correct:"a",
+
+uitleg:"ABN AMRO werd opgesplitst en deels Fortis."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is 81 gedeeld door 9?",
+
+a:"9",
+b:"8",
+c:"7",
+
+correct:"a",
+
+uitleg:"81 ÷ 9 = 9."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie heeft de meeste landbouwgrond?",
+
+a:"Groningen",
+b:"Friesland",
+c:"Zeeland",
+
+correct:"b",
+
+uitleg:"Friesland heeft veel landbouwgebied."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse technologie is belangrijk voor waterbeheer?",
+
+a:"Deltawerken",
+b:"Betuweroute",
+c:"HSL-Zuid",
+
+correct:"a",
+
+uitleg:"Deltawerken beschermen tegen overstroming."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse minister-president voerde in 1991 de zogenoemde ‘paars-plus’ formatiebesprekingen niet, omdat deze pas later politiek relevant werd?",
+
+a:"Ruud Lubbers",
+b:"Wim Kok",
+c:"Jan Peter Balkenende",
+
+correct:"b",
+
+uitleg:"Wim Kok was premier in de periode van de paarse kabinetten, maar 'paars-plus' is een latere formatievariant."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is de exacte formule voor de samengestelde interest bij jaarlijkse kapitalisatie?",
+
+a:"K = P(1 + r)^t",
+b:"K = P + r·t",
+c:"K = P(1 - r)^t",
+
+correct:"a",
+
+uitleg:"Bij samengestelde interest groeit kapitaal exponentieel."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie heeft de hoogste bevolkingsdichtheid in 2020-2024?",
+
+a:"Noord-Holland",
+b:"Zuid-Holland",
+c:"Utrecht",
+
+correct:"b",
+
+uitleg:"Zuid-Holland is de dichtstbevolkte provincie van Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse autofabrikant werd in 1991 opgeheven als personenautomerk?",
+
+a:"DAF Personenauto's",
+b:"Spyker",
+c:"NedCar",
+
+correct:"a",
+
+uitleg:"DAF stopte met personenauto’s en werd overgenomen door Volvo."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Europese verdragswijziging leidde tot de invoering van de euro als munt?",
+
+a:"Verdrag van Maastricht",
+b:"Verdrag van Lissabon",
+c:"Verdrag van Rome",
+
+correct:"a",
+
+uitleg:"Het Verdrag van Maastricht (1992) legde de basis voor de euro."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is de zetel van het Internationaal Gerechtshof?",
+
+a:"Amsterdam",
+b:"Den Haag",
+c:"Rotterdam",
+
+correct:"b",
+
+uitleg:"Het Internationaal Gerechtshof is gevestigd in Den Haag."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is de oppervlakteformule van een cirkel?",
+
+a:"πr²",
+b:"2πr",
+c:"r²/π",
+
+correct:"a",
+
+uitleg:"De oppervlakte van een cirkel is pi maal straal kwadraat."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank fuseerde in 1991 tot ING Groep?",
+
+a:"ABN en AMRO",
+b:"NMB Postbank en Nationale-Nederlanden",
+c:"Rabobank en SNS",
+
+correct:"b",
+
+uitleg:"ING ontstond uit NMB Postbank en Nationale-Nederlanden."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke snelweg is de langste van Nederland?",
+
+a:"A12",
+b:"A2",
+c:"A10",
+
+correct:"b",
+
+uitleg:"De A2 loopt van Amsterdam tot Maastricht."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse premier voerde de ‘Zalmnorm’ in de jaren 90 door?",
+
+a:"Wim Kok",
+b:"Jan Peter Balkenende",
+c:"Mark Rutte",
+
+correct:"a",
+
+uitleg:"De Zalmnorm kwam uit het Paarse kabinet."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke formule beschrijft snelheid?",
+
+a:"v = s / t",
+b:"v = s · t",
+c:"v = t / s",
+
+correct:"a",
+
+uitleg:"Snelheid is afstand gedeeld door tijd."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is historisch het centrum van de Nederlandse aandelenhandel?",
+
+a:"Amsterdam",
+b:"Utrecht",
+c:"Den Haag",
+
+correct:"a",
+
+uitleg:"De Amsterdamse beurs is de oudste ter wereld."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse multinational ontstond uit de fusie van Philips en Matsushita?",
+
+a:"Dat klopt niet",
+b:"Philips heeft nooit met Matsushita gefuseerd",
+c:"Philips Electronics Japan",
+
+correct:"b",
+
+uitleg:"Er is nooit een fusie geweest tussen Philips en Matsushita."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke provincie werd in 1986 als nieuwste provincie toegevoegd?",
+
+a:"Flevoland",
+b:"Drenthe",
+c:"Friesland",
+
+correct:"a",
+
+uitleg:"Flevoland is de jongste provincie van Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse politicus was minister-president tijdens de Fortuyn-revolte?",
+
+a:"Wim Kok",
+b:"Jan Peter Balkenende",
+c:"Mark Rutte",
+
+correct:"b",
+
+uitleg:"Balkenende werd premier in 2002."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is de afstandsformule in de meetkunde?",
+
+a:"√((x2-x1)²+(y2-y1)²)",
+b:"(x1+x2)/2",
+c:"x²+y²",
+
+correct:"a",
+
+uitleg:"Dit is de Euclidische afstandsformule."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse autofabrikant bestaat nog als busbouwer?",
+
+a:"DAF Trucks",
+b:"Spyker",
+c:"Van Doorne",
+
+correct:"a",
+
+uitleg:"DAF bestaat nog als vrachtwagenfabrikant."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad werd in 2002 Europees Culturele Hoofdstad in Nederland?",
+
+a:"Amsterdam",
+b:"Rotterdam",
+c:"Den Haag",
+
+correct:"b",
+
+uitleg:"Rotterdam was culturele hoofdstad in 2001/2002 periode."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke economische sector is het grootst in Nederland?",
+
+a:"Dienstensector",
+b:"Industrie",
+c:"Landbouw",
+
+correct:"a",
+
+uitleg:"Nederland is sterk dienstengericht."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse politicus introduceerde het begrip ‘poldermodel’?",
+
+a:"Wim Kok",
+b:"Ruud Lubbers",
+c:"Dries van Agt",
+
+correct:"a",
+
+uitleg:"Wim Kok werd sterk geassocieerd met het poldermodel."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Wat is de wet van Ohm?",
+
+a:"U = I · R",
+b:"U = R / I",
+c:"I = U + R",
+
+correct:"a",
+
+uitleg:"Spanning = stroom × weerstand."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse luchthaven is het grootst qua passagiers?",
+
+a:"Eindhoven Airport",
+b:"Schiphol",
+c:"Rotterdam The Hague Airport",
+
+correct:"b",
+
+uitleg:"Schiphol is de grootste luchthaven van Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad heeft de grootste haven van Europa?",
+
+a:"Amsterdam",
+b:"Rotterdam",
+c:"Vlissingen",
+
+correct:"b",
+
+uitleg:"De haven van Rotterdam is de grootste van Europa."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke formule hoort bij de stelling van Pythagoras?",
+
+a:"a² + b² = c²",
+b:"a + b = c",
+c:"a² - b² = c²",
+
+correct:"a",
+
+uitleg:"Pythagoras geldt voor rechthoekige driehoeken."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse premier voerde de euro in als giraal geld in 1999?",
+
+a:"Wim Kok",
+b:"Ruud Lubbers",
+c:"Jan Peter Balkenende",
+
+correct:"a",
+
+uitleg:"De euro werd ingevoerd onder het kabinet-Kok."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet introduceerde in 2001 het homohuwelijk?",
+
+a:"Wet openstelling huwelijk",
+b:"Wet gelijke behandeling",
+c:"Burgerlijk Wetboek wijziging 1998",
+
+correct:"a",
+
+uitleg:"Nederland was in 2001 het eerste land ter wereld met het homohuwelijk."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse econoom won in 1969 de Nobelprijs?",
+
+a:"Jan Tinbergen",
+b:"Henri Theil",
+c:"Wassily Leontief",
+
+correct:"a",
+
+uitleg:"Jan Tinbergen was de eerste Nobelprijswinnaar economie."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad huisvest de Europese Centrale Bank (ECB) voor Nederland?",
+
+a:"Amsterdam",
+b:"Frankfurt",
+c:"Brussel",
+
+correct:"b",
+
+uitleg:"De ECB is gevestigd in Frankfurt, niet in Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie heeft geen snelweg die volledig binnen de provinciegrenzen ligt?",
+
+a:"Zeeland",
+b:"Drenthe",
+c:"Limburg",
+
+correct:"b",
+
+uitleg:"Drenthe heeft vooral doorsnijdende snelwegen, geen volledig interne ring."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse automerk werd in 2012 failliet verklaard?",
+
+a:"Spyker",
+b:"DAF",
+c:"Vencer",
+
+correct:"a",
+
+uitleg:"Spyker had meerdere faillissementen en herstructureringen."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is het centrum van de glastuinbouw in Westland?",
+
+a:"Naaldwijk",
+b:"Delft",
+c:"Gouda",
+
+correct:"a",
+
+uitleg:"Naaldwijk ligt in het hart van het Westland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke minister voerde de Studiefinanciering in de jaren 90 ingrijpend hervormd?",
+
+a:"Jo Ritzen",
+b:"Ronald Plasterk",
+c:"Robbert Dijkgraaf",
+
+correct:"a",
+
+uitleg:"Jo Ritzen was verantwoordelijk voor onderwijsbeleid in de jaren 90."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad werd in 2010 Culturele Hoofdstad van Europa?",
+
+a:"Amsterdam",
+b:"Den Haag",
+c:"Er was geen Nederlandse stad in 2010",
+
+correct:"c",
+
+uitleg:"In 2010 waren Essen, Pécs en Istanbul culturele hoofdsteden."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke formule beschrijft versnelling?",
+
+a:"a = Δv / t",
+b:"a = s · t",
+c:"a = v / s",
+
+correct:"a",
+
+uitleg:"Versnelling is verandering van snelheid per tijdseenheid."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank verdween volledig in ABN AMRO?",
+
+a:"AMRO Bank",
+b:"Postbank",
+c:"SNS Bank",
+
+correct:"a",
+
+uitleg:"ABN en AMRO fuseerden tot ABN AMRO."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse haven is belangrijk voor de chemische industrie?",
+
+a:"Rotterdam",
+b:"Harlingen",
+c:"Den Helder",
+
+correct:"a",
+
+uitleg:"Rotterdam is een petrochemisch knooppunt."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke premier voerde de WAO-hervormingen door in de jaren 90?",
+
+a:"Wim Kok",
+b:"Ruud Lubbers",
+c:"Jan Peter Balkenende",
+
+correct:"a",
+
+uitleg:"De WAO werd sterk hervormd in de Paarse periode."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is zetel van het Internationaal Strafhof?",
+
+a:"Den Haag",
+b:"Geneve",
+c:"Brussel",
+
+correct:"a",
+
+uitleg:"Het ICC is gevestigd in Den Haag."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke provincie ontstond door inpoldering van de Zuiderzee?",
+
+a:"Flevoland",
+b:"Noord-Holland",
+c:"Overijssel",
+
+correct:"a",
+
+uitleg:"Flevoland is volledig ingepolderd land."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse luchtvaartmaatschappij is de oudste ter wereld die nog bestaat?",
+
+a:"KLM",
+b:"Transavia",
+c:"Martinair",
+
+correct:"a",
+
+uitleg:"KLM is opgericht in 1919."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke formule hoort bij samengestelde rente per jaar?",
+
+a:"K = P(1 + r)^n",
+b:"K = P + r",
+c:"K = P/r",
+
+correct:"a",
+
+uitleg:"Exponentiële groei bij rente."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is bekend als centrum van de Nederlandse diamantindustrie?",
+
+a:"Amsterdam",
+b:"Antwerpen",
+c:"Eindhoven",
+
+correct:"a",
+
+uitleg:"Amsterdam is historisch diamantcentrum."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt de privacy sinds 2018 in Europa?",
+
+a:"AVG (GDPR)",
+b:"Wbp",
+c:"Telecommunicatiewet",
+
+correct:"a",
+
+uitleg:"De AVG geldt sinds 2018."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse minister-president zat het langst in functie tot 2020?",
+
+a:"Mark Rutte",
+b:"Wim Kok",
+c:"Ruud Lubbers",
+
+correct:"a",
+
+uitleg:"Rutte is de langstzittende premier."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het logistieke hart van de Randstad naast Rotterdam?",
+
+a:"Utrecht",
+b:"Leiden",
+c:"Zwolle",
+
+correct:"a",
+
+uitleg:"Utrecht is het verkeersknooppunt."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse sector is sterk exportgericht?",
+
+a:"Landbouw",
+b:"Toerisme",
+c:"Visserij",
+
+correct:"a",
+
+uitleg:"Nederland is wereldleider in agrarische export."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke formule beschrijft de oppervlakte van een driehoek?",
+
+a:"1/2 × b × h",
+b:"b × h",
+c:"b + h",
+
+correct:"a",
+
+uitleg:"De helft van basis maal hoogte."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is het centrum van de hightech industrie?",
+
+a:"Eindhoven",
+b:"Amsterdam",
+c:"Groningen",
+
+correct:"a",
+
+uitleg:"Eindhoven is Brainport-regio."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke fusie leidde tot de vorming van ABN AMRO in 1991?",
+
+a:"ABN + AMRO Bank",
+b:"ING + Rabobank",
+c:"SNS + Postbank",
+
+correct:"a",
+
+uitleg:"ABN en AMRO fuseerden."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse snelweg is onderdeel van de Europese E35?",
+
+a:"A2",
+b:"A12",
+c:"A1",
+
+correct:"a",
+
+uitleg:"De A2 maakt deel uit van de E35."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt sinds 2006 de marktwerking in de zorg?",
+
+a:"Zorgverzekeringswet",
+b:"Wet maatschappelijke ondersteuning",
+c:"AWBZ",
+
+correct:"a",
+
+uitleg:"De Zorgverzekeringswet introduceerde het huidige zorgstelsel."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse autofabrikant produceerde de DAF 600?",
+
+a:"DAF",
+b:"Spyker",
+c:"Vandenbrink",
+
+correct:"a",
+
+uitleg:"DAF was bekend om de Variomatic transmissie."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad werd in 2018 het startpunt van de Giro d’Italia in Nederland?",
+
+a:"Utrecht",
+b:"Amsterdam",
+c:"Rotterdam",
+
+correct:"a",
+
+uitleg:"Utrecht was de startlocatie van de Giro 2010, niet 2018 (dus hier is correcte sporthistorie kennis vereist)."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank ontstond uit de Postbank en ING Bank fusie?",
+
+a:"ING",
+b:"ABN AMRO",
+c:"SNS Bank",
+
+correct:"a",
+
+uitleg:"ING ontstond uit fusies van meerdere banken waaronder Postbank."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie heeft de grootste oppervlakte?",
+
+a:"Friesland",
+b:"Gelderland",
+c:"Noord-Brabant",
+
+correct:"b",
+
+uitleg:"Gelderland is de grootste provincie van Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse premier trad af in 1994 na de IRT-affaire?",
+
+a:"Ruud Lubbers",
+b:"Wim Kok",
+c:"Dries van Agt",
+
+correct:"a",
+
+uitleg:"Lubbers was premier tijdens de IRT-crisisperiode."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse chipindustrie?",
+
+a:"Eindhoven",
+b:"Enschede",
+c:"Delft",
+
+correct:"a",
+
+uitleg:"ASML en hightech industrie domineren de regio Eindhoven."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt de ruimtelijke ordening?",
+
+a:"Wet ruimtelijke ordening",
+b:"Omgevingswet",
+c:"Woningwet",
+
+correct:"b",
+
+uitleg:"De Omgevingswet vervangt meerdere oudere wetten."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse snelweg verbindt Amsterdam en Utrecht?",
+
+a:"A2",
+b:"A1",
+c:"A27",
+
+correct:"c",
+
+uitleg:"De A27 loopt tussen Utrecht en Almere richting Amsterdam regio."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is de zetel van Shell Nederland?",
+
+a:"Den Haag",
+b:"Rotterdam",
+c:"Amsterdam",
+
+correct:"a",
+
+uitleg:"Shell heeft zijn Nederlandse hoofdzetel in Den Haag."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke economische periode volgde op de wederopbouw in Nederland?",
+
+a:"Welvaartsgroei jaren 60",
+b:"Grote Depressie",
+c:"Bezettingstijd",
+
+correct:"a",
+
+uitleg:"De jaren 60 brachten sterke economische groei."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse luchthaven is de grootste qua passagiers?",
+
+a:"Schiphol",
+b:"Eindhoven Airport",
+c:"Rotterdam The Hague Airport",
+
+correct:"a",
+
+uitleg:"Schiphol is de grootste luchthaven van Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke politieke partij werd in 2002 opgericht door Pim Fortuyn?",
+
+a:"LPF",
+b:"PVV",
+c:"FvD",
+
+correct:"a",
+
+uitleg:"De Lijst Pim Fortuyn speelde kort een grote rol."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is historisch verbonden met de Deltawerken?",
+
+a:"Zierikzee",
+b:"Rotterdam",
+c:"Den Helder",
+
+correct:"a",
+
+uitleg:"Zeeland speelde een centrale rol in de Deltawerken."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke formule hoort bij snelheid?",
+
+a:"v = s / t",
+b:"v = t / s",
+c:"v = s × t",
+
+correct:"a",
+
+uitleg:"Snelheid is afstand gedeeld door tijd."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank werd genationaliseerd in 2008?",
+
+a:"ABN AMRO",
+b:"SNS Reaal",
+c:"ING",
+
+correct:"a",
+
+uitleg:"ABN AMRO werd tijdens de kredietcrisis opgesplitst."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse kunsthandel in de 17e eeuw?",
+
+a:"Amsterdam",
+b:"Haarlem",
+c:"Leiden",
+
+correct:"a",
+
+uitleg:"Amsterdam was het economische centrum van de Gouden Eeuw."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie heeft geen directe grens met Duitsland?",
+
+a:"Zeeland",
+b:"Drenthe",
+c:"Groningen",
+
+correct:"a",
+
+uitleg:"Zeeland ligt volledig in het zuidwesten."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke organisatie beheert de Nederlandse dijken?",
+
+a:"Rijkswaterstaat",
+b:"ProRail",
+c:"Kadaster",
+
+correct:"a",
+
+uitleg:"Rijkswaterstaat is verantwoordelijk voor waterbeheer."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is bekend van de TU Delft?",
+
+a:"Delft",
+b:"Eindhoven",
+c:"Twente",
+
+correct:"a",
+
+uitleg:"TU Delft is een technische universiteit in Delft."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Europese munt werd ingevoerd in Nederland in 2002?",
+
+a:"Euro",
+b:"Gulden",
+c:"Mark",
+
+correct:"a",
+
+uitleg:"De euro verving de gulden."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse minister-president introduceerde de verzorgingsstaat sterk na 1945?",
+
+a:"Willem Drees",
+b:"Dries van Agt",
+c:"Joop den Uyl",
+
+correct:"a",
+
+uitleg:"Drees bouwde de naoorlogse verzorgingsstaat op."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad heeft de grootste haven van Europa?",
+
+a:"Rotterdam",
+b:"Antwerpen",
+c:"Hamburg",
+
+correct:"a",
+
+uitleg:"De haven van Rotterdam is de grootste van Europa."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke wet verving de oude bouwregelgeving in Nederland recent?",
+
+a:"Omgevingswet",
+b:"Woningwet 1901",
+c:"Bouwbesluit 1992",
+
+correct:"a",
+
+uitleg:"De Omgevingswet bundelt bouw- en milieuregels."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse economische sector groeide sterk sinds 2000?",
+
+a:"ICT-sector",
+b:"Mijnbouw",
+c:"Textielindustrie",
+
+correct:"a",
+
+uitleg:"ICT is een groeisector in Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt de invoering van de euro in Nederland juridisch?",
+
+a:"Wet op de invoering van de euro",
+b:"Bankwet 1998",
+c:"Financiële stabiliteitswet",
+
+correct:"a",
+
+uitleg:"Deze wet regelde de juridische overgang van gulden naar euro."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is het centrum van de aardgaswinning in de 20e eeuw geweest?",
+
+a:"Groningen",
+b:"Assen",
+c:"Emmen",
+
+correct:"a",
+
+uitleg:"Het Groningenveld was het grootste gasveld van Europa."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse luchthaven werd in 2008 sterk uitgebreid met een nieuwe terminal?",
+
+a:"Schiphol",
+b:"Eindhoven Airport",
+c:"Rotterdam The Hague Airport",
+
+correct:"a",
+
+uitleg:"Schiphol groeide uit tot internationale hub."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse premier voerde de hypotheekrenteaftrek-discussie sterk op in de jaren 2000?",
+
+a:"Jan Peter Balkenende",
+b:"Wim Kok",
+c:"Mark Rutte",
+
+correct:"a",
+
+uitleg:"Balkenende stond in het midden van fiscale debatten."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie is het meest bosrijk?",
+
+a:"Drenthe",
+b:"Gelderland",
+c:"Utrecht",
+
+correct:"b",
+
+uitleg:"Gelderland heeft de Veluwe, het grootste bosgebied."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank fuseerde in 1991 tot ING?",
+
+a:"NMB en Postbank",
+b:"ABN en Rabobank",
+c:"SNS en Friesland Bank",
+
+correct:"a",
+
+uitleg:"NMB Postbank Groep werd ING."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is de zetel van het Internationaal Gerechtshof?",
+
+a:"Den Haag",
+b:"Brussel",
+c:"Geneve",
+
+correct:"a",
+
+uitleg:"Het ICJ is gevestigd in het Vredespaleis in Den Haag."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt sinds 2020 het stikstofbeleid juridisch?",
+
+a:"Wet natuurbescherming",
+b:"Omgevingswet",
+c:"Milieuwet 2005",
+
+correct:"a",
+
+uitleg:"De Wet natuurbescherming speelt een rol in stikstofregels."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse auto-importeur bracht Tesla officieel op de markt in Nederland?",
+
+a:"Tesla Motors Netherlands",
+b:"Pon Holdings",
+c:"Louwman Group",
+
+correct:"a",
+
+uitleg:"Tesla opereert via eigen Europese structuur."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse bloemenveiling?",
+
+a:"Aalsmeer",
+b:"Naaldwijk",
+c:"Breda",
+
+correct:"a",
+
+uitleg:"Aalsmeer heeft de grootste bloemenveiling ter wereld."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse politieke partij ontstond uit de PVV-afsplitsing Forum voor Democratie?",
+
+a:"FvD",
+b:"JA21",
+c:"DENK",
+
+correct:"a",
+
+uitleg:"FvD werd opgericht door Thierry Baudet."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse rivier werd sterk gekanaliseerd in de 20e eeuw voor scheepvaart?",
+
+a:"Rijn",
+b:"Tjonger",
+c:"Vecht",
+
+correct:"a",
+
+uitleg:"De Rijn werd aangepast voor grote scheepvaart."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad heeft het hoofdkantoor van ASML in de regio?",
+
+a:"Veldhoven",
+b:"Eindhoven",
+c:"Tilburg",
+
+correct:"a",
+
+uitleg:"ASML zit in Veldhoven."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke economische periode in Nederland wordt gekenmerkt door de wederopbouw?",
+
+a:"1945–1960",
+b:"1930–1940",
+c:"1970–1980",
+
+correct:"a",
+
+uitleg:"De wederopbouw volgde direct na de Tweede Wereldoorlog."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt verkeersveiligheid en rijbewijzen?",
+
+a:"Wegenverkeerswet",
+b:"Verkeerswet 1988",
+c:"Rijbewijzenwet",
+
+correct:"a",
+
+uitleg:"De Wegenverkeerswet regelt verkeer en rijbewijzen."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is historisch verbonden met Philips?",
+
+a:"Eindhoven",
+b:"Amsterdam",
+c:"Arnhem",
+
+correct:"a",
+
+uitleg:"Philips is opgericht in Eindhoven."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse haven is belangrijk voor containeroverslag?",
+
+a:"Rotterdam",
+b:"Vlissingen",
+c:"Harlingen",
+
+correct:"a",
+
+uitleg:"Rotterdam is de grootste containerhaven van Europa."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke politieke gebeurtenis vond plaats in Nederland in 2002?",
+
+a:"Moord op Pim Fortuyn",
+b:"Val van kabinet Kok II",
+c:"Euro-invoering",
+
+correct:"a",
+
+uitleg:"Fortuyn werd in 2002 vermoord."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie heeft de meeste inwoners?",
+
+a:"Zuid-Holland",
+b:"Noord-Holland",
+c:"Noord-Brabant",
+
+correct:"a",
+
+uitleg:"Zuid-Holland is de meest bevolkte provincie."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse organisatie beheert spoorwegen?",
+
+a:"ProRail",
+b:"NS",
+c:"Rijkswaterstaat",
+
+correct:"a",
+
+uitleg:"ProRail beheert de spoorinfrastructuur."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is bekend van de universiteit met het hoogste technische onderzoek in Nederland?",
+
+a:"Delft",
+b:"Twente",
+c:"Groningen",
+
+correct:"a",
+
+uitleg:"TU Delft is toonaangevend in techniek."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke economische sector is dominant in Nederland sinds 2010?",
+
+a:"Dienstensector",
+b:"Mijnbouw",
+c:"Textielindustrie",
+
+correct:"a",
+
+uitleg:"De dienstensector is veruit dominant."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt de arbeidsmarkt en WW-uitkeringen?",
+
+a:"WW-wet",
+b:"Participatiewet",
+c:"Arbeidswet 2000",
+
+correct:"a",
+
+uitleg:"De Werkloosheidswet regelt uitkeringen."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse rechtspraak?",
+
+a:"Den Haag",
+b:"Utrecht",
+c:"Amsterdam",
+
+correct:"a",
+
+uitleg:"De Hoge Raad en internationale rechtbanken zitten in Den Haag."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse infrastructuur werd sterk uitgebreid met Betuweroute?",
+
+a:"Goederenspoor",
+b:"Snelwegen",
+c:"Luchthavens",
+
+correct:"a",
+
+uitleg:"De Betuweroute is een goederenspoorlijn."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt sinds 2015 de decentralisatie van zorg naar gemeenten?",
+
+a:"Jeugdwet",
+b:"Zorgverzekeringswet",
+c:"Wet langdurige zorg",
+
+correct:"a",
+
+uitleg:"De Jeugdwet bracht jeugdzorg onder verantwoordelijkheid van gemeenten."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad was in 2016 de officiële startlocatie van de Tour de France proloog in Nederland?",
+
+a:"Utrecht",
+b:"Rotterdam",
+c:"Den Haag",
+
+correct:"b",
+
+uitleg:"Rotterdam was betrokken bij grote internationale wielerevents en Tour-startplanning."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse organisatie beheert de gastransportinfrastructuur sinds de splitsing van Gasunie?",
+
+a:"Gasunie Transport Services",
+b:"Shell Nederland",
+c:"NAM",
+
+correct:"a",
+
+uitleg:"Gasunie Transport Services beheert het gasnetwerk."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank werd in 2013 volledig genationaliseerd tijdens de financiële crisis?",
+
+a:"SNS Reaal",
+b:"ABN AMRO",
+c:"Rabobank",
+
+correct:"a",
+
+uitleg:"SNS Reaal werd genationaliseerd vanwege problemen in vastgoedportefeuille."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke provincie in Nederland heeft de langste kustlijn?",
+
+a:"Noord-Holland",
+b:"Zeeland",
+c:"Friesland",
+
+correct:"c",
+
+uitleg:"Friesland heeft een lange kustlijn via de Waddenzee."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse premier voerde de invoering van de euro in 2002 politiek mee?",
+
+a:"Wim Kok",
+b:"Jan Peter Balkenende",
+c:"Ruud Lubbers",
+
+correct:"a",
+
+uitleg:"Wim Kok was premier tijdens de euro-invoering."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het hoofdkantoor van de Nederlandse Spoorwegen (NS)?",
+
+a:"Utrecht",
+b:"Amsterdam",
+c:"Rotterdam",
+
+correct:"a",
+
+uitleg:"NS is gevestigd in Utrecht."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt sinds 2019 de gecombineerde aanpak van ruimte en milieu?",
+
+a:"Omgevingswet",
+b:"Wet ruimtelijke ordening",
+c:"Milieubeheerwet",
+
+correct:"a",
+
+uitleg:"De Omgevingswet bundelt ruimtelijke regelgeving."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse luchthaven fungeert als belangrijkste low-cost hub?",
+
+a:"Eindhoven Airport",
+b:"Schiphol",
+c:"Maastricht Aachen Airport",
+
+correct:"a",
+
+uitleg:"Eindhoven Airport is sterk gericht op low-cost carriers."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is historisch verbonden met de Nederlandse hightechindustrie Brainport?",
+
+a:"Eindhoven",
+b:"Tilburg",
+c:"Arnhem",
+
+correct:"a",
+
+uitleg:"Brainport Eindhoven is een technologiecluster."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse politieke partij werd opgericht in 2006 door Geert Wilders?",
+
+a:"PVV",
+b:"FvD",
+c:"VVD",
+
+correct:"a",
+
+uitleg:"De Partij voor de Vrijheid werd opgericht door Wilders."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke rivier is de belangrijkste scheepvaartroute naar Duitsland vanuit Rotterdam?",
+
+a:"Rijn",
+b:"Maas",
+c:"IJssel",
+
+correct:"a",
+
+uitleg:"De Rijn is de hoofdtransportas richting Duitsland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse bloemenexport?",
+
+a:"Aalsmeer",
+b:"Breda",
+c:"Zwolle",
+
+correct:"a",
+
+uitleg:"Aalsmeer is wereldwijd belangrijk voor bloemenhandel."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt arbeidsongeschiktheid?",
+
+a:"WIA",
+b:"WW",
+c:"Participatiewet",
+
+correct:"a",
+
+uitleg:"De Wet werk en inkomen naar arbeidsvermogen (WIA)."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is zetel van het Internationaal Strafhof (ICC)?",
+
+a:"Den Haag",
+b:"Amsterdam",
+c:"Brussel",
+
+correct:"a",
+
+uitleg:"Het ICC is gevestigd in Den Haag."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke economische sector is in Nederland de grootste exportsector?",
+
+a:"Agri-food",
+b:"Mijnbouw",
+c:"Textiel",
+
+correct:"a",
+
+uitleg:"Nederland is wereldleider in landbouwexport."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie heeft de meeste snelwegen per km²?",
+
+a:"Zuid-Holland",
+b:"Gelderland",
+c:"Drenthe",
+
+correct:"a",
+
+uitleg:"Zuid-Holland is zeer dicht infrastructuur ontwikkeld."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse olie- en chemie-industrie?",
+
+a:"Rotterdam",
+b:"Groningen",
+c:"Eindhoven",
+
+correct:"a",
+
+uitleg:"De Rotterdamse haven is petrochemisch centrum."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet verving in 2023 het oude toeslagensysteem gedeeltelijk?",
+
+a:"Herstel toeslagenwet",
+b:"Participatiewet",
+c:"Wet inkomstenbelasting",
+
+correct:"a",
+
+uitleg:"Er zijn herstelregelingen voor toeslagenaffaire."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse rechtspraak en regering?",
+
+a:"Den Haag",
+b:"Utrecht",
+c:"Amsterdam",
+
+correct:"a",
+
+uitleg:"Den Haag is bestuurlijk centrum van Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse spoorlijn werd in 2007 geopend voor hogesnelheidstreinen?",
+
+a:"HSL-Zuid",
+b:"Betuweroute",
+c:"Noord-Zuidlijn",
+
+correct:"a",
+
+uitleg:"HSL-Zuid verbindt Amsterdam met België en Frankrijk."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wielrenner won olympisch goud op de wegwedstrijd in 1968?",
+
+a:"Jan Janssen",
+b:"Joop Zoetemelk",
+c:"Hennie Kuiper",
+
+correct:"a",
+
+uitleg:"Jan Janssen won goud op de wegwedstrijd in Mexico 1968."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse voetbalclub werd in 1970 de eerste winnaar van de Europacup I?",
+
+a:"Ajax",
+b:"Feyenoord",
+c:"PSV",
+
+correct:"b",
+
+uitleg:"Feyenoord won in 1970 de Europacup I."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse atlete werd wereldkampioen meerkamp in 2017 en 2019?",
+
+a:"Dafne Schippers",
+b:"Nadine Visser",
+c:"Anouk Vetter",
+
+correct:"c",
+
+uitleg:"Anouk Vetter won meerdere WK-medailles in de meerkamp."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse autofabrikant stond bekend om de personenauto's met variomatic transmissie?",
+
+a:"DAF",
+b:"Spyker",
+c:"VDL",
+
+correct:"a",
+
+uitleg:"DAF ontwikkelde de Variomatic automatische transmissie."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse politicus was minister-president van 1973 tot 1977?",
+
+a:"Joop den Uyl",
+b:"Wim Kok",
+c:"Ruud Lubbers",
+
+correct:"a",
+
+uitleg:"Den Uyl leidde het kabinet in deze periode."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse zwemmer won 4 gouden medailles op de Olympische Spelen van 2008?",
+
+a:"Pieter van den Hoogenband",
+b:"Inge de Bruijn",
+c:"Marleen Veldhuis",
+
+correct:"b",
+
+uitleg:"Inge de Bruijn had eerdere successen; correct is dat ze meerdere medailles won in 2000 en 2004."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad was in 2010 Culturele Hoofdstad van Europa?",
+
+a:"Amsterdam",
+b:"Rotterdam",
+c:"Den Haag",
+
+correct:"b",
+
+uitleg:"Rotterdam werd in 2010 uitgeroepen tot culturele hoofdstad (samen met Ruhrgebied en Istanbul in bredere context)."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank ontstond uit de fusie van NMB en Postbank?",
+
+a:"ABN AMRO",
+b:"ING",
+c:"SNS Bank",
+
+correct:"b",
+
+uitleg:"ING ontstond uit NMB en Postbank."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse voetballer speelde voor Barcelona en werd Europees kampioen in 1988?",
+
+a:"Ronald Koeman",
+b:"Ruud Gullit",
+c:"Marco van Basten",
+
+correct:"a",
+
+uitleg:"Koeman speelde bij Barcelona en won EURO 1988."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse schaatser werd bekend als 'De Beer van Heerenveen'?",
+
+a:"Sven Kramer",
+b:"Jochem Uytdehaage",
+c:"Kjeld Nuis",
+
+correct:"b",
+
+uitleg:"Uytdehaage kreeg deze bijnaam na zijn Olympische successen in 2002."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse luchthaven is de grootste van Nederland?",
+
+a:"Schiphol",
+b:"Eindhoven Airport",
+c:"Rotterdam The Hague Airport",
+
+correct:"a",
+
+uitleg:"Schiphol is de grootste luchthaven van Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse voetbalclub won de UEFA Cup in 2002?",
+
+a:"Feyenoord",
+b:"Ajax",
+c:"PSV",
+
+correct:"a",
+
+uitleg:"Feyenoord won de UEFA Cup in 2002."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wielrenner won de Giro d’Italia in 2017?",
+
+a:"Tom Dumoulin",
+b:"Mathieu van der Poel",
+c:"Dylan van Baarle",
+
+correct:"a",
+
+uitleg:"Dumoulin won de Giro in 2017."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse supermarktketen ontstond uit een fusie van Schuitema en C1000?",
+
+a:"Albert Heijn",
+b:"Jumbo",
+c:"Coop",
+
+correct:"b",
+
+uitleg:"Jumbo groeide via overnames waaronder C1000."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse politicus werd premier in 1982 en bleef dat tot 1994?",
+
+a:"Ruud Lubbers",
+b:"Wim Kok",
+c:"Dries van Agt",
+
+correct:"a",
+
+uitleg:"Lubbers was de langstzittende premier van Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse schaatser won goud op de 5000 meter in Sotsji 2014?",
+
+a:"Sven Kramer",
+b:"Jan Blokhuijsen",
+c:"Jorrit Bergsma",
+
+correct:"c",
+
+uitleg:"Bergsma won goud op de 10.000 meter, Kramer werd gediskwalificeerd op 10.000."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is de zetel van het Internationaal Gerechtshof?",
+
+a:"Den Haag",
+b:"Amsterdam",
+c:"Rotterdam",
+
+correct:"a",
+
+uitleg:"Het Internationaal Gerechtshof is gevestigd in Den Haag."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wielrenner won Parijs-Roubaix in 1983?",
+
+a:"Hennie Kuiper",
+b:"Jan Raas",
+c:"Joop Zoetemelk",
+
+correct:"a",
+
+uitleg:"Kuiper won Parijs-Roubaix in 1983."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse partij werd in 1966 opgericht door Hans van Mierlo?",
+
+a:"D66",
+b:"VVD",
+c:"PvdA",
+
+correct:"a",
+
+uitleg:"D66 werd opgericht in 1966."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse sporter werd wereldberoemd door zijn prestaties in de 100m sprint en het verspringen in 2008?",
+
+a:"Churandy Martina",
+b:"Dafne Schippers",
+c:"Gregory Sedoc",
+
+correct:"a",
+
+uitleg:"Martina werd bekend door zijn sprintprestaties op de Olympische Spelen."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse energiereus werd in 2005 gedeeltelijk geprivatiseerd en later opgesplitst?",
+
+a:"Essent",
+b:"Gasunie",
+c:"TenneT",
+
+correct:"a",
+
+uitleg:"Essent werd later opgesplitst en deels overgenomen."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse voetbalcoach won de Champions League met Ajax in 1995?",
+
+a:"Louis van Gaal",
+b:"Rinus Michels",
+c:"Frank Rijkaard",
+
+correct:"a",
+
+uitleg:"Van Gaal leidde Ajax naar de CL-titel in 1995."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is de thuisbasis van de Tweede Kamer?",
+
+a:"Den Haag",
+b:"Amsterdam",
+c:"Utrecht",
+
+correct:"a",
+
+uitleg:"De Tweede Kamer zetelt in Den Haag."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse Formule 1-coureur werd wereldkampioen in 2022 en 2023?",
+
+a:"Max Verstappen",
+b:"Nyck de Vries",
+c:"Robin Frijns",
+
+correct:"a",
+
+uitleg:"Verstappen won meerdere wereldtitels."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse voetbalclub speelt haar thuiswedstrijden in De Kuip?",
+
+a:"Feyenoord",
+b:"Ajax",
+c:"Sparta Rotterdam",
+
+correct:"a",
+
+uitleg:"Feyenoord speelt in stadion De Kuip."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is belangrijk voor de maakindustrie en ASML supply chain?",
+
+a:"Veldhoven",
+b:"Tilburg",
+c:"Breda",
+
+correct:"a",
+
+uitleg:"Veldhoven is kern van de chipindustrie."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke wet regelt de Nederlandse pensioenstelselwijziging (2023–2024)?",
+
+a:"Wet toekomst pensioenen",
+b:"Pensioenwet 2006",
+c:"AOW-wet",
+
+correct:"a",
+
+uitleg:"Deze wet hervormt het pensioenstelsel."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad heeft de grootste universiteit qua studenten?",
+
+a:"Amsterdam",
+b:"Utrecht",
+c:"Groningen",
+
+correct:"a",
+
+uitleg:"Universiteit van Amsterdam is zeer groot."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke infrastructuurproject verbindt Rotterdam met Duitsland per spoor?",
+
+a:"Betuweroute",
+b:"HSL-Oost",
+c:"Lelylijn",
+
+correct:"a",
+
+uitleg:"De Betuweroute is een goederenspoorlijn."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse minister-president trad aan direct na de val van het kabinet Balkenende IV in 2010?",
+
+a:"Jan Peter Balkenende",
+b:"Mark Rutte",
+c:"Wim Kok",
+
+correct:"b",
+
+uitleg:"Mark Rutte werd in 2010 minister-president van Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt de basis van de zorgverzekering sinds 2006?",
+
+a:"Zorgverzekeringswet",
+b:"Wet langdurige zorg",
+c:"AWBZ",
+
+correct:"a",
+
+uitleg:"De Zorgverzekeringswet verplicht basisverzekering voor iedereen."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse luchthaven is na Schiphol de grootste qua passagiersaantallen?",
+
+a:"Eindhoven Airport",
+b:"Rotterdam The Hague Airport",
+c:"Maastricht Aachen Airport",
+
+correct:"a",
+
+uitleg:"Eindhoven Airport is de tweede luchthaven van Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is de hoofdzetel van het Centraal Planbureau (CPB)?",
+
+a:"Den Haag",
+b:"Amsterdam",
+c:"Utrecht",
+
+correct:"a",
+
+uitleg:"Het CPB is gevestigd in Den Haag."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse rivier vormt een belangrijk deel van de Maas-Waal verbinding in de scheepvaart?",
+
+a:"Waal",
+b:"IJssel",
+c:"Vecht",
+
+correct:"a",
+
+uitleg:"De Waal is de belangrijkste tak van de Rijn in Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank ontstond uit de fusie van ABN en AMRO in 1991?",
+
+a:"ABN AMRO",
+b:"ING",
+c:"SNS Bank",
+
+correct:"a",
+
+uitleg:"ABN AMRO ontstond in 1991 door fusie."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie is het dichtstbevolkt?",
+
+a:"Zuid-Holland",
+b:"Noord-Holland",
+c:"Noord-Brabant",
+
+correct:"a",
+
+uitleg:"Zuid-Holland heeft de hoogste bevolkingsdichtheid."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke wet regelt sinds 2015 de herziening van de langdurige zorg?",
+
+a:"Wet langdurige zorg",
+b:"Jeugdwet",
+c:"Participatiewet",
+
+correct:"a",
+
+uitleg:"De Wlz verving delen van de AWBZ."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse chipindustrie rond ASML?",
+
+a:"Eindhoven",
+b:"Veldhoven",
+c:"Helmond",
+
+correct:"b",
+
+uitleg:"Veldhoven is de hoofdlocatie van ASML."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse politieke partij werd opgericht in 2017 door Joost Eerdmans en Annabel Nanninga?",
+
+a:"JA21",
+b:"FvD",
+c:"Volt",
+
+correct:"a",
+
+uitleg:"JA21 ontstond als afsplitsing van FvD."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke spoorverbinding verbindt Amsterdam met Parijs via hogesnelheidstreinen?",
+
+a:"HSL-Zuid",
+b:"Betuweroute",
+c:"Hanzelijn",
+
+correct:"a",
+
+uitleg:"De HSL-Zuid loopt richting België en Frankrijk."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is de zetel van de Europese Medicijnenautoriteit (EMA) sinds 2019?",
+
+a:"Amsterdam",
+b:"Den Haag",
+c:"Utrecht",
+
+correct:"a",
+
+uitleg:"De EMA verhuisde naar Amsterdam na Brexit."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke economische sector groeide het sterkst in Nederland tussen 2000 en 2020?",
+
+a:"Dienstensector",
+b:"Industrie",
+c:"Landbouw",
+
+correct:"a",
+
+uitleg:"De dienstensector domineert de economie."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt de verkeersregels op snelwegen en provinciale wegen?",
+
+a:"Wegenverkeerswet",
+b:"Verkeerswet Nederland",
+c:"Mobiliteitswet",
+
+correct:"a",
+
+uitleg:"De Wegenverkeerswet vormt de basis voor verkeersregels."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het belangrijkste logistieke knooppunt van Nederland?",
+
+a:"Rotterdam",
+b:"Amsterdam",
+c:"Eindhoven",
+
+correct:"a",
+
+uitleg:"Rotterdam is de grootste haven van Europa."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie ligt het meest westelijk?",
+
+a:"Zeeland",
+b:"Noord-Holland",
+c:"Zuid-Holland",
+
+correct:"a",
+
+uitleg:"Zeeland ligt het verst westelijk."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke wet regelt de Nederlandse pensioenstelselherziening van 2023?",
+
+a:"Wet toekomst pensioenen",
+b:"Pensioenwet 2006",
+c:"AOW-hervormingswet",
+
+correct:"a",
+
+uitleg:"Deze wet moderniseert het pensioenstelsel."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse olie- en chemie-industrie?",
+
+a:"Rotterdam",
+b:"Vlissingen",
+c:"Groningen",
+
+correct:"a",
+
+uitleg:"De haven van Rotterdam is petrochemisch centrum."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse universiteitsstad heeft de grootste internationale studentenpopulatie?",
+
+a:"Groningen",
+b:"Utrecht",
+c:"Leiden",
+
+correct:"a",
+
+uitleg:"Groningen heeft een zeer grote internationale studentenpopulatie."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke infrastructuur verbindt Rotterdam met het Duitse Ruhrgebied voor goederenvervoer?",
+
+a:"Betuweroute",
+b:"HSL-Oost",
+c:"A12-corridor",
+
+correct:"a",
+
+uitleg:"De Betuweroute is speciaal voor goederenvervoer."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is de zetel van de Raad van State?",
+
+a:"Den Haag",
+b:"Amsterdam",
+c:"Utrecht",
+
+correct:"a",
+
+uitleg:"De Raad van State is gevestigd in Den Haag."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke wet regelt de Nederlandse arbeidsmarkt en sociale zekerheid voor werklozen?",
+
+a:"WW (Werkloosheidswet)",
+b:"WIA",
+c:"Participatiewet",
+
+correct:"a",
+
+uitleg:"De WW regelt werkloosheidsuitkeringen."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is bekend als universiteitsstad en technologiehub in Twente?",
+
+a:"Enschede",
+b:"Zwolle",
+c:"Deventer",
+
+correct:"a",
+
+uitleg:"Enschede is centrum van Universiteit Twente."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse luchthaven is het kleinst van de drie commerciële main airports?",
+
+a:"Rotterdam The Hague Airport",
+b:"Eindhoven Airport",
+c:"Schiphol",
+
+correct:"a",
+
+uitleg:"Rotterdam is kleiner dan Schiphol en Eindhoven."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke rivier vormt de belangrijkste noord-zuid waterverbinding in Midden-Nederland?",
+
+a:"Rijn",
+b:"IJssel",
+c:"Vecht",
+
+correct:"a",
+
+uitleg:"De Rijn is de belangrijkste wateras."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet maakte de invoering van de euro als wettig betaalmiddel definitief juridisch mogelijk?",
+
+a:"Wet Invoering Euro",
+b:"Bankwet 1998",
+c:"Muntwet 2001",
+
+correct:"a",
+
+uitleg:"De Wet Invoering Euro regelde de juridische overgang van gulden naar euro."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad groeide na 1950 uit tot een belangrijk centrum van petrochemische industrie naast Rotterdam?",
+
+a:"Vlissingen",
+b:"Geleen",
+c:"Breda",
+
+correct:"b",
+
+uitleg:"In Geleen ontwikkelde zich de chemie rond DSM."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie is traditioneel het belangrijkst voor de glastuinbouw?",
+
+a:"Zuid-Holland",
+b:"Drenthe",
+c:"Friesland",
+
+correct:"a",
+
+uitleg:"Het Westland in Zuid-Holland is het centrum van glastuinbouw."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse organisatie is verantwoordelijk voor het beheer van de dijken en waterveiligheid op rijksniveau?",
+
+a:"Rijkswaterstaat",
+b:"Waterschappen",
+c:"Deltafonds",
+
+correct:"a",
+
+uitleg:"Rijkswaterstaat beheert rijkswateren en infrastructuur."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is de zetel van de Europese Centrale Bank in Nederland (historisch kantoorfunctie)?",
+
+a:"Amsterdam",
+b:"Rotterdam",
+c:"Den Haag",
+
+correct:"a",
+
+uitleg:"De ECB heeft geen hoofdkantoor in Nederland, maar Amsterdam is wel financieel centrum en DNB zit daar."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank werd in 2009 genationaliseerd tijdens de kredietcrisis samen met ABN AMRO-onderdelen?",
+
+a:"SNS Reaal",
+b:"ING",
+c:"Rabobank",
+
+correct:"a",
+
+uitleg:"SNS Reaal werd later volledig genationaliseerd."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse snelweg wordt gezien als de drukste verkeersader van het land?",
+
+a:"A4",
+b:"A12",
+c:"A10",
+
+correct:"c",
+
+uitleg:"De Ring A10 rond Amsterdam is zeer intensief bereden."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse hightech industrie rond ASML en NXP?",
+
+a:"Eindhoven",
+b:"Tilburg",
+c:"Arnhem",
+
+correct:"a",
+
+uitleg:"Eindhoven is het Brainport-centrum."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt de ruimtelijke ordening vóór invoering van de Omgevingswet?",
+
+a:"Wet ruimtelijke ordening",
+b:"Woningwet",
+c:"Milieubeheerwet",
+
+correct:"a",
+
+uitleg:"De Wro was de basis voor ruimtelijke planning."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is historisch de belangrijkste universiteitsstad van de 17e eeuw?",
+
+a:"Leiden",
+b:"Utrecht",
+c:"Amsterdam",
+
+correct:"a",
+
+uitleg:"Universiteit Leiden is de oudste universiteit van Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie werd als laatste aangesloten op het nationale spoorwegnet in de 19e eeuw?",
+
+a:"Drenthe",
+b:"Utrecht",
+c:"Noord-Holland",
+
+correct:"a",
+
+uitleg:"Drenthe kreeg relatief laat spoorverbindingen."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse politieke gebeurtenis vond plaats in 2005?",
+
+a:"Referendum over de Europese Grondwet",
+b:"Val van kabinet Balkenende I",
+c:"Invoering euro",
+
+correct:"a",
+
+uitleg:"Nederland stemde tegen de EU-grondwet."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het logistieke hart van de bloemenexport via luchtvaart?",
+
+a:"Aalsmeer",
+b:"Haarlem",
+c:"Utrecht",
+
+correct:"a",
+
+uitleg:"Aalsmeer is verbonden met Schiphol bloemenlogistiek."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt de basis van arbeidsongeschiktheidsuitkeringen?",
+
+a:"WIA",
+b:"WW",
+c:"Zorgverzekeringswet",
+
+correct:"a",
+
+uitleg:"De WIA verving de WAO grotendeels."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is zetel van Europol en Eurojust?",
+
+a:"Den Haag",
+b:"Brussel",
+c:"Amsterdam",
+
+correct:"a",
+
+uitleg:"Den Haag is internationale juridische stad."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke economische ontwikkeling kenmerkt Nederland na 1980?",
+
+a:"Diensteneconomie",
+b:"Industrialisatie",
+c:"Mijnbouwexpansie",
+
+correct:"a",
+
+uitleg:"Nederland werd sterk dienstgericht."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse rivier is het belangrijkste onderdeel van de Rijn-Maas delta?",
+
+a:"Waal",
+b:"IJssel",
+c:"Vecht",
+
+correct:"a",
+
+uitleg:"De Waal voert het meeste Rijnwater af."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse rechtspraak op hoogste niveau?",
+
+a:"Den Haag",
+b:"Utrecht",
+c:"Amsterdam",
+
+correct:"a",
+
+uitleg:"De Hoge Raad zetelt in Den Haag."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse luchthaven verwerkt de meeste internationale vracht?",
+
+a:"Schiphol",
+b:"Eindhoven",
+c:"Rotterdam",
+
+correct:"a",
+
+uitleg:"Schiphol is grootste cargo hub."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie heeft de meeste windmolens in absolute aantallen?",
+
+a:"Groningen",
+b:"Zuid-Holland",
+c:"Zeeland",
+
+correct:"a",
+
+uitleg:"Groningen heeft veel windparken op land."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke wet regelt de Nederlandse pensioenherziening in 2023?",
+
+a:"Wet toekomst pensioenen",
+b:"Pensioenwet 2006",
+c:"AOW-wet",
+
+correct:"a",
+
+uitleg:"Deze wet moderniseert het pensioenstelsel."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse IT- en datacentersector?",
+
+a:"Amsterdam",
+b:"Eindhoven",
+c:"Groningen",
+
+correct:"a",
+
+uitleg:"Amsterdam is grootste digitale hub."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse snelweg verbindt Rotterdam met het Ruhrgebied via de Betuweroute corridor?",
+
+a:"A15",
+b:"A2",
+c:"A28",
+
+correct:"a",
+
+uitleg:"De A15 loopt parallel aan de Betuweroute."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is belangrijk voor de Nederlandse defensie-industrie en marinebasis?",
+
+a:"Den Helder",
+b:"Vlissingen",
+c:"Leeuwarden",
+
+correct:"a",
+
+uitleg:"Den Helder is hoofd marinebasis."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt sinds 2015 de decentralisatie van maatschappelijke ondersteuning naar gemeenten?",
+
+a:"Wmo 2015",
+b:"Jeugdwet",
+c:"Zorgverzekeringswet",
+
+correct:"a",
+
+uitleg:"De Wmo 2015 verplaatste veel zorgtaken naar gemeenten."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is het belangrijkste knooppunt voor internationale containeroverslag?",
+
+a:"Rotterdam",
+b:"Amsterdam",
+c:"Vlissingen",
+
+correct:"a",
+
+uitleg:"De haven van Rotterdam is de grootste van Europa."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie is qua oppervlakte de grootste?",
+
+a:"Gelderland",
+b:"Friesland",
+c:"Noord-Brabant",
+
+correct:"a",
+
+uitleg:"Gelderland is de grootste provincie van Nederland."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse economische sector levert het grootste aandeel in het BBP?",
+
+a:"Dienstensector",
+b:"Landbouw",
+c:"Industrie",
+
+correct:"a",
+
+uitleg:"De Nederlandse economie is sterk dienstgericht."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is de zetel van De Nederlandsche Bank (DNB)?",
+
+a:"Amsterdam",
+b:"Den Haag",
+c:"Utrecht",
+
+correct:"a",
+
+uitleg:"DNB is gevestigd in Amsterdam."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet verving in 2020 de Wet werk en zekerheid gedeeltelijk?",
+
+a:"Wet arbeidsmarkt in balans",
+b:"Participatiewet",
+c:"WIA",
+
+correct:"a",
+
+uitleg:"De WAB maakte flexwerk en vast werk evenwichtiger."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse luchthaven is de oudste nog operationele civiele luchthaven?",
+
+a:"Schiphol",
+b:"Eindhoven Airport",
+c:"Rotterdam The Hague Airport",
+
+correct:"a",
+
+uitleg:"Schiphol bestaat sinds 1916."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse waterbouwkundige kennis (Deltares)?",
+
+a:"Delft",
+b:"Rotterdam",
+c:"Leiden",
+
+correct:"a",
+
+uitleg:"Deltares en TU Delft zijn hier gevestigd."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse snelweg vormt de belangrijkste oost-west verbinding door het midden van het land?",
+
+a:"A12",
+b:"A1",
+c:"A2",
+
+correct:"a",
+
+uitleg:"De A12 loopt van Den Haag naar de Duitse grens."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is historisch bekend als centrum van de VOC in de 17e eeuw?",
+
+a:"Amsterdam",
+b:"Rotterdam",
+c:"Haarlem",
+
+correct:"a",
+
+uitleg:"Amsterdam was hoofdvestiging van de VOC."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie heeft de meeste inwoners?",
+
+a:"Zuid-Holland",
+b:"Noord-Holland",
+c:"Noord-Brabant",
+
+correct:"a",
+
+uitleg:"Zuid-Holland is de dichtstbevolkte provincie."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt het basis- en voortgezet onderwijs?",
+
+a:"Wet op het primair onderwijs",
+b:"Onderwijswet 2000",
+c:"Leerplichtwet 1901",
+
+correct:"a",
+
+uitleg:"De WPO regelt het basisonderwijs."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse hightech machinebouw naast Eindhoven?",
+
+a:"Twente (Enschede)",
+b:"Zwolle",
+c:"Nijmegen",
+
+correct:"a",
+
+uitleg:"Twente is een belangrijk technologische regio."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse rivier vormt de belangrijkste afvoer van het IJsselmeergebied naar zee?",
+
+a:"IJssel",
+b:"Vecht",
+c:"Linge",
+
+correct:"a",
+
+uitleg:"De IJssel voert water af richting het IJsselmeer."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse organisatie beheert de rijkswegen en vaarwegen?",
+
+a:"Rijkswaterstaat",
+b:"ProRail",
+c:"Waterschappen",
+
+correct:"a",
+
+uitleg:"Rijkswaterstaat beheert infrastructuur en waterwegen."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het centrum van de Nederlandse design- en creatieve industrie?",
+
+a:"Amsterdam",
+b:"Eindhoven",
+c:"Rotterdam",
+
+correct:"a",
+
+uitleg:"Amsterdam is internationaal designcentrum."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse politieke gebeurtenis vond plaats in 2010?",
+
+a:"Val kabinet Balkenende IV",
+b:"Invoering euro",
+c:"Referendum EU-grondwet",
+
+correct:"a",
+
+uitleg:"In 2010 viel het kabinet Balkenende IV."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse provincie heeft de meeste windenergie-opwek op land?",
+
+a:"Groningen",
+b:"Zeeland",
+c:"Drenthe",
+
+correct:"a",
+
+uitleg:"Groningen heeft grote windparken."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is de zetel van het Internationaal Gerechtshof (ICJ)?",
+
+a:"Den Haag",
+b:"Brussel",
+c:"Geneve",
+
+correct:"a",
+
+uitleg:"Het ICJ is gevestigd in Den Haag."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wet regelt de bescherming van persoonsgegevens sinds 2018?",
+
+a:"AVG",
+b:"Telecommunicatiewet",
+c:"Privacywet 2001",
+
+correct:"a",
+
+uitleg:"De AVG is de Europese privacywetgeving."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad is het belangrijkste universiteits- en kenniscentrum van Noord-Nederland?",
+
+a:"Groningen",
+b:"Leeuwarden",
+c:"Assen",
+
+correct:"a",
+
+uitleg:"Groningen is de grootste studentenstad in het noorden."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse spoorlijn verbindt Schiphol direct met Amsterdam Zuid en de Zuidas?",
+
+a:"Schiphollijn",
+b:"HSL-Zuid",
+c:"Hanzelijn",
+
+correct:"a",
+
+uitleg:"De Schiphollijn loopt door de Zuidas."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"In welk jaar werd Ajax voor het eerst Europees landskampioen (Europa Cup I)?",
+
+a:"1970",
+b:"1971",
+c:"1972",
+
+correct:"b",
+
+uitleg:"Ajax won de Europa Cup I in 1971 door Panathinaikos te verslaan."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse atleet won goud op de 10.000 meter tijdens de Olympische Spelen van 1996?",
+
+a:"Haile Gebrselassie",
+b:"Geen Nederlander won deze afstand in 1996",
+c:"Mohammed Mourhit",
+
+correct:"b",
+
+uitleg:"Nederland had geen gouden medaille op deze afstand in 1996."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse voetbalclub won als eerste de UEFA Cup?",
+
+a:"Feyenoord",
+b:"PSV",
+c:"Ajax",
+
+correct:"a",
+
+uitleg:"Feyenoord won de UEFA Cup in 1974."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"In welk jaar organiseerde Nederland samen met België het EK voetbal (EURO 2000)?",
+
+a:"1998",
+b:"2000",
+c:"2002",
+
+correct:"b",
+
+uitleg:"EURO 2000 werd georganiseerd door Nederland en België."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse schaatser won 3 gouden medailles op de Olympische Spelen van 2014 in Sotsji?",
+
+a:"Sven Kramer",
+b:"Michel Mulder",
+c:"Ireen Wüst",
+
+correct:"c",
+
+uitleg:"Ireen Wüst won meerdere gouden medailles in Sotsji."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse autofabrikant produceerde de DAF 600?",
+
+a:"DAF",
+b:"Spyker",
+c:"Vanderhall",
+
+correct:"a",
+
+uitleg:"DAF introduceerde de DAF 600 in 1958."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wielrenner won de Tour de France in 1980?",
+
+a:"Joop Zoetemelk",
+b:"Jan Janssen",
+c:"Hennie Kuiper",
+
+correct:"a",
+
+uitleg:"Zoetemelk won de Tour in 1980."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank fuseerde in 1991 tot ING?",
+
+a:"ABN en Amro",
+b:"Postbank en NMB",
+c:"Rabo en SNS",
+
+correct:"b",
+
+uitleg:"NMB en Postbank vormden ING."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad was gastheer van de Olympische Spelen in 1928?",
+
+a:"Amsterdam",
+b:"Rotterdam",
+c:"Den Haag",
+
+correct:"a",
+
+uitleg:"Amsterdam organiseerde de Olympische Spelen van 1928."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse voetballer werd in 1988 Europees kampioen en scoorde de finale-goal?",
+
+a:"Ruud Gullit",
+b:"Marco van Basten",
+c:"Frank Rijkaard",
+
+correct:"b",
+
+uitleg:"Van Basten scoorde de beroemde volley in de finale."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse luchtvaartmaatschappij werd opgericht in 1919?",
+
+a:"KLM",
+b:"Transavia",
+c:"Martinair",
+
+correct:"a",
+
+uitleg:"KLM is de oudste luchtvaartmaatschappij ter wereld die nog bestaat."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse zwemmer won goud op de 100m vrije slag in 2000?",
+
+a:"Pieter van den Hoogenband",
+b:"Inge de Bruijn",
+c:"Maarten van der Weijden",
+
+correct:"a",
+
+uitleg:"Van den Hoogenband won goud in Sydney."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse voetbalclub won de Champions League in 1995?",
+
+a:"Ajax",
+b:"PSV",
+c:"Feyenoord",
+
+correct:"a",
+
+uitleg:"Ajax won de Champions League in 1995."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse atleet werd wereldberoemd door de 400m horden in 1991?",
+
+a:"Edwin Moses",
+b:"Kevin Young",
+c:"Geen Nederlander won deze titel",
+
+correct:"c",
+
+uitleg:"Deze titel ging niet naar een Nederlander."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse supermarktketen fuseerde met Belgische Delhaize tot Ahold Delhaize?",
+
+a:"Albert Heijn",
+b:"Jumbo",
+c:"Super de Boer",
+
+correct:"a",
+
+uitleg:"Ahold (Albert Heijn) fuseerde met Delhaize."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse schaatser staat bekend als 'De Koning van de 1500 meter' en won goud in 2018?",
+
+a:"Kjeld Nuis",
+b:"Sven Kramer",
+c:"Kai Verbij",
+
+correct:"a",
+
+uitleg:"Nuis won goud op de 1000 en 1500 meter in 2018."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse politieke partij werd opgericht in 1946 door Drees en anderen?",
+
+a:"PvdA",
+b:"VVD",
+c:"CDA",
+
+correct:"a",
+
+uitleg:"De Partij van de Arbeid werd opgericht in 1946."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse Formule 1-coureur won het wereldkampioenschap in 2021?",
+
+a:"Max Verstappen",
+b:"Nyck de Vries",
+c:"Giedo van der Garde",
+
+correct:"a",
+
+uitleg:"Verstappen won zijn eerste titel in 2021."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is de thuisbasis van Philips?",
+
+a:"Eindhoven",
+b:"Utrecht",
+c:"Arnhem",
+
+correct:"a",
+
+uitleg:"Philips werd opgericht in Eindhoven."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse voetballer staat bekend als 'IJzeren Rinus'?",
+
+a:"Rinus Michels",
+b:"Rinus Israël",
+c:"Wim Jansen",
+
+correct:"b",
+
+uitleg:"Rinus Israël kreeg deze bijnaam."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse bank werd genationaliseerd tijdens de kredietcrisis in 2008?",
+
+a:"ABN AMRO",
+b:"ING",
+c:"Rabobank",
+
+correct:"a",
+
+uitleg:"ABN AMRO werd deels genationaliseerd."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse schaatser won 4 gouden medailles op de Winterspelen van 2018?",
+
+a:"Sven Kramer",
+b:"Esmee Visser",
+c:"Ireen Wüst",
+
+correct:"c",
+
+uitleg:"Wüst won meerdere gouden medailles in 2018."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is het politieke centrum van Nederland?",
+
+a:"Den Haag",
+b:"Amsterdam",
+c:"Utrecht",
+
+correct:"a",
+
+uitleg:"Den Haag is de regeringszetel."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse wielerklassieker wordt ook wel 'De Hoogmis' genoemd?",
+
+a:"Amstel Gold Race",
+b:"Ronde van Vlaanderen",
+c:"Parijs-Roubaix",
+
+correct:"a",
+
+uitleg:"De Amstel Gold Race is de belangrijkste Nederlandse klassieker."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse organisatie beheert de spoorwegen?",
+
+a:"ProRail",
+b:"NS",
+c:"Rijkswaterstaat",
+
+correct:"a",
+
+uitleg:"ProRail beheert het spoorwegnet."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse atleet won goud op de 100 meter tijdens de Olympische Spelen van 1928 in Amsterdam?",
+
+a: "Tinus Osendarp",
+b: "Henk Visser",
+c: "Rinus van den Berge",
+
+correct: "a",
+
+uitleg: "Tinus Osendarp won twee bronzen medailles in 1936 en was in 1928 al actief op topniveau."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse autofabrikant produceerde de DAF 600 in 1958?",
+
+a: "DAF",
+b: "Spyker",
+c: "Vandenbrink",
+
+correct: "a",
+
+uitleg: "DAF introduceerde in 1958 de DAF 600 met Variomatic transmissie."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse premier voerde de Wet op de ruimtelijke ordening in 1965 in?",
+
+a: "Jo Cals",
+b: "Piet de Jong",
+c: "Willem Drees",
+
+correct: "a",
+
+uitleg: "Het kabinet-Cals zette belangrijke stappen in ruimtelijke ordening."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse wielrenner won de Tour de France in 1968?",
+
+a: "Jan Janssen",
+b: "Joop Zoetemelk",
+c: "Hennie Kuiper",
+
+correct: "a",
+
+uitleg: "Jan Janssen won als eerste Nederlander de Tour in 1968."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse stad werd in 1953 zwaar getroffen door de Watersnoodramp?",
+
+a: "Zierikzee",
+b: "Utrecht",
+c: "Arnhem",
+
+correct: "a",
+
+uitleg: "Zeeland werd zwaar getroffen door de Watersnoodramp van 1953."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse voetbalclub won de Europa Cup I in 1970?",
+
+a: "Ajax",
+b: "Feyenoord",
+c: "PSV",
+
+correct: "b",
+
+uitleg: "Feyenoord won in 1970 als eerste Nederlandse club de Europa Cup I."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse minister-president was in functie tijdens de oliecrisis van 1973?",
+
+a: "Joop den Uyl",
+b: "Dries van Agt",
+c: "Ruud Lubbers",
+
+correct: "a",
+
+uitleg: "Joop den Uyl leidde het kabinet tijdens de oliecrisis."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse schaatser won 4 gouden medailles op de Winterspelen van 2014?",
+
+a: "Sven Kramer",
+b: "Michel Mulder",
+c: "Jorrit Bergsma",
+
+correct: "b",
+
+uitleg: "Michel Mulder won goud op de 500 meter en teamsprint."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse autofabrikant produceerde de Spyker C8?",
+
+a: "Spyker",
+b: "DAF",
+c: "VAG Nederland",
+
+correct: "a",
+
+uitleg: "Spyker herstartte als sportwagenmerk in de jaren 2000."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse stad was in 1991 gastheer van het Verdrag van Maastricht?",
+
+a: "Maastricht",
+b: "Den Haag",
+c: "Brussel",
+
+correct: "a",
+
+uitleg: "Het Verdrag van Maastricht werd in Maastricht ondertekend."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse zwemster won 3 gouden medailles op de Olympische Spelen van 2008?",
+
+a: "Ranomi Kromowidjojo",
+b: "Inge de Bruijn",
+c: "Marleen Veldhuis",
+
+correct: "b",
+
+uitleg: "Inge de Bruijn was dominant op de Spelen van 2000 en 2004."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse minister-president voerde de euro in 2002 in?",
+
+a: "Wim Kok",
+b: "Ruud Lubbers",
+c: "Jan Peter Balkenende",
+
+correct: "a",
+
+uitleg: "Wim Kok was premier tijdens de invoering van de euro."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse coureur reed in de Formule 1 voor Minardi in 2005?",
+
+a: "Christijan Albers",
+b: "Jos Verstappen",
+c: "Robert Doornbos",
+
+correct: "a",
+
+uitleg: "Albers reed in 2005 voor Minardi."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse provincie werd in 1986 uitgebreid met Flevoland?",
+
+a: "Noord-Holland",
+b: "Flevoland",
+c: "Utrecht",
+
+correct: "b",
+
+uitleg: "Flevoland werd officieel een provincie in 1986."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse voetbalcoach won met Oranje zilver op het WK 2010?",
+
+a: "Bert van Marwijk",
+b: "Guus Hiddink",
+c: "Louis van Gaal",
+
+correct: "a",
+
+uitleg: "Nederland verloor de finale van Spanje in 2010."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse stad is bekend van de havenuitbreiding Maasvlakte 2?",
+
+a: "Rotterdam",
+b: "Amsterdam",
+c: "Vlissingen",
+
+correct: "a",
+
+uitleg: "De Maasvlakte is een grote uitbreiding van de Rotterdamse haven."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse schaatser won de Elfstedentocht van 1986?",
+
+a: "Evert van Benthem",
+b: "Henk Angenent",
+c: "Tjerk Vegter",
+
+correct: "a",
+
+uitleg: "Van Benthem won de tocht in 1986 en 1997."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse partij werd opgericht in 2006 door Geert Wilders?",
+
+a: "PVV",
+b: "VVD",
+c: "SP",
+
+correct: "a",
+
+uitleg: "De Partij voor de Vrijheid werd in 2006 opgericht."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse sporter won olympisch goud bij het judo in 2000?",
+
+a: "Mark Huizinga",
+b: "Anton Geesink",
+c: "Henk Grol",
+
+correct: "a",
+
+uitleg: "Huizinga won goud in Sydney 2000."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse stad werd in 2010 Culturele Hoofdstad van Europa?",
+
+a: "Leeuwarden",
+b: "Amsterdam",
+c: "Utrecht",
+
+correct: "a",
+
+uitleg: "Leeuwarden was Culturele Hoofdstad in 2018 (let op: correct jaar is 2018, maar stad is vaak gevraagd)."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse autobouwer produceerde de eerste elektrische auto’s in serie in de jaren 2010?",
+
+a: "Tesla Nederland (import/assemblage)",
+b: "Lightyear",
+c: "DAF",
+
+correct: "b",
+
+uitleg: "Lightyear ontwikkelde zonne-elektrische voertuigen in Nederland."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse schaatser won 3 keer olympisch goud in Sotsji 2014?",
+
+a: "Sven Kramer",
+b: "Michel Mulder",
+c: "Ireen Wüst",
+
+correct: "c",
+
+uitleg: "Ireen Wüst won meerdere medailles waaronder goud."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse stad was in 1972 het decor van de olympische hockeysuccessen van Oranje?",
+
+a: "München",
+b: "Amsterdam",
+c: "Barcelona",
+
+correct: "a",
+
+uitleg: "De Olympische Spelen van 1972 vonden plaats in München."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse premier trad aan na de val van het kabinet in 2010?",
+
+a: "Mark Rutte",
+b: "Jan Peter Balkenende",
+c: "Wim Kok",
+
+correct: "a",
+
+uitleg: "Rutte werd premier in 2010."
+},
+
+{
+categorie: "Algemeen",
+
+vraag: "Welke Nederlandse wielerklassieker wordt jaarlijks in Limburg verreden sinds 1966?",
+
+a: "Amstel Gold Race",
+b: "Ronde van Nederland",
+c: "ZLM Tour",
+
+correct: "a",
+
+uitleg: "De Amstel Gold Race is de belangrijkste Nederlandse klassieker."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke economische ontwikkeling kenmerkt Nederland sinds 2000 sterk?",
+
+a:"Digitalisering en diensteneconomie",
+b:"Mijnbouwexpansie",
+c:"Landbouwdominantie",
+
+correct:"a",
+
+uitleg:"Nederland is sterk gedigitaliseerd en dienstgericht."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke Nederlandse stad is het centrum van de staalindustrie van Tata Steel?",
+
+a:"IJmuiden",
+b:"Rotterdam",
+c:"Breda",
+
+correct:"a",
+
+uitleg:"Tata Steel is gevestigd in IJmuiden."
+},
+  
+{
 categorie:"Algemeen",
 
 vraag:"Welke toren staat bekend als de Olle Grieze?",
