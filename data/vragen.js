@@ -1,6 +1,6 @@
 const vragen = [
 
-/// OOSTSTELLINGWERF
+// OOSTSTELLINGWERF
 
 {
 categorie:"Ooststellingwerf",
@@ -142,7 +142,7 @@ correct:"b",
 uitleg:"Johan van der Velde woonde jarenlang in Appelscha."
 },
 
-/// FRYSLAN
+// FRYSLAN
 
 {
 categorie:"Fryslân",
@@ -1995,20 +1995,6 @@ uitleg:"De Allerhilligenfloed fan 1362 feroarsake grutte feroarings oan de Noard
 {
 categorie:"Fryslân",
 
-vraag:"Hokker midsiuwske oerstreaming yn 1362 stie ek bekend as de Grutte Mandrenke?",
-
-a:"Sint-Luciafloed",
-b:"Allerhilligenfloed",
-c:"Sint-Nikolaasfloed",
-
-correct:"b",
-
-uitleg:"De Allerhilligenfloed fan 1362 feroarsake grutte feroarings oan de Noardseekust."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Hokker Fryske stêd wie yn de Saksyske tiid it wichtichste bestjoerssintrum?",
 
 a:"Ljouwert",
@@ -2223,11 +2209,11 @@ vraag:"Hokker stêd wie in wichtich Hânzesintrum?",
 
 a:"Snits",
 b:"Drachten",
-c:"Heerenveen",
+c:"Starum",
 
 correct:"a",
 
-uitleg:"Snits wie in wichtige hannelsstêd yn de Hanze."
+uitleg:"Starum wie in wichtige hannelsstêd yn de Hanze."
 },
 
 {
@@ -2270,9 +2256,9 @@ c:"Fulkanen",
 correct:"a",
 
 uitleg:"Terpen waarden boud tsjin heech wetter."
-}
+},
 
-/// Algemeen
+// Algemeen
 
 {
 categorie:"Algemeen",
@@ -2281,7 +2267,7 @@ vraag:"Wat is de hoofdstad van Groningen?",
 
 a:"Veendam",
 b:"Winschoten",
-c:"Algemeen",
+c:"Groningen",
 
 correct:"c",
 
@@ -2414,7 +2400,7 @@ correct:"b",
 uitleg:"Groningen heeft veel studenten."
 },
 
-/// DRENTHE
+// DRENTHE
 
 {
 categorie:"Drenthe",
@@ -2556,7 +2542,7 @@ correct:"a",
 uitleg:"Het Pieterpad loopt door meerdere Drentse gebieden."
 },
 
-/// Pupquiz
+// Pupquiz
 
 {
 categorie:"Pubquiz",
