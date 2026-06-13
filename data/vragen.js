@@ -1980,182 +1980,295 @@ uitleg:"Stoarmfloeden en see-ynbraak foarmen it Fryske lânskip."
 
 {
 categorie:"Fryslân",
+  
 vraag:"Hokker midsiuwske oerstreaming yn 1362 stie ek bekend as de Grutte Mandrenke?",
+
 a:"Sint-Luciafloed",
 b:"Allerhilligenfloed",
 c:"Sint-Nikolaasfloed",
+
 correct:"b",
+
 uitleg:"De Allerhilligenfloed fan 1362 feroarsake grutte feroarings oan de Noardseekust."
 },
+
 {
 categorie:"Fryslân",
+
+vraag:"Hokker midsiuwske oerstreaming yn 1362 stie ek bekend as de Grutte Mandrenke?",
+
+a:"Sint-Luciafloed",
+b:"Allerhilligenfloed",
+c:"Sint-Nikolaasfloed",
+
+correct:"b",
+
+uitleg:"De Allerhilligenfloed fan 1362 feroarsake grutte feroarings oan de Noardseekust."
+},
+
+{
+categorie:"Fryslân",
+
 vraag:"Hokker Fryske stêd wie yn de Saksyske tiid it wichtichste bestjoerssintrum?",
+
 a:"Ljouwert",
 b:"Snits",
 c:"Dokkum",
+
 correct:"a",
+
 uitleg:"Ljouwert groeide ûnder Saksysk bestjoer út ta it sintrum fan Fryslân."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Hoe hjitte de midsiuwske seearm tusken Fryslân en de Sudersee?",
+
 a:"De Middelsee",
 b:"De Lauwerssee",
 c:"De Dollard",
+
 correct:"a",
+
 uitleg:"De Middelsee wie in wichtige wetterferbining foar hannel."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Hokker Fryske famylje spile in wichtige rol yn de taalbeweging fan de 19e iuw?",
+
 a:"Halbertsma",
 b:"Van Aylva",
 c:"Camstra",
+
 correct:"a",
+
 uitleg:"De Halbertsma’s wiene tige ynfloedryk yn taal en literatuer."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Hokker stêd waard in wichtich hannelsintrum nei it krijen fan stedsrjochten yn 1426?",
+
 a:"Snits",
 b:"Harns",
 c:"Boalsert",
+
 correct:"a",
+
 uitleg:"Snits ûntjoech him ta in wichtich hannelsintrum."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Wat wiene de âlde Fryske bestjoersgebieten?",
+
 a:"Grietenijen",
 b:"Ambachten",
 c:"Kwartieren",
+
 correct:"a",
+
 uitleg:"Grietenijen wiene midsiuwske bestjoerseenheden."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Hokker havenstêd wie sintraal yn de Admiraliteit fan Fryslân?",
+
 a:"Harns",
 b:"Ljouwert",
 c:"Snits",
+
 correct:"a",
+
 uitleg:"Harns wie in wichtige marinehaven."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Hokker ramp yn 1287 feroarsake grutte feroarings oan de Fryske kust?",
+
 a:"Sint-Nikolaasfloed",
 b:"Sint-Luciafloed",
 c:"Allerhilligenfloed",
+
 correct:"a",
+
 uitleg:"De Sint-Nikolaasfloed feroare de kustline sterk."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Hokker tradisjonele Fryske sport giet oer oer wetter springen?",
+
 a:"Fierljeppen",
 b:"Skûtsjesilen",
 c:"Keatsen",
+
 correct:"a",
+
 uitleg:"Fierljeppen is in Fryske tradysjesport."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Hokker stêd is ferbûn mei de dea fan Bonifatius yn 754?",
+
 a:"Dokkum",
 b:"Stavoren",
 c:"Ljouwert",
+
 correct:"a",
+
 uitleg:"Bonifatius waard yn Dokkum fermoarde."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Ta hokker taalfamylje heart it Frysk?",
+
 a:"West-Germaansk",
 b:"Romansk",
 c:"Slavysk",
+
 correct:"a",
+
 uitleg:"It Frysk heart ta de West-Germaanske talen."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Wa is in symboal fan ferset tsjin Saksysk bewâld?",
+
 a:"Jancko Douwama",
 b:"Tjerk Hiddes",
 c:"Willem fan Oranje",
+
 correct:"a",
+
 uitleg:"Jancko Douwama stie foar Fryske autonomy."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Hokker dialekt wurdt sprutsen yn de Stellingwerven?",
+
 a:"Stellingwerfsk",
 b:"Bildts",
 c:"Westerlauwersk Frysk",
+
 correct:"a",
+
 uitleg:"Stellingwerfsk is Nedersaksysk fan oarsprong."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Hokker religieuze beweging feroare Fryslân yn de 16e iuw?",
+
 a:"Reformaasje",
 b:"Krústochten",
 c:"Humanisme",
+
 correct:"a",
+
 uitleg:"De Reformaasje feroare tsjerke en maatskippij."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Hokker rivier wie in wichtige grins yn Súdeast-Fryslân?",
+
 a:"Tsjonger",
 b:"Ryn",
 c:"Maas",
+
 correct:"a",
+
 uitleg:"De Tsjonger wie in natuerlike grinsrivier."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Wat makke grutte dielen fan Fryslân geskikt foar lânbou?",
+
 a:"Ynpoldering",
 b:"Fulkanen",
 c:"Berchfoarming",
+
 correct:"a",
+
 uitleg:"Ynpoldering makke lân út wetter."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Hokker stêd wie in wichtich Hânzesintrum?",
+
 a:"Snits",
 b:"Drachten",
 c:"Heerenveen",
+
 correct:"a",
+
 uitleg:"Snits wie in wichtige hannelsstêd yn de Hanze."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Hokker beweging kaam op foar Fryske kultuer yn de 20e iuw?",
+
 a:"Fryske Nasjonale Beweging",
 b:"Hânzebûn",
 c:"Frije Stêden Ried",
+
 correct:"a",
+
 uitleg:"De FNB sette him yn foar taal en identiteit."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Hokker wettergebiet wie wichtich foar hannel yn Fryslân?",
+
 a:"Netwurk fan marren en fearten",
 b:"Grutte rivieren",
 c:"Bergen",
+
 correct:"a",
+
 uitleg:"It wetternetwurk wie essinsjeel foar hannel."
 },
+
 {
 categorie:"Fryslân",
+
 vraag:"Wat feroarsake de formaasje fan terpen?",
+
 a:"Stoarmfloeden",
 b:"Iistiid",
 c:"Fulkanen",
+
 correct:"a",
+
 uitleg:"Terpen waarden boud tsjin heech wetter."
 }
 
