@@ -672,7 +672,7 @@ c:"Overijssel",
 correct:"a",
 
 uitleg:"Ooststellingwerf grenst aan Drenthe."
-}
+},
   
 {
 categorie:"Ooststellingwerf",
@@ -966,7 +966,7 @@ c:"Universiteitsstad",
 correct:"a",
 
 uitleg:"Oosterwolde is het bestuurscentrum."
-}
+},
 
 {
 categorie:"Ooststellingwerf",
@@ -1232,7 +1232,7 @@ c:"Duingebied",
 correct:"a",
 
 uitleg:"Het gebied bestaat uit zandgrond en bos."
-}
+},
 
 {
 categorie:"Ooststellingwerf",
@@ -1512,7 +1512,7 @@ c:"Vulkanische activiteit",
 correct:"a",
 
 uitleg:"Het landschap is menselijk en natuurlijk gevormd."
-}
+},
 
 {
 categorie:"Ooststellingwerf",
@@ -1708,7 +1708,7 @@ c:"Vulkanische activiteit",
 correct:"a",
 
 uitleg:"Het gebied is ontstaan uit ontgonnen heide en bosontwikkeling."
-}
+},
 
 {
 categorie:"Ooststellingwerf",
@@ -1778,7 +1778,7 @@ c:"Thomas Boer",
 correct:"a",
 
 uitleg:"Sjoerd Hamburger is olympisch roeier uit Oldeberkoop."
-}
+},
 
 {
 categorie:"Ooststellingwerf",
@@ -1918,7 +1918,7 @@ c:"Stânfries Makkinga",
 correct:"a",
 
 uitleg:"Lintjo is een belangrijke sportvereniging in Oldeberkoop."
-}
+},
 
 {
 categorie:"Ooststellingwerf",
@@ -2058,7 +2058,7 @@ c:"Kastelenstructuur",
 correct:"a",
 
 uitleg:"De dorpen ontwikkelden zich langs lange vaarten met lintbebouwing."
-}
+},
 
 {
 categorie:"Ooststellingwerf",
@@ -2198,7 +2198,7 @@ c:"Financiële boetes zonder verdere gevolgen",
 correct:"a",
 
 uitleg:"Ontdekt verzet leidde vaak tot arrestatie of deportatie."
-}
+},
 
 {
 categorie:"Ooststellingwerf",
@@ -2590,7 +2590,7 @@ c:"Spoorwegen alleen",
 correct:"a",
 
 uitleg:"Kanalen waren essentieel voor vervoer van turf."
-}
+},
 
 {
 categorie:"Ooststellingwerf",
@@ -2856,7 +2856,7 @@ c:"Oosterwolde",
 correct:"a",
 
 uitleg:"Haulerwijk ligt oostelijk in de gemeente."
-}
+},
 
 {
 categorie:"Ooststellingwerf",
@@ -2870,7 +2870,7 @@ c:"Alleen militaire slagvelden",
 correct:"a",
 
 uitleg:"De herdenkingen zijn sterk lokaal en persoonsgericht."
-}
+},
 
 {
 categorie:"Ooststellingwerf",
