@@ -5,29 +5,141 @@ const vragen = [
 {
 categorie:"Ooststellingwerf",
 
-vraag:"Welke plaats wordt vaak gezien als toeristisch hart van Ooststellingwerf?",
+vraag:"In welk jaar werd de naam 'Stellingwarf' voor het eerst schriftelijk genoemd?",
 
-a:"Haulerwijk",
-b:"Appelscha",
-c:"Oosterwolde",
+a:"1309",
+b:"1247",
+c:"1328",
 
-correct:"b",
+correct:"a",
 
-uitleg:"Appelscha is het bekendste toeristische dorp van Ooststellingwerf."
+uitleg:"De naam Stellingwarf werd in 1309 genoemd in een banbrief van de bisschop van Utrecht."
 },
 
 {
 categorie:"Ooststellingwerf",
 
-vraag:"Waarom bezoeken veel mensen Appelscha tijdens vakanties?",
+vraag:"Welke plaats is de hoofdplaats van de gemeente Ooststellingwerf?",
 
-a:"Vanwege de grote haven",
-b:"Door natuur, rust en recreatie",
-c:"Vanwege wolkenkrabbers",
+a:"Appelscha",
+b:"Oosterwolde",
+c:"Oldeberkoop",
 
 correct:"b",
 
-uitleg:"Appelscha staat bekend om natuurtoerisme, campings en fietsroutes."
+uitleg:"Oosterwolde is de hoofdplaats van de gemeente."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke rivier vormt van oudsher de taalgrens tussen Fries en Nedersaksisch gebied?",
+
+a:"Linde",
+b:"Kuinder",
+c:"Tjonger",
+
+correct:"c",
+
+uitleg:"De Tjonger vormt traditioneel de grens tussen het Friese en Stellingwerfse taalgebied."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welk natuurgebied ligt tussen Appelscha en Veenhuizen?",
+
+a:"Alde Feanen",
+b:"Fochteloërveen",
+c:"Lauwersmeer",
+
+correct:"b",
+
+uitleg:"Het Fochteloërveen ligt op de grens van Friesland en Drenthe."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Wat is met 26,6 meter het hoogste punt van Ooststellingwerf?",
+
+a:"Bosberg",
+b:"Aekingerberg",
+c:"Fochtelerduin",
+
+correct:"a",
+
+uitleg:"De Bosberg bij Appelscha is het hoogste punt van Fryslân."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bekende socialistische voorman sprak in de jaren 1885-1886 op bijeenkomsten in Appelscha?",
+
+a:"Pieter Jelles Troelstra",
+b:"Ferdinand Domela Nieuwenhuis",
+c:"Willem Drees",
+
+correct:"b",
+
+uitleg:"Domela Nieuwenhuis speelde een belangrijke rol in de arbeidersbeweging rond Appelscha."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk dorp vond in 1888 een bekende veenarbeidersstaking plaats?",
+
+a:"Appelscha",
+b:"Donkerbroek",
+c:"Makkinga",
+
+correct:"a",
+
+uitleg:"De staking van 1888 in Appelscha kreeg landelijke aandacht."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke kunstmanifestatie in Oldeberkoop wordt beschouwd als de oudste kunstroute van Nederland?",
+
+a:"Kunst aan de Kuunder",
+b:"Open Stal",
+c:"Stellingwerf Expo",
+
+correct:"b",
+
+uitleg:"Open Stal werd voor het eerst georganiseerd in 1971."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke voormalige betaald voetballer van onder meer AZ, Villarreal en Liverpool werd geboren in Makkinga?",
+
+a:"Jan Kromkamp",
+b:"Arjen Robben",
+c:"Richard Knopper",
+
+correct:"a",
+
+uitleg:"Jan Kromkamp werd in 1980 geboren in Makkinga."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke volleybalcoach en sportbestuurder werd geboren in Oosterwolde?",
+
+a:"Peter Blangé",
+b:"Joop Alberda",
+c:"Avital Selinger",
+
+correct:"b",
+
+uitleg:"Joop Alberda werd geboren in Oosterwolde en leidde Nederland naar olympisch goud."
 },
 
 {
@@ -103,15 +215,2703 @@ uitleg:"Het Stellingwerfs behoort tot het Nedersaksisch."
 {
 categorie:"Ooststellingwerf",
 
-vraag:"Welke bekende sport wordt in Appelscha veel beoefend door toeristen?",
+vraag:"Welke historische nederzetting in Ooststellingwerf staat bekend als een van de oudste van de Stellingwerven?",
 
-a:"Golf",
-b:"Wandelen en fietsen",
-c:"Zeilen",
+a:"Oldeberkoop",
+b:"Oosterwolde",
+c:"Appelscha",
+
+correct:"a",
+
+uitleg:"Oldeberkoop is een van de oudste dorpen in de regio."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke landstreek vormt samen met Ooststellingwerf de Stellingwerven?",
+
+a:"Zuidwest-Drenthe",
+b:"Zuidoost-Friesland",
+c:"Noord-Groningen",
 
 correct:"b",
 
-uitleg:"Appelscha is populair bij wandelaars en fietsers."
+uitleg:"De Stellingwerven liggen in het zuidoosten van Friesland."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke taalvariant wordt traditioneel gesproken in Ooststellingwerf?",
+
+a:"Bildts",
+b:"Stellingwerfs",
+c:"Westerlauwers Fries",
+
+correct:"b",
+
+uitleg:"Het Stellingwerfs is een Nedersaksisch dialect."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke voormalige spoorlijn liep door Appelscha en Oosterwolde?",
+
+a:"Drachtster tramlijn",
+b:"Noord-Friese lijn",
+c:"Zuidelijke IJssel-lijn",
+
+correct:"a",
+
+uitleg:"De tramlijn verbond o.a. Drachten en Appelscha."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke schrijver is bekend om zijn werk in het Stellingwerfs dialect?",
+
+a:"Anne de Vries",
+b:"Sytse Buwalda",
+c:"Freark Dam",
+
+correct:"c",
+
+uitleg:"Freark Dam schreef in het Fries en regionale talen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke zandverstuiving bij Appelscha is een bekend natuurgebied?",
+
+a:"Aekingerzand",
+b:"Ballooërveld",
+c:"Drentsche Aa",
+
+correct:"a",
+
+uitleg:"Het Aekingerzand ligt in het Drents-Friese Wold."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke organisatie beheert het Drents-Friese Wold?",
+
+a:"Staatsbosbeheer",
+b:"Natuurmonumenten",
+c:"Rijkswaterstaat",
+
+correct:"a",
+
+uitleg:"Staatsbosbeheer beheert dit nationale park."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats werd historisch belangrijk door de veenontginning?",
+
+a:"Appelscha",
+b:"Wolvega",
+c:"Drachten",
+
+correct:"a",
+
+uitleg:"Appelscha groeide door veenarbeid en ontginning."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke verzetsstrijder is verbonden aan de regio Stellingwerven?",
+
+a:"Ferdinand Domela Nieuwenhuis",
+b:"Piet Gerbrandy",
+c:"Tjeerd van Aylva",
+
+correct:"a",
+
+uitleg:"Domela Nieuwenhuis had grote invloed in de streek."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke gemeente grenst direct aan Ooststellingwerf in het zuiden?",
+
+a:"Noordenveld",
+b:"Weststellingwerf",
+c:"Smallingerland",
+
+correct:"a",
+
+uitleg:"Noordenveld ligt net over de provinciegrens in Drenthe."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bekende kunstroute vindt jaarlijks plaats in Oldeberkoop?",
+
+a:"Open Stal",
+b:"Kunstlijn Fryslân",
+c:"Berkoop Art Route",
+
+correct:"a",
+
+uitleg:"Open Stal is een bekende kunstmanifestatie."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats in Ooststellingwerf is bekend om zijn veenkoloniale geschiedenis?",
+
+a:"Haulerwijk",
+b:"Drachten",
+c:"Jubbega",
+
+correct:"a",
+
+uitleg:"Haulerwijk ontstond in het veenontginningsgebied."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke rivier stroomt door het gebied en vormt deels een natuurlijke grens?",
+
+a:"Tjonger",
+b:"Rijn",
+c:"Vecht",
+
+correct:"a",
+
+uitleg:"De Tjonger vormt een historische grenslijn."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bekende verzetsstrijder en socialist had grote invloed op de arbeidersbeweging in Appelscha?",
+
+a:"Ferdinand Domela Nieuwenhuis",
+b:"Pieter Jelles Troelstra",
+c:"Jan Schaper",
+
+correct:"a",
+
+uitleg:"Domela Nieuwenhuis was actief in de regio Appelscha."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats in Ooststellingwerf ontstond als veenkolonie in de 19e eeuw?",
+
+a:"Haulerwijk",
+b:"Oldeberkoop",
+c:"Makkinga",
+
+correct:"a",
+
+uitleg:"Haulerwijk groeide door veenontginning."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke kunstmanifestatie in Oldeberkoop bestaat sinds 1971?",
+
+a:"Open Stal",
+b:"Kunst in het Veen",
+c:"Berkoop Art Days",
+
+correct:"a",
+
+uitleg:"Open Stal is een jaarlijks terugkerend evenement."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke rivier vormt een natuurlijke grens tussen Friesland en Drenthe in dit gebied?",
+
+a:"Tjonger",
+b:"Linde",
+c:"Drentsche Aa",
+
+correct:"a",
+
+uitleg:"De Tjonger is een historische grensrivier."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke gemeente grensde vroeger aan Ooststellingwerf vóór herindelingen?",
+
+a:"Zuidwolde",
+b:"Noordenveld",
+c:"Emmen",
+
+correct:"b",
+
+uitleg:"Noordenveld ligt direct over de provinciegrens."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sport werd historisch veel beoefend in de Friese veengebieden?",
+
+a:"Fierljeppen",
+b:"Kaatsen",
+c:"Schaken",
+
+correct:"a",
+
+uitleg:"Fierljeppen komt uit veen- en watergebieden."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats is het centrum van de gemeente Ooststellingwerf?",
+
+a:"Appelscha",
+b:"Oosterwolde",
+c:"Oldeberkoop",
+
+correct:"b",
+
+uitleg:"Oosterwolde is de hoofdplaats."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bekende Nederlandse voetbaltrainer komt uit Makkinga?",
+
+a:"Louis van Gaal",
+b:"Jan Kromkamp",
+c:"Ron Jans",
+
+correct:"b",
+
+uitleg:"Jan Kromkamp is geboren in Makkinga."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke natuurgebied ligt op de grens van Friesland en Drenthe?",
+
+a:"Fochteloërveen",
+b:"Alde Feanen",
+c:"Lauwersmeer",
+
+correct:"a",
+
+uitleg:"Fochteloërveen is een hoogveengebied."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke beweging organiseerde arbeidersvergaderingen in Appelscha rond 1880?",
+
+a:"Socialistische beweging",
+b:"Katholieke arbeidersbond",
+c:"Liberale partij",
+
+correct:"a",
+
+uitleg:"Appelscha was een centrum van socialistische bijeenkomsten."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats is bekend om het Drents-Friese Wold bezoekerscentrum?",
+
+a:"Appelscha",
+b:"Oosterwolde",
+c:"Haulerwijk",
+
+correct:"a",
+
+uitleg:"Het bezoekerscentrum ligt bij Appelscha."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke oude benaming hoort bij de streek Stellingwerf?",
+
+a:"Stellingwarf",
+b:"Stellingburg",
+c:"Stellingrade",
+
+correct:"a",
+
+uitleg:"Stellingwarf is de oude naam in streektaal."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sportclub uit Oosterwolde speelt op regionaal niveau voetbal?",
+
+a:"ONS Sneek",
+b:"SC Oosterwolde",
+c:"Heerenveen",
+
+correct:"b",
+
+uitleg:"SC Oosterwolde is een lokale club."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bekende schrijver werkte met het Stellingwerfs dialect?",
+
+a:"Freark Dam",
+b:"Simon Vestdijk",
+c:"Anne Wadman",
+
+correct:"a",
+
+uitleg:"Freark Dam gebruikte streektaal in zijn werk."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke zandverstuiving ligt in het Drents-Friese Wold?",
+
+a:"Aekingerzand",
+b:"Sahara van Appelscha",
+c:"Ballooërveld",
+
+correct:"a",
+
+uitleg:"Aekingerzand is een bekend natuurgebied."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke voormalige tramlijn liep door Ooststellingwerf?",
+
+a:"Drachtster tram",
+b:"Friese spoorlijn Noord",
+c:"Drents-Groningse lijn",
+
+correct:"a",
+
+uitleg:"De tram verbond Drachten met omliggende gebieden."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats heeft een veenkoloniale oorsprong?",
+
+a:"Haulerwijk",
+b:"Drachten",
+c:"Leeuwarden",
+
+correct:"a",
+
+uitleg:"Haulerwijk ontstond door veenontginning."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bekende sportbestuurder komt uit Oosterwolde?",
+
+a:"Joop Alberda",
+b:"Ab Gietelink",
+c:"Bert van Marwijk",
+
+correct:"a",
+
+uitleg:"Alberda werd geboren in Oosterwolde."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke rivier speelt een belangrijke rol in de regio Stellingwerf?",
+
+a:"Tjonger",
+b:"Rijn",
+c:"IJssel",
+
+correct:"a",
+
+uitleg:"De Tjonger vormt een landschappelijke grens."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke provincie ligt direct ten oosten van Ooststellingwerf?",
+
+a:"Drenthe",
+b:"Groningen",
+c:"Overijssel",
+
+correct:"a",
+
+uitleg:"Ooststellingwerf grenst aan Drenthe."
+}
+  
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sport is historisch sterk verbonden met de Friese veenkoloniën?",
+
+a:"Skûtsjesilen",
+b:"Fierljeppen",
+c:"Keatsen",
+
+correct:"b",
+
+uitleg:"Fierljeppen ontstond in veengebieden."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bekende verzetslijn in de Tweede Wereldoorlog liep door de omgeving van Oosterwolde en werd gebruikt voor onderduikers?",
+
+a:"De Stellingwerf-route",
+b:"De Friese Bosroute",
+c:"De Drentse Lijn",
+
+correct:"a",
+
+uitleg:"De Stellingwerf-route werd gebruikt voor verzetsactiviteiten."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats in Ooststellingwerf staat bekend om het oude brinkdorp-structuurpatroon?",
+
+a:"Oldeberkoop",
+b:"Haulerwijk",
+c:"Oosterwolde",
+
+correct:"a",
+
+uitleg:"Oldeberkoop heeft een typisch brinkdorp karakter."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke middeleeuwse bestuursvorm werd gebruikt vóór de gemeente-indeling in deze regio?",
+
+a:"Grietenij Stellingwerf Oostelijk",
+b:"Markegenootschap",
+c:"Ambachtsheerlijkheid",
+
+correct:"a",
+
+uitleg:"Stellingwerf was verdeeld in grietenijen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bekende Friese schrijver gebruikte het Stellingwerfs in zijn werk?",
+
+a:"Freark Dam",
+b:"Reinold Kuipers",
+c:"Gysbert Japicx",
+
+correct:"a",
+
+uitleg:"Freark Dam werkte met streektaal en cultuur."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke natuurontwikkeling is kenmerkend voor het gebied rond Appelscha?",
+
+a:"Hoogveenherstel",
+b:"Duinvorming",
+c:"Rivierdelta",
+
+correct:"a",
+
+uitleg:"Hoogveen wordt hersteld in het Fochteloërveengebied."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sportevenementen worden jaarlijks georganiseerd in Appelscha in het Drents-Friese Wold?",
+
+a:"Trailruns en MTB-wedstrijden",
+b:"Elfstedentocht",
+c:"Schaatsmarathons",
+
+correct:"a",
+
+uitleg:"Het gebied is populair voor outdoor sportevenementen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische grens liep door Ooststellingwerf tussen Friesland en Drenthe?",
+
+a:"De Stellingwerfse grenslijn",
+b:"De Hunzeroute",
+c:"De Zuidergrens",
+
+correct:"a",
+
+uitleg:"De regio was een overgangsgebied tussen twee provincies."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats staat bekend om een oud klooster dat invloed had op de regio?",
+
+a:"Oldeberkoop",
+b:"Makkinga",
+c:"Oosterwolde",
+
+correct:"a",
+
+uitleg:"Oldeberkoop had religieuze en bestuurlijke betekenis."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke vorm van veenwinning was belangrijk in Haulerwijk?",
+
+a:"Turfwinning",
+b:"Zoutwinning",
+c:"Kalkwinning",
+
+correct:"a",
+
+uitleg:"Turf was de belangrijkste brandstofbron."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bekende schrijver uit de regio schreef over het Friese platteland en sociale veranderingen?",
+
+a:"Trinus Riemersma",
+b:"Simon Vestdijk",
+c:"Anne Wadman",
+
+correct:"a",
+
+uitleg:"Riemersma schreef kritisch over het plattelandsleven."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke wegstructuur is typerend voor veenkoloniale dorpen als Haulerwijk?",
+
+a:"Langgerekte lintbebouwing",
+b:"Radiaal stadsplan",
+c:"Vierkante vestingstructuur",
+
+correct:"a",
+
+uitleg:"Veenkolonies zijn gebouwd langs lange wegen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke oorlog had invloed op de ontginning van het veengebied in de 19e eeuw?",
+
+a:"De Franse tijd",
+b:"De Tachtigjarige Oorlog",
+c:"De Eerste Wereldoorlog",
+
+correct:"a",
+
+uitleg:"De Franse periode bracht bestuurlijke veranderingen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke religieuze stroming werd dominant na de Reformatie in deze regio?",
+
+a:"Protestantisme",
+b:"Katholicisme",
+c:"Anglicanisme",
+
+correct:"a",
+
+uitleg:"De regio werd sterk protestants."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sportclub uit de regio speelt een rol in het regionale amateurvoetbal?",
+
+a:"VV Oosterwolde",
+b:"SC Heerenveen",
+c:"FC Groningen",
+
+correct:"a",
+
+uitleg:"VV Oosterwolde is een lokale vereniging."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke landschapstype domineert het Drents-Friese Wold?",
+
+a:"Bos- en zandlandschap",
+b:"Polderlandschap",
+c:"Rivierdelta",
+
+correct:"a",
+
+uitleg:"Het gebied bestaat uit bos, heide en zand."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische handelsfunctie had Oldeberkoop?",
+
+a:"Regionale marktfunctie",
+b:"Internationale haven",
+c:"Zoutexportcentrum",
+
+correct:"a",
+
+uitleg:"Het dorp had een regionale handelsfunctie."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke gemeentelijke herindeling vond plaats in 1851 in Nederland?",
+
+a:"Invoering van de moderne gemeenten",
+b:"Afschaffing van provincies",
+c:"Oprichting van grietenijen",
+
+correct:"a",
+
+uitleg:"De Gemeentewet van 1851 vormde het bestuur."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke rivier ligt ten westen van Ooststellingwerf?",
+
+a:"Tjonger",
+b:"Rijn",
+c:"Lauwers",
+
+correct:"a",
+
+uitleg:"De Tjonger vormt de westelijke grens."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke vorm van landbouw is typisch voor het gebied na veenontginning?",
+
+a:"Melkveehouderij",
+b:"Wijnbouw",
+c:"Rijstteelt",
+
+correct:"a",
+
+uitleg:"Melkveehouderij domineert het landschap."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische rol had Oosterwolde in de regio?",
+
+a:"Bestuurlijk centrum",
+b:"Havenstad",
+c:"Universiteitsstad",
+
+correct:"a",
+
+uitleg:"Oosterwolde is het bestuurscentrum."
+}
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke voormalige zandverstuiving in het Drents-Friese Wold werd later bebost als werkverschaffingsproject?",
+
+a:"Aekingerzand",
+b:"Fochteloërveen",
+c:"Bakkeveense Duinen",
+
+correct:"a",
+
+uitleg:"Het Aekingerzand werd deels bebost in de 20e eeuw."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke regionale krant had vroeger een sterke verslaggeving over Ooststellingwerf en omgeving?",
+
+a:"De Nieuwe Ooststellingwerver",
+b:"Leeuwarder Courant",
+c:"Dagblad van het Noorden",
+
+correct:"a",
+
+uitleg:"Lokale edities richtten zich sterk op de regio."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke landbouwontwikkeling werd belangrijk door de ontginning van hoogveen in de 19e eeuw?",
+
+a:"Veenkoloniale landbouw",
+b:"Berglandbouw",
+c:"Zoutwinning",
+
+correct:"a",
+
+uitleg:"Ontginning leidde tot akkerbouw en melkveehouderij."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke dorpskern is historisch verbonden met de adel en havezaten in de regio?",
+
+a:"Oldeberkoop",
+b:"Oosterwolde",
+c:"Donkerbroek",
+
+correct:"a",
+
+uitleg:"Oldeberkoop had meerdere adellijke huizen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke infrastructuur was cruciaal voor turftransport in de 19e eeuw?",
+
+a:"Kanalen en wijken",
+b:"Snelwegen",
+c:"Spoortunnels",
+
+correct:"a",
+
+uitleg:"Turf werd via kanalen vervoerd."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke religieuze stroming domineerde in de meeste dorpen na 1600?",
+
+a:"Gereformeerd protestantisme",
+b:"Rooms-katholicisme",
+c:"Orthodox jodendom",
+
+correct:"a",
+
+uitleg:"De Reformatie maakte de regio protestants."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sportvereniging uit Oosterwolde speelt een rol in regionaal volleybal?",
+
+a:"VC Oosterwolde",
+b:"SC Cambuur",
+c:"Oranje Nassau",
+
+correct:"a",
+
+uitleg:"VC Oosterwolde is een lokale volleybalclub."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke landschapsvorm ontstond door eeuwenlange veenafgraving?",
+
+a:"Veenontginningslandschap",
+b:"Krijtlandschap",
+c:"Rivierdelta",
+
+correct:"a",
+
+uitleg:"Het landschap is gevormd door turfwinning."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische rol speelde Donkerbroek in de regio?",
+
+a:"Lintdorp langs handelsroute",
+b:"Hanzehaven",
+c:"Vestingstad",
+
+correct:"a",
+
+uitleg:"Donkerbroek ligt langs een oude route."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke economische activiteit verving turfwinning in de 20e eeuw grotendeels?",
+
+a:"Melkveehouderij",
+b:"Visserij",
+c:"Industriehavens",
+
+correct:"a",
+
+uitleg:"Landbouw werd dominant na het veentijdperk."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke natuurbeheerorganisatie speelt een rol in het Drents-Friese Wold?",
+
+a:"Staatsbosbeheer",
+b:"Rijkswaterstaat",
+c:"Natuurmonumenten Drenthe alleen",
+
+correct:"a",
+
+uitleg:"Staatsbosbeheer beheert grote delen van het gebied."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats is bekend om zijn oude esdorpenstructuur?",
+
+a:"Makkinga",
+b:"Heerenveen",
+c:"Leeuwarden",
+
+correct:"a",
+
+uitleg:"Makkinga is een klassiek esdorp."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische grensfunctie had de Tjonger in de regio?",
+
+a:"Scheiding tussen Friesland en Drenthe",
+b:"Grens met Groningen",
+c:"Handelsroute naar Duitsland",
+
+correct:"a",
+
+uitleg:"De Tjonger vormde een natuurlijke grens."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke industrie kwam op in de 20e eeuw in kleinere dorpen van Ooststellingwerf?",
+
+a:"Hout- en bouwindustrie",
+b:"Zware staalindustrie",
+c:"Scheepsbouw",
+
+correct:"a",
+
+uitleg:"Kleine industrie ontwikkelde zich lokaal."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische kaart speelde een rol bij de ontginning van het gebied?",
+
+a:"Kadastrale kaarten van 1832",
+b:"Romeinse kaarten",
+c:"VOC-zeekaarten",
+
+correct:"a",
+
+uitleg:"De eerste kadastrale metingen bepaalden verkaveling."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats ligt dicht bij het Fochteloërveen en heeft een veenontginningsgeschiedenis?",
+
+a:"Haulerwijk",
+b:"Drachten",
+c:"Gorredijk",
+
+correct:"a",
+
+uitleg:"Haulerwijk is een veenkolonie."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sociaal-economische verandering vond plaats na 1900 in de regio?",
+
+a:"Van turf naar landbouw en arbeid in dorpen",
+b:"Massale industrialisatie",
+c:"Scheepvaartexpansie",
+
+correct:"a",
+
+uitleg:"De economie verschoof naar landbouw en lokaal werk."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke rol had Oosterwolde in het gemeentelijk bestuur?",
+
+a:"Bestuurscentrum",
+b:"Handelshaven",
+c:"Universiteitslocatie",
+
+correct:"a",
+
+uitleg:"Oosterwolde is het bestuurlijk centrum."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke landschapstype is kenmerkend voor zuidelijk Ooststellingwerf?",
+
+a:"Zand- en bosgebied",
+b:"Klei- en polderlandschap",
+c:"Duingebied",
+
+correct:"a",
+
+uitleg:"Het gebied bestaat uit zandgrond en bos."
+}
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke verklaring is het meest correct voor het ontstaan van het esdorpenlandschap in Makkinga en omgeving?",
+
+a:"Gemeenschappelijke akkerbouw op hogere zandgronden",
+b:"Rivierafzettingen in de Romeinse tijd",
+c:"Middeleeuwse stadsplanning door kloosters",
+
+correct:"a",
+
+uitleg:"Esdorpen ontstonden door gemeenschappelijk gebruik van hogere zandgronden."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke fout zit in deze reeks geografische begrippen voor Ooststellingwerf?",
+
+a:"De IJssel, de Maas en de Rijn",
+b:"De Tjonger, het Fochteloërveen en het Drents-Friese Wold",
+c:"Makkinga, Oosterwolde en Oldeberkoop",
+
+correct:"a",
+
+uitleg:"De IJssel, Maas en Rijn horen niet specifiek bij Ooststellingwerf."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische functie had het Fochteloërveen oorspronkelijk het meest?",
+
+a:"Onontgonnen hoogveengebied",
+b:"Militair oefenterrein",
+c:"Handelsroute",
+
+correct:"a",
+
+uitleg:"Het was eeuwenlang onbruikbaar moerasgebied."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke uitspraak over de Tjonger is het meest historisch correct?",
+
+a:"Het was een grensrivier tussen Friesland en Drenthe",
+b:"Het is volledig gegraven in de 20e eeuw",
+c:"Het is een zijtak van de Rijn",
+
+correct:"a",
+
+uitleg:"De Tjonger was een natuurlijke grens."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke ontwikkeling is typisch voor Haulerwijk in vergelijking met oudere esdorpen?",
+
+a:"Ontstaan als veenkolonie in de 19e eeuw",
+b:"Romeinse vestingplaats",
+c:"Middeleeuwse havenstad",
+
+correct:"a",
+
+uitleg:"Haulerwijk is een relatief jonge veenkolonie."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke combinatie klopt het best voor de economische geschiedenis van Ooststellingwerf?",
+
+a:"Turfwinning → landbouw → diensten",
+b:"Visserij → scheepsbouw → industrie",
+c:"Mijnbouw → staal → havenindustrie",
+
+correct:"a",
+
+uitleg:"De regio ontwikkelde zich via turf naar landbouw en dienstverlening."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats heeft géén historische esdorpstructuur?",
+
+a:"Oosterwolde",
+b:"Makkinga",
+c:"Oldeberkoop",
+
+correct:"a",
+
+uitleg:"Oosterwolde is later gegroeid als bestuurskern."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke factor was doorslaggevend voor de ligging van Oldeberkoop?",
+
+a:"Ligging op hogere zandgrond nabij waterstromen",
+b:"Strategische riviermonding",
+c:"Romeinse handelsweg",
+
+correct:"a",
+
+uitleg:"Esdorpen liggen op hogere zandgronden."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke uitspraak over de veenkoloniale dorpen is juist?",
+
+a:"Ze hebben vaak een langgerekte lintstructuur",
+b:"Ze zijn cirkelvormig gebouwd rond een kerk",
+c:"Ze liggen altijd op rivierduinen",
+
+correct:"a",
+
+uitleg:"Veenkolonies zijn lintdorpen langs wegen of kanalen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke functie hadden de oude ‘wijken’ in het veengebied?",
+
+a:"Afwaterings- en transportkanalen",
+b:"Militaire grachten",
+c:"Visserijroutes",
+
+correct:"a",
+
+uitleg:"Wijken waren kanalen voor turftransport en waterbeheer."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische periode had de grootste invloed op de verkaveling van het landschap?",
+
+a:"19e-eeuwse ontginning",
+b:"Romeinse tijd",
+c:"Gouden Eeuw",
+
+correct:"a",
+
+uitleg:"De grootschalige ontginning gebeurde in de 19e eeuw."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke stelling is juist over het verschil tussen Makkinga en Haulerwijk?",
+
+a:"Makkinga is een esdorp, Haulerwijk een veenkolonie",
+b:"Beide zijn middeleeuwse havensteden",
+c:"Beide zijn Romeinse nederzettingen",
+
+correct:"a",
+
+uitleg:"Ze hebben totaal verschillende ontstaansgeschiedenis."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke ontwikkeling is typisch voor Oosterwolde in de 20e eeuw?",
+
+a:"Groei als bestuurs- en dienstencentrum",
+b:"Ontwikkeling tot industriële havenstad",
+c:"Krimp tot verlaten dorp",
+
+correct:"a",
+
+uitleg:"Oosterwolde werd administratief centrum."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke combinatie van factoren verklaart de ligging van het Drents-Friese Wold?",
+
+a:"Zandgronden, stuifzand en bosbeheer",
+b:"Rivierdelta en klei",
+c:"Vulkanische bodem",
+
+correct:"a",
+
+uitleg:"Het gebied is gevormd door zand en natuurbeheer."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische misvatting is hier aanwezig?",
+
+a:"Dat Ooststellingwerf ooit een zeehaven had",
+b:"Dat het gebied altijd bosrijk was",
+c:"Dat het een Romeinse provinciehoofdstad was",
+
+correct:"a",
+
+uitleg:"De regio had nooit zeehavens."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke factor bepaalde vooral de ligging van veenkolonies?",
+
+a:"Aanwezigheid van veen en ontginningsroutes",
+b:"Romeinse wegen",
+c:"Middeleeuwse kastelen",
+
+correct:"a",
+
+uitleg:"Veen en kanalen bepaalden de structuur."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke uitspraak over Oldeberkoop is het meest correct?",
+
+a:"Historisch brinkdorp met regionale functie",
+b:"Oude zeehaven",
+c:"Industrieel knooppunt",
+
+correct:"a",
+
+uitleg:"Oldeberkoop is een klassiek esdorp."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke economische trend is juist voor de 20e eeuw in deze regio?",
+
+a:"Afname turf, toename landbouw en diensten",
+b:"Groei van zware industrie",
+c:"Volledige afhankelijkheid van visserij",
+
+correct:"a",
+
+uitleg:"De economie verschoof naar landbouw en diensten."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke logische combinatie klopt niet?",
+
+a:"Tjonger – grensrivier – Friesland/Drenthe",
+b:"Makkinga – esdorp – zandgrond",
+c:"Haulerwijk – Romeinse stad – haven",
+
+correct:"c",
+
+uitleg:"Haulerwijk is geen Romeinse stad of haven."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke verklaring past het best bij het huidige landschap?",
+
+a:"Combinatie van ontginning, bosbeheer en zandgronden",
+b:"Rivierdelta-afzetting",
+c:"Vulkanische activiteit",
+
+correct:"a",
+
+uitleg:"Het landschap is menselijk en natuurlijk gevormd."
+}
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats staat bekend om het openluchtmuseum 'It Damshûs' (in de regio)?",
+
+a:"Nij Beets",
+b:"Beetsterzwaag",
+c:"Appelscha",
+
+correct:"a",
+
+uitleg:"It Damshûs toont veenarbeidersgeschiedenis."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bekende Nederlandse volleybalcoach komt uit Oosterwolde?",
+
+a:"Peter Blangé",
+b:"Joop Alberda",
+c:"Ron Zwerver",
+
+correct:"b",
+
+uitleg:"Joop Alberda werd geboren in Oosterwolde."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welk natuurgebied in Ooststellingwerf is één van de belangrijkste hoogveenrestanten van Nederland en ligt deels op de grens met Drenthe?",
+
+a:"Fochteloërveen",
+b:"Drents-Friese Wold",
+c:"Aekingerzand",
+
+correct:"a",
+
+uitleg:"Het Fochteloërveen is een zeldzaam hoogveengebied en natuurreservaat."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats is de grootste kern van de gemeente Ooststellingwerf en fungeert als bestuurlijk centrum?",
+
+a:"Appelscha",
+b:"Oosterwolde",
+c:"Haulerwijk",
+
+correct:"b",
+
+uitleg:"Oosterwolde is de hoofdplaats van de gemeente."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische economische activiteit was bepalend voor de ontwikkeling van Appelscha in de 19e eeuw?",
+
+a:"Turfwinning",
+b:"Visserij",
+c:"Zoutwinning",
+
+correct:"a",
+
+uitleg:"Appelscha groeide door de grootschalige turfafgraving."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk nationaal park ligt een groot deel van Ooststellingwerf?",
+
+a:"Nationaal Park Drents-Friese Wold",
+b:"Nationaal Park Lauwersmeer",
+c:"Nationaal Park De Alde Feanen",
+
+correct:"a",
+
+uitleg:"Het Drents-Friese Wold beslaat een groot deel van de gemeente."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke rivier vormt geen hoofdwaterloop in Ooststellingwerf maar wordt vaak verward door haar ligging in de regio Drenthe/Friesland?",
+
+a:"De Tsjonger",
+b:"De Eems",
+c:"De IJssel",
+
+correct:"a",
+
+uitleg:"De Tsjonger (Kuunder) loopt langs de gemeentegrens."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sportvereniging uit Oosterwolde is vooral bekend in het amateurvoetbal in Friesland?",
+
+a:"VV Oosterwolde",
+b:"SC Heerenveen",
+c:"VV Drachten",
+
+correct:"a",
+
+uitleg:"VV Oosterwolde is een lokale voetbalclub met regionale bekendheid."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke streektaal heeft in delen van Ooststellingwerf invloed, naast het Standaardfries?",
+
+a:"Stellingwerfs",
+b:"Bildts",
+c:"Gronings",
+
+correct:"a",
+
+uitleg:"Het Stellingwerfs is een Nedersaksisch dialect in de regio."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats in Ooststellingwerf staat bekend om de nabijheid van het toeristische zandgebied Aekingerzand?",
+
+a:"Elsloo",
+b:"Makkinga",
+c:"Oldeberkoop",
+
+correct:"a",
+
+uitleg:"Elsloo ligt dicht bij het Aekingerzand (de Kale Duinen)."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische functie hadden de ‘compagnonsvaarten’ in Appelscha?",
+
+a:"Afvoer van turf",
+b:"Irrigatie van landbouwgrond",
+c:"Vervoer van vis",
+
+correct:"a",
+
+uitleg:"De vaarten werden gebruikt om turf te transporteren."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bekende Nederlandse schrijfster komt uit Oosterwolde en schrijft veel over Friesland en jeugd?",
+
+a:"Hanneke de Jong",
+b:"Carry Slee",
+c:"Thea Beckman",
+
+correct:"a",
+
+uitleg:"Hanneke de Jong komt uit Oosterwolde en schrijft jeugdliteratuur."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke wegstructuur is historisch belangrijk voor de verbinding tussen Appelscha en Drenthe?",
+
+a:"Oude zandwegen door het bosgebied",
+b:"Romeinse heerwegen",
+c:"Moderne snelweg A7",
+
+correct:"a",
+
+uitleg:"De oude zandwegen vormden de oorspronkelijke verbindingen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke natuurontwikkeling kenmerkt het gebied rond het Drents-Friese Wold vooral?",
+
+a:"Bos- en heidevorming na ontginning",
+b:"Delta-afzettingen",
+c:"Vulkanische activiteit",
+
+correct:"a",
+
+uitleg:"Het gebied is ontstaan uit ontgonnen heide en bosontwikkeling."
+}
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke in Makkinga geboren profvoetballer speelde onder andere voor PSV en Liverpool en kwam uit voor Oranje?",
+
+a:"Jan Kromkamp",
+b:"Arjen Robben",
+c:"Klaas-Jan Huntelaar",
+
+correct:"a",
+
+uitleg:"Jan Kromkamp komt uit Makkinga en speelde internationaal profvoetbal."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke inwoner van Oosterwolde werd bondscoach van het Nederlands volleybalteam en won olympisch goud in 1996?",
+
+a:"Joop Alberda",
+b:"Peter Blangé",
+c:"Avital Selinger",
+
+correct:"a",
+
+uitleg:"Joop Alberda komt uit Oosterwolde en leidde Nederland naar olympisch goud."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats in Ooststellingwerf is de geboorteplaats van olympisch zwemster Marrit Steenbergen?",
+
+a:"Oosterwolde",
+b:"Appelscha",
+c:"Haulerwijk",
+
+correct:"a",
+
+uitleg:"Marrit Steenbergen komt uit Oosterwolde en is topzwemster."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bekende sportstructuur in Oosterwolde ontstond uit een fusie van lokale verenigingen in 2020?",
+
+a:"SV Oosterwolde",
+b:"VV Stânfries",
+c:"SC Heerenveen",
+
+correct:"a",
+
+uitleg:"SV Oosterwolde ontstond uit een fusie van DIO en De Griffioen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sporter uit Oldeberkoop nam deel aan de Olympische Spelen in roeien (single scull)?",
+
+a:"Sjoerd Hamburger",
+b:"Eelco Sintnicolaas",
+c:"Thomas Boer",
+
+correct:"a",
+
+uitleg:"Sjoerd Hamburger is olympisch roeier uit Oldeberkoop."
+}
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke Olympische roeier uit Oldeberkoop nam deel aan de spelen van 2008 en 2012 in de skiff (single scull)?",
+
+a:"Sjoerd Hamburger",
+b:"Mechiel Versluis",
+c:"Diederik Simon",
+
+correct:"a",
+
+uitleg:"Sjoerd Hamburger komt uit Oldeberkoop en roeide op olympisch niveau."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sporter uit Oosterwolde won als coach goud met Nederland op de Olympische Spelen van Atlanta 1996?",
+
+a:"Joop Alberda",
+b:"Gerard Kemkers",
+c:"Rinus Michels",
+
+correct:"a",
+
+uitleg:"Joop Alberda leidde het Nederlandse volleybalteam naar olympisch goud."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke in Oosterwolde geboren zwemster won goud op de Europese Jeugdspele in 2015 en werd later wereldtopper?",
+
+a:"Marrit Steenbergen",
+b:"Ranomi Kromowidjojo",
+c:"Femke Heemskerk",
+
+correct:"a",
+
+uitleg:"Marrit Steenbergen komt uit Oosterwolde en behoort tot de internationale zwemtop."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke in Makkinga geboren profvoetballer speelde o.a. voor PSV, Liverpool en het Nederlands elftal?",
+
+a:"Jan Kromkamp",
+b:"Arjen Robben",
+c:"Dirk Kuijt",
+
+correct:"a",
+
+uitleg:"Jan Kromkamp komt uit Makkinga en speelde 11 interlands."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sportstructuur in Oosterwolde is ontstaan uit een fusie van meerdere lokale voetbalverenigingen in de jaren 2000?",
+
+a:"SV Oosterwolde",
+b:"VV DIO",
+c:"SC Stellingwerf",
+
+correct:"a",
+
+uitleg:"SV Oosterwolde is ontstaan uit een fusie van lokale clubs."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sporttak is historisch sterk ontwikkeld in Oldeberkoop en speelt in competitieverband onder de naam Lintjo?",
+
+a:"Korfbal",
+b:"Handbal",
+c:"Volleybal",
+
+correct:"a",
+
+uitleg:"Lintjo uit Oldeberkoop is een bekende korfbalvereniging."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sporthal in Haulerwijk is een belangrijk regionaal centrum voor zaalvoetbal en zaalsporten?",
+
+a:"Sportcentrum Haulerwijk",
+b:"De Spil Oosterwolde",
+c:"De Steegdenhal",
+
+correct:"a",
+
+uitleg:"Sportcentrum Haulerwijk is een belangrijk sportcomplex in de regio."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sport uit Appelscha is sterk verbonden met het Drents-Friese Wold en recreatieve evenementen?",
+
+a:"Mountainbiken",
+b:"Skeeleren",
+c:"Paardensport",
+
+correct:"a",
+
+uitleg:"Appelscha is een bekend startpunt voor mountainbikeroutes."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke in Ooststellingwerf geboren politicus was ook actief in de sportwereld als sportbestuurder en promotor van topsportbeleid?",
+
+a:"Joop Alberda",
+b:"Halbe Zijlstra",
+c:"Pieter van den Hoogenband",
+
+correct:"a",
+
+uitleg:"Alberda komt uit Oosterwolde en is sportbestuurder."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke club uit Oldeberkoop is actief in meerdere zaalsporten en wordt genoemd in het lokale sportakkoord van de gemeente?",
+
+a:"Lintjo",
+b:"DIO Oosterwolde",
+c:"Stânfries Makkinga",
+
+correct:"a",
+
+uitleg:"Lintjo is een belangrijke sportvereniging in Oldeberkoop."
+}
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd Haulerwijk officieel een zelfstandig dorp, los van Haule?",
+
+a:"1880",
+b:"1756",
+c:"1844",
+
+correct:"a",
+
+uitleg:"In 1880 kreeg Haulerwijk de status van zelfstandig dorp."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke vaart speelde een cruciale rol in de ontstaansgeschiedenis van Haulerwijk en Waskemeer?",
+
+a:"Haulerwijkstervaart",
+b:"Lauwersvaart",
+c:"Drentsche Hoofdvaart",
+
+correct:"a",
+
+uitleg:"De Haulerwijkstervaart werd in 1756 gegraven en stimuleerde de veenontginning."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sportieve voorziening in Haulerwijk is uniek in Nederland volgens lokale bronnen?",
+
+a:"Een skeelerbaan op Europees wedstrijdniveau",
+b:"Een overdekte ijsbaan",
+c:"Een olympisch wielerparcours",
+
+correct:"a",
+
+uitleg:"Haulerwijk heeft een unieke skeelerbaan die aan Europese normen voldoet."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welk dorp in Ooststellingwerf ontstond oorspronkelijk als ‘Beneden Haulerwijk’?",
+
+a:"Waskemeer",
+b:"Makkinga",
+c:"Elsloo",
+
+correct:"a",
+
+uitleg:"Waskemeer ontstond als onderdeel van de lange lintbebouwing van Haulerwijk."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke vereniging speelt in Waskemeer een belangrijke rol in het voetbal op Sportpark ’t Ald Leger?",
+
+a:"VV Waskemeer",
+b:"SV Haulerwijk",
+c:"VV Oosterwolde",
+
+correct:"a",
+
+uitleg:"VV Waskemeer is de lokale voetbalclub van het dorp."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sporthal fungeert als belangrijk ontmoetingspunt voor zaalsporten in Waskemeer en omgeving?",
+
+a:"Sportcentrum Haulewelle",
+b:"De Spil Oosterwolde",
+c:"De Stellingwerfhal",
+
+correct:"a",
+
+uitleg:"Haulewelle bedient meerdere dorpen, waaronder Waskemeer."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke activiteit is in Waskemeer uitgegroeid tot een jaarlijks muziek- en dorpsfestival?",
+
+a:"Poptimaal",
+b:"Waskerock",
+c:"Stellingwerf Live",
+
+correct:"a",
+
+uitleg:"Poptimaal is een lokaal muziek- en dorpsfestival."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke straat of verbinding was historisch de eerste landroute naar Haulerwijk vanuit Haule?",
+
+a:"Oosterwoldseweg",
+b:"Norgerweg",
+c:"Appelschaweg",
+
+correct:"a",
+
+uitleg:"De Oosterwoldseweg volgde de oude verbinding naar Haulerwijk."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke economische activiteit domineerde Haulerwijk in de vroege periode van het dorp?",
+
+a:"Veenarbeid",
+b:"Visserij",
+c:"Steenbakkerij",
+
+correct:"a",
+
+uitleg:"Haulerwijk ontstond als veenkolonie met veel veenarbeid."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke kenmerkende nederzettingsvorm typeert Haulerwijk en Waskemeer historisch?",
+
+a:"Lange lintbebouwing langs vaarten",
+b:"Cirkelvormige terpstructuur",
+c:"Kastelenstructuur",
+
+correct:"a",
+
+uitleg:"De dorpen ontwikkelden zich langs lange vaarten met lintbebouwing."
+}
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke functie hadden veel boerderijen in Ooststellingwerf tijdens de Tweede Wereldoorlog naast landbouw?",
+
+a:"Onderduikadres voor verzetsmensen en Joden",
+b:"Opslag voor Duitse wapens uitsluitend",
+c:"Evacuatiecentrum voor Duitse troepen",
+
+correct:"a",
+
+uitleg:"In het gebied waren veel verspreide boerderijen ideaal als onderduikadres."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke geografische ligging maakte Ooststellingwerf geschikt voor onderduik in WOII?",
+
+a:"Dicht bos- en veengebied met weinig centrale controle",
+b:"Hooggebergte met moeilijk bereikbare passen",
+c:"Kustgebied met havens",
+
+correct:"a",
+
+uitleg:"De combinatie van veen en bos maakte controle door bezetter lastig."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke Duitse verdedigingslinie lag relatief dicht bij Ooststellingwerf in WOII-context?",
+
+a:"De Grebbeberg-linie",
+b:"De Atlantikwall",
+c:"De Maginotlinie",
+
+correct:"b",
+
+uitleg:"De Atlantikwall liep langs de kust en beïnvloedde de regio indirect via bezetting en dwangarbeid."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Wat was een belangrijk risico voor verzetsactiviteiten in dorpen als Haulerwijk en Waskemeer?",
+
+a:"Infiltratie door verraders en NSB-sympathisanten",
+b:"Overstromingen van rivieren",
+c:"Gebrek aan voedselproductie",
+
+correct:"a",
+
+uitleg:"Verraad was een van de grootste gevaren voor lokale verzetsgroepen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke economische activiteit werd door de bezetter extra gecontroleerd in veengebieden?",
+
+a:"Turfwinning en brandstofvoorziening",
+b:"Visserij op zee",
+c:"Diamantbewerking",
+
+correct:"a",
+
+uitleg:"Turf was een belangrijke energiebron en werd streng gereguleerd."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Wat gebeurde er met veel jonge mannen uit Ooststellingwerf tijdens de bezetting?",
+
+a:"Ze werden tewerkgesteld in Duitsland (Arbeitseinsatz)",
+b:"Ze werden automatisch militairen van het verzet",
+c:"Ze werden vrijgesteld door landbouwstatus",
+
+correct:"a",
+
+uitleg:"Veel mannen werden gedwongen naar Duitsland te werken."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke vorm van communicatie werd vaak gebruikt door het verzet in landelijke gebieden?",
+
+a:"Illegale kranten en koeriers te fiets",
+b:"Radiozenders met vaste frequenties",
+c:"Telefoonnetwerken onder controle van de bezetter",
+
+correct:"a",
+
+uitleg:"Illegale pers en koeriers waren essentieel voor het verzet."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Waarom waren dorpen als Waskemeer moeilijk volledig te controleren door de bezetter?",
+
+a:"Verspreide bebouwing en veel verborgen routes",
+b:"Aanwezigheid van grote stadsmuren",
+c:"Militaire forten in elk dorp",
+
+correct:"a",
+
+uitleg:"De structuur van het landschap maakte controle lastig."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke rol speelde voedselvoorziening in Ooststellingwerf tijdens WOII?",
+
+a:"Lokale boeren ondersteunden vaak clandestien de voedselvoorziening",
+b:"Alle voedsel kwam via Duitse distributiecentra",
+c:"Voedselproductie lag volledig stil",
+
+correct:"a",
+
+uitleg:"Boeren speelden vaak een sleutelrol in overleven en hulp."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Wat was een veelvoorkomend gevolg van verzet in kleine Friese dorpen tijdens WOII?",
+
+a:"Gevangenneming of deportatie bij ontdekking",
+b:"Automatische amnestie na waarschuwing",
+c:"Financiële boetes zonder verdere gevolgen",
+
+correct:"a",
+
+uitleg:"Ontdekt verzet leidde vaak tot arrestatie of deportatie."
+}
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Aan welke locatie in Appelscha is het verzetsmonument uit 1951 verbonden dat de dood van vijf lokale verzetsmensen herdenkt?",
+
+a:"Bruggelaan",
+b:"Bosberg",
+c:"Boerestreek",
+
+correct:"a",
+
+uitleg:"Het verzetsmonument aan de Bruggelaan herdenkt vijf slachtoffers van het verzet."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke gebeurtenis in 1943 is verbonden met meerdere namen op de herdenkingstegels van Appelscha?",
+
+a:"De melkstaking en daaropvolgende schietpartij",
+b:"De bevrijding door Canadese troepen",
+c:"De inundatie van Friesland",
+
+correct:"a",
+
+uitleg:"Tijdens de staking in 1943 werden meerdere arbeiders doodgeschoten."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke verzetsman uit Appelscha was schoolhoofd en hielp onderduikers met bonkaarten?",
+
+a:"Anje Lok",
+b:"Melle Bruinsma",
+c:"Marinus van Emst",
+
+correct:"a",
+
+uitleg:"Anje Lok speelde een belangrijke rol in het lokale verzet."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke boswachter werd in 1944 gefusilleerd in de bossen bij Appelscha?",
+
+a:"Marinus van Emst",
+b:"Jitze Kiewiet",
+c:"Anne de Boer",
+
+correct:"a",
+
+uitleg:"Van Emst werd geëxecuteerd vanwege zijn verzetsactiviteiten."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke groep geallieerde militairen landde in april 1945 in het grensgebied Appelscha–Drenthe om het verzet te ondersteunen?",
+
+a:"Franse SAS-parachutisten",
+b:"Poolse cavalerie",
+c:"Britse luchtmacht eenheden",
+
+correct:"a",
+
+uitleg:"Franse SAS-eenheden landden in 1945 bij operatie Amherst."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Wat was een belangrijk doel van de operatie Amherst in het gebied rond Appelscha in 1945?",
+
+a:"Het ondersteunen en aansturen van lokaal verzet",
+b:"Het bouwen van nieuwe spoorlijnen",
+c:"Het evacueren van burgers naar Engeland",
+
+correct:"a",
+
+uitleg:"De SAS moest het verzet helpen en Duitse communicatie verstoren."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Waarom waren de bossen rond Appelscha strategisch belangrijk tijdens de Tweede Wereldoorlog?",
+
+a:"Ze boden schuilplaatsen en dekking voor verzetsgroepen",
+b:"Ze bevatten Duitse marinebases",
+c:"Ze waren verboden landbouwgebied",
+
+correct:"a",
+
+uitleg:"Het Drents-Friese Wold bood uitstekende schuilmogelijkheden."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke vorm van herdenking wordt in Appelscha o.a. gebruikt om WOII-locaties zichtbaar te maken?",
+
+a:"Herdenkingstegels en monumenten in het dorp",
+b:"Digitale QR-only herdenkingen",
+c:"Alleen museale tentoonstellingen",
+
+correct:"a",
+
+uitleg:"De historische vereniging gebruikt tegels en monumenten in de openbare ruimte."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke verzetsactiviteit was in Appelscha vooral belangrijk voor het overleven van onderduikers?",
+
+a:"Voedsel- en bonkaarten verspreiding",
+b:"Scheepsbouw",
+c:"Spoorwegtransport",
+
+correct:"a",
+
+uitleg:"Onderduikers waren afhankelijk van illegale distributie."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische taalgrens loopt deels door het gebied van Ooststellingwerf en scheidt Fries en Nedersaksisch taalgebied?",
+
+a:"De Stellingwerfse lijn",
+b:"De IJssel-linie",
+c:"De Hunze-grens",
+
+correct:"a",
+
+uitleg:"De Stellingwerven vormen een overgangsgebied tussen Fries en Nedersaksisch."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke nederzetting in de gemeente heeft historisch de sterkste band met turfwinning en kanalenbouw?",
+
+a:"Haulerwijk",
+b:"Oosterwolde",
+c:"Appelscha",
+
+correct:"a",
+
+uitleg:"Haulerwijk ontstond als veenkolonie met turfkanalen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bosrijke regio is grotendeels ontstaan door bebossing op voormalige heidegrond?",
+
+a:"Appelscha en omgeving",
+b:"De Friese Meren",
+c:"Het Bildt",
+
+correct:"a",
+
+uitleg:"Veel bossen zijn later aangeplant op zand- en heidegronden."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke economische verandering zorgde ervoor dat turf minder belangrijk werd in de 20e eeuw?",
+
+a:"De komst van steenkool en gas",
+b:"De opkomst van visserij",
+c:"De industrialisatie van scheepsbouw",
+
+correct:"a",
+
+uitleg:"Turf werd vervangen door efficiëntere brandstoffen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats in de gemeente heeft de sterkste regionale centrumfunctie voor bestuur en diensten?",
+
+a:"Oosterwolde",
+b:"Makkinga",
+c:"Waskemeer",
+
+correct:"a",
+
+uitleg:"Oosterwolde is het bestuurlijke en economische centrum."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke landschapsvorm is kenmerkend voor de overgang tussen zand en veen in de gemeente?",
+
+a:"Esdorpenlandschap",
+b:"Delta-landschap",
+c:"Duinlandschap",
+
+correct:"a",
+
+uitleg:"Esdorpen en overgangszones zijn typerend voor dit gebied."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische wegstructuur is kenmerkend voor oude ontginningsgebieden?",
+
+a:"Rechte ontginningslinten",
+b:"Romeinse heirbanen",
+c:"Middeleeuwse cirkelwegen",
+
+correct:"a",
+
+uitleg:"Veenontginning leidde tot rechte lintstructuren."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sport heeft in de regio vooral een verenigingsstructuur met veel dorpsclubs?",
+
+a:"Voetbal",
+b:"Wielrennen",
+c:"Roeien op topniveau",
+
+correct:"a",
+
+uitleg:"Voetbal is de dominante dorpssport."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats ligt direct tegen het Drentse natuurgebied Dwingelderveld aan via de regio?",
+
+a:"Haulerwijk",
+b:"Appelscha",
+c:"Oosterwolde",
+
+correct:"a",
+
+uitleg:"Haulerwijk ligt in de overgang naar Drenthe."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke waterstructuur werd kunstmatig aangelegd voor turftransport in de 19e eeuw?",
+
+a:"Wijken en vaarten",
+b:"Natuurlijke rivieren",
+c:"Zeeslenken",
+
+correct:"a",
+
+uitleg:"Veenkanalen waren essentieel voor transport."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats heeft een belangrijke rol in toerisme door ligging aan natuurgebieden?",
+
+a:"Appelscha",
+b:"Donkerbroek",
+c:"Waskemeer",
+
+correct:"a",
+
+uitleg:"Appelscha is toegangspoort tot natuur en recreatie."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke vorm van landbouw domineert het moderne landschap van Ooststellingwerf?",
+
+a:"Melkveehouderij",
+b:"Rijstteelt",
+c:"Olijfgaarden",
+
+correct:"a",
+
+uitleg:"De regio is sterk gericht op zuivelproductie."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke dorpsontwikkeling hoort bij de 19e-eeuwse veenkolonisatie?",
+
+a:"Waskemeer",
+b:"Dokkum",
+c:"Sneek",
+
+correct:"a",
+
+uitleg:"Waskemeer is ontstaan door turfwinning."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke regio binnen de gemeente heeft de meeste bos- en natuurgebieden?",
+
+a:"Zuidwest (Appelscha omgeving)",
+b:"Noordoost (Haulerwijk)",
+c:"Centrum (Oosterwolde)",
+
+correct:"a",
+
+uitleg:"Het Drents-Friese Wold ligt in het zuidwesten."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische functie hadden veel dorpen in het gebied oorspronkelijk?",
+
+a:"Agrarische nederzettingen",
+b:"Havensteden",
+c:"Militaire forten",
+
+correct:"a",
+
+uitleg:"De meeste dorpen waren agrarisch van oorsprong."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke ontwikkeling zorgde voor bevolkingsgroei in de 19e eeuw?",
+
+a:"Veenontginning en werkgelegenheid",
+b:"Goudkoorts",
+c:"Scheepsbouwindustrie",
+
+correct:"a",
+
+uitleg:"Turfwinning trok arbeiders aan."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats is relatief klein maar heeft een sterke dorpsgemeenschap?",
+
+a:"Waskemeer",
+b:"Leeuwarden",
+c:"Groningen",
+
+correct:"a",
+
+uitleg:"Waskemeer is een hecht veendorp."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke landschapstype overheerst in het westen van de gemeente?",
+
+a:"Bos en zandgebied",
+b:"Delta",
+c:"Klei- en poldergebied",
+
+correct:"a",
+
+uitleg:"Het westen is bosrijk en zandgrond."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke infrastructuur was cruciaal voor economische ontwikkeling in de 19e eeuw?",
+
+a:"Kanalenstelsel",
+b:"Snelwegen",
+c:"Spoorwegen alleen",
+
+correct:"a",
+
+uitleg:"Kanalen waren essentieel voor vervoer van turf."
+}
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke gemeente ontstond in 1855 door samenvoeging van meerdere grietenijen in Zuidoost-Friesland?",
+
+a:"Ooststellingwerf",
+b:"Weststellingwerf",
+c:"Opsterland",
+
+correct:"a",
+
+uitleg:"Ooststellingwerf kreeg in de 19e eeuw zijn huidige gemeentelijke vorm."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke taalvariant wordt traditioneel in delen van de Stellingwerven gesproken naast het Fries?",
+
+a:"Stellingwerfs",
+b:"Bildts",
+c:"Drents-Gronings",
+
+correct:"a",
+
+uitleg:"Stellingwerfs is een Nedersaksisch dialect."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats is het bestuurlijk centrum van Ooststellingwerf?",
+
+a:"Oosterwolde",
+b:"Appelscha",
+c:"Haulerwijk",
+
+correct:"a",
+
+uitleg:"Oosterwolde is de hoofdplaats van de gemeente."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke grote 19e-eeuwse ontwikkeling zorgde voor nieuwe dorpen als Haulerwijk?",
+
+a:"Veenontginning",
+b:"Industrialisatie",
+c:"Spoorwegaanleg",
+
+correct:"a",
+
+uitleg:"Veenontginning leidde tot nieuwe nederzettingen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke rivier vormt een natuurlijke grens aan de zuidkant van de gemeente?",
+
+a:"De Tsjonger",
+b:"De Linde",
+c:"De Hunze",
+
+correct:"a",
+
+uitleg:"De Tsjonger vormt een belangrijke landschapsgrens."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welk natuurgebied ligt grotendeels in het zuidwesten van de gemeente?",
+
+a:"Drents-Friese Wold",
+b:"Lauwersmeer",
+c:"Alde Feanen",
+
+correct:"a",
+
+uitleg:"Dit is het grootste aaneengesloten bosgebied van Nederland."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke economische activiteit was historisch dominant in het veengebied?",
+
+a:"Turfwinning",
+b:"Scheepsbouw",
+c:"Zoutwinning",
+
+correct:"a",
+
+uitleg:"Turf was eeuwenlang de belangrijkste energiebron."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke dorpsstructuur is typisch voor veenkoloniale nederzettingen?",
+
+a:"Lintbebouwing",
+b:"Cirkelstructuur",
+c:"Middeleeuwse vestingstructuur",
+
+correct:"a",
+
+uitleg:"Dorpen ontstonden langs kanalen en wegen in lange lijnen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats ligt direct aan de rand van het Drents-Friese Wold?",
+
+a:"Appelscha",
+b:"Haulerwijk",
+c:"Makkinga",
+
+correct:"a",
+
+uitleg:"Appelscha is de belangrijkste toegangspoort tot het natuurgebied."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke provincie grenst direct aan Ooststellingwerf in het zuiden?",
+
+a:"Drenthe",
+b:"Groningen",
+c:"Overijssel",
+
+correct:"a",
+
+uitleg:"De gemeente ligt direct tegen Drenthe aan."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke sport is sterk verbonden met de Friese identiteit en ook in Ooststellingwerf populair?",
+
+a:"Fierljeppen",
+b:"Rugby",
+c:"Honkbal",
+
+correct:"a",
+
+uitleg:"Fierljeppen is een traditionele Friese polsstoksport."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats heeft een sterke recreatieve functie binnen de gemeente?",
+
+a:"Appelscha",
+b:"Haulerwijk",
+c:"Donkerbroek",
+
+correct:"a",
+
+uitleg:"Appelscha is toeristisch belangrijk."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke vorm van landbouw is dominant in Ooststellingwerf?",
+
+a:"Melkveehouderij",
+b:"Akkerbouw op grote schaal",
+c:"Wijngaarden",
+
+correct:"a",
+
+uitleg:"Zuivelproductie is de belangrijkste landbouwsector."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats is ontstaan als veenkolonie in de 19e eeuw?",
+
+a:"Waskemeer",
+b:"Snits",
+c:"Dokkum",
+
+correct:"a",
+
+uitleg:"Waskemeer is een typische veenontginningsnederzetting."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke waterstructuur was essentieel voor transport in het veengebied?",
+
+a:"Kanalen en wijken",
+b:"Natuurlijke rivieren",
+c:"Zeestraten",
+
+correct:"a",
+
+uitleg:"Kanalen werden gegraven voor turftransport."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats is een van de oudere dorpen in de gemeente?",
+
+a:"Makkinga",
+b:"Emmeloord",
+c:"Leeuwarden",
+
+correct:"a",
+
+uitleg:"Makkinga heeft een oudere agrarische geschiedenis."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke recreatieve activiteit is het meest kenmerkend voor Appelscha?",
+
+a:"Wandelen en fietsen",
+b:"Zwemmen in zee",
+c:"Bergbeklimmen",
+
+correct:"a",
+
+uitleg:"Het gebied is populair voor outdoor recreatie."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische ontwikkeling bepaalde vooral de vorm van het landschap?",
+
+a:"Veenontginning",
+b:"Vulkanische activiteit",
+c:"Gletsjervorming",
+
+correct:"a",
+
+uitleg:"Menselijke ontginning vormde het landschap sterk."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats ligt het meest oostelijk binnen de gemeente?",
+
+a:"Haulerwijk",
+b:"Appelscha",
+c:"Oosterwolde",
+
+correct:"a",
+
+uitleg:"Haulerwijk ligt oostelijk in de gemeente."
+}
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Wat typeert veel herdenkingslocaties in en rond Appelscha het best?",
+
+a:"Verbinding tussen lokale personen en concrete verzetsdaden",
+b:"Alleen namen zonder context",
+c:"Alleen militaire slagvelden",
+
+correct:"a",
+
+uitleg:"De herdenkingen zijn sterk lokaal en persoonsgericht."
+}
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bosrijke regio ligt deels in Ooststellingwerf en is nationaal park?",
+
+a:"Drents-Friese Wold",
+b:"Veluwezoom",
+c:"Sallandse Heuvelrug",
+
+correct:"a",
+
+uitleg:"Het Drents-Friese Wold is een groot natuurgebied."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke plaats is bekend om de Bosberg?",
+
+a:"Appelscha",
+b:"Oldeberkoop",
+c:"Oosterwolde",
+
+correct:"a",
+
+uitleg:"De Bosberg ligt bij Appelscha."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische sociale beweging had veel invloed in Appelscha in de 19e eeuw?",
+
+a:"Socialistische arbeidersbeweging",
+b:"Katholieke vakbond",
+c:"Lutherse hervorming",
+
+correct:"a",
+
+uitleg:"Appelscha was een centrum van arbeidersprotest."
 },
 
 {
