@@ -1980,271 +1980,186 @@ uitleg:"Stoarmfloeden en see-ynbraak foarmen it Fryske lânskip."
 
 {
 categorie:"Fryslân",
-
-vraag:"Wat was historisch gezien de belangrijkste bestuurlijke hoofdstad van Fryslân vanaf de late middeleeuwen?",
-
+vraag:"Hokker midsiuwske oerstreaming yn 1362 stie ek bekend as de Grutte Mandrenke?",
+a:"Sint-Luciafloed",
+b:"Allerhilligenfloed",
+c:"Sint-Nikolaasfloed",
+correct:"b",
+uitleg:"De Allerhilligenfloed fan 1362 feroarsake grutte feroarings oan de Noardseekust."
+},
+{
+categorie:"Fryslân",
+vraag:"Hokker Fryske stêd wie yn de Saksyske tiid it wichtichste bestjoerssintrum?",
 a:"Ljouwert",
 b:"Snits",
-c:"Stavoren",
-
+c:"Dokkum",
 correct:"a",
-
-uitleg:"Ljouwert groeide uit tot het bestuurlijke centrum van Fryslân en bleef dat tot nu toe."
+uitleg:"Ljouwert groeide ûnder Saksysk bestjoer út ta it sintrum fan Fryslân."
 },
-
 {
 categorie:"Fryslân",
-
-vraag:"Hoe wordt het gebied Oost-Friesland (Ostfriesland) historisch gezien het best omschreven?",
-
-a:"Een deel van de Nederlandse provincie Fryslân",
-b:"Een deel van Duitsland met Friese culturele wortels",
-c:"Een Scandinavische regio",
-
-correct:"b",
-
-uitleg:"Oost-Friesland ligt in Duitsland maar heeft sterke historische Friese culturele banden."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Wat is de oorsprong van Friese achternamen die eindigen op '-stra' of '-ma'?",
-
-a:"Ze verwijzen naar een persoon of plaats van herkomst",
-b:"Ze zijn willekeurig gekozen in de 19e eeuw",
-c:"Ze komen uit het Latijn",
-
+vraag:"Hoe hjitte de midsiuwske seearm tusken Fryslân en de Sudersee?",
+a:"De Middelsee",
+b:"De Lauwerssee",
+c:"De Dollard",
 correct:"a",
-
-uitleg:"-stra en -ma verwijzen vaak naar afstamming of plaats van herkomst in oude Friese namen."
+uitleg:"De Middelsee wie in wichtige wetterferbining foar hannel."
 },
-
 {
 categorie:"Fryslân",
-
-vraag:"Welke rivier speelde historisch een belangrijke rol in conflicten en grensvorming in zuidoost-Fryslân?",
-
-a:"De Tsjonger",
-b:"De Rijn",
-c:"De Eems",
-
+vraag:"Hokker Fryske famylje spile in wichtige rol yn de taalbeweging fan de 19e iuw?",
+a:"Halbertsma",
+b:"Van Aylva",
+c:"Camstra",
 correct:"a",
-
-uitleg:"De Tsjonger (Kuunder) vormde lange tijd een natuurlijke grens en conflictgebied."
+uitleg:"De Halbertsma’s wiene tige ynfloedryk yn taal en literatuer."
 },
-
 {
 categorie:"Fryslân",
-
-vraag:"Welke rol had Fryslân in relatie tot het Nederlandse koningshuis in de 16e en 17e eeuw?",
-
-a:"Het leverde stadhouders uit het Huis Oranje-Nassau",
-b:"Het was volledig onafhankelijk koninkrijk",
-c:"Het had geen enkele band met het koningshuis",
-
+vraag:"Hokker stêd waard in wichtich hannelsintrum nei it krijen fan stedsrjochten yn 1426?",
+a:"Snits",
+b:"Harns",
+c:"Boalsert",
 correct:"a",
-
-uitleg:"Fryslân had stadhouders uit het Huis Oranje-Nassau binnen de Republiek der Zeven Provinciën."
+uitleg:"Snits ûntjoech him ta in wichtich hannelsintrum."
 },
-
 {
 categorie:"Fryslân",
-
-vraag:"Welke stad wordt historisch gezien soms als vroeg bestuurlijk centrum van Fryslân genoemd vóór de dominantie van Leeuwarden?",
-
-a:"Stavoren",
+vraag:"Wat wiene de âlde Fryske bestjoersgebieten?",
+a:"Grietenijen",
+b:"Ambachten",
+c:"Kwartieren",
+correct:"a",
+uitleg:"Grietenijen wiene midsiuwske bestjoerseenheden."
+},
+{
+categorie:"Fryslân",
+vraag:"Hokker havenstêd wie sintraal yn de Admiraliteit fan Fryslân?",
+a:"Harns",
+b:"Ljouwert",
+c:"Snits",
+correct:"a",
+uitleg:"Harns wie in wichtige marinehaven."
+},
+{
+categorie:"Fryslân",
+vraag:"Hokker ramp yn 1287 feroarsake grutte feroarings oan de Fryske kust?",
+a:"Sint-Nikolaasfloed",
+b:"Sint-Luciafloed",
+c:"Allerhilligenfloed",
+correct:"a",
+uitleg:"De Sint-Nikolaasfloed feroare de kustline sterk."
+},
+{
+categorie:"Fryslân",
+vraag:"Hokker tradisjonele Fryske sport giet oer oer wetter springen?",
+a:"Fierljeppen",
+b:"Skûtsjesilen",
+c:"Keatsen",
+correct:"a",
+uitleg:"Fierljeppen is in Fryske tradysjesport."
+},
+{
+categorie:"Fryslân",
+vraag:"Hokker stêd is ferbûn mei de dea fan Bonifatius yn 754?",
+a:"Dokkum",
+b:"Stavoren",
+c:"Ljouwert",
+correct:"a",
+uitleg:"Bonifatius waard yn Dokkum fermoarde."
+},
+{
+categorie:"Fryslân",
+vraag:"Ta hokker taalfamylje heart it Frysk?",
+a:"West-Germaansk",
+b:"Romansk",
+c:"Slavysk",
+correct:"a",
+uitleg:"It Frysk heart ta de West-Germaanske talen."
+},
+{
+categorie:"Fryslân",
+vraag:"Wa is in symboal fan ferset tsjin Saksysk bewâld?",
+a:"Jancko Douwama",
+b:"Tjerk Hiddes",
+c:"Willem fan Oranje",
+correct:"a",
+uitleg:"Jancko Douwama stie foar Fryske autonomy."
+},
+{
+categorie:"Fryslân",
+vraag:"Hokker dialekt wurdt sprutsen yn de Stellingwerven?",
+a:"Stellingwerfsk",
+b:"Bildts",
+c:"Westerlauwersk Frysk",
+correct:"a",
+uitleg:"Stellingwerfsk is Nedersaksysk fan oarsprong."
+},
+{
+categorie:"Fryslân",
+vraag:"Hokker religieuze beweging feroare Fryslân yn de 16e iuw?",
+a:"Reformaasje",
+b:"Krústochten",
+c:"Humanisme",
+correct:"a",
+uitleg:"De Reformaasje feroare tsjerke en maatskippij."
+},
+{
+categorie:"Fryslân",
+vraag:"Hokker rivier wie in wichtige grins yn Súdeast-Fryslân?",
+a:"Tsjonger",
+b:"Ryn",
+c:"Maas",
+correct:"a",
+uitleg:"De Tsjonger wie in natuerlike grinsrivier."
+},
+{
+categorie:"Fryslân",
+vraag:"Wat makke grutte dielen fan Fryslân geskikt foar lânbou?",
+a:"Ynpoldering",
+b:"Fulkanen",
+c:"Berchfoarming",
+correct:"a",
+uitleg:"Ynpoldering makke lân út wetter."
+},
+{
+categorie:"Fryslân",
+vraag:"Hokker stêd wie in wichtich Hânzesintrum?",
+a:"Snits",
 b:"Drachten",
 c:"Heerenveen",
-
 correct:"a",
-
-uitleg:"Stavoren was in de vroege middeleeuwen een belangrijk handels- en bestuurscentrum."
+uitleg:"Snits wie in wichtige hannelsstêd yn de Hanze."
 },
-
 {
 categorie:"Fryslân",
-
-vraag:"Wat was een belangrijke functie van de Friese grietenijen in de oude bestuursstructuur?",
-
-a:"Lokale rechtspraak en bestuur",
-b:"Militaire verdediging tegen Duitsland",
-c:"Religieuze aansturing",
-
+vraag:"Hokker beweging kaam op foar Fryske kultuer yn de 20e iuw?",
+a:"Fryske Nasjonale Beweging",
+b:"Hânzebûn",
+c:"Frije Stêden Ried",
 correct:"a",
-
-uitleg:"Grietenijen waren lokale bestuurs- en rechtsgebieden in historisch Fryslân."
+uitleg:"De FNB sette him yn foar taal en identiteit."
 },
-
 {
 categorie:"Fryslân",
-
-vraag:"Welke historische ontwikkeling zorgde ervoor dat Friese identiteit sterker werd in de 19e eeuw?",
-
-a:"De opkomst van taal- en cultuurbewegingen",
-b:"De industriële revolutie in Duitsland",
-c:"De invoering van de euro",
-
+vraag:"Hokker wettergebiet wie wichtich foar hannel yn Fryslân?",
+a:"Netwurk fan marren en fearten",
+b:"Grutte rivieren",
+c:"Bergen",
 correct:"a",
-
-uitleg:"De 19e eeuw bracht sterke taal- en cultuurbewegingen in Fryslân."
+uitleg:"It wetternetwurk wie essinsjeel foar hannel."
 },
-
 {
 categorie:"Fryslân",
-
-vraag:"Wat was een belangrijke oorzaak van conflicten in het gebied langs de Tsjonger in de middeleeuwen?",
-
-a:"Grens- en waterbeheer tussen gebieden",
-b:"Goudwinning",
-c:"Zoutoorlogen",
-
+vraag:"Wat feroarsake de formaasje fan terpen?",
+a:"Stoarmfloeden",
+b:"Iistiid",
+c:"Fulkanen",
 correct:"a",
+uitleg:"Terpen waarden boud tsjin heech wetter."
+}
 
-uitleg:"Conflicten ontstonden vaak door grens- en waterbeheer rond rivieren en veengebieden."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Welke uitspraak over Friese families met '-ma' of '-stra' namen is het meest correct?",
-
-a:"Ze duiden vaak op afstamming of een plaatsnaam",
-b:"Ze betekenen altijd beroep",
-c:"Ze zijn altijd van adellijke oorsprong",
-
-correct:"a",
-
-uitleg:"-ma en -stra geven vaak afstamming of herkomst aan, niet per se adel of beroep."
-},
-  
-{
-categorie:"Fryslân",
-
-vraag:"Welke beroemde tocht verbindt elf Friese steden?",
-
-a:"Friese Merenroute",
-b:"Elfstedentocht",
-c:"Noorderronde",
-
-correct:"b",
-
-uitleg:"De Elfstedentocht is wereldwijd bekend."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Welke Friese sport wordt met traditionele zeilboten gehouden?",
-
-a:"Skûtsjesilen",
-b:"Curling",
-c:"Suppen",
-
-correct:"a",
-
-uitleg:"Skûtsjesilen is een traditionele Friese watersport."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Welke Friese held vocht tegen de Hollanders?",
-
-a:"Willem Barentsz",
-b:"Grutte Pier",
-c:"Michiel de Ruyter",
-
-correct:"b",
-
-uitleg:"Grutte Pier is één van de bekendste Friese volkshelden."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Welke stad was Culturele Hoofdstad van Europa in 2018?",
-
-a:"Drachten",
-b:"Franeker",
-c:"Leeuwarden",
-
-correct:"c",
-
-uitleg:"Leeuwarden-Friesland was Culturele Hoofdstad van Europa."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Waar vindt de jaarlijkse strontrace plaats?",
-
-a:"Koudum",
-b:"Workum",
-c:"Drachten",
-
-correct:"b",
-
-uitleg:"In Workum wordt de jaarlijkse strontrace gehouden ter herinnering aan de schippers die vroeger met zeil_ en spierkracht naar de bollenvelden in Warmond voeren. De Bollenstreek had deze mest hard nodig ."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Welke watersportplaats ligt in Fryslân?",
-
-a:"Sneek",
-b:"Emmen",
-c:"Apeldoorn",
-
-correct:"a",
-
-uitleg:"Sneek staat bekend om watersport."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Welke Waddeneilanden horen bij Fryslân?",
-
-a:"Texel en Vlieland",
-b:"Ameland en Schiermonnikoog",
-c:"Texel en Terschelling",
-
-correct:"b",
-
-uitleg:"Ameland en Schiermonnikoog horen bij Fryslân."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Wat is een skûtsje?",
-
-a:"Een schaats",
-b:"Een Friese zeilboot",
-c:"Een molen",
-
-correct:"b",
-
-uitleg:"Een skûtsje is een traditioneel Fries vrachtschip."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Welke Friese schrijver was ook journalist?",
-
-a:"Fedde Schurer",
-b:"Theo Thijssen",
-c:"Multatuli",
-
-correct:"a",
-
-uitleg:"Fedde Schurer was schrijver, dichter en journalist."
-},
-
-/// GRONINGEN
+/// Algemeen
 
 {
 categorie:"Algemeen",
@@ -2528,7 +2443,7 @@ correct:"a",
 uitleg:"Het Pieterpad loopt door meerdere Drentse gebieden."
 },
 
-/// EDUCATIEF
+/// Pupquiz
 
 {
 categorie:"Pubquiz",
