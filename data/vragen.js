@@ -6222,7 +6222,7 @@ c:"Goudwinning",
 correct:"a",
 
 uitleg:"Na WOII groeide vooral dienstverlening en industrie."
-}  
+},  
 
 {
 categorie:"Drenthe",
@@ -6572,7 +6572,7 @@ c:"Gelderland",
 correct:"a",
 
 uitleg:"Friesland ligt westelijk van Drenthe."
-}
+},
 
 {
 categorie:"Drenthe",
@@ -6922,7 +6922,7 @@ c:"Gelderland",
 correct:"a",
 
 uitleg:"Friesland ligt westelijk van Drenthe."
-}
+},
 
 {
 categorie:"Drenthe",
@@ -7300,7 +7300,7 @@ c:"Meppel",
 correct:"b",
 
 uitleg:"Coevorden kreeg stadsrechten in 1408."
-}
+},
   
 {
 categorie:"Drenthe",
