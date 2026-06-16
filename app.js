@@ -1,3 +1,17 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyCtLCDt4kT0mSmeDm0pHFprsU-zmOMrYkg",
+  authDomain: "appelgans-dfbdb.firebaseapp.com",
+  projectId: "appelgans-dfbdb",
+  storageBucket: "appelgans-dfbdb.firebasestorage.app",
+  messagingSenderId: "121163726885",
+  appId: "1:121163726885:web:0c8a76c2fe671df5a4bfcc",
+  measurementId: "G-EGJT48F990"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+const db = firebase.database();
+
 let currentTeam = 0;
 let activeTeams = 4;
 
