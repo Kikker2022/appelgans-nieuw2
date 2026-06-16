@@ -191,6 +191,64 @@ console.log("STARTGAME ERROR:", e);
 
 }
 
+function createRoom() {
+  const roomCode = Math.random().toString(36).substring(2, 6).toUpperCase();
+
+  const roomRef = db.ref("rooms/" + roomCode);
+
+  roomRef.set({
+    host: true,
+    state: "lobby",
+    players: {
+      host: {
+        name: "Host"
+      }
+    }
+  });
+
+  currentRoom = roomCode;
+
+  alert("Room gemaakt: " + roomCode);
+
+  listenToRoom(roomCode);
+}
+
+function joinRoom(code, playerName) {
+  const roomRef = db.ref("rooms/" + code);
+
+  roomRef.once("value", (snap) => {
+    if (!snap.exists()) {
+      alert("Room bestaat niet");
+      return;
+    }
+
+    const playerId = "p" + Math.random().toString(36).substring(2, 8);
+
+    roomRef.child("players/" + playerId).set({
+      name: playerName
+    });
+
+    currentRoom = code;
+
+    listenToRoom(code);
+  });
+}
+
+function listenToRoom(code) {
+  db.ref("rooms/" + code).on("value", (snap) => {
+    const data = snap.val();
+    console.log("ROOM UPDATE:", data);
+
+    updateUI(data);
+  });
+}
+
+function updateUI(room) {
+  if (!room) return;
+
+  console.log("Spelers:", room.players);
+}
+
 function updateTeamInputs() {
 const count = parseInt(document.getElementById("teamCount").value);
 const inputs = document.querySelectorAll(".teamInput");
