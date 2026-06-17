@@ -1,3 +1,7 @@
+db.ref("test").set({
+  bericht: "Hallo Ganzenlever"
+});
+
 const firebaseConfig = {
   apiKey: "AIzaSyCtLCDt4kT0mSmeDm0pHFprsU-zmOMrYkg",
   authDomain: "appelgans-dfbdb.firebaseapp.com",
