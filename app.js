@@ -1,7 +1,3 @@
-db.ref("test").set({
-  bericht: "Hallo Ganzenlever"
-});
-
 const firebaseConfig = {
   apiKey: "AIzaSyCtLCDt4kT0mSmeDm0pHFprsU-zmOMrYkg",
   authDomain: "appelgans-dfbdb.firebaseapp.com",
@@ -15,6 +11,10 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const db = firebase.database();
+
+db.ref("test").set({
+  bericht: "Hallo Ganzenlever"
+});
 console.log("Firebase verbonden");
 
 let currentTeam = 0;
