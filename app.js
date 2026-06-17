@@ -11,6 +11,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const db = firebase.database();
+console.log("Firebase verbonden");
 
 let currentTeam = 0;
 let activeTeams = 4;
