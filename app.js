@@ -269,7 +269,7 @@ return new Promise(resolve =>
 setTimeout(resolve, ms));
 }
 
-ffunction showScreen(screenId){
+function showScreen(screenId){
 
 document.getElementById("welcomeScreen").classList.add("hidden");
 document.getElementById("screen0").classList.add("hidden");
