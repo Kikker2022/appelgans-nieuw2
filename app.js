@@ -269,15 +269,15 @@ return new Promise(resolve =>
 setTimeout(resolve, ms));
 }
 
-function showScreen(screen){
+ffunction showScreen(screenId){
 
-welcomeScreen.classList.add("hidden");
-screen0.classList.add("hidden");
-screen1.classList.add("hidden");
-screen2.classList.add("hidden");
-screen3.classList.add("hidden");
+document.getElementById("welcomeScreen").classList.add("hidden");
+document.getElementById("screen0").classList.add("hidden");
+document.getElementById("screen1").classList.add("hidden");
+document.getElementById("screen2").classList.add("hidden");
+document.getElementById("screen3").classList.add("hidden");
 
-screen.classList.remove("hidden");
+document.getElementById(screenId).classList.remove("hidden");
 
 }
 
