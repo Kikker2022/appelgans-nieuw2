@@ -269,13 +269,16 @@ return new Promise(resolve =>
 setTimeout(resolve, ms));
 }
 
-function showScreen(screenId) {
-  console.log("Open scherm:", screenId);
+function showScreen(screenId){
 
-  document.getElementById("welcomeScreen").classList.add("hidden");
-  document.getElementById("screen0").classList.add("hidden");
+document.getElementById("welcomeScreen").classList.add("hidden");
+document.getElementById("screen0").classList.add("hidden");
+document.getElementById("screen1").classList.add("hidden");
+document.getElementById("screen2").classList.add("hidden");
+document.getElementById("screen3").classList.add("hidden");
 
-  document.getElementById(screenId).classList.remove("hidden");
+document.getElementById(screenId).classList.remove("hidden");
+
 }
 
 function showPopup(text){
