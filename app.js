@@ -179,7 +179,7 @@ document.getElementById("teamCount").style.pointerEvents = "none";
 document.getElementById("categorySelect").style.opacity = "0.6";
 document.getElementById("teamCount").style.opacity = "0.6";
 
-showScreen(screen1);
+showScreen("screen1");
 updateTurn();
 
 document.getElementById("currentCategory").innerText =
@@ -264,7 +264,7 @@ return new Promise(resolve =>
 setTimeout(resolve, ms));
 }
 
-function showScreen(screenId){
+function showScreen(screen1"){
 
 document.getElementById("welcomeScreen").classList.add("hidden");
 document.getElementById("screen0").classList.add("hidden");
@@ -272,7 +272,7 @@ document.getElementById("screen1").classList.add("hidden");
 document.getElementById("screen2").classList.add("hidden");
 document.getElementById("screen3").classList.add("hidden");
 
-document.getElementById(screenId).classList.remove("hidden");
+document.getElementById(screen1").classList.remove("hidden");
 
 }
 
@@ -439,7 +439,7 @@ statusMessage.innerText = "";
 
 setTimeout(()=>{
 
-showScreen(screen2);
+showScreen("screen2");
 
 loadQuestion();
 
@@ -520,7 +520,7 @@ currentQuestion.uitleg;
 
 await sleep(2500);
 
-showScreen(screen3);
+showScreen("screen3");
 
 const team =
 teams[currentTeam];
@@ -566,7 +566,7 @@ nextTurn();
 
 setTimeout(()=>{
 
-showScreen(screen1);
+showScreen("screen1");
 },3500);
 
 }else{
@@ -591,7 +591,7 @@ setTimeout(()=>{
 
 nextTurn();
 
-showScreen(screen1);
+showScreen("screen1");
 
 },3500);
 
