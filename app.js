@@ -10,6 +10,15 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
+try {
+  db.ref("test").set({
+    bericht: "Hallo Ganzenlever"
+  });
+  console.log("Firebase verbonden");
+} catch(e) {
+  console.log("Firebase fout:", e);
+}
+
 const db = firebase.database();
 
 let currentTeam = 0;
