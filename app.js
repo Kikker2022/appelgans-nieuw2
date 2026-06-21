@@ -29,6 +29,7 @@ let selectedCategory =
 
 let lastRoll = 0;
 let currentQuestion = null;
+let currentRoom = null;
 
 const TOTAL_CELLS = 140;
 
