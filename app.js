@@ -21,8 +21,6 @@ try {
   console.log("Firebase fout:", e);
 }
 
-const db = firebase.database();
-
 let currentTeam = 0;
 let activeTeams = 4;
 
