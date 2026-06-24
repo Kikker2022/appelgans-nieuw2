@@ -727,3 +727,4 @@ screen0.classList.add("hidden");
 screen1.classList.add("hidden");
 screen2.classList.add("hidden");
 screen3.classList.add("hidden");
+alert("app.js volledig geladen");
