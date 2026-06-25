@@ -276,15 +276,22 @@ setTimeout(resolve, ms));
 
 function showScreen(screenId){
 
-  alert("showScreen gestart: " + screenId);
+  alert("1");
 
   document.getElementById("welcomeScreen").classList.add("hidden");
+
+  alert("2");
+
   document.getElementById("screen0").classList.add("hidden");
   document.getElementById("screen1").classList.add("hidden");
   document.getElementById("screen2").classList.add("hidden");
   document.getElementById("screen3").classList.add("hidden");
 
+  alert("3");
+
   document.getElementById(screenId).classList.remove("hidden");
+
+  alert("4");
 
 }
 
