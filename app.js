@@ -276,6 +276,8 @@ setTimeout(resolve, ms));
 
 function showScreen(screenId){
 
+  alert("showScreen gestart: " + screenId);
+
   document.getElementById("welcomeScreen").classList.add("hidden");
   document.getElementById("screen0").classList.add("hidden");
   document.getElementById("screen1").classList.add("hidden");
