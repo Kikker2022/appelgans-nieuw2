@@ -487,54 +487,36 @@ function loadQuestion(){
     alert("Aantal vragen: " + vragen.length);
 
     const actieveVragen =
-    vragen.filter(v => v.categorie === selectedCategory);
+    vragen.filter(
+        v => v.categorie === selectedCategory
+    );
 
     alert("Aantal gevonden: " + actieveVragen.length);
 
-    ...
-}
-  
-const actieveVragen =
-vragen.filter(
-v => v.categorie === selectedCategory
-);
+    const q =
+    actieveVragen[
+        Math.floor(
+            Math.random() * actieveVragen.length
+        )
+    ];
 
-const q =
-actieveVragen[
-Math.floor(
-Math.random() *
-actieveVragen.length
-)
-];
+    currentQuestion = q;
 
-currentQuestion = q;
+    questionText.innerText = q.vraag;
 
-questionText.innerText =
-q.vraag;
+    btnA.innerText = "A: " + q.a;
+    btnB.innerText = "B: " + q.b;
+    btnC.innerText = "C: " + q.c;
 
-btnA.innerText =
-"A: " + q.a;
+    btnA.className = "answerBtn";
+    btnB.className = "answerBtn";
+    btnC.className = "answerBtn";
 
-btnB.innerText =
-"B: " + q.b;
+    btnA.disabled = false;
+    btnB.disabled = false;
+    btnC.disabled = false;
 
-btnC.innerText =
-"C: " + q.c;
-
-btnA.className =
-"answerBtn";
-
-btnB.className =
-"answerBtn";
-
-btnC.className =
-"answerBtn";
-
-btnA.disabled = false;
-btnB.disabled = false;
-btnC.disabled = false;
-
-explanationText.innerText = "";
+    explanationText.innerText = "";
 
 }
 
