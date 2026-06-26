@@ -444,6 +444,20 @@ updateTurn();
 
 function rollDice(){
 
+setTimeout(() => {
+
+  alert("voor screen2");
+
+  showScreen("screen2");
+
+  alert("na screen2");
+
+  loadQuestion();
+
+  alert("na loadQuestion");
+
+}, 1500);
+  
 const roll =
 Math.floor(Math.random() * 6) + 1;
 
