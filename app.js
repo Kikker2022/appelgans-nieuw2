@@ -484,6 +484,16 @@ loadQuestion();
 
 function loadQuestion(){
 
+    alert("Aantal vragen: " + vragen.length);
+
+    const actieveVragen =
+    vragen.filter(v => v.categorie === selectedCategory);
+
+    alert("Aantal gevonden: " + actieveVragen.length);
+
+    ...
+}
+  
 const actieveVragen =
 vragen.filter(
 v => v.categorie === selectedCategory
