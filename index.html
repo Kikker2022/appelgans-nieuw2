@@ -11,57 +11,6 @@
 
 <h1>🪿 Appelgans</h1>
 
-<div id="welcomeScreen">
-
-<h2>Welkom bij het ganzenbordspel "Appelgans"</h2>
-
-<p>
-Welkom bij het ganzenbordspel "Appelgans",
-welke u aangeboden wordt namens de ...............
-in samenwerking met ...............
-</p>
-
-<p>
-Het spel wordt buiten gespeeld op het betonpad,
-dat door Staatsbosbeheer rond de Holten Klinte is
-aangelegd en is voorzien van 140 spelnummers.
-</p>
-
-<p>
-Appelgans kan met 2 t/m 4 teams tegelijk worden
-gespeeld. Ieder team gebruikt één telefoon.
-</p>
-
-<p>
-Na het kiezen van het aantal meespelende teams
-kiest u uw categorie en teamkleur.
-</p>
-
-<p>
-De route loopt, vanuit de Holten Klinte gezien,
-linksom het betonpad op, en u start bij nummer 1.
-</p>
-
-<p>
-Er wordt om en om gedobbeld, dus wacht tot uw
-team aan de beurt is.
-</p>
-
-</p>
-Er kunnen meerdere groepen tegelijk meedoen aan het spel, dus houd rekening met andere groepen spelers.
-</p>
-
-</p>
-Het bos is in bruikleen, wees zuinig op de omgeving en laat geen afval achter in het bos.
-Wij wensen u veel spelplezier.
-</p>
-  
-<button onclick="showScreen('screen0')">
-Start instellen
-</button>
-  
-</div>
-  
 <div id="screen0" class="hidden">
 
 <h2>Start spel</h2>
@@ -100,9 +49,9 @@ Start instellen
 <select id="categorySelect">
 <option value="Ooststellingwerf">Ooststellingwerf</option>
 <option value="Fryslân">Fryslân</option>
-<option value="Algemeen">Algemeen</option>
+<option value="Groningen">Groningen</option>
 <option value="Drenthe">Drenthe</option>
-<option value="Pubquiz">Pubquiz</option>
+<option value="Educatief">Educatief</option>
 </select>
 
 <br><br>
@@ -146,10 +95,8 @@ Start instellen
 
 <div id="popup"></div>
 
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-
-<script src="vragen.js"></script>
+<script src="data/vragen.js"></script>
 <script src="app.js"></script>
+
 </body>
 </html>
