@@ -1,26 +1,3 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyCtLCDt4kT0mSmeDm0pHFprsU-zmOMrYkg",
-  authDomain: "appelgans-dfbdb.firebaseapp.com",
-  projectId: "appelgans-dfbdb",
-  storageBucket: "appelgans-dfbdb.firebasestorage.app",
-  messagingSenderId: "121163726885",
-  appId: "1:121163726885:web:0c8a76c2fe671df5a4bfcc",
-  measurementId: "G-EGJT48F990"
-};
-
-firebase.initializeApp(firebaseConfig);
-
-const db = firebase.database();
-
-try {
-  db.ref("test").set({
-    bericht: "Hallo Ganzenlever"
-  });
-  console.log("Firebase verbonden");
-} catch(e) {
-  console.log("Firebase fout:", e);
-}
-
 let currentTeam = 0;
 let activeTeams = 4;
 
@@ -29,7 +6,6 @@ let selectedCategory =
 
 let lastRoll = 0;
 let currentQuestion = null;
-let currentRoom = null;
 
 const TOTAL_CELLS = 140;
 
@@ -104,9 +80,6 @@ document.getElementById(
 );
 
 /* ===== SCHERMEN ===== */
-
-const welcomeScreen =
-document.getElementById("welcomeScreen");
 
 const screen0 = document.getElementById("screen0");
 
@@ -189,7 +162,7 @@ document.getElementById("teamCount").style.pointerEvents = "none";
 document.getElementById("categorySelect").style.opacity = "0.6";
 document.getElementById("teamCount").style.opacity = "0.6";
 
-showScreen("screen1");
+showScreen(screen1);
 updateTurn();
 
 document.getElementById("currentCategory").innerText =
@@ -199,64 +172,6 @@ document.getElementById("currentCategory").innerText =
 console.log("STARTGAME ERROR:", e);
 }
 
-}
-
-function createRoom() {
-  const roomCode = Math.random().toString(36).substring(2, 6).toUpperCase();
-
-  const roomRef = db.ref("rooms/" + roomCode);
-
-  roomRef.set({
-    host: true,
-    state: "lobby",
-    players: {
-      host: {
-        name: "Host"
-      }
-    }
-  });
-
-  currentRoom = roomCode;
-
-  alert("Room gemaakt: " + roomCode);
-
-  listenToRoom(roomCode);
-}
-
-function joinRoom(code, playerName) {
-  const roomRef = db.ref("rooms/" + code);
-
-  roomRef.once("value", (snap) => {
-    if (!snap.exists()) {
-      alert("Room bestaat niet");
-      return;
-    }
-
-    const playerId = "p" + Math.random().toString(36).substring(2, 8);
-
-    roomRef.child("players/" + playerId).set({
-      name: playerName
-    });
-
-    currentRoom = code;
-
-    listenToRoom(code);
-  });
-}
-
-function listenToRoom(code) {
-  db.ref("rooms/" + code).on("value", (snap) => {
-    const data = snap.val();
-    console.log("ROOM UPDATE:", data);
-
-    updateUI(data);
-  });
-}
-
-function updateUI(room) {
-  if (!room) return;
-
-  console.log("Spelers:", room.players);
 }
 
 function updateTeamInputs() {
@@ -274,24 +189,14 @@ return new Promise(resolve =>
 setTimeout(resolve, ms));
 }
 
-function showScreen(screenId){
+function showScreen(screen){
 
-  alert("1");
+screen0.classList.add("hidden");
+screen1.classList.add("hidden");
+screen2.classList.add("hidden");
+screen3.classList.add("hidden");
 
-  document.getElementById("welcomeScreen").classList.add("hidden");
-
-  alert("2");
-
-  document.getElementById("screen0").classList.add("hidden");
-  document.getElementById("screen1").classList.add("hidden");
-  document.getElementById("screen2").classList.add("hidden");
-  document.getElementById("screen3").classList.add("hidden");
-
-  alert("3");
-
-  document.getElementById(screenId).classList.remove("hidden");
-
-  alert("4");
+screen.classList.remove("hidden");
 
 }
 
@@ -444,20 +349,6 @@ updateTurn();
 
 function rollDice(){
 
-setTimeout(() => {
-
-  alert("voor screen2");
-
-  showScreen("screen2");
-
-  alert("na screen2");
-
-  loadQuestion();
-
-  alert("na loadQuestion");
-
-}, 1500);
-  
 const roll =
 Math.floor(Math.random() * 6) + 1;
 
@@ -472,7 +363,7 @@ statusMessage.innerText = "";
 
 setTimeout(()=>{
 
-showScreen("screen2");
+showScreen(screen2);
 
 loadQuestion();
 
@@ -484,39 +375,47 @@ loadQuestion();
 
 function loadQuestion(){
 
-    alert("Aantal vragen: " + vragen.length);
+const actieveVragen =
+vragen.filter(
+v => v.categorie === selectedCategory
+);
 
-    const actieveVragen =
-    vragen.filter(
-        v => v.categorie === selectedCategory
-    );
+const q =
+actieveVragen[
+Math.floor(
+Math.random() *
+actieveVragen.length
+)
+];
 
-    alert("Aantal gevonden: " + actieveVragen.length);
+currentQuestion = q;
 
-    const q =
-    actieveVragen[
-        Math.floor(
-            Math.random() * actieveVragen.length
-        )
-    ];
+questionText.innerText =
+q.vraag;
 
-    currentQuestion = q;
+btnA.innerText =
+"A: " + q.a;
 
-    questionText.innerText = q.vraag;
+btnB.innerText =
+"B: " + q.b;
 
-    btnA.innerText = "A: " + q.a;
-    btnB.innerText = "B: " + q.b;
-    btnC.innerText = "C: " + q.c;
+btnC.innerText =
+"C: " + q.c;
 
-    btnA.className = "answerBtn";
-    btnB.className = "answerBtn";
-    btnC.className = "answerBtn";
+btnA.className =
+"answerBtn";
 
-    btnA.disabled = false;
-    btnB.disabled = false;
-    btnC.disabled = false;
+btnB.className =
+"answerBtn";
 
-    explanationText.innerText = "";
+btnC.className =
+"answerBtn";
+
+btnA.disabled = false;
+btnB.disabled = false;
+btnC.disabled = false;
+
+explanationText.innerText = "";
 
 }
 
@@ -545,7 +444,7 @@ currentQuestion.uitleg;
 
 await sleep(2500);
 
-showScreen("screen3");
+showScreen(screen3);
 
 const team =
 teams[currentTeam];
@@ -591,7 +490,7 @@ nextTurn();
 
 setTimeout(()=>{
 
-showScreen("screen1");
+showScreen(screen1);
 },3500);
 
 }else{
@@ -616,7 +515,7 @@ setTimeout(()=>{
 
 nextTurn();
 
-showScreen("screen1");
+showScreen(screen1);
 
 },3500);
 
@@ -735,11 +634,4 @@ team.icon +
 
 updateTurn();
 updateBoard();
-document.getElementById("welcomeScreen")
-.classList.remove("hidden");
-
-screen0.classList.add("hidden");
-screen1.classList.add("hidden");
-screen2.classList.add("hidden");
-screen3.classList.add("hidden");
-alert("TEST 12345");
+showScreen(screen0);
