@@ -5,6 +5,7 @@
 const firebaseConfig = {
   apiKey: "AIzaSyCtLCDt4kT0mSmeDm0pHFprsU-zmOMrYkg",
   authDomain: "appelgans-dfbdb.firebaseapp.com",
+  databaseURL: "https://appelgans-dfbdb-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "appelgans-dfbdb",
   storageBucket: "appelgans-dfbdb.firebasestorage.app",
   messagingSenderId: "121163726885",
