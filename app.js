@@ -94,23 +94,17 @@ document.getElementById("screen3");
 
 /* ===== GELUIDEN ===== */
 
-const soundGans =
-new Audio("public/gans.mp3");
+const soundGans = new Audio("gans.mp3");
 
-const soundBridge =
-new Audio("public/brug.mp3");
+const soundBridge = new Audio("brug.mp3");
 
-const soundPut =
-new Audio("public/put.mp3");
+const soundPut = new Audio("put.mp3");
 
-const soundPrison =
-new Audio("public/gevangenis.mp3");
+const soundPrison = new Audio("gevangenis.mp3");
 
-const soundInn =
-new Audio("public/herberg.mp3");
+const soundInn = new Audio("herberg.mp3");
 
-const soundWin =
-new Audio("public/finish.mp3");
+const soundWin = new Audio("finish.mp3");
 
 /* ===== SPECIALE VAKKEN ===== */
 
