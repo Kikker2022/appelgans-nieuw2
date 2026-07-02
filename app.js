@@ -94,7 +94,7 @@ document.getElementById("screen3");
 
 /* ===== GELUIDEN ===== */
 
-const soundDobbel = new Audio("public/dobbel.mp3");
+const soundGooi dobbelsteen = new Audio("public/dobbel.mp3");
 
 const soundGans = new Audio("public/gans.mp3");
 
