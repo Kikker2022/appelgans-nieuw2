@@ -345,6 +345,9 @@ updateTurn();
 
 function rollDice(){
 
+soundDobbel.currentTime = 0;
+soundDobbel.play();  
+  
 const roll =
 Math.floor(Math.random() * 6) + 1;
 
