@@ -343,30 +343,31 @@ updateTurn();
 
 /* ===== DOBBELEN ===== */
 
-function rollDice(){
+function rollDice() {
 
-soundDobbel.currentTime = 0;
-soundDobbel.play();  
-  
-const roll =
-Math.floor(Math.random() * 6) + 1;
+    // Dobbelgeluid afspelen
+    soundDobbel.currentTime = 0;
+    soundDobbel.play();
 
-lastRoll = roll;
+    const roll = Math.floor(Math.random() * 6) + 1;
+    lastRoll = roll;
 
-diceText.innerText =
-"🎲 Je gooide: " + roll;
+    categorySelect.disabled = true;
+    statusMessage.innerText = "";
 
-categorySelect.disabled = true;
+    // Pas na 7 seconden laten zien wat er gegooid is
+    setTimeout(() => {
 
-statusMessage.innerText = "";
+        diceText.innerText = "🎲 Je gooide: " + roll;
 
-setTimeout(()=>{
+        setTimeout(() => {
 
-showScreen(screen2);
+            showScreen(screen2);
+            loadQuestion();
 
-loadQuestion();
+        }, 1500);
 
-},1500);
+    }, 3500);
 
 }
 
