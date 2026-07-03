@@ -6,23 +6,18 @@ function createGame() {
     const hostName =
         document.getElementById("hostName").value;
 
-    if (!code || !hostName) {
-        alert("Vul naam en 4-cijferige code in");
-        return;
-    }
-
     firebase.database().ref("games/" + code).set({
         host: hostName,
         players: {
             host: {
                 name: hostName
             }
-        },
-        createdAt: Date.now()
+        }
     });
 
-    alert("Spel aangemaakt! Code: " + code);
+    listenToPlayers(code);
 
+    alert("Spel aangemaakt: " + code);
 }
 
 function joinGame() {
@@ -33,19 +28,12 @@ function joinGame() {
     const name =
         document.getElementById("joinName").value;
 
-    if (!code || !name) {
-        alert("Vul naam en code in");
-        return;
-    }
-
     const playersRef =
         firebase.database().ref("games/" + code + "/players");
 
     playersRef.once("value").then(snapshot => {
 
-        const count = snapshot.numChildren();
-
-        if (count >= 4) {
+        if (snapshot.numChildren() >= 4) {
             alert("Spel is vol");
             return;
         }
@@ -55,6 +43,9 @@ function joinGame() {
         playersRef.child(playerId).set({
             name: name
         });
+
+        // 👇 ook hier live luisteren starten
+        listenToPlayers(code);
 
         alert("Je zit in het spel!");
     });
