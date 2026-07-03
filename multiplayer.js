@@ -59,3 +59,34 @@ function joinGame() {
         alert("Je zit in het spel!");
     });
 }
+
+function listenToPlayers(code) {
+
+    const playersRef =
+        firebase.database().ref("games/" + code + "/players");
+
+    playersRef.on("value", snapshot => {
+
+        const data = snapshot.val();
+
+        const list =
+            document.getElementById("playerList");
+
+        list.innerHTML = "";
+
+        if (!data) return;
+
+        Object.values(data).forEach(player => {
+
+            const div =
+                document.createElement("div");
+
+            div.innerText = "👤 " + player.name;
+
+            list.appendChild(div);
+
+        });
+
+    });
+
+}
