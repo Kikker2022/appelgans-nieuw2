@@ -81,7 +81,11 @@ document.getElementById(
 
 /* ===== SCHERMEN ===== */
 
-const screen0 = document.getElementById("screen0");
+const welcomeScreen =
+document.getElementById("welcomeScreen");
+
+const screen0 =
+document.getElementById("screen0");
 
 const screen1 =
 document.getElementById("screen1");
@@ -187,12 +191,22 @@ setTimeout(resolve, ms));
 
 function showScreen(screen){
 
+welcomeScreen.classList.add("hidden");
+
 screen0.classList.add("hidden");
 screen1.classList.add("hidden");
 screen2.classList.add("hidden");
 screen3.classList.add("hidden");
 
 screen.classList.remove("hidden");
+
+}
+
+function showStartScreen(){
+
+welcomeScreen.classList.add("hidden");
+
+showScreen(screen0);
 
 }
 
@@ -634,4 +648,8 @@ team.icon +
 
 updateTurn();
 updateBoard();
-showScreen(screen0);
+welcomeScreen.classList.remove("hidden");
+screen0.classList.add("hidden");
+screen1.classList.add("hidden");
+screen2.classList.add("hidden");
+screen3.classList.add("hidden");
