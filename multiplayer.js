@@ -1,28 +1,24 @@
 function createGame() {
 
-    const code =
-        document.getElementById("gameCode").value;
-
-    const hostName =
-        document.getElementById("hostName").value;
+    const code = document.getElementById("gameCode").value;
+    const hostName = document.getElementById("hostName").value;
 
     if (!code || !hostName) {
         alert("Vul naam en 4-cijferige code in");
         return;
     }
 
+    console.log("CREATE GAME OK");
+
     firebase.database().ref("games/" + code).set({
         host: hostName,
         gameState: "lobby",
+        currentTeamIndex: 0,
+        turnOrder: ["team1","team2","team3","team4"],
         players: {
-            host: {
-                name: hostName
-            }
+            host: { name: hostName }
         }
     });
-
-    listenToGameState(code);
-    listenToPlayers(code);
 
     alert("Spel aangemaakt: " + code);
 }
