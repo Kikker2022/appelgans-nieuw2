@@ -456,7 +456,7 @@ explanationText.innerText =
 "✅ Goed! " +
 currentQuestion.uitleg;
 
-await sleep(2500);
+await sleep(4000);
 
 showScreen(screen3);
 
@@ -473,7 +473,7 @@ team.position++;
 
 updateBoard();
 
-await sleep(350);
+await sleep(700);
 
 }
 
