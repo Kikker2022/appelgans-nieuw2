@@ -69,6 +69,38 @@
 
 <h2>Start spel</h2>
 
+<hr>
+
+<h3>👑 Host spel maken</h3>
+
+<input id="hostName" placeholder="Naam host">
+
+<input id="gameCode"
+       placeholder="4-cijferige code"
+       maxlength="4">
+
+<button onclick="createGame()">
+Maak spel
+</button>
+
+<hr>
+
+<h3>📱 Deelnemen</h3>
+
+<input id="joinName" placeholder="Jouw naam">
+
+<input id="joinCode"
+       placeholder="4-cijferige code"
+       maxlength="4">
+
+<button onclick="joinGame()">
+Doe mee
+</button>
+
+<hr>
+
+<div id="playerList"></div>
+
 <p>Aantal teams</p>
 <select id="teamCount" onchange="updateTeamInputs()">
 <option value="2">2 teams</option>
