@@ -94,3 +94,41 @@ function listenToPlayers(code) {
     });
 
 }
+
+function nextTurn(code) {
+
+    const gameRef = firebase.database().ref("games/" + code);
+
+    gameRef.once("value").then(snapshot => {
+
+        const game = snapshot.val();
+
+        let index = game.currentTeamIndex || 0;
+
+        index++;
+
+        if (index >= game.turnOrder.length) {
+            index = 0;
+        }
+
+        gameRef.update({
+            currentTeamIndex: index,
+            phase: "turnChanged"
+        });
+
+    });
+
+}
+
+function listenToTurns(code) {
+
+    firebase.database().ref("games/" + code + "/currentTeamIndex")
+    .on("value", snapshot => {
+
+        const index = snapshot.val();
+
+        showTurn(index);
+
+    });
+
+}
