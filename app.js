@@ -653,3 +653,26 @@ screen0.classList.add("hidden");
 screen1.classList.add("hidden");
 screen2.classList.add("hidden");
 screen3.classList.add("hidden");
+
+function showTurn(index) {
+
+    const teams = [
+        document.getElementById("team1Name")?.value || "Team 1",
+        document.getElementById("team2Name")?.value || "Team 2",
+        document.getElementById("team3Name")?.value || "Team 3",
+        document.getElementById("team4Name")?.value || "Team 4"
+    ];
+
+    document.getElementById("turn").innerText =
+        "Beurt: " + teams[index];
+
+}
+
+setTimeout(() => {
+
+    const code = document.getElementById("gameCode")?.value
+        || document.getElementById("joinCode")?.value;
+
+    nextTurn(code);
+
+}, 1500);
