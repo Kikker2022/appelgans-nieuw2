@@ -67,12 +67,18 @@ function listenToPlayers(code) {
 
         if (!data) return;
 
-        Object.values(data).forEach(player => {
+        Object.keys(data).forEach(key => {
+
+            const player = data[key];
 
             const div =
                 document.createElement("div");
 
-            div.innerText = "👤 " + player.name;
+            if (key === "host") {
+                div.innerText = "👑 HOST: " + player.name;
+            } else {
+                div.innerText = "👤 " + player.name;
+            }
 
             list.appendChild(div);
 
