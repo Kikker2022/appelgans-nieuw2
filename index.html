@@ -9,75 +9,39 @@
 
 <body>
 
-<div id="welcomeScreen">
-
-    <h1>🪿 Appelgans</h1>
-
-    <h2>Welkom!</h2>
-
-  <p>
-      Welkom bij Appelgans.<br>
-     Test je kennis en bereik als eerste de finish!
- </p>
- <p>  
-     Na het kiezen van uw naam, kleur en de categorie, loopt u, vanaf de voorkant van de Holten Klinte gezien, rechtsom het betonpad op en u start bij nummer 1. Het bospad is voorzien van140 nummers. Er wordt om en om gedobbeld, dus wacht tot uw team aan de beurt is.
- </p>
-  <p>
-      Behandel de omgeving met respect en laat geen rommel achter in het bos.
-     Veel plezier toegewenst. 
- </p>
-  
-    <button onclick="showStartScreen()">
-        ▶ Start
-    </button>
-
-</div>
-  
 <h1>🪿 Appelgans</h1>
 
-<div id="lobbyScreen">
+<!-- =========================
+     🟢 WELKOMSTSCHERM
+========================= -->
+<div id="welcomeScreen">
 
-    <h2>👑 Host spel maken</h2>
+<h2>Welkom bij Appelgans</h2>
 
-    <input id="hostName" placeholder="Jouw naam">
+<p>
+Welkom bij het ganzenbordspel Appelgans.<br><br>
+Klik op start om het spel in te stellen.
+</p>
 
-    <input id="gameCode"
-           placeholder="4-cijferige code"
-           maxlength="4">
-
-    <button onclick="createGame()">
-        Maak spel
-    </button>
-
-</div>
-
-<div id="joinScreen">
-
-    <h2>📱 Deelnemen</h2>
-
-    <input id="joinName" placeholder="Jouw naam">
-
-    <input id="joinCode" placeholder="4-cijferige code" maxlength="4">
-
-    <button onclick="joinGame()">Doe mee</button>
+<button onclick="showScreen(screen0)">
+Start instellen
+</button>
 
 </div>
 
-<div id="playerList"></div>
 
+<!-- =========================
+     🟡 INSTELLINGEN + MULTIPLAYER
+========================= -->
 <div id="screen0" class="hidden">
 
 <h2>Start spel</h2>
 
-<hr>
-
+<!-- 👑 HOST -->
 <h3>👑 Host spel maken</h3>
 
 <input id="hostName" placeholder="Naam host">
-
-<input id="gameCode"
-       placeholder="4-cijferige code"
-       maxlength="4">
+<input id="gameCode" placeholder="4-cijferige code" maxlength="4">
 
 <button onclick="createGame()">
 Maak spel
@@ -85,22 +49,21 @@ Maak spel
 
 <hr>
 
+<!-- 📱 JOIN -->
 <h3>📱 Deelnemen</h3>
 
 <input id="joinName" placeholder="Jouw naam">
-
-<input id="joinCode"
-       placeholder="4-cijferige code"
-       maxlength="4">
+<input id="joinCode" placeholder="4-cijferige code" maxlength="4">
 
 <button onclick="joinGame()">
 Doe mee
 </button>
 
-<hr>
-
 <div id="playerList"></div>
 
+<hr>
+
+<!-- TEAMS -->
 <p>Aantal teams</p>
 <select id="teamCount" onchange="updateTeamInputs()">
 <option value="2">2 teams</option>
@@ -130,6 +93,7 @@ Doe mee
 
 </div>
 
+<!-- CATEGORIE -->
 <p>Categorie</p>
 
 <select id="categorySelect">
@@ -142,14 +106,19 @@ Doe mee
 
 <br><br>
 
-<button onclick="startGame()">Start spel</button>
+<button onclick="startGame()">
+Start spel
+</button>
 
 </div>
 
+
+<!-- =========================
+     🔵 SPEL SCHERM 1
+========================= -->
 <div id="screen1" class="hidden">
 
 <h2 id="turn"></h2>
-
 <p id="currentCategory"></p>
 
 <button onclick="rollDice()">🎲 Gooi dobbelsteen</button>
@@ -159,6 +128,10 @@ Doe mee
 
 </div>
 
+
+<!-- =========================
+     🟣 VRAGEN
+========================= -->
 <div id="screen2" class="hidden">
 
 <h2>Vraag</h2>
@@ -173,6 +146,10 @@ Doe mee
 
 </div>
 
+
+<!-- =========================
+     🟤 BORD
+========================= -->
 <div id="screen3" class="hidden">
 
 <div id="board"></div>
@@ -181,10 +158,14 @@ Doe mee
 
 <div id="popup"></div>
 
+
+<!-- =========================
+     SCRIPTS
+========================= -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
 
-<script src="data/vragen.js"></script>
+<script src="vragen.js"></script>
 <script src="firebase.js"></script>
 <script src="multiplayer.js"></script>
 <script src="app.js"></script>
