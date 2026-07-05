@@ -10,17 +10,19 @@ function createGame() {
 
     console.log("CREATE GAME OK");
 
-    firebase.database().ref("games/" + code).set({
-        host: hostName,
-        gameState: "lobby",
-        currentTeamIndex: 0,
-        turnOrder: ["team1","team2","team3","team4"],
-        players: {
-            host: { name: hostName }
-        }
-    });
+ firebase.database().ref("games/" + code).set({
+    host: hostName,
+    gameState: "lobby",
+    currentTeamIndex: 0,
+    turnOrder: ["team1","team2","team3","team4"],
+    players: {
+        host: { name: hostName }
+    }
+});
 
-    alert("Spel aangemaakt: " + code);
+listenToPlayers(code);
+
+alert("Spel aangemaakt: " + code);
 }
 
 function joinGame() {
