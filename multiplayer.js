@@ -130,3 +130,13 @@ function listenToTurns(code) {
     });
 
 }
+
+function startGame() {
+
+    const code = document.getElementById("gameCode").value;
+
+    firebase.database().ref("games/" + code).update({
+        gameState: "playing"
+    });
+
+}
