@@ -21,7 +21,6 @@ function createGame() {
 });
 
 listenToPlayers(code);
-
 listenToGameState(code);
     
 alert("Spel aangemaakt: " + code);
@@ -53,7 +52,6 @@ function joinGame() {
 
         // 👇 ook hier live luisteren starten
         listenToPlayers(code);
-
         listenToGameState(code);
 
         alert("Je zit in het spel!");
@@ -155,7 +153,7 @@ function listenToGameState(code) {
 
             if (state === "playing") {
 
-                showScreen("gameScreen");
+                showScreen(screen1);
 
             }
 
