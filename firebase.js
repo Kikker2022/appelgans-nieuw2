@@ -30,9 +30,3 @@ db.ref("test").set({
 .catch((error) => {
   console.error("❌ Firebase fout:", error);
 });
-
-games/1234 = {
-    currentTeamIndex: 0,
-    turnOrder: ["team1", "team2", "team3", "team4"],
-    phase: "question"
-}
