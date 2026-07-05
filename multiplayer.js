@@ -21,7 +21,7 @@ function createGame() {
 });
 
 listenToPlayers(code);
-
+    
 alert("Spel aangemaakt: " + code);
 }
 
