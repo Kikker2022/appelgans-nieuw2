@@ -21,6 +21,8 @@ function createGame() {
 });
 
 listenToPlayers(code);
+
+listenToGameState(code);
     
 alert("Spel aangemaakt: " + code);
 }
@@ -51,6 +53,8 @@ function joinGame() {
 
         // 👇 ook hier live luisteren starten
         listenToPlayers(code);
+
+        listenToGameState(code);
 
         alert("Je zit in het spel!");
     });
@@ -138,5 +142,23 @@ function startGame() {
     firebase.database().ref("games/" + code).update({
         gameState: "playing"
     });
+
+}
+
+function listenToGameState(code) {
+
+    firebase.database()
+        .ref("games/" + code + "/gameState")
+        .on("value", snapshot => {
+
+            const state = snapshot.val();
+
+            if (state === "playing") {
+
+                showScreen("gameScreen");
+
+            }
+
+        });
 
 }
