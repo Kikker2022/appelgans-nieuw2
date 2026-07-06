@@ -22,6 +22,7 @@ function createGame() {
 
 listenToPlayers(code);
 listenToGameState(code);
+    
 document.getElementById("startGameBtn").style.display = "block";
     
 alert("Spel aangemaakt: " + code);
