@@ -77,6 +77,10 @@ margin:10px 0;
 
 /* ===== BORD ===== */
 
+#startGameBtn {
+    display: none;
+}
+
 #board{
 
 display:grid;
