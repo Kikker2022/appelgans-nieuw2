@@ -22,6 +22,7 @@ function createGame() {
 
 listenToPlayers(code);
 listenToGameState(code);
+document.getElementById("startGameBtn").style.display = "block";
     
 alert("Spel aangemaakt: " + code);
 }
@@ -33,6 +34,7 @@ function joinGame() {
 
     const name =
         document.getElementById("joinName").value;
+    document.getElementById("startGameBtn").style.display = "none";
 
     const playersRef =
         firebase.database().ref("games/" + code + "/players");
