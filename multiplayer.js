@@ -35,7 +35,6 @@ function joinGame() {
 
     const name =
         document.getElementById("joinName").value;
-    document.getElementById("startGameBtn").style.display = "none";
 
     const playersRef =
         firebase.database().ref("games/" + code + "/players");
@@ -53,12 +52,15 @@ function joinGame() {
             name: name
         });
 
-        // 👇 ook hier live luisteren starten
         listenToPlayers(code);
         listenToGameState(code);
 
+        document.getElementById("startGameBtn").style.display = "none";
+
         alert("Je zit in het spel!");
+
     });
+
 }
 
 function listenToPlayers(code) {
