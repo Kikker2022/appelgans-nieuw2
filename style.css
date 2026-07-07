@@ -78,7 +78,8 @@ margin:10px 0;
 /* ===== BORD ===== */
 
 #startGameBtn {
-    display: none;
+    display: block;
+    margin-top: 25px;
 }
 
 #board{
