@@ -77,8 +77,8 @@ margin:10px 0;
 /* ===== BORD ===== */
 
 #startGameBtn {
-    display: block;
-    margin-top: 25px;
+    display: none;
+    margin: 20px auto;
 }
 
 #board{
@@ -204,6 +204,11 @@ background:purple;
 /* ===== KNOPPEN ===== */
 
 button{
+
+button {
+    display: block;
+    margin: 12px auto;
+}
 
 padding:12px 18px;
 
