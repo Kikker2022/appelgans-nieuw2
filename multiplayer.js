@@ -23,7 +23,7 @@ function createGame() {
 listenToPlayers(code);
 listenToGameState(code);
     
-document.getElementById("startGameBtn").style.display = "block";
+document.getElementById("startGameBtn").classList.remove("hidden");
     
 alert("Spel aangemaakt: " + code);
 }
@@ -55,7 +55,7 @@ function joinGame() {
         listenToPlayers(code);
         listenToGameState(code);
 
-        document.getElementById("startGameBtn").style.display = "none";
+        document.getElementById("startGameBtn").classList.add("hidden");
 
         alert("Je zit in het spel!");
 
