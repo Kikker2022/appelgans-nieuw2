@@ -98,3 +98,27 @@ function listenToPlayers(code) {
         });
 
 }
+
+function startGame() {
+
+    if (!window.isHost) {
+        alert("Alleen de host kan het spel starten.");
+        return;
+    }
+
+    if (!window.currentGameCode) {
+        alert("Geen spel gevonden.");
+        return;
+    }
+
+    firebase.database()
+        .ref("games/" + window.currentGameCode)
+        .update({
+
+            gameState: "playing",
+
+            currentTurn: 0
+
+        });
+
+}
