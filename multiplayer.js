@@ -133,21 +133,16 @@ function listenToGameState() {
         .ref("games/" + window.currentGameCode + "/gameState")
         .on("value", snapshot => {
 
+            console.log("GAMESTATE:", snapshot.val());   // <-- tijdelijk toevoegen
+
             const state = snapshot.val();
 
             if (state === "playing") {
 
-                // Naar het speelbord
                 showScreen(screen1);
 
-                // Eerste categorie tonen
                 if (typeof updateTurn === "function") {
                     updateTurn();
-                }
-
-                if (typeof selectedCategory !== "undefined") {
-                    document.getElementById("currentCategory").innerText =
-                        "Categorie: " + selectedCategory;
                 }
 
             }
