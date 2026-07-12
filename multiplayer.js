@@ -29,7 +29,8 @@ function createGame() {
     window.isHost = true;
 
     listenToPlayers(code);
-
+    listenToGameState();
+    
     alert("Spel aangemaakt: " + code);
 
 }
@@ -60,6 +61,7 @@ function joinGame() {
     window.isHost = false;
 
     listenToPlayers(code);
+    listenToGameState();
 
     alert("Je doet mee!");
 
@@ -118,6 +120,37 @@ function startGame() {
             gameState: "playing",
 
             currentTurn: 0
+
+        });
+
+}
+
+function listenToGameState() {
+
+    if (!window.currentGameCode) return;
+
+    firebase.database()
+        .ref("games/" + window.currentGameCode + "/gameState")
+        .on("value", snapshot => {
+
+            const state = snapshot.val();
+
+            if (state === "playing") {
+
+                // Naar het speelbord
+                showScreen(screen1);
+
+                // Eerste categorie tonen
+                if (typeof updateTurn === "function") {
+                    updateTurn();
+                }
+
+                if (typeof selectedCategory !== "undefined") {
+                    document.getElementById("currentCategory").innerText =
+                        "Categorie: " + selectedCategory;
+                }
+
+            }
 
         });
 
