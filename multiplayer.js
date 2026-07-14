@@ -103,6 +103,8 @@ function listenToPlayers(code) {
 
 function startGame() {
 
+    alert("HOST start spel: " + window.currentGameCode);
+
     if (!window.isHost) {
         alert("Alleen de host kan het spel starten.");
         return;
