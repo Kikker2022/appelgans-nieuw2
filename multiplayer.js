@@ -138,7 +138,7 @@ function listenToGameState() {
             const state = snapshot.val();
 
             // ===== TEST =====
-            alert("GAMESTATE = " + state);
+            alert("GAME " + window.currentGameCode + " = " + state);
             // ================
 
             if (state === "playing") {
