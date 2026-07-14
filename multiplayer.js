@@ -118,11 +118,14 @@ function startGame() {
     firebase.database()
         .ref("games/" + window.currentGameCode)
         .update({
-
             gameState: "playing",
-
             currentTurn: 0
-
+        })
+        .then(() => {
+            alert("Firebase update gelukt");
+        })
+        .catch((err) => {
+            alert("Firebase fout: " + err.message);
         });
 
 }
