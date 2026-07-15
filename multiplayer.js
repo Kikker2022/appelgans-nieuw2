@@ -30,6 +30,8 @@ function createGame() {
 
     listenToPlayers(code);
     listenToGameState();
+
+    document.getElementById("startGameButton").style.display = "block";
     
     alert("Spel aangemaakt: " + code);
 
@@ -63,6 +65,8 @@ function joinGame() {
     listenToPlayers(code);
     listenToGameState();
 
+    document.getElementById("startGameButton").style.display = "none";
+    
     alert("Je doet mee!");
 
 }
