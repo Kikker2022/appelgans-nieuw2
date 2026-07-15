@@ -120,6 +120,8 @@ function listenToGameState() {
             // ================
 
             if (state === "playing") {
+                
+            alert("MULTIPLAYER ontvangt PLAYING");
 
                 showScreen(screen1);
 
