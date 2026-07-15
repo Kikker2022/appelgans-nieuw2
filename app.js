@@ -162,6 +162,18 @@ document.getElementById("teamCount").style.pointerEvents = "none";
 document.getElementById("categorySelect").style.opacity = "0.6";
 document.getElementById("teamCount").style.opacity = "0.6";
 
+// Multiplayer
+if (window.isHost && window.currentGameCode) {
+
+    firebase.database()
+        .ref("games/" + window.currentGameCode)
+        .update({
+            gameState: "playing",
+            currentTurn: 0
+        });
+
+}
+
 showScreen(screen1);
 updateTurn();
 
