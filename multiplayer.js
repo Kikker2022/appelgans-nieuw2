@@ -101,35 +101,6 @@ function listenToPlayers(code) {
 
 }
 
-function startGame() {
-
-    alert("HOST start spel: " + window.currentGameCode);
-
-    if (!window.isHost) {
-        alert("Alleen de host kan het spel starten.");
-        return;
-    }
-
-    if (!window.currentGameCode) {
-        alert("Geen spel gevonden.");
-        return;
-    }
-
-    firebase.database()
-        .ref("games/" + window.currentGameCode)
-        .update({
-            gameState: "playing",
-            currentTurn: 0
-        })
-        .then(() => {
-            alert("Firebase update gelukt");
-        })
-        .catch((err) => {
-            alert("Firebase fout: " + err.message);
-        });
-
-}
-
 function listenToGameState() {
 
     if (!window.currentGameCode) return;
