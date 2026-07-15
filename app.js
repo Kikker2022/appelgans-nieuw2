@@ -9,7 +9,7 @@ let currentQuestion = null;
 
 const TOTAL_CELLS = 140;
 
-/* ===== TEAMS ===== */
+/* ===== TEAMS ===== */f
 
 const teams = [
 {
@@ -174,6 +174,8 @@ if (window.isHost && window.currentGameCode) {
 
 }
 
+alert("APP.JS startGame()");
+    
 showScreen(screen1);
 updateTurn();
 
