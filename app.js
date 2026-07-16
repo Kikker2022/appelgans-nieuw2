@@ -9,7 +9,7 @@ let currentQuestion = null;
 
 const TOTAL_CELLS = 140;
 
-/* ===== TEAMS ===== */f
+/* ===== TEAMS ===== */
 
 const teams = [
 {
