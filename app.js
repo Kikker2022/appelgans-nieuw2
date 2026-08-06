@@ -141,50 +141,111 @@ const specialTiles = {
 
 function startGame() {
 
-try {
+    try {
 
-updateTeamInputs();
+        // =========================
+        // 1. TEAMS EN CATEGORIE
+        // =========================
 
-selectedCategory = document.getElementById("categorySelect").value;
-activeTeams = parseInt(document.getElementById("teamCount").value);
+        updateTeamInputs();
 
-teams[0].name = document.getElementById("team1Name").value;
-teams[1].name = document.getElementById("team2Name").value;
-teams[2].name = document.getElementById("team3Name").value;
-teams[3].name = document.getElementById("team4Name").value;
+        selectedCategory =
+            document.getElementById("categorySelect").value;
 
-document.getElementById("categorySelect").disabled = true;
-document.getElementById("teamCount").disabled = true;
+        activeTeams =
+            parseInt(document.getElementById("teamCount").value);
 
-document.getElementById("categorySelect").style.pointerEvents = "none";
-document.getElementById("teamCount").style.pointerEvents = "none";
+        teams[0].name =
+            document.getElementById("team1Name").value;
 
-document.getElementById("categorySelect").style.opacity = "0.6";
-document.getElementById("teamCount").style.opacity = "0.6";
+        teams[1].name =
+            document.getElementById("team2Name").value;
 
-// Multiplayer
-if (window.isHost && window.currentGameCode) {
+        teams[2].name =
+            document.getElementById("team3Name").value;
 
-    firebase.database()
-        .ref("games/" + window.currentGameCode)
-        .update({
-            gameState: "playing",
-            currentTurn: 0
-        });
+        teams[3].name =
+            document.getElementById("team4Name").value;
 
-}
 
-alert("APP.JS startGame()");
-    
-showScreen(screen1);
-updateTurn();
+        // =========================
+        // 2. INSTELLINGEN VASTZETTEN
+        // =========================
 
-document.getElementById("currentCategory").innerText =
-"Categorie: " + selectedCategory;
+        document.getElementById("categorySelect").disabled = true;
+        document.getElementById("teamCount").disabled = true;
 
-} catch (e) {
-console.log("STARTGAME ERROR:", e);
-}
+        document.getElementById("categorySelect").style.pointerEvents = "none";
+        document.getElementById("teamCount").style.pointerEvents = "none";
+
+        document.getElementById("categorySelect").style.opacity = "0.6";
+        document.getElementById("teamCount").style.opacity = "0.6";
+
+
+        // =========================
+        // 3. MULTIPLAYER
+        // =========================
+
+        if (window.isHost && window.currentGameCode) {
+
+            firebase.database()
+                .ref("games/" + window.currentGameCode)
+                .update({
+                    gameState: "playing",
+                    currentTurn: 0
+                })
+                .then(() => {
+
+                    console.log(
+                        "✅ Spel gestart in Firebase:",
+                        window.currentGameCode
+                    );
+
+                })
+                .catch((error) => {
+
+                    console.error(
+                        "❌ Fout bij starten spel:",
+                        error
+                    );
+
+                    alert(
+                        "Het spel kon niet worden gestart.\n\n" +
+                        error.message
+                    );
+
+                });
+
+        }
+
+
+        // =========================
+        // 4. NAAR SPELSCHERM
+        // =========================
+
+        showScreen(screen1);
+
+        updateTurn();
+
+        document.getElementById("currentCategory").innerText =
+            "Categorie: " + selectedCategory;
+
+
+        console.log("✅ startGame() uitgevoerd");
+
+    } catch (e) {
+
+        console.error(
+            "❌ STARTGAME ERROR:",
+            e
+        );
+
+        alert(
+            "Er is een fout bij het starten van het spel:\n\n" +
+            e.message
+        );
+
+    }
 
 }
 
