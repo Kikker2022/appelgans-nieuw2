@@ -1,5 +1,7 @@
 function createGame() {
 
+    alert("CREATEGAME GESTART");
+    
     const code =
         document.getElementById("gameCode").value.trim();
 
@@ -32,9 +34,7 @@ function createGame() {
     listenToGameState();
 
 document.getElementById("startGameButton").style.display = "block";
-
-alert("STARTKNOP ZICHTBAAR GEMAAKT");
-    
+ 
 alert("Spel aangemaakt: " + code);
 
 }
