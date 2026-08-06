@@ -31,8 +31,10 @@ function createGame() {
     listenToPlayers(code);
     listenToGameState();
 
-    document.getElementById("startGameButton").style.display = "block";
+document.getElementById("startGameButton").style.display = "block";
 
+alert("STARTKNOP ZICHTBAAR GEMAAKT");
+    
 alert("Spel aangemaakt: " + code);
 
 }
