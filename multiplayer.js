@@ -66,8 +66,6 @@ function joinGame() {
 
     listenToPlayers(code);
     listenToGameState();
-
-    document.getElementById("startGameButton").style.display = "none";
     
     alert("Je doet mee!");
 
