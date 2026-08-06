@@ -32,8 +32,8 @@ function createGame() {
     listenToGameState();
 
     document.getElementById("startGameButton").style.display = "block";
-    
-    alert("Spel aangemaakt: " + code);
+
+alert("Spel aangemaakt: " + code);
 
 }
 
