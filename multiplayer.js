@@ -86,93 +86,90 @@ function joinGame() {
         return;
     }
 
-    const gameRef =
-        firebase.database().ref("games/" + code);
+    const playerId =
+        "p" + Date.now();
 
-    gameRef.once("value")
-        .then(snapshot => {
+    firebase.database()
+        .ref("games/" + code + "/players/" + playerId)
+        .set({
+            name: name
+        });
 
-            const game = snapshot.val();
+    window.currentGameCode = code;
+    window.isHost = false;
 
-            if (!game) {
-                alert("Spel bestaat niet.");
-                return;
-            }
+    listenToPlayers(code);
+    listenToGameState();
+    
+    alert("Je doet mee!");
 
-            const players =
-                game.players || {};
+}
 
-            const playerIds =
-                Object.keys(players);
+function listenToPlayers(code) {
 
-            if (playerIds.length >= 4) {
-                alert("Er kunnen maximaal 4 teams meedoen.");
-                return;
-            }
+    firebase.database()
+        .ref("games/" + code + "/players")
+        .on("value", snapshot => {
 
-            // Eerste vrije team/kleur
-            const usedTeams =
-                playerIds.map(id => players[id].team);
+            const players = snapshot.val();
 
-            let team = 0;
+            const list =
+                document.getElementById("playersList");
 
-            while (usedTeams.includes(team) && team < 4) {
-                team++;
-            }
+            if (!list) return;
 
-            const colors = [
-                "blue",
-                "red",
-                "green",
-                "purple"
-            ];
+            list.innerHTML = "";
 
-            const playerId =
-                "p" + Date.now();
+            if (!players) return;
 
-            const player = {
+            Object.keys(players).forEach(key => {
 
-                name: name,
+                const player = players[key];
 
-                team: team,
+                const div =
+                    document.createElement("div");
 
-                color: colors[team]
+                div.innerText = player.name;
 
-            };
+                list.appendChild(div);
 
-            return gameRef
-                .child("players")
-                .child(playerId)
-                .set(player)
-                .then(() => {
-
-                    window.currentGameCode = code;
-                    window.isHost = false;
-
-                    window.myPlayerId = playerId;
-                    window.myTeam = team;
-                    window.myColor = colors[team];
-
-                    listenToPlayers(code);
-                    listenToGameState();
-
-                    alert(
-                        "Je doet mee!\n\n" +
-                        "Team: " + (team + 1) +
-                        "\nKleur: " + colors[team]
-                    );
-
-                });
-
-        })
-        .catch(error => {
-
-            console.error("FOUT BIJ JOIN GAME:", error);
-
-            alert(
-                "Deelnemen mislukt:\n\n" +
-                error.message
-            );
+            });
 
         });
+
+}
+
+function listenToGameState() {
+
+    if (!window.currentGameCode) return;
+
+    firebase.database()
+        .ref("games/" + window.currentGameCode + "/gameState")
+        .on("value", snapshot => {
+
+            const state = snapshot.val();
+
+            // ===== TEST =====
+            alert("GAME " + window.currentGameCode + " = " + state);
+            // ================
+
+            if (state === "playing") {
+                
+            alert("MULTIPLAYER ontvangt PLAYING");
+
+                showScreen(screen1);
+
+                if (typeof updateTurn === "function") {
+                    updateTurn();
+                }
+
+                if (typeof selectedCategory !== "undefined") {
+                    document.getElementById("currentCategory").innerText =
+                        "Categorie: " + selectedCategory;
+                }
+
+            }
+
+        });
+
 }
