@@ -167,7 +167,18 @@ function startGame() {
         teams[3].name =
             document.getElementById("team4Name").value;
 
+        document.getElementById("displayTeam1").innerText =
+            teams[0].name || "Team 1";
 
+        document.getElementById("displayTeam2").innerText =
+            teams[1].name || "Team 2";
+
+        document.getElementById("displayTeam3").innerText =
+            teams[2].name || "Team 3";
+
+        document.getElementById("displayTeam4").innerText =
+            teams[3].name || "Team 4";
+        
         // =========================
         // 2. INSTELLINGEN VASTZETTEN
         // =========================
