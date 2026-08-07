@@ -404,16 +404,10 @@ cell
 
 function updateTurn(){
 
-    const team =
-        teams[currentTeam];
+const team =
+teams[currentTeam];
 
-    turnText.innerText =
-        team.icon +
-        " " +
-        team.colorName +
-        " — " +
-        team.name +
-        " is aan de beurt";
+turnText.innerText = team.icon + " " + team.name + " is aan de beurt";
 
 }
 
