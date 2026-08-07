@@ -86,23 +86,95 @@ function joinGame() {
         return;
     }
 
-    const playerId =
-        "p" + Date.now();
+    const gameRef =
+        firebase.database().ref("games/" + code);
 
-    firebase.database()
-        .ref("games/" + code + "/players/" + playerId)
-        .set({
-            name: name
+    gameRef.once("value")
+        .then(snapshot => {
+
+            const game = snapshot.val();
+
+            if (!game) {
+                alert("Spel bestaat niet.");
+                return;
+            }
+
+            const players =
+                game.players || {};
+
+            const playerIds =
+                Object.keys(players);
+
+            if (playerIds.length >= 4) {
+                alert("Er kunnen maximaal 4 teams meedoen.");
+                return;
+            }
+
+            // Eerste vrije team/kleur
+            const usedTeams =
+                playerIds.map(id => players[id].team);
+
+            let team = 0;
+
+            while (usedTeams.includes(team) && team < 4) {
+                team++;
+            }
+
+            const colors = [
+                "blue",
+                "red",
+                "green",
+                "purple"
+            ];
+
+            const playerId =
+                "p" + Date.now();
+
+            const player = {
+
+                name: name,
+
+                team: team,
+
+                color: colors[team]
+
+            };
+
+            return gameRef
+                .child("players")
+                .child(playerId)
+                .set(player)
+                .then(() => {
+
+                    window.currentGameCode = code;
+                    window.isHost = false;
+
+                    window.myPlayerId = playerId;
+                    window.myTeam = team;
+                    window.myColor = colors[team];
+
+                    listenToPlayers(code);
+                    listenToGameState();
+
+                    alert(
+                        "Je doet mee!\n\n" +
+                        "Team: " + (team + 1) +
+                        "\nKleur: " + colors[team]
+                    );
+
+                });
+
+        })
+        .catch(error => {
+
+            console.error("FOUT BIJ JOIN GAME:", error);
+
+            alert(
+                "Deelnemen mislukt:\n\n" +
+                error.message
+            );
+
         });
-
-    window.currentGameCode = code;
-    window.isHost = false;
-
-    listenToPlayers(code);
-    listenToGameState();
-    
-    alert("Je doet mee!");
-
 }
 
 function listenToPlayers(code) {
