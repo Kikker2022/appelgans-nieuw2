@@ -123,12 +123,32 @@ Doe mee
 ========================= -->
 <div id="screen1" class="hidden">
 
+<h2>🎲 Appelgans</h2>
+
+<div id="teamOverview">
+
+    <p>🔵 <strong>Blauw</strong> — <span id="displayTeam1">Team 1</span></p>
+
+    <p>🔴 <strong>Rood</strong> — <span id="displayTeam2">Team 2</span></p>
+
+    <p>🟢 <strong>Groen</strong> — <span id="displayTeam3">Team 3</span></p>
+
+    <p>🟣 <strong>Paars</strong> — <span id="displayTeam4">Team 4</span></p>
+
+</div>
+
+<hr>
+
 <h2 id="turn"></h2>
+
 <p id="currentCategory"></p>
 
-<button onclick="rollDice()">🎲 Gooi dobbelsteen</button>
+<button id="rollDiceButton" onclick="rollDice()">
+    🎲 Gooi dobbelsteen
+</button>
 
 <p id="diceResult"></p>
+
 <p id="statusMessage"></p>
 
 </div>
