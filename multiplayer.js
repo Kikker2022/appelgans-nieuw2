@@ -61,18 +61,6 @@ function createGame() {
         });
 }
 
-    window.currentGameCode = code;
-    window.isHost = true;
-
-    listenToPlayers(code);
-    listenToGameState();
-
-document.getElementById("startGameButton").style.display = "block";
- 
-alert("Spel aangemaakt: " + code);
-
-}
-
 function joinGame() {
 
     const code =
