@@ -1,6 +1,4 @@
 function createGame() {
-
-    alert("CREATEGAME GESTART");
     
     const code =
         document.getElementById("gameCode").value.trim();
