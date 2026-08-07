@@ -177,40 +177,6 @@ function joinGame() {
         });
 }
 
-function listenToPlayers(code) {
-
-    firebase.database()
-        .ref("games/" + code + "/players")
-        .on("value", snapshot => {
-
-            const players = snapshot.val();
-
-            const list =
-                document.getElementById("playersList");
-
-            if (!list) return;
-
-            list.innerHTML = "";
-
-            if (!players) return;
-
-            Object.keys(players).forEach(key => {
-
-                const player = players[key];
-
-                const div =
-                    document.createElement("div");
-
-                div.innerText = player.name;
-
-                list.appendChild(div);
-
-            });
-
-        });
-
-}
-
 function listenToGameState() {
 
     if (!window.currentGameCode) return;
