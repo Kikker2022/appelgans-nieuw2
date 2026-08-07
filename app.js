@@ -402,37 +402,48 @@ turnText.innerText = team.icon + " " + team.name + " is aan de beurt";
 
 function nextTurn(){
 
-currentTeam++;
+    currentTeam++;
 
-if(currentTeam >= activeTeams){
-currentTeam = 0;
-}
+    if(currentTeam >= activeTeams){
+        currentTeam = 0;
+    }
 
-const team =
-teams[currentTeam];
+    const team =
+        teams[currentTeam];
 
-if(team.skipTurns > 0){
+    if(team.skipTurns > 0){
 
-team.skipTurns--;
+        team.skipTurns--;
 
-statusMessage.innerText =
-team.icon +
-" moet een beurt overslaan.";
+        statusMessage.innerText =
+            team.icon +
+            " moet een beurt overslaan.";
 
-nextTurn();
+        nextTurn();
 
-return;
+        return;
+    }
 
-}
+    // Nieuwe beurt: opnieuw dobbelen toegestaan
+    window.diceRolled = false;
 
-diceText.innerText = "";
-updateTurn();
+    diceText.innerText = "";
+
+    updateTurn();
 
 }
 
 /* ===== DOBBELEN ===== */
 
 function rollDice() {
+
+    // Voorkom meerdere worpen tijdens dezelfde beurt
+    if (window.diceRolled) {
+        return;
+    }
+
+    // Deze beurt is nu geworpen
+    window.diceRolled = true;
 
     // Dobbelgeluid afspelen
     soundDobbel.currentTime = 0;
@@ -444,7 +455,7 @@ function rollDice() {
     categorySelect.disabled = true;
     statusMessage.innerText = "";
 
-    // Pas na 7 seconden laten zien wat er gegooid is
+    // Pas na 3,5 seconden laten zien wat er gegooid is
     setTimeout(() => {
 
         diceText.innerText = "🎲 Je gooide: " + roll;
@@ -457,7 +468,6 @@ function rollDice() {
         }, 1500);
 
     }, 3500);
-
 }
 
 /* ===== VRAGEN ===== */
