@@ -1,5 +1,5 @@
 function createGame() {
-    
+
     const code =
         document.getElementById("gameCode").value.trim();
 
@@ -11,19 +11,55 @@ function createGame() {
         return;
     }
 
-    firebase.database().ref("games/" + code).set({
+    const hostPlayer = {
+        name: hostName,
+        team: 0,
+        color: "blue"
+    };
 
-        host: hostName,
+    firebase.database()
+        .ref("games/" + code)
+        .set({
 
-        gameState: "lobby",
+            host: hostName,
 
-        players: {
-            host: {
-                name: hostName
+            gameState: "lobby",
+
+            currentTeam: 0,
+
+            players: {
+                host: hostPlayer
             }
-        }
 
-    });
+        })
+        .then(() => {
+
+            window.currentGameCode = code;
+            window.isHost = true;
+            window.myPlayerId = "host";
+            window.myTeam = 0;
+            window.myColor = "blue";
+
+            listenToPlayers(code);
+            listenToGameState();
+
+            // Alleen de host krijgt de startknop
+            document.getElementById("startGameButton").style.display = "block";
+
+            alert("Spel aangemaakt: " + code);
+
+        })
+        .catch(error => {
+
+            console.error("FOUT BIJ CREATE GAME:", error);
+
+            alert(
+                "Spel kon niet worden aangemaakt:\n\n" +
+                error.message
+            );
+
+        });
+}
 
     window.currentGameCode = code;
     window.isHost = true;
