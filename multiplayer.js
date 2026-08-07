@@ -176,38 +176,3 @@ function joinGame() {
 
         });
 }
-
-function listenToGameState() {
-
-    if (!window.currentGameCode) return;
-
-    firebase.database()
-        .ref("games/" + window.currentGameCode + "/gameState")
-        .on("value", snapshot => {
-
-            const state = snapshot.val();
-
-            // ===== TEST =====
-            alert("GAME " + window.currentGameCode + " = " + state);
-            // ================
-
-            if (state === "playing") {
-                
-            alert("MULTIPLAYER ontvangt PLAYING");
-
-                showScreen(screen1);
-
-                if (typeof updateTurn === "function") {
-                    updateTurn();
-                }
-
-                if (typeof selectedCategory !== "undefined") {
-                    document.getElementById("currentCategory").innerText =
-                        "Categorie: " + selectedCategory;
-                }
-
-            }
-
-        });
-
-}
