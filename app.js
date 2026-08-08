@@ -402,13 +402,42 @@ cell
 
 /* ===== BEURT ===== */
 
-function updateTurn(){
+function updateTurn() {
 
-const team =
-teams[currentTeam];
+    const team = teams[currentTeam];
 
-turnText.innerText = team.icon + " " + team.name + " is aan de beurt";
+    turnText.innerText =
+        team.icon +
+        " " +
+        team.name +
+        " is aan de beurt";
 
+    const activeTeamCount =
+        parseInt(document.getElementById("teamCount")?.value || activeTeams || 4);
+
+    for (let i = 0; i < 4; i++) {
+
+        const display =
+            document.getElementById("displayTeam" + (i + 1));
+
+        if (!display) continue;
+
+        const row =
+            display.parentElement;
+
+        if (i < activeTeamCount) {
+
+            row.style.display = "block";
+
+            display.innerText =
+                teams[i].name;
+
+        } else {
+
+            row.style.display = "none";
+
+        }
+    }
 }
 
 function nextTurn(){
