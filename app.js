@@ -12,34 +12,38 @@ const TOTAL_CELLS = 140;
 /* ===== TEAMS ===== */
 
 const teams = [
-{
-name: "Blauw",
-color: "blue",
-icon: "🔵",
-position: 0,
-skipTurns: 0
-},
-{
-name: "Rood",
-color: "red",
-icon: "🔴",
-position: 0,
-skipTurns: 0
-},
-{
-name: "Groen",
-color: "green",
-icon: "🟢",
-position: 0,
-skipTurns: 0
-},
-{
-name: "Paars",
-color: "purple",
-icon: "🟣",
-position: 0,
-skipTurns: 0
-}
+    {
+        name: "Team 1",
+        colorName: "Blauw",
+        color: "blue",
+        icon: "🔵",
+        position: 0,
+        skipTurns: 0
+    },
+    {
+        name: "Team 2",
+        colorName: "Rood",
+        color: "red",
+        icon: "🔴",
+        position: 0,
+        skipTurns: 0
+    },
+    {
+        name: "Team 3",
+        colorName: "Groen",
+        color: "green",
+        icon: "🟢",
+        position: 0,
+        skipTurns: 0
+    },
+    {
+        name: "Team 4",
+        colorName: "Paars",
+        color: "purple",
+        icon: "🟣",
+        position: 0,
+        skipTurns: 0
+    }
 ];
 
 /* ===== HTML ===== */
@@ -406,21 +410,35 @@ function updateTurn() {
 
     const team = teams[currentTeam];
 
+    if (!team) {
+        return;
+    }
+
     turnText.innerText =
         team.icon +
         " " +
+        team.colorName +
+        " — " +
         team.name +
         " is aan de beurt";
 
     const activeTeamCount =
-        parseInt(document.getElementById("teamCount")?.value || activeTeams || 4);
+        parseInt(
+            document.getElementById("teamCount")?.value ||
+            activeTeams ||
+            4
+        );
 
     for (let i = 0; i < 4; i++) {
 
         const display =
-            document.getElementById("displayTeam" + (i + 1));
+            document.getElementById(
+                "displayTeam" + (i + 1)
+            );
 
-        if (!display) continue;
+        if (!display) {
+            continue;
+        }
 
         const row =
             display.parentElement;
