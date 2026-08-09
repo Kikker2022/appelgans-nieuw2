@@ -1,3 +1,5 @@
+alert("DIT IS DE NIEUWE APP.JS");
+
 let currentTeam = 0;
 let activeTeams = 4;
 
