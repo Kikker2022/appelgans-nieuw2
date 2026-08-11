@@ -220,8 +220,8 @@ function startGame() {
             firebase.database()
                 .ref("games/" + window.currentGameCode)
                 .update({
-                    gameState: "playing",
-                    currentTurn: 0
+                    gameState: "lobby",
+                    currentTeam: 0,
                 })
                 .then(() => {
 
