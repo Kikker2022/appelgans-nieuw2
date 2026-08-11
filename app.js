@@ -428,7 +428,7 @@ function updateTurn() {
         return;
     }
 
-    turnText.innerText = "TEST SCHERM 3";
+    turnText.innerText =
         team.icon +
         " " +
         team.colorName +
