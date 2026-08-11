@@ -7,56 +7,88 @@ function createGame() {
         document.getElementById("hostName").value.trim();
 
     if (!code || !hostName) {
+
         alert("Vul naam en spelcode in");
+
         return;
     }
 
+
     const hostPlayer = {
+
         name: hostName,
+
         team: 0,
+
         color: "blue"
+
     };
 
+
     firebase.database()
-    .ref("games/" + window.currentGameCode)
-    .update({
+        .ref("games/" + code)
+        .set({
 
-        gameState: "playing",
+            gameState: "lobby",
 
-        currentTurn: 0,
+            currentTurn: 0,
 
-        activeTeams: activeTeams,
+            players: {
 
-        selectedCategory: selectedCategory,
+                host: hostPlayer
 
-        teamNames: {
-            0: teams[0].name,
-            1: teams[1].name,
-            2: teams[2].name,
-            3: teams[3].name
-        }
+            }
 
-    })
+        })
+
         .then(() => {
 
             window.currentGameCode = code;
+
             window.isHost = true;
+
             window.myPlayerId = "host";
+
             window.myTeam = 0;
+
             window.myColor = "blue";
 
+
+            // Host blijft op scherm 0.
+            // Deelnemers kunnen zich hier aanmelden.
+
             listenToPlayers(code);
+
             listenToGameState();
 
-            // Alleen de host krijgt de startknop
-            document.getElementById("startGameButton").style.display = "block";
 
-            alert("Spel aangemaakt: " + code);
+            // Startknop alleen voor de host zichtbaar maken
+
+            const startButton =
+                document.getElementById(
+                    "startGameButton"
+                );
+
+            if (startButton) {
+
+                startButton.style.display =
+                    "block";
+
+            }
+
+
+            alert(
+                "Spel aangemaakt: " + code
+            );
 
         })
+
         .catch(error => {
 
-            console.error("FOUT BIJ CREATE GAME:", error);
+            console.error(
+                "FOUT BIJ CREATE GAME:",
+                error
+            );
 
             alert(
                 "Spel kon niet worden aangemaakt:\n\n" +
@@ -64,6 +96,7 @@ function createGame() {
             );
 
         });
+
 }
 
 function joinGame() {
