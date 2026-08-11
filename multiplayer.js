@@ -284,9 +284,13 @@ function listenToGameState() {
 
             if (state === "playing") {
 
-                showScreen(screen1);
+    // Host is al op het juiste scherm.
+    // Deelnemers moeten automatisch naar scherm 1.
+    if (!window.isHost) {
+        showScreen(screen1);
+    }
 
-                updateTurn();
+    updateTurn();
 
                 const category =
                     game.selectedCategory;
