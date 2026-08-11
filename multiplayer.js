@@ -18,20 +18,25 @@ function createGame() {
     };
 
     firebase.database()
-        .ref("games/" + code)
-        .set({
+    .ref("games/" + window.currentGameCode)
+    .update({
 
-            host: hostName,
+        gameState: "playing",
 
-            gameState: "lobby",
+        currentTurn: 0,
 
-            currentTeam: 0,
+        activeTeams: activeTeams,
 
-            players: {
-                host: hostPlayer
-            }
+        selectedCategory: selectedCategory,
 
-        })
+        teamNames: {
+            0: teams[0].name,
+            1: teams[1].name,
+            2: teams[2].name,
+            3: teams[3].name
+        }
+
+    })
         .then(() => {
 
             window.currentGameCode = code;
@@ -201,31 +206,102 @@ function listenToPlayers(code) {
 
 function listenToGameState() {
 
-    if (!window.currentGameCode) return;
+    if (!window.currentGameCode) {
+        return;
+    }
 
     firebase.database()
-        .ref("games/" + window.currentGameCode + "/gameState")
+        .ref("games/" + window.currentGameCode)
         .on("value", snapshot => {
 
-            const state = snapshot.val();
+            const game = snapshot.val();
 
-            // ===== TEST =====
-            alert("GAME " + window.currentGameCode + " = " + state);
-            // ================
+            if (!game) {
+                return;
+            }
+
+            console.log("🔥 GAME DATA:", game);
+
+            // =========================
+            // TEAMNAMEN SYNCHRONISEREN
+            // =========================
+
+            if (game.teamNames) {
+
+                for (let i = 0; i < 4; i++) {
+
+                    if (
+                        game.teamNames[i] !== undefined &&
+                        teams[i]
+                    ) {
+
+                        teams[i].name =
+                            game.teamNames[i];
+
+                    }
+
+                }
+
+            }
+
+
+            // =========================
+            // AANTAL TEAMS SYNCHRONISEREN
+            // =========================
+
+            if (game.activeTeams !== undefined) {
+
+                activeTeams =
+                    parseInt(game.activeTeams);
+
+            }
+
+
+            // =========================
+            // BEURT SYNCHRONISEREN
+            // =========================
+
+            if (game.currentTurn !== undefined) {
+
+                currentTeam =
+                    parseInt(game.currentTurn);
+
+            }
+
+
+            // =========================
+            // SPELSTATUS
+            // =========================
+
+            const state =
+                game.gameState;
+
+            console.log(
+                "GAME STATE:",
+                state
+            );
+
 
             if (state === "playing") {
-                
-            alert("MULTIPLAYER ontvangt PLAYING");
 
                 showScreen(screen1);
 
-                if (typeof updateTurn === "function") {
-                    updateTurn();
-                }
+                updateTurn();
 
-                if (typeof selectedCategory !== "undefined") {
-                    document.getElementById("currentCategory").innerText =
-                        "Categorie: " + selectedCategory;
+                const category =
+                    game.selectedCategory;
+
+                if (category) {
+
+                    selectedCategory =
+                        category;
+
+                    document.getElementById(
+                        "currentCategory"
+                    ).innerText =
+                        "Categorie: " +
+                        selectedCategory;
+
                 }
 
             }
