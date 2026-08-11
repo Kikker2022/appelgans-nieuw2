@@ -173,17 +173,29 @@ function startGame() {
         teams[3].name =
             document.getElementById("team4Name").value;
 
-        document.getElementById("displayTeam1").innerText =
-            teams[0].name || "Team 1";
+    for (let i = 1; i <= 4; i++) {
 
-        document.getElementById("displayTeam2").innerText =
-            teams[1].name || "Team 2";
+    const row =
+        document.getElementById("teamDisplay" + i);
 
-        document.getElementById("displayTeam3").innerText =
-            teams[2].name || "Team 3";
+    const name =
+        document.getElementById("displayTeam" + i);
 
-        document.getElementById("displayTeam4").innerText =
-            teams[3].name || "Team 4";
+    if (!row || !name) continue;
+
+    if (i <= activeTeams) {
+
+        row.style.display = "block";
+
+        name.innerText =
+            teams[i - 1].name || "Team " + i;
+
+    } else {
+
+        row.style.display = "none";
+
+    }
+}
         
         // =========================
         // 2. INSTELLINGEN VASTZETTEN
