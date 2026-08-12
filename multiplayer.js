@@ -261,22 +261,54 @@ function listenToGameState() {
 
             if (game.teamNames) {
 
-                for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 4; i++) {
 
-                    if (
-                        game.teamNames[i] !== undefined &&
-                        teams[i]
-                    ) {
+        if (
+            game.teamNames[i] !== undefined &&
+            teams[i]
+        ) {
 
-                        teams[i].name =
-                            game.teamNames[i];
+            teams[i].name =
+                game.teamNames[i];
 
-                    }
+        }
+    }
 
-                }
+    // =========================
+    // TEAMOVERZICHT VERNIEUWEN
+    // =========================
 
-            }
+    for (let i = 0; i < 4; i++) {
 
+        const row =
+            document.getElementById(
+                "teamDisplay" + (i + 1)
+            );
+
+        const display =
+            document.getElementById(
+                "displayTeam" + (i + 1)
+            );
+
+        if (!row || !display) {
+            continue;
+        }
+
+        if (i < activeTeams) {
+
+            row.style.display = "block";
+
+            display.innerText =
+                teams[i].name;
+
+        } else {
+
+            row.style.display = "none";
+
+        }
+    }
+
+}
 
             // =========================
             // AANTAL TEAMS SYNCHRONISEREN
