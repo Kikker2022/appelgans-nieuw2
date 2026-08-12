@@ -237,29 +237,23 @@ function listenToPlayers(code) {
 
 }
 
-function listenToGameState() {
+// =========================
+// AANTAL TEAMS
+// =========================
 
-    if (!window.currentGameCode) {
-        return;
-    }
+if (game.activeTeams !== undefined) {
 
-    firebase.database()
-        .ref("games/" + window.currentGameCode)
-        .on("value", snapshot => {
+    activeTeams =
+        parseInt(game.activeTeams);
 
-            const game = snapshot.val();
+}
 
-            if (!game) {
-                return;
-            }
 
-            console.log("🔥 GAME DATA:", game);
+// =========================
+// TEAMNAMEN
+// =========================
 
-            // =========================
-            // TEAMNAMEN SYNCHRONISEREN
-            // =========================
-
-            if (game.teamNames) {
+if (game.teamNames) {
 
     for (let i = 0; i < 4; i++) {
 
@@ -274,107 +268,39 @@ function listenToGameState() {
         }
     }
 
-    // =========================
-    // TEAMOVERZICHT VERNIEUWEN
-    // =========================
-
-    for (let i = 0; i < 4; i++) {
-
-        const row =
-            document.getElementById(
-                "teamDisplay" + (i + 1)
-            );
-
-        const display =
-            document.getElementById(
-                "displayTeam" + (i + 1)
-            );
-
-        if (!row || !display) {
-            continue;
-        }
-
-        if (i < activeTeams) {
-
-            row.style.display = "block";
-
-            display.innerText =
-                teams[i].name;
-
-        } else {
-
-            row.style.display = "none";
-
-        }
-    }
-
 }
 
-            // =========================
-            // AANTAL TEAMS SYNCHRONISEREN
-            // =========================
 
-            if (game.activeTeams !== undefined) {
+// =========================
+// TEAMOVERZICHT
+// =========================
 
-                activeTeams =
-                    parseInt(game.activeTeams);
+for (let i = 0; i < 4; i++) {
 
-            }
+    const row =
+        document.getElementById(
+            "teamDisplay" + (i + 1)
+        );
 
+    const display =
+        document.getElementById(
+            "displayTeam" + (i + 1)
+        );
 
-            // =========================
-            // BEURT SYNCHRONISEREN
-            // =========================
-
-            if (game.currentTurn !== undefined) {
-
-                currentTeam =
-                    parseInt(game.currentTurn);
-
-            }
-
-
-            // =========================
-            // SPELSTATUS
-            // =========================
-
-            const state =
-                game.gameState;
-
-            console.log(
-                "GAME STATE:",
-                state
-            );
-
-
-            if (state === "playing") {
-
-    // Host is al op het juiste scherm.
-    // Deelnemers moeten automatisch naar scherm 1.
-    if (!window.isHost) {
-        showScreen(screen1);
+    if (!row || !display) {
+        continue;
     }
 
-    updateTurn();
+    if (i < activeTeams) {
 
-                const category =
-                    game.selectedCategory;
+        row.style.display = "block";
 
-                if (category) {
+        display.innerText =
+            teams[i].name;
 
-                    selectedCategory =
-                        category;
+    } else {
 
-                    document.getElementById(
-                        "currentCategory"
-                    ).innerText =
-                        "Categorie: " +
-                        selectedCategory;
+        row.style.display = "none";
 
-                }
-
-            }
-
-        });
-
+    }
 }
