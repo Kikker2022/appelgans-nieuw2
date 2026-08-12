@@ -148,91 +148,158 @@ function startGame() {
     try {
 
         // =========================
-        // 1. TEAMS EN CATEGORIE
+        // 1. TEAMINSTELLINGEN OPHALEN
         // =========================
 
         updateTeamInputs();
 
+        activeTeams =
+            parseInt(
+                document.getElementById("teamCount").value
+            );
+
         selectedCategory =
             document.getElementById("categorySelect").value;
 
-        activeTeams =
-            parseInt(document.getElementById("teamCount").value);
 
         teams[0].name =
-            document.getElementById("team1Name").value;
+            document.getElementById("team1Name").value.trim();
 
         teams[1].name =
-            document.getElementById("team2Name").value;
+            document.getElementById("team2Name").value.trim();
 
         teams[2].name =
-            document.getElementById("team3Name").value;
+            document.getElementById("team3Name").value.trim();
 
         teams[3].name =
-            document.getElementById("team4Name").value;
-
-    for (let i = 1; i <= 4; i++) {
-
-    const row =
-        document.getElementById("teamDisplay" + i);
-
-    const name =
-        document.getElementById("displayTeam" + i);
-
-    if (!row || !name) continue;
-
-    if (i <= activeTeams) {
-
-        row.style.display = "block";
-
-        name.innerText =
-            teams[i - 1].name || "Team " + i;
-
-    } else {
-
-        row.style.display = "none";
-
-    }
-}
-        
-        // =========================
-        // 2. INSTELLINGEN VASTZETTEN
-        // =========================
-
-        document.getElementById("categorySelect").disabled = true;
-        document.getElementById("teamCount").disabled = true;
-
-        document.getElementById("categorySelect").style.pointerEvents = "none";
-        document.getElementById("teamCount").style.pointerEvents = "none";
-
-        document.getElementById("categorySelect").style.opacity = "0.6";
-        document.getElementById("teamCount").style.opacity = "0.6";
+            document.getElementById("team4Name").value.trim();
 
 
         // =========================
-        // 3. MULTIPLAYER
+        // 2. LEGE NAMEN VOORKOMEN
         // =========================
 
-        if (window.isHost && window.currentGameCode) {
+        if (!teams[0].name) {
+            teams[0].name = "Team 1";
+        }
+
+        if (!teams[1].name) {
+            teams[1].name = "Team 2";
+        }
+
+        if (!teams[2].name) {
+            teams[2].name = "Team 3";
+        }
+
+        if (!teams[3].name) {
+            teams[3].name = "Team 4";
+        }
+
+
+        // =========================
+        // 3. TEAMNAMEN OP HUIDIGE
+        //    TELEFOON TONEN
+        // =========================
+
+        for (let i = 1; i <= 4; i++) {
+
+            const row =
+                document.getElementById(
+                    "teamDisplay" + i
+                );
+
+            const display =
+                document.getElementById(
+                    "displayTeam" + i
+                );
+
+            if (!row || !display) {
+                continue;
+            }
+
+            if (i <= activeTeams) {
+
+                row.style.display = "block";
+
+                display.innerText =
+                    teams[i - 1].name;
+
+            } else {
+
+                row.style.display = "none";
+
+            }
+
+        }
+
+
+        // =========================
+        // 4. INSTELLINGEN VASTZETTEN
+        // =========================
+
+        document.getElementById(
+            "categorySelect"
+        ).disabled = true;
+
+        document.getElementById(
+            "teamCount"
+        ).disabled = true;
+
+
+        // =========================
+        // 5. GEGEVENS NAAR FIREBASE
+        // =========================
+
+        if (
+            window.isHost &&
+            window.currentGameCode
+        ) {
 
             firebase.database()
-                .ref("games/" + window.currentGameCode)
+                .ref(
+                    "games/" +
+                    window.currentGameCode
+                )
                 .update({
-                    gameState: "lobby",
-                    currentTeam: 0,
+
+                    gameState: "playing",
+
+                    currentTurn: 0,
+
+                    activeTeams:
+                        activeTeams,
+
+                    selectedCategory:
+                        selectedCategory,
+
+                    teamNames: {
+
+                        0:
+                            teams[0].name,
+
+                        1:
+                            teams[1].name,
+
+                        2:
+                            teams[2].name,
+
+                        3:
+                            teams[3].name
+
+                    }
+
                 })
                 .then(() => {
 
                     console.log(
-                        "✅ Spel gestart in Firebase:",
-                        window.currentGameCode
+                        "✅ Spel gestart en teamgegevens opgeslagen"
                     );
 
                 })
-                .catch((error) => {
+                .catch(error => {
 
                     console.error(
-                        "❌ Fout bij starten spel:",
+                        "❌ Firebase startGame fout:",
                         error
                     );
 
@@ -247,20 +314,46 @@ function startGame() {
 
 
         // =========================
-        // 4. NAAR SPELSCHERM
+        // 6. CATEGORIE TONEN
+        // =========================
+
+        const categoryText =
+            document.getElementById(
+                "currentCategory"
+            );
+
+        if (categoryText) {
+
+            categoryText.innerText =
+                "Categorie: " +
+                selectedCategory;
+
+        }
+
+
+        // =========================
+        // 7. BEURT BIJWERKEN
+        // =========================
+
+        currentTeam = 0;
+
+        updateTurn();
+
+
+        // =========================
+        // 8. HOST NAAR SPELSCHERM
         // =========================
 
         showScreen(screen1);
 
-        updateTurn();
 
-        document.getElementById("currentCategory").innerText =
-            "Categorie: " + selectedCategory;
+        console.log(
+            "✅ startGame() uitgevoerd"
+        );
 
+    }
 
-        console.log("✅ startGame() uitgevoerd");
-
-    } catch (e) {
+    catch (e) {
 
         console.error(
             "❌ STARTGAME ERROR:",
