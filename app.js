@@ -260,35 +260,29 @@ function startGame() {
                     "games/" +
                     window.currentGameCode
                 )
-                .update({
+.update({
 
-                    gameState: "playing",
+    gameState: "playing",
 
-                    currentTurn: 0,
+    currentTurn: 0,
 
-                    activeTeams:
-                        activeTeams,
+    activeTeams: activeTeams,
 
-                    selectedCategory:
-                        selectedCategory,
+    selectedCategory: selectedCategory,
 
-                    teamNames: {
+    teamNames: {
 
-                        0:
-                            teams[0].name,
+        0: teams[0].name,
 
-                        1:
-                            teams[1].name,
+        1: teams[1].name,
 
-                        2:
-                            teams[2].name,
+        2: teams[2].name,
 
-                        3:
-                            teams[3].name
+        3: teams[3].name
 
-                    }
+    }
 
-                })
+})
                 .then(() => {
 
                     console.log(
