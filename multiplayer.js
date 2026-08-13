@@ -512,7 +512,7 @@ function listenToGameState() {
 
 
             // =========================
-            // TEAMNAMEN
+            // TEAMNAMEN UIT FIREBASE
             // =========================
 
             if (game.teamNames) {
@@ -547,7 +547,7 @@ function listenToGameState() {
 
 
             // =========================
-            // BEURT
+            // HUIDIGE BEURT
             // =========================
 
             if (game.currentTurn !== undefined) {
@@ -559,35 +559,48 @@ function listenToGameState() {
 
 
             // =========================
-            // TEAMOVERZICHT BIJWERKEN
+            // TEAMNAMEN OP SCHERM ZETTEN
             // =========================
 
             for (let i = 0; i < 4; i++) {
-
-                const row =
-                    document.getElementById(
-                        "teamDisplay" + (i + 1)
-                    );
 
                 const display =
                     document.getElementById(
                         "displayTeam" + (i + 1)
                     );
 
-                if (!row || !display) {
+                if (!display) {
                     continue;
                 }
 
-                if (i < activeTeams) {
 
-                    row.style.display = "block";
+                // Alleen actieve teams tonen
+
+                if (i < activeTeams) {
 
                     display.innerText =
                         teams[i].name;
 
+                    // De <p> waarin het team staat
+                    // zichtbaar houden
+
+                    if (display.parentElement) {
+
+                        display.parentElement.style.display =
+                            "block";
+
+                    }
+
                 } else {
 
-                    row.style.display = "none";
+                    // Niet gebruikte teams verbergen
+
+                    if (display.parentElement) {
+
+                        display.parentElement.style.display =
+                            "none";
+
+                    }
 
                 }
 
@@ -600,8 +613,8 @@ function listenToGameState() {
 
             if (game.gameState === "playing") {
 
-                // Alleen deelnemers hoeven
-                // automatisch naar scherm 1.
+                // Deelnemers gaan automatisch
+                // naar scherm 1.
 
                 if (!window.isHost) {
 
@@ -609,7 +622,9 @@ function listenToGameState() {
 
                 }
 
+
                 updateTurn();
+
 
                 const categoryText =
                     document.getElementById(
