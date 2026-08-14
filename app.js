@@ -154,26 +154,22 @@ function startGame() {
         updateTeamInputs();
 
         activeTeams =
-            parseInt(
-                document.getElementById("teamCount").value
-            );
+    parseInt(
+        document.getElementById("teamCount").value
+    );
 
-        selectedCategory =
-            document.getElementById("categorySelect").value;
+teams[0].name =
+    document.getElementById("team1Name").value.trim();
 
+teams[1].name =
+    document.getElementById("team2Name").value.trim();
 
-        teams[0].name =
-            document.getElementById("team1Name").value.trim();
+teams[2].name =
+    document.getElementById("team3Name").value.trim();
 
-        teams[1].name =
-            document.getElementById("team2Name").value.trim();
-
-        teams[2].name =
-            document.getElementById("team3Name").value.trim();
-
-        teams[3].name =
-            document.getElementById("team4Name").value.trim();
-
+teams[3].name =
+    document.getElementById("team4Name").value.trim();
+        
 
         // =========================
         // 2. LEGE NAMEN VOORKOMEN
