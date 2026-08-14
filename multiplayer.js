@@ -302,288 +302,120 @@ function joinGame() {
 function listenToPlayers(code) {
 
     firebase.database()
+        .ref("games/" + code + "/players")
+        .on("value", snapshot => {
 
-        .ref(
-            "games/" +
-            code +
-            "/players"
-        )
+            const players = snapshot.val();
 
-        .on(
-            "value",
-            snapshot => {
-
-                const players =
-                    snapshot.val();
+            const list =
+                document.getElementById("playersList");
 
 
-                const list =
+            if (!list) {
+                return;
+            }
+
+
+            list.innerHTML = "";
+
+
+            if (!players) {
+                return;
+            }
+
+
+            // =====================================
+            // LOKALE LIJST VAN SPELERS
+            // =====================================
+
+            const playerArray =
+                Object.keys(players).map(key => {
+
+                    return {
+                        id: key,
+                        name: players[key].name,
+                        team: players[key].team
+                    };
+
+                });
+
+
+            // =====================================
+            // SPELERS IN DE LOBBY TONEN
+            // =====================================
+
+            playerArray.forEach(player => {
+
+                const div =
+                    document.createElement("div");
+
+
+                if (player.id === "host") {
+
+                    div.innerText =
+                        "👑 Host: " +
+                        player.name;
+
+                } else {
+
+                    div.innerText =
+                        "👤 " +
+                        player.name;
+
+                }
+
+
+                list.appendChild(div);
+
+            });
+
+
+            // =====================================
+            // KLEUR + NAAM OP SCHERM 1
+            // =====================================
+
+            for (let i = 0; i < 4; i++) {
+
+                const display =
                     document.getElementById(
-                        "playersList"
+                        "displayTeam" + (i + 1)
                     );
 
 
-                if (!list) {
-
-                    return;
+                if (!display) {
+                    continue;
                 }
 
 
-                list.innerHTML = "";
+                const player =
+                    playerArray.find(
+                        p => p.team === i
+                    );
 
 
-                if (!players) {
+                if (player) {
 
-                    return;
-                }
-
-
-                Object.keys(players)
-                    .forEach(key => {
-
-                        const player =
-                            players[key];
+                    display.innerText =
+                        player.name;
 
 
-                        const div =
-                            document.createElement(
-                                "div"
-                            );
+                    if (display.parentElement) {
 
-
-                        if (key === "host") {
-
-                            div.innerText =
-                                "👑 Host: " +
-                                player.name;
-
-                        } else {
-
-                            div.innerText =
-                                "👤 " +
-                                player.name;
-
-                        }
-
-
-                        list.appendChild(div);
-
-                    });
-
-            }
-
-        );
-
-}
-
-
-/* =========================================================
-   FIREBASE SPELSTATUS
-   ========================================================= */
-
-function listenToGameState() {
-
-    if (!window.currentGameCode) {
-
-        return;
-    }
-
-
-    firebase.database()
-
-        .ref(
-            "games/" +
-            window.currentGameCode
-        )
-
-        .on(
-            "value",
-            snapshot => {
-
-                const game =
-                    snapshot.val();
-
-
-                if (!game) {
-
-                    return;
-                }
-
-
-                console.log(
-                    "GAME DATA:",
-                    game
-                );
-
-
-                /* =========================
-                   AANTAL TEAMS
-                   ========================= */
-
-                if (
-                    game.activeTeams !==
-                    undefined
-                ) {
-
-                    activeTeams =
-                        parseInt(
-                            game.activeTeams
-                        );
-
-                }
-
-
-                /* =========================
-                   TEAMNAMEN
-                   ========================= */
-
-                if (game.teamNames) {
-
-                    for (
-                        let i = 0;
-                        i < 4;
-                        i++
-                    ) {
-
-                        if (
-                            game.teamNames[i] !==
-                                undefined &&
-                            teams[i]
-                        ) {
-
-                            teams[i].name =
-                                game.teamNames[i];
-
-                        }
+                        display.parentElement.style.display =
+                            "block";
 
                     }
 
-                }
+                } else {
+
+                    display.innerText =
+                        "Nog niemand";
 
 
-                /* =========================
-                   CATEGORIE
-                   ========================= */
+                    if (display.parentElement) {
 
-                if (
-                    game.selectedCategory
-                ) {
-
-                    selectedCategory =
-                        game.selectedCategory;
-
-                }
-
-
-                /* =========================
-                   BEURT
-                   ========================= */
-
-                if (
-                    game.currentTurn !==
-                    undefined
-                ) {
-
-                    currentTeam =
-                        parseInt(
-                            game.currentTurn
-                        );
-
-                }
-
-
-                /* =========================
-                   TEAMOVERZICHT
-                   ========================= */
-
-                for (
-                    let i = 0;
-                    i < 4;
-                    i++
-                ) {
-
-                    const display =
-                        document.getElementById(
-                            "displayTeam" +
-                            (i + 1)
-                        );
-
-
-                    if (!display) {
-
-                        continue;
-                    }
-
-
-                    const row =
-                        display.parentElement;
-
-
-                    if (
-                        i < activeTeams
-                    ) {
-
-                        display.innerText =
-                            teams[i].name;
-
-
-                        if (row) {
-
-                            row.style.display =
-                                "block";
-
-                        }
-
-                    } else {
-
-                        if (row) {
-
-                            row.style.display =
-                                "none";
-
-                        }
-
-                    }
-
-                }
-
-
-                /* =========================
-                   SPEL GESTART
-                   ========================= */
-
-                if (
-                    game.gameState ===
-                    "playing"
-                ) {
-
-
-                    /*
-                     * Deelnemers gaan automatisch
-                     * naar scherm 1.
-                     */
-
-                    if (!window.isHost) {
-
-                        showScreen(screen1);
-
-                    }
-
-
-                    updateTurn();
-
-
-                    const categoryText =
-                        document.getElementById(
-                            "currentCategory"
-                        );
-
-
-                    if (categoryText) {
-
-                        categoryText.innerText =
-                            "Categorie: " +
-                            selectedCategory;
+                        display.parentElement.style.display =
+                            "none";
 
                     }
 
@@ -591,6 +423,6 @@ function listenToGameState() {
 
             }
 
-        );
+        });
 
 }
