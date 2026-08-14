@@ -272,13 +272,13 @@ function startGame() {
 
     teamNames: {
 
-        0: teams[0].name,
+        0: document.getElementById("team1Name").value.trim(),
 
-        1: teams[1].name,
+        1: document.getElementById("team2Name").value.trim(),
 
-        2: teams[2].name,
+        2: document.getElementById("team3Name").value.trim(),
 
-        3: teams[3].name
+        3: document.getElementById("team4Name").value.trim()
 
     }
 
