@@ -528,18 +528,27 @@ function listenToGameState() {
                    HUIDIGE BEURT
                    ===================================== */
 
-                if (
-                    game.currentTurn !==
-                    undefined
-                ) {
+               if (game.currentTurn !== undefined) {
 
-                    currentTeam =
-                        parseInt(
-                            game.currentTurn
-                        );
+    currentTeam =
+        parseInt(game.currentTurn);
 
-                }
+}
 
+
+// Mijn team synchroniseren
+if (
+    game.players &&
+    window.myPlayerId &&
+    game.players[window.myPlayerId]
+) {
+
+    window.myTeam =
+        parseInt(
+            game.players[window.myPlayerId].team
+        );
+
+}
 
                 /* =====================================
                    SPEL GESTART
