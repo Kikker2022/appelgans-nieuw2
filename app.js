@@ -665,13 +665,16 @@ function rollDice() {
     // 1. ALLEEN HET TEAM AAN DE BEURT MAG GOOIEN
     // =========================
 
-    if (currentTeam !== window.myTeam) {
+    if (
+    parseInt(currentTeam) !==
+    parseInt(window.myTeam)
+) {
 
-        statusMessage.innerText =
-            "⏳ Wacht op je beurt.";
+    statusMessage.innerText =
+        "⏳ Wacht op je beurt.";
 
-        return;
-    }
+    return;
+}
 
 
     // =========================
