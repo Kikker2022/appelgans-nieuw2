@@ -1,199 +1,486 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Appelgans</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Appelgans</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
 <h1>🪿 Appelgans</h1>
 
-<!-- =========================
-     🟢 WELKOMSTSCHERM
-========================= -->
+
+<!-- =====================================================
+     WELKOMSTSCHERM
+===================================================== -->
+
 <div id="welcomeScreen">
 
-<h2>Welkom bij het ganzenbordspel Appelgans</h2>
+    <h2>
+        Welkom bij het ganzenbordspel Appelgans
+    </h2>
 
-<p>
-Na het kiezen van uw naam, kleur en de categorie, loopt u, vanaf de voorkant van de Holten Klinte gezien, rechtsom het betonpad op en u start bij nummer 1. Het bospad is voorzien van140 nummers. Er wordt om en om gedobbeld, dus wacht tot uw team aan de beurt is.
-Behandel de omgeving met respect en laat geen rommel achter in het bos.
-Veel plezier toegewenst.<br><br>
-Klik op start om het spel in te stellen.
-<p>
+    <p>
+        Na het kiezen van uw naam, kleur en categorie,
+        loopt u, vanaf de voorkant van de Holten Klinte gezien,
+        rechtsom het betonpad op en u start bij nummer 1.
+        Het bospad is voorzien van 140 nummers.
 
-<button onclick="showScreen(screen0)">
-Start instellen
-</button>
+        Er wordt om en om gedobbeld,
+        dus wacht tot uw team aan de beurt is.
+
+        Behandel de omgeving met respect
+        en laat geen rommel achter in het bos.
+
+        Veel plezier toegewenst.
+        <br><br>
+
+        Klik op start om het spel in te stellen.
+    </p>
+
+    <button onclick="showScreen(screen0)">
+        Start instellen
+    </button>
 
 </div>
 
 
-<!-- =========================
-     🟡 INSTELLINGEN + MULTIPLAYER
-========================= -->
+
+<!-- =====================================================
+     SCHERM 0 - LOBBY / INSTELLINGEN
+===================================================== -->
+
 <div id="screen0" class="hidden">
 
-<h2>Start spel</h2>
+    <h2>Start spel</h2>
 
-<!-- 👑 HOST -->
-<h3>👑 Host spel maken</h3>
 
-<input id="hostName" placeholder="Naam host">
-<input id="gameCode" placeholder="4-cijferige code" maxlength="4">
+    <!-- =================================================
+         HOST
+    ================================================== -->
 
-<button onclick="createGame()">
-Maak spel
-</button>
+    <h3>👑 Host spel maken</h3>
 
-<hr>
+    <input
+        id="hostName"
+        type="text"
+        placeholder="Naam host"
+        autocomplete="off"
+    >
 
-<!-- 📱 JOIN -->
-<h3>📱 Deelnemen</h3>
+    <input
+        id="gameCode"
+        type="text"
+        placeholder="4-cijferige code"
+        maxlength="4"
+        inputmode="numeric"
+        autocomplete="off"
+    >
 
-<input id="joinName" placeholder="Jouw naam">
-<input id="joinCode" placeholder="4-cijferige code" maxlength="4">
+    <button onclick="createGame()">
+        Maak spel
+    </button>
 
-<button onclick="joinGame()">
-Doe mee
-</button>
 
-<div id="playersList"></div>    
+    <hr>
 
-<hr>
 
-<!-- TEAMS -->
-<p>Aantal teams</p>
-<select id="teamCount" onchange="updateTeamInputs()">
-<option value="2">2 teams</option>
-<option value="3">3 teams</option>
-<option value="4" selected>4 teams</option>
-</select>
+    <!-- =================================================
+         DEELNEMERS
+    ================================================== -->
 
-<h3>Teamnamen</h3>
+    <h3>📱 Deelnemen</h3>
 
-<div id="teamInputs">
+    <input
+        id="joinName"
+        type="text"
+        placeholder="Jouw naam"
+        autocomplete="off"
+    >
 
-<div class="teamInput" data-team="1">
-<input id="team1Name" value="Blauw">
+    <input
+        id="joinCode"
+        type="text"
+        placeholder="4-cijferige code"
+        maxlength="4"
+        inputmode="numeric"
+        autocomplete="off"
+    >
+
+    <button onclick="joinGame()">
+        Doe mee
+    </button>
+
+
+    <!-- Hier verschijnen Host en deelnemers -->
+
+    <div id="playersList"></div>
+
+
+    <hr>
+
+
+    <!-- =================================================
+         AANTAL TEAMS
+    ================================================== -->
+
+    <p>
+        <strong>Aantal teams</strong>
+    </p>
+
+    <select
+        id="teamCount"
+        onchange="updateTeamInputs()"
+    >
+
+        <option value="2">
+            2 teams
+        </option>
+
+        <option value="3">
+            3 teams
+        </option>
+
+        <option value="4" selected>
+            4 teams
+        </option>
+
+    </select>
+
+
+
+    <!-- =================================================
+         TEAMNAMEN
+         GEEN standaard Blauw/Rood/Groen/Paars meer
+    ================================================== -->
+
+    <h3>Teamnamen</h3>
+
+    <div id="teamInputs">
+
+
+        <div
+            class="teamInput"
+            data-team="1"
+        >
+
+            <label for="team1Name">
+                🔵 Blauw
+            </label>
+
+            <input
+                id="team1Name"
+                type="text"
+                placeholder="Bijv. Snavels"
+                autocomplete="off"
+            >
+
+        </div>
+
+
+
+        <div
+            class="teamInput"
+            data-team="2"
+        >
+
+            <label for="team2Name">
+                🔴 Rood
+            </label>
+
+            <input
+                id="team2Name"
+                type="text"
+                placeholder="Bijv. Poten"
+                autocomplete="off"
+            >
+
+        </div>
+
+
+
+        <div
+            class="teamInput"
+            data-team="3"
+        >
+
+            <label for="team3Name">
+                🟢 Groen
+            </label>
+
+            <input
+                id="team3Name"
+                type="text"
+                placeholder="Bijv. Veren"
+                autocomplete="off"
+            >
+
+        </div>
+
+
+
+        <div
+            class="teamInput"
+            data-team="4"
+        >
+
+            <label for="team4Name">
+                🟣 Paars
+            </label>
+
+            <input
+                id="team4Name"
+                type="text"
+                placeholder="Bijv. Vleugels"
+                autocomplete="off"
+            >
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         CATEGORIE
+    ================================================== -->
+
+    <p>
+        <strong>Categorie</strong>
+    </p>
+
+    <select id="categorySelect">
+
+        <option value="Ooststellingwerf">
+            Ooststellingwerf
+        </option>
+
+        <option value="Fryslân">
+            Fryslân
+        </option>
+
+        <option value="Groningen">
+            Groningen
+        </option>
+
+        <option value="Drenthe">
+            Drenthe
+        </option>
+
+        <option value="Pubquiz">
+            Pubquiz
+        </option>
+
+    </select>
+
+
+    <br><br>
+
+
+    <!-- =================================================
+         START SPEL
+         Alleen Host maakt deze zichtbaar via JS
+    ================================================== -->
+
+    <button
+        id="startGameButton"
+        onclick="startGame()"
+        style="display: none;"
+    >
+        🚀 Start spel
+    </button>
+
 </div>
 
-<div class="teamInput" data-team="2">
-<input id="team2Name" value="Rood">
-</div>
-
-<div class="teamInput" data-team="3">
-<input id="team3Name" value="Groen">
-</div>
-
-<div class="teamInput" data-team="4">
-<input id="team4Name" value="Paars">
-</div>
-
-</div>
-
-<!-- CATEGORIE -->
-<p>Categorie</p>
-
-<select id="categorySelect">
-<option value="Ooststellingwerf">Ooststellingwerf</option>
-<option value="Fryslân">Fryslân</option>
-<option value="Groningen">Groningen</option>
-<option value="Drenthe">Drenthe</option>
-<option value="Pubquiz">Pubquiz</option>
-</select>
-
-<br><br>
-
-<button
-    id="startGameButton"
-    onclick="startGame()"
-    style="display:none;">
-    🚀 Start spel
-</button>
-
-</div>
 
 
-<!-- =========================
-     🔵 SPEL SCHERM 1
-========================= -->
+<!-- =====================================================
+     SCHERM 1 - SPEL
+===================================================== -->
+
 <div id="screen1" class="hidden">
 
-<h2>🎲 Appelgans</h2>
+    <h2>
+        🎲 Appelgans
+    </h2>
 
-<div id="teamOverview">
 
-<p id="teamDisplay1">🔵 <strong>Blauw</strong> — <span id="displayTeam1">Team 1</span></p>
+    <!-- =================================================
+         TEAMOVERZICHT
 
-<p id="teamDisplay2">🔴 <strong>Rood</strong> — <span id="displayTeam2">Team 2</span></p>
+         De kleur staat vast.
+         De teamnaam komt uit de invoer/Firebase.
+    ================================================== -->
 
-<p id="teamDisplay3">🟢 <strong>Groen</strong> — <span id="displayTeam3">Team 3</span></p>
+    <div id="teamOverview">
 
-<p id="teamDisplay4">🟣 <strong>Paars</strong> — <span id="displayTeam4">Team 4</span></p>
+
+        <p id="teamDisplay1">
+            🔵 <strong>Blauw</strong>
+            —
+            <span id="displayTeam1">
+                Nog niet ingesteld
+            </span>
+        </p>
+
+
+        <p id="teamDisplay2">
+            🔴 <strong>Rood</strong>
+            —
+            <span id="displayTeam2">
+                Nog niet ingesteld
+            </span>
+        </p>
+
+
+        <p id="teamDisplay3">
+            🟢 <strong>Groen</strong>
+            —
+            <span id="displayTeam3">
+                Nog niet ingesteld
+            </span>
+        </p>
+
+
+        <p id="teamDisplay4">
+            🟣 <strong>Paars</strong>
+            —
+            <span id="displayTeam4">
+                Nog niet ingesteld
+            </span>
+        </p>
+
+    </div>
+
+
+    <hr>
+
+
+    <!-- Wie is aan de beurt -->
+
+    <h2 id="turn"></h2>
+
+
+    <!-- Categorie -->
+
+    <p id="currentCategory"></p>
+
+
+    <!-- Dobbelsteen -->
+
+    <button
+        id="rollDiceButton"
+        onclick="rollDice()"
+    >
+        🎲 Gooi dobbelsteen
+    </button>
+
+
+    <p id="diceResult"></p>
+
+    <p id="statusMessage"></p>
 
 </div>
 
-<hr>
-
-<h2 id="turn"></h2>
-
-<p id="currentCategory"></p>
-
-<button id="rollDiceButton" onclick="rollDice()">
-    🎲 Gooi dobbelsteen
-</button>
-
-<p id="diceResult"></p>
-
-<p id="statusMessage"></p>
-
-</div>
 
 
-<!-- =========================
-     🟣 VRAGEN
-========================= -->
+<!-- =====================================================
+     SCHERM 2 - VRAAG
+===================================================== -->
+
 <div id="screen2" class="hidden">
 
-<h2>Vraag</h2>
+    <h2>
+        Vraag
+    </h2>
 
-<p id="question"></p>
 
-<button id="btnA" onclick="checkAnswer('a')" class="answerBtn"></button>
-<button id="btnB" onclick="checkAnswer('b')" class="answerBtn"></button>
-<button id="btnC" onclick="checkAnswer('c')" class="answerBtn"></button>
+    <p id="question"></p>
 
-<p id="explanation"></p>
+
+    <button
+        id="btnA"
+        onclick="checkAnswer('a')"
+        class="answerBtn"
+    ></button>
+
+
+    <button
+        id="btnB"
+        onclick="checkAnswer('b')"
+        class="answerBtn"
+    ></button>
+
+
+    <button
+        id="btnC"
+        onclick="checkAnswer('c')"
+        class="answerBtn"
+    ></button>
+
+
+    <p id="explanation"></p>
 
 </div>
 
 
-<!-- =========================
-     🟤 BORD
-========================= -->
+
+<!-- =====================================================
+     SCHERM 3 - SPEELBORD
+===================================================== -->
+
 <div id="screen3" class="hidden">
 
-<div id="board"></div>
+    <div id="board"></div>
 
 </div>
+
+
+
+<!-- =====================================================
+     POPUP
+===================================================== -->
 
 <div id="popup"></div>
 
 
-<!-- =========================
-     SCRIPTS
-========================= -->
+
+<!-- =====================================================
+     FIREBASE
+===================================================== -->
+
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
 
+
+
+<!-- =====================================================
+     EIGEN SCRIPTS
+
+     BELANGRIJK:
+     Iedere functie hoort maar één keer te bestaan
+     in multiplayer.js en app.js.
+===================================================== -->
+
 <script src="data/vragen.js"></script>
+
 <script src="firebase.js"></script>
+
 <script src="multiplayer.js"></script>
+
 <script src="app.js"></script>
 
+
 </body>
+
 </html>
