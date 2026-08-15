@@ -661,37 +661,110 @@ function nextTurn() {
 
 function rollDice() {
 
-    // Voorkom meerdere worpen tijdens dezelfde beurt
+    // =========================
+    // 1. ALLEEN HET TEAM AAN DE BEURT MAG GOOIEN
+    // =========================
+
+    if (currentTeam !== window.myTeam) {
+
+        statusMessage.innerText =
+            "⏳ Wacht op je beurt.";
+
+        return;
+    }
+
+
+    // =========================
+    // 2. NIET TWEE KEER GOOIEN
+    // =========================
+
     if (window.diceRolled) {
         return;
     }
 
-    // Deze beurt is nu geworpen
     window.diceRolled = true;
 
-    // Dobbelgeluid afspelen
-    soundDobbel.currentTime = 0;
-    soundDobbel.play();
 
-    const roll = Math.floor(Math.random() * 6) + 1;
+    // =========================
+    // 3. DOBBELSTEEN GELUID
+    // =========================
+
+    soundDobbel.currentTime = 0;
+
+    soundDobbel.play()
+        .catch(() => {});
+
+
+    // =========================
+    // 4. ÉÉN CENTRALE WORP
+    // =========================
+
+    const roll =
+        Math.floor(Math.random() * 6) + 1;
+
     lastRoll = roll;
 
+
+    // =========================
+    // 5. WORP NAAR FIREBASE
+    // =========================
+
+    if (
+        window.currentGameCode &&
+        window.isHost !== undefined
+    ) {
+
+        firebase.database()
+            .ref(
+                "games/" +
+                window.currentGameCode
+            )
+            .update({
+
+                currentTurn:
+                    currentTeam,
+
+                roll:
+                    roll,
+
+                phase:
+                    "rolled"
+
+            })
+            .catch(error => {
+
+                console.error(
+                    "❌ Fout bij opslaan dobbelworp:",
+                    error
+                );
+
+                window.diceRolled = false;
+
+                statusMessage.innerText =
+                    "Fout bij het gooien.";
+
+            });
+
+    }
+
+
+    // =========================
+    // 6. LOKALE WEERGAVE
+    // =========================
+
     categorySelect.disabled = true;
+
     statusMessage.innerText = "";
 
-    // Pas na 3,5 seconden laten zien wat er gegooid is
+
+    // Zelfde vertraging als voorheen
     setTimeout(() => {
 
-        diceText.innerText = "🎲 Je gooide: " + roll;
-
-        setTimeout(() => {
-
-            showScreen(screen2);
-            loadQuestion();
-
-        }, 1500);
+        diceText.innerText =
+            "🎲 Je gooide: " + roll;
 
     }, 3500);
+
 }
 
 /* ===== VRAGEN ===== */
