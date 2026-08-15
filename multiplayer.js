@@ -314,158 +314,123 @@ function joinGame() {
 function listenToPlayers(code) {
 
     firebase.database()
+        .ref("games/" + code + "/players")
+        .on("value", snapshot => {
 
-        .ref(
-            "games/" +
-            code +
-            "/players"
-        )
+            const players = snapshot.val();
 
-        .on(
-            "value",
-            snapshot => {
+            const list =
+                document.getElementById("playersList");
 
-                const players =
-                    snapshot.val();
+            if (!list) {
+                return;
+            }
+
+            list.innerHTML = "";
+
+            if (!players) {
+                return;
+            }
 
 
-                const list =
+            // =====================================
+            // SPELERSLIJST
+            // =====================================
+
+            Object.keys(players).forEach(key => {
+
+                const player =
+                    players[key];
+
+                const div =
+                    document.createElement("div");
+
+                if (key === "host") {
+
+                    div.innerText =
+                        "👑 Host: " +
+                        player.name;
+
+                } else {
+
+                    div.innerText =
+                        "👤 " +
+                        player.name;
+
+                }
+
+                list.appendChild(div);
+
+            });
+
+
+            // =====================================
+            // KOPPEL NAAM AAN KLEUR/TEAM
+            // =====================================
+
+            for (let i = 0; i < 4; i++) {
+
+                const display =
                     document.getElementById(
-                        "playersList"
+                        "displayTeam" + (i + 1)
                     );
 
-
-                if (!list) {
-
-                    return;
+                if (!display) {
+                    continue;
                 }
 
 
-                list.innerHTML = "";
+                let playerForTeam = null;
 
 
-                if (!players) {
+                Object.keys(players).forEach(key => {
 
-                    return;
-                }
+                    const player =
+                        players[key];
 
+                    if (
+                        player &&
+                        player.team === i
+                    ) {
 
-                /* =====================================
-                   SPELERSLIJST
-                   ===================================== */
+                        playerForTeam =
+                            player;
 
-                Object.keys(players)
-                    .forEach(key => {
-
-                        const player =
-                            players[key];
-
-
-                        const div =
-                            document.createElement(
-                                "div"
-                            );
-
-
-                        if (key === "host") {
-
-                            div.innerText =
-                                "👑 Host: " +
-                                player.name;
-
-                        } else {
-
-                            div.innerText =
-                                "👤 " +
-                                player.name;
-
-                        }
-
-
-                        list.appendChild(div);
-
-                    });
-
-
-                /* =====================================
-                   KLEUR + NAAM KOPPELEN
-                   ===================================== */
-
-                for (
-                    let i = 0;
-                    i < 4;
-                    i++
-                ) {
-
-                    const display =
-                        document.getElementById(
-                            "displayTeam" +
-                            (i + 1)
-                        );
-
-
-                    if (!display) {
-
-                        continue;
                     }
 
-
-                    let playerForTeam = null;
-
-
-                    Object.keys(players)
-                        .forEach(key => {
-
-                            const player =
-                                players[key];
+                });
 
 
-                            if (
-                                player &&
-                                player.team === i
-                            ) {
+                if (playerForTeam) {
 
-                                playerForTeam =
-                                    player;
+                    // BELANGRIJK:
+                    // naam ook in teams[] zetten
 
-                            }
-
-                        });
+                    teams[i].name =
+                        playerForTeam.name;
 
 
-                    if (playerForTeam) {
-
-                        /* Alleen de naam */
-
-                        display.innerText =
-                            playerForTeam.name;
+                    display.innerText =
+                        playerForTeam.name;
 
 
-                        if (
-                            display.parentElement
-                        ) {
+                    if (display.parentElement) {
 
-                            display.parentElement.style.display =
-                                "block";
+                        display.parentElement.style.display =
+                            "block";
 
-                        }
+                    }
 
-                    } else {
+                } else {
 
-                        /* Team nog niet bezet */
+                    teams[i].name = "";
 
-                        display.innerText =
-                            "";
+                    display.innerText = "";
 
+                    if (display.parentElement) {
 
-                        if (
-                            display.parentElement
-                        ) {
-
-                            display.parentElement.style.display =
-                                "none";
-
-                        }
+                        display.parentElement.style.display =
+                            "none";
 
                     }
 
@@ -473,7 +438,17 @@ function listenToPlayers(code) {
 
             }
 
-        );
+
+            // Beurt opnieuw tekenen
+            if (
+                typeof updateTurn === "function"
+            ) {
+
+                updateTurn();
+
+            }
+
+        });
 
 }
 
