@@ -503,19 +503,24 @@ cell
 
 function updateTurn() {
 
-    const team = teams[currentTeam];
+    const team =
+        teams[currentTeam];
 
     if (!team) {
         return;
     }
 
+
+    const naam =
+        team.name || "Nog niet bekend";
+
+
     turnText.innerText =
         team.icon +
         " " +
-        team.colorName +
-        " — " +
-        team.name +
+        naam +
         " is aan de beurt";
+
 
     const activeTeamCount =
         parseInt(
@@ -523,6 +528,7 @@ function updateTurn() {
             activeTeams ||
             4
         );
+
 
     for (let i = 0; i < 4; i++) {
 
@@ -535,22 +541,29 @@ function updateTurn() {
             continue;
         }
 
+
         const row =
             display.parentElement;
 
+
         if (i < activeTeamCount) {
 
-            row.style.display = "block";
+            row.style.display =
+                "block";
 
             display.innerText =
-                teams[i].name;
+                teams[i].name ||
+                "Nog niet bekend";
 
         } else {
 
-            row.style.display = "none";
+            row.style.display =
+                "none";
 
         }
+
     }
+
 }
 
 function nextTurn(){
