@@ -361,33 +361,32 @@ teams[3].name =
 
 function updateTeamInputs() {
 
-    const select =
-        document.getElementById("teamCount");
+    const teamCount =
+        parseInt(
+            document.getElementById("teamCount").value,
+            10
+        );
 
-    if (!select) {
-        return;
-    }
-
-    const count =
-        parseInt(select.value, 10);
-
-    const inputs =
+    const teamInputs =
         document.querySelectorAll(".teamInput");
 
-    inputs.forEach(el => {
+    teamInputs.forEach(input => {
 
-        const nr =
-            parseInt(el.dataset.team, 10);
+        const teamNumber =
+            parseInt(
+                input.dataset.team,
+                10
+            );
 
-        if (nr <= count) {
+        if (teamNumber <= teamCount) {
 
-            el.hidden = false;
-            el.style.display = "block";
+            input.style.display = "block";
+            input.hidden = false;
 
         } else {
 
-            el.hidden = true;
-            el.style.display = "none";
+            input.style.display = "none";
+            input.hidden = true;
 
         }
 
