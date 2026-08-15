@@ -360,13 +360,39 @@ teams[3].name =
 }
 
 function updateTeamInputs() {
-const count = parseInt(document.getElementById("teamCount").value);
-const inputs = document.querySelectorAll(".teamInput");
 
-inputs.forEach(el => {
-const nr = parseInt(el.dataset.team);
-el.style.display = nr <= count ? "block" : "none";
-});
+    const select =
+        document.getElementById("teamCount");
+
+    if (!select) {
+        return;
+    }
+
+    const count =
+        parseInt(select.value, 10);
+
+    const inputs =
+        document.querySelectorAll(".teamInput");
+
+    inputs.forEach(el => {
+
+        const nr =
+            parseInt(el.dataset.team, 10);
+
+        if (nr <= count) {
+
+            el.hidden = false;
+            el.style.display = "block";
+
+        } else {
+
+            el.hidden = true;
+            el.style.display = "none";
+
+        }
+
+    });
+
 }
 
 function sleep(ms){
@@ -522,12 +548,9 @@ function updateTurn() {
         " is aan de beurt";
 
 
+    // Firebase is leidend.
     const activeTeamCount =
-        parseInt(
-            document.getElementById("teamCount")?.value ||
-            activeTeams ||
-            4
-        );
+        parseInt(activeTeams, 10);
 
 
     for (let i = 0; i < 4; i++) {
@@ -566,29 +589,63 @@ function updateTurn() {
 
 }
 
-function nextTurn(){
+function nextTurn() {
 
-    currentTeam++;
+    // Zorg dat activeTeams altijd een geldig getal is.
+    activeTeams =
+        parseInt(activeTeams, 10);
 
-    if(currentTeam >= activeTeams){
-        currentTeam = 0;
+    if (
+        !Number.isInteger(activeTeams) ||
+        activeTeams < 1
+    ) {
+        activeTeams = 2;
     }
 
-    const team =
+
+    // Volgende team
+    currentTeam++;
+
+
+    // Nooit buiten het actieve aantal teams
+    if (
+        currentTeam >= activeTeams
+    ) {
+
+        currentTeam = 0;
+
+    }
+
+
+    let team =
         teams[currentTeam];
 
-    if(team.skipTurns > 0){
+
+    if (!team) {
+        currentTeam = 0;
+        team = teams[0];
+    }
+
+
+    // Beurt overslaan
+    if (
+        team.skipTurns &&
+        team.skipTurns > 0
+    ) {
 
         team.skipTurns--;
 
         statusMessage.innerText =
             team.icon +
+            " " +
+            team.name +
             " moet een beurt overslaan.";
 
         nextTurn();
 
         return;
     }
+
 
     // Nieuwe beurt: opnieuw dobbelen toegestaan
     window.diceRolled = false;
