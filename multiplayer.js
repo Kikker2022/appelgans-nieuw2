@@ -461,142 +461,49 @@ function listenToPlayers(code) {
 function listenToGameState() {
 
     if (!window.currentGameCode) {
-
         return;
     }
 
-
     firebase.database()
+        .ref("games/" + window.currentGameCode)
+        .on("value", snapshot => {
 
-        .ref(
-            "games/" +
-            window.currentGameCode
-        )
+            const game = snapshot.val();
 
-        .on(
-            "value",
-            snapshot => {
+            if (!game) {
+                return;
+            }
 
-                const game =
-                    snapshot.val();
+            console.log("GAME DATA:", game);
 
 
-                if (!game) {
+            // =========================
+            // AANTAL TEAMS
+            // =========================
 
-                    return;
-                }
+            if (game.activeTeams !== undefined) {
 
+                activeTeams =
+                    parseInt(game.activeTeams, 10);
 
-                console.log(
-                    "GAME DATA:",
-                    game
-                );
-
-
-                /* =====================================
-                   AANTAL TEAMS
-                   ===================================== */
-
-                if (
-                    game.activeTeams !==
-                    undefined
-                ) {
-
-                    activeTeams =
-                        parseInt(
-                            game.activeTeams
-                        );
-
-                }
+            }
 
 
-                /* =====================================
-                   CATEGORIE
-                   ===================================== */
+            // =========================
+            // TEAMNAMEN
+            // =========================
 
-                if (
-                    game.selectedCategory
-                ) {
+            if (game.teamNames) {
 
-                    selectedCategory =
-                        game.selectedCategory;
-
-                }
-
-
-                /* =====================================
-                   HUIDIGE BEURT
-                   ===================================== */
-
-               if (game.currentTurn !== undefined) {
-
-    currentTeam =
-        parseInt(game.currentTurn);
-
-}
-
-
-// Mijn team synchroniseren
-if (
-    game.players &&
-    window.myPlayerId &&
-    game.players[window.myPlayerId]
-) {
-
-    window.myTeam =
-        parseInt(
-            game.players[window.myPlayerId].team
-        );
-
-}
-
-                /* =====================================
-                   SPEL GESTART
-                   ===================================== */
-
-                if (
-                    game.gameState ===
-                    "playing"
-                ) {
-
-
-                    /* Deelnemers automatisch
-                       naar scherm 1 */
-
-                    if (!window.isHost) {
-
-                        showScreen(
-                            screen1
-                        );
-
-                    }
-
-
-                    /* Beurt bijwerken */
+                for (let i = 0; i < 4; i++) {
 
                     if (
-                        typeof updateTurn ===
-                        "function"
+                        game.teamNames[i] !== undefined &&
+                        teams[i]
                     ) {
 
-                        updateTurn();
-
-                    }
-
-
-                    /* Categorie tonen */
-
-                    const categoryText =
-                        document.getElementById(
-                            "currentCategory"
-                        );
-
-
-                    if (categoryText) {
-
-                        categoryText.innerText =
-                            "Categorie: " +
-                            selectedCategory;
+                        teams[i].name =
+                            game.teamNames[i];
 
                     }
 
@@ -604,6 +511,90 @@ if (
 
             }
 
-        );
+
+            // =========================
+            // MIJN TEAM
+            // =========================
+
+            if (
+                game.players &&
+                window.myPlayerId &&
+                game.players[window.myPlayerId]
+            ) {
+
+                window.myTeam =
+                    parseInt(
+                        game.players[window.myPlayerId].team,
+                        10
+                    );
+
+            }
+
+
+            // =========================
+            // HUIDIGE BEURT
+            // =========================
+
+            if (game.currentTurn !== undefined) {
+
+                currentTeam =
+                    parseInt(game.currentTurn, 10);
+
+            }
+
+
+            // =========================
+            // CATEGORIE
+            // =========================
+
+            if (game.selectedCategory) {
+
+                selectedCategory =
+                    game.selectedCategory;
+
+            }
+
+
+            // =========================
+            // SPEL GESTART
+            // =========================
+
+            if (game.gameState === "playing") {
+
+                if (!window.isHost) {
+
+                    showScreen(screen1);
+
+                }
+
+                updateTurn();
+
+            }
+
+
+            // =========================
+            // DOBBELWORP ONTVANGEN
+            // =========================
+
+            if (game.phase === "rolled") {
+
+                if (game.roll !== undefined) {
+
+                    lastRoll =
+                        parseInt(game.roll, 10);
+
+                    diceText.innerText =
+                        "🎲 Je gooide: " +
+                        lastRoll;
+
+                }
+
+
+                // Iedereen gaat naar de vraag
+                showScreen(screen2);
+
+            }
+
+        });
 
 }
