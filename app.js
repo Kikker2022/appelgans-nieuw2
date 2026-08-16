@@ -262,6 +262,8 @@ teams[3].name =
 
     currentTurn: 0,
 
+    phase: "turn",
+
     activeTeams: activeTeams,
 
     selectedCategory: selectedCategory,
@@ -917,11 +919,7 @@ function loadSynchronizedQuestion(index) {
 
 async function checkAnswer(choice) {
 
-    // =====================================
-    // ALLEEN HET TEAM AAN DE BEURT
-    // MAG ANTWOORD GEVEN
-    // =====================================
-
+    // Alleen het team dat aan de beurt is mag antwoorden
     if (
         parseInt(currentTeam, 10) !==
         parseInt(window.myTeam, 10)
@@ -929,27 +927,11 @@ async function checkAnswer(choice) {
         return;
     }
 
-
-    // =====================================
-    // ANTWOORDKNOPPEN UITZETTEN
-    // =====================================
-
     btnA.disabled = true;
     btnB.disabled = true;
     btnC.disabled = true;
 
-
-    // =====================================
-    // JUISTE ANTWOORD
-    // =====================================
-
-    const correct =
-        currentQuestion.correct;
-
-
-    // =====================================
-    // GOED ANTWOORD
-    // =====================================
+    const correct = currentQuestion.correct;
 
     if (choice === correct) {
 
@@ -959,68 +941,32 @@ async function checkAnswer(choice) {
             )
             .classList.add("correct");
 
-
         explanationText.innerText =
-            "✅ Goed! " +
-            currentQuestion.uitleg;
+            "✅ Goed! " + currentQuestion.uitleg;
 
-
-        // Even de uitleg laten zien
         await sleep(4000);
 
-
-        const team =
-            teams[currentTeam];
-
-
-        // =================================
-        // NAAR SPEELBORD
-        // =================================
+        const team = teams[currentTeam];
 
         showScreen(screen3);
 
+        // Pion langzaam verplaatsen
+        for (let i = 0; i < lastRoll; i++) {
 
-        // =================================
-        // PION VERPLAATSEN
-        // =================================
-
-        for (
-            let i = 0;
-            i < lastRoll;
-            i++
-        ) {
-
-            if (
-                team.position <
-                TOTAL_CELLS
-            ) {
+            if (team.position < TOTAL_CELLS) {
 
                 team.position++;
-
                 updateBoard();
-
                 await sleep(700);
 
             }
-
         }
 
-
-        // =================================
-        // SPECIALE VAKKEN
-        // =================================
-
+        // Speciale vakken uitvoeren
         await handleSpecial(team);
 
-
-        // =================================
-        // GEWONNEN?
-        // =================================
-
-        if (
-            team.position >=
-            TOTAL_CELLS
-        ) {
+        // Gewonnen
+        if (team.position >= TOTAL_CELLS) {
 
             soundWin.play();
 
@@ -1034,29 +980,14 @@ async function checkAnswer(choice) {
             return;
         }
 
+        // Volgende team berekenen
+        let nextTeam = currentTeam + 1;
 
-        // =================================
-        // VOLGENDE TEAM BEREKENEN
-        // =================================
-
-        let nextTeam =
-            currentTeam + 1;
-
-
-        if (
-            nextTeam >=
-            activeTeams
-        ) {
-
+        if (nextTeam >= activeTeams) {
             nextTeam = 0;
-
         }
 
-
-        // =================================
-        // VOLGENDE BEURT NAAR FIREBASE
-        // =================================
-
+        // Volgende beurt centraal opslaan
         firebase.database()
             .ref(
                 "games/" +
@@ -1064,17 +995,10 @@ async function checkAnswer(choice) {
             )
             .update({
 
-                currentTurn:
-                    nextTeam,
-
-                phase:
-                    "turn",
-
-                roll:
-                    null,
-
-                questionIndex:
-                    null
+                currentTurn: nextTeam,
+                phase: "turn",
+                roll: null,
+                questionIndex: null
 
             })
             .catch(error => {
@@ -1086,21 +1010,15 @@ async function checkAnswer(choice) {
 
             });
 
-
         return;
     }
 
-
-    // =====================================
-    // FOUT ANTWOORD
-    // =====================================
-
+    // Fout antwoord
     document
         .getElementById(
             "btn" + choice.toUpperCase()
         )
         .classList.add("wrong");
-
 
     document
         .getElementById(
@@ -1108,38 +1026,19 @@ async function checkAnswer(choice) {
         )
         .classList.add("correct");
 
-
     explanationText.innerText =
-        "❌ Fout! " +
-        currentQuestion.uitleg;
-
+        "❌ Fout! " + currentQuestion.uitleg;
 
     await sleep(3500);
 
+    // Volgende team berekenen
+    let nextTeam = currentTeam + 1;
 
-    // =====================================
-    // VOLGENDE TEAM
-    // =====================================
-
-    let nextTeam =
-        currentTeam + 1;
-
-
-    if (
-        nextTeam >=
-        activeTeams
-    ) {
-
+    if (nextTeam >= activeTeams) {
         nextTeam = 0;
-
     }
 
-
-    // =====================================
-    // OOK BIJ FOUT ANTWOORD
-    // VOLGENDE BEURT VIA FIREBASE
-    // =====================================
-
+    // Ook bij fout antwoord naar de volgende beurt
     firebase.database()
         .ref(
             "games/" +
@@ -1147,17 +1046,10 @@ async function checkAnswer(choice) {
         )
         .update({
 
-            currentTurn:
-                nextTeam,
-
-            phase:
-                "turn",
-
-            roll:
-                null,
-
-            questionIndex:
-                null
+            currentTurn: nextTeam,
+            phase: "turn",
+            roll: null,
+            questionIndex: null
 
         })
         .catch(error => {
@@ -1168,64 +1060,6 @@ async function checkAnswer(choice) {
             );
 
         });
-
-}
-
-/* speciale vakken */
-
-await handleSpecial(team);
-
-/* gewonnen */
-
-if(team.position >= TOTAL_CELLS){
-
-soundWin.play();
-
-showPopup(
-team.icon +
-" heeft gewonnen!"
-);
-
-return;
-
-}
-
-/* volgende beurt */
-
-nextTurn();
-
-setTimeout(()=>{
-
-showScreen(screen1);
-},3500);
-
-}else{
-
-document
-.getElementById(
-"btn" + choice.toUpperCase()
-)
-.classList.add("wrong");
-
-document
-.getElementById(
-"btn" + correct.toUpperCase()
-)
-.classList.add("correct");
-
-explanationText.innerText =
-"❌ Fout! " +
-currentQuestion.uitleg;
-
-setTimeout(()=>{
-
-nextTurn();
-
-showScreen(screen1);
-
-},3500);
-
-}
 
 }
 
@@ -1345,26 +1179,3 @@ screen0.classList.add("hidden");
 screen1.classList.add("hidden");
 screen2.classList.add("hidden");
 screen3.classList.add("hidden");
-
-function showTurn(index) {
-
-    const teams = [
-        document.getElementById("team1Name")?.value || "Team 1",
-        document.getElementById("team2Name")?.value || "Team 2",
-        document.getElementById("team3Name")?.value || "Team 3",
-        document.getElementById("team4Name")?.value || "Team 4"
-    ];
-
-    document.getElementById("turn").innerText =
-        "Beurt: " + teams[index];
-
-}
-
-setTimeout(() => {
-
-    const code = document.getElementById("gameCode")?.value
-        || document.getElementById("joinCode")?.value;
-
-    nextTurn(code);
-
-}, 1500);
