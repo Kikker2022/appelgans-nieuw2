@@ -915,6 +915,57 @@ function loadSynchronizedQuestion(index) {
 
 }
 
+
+// =====================================================
+// LAATSTE DOBBELWORP BOVEN HET SPEELBORD
+// =====================================================
+
+function showBoardDice(roll) {
+
+    let boardDice =
+        document.getElementById("boardDiceResult");
+
+    if (!boardDice) {
+
+        boardDice =
+            document.createElement("p");
+
+        boardDice.id =
+            "boardDiceResult";
+
+        boardDice.style.fontSize =
+            "1.2rem";
+
+        boardDice.style.fontWeight =
+            "bold";
+
+        boardDice.style.margin =
+            "10px 0";
+
+        const boardElement =
+            document.getElementById("board");
+
+        if (boardElement) {
+
+            boardElement.parentElement.insertBefore(
+                boardDice,
+                boardElement
+            );
+
+        } else {
+
+            document.body.appendChild(
+                boardDice
+            );
+
+        }
+
+    }
+
+    boardDice.innerText =
+        "🎲 Laatste worp: " + roll;
+}
+
 /* ===== ANTWOORD CONTROLEREN ===== */
 
 async function checkAnswer(choice) {
@@ -949,6 +1000,8 @@ async function checkAnswer(choice) {
         const team = teams[currentTeam];
 
         showScreen(screen3);
+
+        showBoardDice(lastRoll);
 
         // Pion langzaam verplaatsen
         for (let i = 0; i < lastRoll; i++) {
