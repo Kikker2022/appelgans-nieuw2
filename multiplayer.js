@@ -464,174 +464,192 @@ function listenToGameState() {
         return;
     }
 
-
     firebase.database()
+        .ref("games/" + window.currentGameCode)
+        .on("value", snapshot => {
 
-        .ref(
-            "games/" +
-            window.currentGameCode
-        )
+            const game = snapshot.val();
 
-        .on(
-            "value",
-            snapshot => {
+            if (!game) {
+                return;
+            }
 
-                const game =
-                    snapshot.val();
+            console.log("GAME DATA:", game);
 
 
-                if (!game) {
+            // =====================================
+            // AANTAL TEAMS
+            // =====================================
+
+            if (game.activeTeams !== undefined) {
+
+                activeTeams =
+                    parseInt(game.activeTeams, 10);
+
+            }
+
+
+            // =====================================
+            // TEAMNAMEN
+            // =====================================
+
+            if (game.teamNames) {
+
+                for (let i = 0; i < 4; i++) {
+
+                    if (
+                        game.teamNames[i] !== undefined &&
+                        teams[i]
+                    ) {
+
+                        teams[i].name =
+                            game.teamNames[i];
+
+                    }
+
+                }
+
+            }
+
+
+            // =====================================
+            // MIJN TEAM
+            // =====================================
+
+            if (
+                game.players &&
+                window.myPlayerId &&
+                game.players[window.myPlayerId]
+            ) {
+
+                window.myTeam =
+                    parseInt(
+                        game.players[window.myPlayerId].team,
+                        10
+                    );
+
+            }
+
+
+            // =====================================
+            // HUIDIGE BEURT
+            // =====================================
+
+            if (game.currentTurn !== undefined) {
+
+                currentTeam =
+                    parseInt(
+                        game.currentTurn,
+                        10
+                    );
+
+            }
+
+
+            // =====================================
+            // CATEGORIE
+            // =====================================
+
+            if (game.selectedCategory) {
+
+                selectedCategory =
+                    game.selectedCategory;
+
+            }
+
+
+            // =====================================
+            // TEAMOVERZICHT
+            // =====================================
+
+            updateTurn();
+
+
+            // =====================================
+            // SPEL GESTART
+            // =====================================
+
+            if (game.gameState === "playing") {
+
+                /*
+                 * BELANGRIJK:
+                 * De fase bepaalt nu welk scherm
+                 * iedereen moet zien.
+                 */
+
+
+                // ---------------------------------
+                // FASE: TURN
+                // ---------------------------------
+
+                if (game.phase === "turn") {
+
+                    /*
+                     * Oude vraag afsluiten
+                     */
+
+                    currentQuestion = null;
+
+                    explanationText.innerText = "";
+
+                    diceText.innerText = "";
+
+
+                    /*
+                     * Iedereen naar scherm 1
+                     */
+
+                    showScreen(screen1);
+
+
+                    /*
+                     * Alleen het team aan de beurt
+                     * mag gooien.
+                     */
+
+                    if (
+                        parseInt(currentTeam, 10) ===
+                        parseInt(window.myTeam, 10)
+                    ) {
+
+                        statusMessage.innerText =
+                            "🎲 Jij bent aan de beurt.";
+
+                    } else {
+
+                        statusMessage.innerText =
+                            "⏳ Wacht op je beurt.";
+
+                    }
+
+
+                    /*
+                     * Nieuwe beurt = opnieuw gooien toegestaan
+                     */
+
+                    window.diceRolled = false;
+
                     return;
                 }
 
 
-                console.log(
-                    "GAME DATA:",
-                    game
-                );
+                // ---------------------------------
+                // FASE: QUESTION
+                // ---------------------------------
 
+                if (game.phase === "question") {
 
-                // =========================
-                // AANTAL TEAMS
-                // =========================
+                    /*
+                     * Iedereen ziet dezelfde worp
+                     */
 
-                if (
-                    game.activeTeams !==
-                    undefined
-                ) {
-
-                    activeTeams =
-                        parseInt(
-                            game.activeTeams,
-                            10
-                        );
-
-                }
-
-
-                // =========================
-                // TEAMNAMEN
-                // =========================
-
-                if (game.teamNames) {
-
-                    for (
-                        let i = 0;
-                        i < 4;
-                        i++
-                    ) {
-
-                        if (
-                            game.teamNames[i] !==
-                                undefined &&
-                            teams[i]
-                        ) {
-
-                            teams[i].name =
-                                game.teamNames[i];
-
-                        }
-
-                    }
-
-                }
-
-
-                // =========================
-                // MIJN TEAM
-                // =========================
-
-                if (
-                    game.players &&
-                    window.myPlayerId &&
-                    game.players[
-                        window.myPlayerId
-                    ]
-                ) {
-
-                    window.myTeam =
-                        parseInt(
-                            game.players[
-                                window.myPlayerId
-                            ].team,
-                            10
-                        );
-
-                }
-
-
-                // =========================
-                // HUIDIGE BEURT
-                // =========================
-
-                if (
-                    game.currentTurn !==
-                    undefined
-                ) {
-
-                    currentTeam =
-                        parseInt(
-                            game.currentTurn,
-                            10
-                        );
-
-                }
-
-
-                // =========================
-                // CATEGORIE
-                // =========================
-
-                if (
-                    game.selectedCategory
-                ) {
-
-                    selectedCategory =
-                        game.selectedCategory;
-
-                }
-
-
-                // =========================
-                // SPEL GESTART
-                // =========================
-
-                if (
-                    game.gameState ===
-                    "playing"
-                ) {
-
-                    if (!window.isHost) {
-
-                        showScreen(screen1);
-
-                    }
-
-                    updateTurn();
-
-                }
-
-
-                // =========================
-                // VRAAGFASE
-                // =========================
-
-                if (
-                    game.phase ===
-                    "question"
-                ) {
-
-                    if (
-                        game.roll !==
-                        undefined
-                    ) {
+                    if (game.roll !== undefined) {
 
                         lastRoll =
                             parseInt(
                                 game.roll,
                                 10
                             );
-
 
                         diceText.innerText =
                             "🎲 Je gooide: " +
@@ -640,8 +658,16 @@ function listenToGameState() {
                     }
 
 
+                    /*
+                     * Iedereen naar vraag-scherm
+                     */
+
                     showScreen(screen2);
 
+
+                    /*
+                     * Exact dezelfde vraag laden
+                     */
 
                     if (
                         game.questionIndex !==
@@ -654,10 +680,11 @@ function listenToGameState() {
 
                     }
 
+                    return;
                 }
 
             }
 
-        );
+        });
 
 }
