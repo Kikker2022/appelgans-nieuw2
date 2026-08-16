@@ -915,47 +915,259 @@ function loadSynchronizedQuestion(index) {
 
 /* ===== ANTWOORD CONTROLEREN ===== */
 
-async function checkAnswer(choice){
+async function checkAnswer(choice) {
 
-btnA.disabled = true;
-btnB.disabled = true;
-btnC.disabled = true;
+    // =====================================
+    // ALLEEN HET TEAM AAN DE BEURT
+    // MAG ANTWOORD GEVEN
+    // =====================================
 
-const correct =
-currentQuestion.correct;
+    if (
+        parseInt(currentTeam, 10) !==
+        parseInt(window.myTeam, 10)
+    ) {
+        return;
+    }
 
-if(choice === correct){
 
-document
-.getElementById(
-"btn" + choice.toUpperCase()
-)
-.classList.add("correct");
+    // =====================================
+    // ANTWOORDKNOPPEN UITZETTEN
+    // =====================================
 
-explanationText.innerText =
-"✅ Goed! " +
-currentQuestion.uitleg;
+    btnA.disabled = true;
+    btnB.disabled = true;
+    btnC.disabled = true;
 
-await sleep(4000);
 
-showScreen(screen3);
+    // =====================================
+    // JUISTE ANTWOORD
+    // =====================================
 
-const team =
-teams[currentTeam];
+    const correct =
+        currentQuestion.correct;
 
-/* langzaam bewegen */
 
-for(let i=0; i<lastRoll; i++){
+    // =====================================
+    // GOED ANTWOORD
+    // =====================================
 
-if(team.position < TOTAL_CELLS){
+    if (choice === correct) {
 
-team.position++;
+        document
+            .getElementById(
+                "btn" + choice.toUpperCase()
+            )
+            .classList.add("correct");
 
-updateBoard();
 
-await sleep(700);
+        explanationText.innerText =
+            "✅ Goed! " +
+            currentQuestion.uitleg;
 
-}
+
+        // Even de uitleg laten zien
+        await sleep(4000);
+
+
+        const team =
+            teams[currentTeam];
+
+
+        // =================================
+        // NAAR SPEELBORD
+        // =================================
+
+        showScreen(screen3);
+
+
+        // =================================
+        // PION VERPLAATSEN
+        // =================================
+
+        for (
+            let i = 0;
+            i < lastRoll;
+            i++
+        ) {
+
+            if (
+                team.position <
+                TOTAL_CELLS
+            ) {
+
+                team.position++;
+
+                updateBoard();
+
+                await sleep(700);
+
+            }
+
+        }
+
+
+        // =================================
+        // SPECIALE VAKKEN
+        // =================================
+
+        await handleSpecial(team);
+
+
+        // =================================
+        // GEWONNEN?
+        // =================================
+
+        if (
+            team.position >=
+            TOTAL_CELLS
+        ) {
+
+            soundWin.play();
+
+            showPopup(
+                team.icon +
+                " " +
+                team.name +
+                " heeft gewonnen!"
+            );
+
+            return;
+        }
+
+
+        // =================================
+        // VOLGENDE TEAM BEREKENEN
+        // =================================
+
+        let nextTeam =
+            currentTeam + 1;
+
+
+        if (
+            nextTeam >=
+            activeTeams
+        ) {
+
+            nextTeam = 0;
+
+        }
+
+
+        // =================================
+        // VOLGENDE BEURT NAAR FIREBASE
+        // =================================
+
+        firebase.database()
+            .ref(
+                "games/" +
+                window.currentGameCode
+            )
+            .update({
+
+                currentTurn:
+                    nextTeam,
+
+                phase:
+                    "turn",
+
+                roll:
+                    null,
+
+                questionIndex:
+                    null
+
+            })
+            .catch(error => {
+
+                console.error(
+                    "❌ Fout bij volgende beurt:",
+                    error
+                );
+
+            });
+
+
+        return;
+    }
+
+
+    // =====================================
+    // FOUT ANTWOORD
+    // =====================================
+
+    document
+        .getElementById(
+            "btn" + choice.toUpperCase()
+        )
+        .classList.add("wrong");
+
+
+    document
+        .getElementById(
+            "btn" + correct.toUpperCase()
+        )
+        .classList.add("correct");
+
+
+    explanationText.innerText =
+        "❌ Fout! " +
+        currentQuestion.uitleg;
+
+
+    await sleep(3500);
+
+
+    // =====================================
+    // VOLGENDE TEAM
+    // =====================================
+
+    let nextTeam =
+        currentTeam + 1;
+
+
+    if (
+        nextTeam >=
+        activeTeams
+    ) {
+
+        nextTeam = 0;
+
+    }
+
+
+    // =====================================
+    // OOK BIJ FOUT ANTWOORD
+    // VOLGENDE BEURT VIA FIREBASE
+    // =====================================
+
+    firebase.database()
+        .ref(
+            "games/" +
+            window.currentGameCode
+        )
+        .update({
+
+            currentTurn:
+                nextTeam,
+
+            phase:
+                "turn",
+
+            roll:
+                null,
+
+            questionIndex:
+                null
+
+        })
+        .catch(error => {
+
+            console.error(
+                "❌ Fout bij volgende beurt:",
+                error
+            );
+
+        });
 
 }
 
