@@ -644,7 +644,60 @@ function listenToGameState() {
                 // FASE: QUESTION
                 // ---------------------------------
 
-                if (game.phase === "question") {
+               // =====================================
+// FASE: DOBBELWORP
+// =====================================
+
+if (game.phase === "rolled") {
+
+    if (game.roll !== undefined) {
+
+        lastRoll =
+            parseInt(
+                game.roll,
+                10
+            );
+
+        diceText.innerText =
+            "🎲 Je gooide: " +
+            lastRoll;
+
+    }
+
+    showScreen(screen1);
+
+    updateTurn();
+
+    if (
+        parseInt(currentTeam, 10) ===
+        parseInt(window.myTeam, 10)
+    ) {
+
+        statusMessage.innerText =
+            "🎲 Je hebt gegooid.";
+
+    } else {
+
+        statusMessage.innerText =
+            "⏳ Even wachten...";
+
+    }
+
+    return;
+}
+
+
+// =====================================
+// FASE: VRAAG
+// =====================================
+
+if (game.phase === "question") {
+
+    // HIER BLIJFT JE BESTAANDE BLOK STAAN
+
+}
+               
+               if (game.phase === "question") {
 
                     /*
                      * Iedereen ziet dezelfde worp
