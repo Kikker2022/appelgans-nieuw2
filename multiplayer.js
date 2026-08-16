@@ -257,6 +257,13 @@ function joinGame() {
                     window.isHost =
                         false;
 
+       const teamInputs =
+           document.getElementById("teamInputs");
+
+       if (teamInputs) {
+           teamInputs.style.display = "none";
+       }
+                   
                     window.myPlayerId =
                         playerId;
 
