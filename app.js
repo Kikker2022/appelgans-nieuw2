@@ -789,48 +789,35 @@ function rollDice() {
 
 /* ===== VRAGEN ===== */
 
-function loadQuestion(){
-
-function loadSynchronizedQuestion(index) {
+function loadQuestion() {
 
     const actieveVragen =
         vragen.filter(
             v => v.categorie === selectedCategory
         );
 
-
-    if (
-        !actieveVragen.length ||
-        index === undefined
-    ) {
-
-        return;
-    }
-
-
-    const q =
-        actieveVragen[
-            parseInt(index, 10)
-        ];
-
-
-    if (!q) {
+    if (!actieveVragen.length) {
 
         console.error(
-            "Vraag bestaat niet voor index:",
-            index
+            "Geen vragen gevonden voor categorie:",
+            selectedCategory
         );
 
         return;
     }
 
+    const q =
+        actieveVragen[
+            Math.floor(
+                Math.random() *
+                actieveVragen.length
+            )
+        ];
 
     currentQuestion = q;
 
-
     questionText.innerText =
         q.vraag;
-
 
     btnA.innerText =
         "A: " + q.a;
@@ -841,6 +828,73 @@ function loadSynchronizedQuestion(index) {
     btnC.innerText =
         "C: " + q.c;
 
+    btnA.className =
+        "answerBtn";
+
+    btnB.className =
+        "answerBtn";
+
+    btnC.className =
+        "answerBtn";
+
+    btnA.disabled = false;
+    btnB.disabled = false;
+    btnC.disabled = false;
+
+    explanationText.innerText = "";
+}
+
+
+// =====================================================
+// GESYNCHRONISEERDE VRAAG
+// =====================================================
+
+function loadSynchronizedQuestion(index) {
+
+    const actieveVragen =
+        vragen.filter(
+            v => v.categorie === selectedCategory
+        );
+
+    if (!actieveVragen.length) {
+
+        console.error(
+            "Geen vragen gevonden voor categorie:",
+            selectedCategory
+        );
+
+        return;
+    }
+
+    const questionNumber =
+        parseInt(index, 10);
+
+    const q =
+        actieveVragen[questionNumber];
+
+    if (!q) {
+
+        console.error(
+            "Ongeldige questionIndex:",
+            questionNumber
+        );
+
+        return;
+    }
+
+    currentQuestion = q;
+
+    questionText.innerText =
+        q.vraag;
+
+    btnA.innerText =
+        "A: " + q.a;
+
+    btnB.innerText =
+        "B: " + q.b;
+
+    btnC.innerText =
+        "C: " + q.c;
 
     btnA.className =
         "answerBtn";
@@ -851,11 +905,9 @@ function loadSynchronizedQuestion(index) {
     btnC.className =
         "answerBtn";
 
-
     btnA.disabled = false;
     btnB.disabled = false;
     btnC.disabled = false;
-
 
     explanationText.innerText = "";
 
