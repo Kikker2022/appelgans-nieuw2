@@ -489,6 +489,42 @@ board.appendChild(cell);
 
 }
 
+function syncBoardToFirebase() {
+
+    if (!window.currentGameCode) {
+        return;
+    }
+
+    const positions = {};
+
+    for (let i = 0; i < activeTeams; i++) {
+
+        positions[i] =
+            teams[i].position || 0;
+
+    }
+
+    firebase.database()
+        .ref(
+            "games/" +
+            window.currentGameCode
+        )
+        .update({
+
+            teamPositions: positions
+
+        })
+        .catch(error => {
+
+            console.error(
+                "❌ Fout bij synchroniseren bord:",
+                error
+            );
+
+        });
+
+}
+
 /* ===== UPDATE BORD ===== */
 
 function updateBoard(){
