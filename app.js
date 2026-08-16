@@ -662,23 +662,23 @@ function nextTurn() {
 function rollDice() {
 
     // =========================
-    // 1. ALLEEN HET TEAM AAN DE BEURT MAG GOOIEN
+    // ALLEEN HET TEAM AAN DE BEURT
     // =========================
 
     if (
-    parseInt(currentTeam) !==
-    parseInt(window.myTeam)
-) {
+        parseInt(currentTeam, 10) !==
+        parseInt(window.myTeam, 10)
+    ) {
 
-    statusMessage.innerText =
-        "⏳ Wacht op je beurt.";
+        statusMessage.innerText =
+            "⏳ Wacht op je beurt.";
 
-    return;
-}
+        return;
+    }
 
 
     // =========================
-    // 2. NIET TWEE KEER GOOIEN
+    // NIET TWEE KEER GOOIEN
     // =========================
 
     if (window.diceRolled) {
@@ -689,7 +689,7 @@ function rollDice() {
 
 
     // =========================
-    // 3. DOBBELSTEEN GELUID
+    // GELUID
     // =========================
 
     soundDobbel.currentTime = 0;
@@ -699,7 +699,7 @@ function rollDice() {
 
 
     // =========================
-    // 4. ÉÉN CENTRALE WORP
+    // CENTRALE WORP
     // =========================
 
     const roll =
@@ -709,64 +709,81 @@ function rollDice() {
 
 
     // =========================
-    // 5. WORP NAAR FIREBASE
+    // CENTRALE VRAAG KIEZEN
     // =========================
 
+    const actieveVragen =
+        vragen.filter(
+            v => v.categorie === selectedCategory
+        );
+
+
     if (
-        window.currentGameCode &&
-        window.isHost !== undefined
+        !actieveVragen.length
     ) {
 
-        firebase.database()
-            .ref(
-                "games/" +
-                window.currentGameCode
-            )
-            .update({
+        window.diceRolled = false;
 
-                currentTurn:
-                    currentTeam,
+        statusMessage.innerText =
+            "Geen vragen gevonden voor deze categorie.";
 
-                roll:
-                    roll,
-
-                phase:
-                    "rolled"
-
-            })
-            .catch(error => {
-
-                console.error(
-                    "❌ Fout bij opslaan dobbelworp:",
-                    error
-                );
-
-                window.diceRolled = false;
-
-                statusMessage.innerText =
-                    "Fout bij het gooien.";
-
-            });
-
+        return;
     }
 
 
+    const questionIndex =
+        Math.floor(
+            Math.random() *
+            actieveVragen.length
+        );
+
+
     // =========================
-    // 6. LOKALE WEERGAVE
+    // FIREBASE BIJWERKEN
+    // =========================
+
+    firebase.database()
+        .ref(
+            "games/" +
+            window.currentGameCode
+        )
+        .update({
+
+            currentTurn:
+                currentTeam,
+
+            roll:
+                roll,
+
+            questionIndex:
+                questionIndex,
+
+            phase:
+                "question"
+
+        })
+        .catch(error => {
+
+            console.error(
+                "❌ Fout bij opslaan van worp/vraag:",
+                error
+            );
+
+            window.diceRolled = false;
+
+            statusMessage.innerText =
+                "Fout bij het gooien.";
+
+        });
+
+
+    // =========================
+    // LOKALE WEERGAVE
     // =========================
 
     categorySelect.disabled = true;
 
     statusMessage.innerText = "";
-
-
-    // Zelfde vertraging als voorheen
-    setTimeout(() => {
-
-        diceText.innerText =
-            "🎲 Je gooide: " + roll;
-
-    }, 3500);
 
 }
 
@@ -774,47 +791,73 @@ function rollDice() {
 
 function loadQuestion(){
 
-const actieveVragen =
-vragen.filter(
-v => v.categorie === selectedCategory
-);
+function loadSynchronizedQuestion(index) {
 
-const q =
-actieveVragen[
-Math.floor(
-Math.random() *
-actieveVragen.length
-)
-];
+    const actieveVragen =
+        vragen.filter(
+            v => v.categorie === selectedCategory
+        );
 
-currentQuestion = q;
 
-questionText.innerText =
-q.vraag;
+    if (
+        !actieveVragen.length ||
+        index === undefined
+    ) {
 
-btnA.innerText =
-"A: " + q.a;
+        return;
+    }
 
-btnB.innerText =
-"B: " + q.b;
 
-btnC.innerText =
-"C: " + q.c;
+    const q =
+        actieveVragen[
+            parseInt(index, 10)
+        ];
 
-btnA.className =
-"answerBtn";
 
-btnB.className =
-"answerBtn";
+    if (!q) {
 
-btnC.className =
-"answerBtn";
+        console.error(
+            "Vraag bestaat niet voor index:",
+            index
+        );
 
-btnA.disabled = false;
-btnB.disabled = false;
-btnC.disabled = false;
+        return;
+    }
 
-explanationText.innerText = "";
+
+    currentQuestion = q;
+
+
+    questionText.innerText =
+        q.vraag;
+
+
+    btnA.innerText =
+        "A: " + q.a;
+
+    btnB.innerText =
+        "B: " + q.b;
+
+    btnC.innerText =
+        "C: " + q.c;
+
+
+    btnA.className =
+        "answerBtn";
+
+    btnB.className =
+        "answerBtn";
+
+    btnC.className =
+        "answerBtn";
+
+
+    btnA.disabled = false;
+    btnB.disabled = false;
+    btnC.disabled = false;
+
+
+    explanationText.innerText = "";
 
 }
 
