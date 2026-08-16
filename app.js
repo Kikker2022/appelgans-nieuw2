@@ -661,6 +661,8 @@ function nextTurn() {
 
 /* ===== DOBBELEN ===== */
 
+/* ===== DOBBELEN ===== */
+
 function rollDice() {
 
     // =========================
@@ -691,7 +693,7 @@ function rollDice() {
 
 
     // =========================
-    // GELUID
+    // DOBBELGELUID
     // =========================
 
     soundDobbel.currentTime = 0;
@@ -701,7 +703,7 @@ function rollDice() {
 
 
     // =========================
-    // CENTRALE WORP
+    // WORP MAKEN
     // =========================
 
     const roll =
@@ -711,7 +713,7 @@ function rollDice() {
 
 
     // =========================
-    // CENTRALE VRAAG KIEZEN
+    // VRAAG KIEZEN
     // =========================
 
     const actieveVragen =
@@ -720,9 +722,7 @@ function rollDice() {
         );
 
 
-    if (
-        !actieveVragen.length
-    ) {
+    if (!actieveVragen.length) {
 
         window.diceRolled = false;
 
@@ -741,7 +741,7 @@ function rollDice() {
 
 
     // =========================
-    // FIREBASE BIJWERKEN
+    // WORP EN VRAAG NAAR FIREBASE
     // =========================
 
     firebase.database()
@@ -761,13 +761,43 @@ function rollDice() {
                 questionIndex,
 
             phase:
-                "question"
+                "rolled"
+
+        })
+        .then(() => {
+
+            console.log(
+                "🎲 Worp opgeslagen:",
+                roll
+            );
+
+
+            // =========================
+            // NA 3,5 SECONDEN
+            // NAAR DE VRAAG
+            // =========================
+
+            setTimeout(() => {
+
+                firebase.database()
+                    .ref(
+                        "games/" +
+                        window.currentGameCode
+                    )
+                    .update({
+
+                        phase:
+                            "question"
+
+                    });
+
+            }, 3500);
 
         })
         .catch(error => {
 
             console.error(
-                "❌ Fout bij opslaan van worp/vraag:",
+                "❌ Fout bij opslaan van worp:",
                 error
             );
 
@@ -777,15 +807,6 @@ function rollDice() {
                 "Fout bij het gooien.";
 
         });
-
-
-    // =========================
-    // LOKALE WEERGAVE
-    // =========================
-
-    categorySelect.disabled = true;
-
-    statusMessage.innerText = "";
 
 }
 
@@ -1018,6 +1039,8 @@ async function checkAnswer(choice) {
         // Speciale vakken uitvoeren
         await handleSpecial(team);
 
+        await sleep(5000);
+        
         // Gewonnen
         if (team.position >= TOTAL_CELLS) {
 
