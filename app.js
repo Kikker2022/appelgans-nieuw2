@@ -527,40 +527,66 @@ function syncBoardToFirebase() {
 
 /* ===== UPDATE BORD ===== */
 
-function updateBoard(){
+function updateBoard() {
 
-const pawns =
-document.querySelectorAll(".pawns");
+    const pawns =
+        document.querySelectorAll(".pawns");
 
-pawns.forEach(p=>{
-p.innerHTML = "";
-});
 
-teams
-.slice(0, activeTeams)
-.forEach(team=>{
+    // Eerst alle pionnen verwijderen
 
-if(team.position > 0){
+    pawns.forEach(p => {
 
-const cell =
-document.querySelectorAll(".cell")
-[team.position - 1];
+        p.innerHTML = "";
 
-const pawn =
-document.createElement("div");
+    });
 
-pawn.classList.add(
-"pawn",
-team.color
-);
 
-cell
-.querySelector(".pawns")
-.appendChild(pawn);
+    // Daarna alle actieve teams opnieuw tekenen
 
-}
+    teams
+        .slice(0, activeTeams)
+        .forEach(team => {
 
-});
+            if (
+                team.position > 0
+            ) {
+
+                const cell =
+                    document.querySelectorAll(
+                        ".cell"
+                    )[team.position - 1];
+
+
+                if (!cell) {
+                    return;
+                }
+
+
+                const pawn =
+                    document.createElement(
+                        "div"
+                    );
+
+
+                pawn.classList.add(
+                    "pawn",
+                    team.color
+                );
+
+
+                cell
+                    .querySelector(".pawns")
+                    .appendChild(pawn);
+
+            }
+
+        });
+
+
+    // Posities centraal opslaan
+
+    syncBoardToFirebase();
 
 }
 
