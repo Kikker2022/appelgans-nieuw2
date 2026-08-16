@@ -495,6 +495,82 @@ function listenToGameState() {
 
             }
 
+            // =========================
+// BORDPOSITIES
+// =========================
+
+if (game.teamPositions) {
+
+    for (let i = 0; i < 4; i++) {
+
+        if (
+            game.teamPositions[i] !== undefined &&
+            teams[i]
+        ) {
+
+            teams[i].position =
+                parseInt(
+                    game.teamPositions[i],
+                    10
+                );
+
+        }
+
+    }
+
+
+    // Alleen opnieuw tekenen.
+    // Niet opnieuw naar Firebase schrijven.
+
+    const pawns =
+        document.querySelectorAll(".pawns");
+
+
+    pawns.forEach(p => {
+
+        p.innerHTML = "";
+
+    });
+
+
+    teams
+        .slice(0, activeTeams)
+        .forEach(team => {
+
+            if (team.position > 0) {
+
+                const cell =
+                    document.querySelectorAll(
+                        ".cell"
+                    )[team.position - 1];
+
+
+                if (!cell) {
+                    return;
+                }
+
+
+                const pawn =
+                    document.createElement(
+                        "div"
+                    );
+
+
+                pawn.classList.add(
+                    "pawn",
+                    team.color
+                );
+
+
+                cell
+                    .querySelector(".pawns")
+                    .appendChild(pawn);
+
+            }
+
+        });
+
+}
 
             // =====================================
             // TEAMNAMEN
