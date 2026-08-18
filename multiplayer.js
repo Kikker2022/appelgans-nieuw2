@@ -432,6 +432,9 @@ function listenToGameState() {
 
             if (game.phase === "board") {
 
+                currentQuestion = null;
+                explanationText.innerText = "";
+
                 showScreen(screen3);
 
                 if (
@@ -439,7 +442,6 @@ function listenToGameState() {
                     game.roll !== undefined &&
                     game.roll !== null
                 ) {
-
                     showBoardDice(game.roll);
                 }
 
