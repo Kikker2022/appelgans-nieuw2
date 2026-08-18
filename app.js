@@ -568,7 +568,6 @@ function rollDice() {
         Math.random() * actieveVragen.length
     );
 
-    // De worp wordt eerst centraal als 'rolled' opgeslagen.
     firebase.database()
         .ref("games/" + window.currentGameCode)
         .update({
@@ -577,10 +576,32 @@ function rollDice() {
             questionIndex: questionIndex,
             phase: "rolled"
         })
+        .then(() => {
+
+            // Na 3,5 seconden gaat IEDERE telefoon naar dezelfde vraag.
+            setTimeout(() => {
+
+                firebase.database()
+                    .ref("games/" + window.currentGameCode)
+                    .update({
+                        phase: "question"
+                    })
+                    .catch(error => {
+                        console.error(
+                            "❌ Fout bij overgang naar vraag:",
+                            error
+                        );
+                    });
+
+            }, 3500);
+
+        })
         .catch(error => {
+
             console.error("❌ Fout bij opslaan van worp:", error);
             window.diceRolled = false;
             statusMessage.innerText = "Fout bij het gooien.";
+
         });
 }
 
@@ -790,16 +811,23 @@ async function checkAnswer(choice) {
 
         const team = teams[currentTeam];
 
-        // Eerst het bord op ALLE telefoons activeren.
-        await firebase.database()
+        // Eerst lokaal direct het bord tonen.
+        // Daarna ook de andere telefoons via Firebase naar het bord sturen.
+        showScreen(screen3);
+        showBoardDice(lastRoll);
+
+        firebase.database()
             .ref("games/" + window.currentGameCode)
             .update({
                 phase: "board",
                 roll: lastRoll
+            })
+            .catch(error => {
+                console.error(
+                    "❌ Fout bij openen speelbord:",
+                    error
+                );
             });
-
-        showScreen(screen3);
-        showBoardDice(lastRoll);
 
         // Pion langzaam verplaatsen.
         for (let i = 0; i < lastRoll; i++) {
