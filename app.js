@@ -738,9 +738,32 @@ function showBoardDice(roll) {
 
 /* ===== ANTWOORD CONTROLEREN ===== */
 
+async function saveBoardPositions() {
+
+    if (!window.currentGameCode) {
+        return Promise.resolve();
+    }
+
+    const positions = {};
+
+    for (let i = 0; i < activeTeams; i++) {
+        positions[i] = teams[i].position || 0;
+    }
+
+    return firebase.database()
+        .ref("games/" + window.currentGameCode)
+        .update({
+            teamPositions: positions
+        });
+}
+
+
 async function checkAnswer(choice) {
 
-    if (parseInt(currentTeam, 10) !== parseInt(window.myTeam, 10)) {
+    if (
+        parseInt(currentTeam, 10) !==
+        parseInt(window.myTeam, 10)
+    ) {
         return;
     }
 
@@ -765,52 +788,56 @@ async function checkAnswer(choice) {
 
         await sleep(2500);
 
+        const team = teams[currentTeam];
+
+        // Eerst het bord op ALLE telefoons activeren.
+        await firebase.database()
+            .ref("games/" + window.currentGameCode)
+            .update({
+                phase: "board",
+                roll: lastRoll
+            });
+
         showScreen(screen3);
         showBoardDice(lastRoll);
 
-        const team = teams[currentTeam];
-
-        // Lokale beweging zichtbaar animeren.
+        // Pion langzaam verplaatsen.
         for (let i = 0; i < lastRoll; i++) {
 
             if (team.position < TOTAL_CELLS) {
+
                 team.position++;
+
                 updateBoard();
+                await saveBoardPositions();
                 await sleep(500);
             }
         }
 
         await handleSpecial(team);
+
         updateBoard();
+        await saveBoardPositions();
 
         if (team.position >= TOTAL_CELLS) {
+
             soundWin.play().catch(() => {});
+
             showPopup(
                 team.icon +
                 " " +
                 team.name +
                 " heeft gewonnen!"
             );
+
             return;
         }
 
-        const positions = {};
-        for (let i = 0; i < activeTeams; i++) {
-            positions[i] = teams[i].position || 0;
-        }
-
-        // Iedereen ziet nu het bord met de nieuwe posities.
-        await firebase.database()
-            .ref("games/" + window.currentGameCode)
-            .update({
-                teamPositions: positions,
-                phase: "board"
-            });
-
-        // Bord blijft zichtbaar op alle telefoons.
+        // Bord nog even zichtbaar laten.
         await sleep(5000);
 
         let nextTeam = currentTeam + 1;
+
         if (nextTeam >= activeTeams) {
             nextTeam = 0;
         }
@@ -842,6 +869,7 @@ async function checkAnswer(choice) {
     await sleep(3000);
 
     let nextTeam = currentTeam + 1;
+
     if (nextTeam >= activeTeams) {
         nextTeam = 0;
     }
