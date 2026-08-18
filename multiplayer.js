@@ -2,321 +2,153 @@
    APPELGANS - MULTIPLAYER.JS
    ========================================================= */
 
-
-/* =========================================================
-   SPEL AANMAKEN - ALLEEN HOST
-   ========================================================= */
-
 function createGame() {
 
-    const code =
-        document.getElementById("gameCode").value.trim();
-
-    const hostName =
-        document.getElementById("hostName").value.trim();
-
+    const code = document.getElementById("gameCode").value.trim();
+    const hostName = document.getElementById("hostName").value.trim();
 
     if (!code || !hostName) {
-
         alert("Vul naam en spelcode in");
-
         return;
     }
 
-
     const hostPlayer = {
-
         name: hostName,
-
         team: 0,
-
         color: "blue"
-
     };
-
 
     firebase.database()
         .ref("games/" + code)
         .set({
-
             gameState: "lobby",
-
             currentTurn: 0,
-
+            activeTeams: 4,
+            selectedCategory: "Ooststellingwerf",
+            phase: "lobby",
+            roll: null,
+            questionIndex: null,
+            teamPositions: {0:0,1:0,2:0,3:0},
             players: {
-
                 host: hostPlayer
-
             }
-
         })
-
         .then(() => {
 
             window.currentGameCode = code;
-
             window.isHost = true;
-
             window.myPlayerId = "host";
-
             window.myTeam = 0;
-
             window.myColor = "blue";
 
+            const teamInputs = document.getElementById("teamInputs");
+            if (teamInputs) teamInputs.style.display = "block";
 
-            /* Luister naar spelers */
+            const startButton = document.getElementById("startGameButton");
+            if (startButton) startButton.style.display = "block";
 
             listenToPlayers(code);
-
-
-            /* Luister naar game-status */
-
             listenToGameState();
 
-
-            /* Startknop alleen zichtbaar voor host */
-
-            const startButton =
-                document.getElementById(
-                    "startGameButton"
-                );
-
-
-            if (startButton) {
-
-                startButton.style.display =
-                    "block";
-
-            }
-
-
-            alert(
-                "Spel aangemaakt: " + code
-            );
-
+            alert("Spel aangemaakt: " + code);
         })
-
         .catch(error => {
-
-            console.error(
-                "FOUT BIJ CREATE GAME:",
-                error
-            );
-
-            alert(
-                "Spel kon niet worden aangemaakt:\n\n" +
-                error.message
-            );
-
+            console.error("FOUT BIJ CREATE GAME:", error);
+            alert("Spel kon niet worden aangemaakt:\n\n" + error.message);
         });
-
 }
-
-
-
-/* =========================================================
-   DEELNEMER LAAT MEEDOEN
-   ========================================================= */
 
 function joinGame() {
 
-    const code =
-        document.getElementById("joinCode").value.trim();
-
-    const name =
-        document.getElementById("joinName").value.trim();
-
+    const code = document.getElementById("joinCode").value.trim();
+    const name = document.getElementById("joinName").value.trim();
 
     if (!code || !name) {
-
-        alert(
-            "Vul naam en spelcode in"
-        );
-
+        alert("Vul naam en spelcode in");
         return;
     }
 
-
-    const gameRef =
-        firebase.database()
-            .ref("games/" + code);
-
+    const gameRef = firebase.database().ref("games/" + code);
 
     gameRef.once("value")
         .then(snapshot => {
 
-            const game =
-                snapshot.val();
-
+            const game = snapshot.val();
 
             if (!game) {
-
-                alert(
-                    "Spel bestaat niet."
-                );
-
+                alert("Spel bestaat niet.");
                 return;
             }
 
-
-            /* Alleen meedoen als de lobby nog open is */
-
-            if (
-                game.gameState &&
-                game.gameState !== "lobby"
-            ) {
-
-                alert(
-                    "Dit spel is al gestart."
-                );
-
+            if (game.gameState && game.gameState !== "lobby") {
+                alert("Dit spel is al gestart.");
                 return;
             }
 
-
-            const players =
-                game.players || {};
-
-
-            const playerIds =
-                Object.keys(players);
-
+            const players = game.players || {};
+            const playerIds = Object.keys(players);
 
             if (playerIds.length >= 4) {
-
-                alert(
-                    "Er kunnen maximaal 4 spelers meedoen."
-                );
-
+                alert("Er kunnen maximaal 4 deelnemers meedoen.");
                 return;
             }
 
-
-            /* Eerste vrije team/kleur */
-
-            const usedTeams =
-                playerIds.map(
-                    id => players[id].team
-                );
-
-
+            const usedTeams = playerIds.map(id => players[id].team);
             let team = 0;
 
-
-            while (
-                usedTeams.includes(team) &&
-                team < 4
-            ) {
-
+            while (usedTeams.includes(team) && team < 4) {
                 team++;
-
             }
 
-
-            const colors = [
-
-                "blue",
-
-                "red",
-
-                "green",
-
-                "purple"
-
-            ];
-
-
-            const playerId =
-                "p" + Date.now();
-
+            const colors = ["blue", "red", "green", "purple"];
+            const playerId = "p" + Date.now();
 
             const player = {
-
                 name: name,
-
                 team: team,
-
                 color: colors[team]
-
             };
 
-
             return gameRef
-
                 .child("players")
-
                 .child(playerId)
-
                 .set(player)
-
                 .then(() => {
 
-                    window.currentGameCode =
-                        code;
+                    window.currentGameCode = code;
+                    window.isHost = false;
+                    window.myPlayerId = playerId;
+                    window.myTeam = team;
+                    window.myColor = colors[team];
 
-                    window.isHost =
-                        false;
+                    // Deelnemer mag de instellingen niet wijzigen.
+                    const teamInputs = document.getElementById("teamInputs");
+                    if (teamInputs) teamInputs.style.display = "none";
 
-       const teamInputs =
-           document.getElementById("teamInputs");
+                    const teamCount = document.getElementById("teamCount");
+                    if (teamCount) teamCount.style.display = "none";
 
-       if (teamInputs) {
-           teamInputs.style.display = "none";
-       }
-                   
-                    window.myPlayerId =
-                        playerId;
+                    const categorySelect = document.getElementById("categorySelect");
+                    if (categorySelect) categorySelect.style.display = "none";
 
-                    window.myTeam =
-                        team;
-
-                    window.myColor =
-                        colors[team];
-
-
-                    /* Luisteren naar spelers */
+                    const startButton = document.getElementById("startGameButton");
+                    if (startButton) startButton.style.display = "none";
 
                     listenToPlayers(code);
-
-
-                    /* Luisteren naar game-status */
-
                     listenToGameState();
-
 
                     alert(
                         "Je doet mee!\n\n" +
-                        "Team: " +
-                        (team + 1) +
-                        "\nKleur: " +
-                        colors[team]
+                        "Team: " + (team + 1) +
+                        "\nKleur: " + colors[team]
                     );
-
                 });
-
         })
-
         .catch(error => {
-
-            console.error(
-                "FOUT BIJ JOIN GAME:",
-                error
-            );
-
-            alert(
-                "Deelnemen mislukt:\n\n" +
-                error.message
-            );
-
+            console.error("FOUT BIJ JOIN GAME:", error);
+            alert("Deelnemen mislukt:\n\n" + error.message);
         });
-
 }
-
-
-
-/* =========================================================
-   SPELERS IN LOBBY TONEN
-   ========================================================= */
 
 function listenToPlayers(code) {
 
@@ -325,502 +157,183 @@ function listenToPlayers(code) {
         .on("value", snapshot => {
 
             const players = snapshot.val();
+            const list = document.getElementById("playersList");
 
-            const list =
-                document.getElementById("playersList");
-
-            if (!list) {
-                return;
-            }
+            if (!list) return;
 
             list.innerHTML = "";
 
-            if (!players) {
-                return;
-            }
-
-
-            // =====================================
-            // SPELERSLIJST
-            // =====================================
+            if (!players) return;
 
             Object.keys(players).forEach(key => {
+                const player = players[key];
+                const div = document.createElement("div");
 
-                const player =
-                    players[key];
-
-                const div =
-                    document.createElement("div");
-
-                if (key === "host") {
-
-                    div.innerText =
-                        "👑 Host: " +
-                        player.name;
-
-                } else {
-
-                    div.innerText =
-                        "👤 " +
-                        player.name;
-
-                }
+                div.innerText =
+                    key === "host"
+                        ? "👑 Host: " + player.name
+                        : "👤 " + player.name;
 
                 list.appendChild(div);
-
             });
-
-
-            // =====================================
-            // KOPPEL NAAM AAN KLEUR/TEAM
-            // =====================================
-
-            for (let i = 0; i < 4; i++) {
-
-                const display =
-                    document.getElementById(
-                        "displayTeam" + (i + 1)
-                    );
-
-                if (!display) {
-                    continue;
-                }
-
-
-                let playerForTeam = null;
-
-
-                Object.keys(players).forEach(key => {
-
-                    const player =
-                        players[key];
-
-                    if (
-                        player &&
-                        player.team === i
-                    ) {
-
-                        playerForTeam =
-                            player;
-
-                    }
-
-                });
-
-
-                if (playerForTeam) {
-
-                    // BELANGRIJK:
-                    // naam ook in teams[] zetten
-
-                    teams[i].name =
-                        playerForTeam.name;
-
-
-                    display.innerText =
-                        playerForTeam.name;
-
-
-                    if (display.parentElement) {
-
-                        display.parentElement.style.display =
-                            "block";
-
-                    }
-
-                } else {
-
-                    teams[i].name = "";
-
-                    display.innerText = "";
-
-                    if (display.parentElement) {
-
-                        display.parentElement.style.display =
-                            "none";
-
-                    }
-
-                }
-
-            }
-
-
-            // Beurt opnieuw tekenen
-            if (
-                typeof updateTurn === "function"
-            ) {
-
-                updateTurn();
-
-            }
-
         });
-
 }
 
+function renderSynchronizedBoard() {
 
-
-/* =========================================================
-   GAMESTATE - ALLE TELEFOONS
-   ========================================================= */
+    if (typeof updateBoard === "function") {
+        updateBoard();
+    }
+}
 
 function listenToGameState() {
 
-    if (!window.currentGameCode) {
-        return;
-    }
+    if (!window.currentGameCode) return;
 
     firebase.database()
         .ref("games/" + window.currentGameCode)
         .on("value", snapshot => {
 
             const game = snapshot.val();
+            if (!game) return;
 
-            if (!game) {
-                return;
-            }
-
-            console.log("GAME DATA:", game);
-
-
-            // =====================================
-            // AANTAL TEAMS
-            // =====================================
+            console.log("🔥 GAME DATA:", game);
 
             if (game.activeTeams !== undefined) {
-
-                activeTeams =
-                    parseInt(game.activeTeams, 10);
-
+                activeTeams = parseInt(game.activeTeams, 10);
             }
-
-            // =========================
-// BORDPOSITIES
-// =========================
-
-if (game.teamPositions) {
-
-    for (let i = 0; i < 4; i++) {
-
-        if (
-            game.teamPositions[i] !== undefined &&
-            teams[i]
-        ) {
-
-            teams[i].position =
-                parseInt(
-                    game.teamPositions[i],
-                    10
-                );
-
-        }
-
-    }
-
-
-    // Alleen opnieuw tekenen.
-    // Niet opnieuw naar Firebase schrijven.
-
-    const pawns =
-        document.querySelectorAll(".pawns");
-
-
-    pawns.forEach(p => {
-
-        p.innerHTML = "";
-
-    });
-
-
-    teams
-        .slice(0, activeTeams)
-        .forEach(team => {
-
-            if (team.position > 0) {
-
-                const cell =
-                    document.querySelectorAll(
-                        ".cell"
-                    )[team.position - 1];
-
-
-                if (!cell) {
-                    return;
-                }
-
-
-                const pawn =
-                    document.createElement(
-                        "div"
-                    );
-
-
-                pawn.classList.add(
-                    "pawn",
-                    team.color
-                );
-
-
-                cell
-                    .querySelector(".pawns")
-                    .appendChild(pawn);
-
-            }
-
-        });
-
-}
-
-            // =====================================
-            // TEAMNAMEN
-            // =====================================
 
             if (game.teamNames) {
-
                 for (let i = 0; i < 4; i++) {
-
-                    if (
-                        game.teamNames[i] !== undefined &&
-                        teams[i]
-                    ) {
-
-                        teams[i].name =
-                            game.teamNames[i];
-
+                    if (game.teamNames[i] !== undefined && teams[i]) {
+                        teams[i].name = game.teamNames[i];
                     }
-
                 }
-
             }
 
+            if (game.selectedCategory) {
+                selectedCategory = game.selectedCategory;
+            }
 
-            // =====================================
-            // MIJN TEAM
-            // =====================================
+            if (game.currentTurn !== undefined) {
+                currentTeam = parseInt(game.currentTurn, 10);
+            }
 
             if (
                 game.players &&
                 window.myPlayerId &&
                 game.players[window.myPlayerId]
             ) {
-
-                window.myTeam =
-                    parseInt(
-                        game.players[window.myPlayerId].team,
-                        10
-                    );
-
+                window.myTeam = parseInt(
+                    game.players[window.myPlayerId].team,
+                    10
+                );
             }
 
-
-            // =====================================
-            // HUIDIGE BEURT
-            // =====================================
-
-            if (game.currentTurn !== undefined) {
-
-                currentTeam =
-                    parseInt(
-                        game.currentTurn,
-                        10
-                    );
-
+            // Centrale bordposities ophalen.
+            if (game.teamPositions) {
+                for (let i = 0; i < 4; i++) {
+                    if (game.teamPositions[i] !== undefined && teams[i]) {
+                        teams[i].position = parseInt(
+                            game.teamPositions[i],
+                            10
+                        );
+                    }
+                }
             }
 
-
-            // =====================================
-            // CATEGORIE
-            // =====================================
-
-            if (game.selectedCategory) {
-
-                selectedCategory =
-                    game.selectedCategory;
-
+            const categoryText = document.getElementById("currentCategory");
+            if (categoryText) {
+                categoryText.innerText = "Categorie: " + selectedCategory;
             }
-
-
-            // =====================================
-            // TEAMOVERZICHT
-            // =====================================
 
             updateTurn();
 
-
-            // =====================================
-            // SPEL GESTART
-            // =====================================
-
-            if (game.gameState === "playing") {
-
-                /*
-                 * BELANGRIJK:
-                 * De fase bepaalt nu welk scherm
-                 * iedereen moet zien.
-                 */
-
-
-                // ---------------------------------
-                // FASE: TURN
-                // ---------------------------------
-
-                if (game.phase === "turn") {
-
-                    /*
-                     * Oude vraag afsluiten
-                     */
-
-                    currentQuestion = null;
-
-                    explanationText.innerText = "";
-
-                    diceText.innerText = "";
-
-
-                    /*
-                     * Iedereen naar scherm 1
-                     */
-
-                    showScreen(screen1);
-
-
-                    /*
-                     * Alleen het team aan de beurt
-                     * mag gooien.
-                     */
-
-                    if (
-                        parseInt(currentTeam, 10) ===
-                        parseInt(window.myTeam, 10)
-                    ) {
-
-                        statusMessage.innerText =
-                            "🎲 Jij bent aan de beurt.";
-
-                    } else {
-
-                        statusMessage.innerText =
-                            "⏳ Wacht op je beurt.";
-
-                    }
-
-
-                    /*
-                     * Nieuwe beurt = opnieuw gooien toegestaan
-                     */
-
-                    window.diceRolled = false;
-
-                    return;
-                }
-
-
-                // ---------------------------------
-                // FASE: QUESTION
-                // ---------------------------------
-
-               // =====================================
-// FASE: DOBBELWORP
-// =====================================
-
-if (game.phase === "rolled") {
-
-    if (game.roll !== undefined) {
-
-        lastRoll =
-            parseInt(
-                game.roll,
-                10
-            );
-
-        diceText.innerText =
-            "🎲 Je gooide: " +
-            lastRoll;
-
-    }
-
-    showScreen(screen1);
-
-    updateTurn();
-
-    if (
-        parseInt(currentTeam, 10) ===
-        parseInt(window.myTeam, 10)
-    ) {
-
-        statusMessage.innerText =
-            "🎲 Je hebt gegooid.";
-
-    } else {
-
-        statusMessage.innerText =
-            "⏳ Even wachten...";
-
-    }
-
-    return;
-}
-
-
-// =====================================
-// FASE: VRAAG
-// =====================================
-
-if (game.phase === "question") {
-
-    // HIER BLIJFT JE BESTAANDE BLOK STAAN
-
-}
-               
-               if (game.phase === "question") {
-
-                    /*
-                     * Iedereen ziet dezelfde worp
-                     */
-
-                    if (game.roll !== undefined) {
-
-                        lastRoll =
-                            parseInt(
-                                game.roll,
-                                10
-                            );
-
-                        diceText.innerText =
-                            "🎲 Je gooide: " +
-                            lastRoll;
-
-                    }
-
-
-                    /*
-                     * Iedereen naar vraag-scherm
-                     */
-
-                    showScreen(screen2);
-
-
-                    /*
-                     * Exact dezelfde vraag laden
-                     */
-
-                    if (
-                        game.questionIndex !==
-                        undefined
-                    ) {
-
-                        loadSynchronizedQuestion(
-                            game.questionIndex
-                        );
-
-                    }
-
-                    return;
-                }
-
+            if (game.gameState !== "playing") {
+                return;
             }
 
-        });
+            // -----------------------------------------
+            // TURN = dobbel-scherm
+            // -----------------------------------------
+            if (game.phase === "turn") {
 
+                currentQuestion = null;
+                explanationText.innerText = "";
+                diceText.innerText = "";
+                window.diceRolled = false;
+
+                showScreen(screen1);
+
+                if (
+                    parseInt(currentTeam, 10) ===
+                    parseInt(window.myTeam, 10)
+                ) {
+                    statusMessage.innerText = "🎲 Jij bent aan de beurt.";
+                } else {
+                    statusMessage.innerText = "⏳ Wacht op je beurt.";
+                }
+
+                renderSynchronizedBoard();
+                return;
+            }
+
+            // -----------------------------------------
+            // ROLLED = worp zichtbaar op scherm 1
+            // -----------------------------------------
+            if (game.phase === "rolled") {
+
+                if (game.roll !== undefined && game.roll !== null) {
+                    lastRoll = parseInt(game.roll, 10);
+                    diceText.innerText = "🎲 Je gooide: " + lastRoll;
+                }
+
+                showScreen(screen1);
+
+                if (
+                    parseInt(currentTeam, 10) ===
+                    parseInt(window.myTeam, 10)
+                ) {
+                    statusMessage.innerText = "🎲 Je hebt gegooid.";
+                } else {
+                    statusMessage.innerText = "⏳ Even wachten...";
+                }
+
+                return;
+            }
+
+            // -----------------------------------------
+            // QUESTION = dezelfde vraag op alle telefoons
+            // -----------------------------------------
+            if (game.phase === "question") {
+
+                if (game.roll !== undefined && game.roll !== null) {
+                    lastRoll = parseInt(game.roll, 10);
+                    diceText.innerText = "🎲 Je gooide: " + lastRoll;
+                }
+
+                showScreen(screen2);
+
+                if (game.questionIndex !== undefined && typeof loadSynchronizedQuestion === "function") {
+                    loadSynchronizedQuestion(game.questionIndex);
+                }
+
+                return;
+            }
+
+            // -----------------------------------------
+            // BOARD = bord met gesynchroniseerde posities
+            // -----------------------------------------
+            if (game.phase === "board") {
+
+                showScreen(screen3);
+
+                if (typeof showBoardDice === "function" && game.roll !== undefined && game.roll !== null) {
+                    showBoardDice(game.roll);
+                }
+
+                renderSynchronizedBoard();
+                return;
+            }
+        });
 }
