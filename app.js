@@ -807,7 +807,7 @@ async function checkAnswer(choice) {
         explanationText.innerText =
             "✅ Goed! " + currentQuestion.uitleg;
 
-        await sleep(2500);
+        await sleep(5500);
 
         const team = teams[currentTeam];
 
@@ -862,7 +862,7 @@ async function checkAnswer(choice) {
         }
 
         // Bord nog even zichtbaar laten.
-        await sleep(5000);
+        await sleep(2500);
 
         let nextTeam = currentTeam + 1;
 
