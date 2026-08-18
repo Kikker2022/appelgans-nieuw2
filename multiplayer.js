@@ -184,78 +184,146 @@ function renderSynchronizedBoard() {
     if (typeof updateBoard === "function") {
         updateBoard();
     }
+
 }
+
 
 function listenToGameState() {
 
-    if (!window.currentGameCode) return;
+    if (!window.currentGameCode) {
+        return;
+    }
 
     firebase.database()
         .ref("games/" + window.currentGameCode)
         .on("value", snapshot => {
 
             const game = snapshot.val();
-            if (!game) return;
+
+            if (!game) {
+                return;
+            }
 
             console.log("🔥 GAME DATA:", game);
 
+
+            // =========================
+            // AANTAL TEAMS
+            // =========================
+
             if (game.activeTeams !== undefined) {
-                activeTeams = parseInt(game.activeTeams, 10);
+                activeTeams =
+                    parseInt(game.activeTeams, 10);
             }
 
+
+            // =========================
+            // TEAMNAMEN
+            // =========================
+
             if (game.teamNames) {
+
                 for (let i = 0; i < 4; i++) {
-                    if (game.teamNames[i] !== undefined && teams[i]) {
-                        teams[i].name = game.teamNames[i];
+
+                    if (
+                        game.teamNames[i] !== undefined &&
+                        teams[i]
+                    ) {
+
+                        teams[i].name =
+                            game.teamNames[i];
                     }
                 }
             }
 
+
+            // =========================
+            // CATEGORIE
+            // =========================
+
             if (game.selectedCategory) {
-                selectedCategory = game.selectedCategory;
+                selectedCategory =
+                    game.selectedCategory;
             }
 
+
+            // =========================
+            // HUIDIGE BEURT
+            // =========================
+
             if (game.currentTurn !== undefined) {
-                currentTeam = parseInt(game.currentTurn, 10);
+                currentTeam =
+                    parseInt(game.currentTurn, 10);
             }
+
+
+            // =========================
+            // MIJN TEAM
+            // =========================
 
             if (
                 game.players &&
                 window.myPlayerId &&
                 game.players[window.myPlayerId]
             ) {
-                window.myTeam = parseInt(
-                    game.players[window.myPlayerId].team,
-                    10
-                );
+
+                window.myTeam =
+                    parseInt(
+                        game.players[window.myPlayerId].team,
+                        10
+                    );
             }
 
-            // Centrale bordposities ophalen.
+
+            // =========================
+            // BORDPOSITIES
+            // =========================
+
             if (game.teamPositions) {
+
                 for (let i = 0; i < 4; i++) {
-                    if (game.teamPositions[i] !== undefined && teams[i]) {
-                        teams[i].position = parseInt(
-                            game.teamPositions[i],
-                            10
-                        );
+
+                    if (
+                        game.teamPositions[i] !== undefined &&
+                        teams[i]
+                    ) {
+
+                        teams[i].position =
+                            parseInt(
+                                game.teamPositions[i],
+                                10
+                            );
                     }
                 }
             }
 
-            const categoryText = document.getElementById("currentCategory");
+
+            // =========================
+            // CATEGORIE OP SCHERM
+            // =========================
+
+            const categoryText =
+                document.getElementById("currentCategory");
+
             if (categoryText) {
-                categoryText.innerText = "Categorie: " + selectedCategory;
+                categoryText.innerText =
+                    "Categorie: " +
+                    selectedCategory;
             }
 
+
             updateTurn();
+
 
             if (game.gameState !== "playing") {
                 return;
             }
 
-            // -----------------------------------------
-            // TURN = dobbel-scherm
-            // -----------------------------------------
+
+            // =====================================
+            // TURN = DOBBEL-SCHERM
+            // =====================================
+
             if (game.phase === "turn") {
 
                 currentQuestion = null;
@@ -269,23 +337,38 @@ function listenToGameState() {
                     parseInt(currentTeam, 10) ===
                     parseInt(window.myTeam, 10)
                 ) {
-                    statusMessage.innerText = "🎲 Jij bent aan de beurt.";
+
+                    statusMessage.innerText =
+                        "🎲 Jij bent aan de beurt.";
+
                 } else {
-                    statusMessage.innerText = "⏳ Wacht op je beurt.";
+
+                    statusMessage.innerText =
+                        "⏳ Wacht op je beurt.";
                 }
 
                 renderSynchronizedBoard();
                 return;
             }
 
-            // -----------------------------------------
-            // ROLLED = worp zichtbaar op scherm 1
-            // -----------------------------------------
+
+            // =====================================
+            // ROLLED = WORP ZICHTBAAR
+            // =====================================
+
             if (game.phase === "rolled") {
 
-                if (game.roll !== undefined && game.roll !== null) {
-                    lastRoll = parseInt(game.roll, 10);
-                    diceText.innerText = "🎲 Je gooide: " + lastRoll;
+                if (
+                    game.roll !== undefined &&
+                    game.roll !== null
+                ) {
+
+                    lastRoll =
+                        parseInt(game.roll, 10);
+
+                    diceText.innerText =
+                        "🎲 Je gooide: " +
+                        lastRoll;
                 }
 
                 showScreen(screen1);
@@ -294,46 +377,75 @@ function listenToGameState() {
                     parseInt(currentTeam, 10) ===
                     parseInt(window.myTeam, 10)
                 ) {
-                    statusMessage.innerText = "🎲 Je hebt gegooid.";
+
+                    statusMessage.innerText =
+                        "🎲 Je hebt gegooid.";
+
                 } else {
-                    statusMessage.innerText = "⏳ Even wachten...";
+
+                    statusMessage.innerText =
+                        "⏳ Even wachten...";
                 }
 
                 return;
             }
 
-            // -----------------------------------------
-            // QUESTION = dezelfde vraag op alle telefoons
-            // -----------------------------------------
+
+            // =====================================
+            // QUESTION = ZELFDE VRAAG
+            // =====================================
+
             if (game.phase === "question") {
 
-                if (game.roll !== undefined && game.roll !== null) {
-                    lastRoll = parseInt(game.roll, 10);
-                    diceText.innerText = "🎲 Je gooide: " + lastRoll;
+                if (
+                    game.roll !== undefined &&
+                    game.roll !== null
+                ) {
+
+                    lastRoll =
+                        parseInt(game.roll, 10);
+
+                    diceText.innerText =
+                        "🎲 Je gooide: " +
+                        lastRoll;
                 }
 
                 showScreen(screen2);
 
-                if (game.questionIndex !== undefined && typeof loadSynchronizedQuestion === "function") {
-                    loadSynchronizedQuestion(game.questionIndex);
+                if (
+                    game.questionIndex !== undefined &&
+                    typeof loadSynchronizedQuestion === "function"
+                ) {
+
+                    loadSynchronizedQuestion(
+                        game.questionIndex
+                    );
                 }
 
                 return;
             }
 
-            // -----------------------------------------
-            // BOARD = bord met gesynchroniseerde posities
-            // -----------------------------------------
+
+            // =====================================
+            // BOARD = SPEELBORD
+            // =====================================
+
             if (game.phase === "board") {
 
                 showScreen(screen3);
 
-                if (typeof showBoardDice === "function" && game.roll !== undefined && game.roll !== null) {
+                if (
+                    typeof showBoardDice === "function" &&
+                    game.roll !== undefined &&
+                    game.roll !== null
+                ) {
+
                     showBoardDice(game.roll);
                 }
 
                 renderSynchronizedBoard();
                 return;
             }
+
         });
 }
