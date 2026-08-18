@@ -153,212 +153,121 @@ function startGame() {
 
         updateTeamInputs();
 
-        activeTeams =
-    parseInt(
-        document.getElementById("teamCount").value
-    );
+        activeTeams = parseInt(
+            document.getElementById("teamCount").value,
+            10
+        );
 
-teams[0].name =
-    document.getElementById("team1Name").value.trim();
+        teams[0].name = document.getElementById("team1Name").value.trim();
+        teams[1].name = document.getElementById("team2Name").value.trim();
+        teams[2].name = document.getElementById("team3Name").value.trim();
+        teams[3].name = document.getElementById("team4Name").value.trim();
 
-teams[1].name =
-    document.getElementById("team2Name").value.trim();
+        for (let i = 0; i < 4; i++) {
+            if (!teams[i].name) {
+                teams[i].name = "Team " + (i + 1);
+            }
+        }
 
-teams[2].name =
-    document.getElementById("team3Name").value.trim();
+        // Posities bij een nieuw spel resetten
+        for (let i = 0; i < 4; i++) {
+            teams[i].position = 0;
+            teams[i].skipTurns = 0;
+        }
 
-teams[3].name =
-    document.getElementById("team4Name").value.trim();
-        
+        currentTeam = 0;
+        lastRoll = 0;
+        currentQuestion = null;
+        window.diceRolled = false;
 
         // =========================
-        // 2. LEGE NAMEN VOORKOMEN
-        // =========================
-
-        if (!teams[0].name) {
-            teams[0].name = "Team 1";
-        }
-
-        if (!teams[1].name) {
-            teams[1].name = "Team 2";
-        }
-
-        if (!teams[2].name) {
-            teams[2].name = "Team 3";
-        }
-
-        if (!teams[3].name) {
-            teams[3].name = "Team 4";
-        }
-
-
-        // =========================
-        // 3. TEAMNAMEN OP HUIDIGE
-        //    TELEFOON TONEN
+        // 2. TEAMNAMEN OP HUIDIGE TELEFOON
         // =========================
 
         for (let i = 1; i <= 4; i++) {
 
-            const row =
-                document.getElementById(
-                    "teamDisplay" + i
-                );
+            const row = document.getElementById("teamDisplay" + i);
+            const display = document.getElementById("displayTeam" + i);
 
-            const display =
-                document.getElementById(
-                    "displayTeam" + i
-                );
-
-            if (!row || !display) {
-                continue;
-            }
+            if (!row || !display) continue;
 
             if (i <= activeTeams) {
-
                 row.style.display = "block";
-
-                display.innerText =
-                    teams[i - 1].name;
-
+                display.innerText = teams[i - 1].name;
             } else {
-
                 row.style.display = "none";
-
             }
-
         }
 
-
         // =========================
-        // 4. INSTELLINGEN VASTZETTEN
-        // =========================
-
-        document.getElementById(
-            "categorySelect"
-        ).disabled = true;
-
-        document.getElementById(
-            "teamCount"
-        ).disabled = true;
-
-
-        // =========================
-        // 5. GEGEVENS NAAR FIREBASE
+        // 3. INSTELLINGEN VASTZETTEN
         // =========================
 
-        if (
-            window.isHost &&
-            window.currentGameCode
-        ) {
+        document.getElementById("categorySelect").disabled = true;
+        document.getElementById("teamCount").disabled = true;
+        document.getElementById("categorySelect").style.pointerEvents = "none";
+        document.getElementById("teamCount").style.pointerEvents = "none";
+        document.getElementById("categorySelect").style.opacity = "0.6";
+        document.getElementById("teamCount").style.opacity = "0.6";
+
+        // =========================
+        // 4. GEGEVENS NAAR FIREBASE
+        // =========================
+
+        if (window.isHost && window.currentGameCode) {
+
+            const positions = {
+                0: 0,
+                1: 0,
+                2: 0,
+                3: 0
+            };
 
             firebase.database()
-                .ref(
-                    "games/" +
-                    window.currentGameCode
-                )
-.update({
-
-    gameState: "playing",
-
-    currentTurn: 0,
-
-    phase: "turn",
-
-    activeTeams: activeTeams,
-
-    selectedCategory: selectedCategory,
-
-    teamNames: {
-
-        0: document.getElementById("team1Name").value.trim(),
-
-        1: document.getElementById("team2Name").value.trim(),
-
-        2: document.getElementById("team3Name").value.trim(),
-
-        3: document.getElementById("team4Name").value.trim()
-
-    }
-
-})
+                .ref("games/" + window.currentGameCode)
+                .update({
+                    gameState: "playing",
+                    currentTurn: 0,
+                    activeTeams: activeTeams,
+                    selectedCategory: selectedCategory,
+                    phase: "turn",
+                    roll: null,
+                    questionIndex: null,
+                    teamNames: {
+                        0: teams[0].name,
+                        1: teams[1].name,
+                        2: teams[2].name,
+                        3: teams[3].name
+                    },
+                    teamPositions: positions
+                })
                 .then(() => {
-
-                    console.log(
-                        "✅ Spel gestart en teamgegevens opgeslagen"
-                    );
-
+                    console.log("✅ Spel gestart en teamgegevens opgeslagen");
                 })
                 .catch(error => {
-
-                    console.error(
-                        "❌ Firebase startGame fout:",
-                        error
-                    );
-
-                    alert(
-                        "Het spel kon niet worden gestart.\n\n" +
-                        error.message
-                    );
-
+                    console.error("❌ Firebase startGame fout:", error);
+                    alert("Het spel kon niet worden gestart.\n\n" + error.message);
                 });
-
         }
 
-
         // =========================
-        // 6. CATEGORIE TONEN
+        // 5. CATEGORIE EN BEURT
         // =========================
 
-        const categoryText =
-            document.getElementById(
-                "currentCategory"
-            );
-
+        const categoryText = document.getElementById("currentCategory");
         if (categoryText) {
-
-            categoryText.innerText =
-                "Categorie: " +
-                selectedCategory;
-
+            categoryText.innerText = "Categorie: " + selectedCategory;
         }
-
-
-        // =========================
-        // 7. BEURT BIJWERKEN
-        // =========================
-
-        currentTeam = 0;
 
         updateTurn();
-
-
-        // =========================
-        // 8. HOST NAAR SPELSCHERM
-        // =========================
-
         showScreen(screen1);
 
+        console.log("✅ startGame() uitgevoerd");
 
-        console.log(
-            "✅ startGame() uitgevoerd"
-        );
-
+    } catch (e) {
+        console.error("❌ STARTGAME ERROR:", e);
+        alert("Er is een fout bij het starten van het spel:\n\n" + e.message);
     }
-
-    catch (e) {
-
-        console.error(
-            "❌ STARTGAME ERROR:",
-            e
-        );
-
-        alert(
-            "Er is een fout bij het starten van het spel:\n\n" +
-            e.message
-        );
-
-    }
-
 }
 
 function updateTeamInputs() {
@@ -489,104 +398,42 @@ board.appendChild(cell);
 
 }
 
-function syncBoardToFirebase() {
+/* ===== UPDATE BORD ===== */
 
-    if (!window.currentGameCode) {
-        return;
-    }
+function updateBoard(){
 
-    const positions = {};
+const pawns =
+document.querySelectorAll(".pawns");
 
-    for (let i = 0; i < activeTeams; i++) {
+pawns.forEach(p=>{
+p.innerHTML = "";
+});
 
-        positions[i] =
-            teams[i].position || 0;
+teams
+.slice(0, activeTeams)
+.forEach(team=>{
 
-    }
+if(team.position > 0){
 
-    firebase.database()
-        .ref(
-            "games/" +
-            window.currentGameCode
-        )
-        .update({
+const cell =
+document.querySelectorAll(".cell")
+[team.position - 1];
 
-            teamPositions: positions
+const pawn =
+document.createElement("div");
 
-        })
-        .catch(error => {
+pawn.classList.add(
+"pawn",
+team.color
+);
 
-            console.error(
-                "❌ Fout bij synchroniseren bord:",
-                error
-            );
-
-        });
+cell
+.querySelector(".pawns")
+.appendChild(pawn);
 
 }
 
-/* ===== UPDATE BORD ===== */
-
-function updateBoard() {
-
-    const pawns =
-        document.querySelectorAll(".pawns");
-
-
-    // Eerst alle pionnen verwijderen
-
-    pawns.forEach(p => {
-
-        p.innerHTML = "";
-
-    });
-
-
-    // Daarna alle actieve teams opnieuw tekenen
-
-    teams
-        .slice(0, activeTeams)
-        .forEach(team => {
-
-            if (
-                team.position > 0
-            ) {
-
-                const cell =
-                    document.querySelectorAll(
-                        ".cell"
-                    )[team.position - 1];
-
-
-                if (!cell) {
-                    return;
-                }
-
-
-                const pawn =
-                    document.createElement(
-                        "div"
-                    );
-
-
-                pawn.classList.add(
-                    "pawn",
-                    team.color
-                );
-
-
-                cell
-                    .querySelector(".pawns")
-                    .appendChild(pawn);
-
-            }
-
-        });
-
-
-    // Posities centraal opslaan
-
-    syncBoardToFirebase();
+});
 
 }
 
@@ -656,96 +503,44 @@ function updateTurn() {
 
 function nextTurn() {
 
-    // Zorg dat activeTeams altijd een geldig getal is.
-    activeTeams =
-        parseInt(activeTeams, 10);
+    activeTeams = parseInt(activeTeams, 10);
 
-    if (
-        !Number.isInteger(activeTeams) ||
-        activeTeams < 1
-    ) {
+    if (!Number.isInteger(activeTeams) || activeTeams < 1) {
         activeTeams = 2;
     }
 
-
-    // Volgende team
     currentTeam++;
 
-
-    // Nooit buiten het actieve aantal teams
-    if (
-        currentTeam >= activeTeams
-    ) {
-
+    if (currentTeam >= activeTeams) {
         currentTeam = 0;
-
     }
 
-
-    let team =
-        teams[currentTeam];
-
+    let team = teams[currentTeam];
 
     if (!team) {
         currentTeam = 0;
         team = teams[0];
     }
 
-
-    // Beurt overslaan
-    if (
-        team.skipTurns &&
-        team.skipTurns > 0
-    ) {
-
+    if (team.skipTurns > 0) {
         team.skipTurns--;
-
-        statusMessage.innerText =
-            team.icon +
-            " " +
-            team.name +
-            " moet een beurt overslaan.";
-
         nextTurn();
-
         return;
     }
 
-
-    // Nieuwe beurt: opnieuw dobbelen toegestaan
     window.diceRolled = false;
-
     diceText.innerText = "";
-
     updateTurn();
-
 }
-
-/* ===== DOBBELEN ===== */
 
 /* ===== DOBBELEN ===== */
 
 function rollDice() {
 
-    // =========================
-    // ALLEEN HET TEAM AAN DE BEURT
-    // =========================
-
-    if (
-        parseInt(currentTeam, 10) !==
-        parseInt(window.myTeam, 10)
-    ) {
-
-        statusMessage.innerText =
-            "⏳ Wacht op je beurt.";
-
+    if (parseInt(currentTeam, 10) !== parseInt(window.myTeam, 10)) {
+        statusMessage.innerText = "⏳ Wacht op je beurt.";
         return;
     }
-
-
-    // =========================
-    // NIET TWEE KEER GOOIEN
-    // =========================
 
     if (window.diceRolled) {
         return;
@@ -753,123 +548,40 @@ function rollDice() {
 
     window.diceRolled = true;
 
-
-    // =========================
-    // DOBBELGELUID
-    // =========================
-
     soundDobbel.currentTime = 0;
+    soundDobbel.play().catch(() => {});
 
-    soundDobbel.play()
-        .catch(() => {});
-
-
-    // =========================
-    // WORP MAKEN
-    // =========================
-
-    const roll =
-        Math.floor(Math.random() * 6) + 1;
-
+    const roll = Math.floor(Math.random() * 6) + 1;
     lastRoll = roll;
 
-
-    // =========================
-    // VRAAG KIEZEN
-    // =========================
-
-    const actieveVragen =
-        vragen.filter(
-            v => v.categorie === selectedCategory
-        );
-
+    const actieveVragen = vragen.filter(
+        v => v.categorie === selectedCategory
+    );
 
     if (!actieveVragen.length) {
-
         window.diceRolled = false;
-
-        statusMessage.innerText =
-            "Geen vragen gevonden voor deze categorie.";
-
+        statusMessage.innerText = "Geen vragen gevonden voor deze categorie.";
         return;
     }
 
+    const questionIndex = Math.floor(
+        Math.random() * actieveVragen.length
+    );
 
-    const questionIndex =
-        Math.floor(
-            Math.random() *
-            actieveVragen.length
-        );
-
-
-    // =========================
-    // WORP EN VRAAG NAAR FIREBASE
-    // =========================
-
+    // De worp wordt eerst centraal als 'rolled' opgeslagen.
     firebase.database()
-        .ref(
-            "games/" +
-            window.currentGameCode
-        )
+        .ref("games/" + window.currentGameCode)
         .update({
-
-            currentTurn:
-                currentTeam,
-
-            roll:
-                roll,
-
-            questionIndex:
-                questionIndex,
-
-            phase:
-                "rolled"
-
-        })
-        .then(() => {
-
-            console.log(
-                "🎲 Worp opgeslagen:",
-                roll
-            );
-
-
-            // =========================
-            // NA 3,5 SECONDEN
-            // NAAR DE VRAAG
-            // =========================
-
-            setTimeout(() => {
-
-                firebase.database()
-                    .ref(
-                        "games/" +
-                        window.currentGameCode
-                    )
-                    .update({
-
-                        phase:
-                            "question"
-
-                    });
-
-            }, 3500);
-
+            currentTurn: currentTeam,
+            roll: roll,
+            questionIndex: questionIndex,
+            phase: "rolled"
         })
         .catch(error => {
-
-            console.error(
-                "❌ Fout bij opslaan van worp:",
-                error
-            );
-
+            console.error("❌ Fout bij opslaan van worp:", error);
             window.diceRolled = false;
-
-            statusMessage.innerText =
-                "Fout bij het gooien.";
-
+            statusMessage.innerText = "Fout bij het gooien.";
         });
-
 }
 
 /* ===== VRAGEN ===== */
@@ -998,66 +710,41 @@ function loadSynchronizedQuestion(index) {
 
 }
 
-
 // =====================================================
 // LAATSTE DOBBELWORP BOVEN HET SPEELBORD
 // =====================================================
-
 function showBoardDice(roll) {
 
-    let boardDice =
-        document.getElementById("boardDiceResult");
+    let boardDice = document.getElementById("boardDiceResult");
 
     if (!boardDice) {
+        boardDice = document.createElement("p");
+        boardDice.id = "boardDiceResult";
+        boardDice.style.fontSize = "1.2rem";
+        boardDice.style.fontWeight = "bold";
+        boardDice.style.margin = "10px 0";
 
-        boardDice =
-            document.createElement("p");
+        const boardElement = document.getElementById("board");
 
-        boardDice.id =
-            "boardDiceResult";
-
-        boardDice.style.fontSize =
-            "1.2rem";
-
-        boardDice.style.fontWeight =
-            "bold";
-
-        boardDice.style.margin =
-            "10px 0";
-
-        const boardElement =
-            document.getElementById("board");
-
-        if (boardElement) {
-
-            boardElement.parentElement.insertBefore(
-                boardDice,
-                boardElement
-            );
-
+        if (boardElement && boardElement.parentElement) {
+            boardElement.parentElement.insertBefore(boardDice, boardElement);
         } else {
-
-            document.body.appendChild(
-                boardDice
-            );
-
+            document.body.appendChild(boardDice);
         }
-
     }
 
-    boardDice.innerText =
-        "🎲 Laatste worp: " + roll;
+    boardDice.innerText = "🎲 Laatste worp: " + roll;
 }
 
 /* ===== ANTWOORD CONTROLEREN ===== */
 
 async function checkAnswer(choice) {
 
-    // Alleen het team dat aan de beurt is mag antwoorden
-    if (
-        parseInt(currentTeam, 10) !==
-        parseInt(window.myTeam, 10)
-    ) {
+    if (parseInt(currentTeam, 10) !== parseInt(window.myTeam, 10)) {
+        return;
+    }
+
+    if (!currentQuestion) {
         return;
     }
 
@@ -1070,135 +757,103 @@ async function checkAnswer(choice) {
     if (choice === correct) {
 
         document
-            .getElementById(
-                "btn" + choice.toUpperCase()
-            )
+            .getElementById("btn" + choice.toUpperCase())
             .classList.add("correct");
 
         explanationText.innerText =
             "✅ Goed! " + currentQuestion.uitleg;
 
-        await sleep(4000);
+        await sleep(2500);
+
+        showScreen(screen3);
+        showBoardDice(lastRoll);
 
         const team = teams[currentTeam];
 
-        showScreen(screen3);
-
-        showBoardDice(lastRoll);
-
-        // Pion langzaam verplaatsen
+        // Lokale beweging zichtbaar animeren.
         for (let i = 0; i < lastRoll; i++) {
 
             if (team.position < TOTAL_CELLS) {
-
                 team.position++;
                 updateBoard();
-                await sleep(700);
-
+                await sleep(500);
             }
         }
 
-        // Speciale vakken uitvoeren
         await handleSpecial(team);
+        updateBoard();
 
-        await sleep(5000);
-        
-        // Gewonnen
         if (team.position >= TOTAL_CELLS) {
-
-            soundWin.play();
-
+            soundWin.play().catch(() => {});
             showPopup(
                 team.icon +
                 " " +
                 team.name +
                 " heeft gewonnen!"
             );
-
             return;
         }
 
-        // Volgende team berekenen
-        let nextTeam = currentTeam + 1;
+        const positions = {};
+        for (let i = 0; i < activeTeams; i++) {
+            positions[i] = teams[i].position || 0;
+        }
 
+        // Iedereen ziet nu het bord met de nieuwe posities.
+        await firebase.database()
+            .ref("games/" + window.currentGameCode)
+            .update({
+                teamPositions: positions,
+                phase: "board"
+            });
+
+        // Bord blijft zichtbaar op alle telefoons.
+        await sleep(5000);
+
+        let nextTeam = currentTeam + 1;
         if (nextTeam >= activeTeams) {
             nextTeam = 0;
         }
 
-        // Volgende beurt centraal opslaan
-        firebase.database()
-            .ref(
-                "games/" +
-                window.currentGameCode
-            )
+        await firebase.database()
+            .ref("games/" + window.currentGameCode)
             .update({
-
                 currentTurn: nextTeam,
                 phase: "turn",
                 roll: null,
                 questionIndex: null
-
-            })
-            .catch(error => {
-
-                console.error(
-                    "❌ Fout bij volgende beurt:",
-                    error
-                );
-
             });
 
         return;
     }
 
-    // Fout antwoord
+    // FOUT ANTWOORD
     document
-        .getElementById(
-            "btn" + choice.toUpperCase()
-        )
+        .getElementById("btn" + choice.toUpperCase())
         .classList.add("wrong");
 
     document
-        .getElementById(
-            "btn" + correct.toUpperCase()
-        )
+        .getElementById("btn" + correct.toUpperCase())
         .classList.add("correct");
 
     explanationText.innerText =
         "❌ Fout! " + currentQuestion.uitleg;
 
-    await sleep(3500);
+    await sleep(3000);
 
-    // Volgende team berekenen
     let nextTeam = currentTeam + 1;
-
     if (nextTeam >= activeTeams) {
         nextTeam = 0;
     }
 
-    // Ook bij fout antwoord naar de volgende beurt
-    firebase.database()
-        .ref(
-            "games/" +
-            window.currentGameCode
-        )
+    await firebase.database()
+        .ref("games/" + window.currentGameCode)
         .update({
-
             currentTurn: nextTeam,
             phase: "turn",
             roll: null,
             questionIndex: null
-
-        })
-        .catch(error => {
-
-            console.error(
-                "❌ Fout bij volgende beurt:",
-                error
-            );
-
         });
-
 }
 
 /* ===== SPECIALE VAKKEN ===== */
@@ -1317,3 +972,4 @@ screen0.classList.add("hidden");
 screen1.classList.add("hidden");
 screen2.classList.add("hidden");
 screen3.classList.add("hidden");
+
