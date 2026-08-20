@@ -24,7 +24,7 @@ function createGame() {
             gameState: "lobby",
             currentTurn: 0,
             activeTeams: 4,
-            selectedCategory: "Ooststellingwerf",
+            selectedCategory: null,
             phase: "lobby",
             roll: null,
             questionIndex: null,
