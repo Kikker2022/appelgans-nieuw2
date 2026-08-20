@@ -153,6 +153,10 @@ function startGame() {
 
         updateTeamInputs();
 
+        // Gekozen categorie daadwerkelijk uit het keuzemenu halen
+        selectedCategory =
+            document.getElementById("categorySelect").value;
+
         activeTeams = parseInt(
             document.getElementById("teamCount").value,
             10
@@ -807,7 +811,7 @@ async function checkAnswer(choice) {
         explanationText.innerText =
             "✅ Goed! " + currentQuestion.uitleg;
 
-        await sleep(5500);
+        await sleep(2500);
 
         const team = teams[currentTeam];
 
@@ -862,7 +866,7 @@ async function checkAnswer(choice) {
         }
 
         // Bord nog even zichtbaar laten.
-        await sleep(2500);
+        await sleep(5000);
 
         let nextTeam = currentTeam + 1;
 
