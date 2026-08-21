@@ -153,10 +153,6 @@ function startGame() {
 
         updateTeamInputs();
 
-        // Gekozen categorie daadwerkelijk uit het keuzemenu halen
-        selectedCategory =
-            document.getElementById("categorySelect").value;
-
         activeTeams = parseInt(
             document.getElementById("teamCount").value,
             10
@@ -230,25 +226,21 @@ function startGame() {
             firebase.database()
                 .ref("games/" + window.currentGameCode)
                 .update({
-
-    gameState: "playing",
-
-    currentTurn: 0,
-
-    activeTeams: activeTeams,
-
-    selectedCategory: selectedCategory,
-
-    teamNames: {
-        0: document.getElementById("team1Name").value.trim(),
-        1: document.getElementById("team2Name").value.trim(),
-        2: document.getElementById("team3Name").value.trim(),
-        3: document.getElementById("team4Name").value.trim()
-    },
-
-    usedQuestions: {}
-
-})
+                    gameState: "playing",
+                    currentTurn: 0,
+                    activeTeams: activeTeams,
+                    selectedCategory: selectedCategory,
+                    phase: "turn",
+                    roll: null,
+                    questionIndex: null,
+                    teamNames: {
+                        0: teams[0].name,
+                        1: teams[1].name,
+                        2: teams[2].name,
+                        3: teams[3].name
+                    },
+                    teamPositions: positions
+                })
                 .then(() => {
                     console.log("✅ Spel gestart en teamgegevens opgeslagen");
                 })
@@ -398,29 +390,11 @@ icon = "🏁";
 cell.innerHTML =
 `
 <div>${i}</div>
-<span class="tileIcon">${icon}</span>
+<span>${icon}</span>
 <div class="pawns"></div>
 `;
 
-const tileIcon =
-    cell.querySelector(".tileIcon");
-
-if (tileIcon) {
-
-    tileIcon.style.display =
-        "flex";
-
-    tileIcon.style.alignItems =
-        "center";
-
-    tileIcon.style.justifyContent =
-        "center";
-
-    tileIcon.style.fontSize =
-        "clamp(1.5rem, 6vw, 2.4rem)";
-
-    tileIcon.style.lineHeight =
-        "1";
+board.appendChild(cell);
 
 }
 
@@ -561,27 +535,12 @@ function nextTurn() {
 
 /* ===== DOBBELEN ===== */
 
-async function rollDice() {
+function rollDice() {
 
-    // =========================
-    // ALLEEN HET TEAM AAN DE BEURT
-    // =========================
-
-    if (
-        parseInt(currentTeam, 10) !==
-        parseInt(window.myTeam, 10)
-    ) {
-
-        statusMessage.innerText =
-            "⏳ Wacht op je beurt.";
-
+    if (parseInt(currentTeam, 10) !== parseInt(window.myTeam, 10)) {
+        statusMessage.innerText = "⏳ Wacht op je beurt.";
         return;
     }
-
-
-    // =========================
-    // NIET TWEE KEER GOOIEN
-    // =========================
 
     if (window.diceRolled) {
         return;
@@ -589,205 +548,61 @@ async function rollDice() {
 
     window.diceRolled = true;
 
-
-    // =========================
-    // GELUID
-    // =========================
-
     soundDobbel.currentTime = 0;
+    soundDobbel.play().catch(() => {});
 
-    soundDobbel.play()
-        .catch(() => {});
-
-
-    // =========================
-    // WORP
-    // =========================
-
-    const roll =
-        Math.floor(Math.random() * 6) + 1;
-
+    const roll = Math.floor(Math.random() * 6) + 1;
     lastRoll = roll;
 
-
-    // =========================
-    // VRAGEN VAN GEKOZEN CATEGORIE
-    // =========================
-
-    const actieveVragen =
-        vragen.filter(
-            v => v.categorie === selectedCategory
-        );
-
+    const actieveVragen = vragen.filter(
+        v => v.categorie === selectedCategory
+    );
 
     if (!actieveVragen.length) {
-
         window.diceRolled = false;
-
-        statusMessage.innerText =
-            "Geen vragen gevonden voor deze categorie.";
-
+        statusMessage.innerText = "Geen vragen gevonden voor deze categorie.";
         return;
     }
 
-
-    // =========================
-    // BESTAANDE GEBRUIKTE VRAGEN
-    // UIT FIREBASE OPHALEN
-    // =========================
-
-    let usedQuestions = {};
-
-    try {
-
-        const snapshot =
-            await firebase.database()
-                .ref(
-                    "games/" +
-                    window.currentGameCode +
-                    "/usedQuestions"
-                )
-                .once("value");
-
-        usedQuestions =
-            snapshot.val() || {};
-
-    } catch (error) {
-
-        console.error(
-            "❌ Fout bij ophalen gebruikte vragen:",
-            error
-        );
-
-        window.diceRolled = false;
-
-        statusMessage.innerText =
-            "Fout bij het ophalen van de vragen.";
-
-        return;
-    }
-
-
-    // =========================
-    // ALLEEN NOG NIET GEBRUIKTE
-    // VRAGEN BESCHIKBAAR MAKEN
-    // =========================
-
-    let beschikbareIndices = [];
-
-    for (
-        let i = 0;
-        i < actieveVragen.length;
-        i++
-    ) {
-
-        if (!usedQuestions[i]) {
-
-            beschikbareIndices.push(i);
-
-        }
-
-    }
-
-
-    // =========================
-    // ALLE VRAGEN GEBRUIKT?
-    // DAN NIEUWE RONDE
-    // =========================
-
-    if (
-        beschikbareIndices.length === 0
-    ) {
-
-        usedQuestions = {};
-
-        beschikbareIndices = [];
-
-        for (
-            let i = 0;
-            i < actieveVragen.length;
-            i++
-        ) {
-
-            beschikbareIndices.push(i);
-
-        }
-
-    }
-
-
-    // =========================
-    // WILLEKEURIGE VRAAG UIT
-    // DE OVERGEBLEVEN VRAGEN
-    // =========================
-
-    const questionIndex =
-        beschikbareIndices[
-            Math.floor(
-                Math.random() *
-                beschikbareIndices.length
-            )
-        ];
-
-
-    // =========================
-    // DEZE VRAAG ALS GEBRUIKT
-    // MARKEREN
-    // =========================
-
-    usedQuestions[questionIndex] = true;
-
-
-    // =========================
-    // FIREBASE BIJWERKEN
-    // =========================
+    const questionIndex = Math.floor(
+        Math.random() * actieveVragen.length
+    );
 
     firebase.database()
-        .ref(
-            "games/" +
-            window.currentGameCode
-        )
+        .ref("games/" + window.currentGameCode)
         .update({
+            currentTurn: currentTeam,
+            roll: roll,
+            questionIndex: questionIndex,
+            phase: "rolled"
+        })
+        .then(() => {
 
-            currentTurn:
-                currentTeam,
+            // Na 3,5 seconden gaat IEDERE telefoon naar dezelfde vraag.
+            setTimeout(() => {
 
-            roll:
-                roll,
+                firebase.database()
+                    .ref("games/" + window.currentGameCode)
+                    .update({
+                        phase: "question"
+                    })
+                    .catch(error => {
+                        console.error(
+                            "❌ Fout bij overgang naar vraag:",
+                            error
+                        );
+                    });
 
-            questionIndex:
-                questionIndex,
-
-            usedQuestions:
-                usedQuestions,
-
-            phase:
-                "question"
+            }, 3500);
 
         })
         .catch(error => {
 
-            console.error(
-                "❌ Fout bij opslaan van worp/vraag:",
-                error
-            );
-
+            console.error("❌ Fout bij opslaan van worp:", error);
             window.diceRolled = false;
-
-            statusMessage.innerText =
-                "Fout bij het gooien.";
+            statusMessage.innerText = "Fout bij het gooien.";
 
         });
-
-
-    // =========================
-    // LOKALE WEERGAVE
-    // =========================
-
-    categorySelect.disabled = true;
-
-    statusMessage.innerText = "";
-
 }
 
 /* ===== VRAGEN ===== */
@@ -992,7 +807,7 @@ async function checkAnswer(choice) {
         explanationText.innerText =
             "✅ Goed! " + currentQuestion.uitleg;
 
-        await sleep(2500);
+        await sleep(5500);
 
         const team = teams[currentTeam];
 
@@ -1047,7 +862,7 @@ async function checkAnswer(choice) {
         }
 
         // Bord nog even zichtbaar laten.
-        await sleep(5000);
+        await sleep(2500);
 
         let nextTeam = currentTeam + 1;
 
