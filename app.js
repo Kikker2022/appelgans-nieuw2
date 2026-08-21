@@ -226,21 +226,25 @@ function startGame() {
             firebase.database()
                 .ref("games/" + window.currentGameCode)
                 .update({
-                    gameState: "playing",
-                    currentTurn: 0,
-                    activeTeams: activeTeams,
-                    selectedCategory: selectedCategory,
-                    phase: "turn",
-                    roll: null,
-                    questionIndex: null,
-                    teamNames: {
-                        0: teams[0].name,
-                        1: teams[1].name,
-                        2: teams[2].name,
-                        3: teams[3].name
-                    },
-                    teamPositions: positions
-                })
+
+    gameState: "playing",
+
+    currentTurn: 0,
+
+    activeTeams: activeTeams,
+
+    selectedCategory: selectedCategory,
+
+    teamNames: {
+        0: document.getElementById("team1Name").value.trim(),
+        1: document.getElementById("team2Name").value.trim(),
+        2: document.getElementById("team3Name").value.trim(),
+        3: document.getElementById("team4Name").value.trim()
+    },
+
+    usedQuestions: {}
+
+})
                 .then(() => {
                     console.log("✅ Spel gestart en teamgegevens opgeslagen");
                 })
@@ -390,9 +394,29 @@ icon = "🏁";
 cell.innerHTML =
 `
 <div>${i}</div>
-<span>${icon}</span>
+<span class="tileIcon">${icon}</span>
 <div class="pawns"></div>
 `;
+
+const tileIcon =
+    cell.querySelector(".tileIcon");
+
+if (tileIcon) {
+
+    tileIcon.style.display = "flex";
+
+    tileIcon.style.alignItems =
+        "center";
+
+    tileIcon.style.justifyContent =
+        "center";
+
+    tileIcon.style.fontSize =
+        "clamp(1.5rem, 6vw, 2.4rem)";
+
+    tileIcon.style.lineHeight = "1";
+
+}
 
 board.appendChild(cell);
 
@@ -535,12 +559,27 @@ function nextTurn() {
 
 /* ===== DOBBELEN ===== */
 
-function rollDice() {
+async function rollDice() {
 
-    if (parseInt(currentTeam, 10) !== parseInt(window.myTeam, 10)) {
-        statusMessage.innerText = "⏳ Wacht op je beurt.";
+    // =========================
+    // ALLEEN HET TEAM AAN DE BEURT
+    // =========================
+
+    if (
+        parseInt(currentTeam, 10) !==
+        parseInt(window.myTeam, 10)
+    ) {
+
+        statusMessage.innerText =
+            "⏳ Wacht op je beurt.";
+
         return;
     }
+
+
+    // =========================
+    // NIET TWEE KEER GOOIEN
+    // =========================
 
     if (window.diceRolled) {
         return;
@@ -548,61 +587,205 @@ function rollDice() {
 
     window.diceRolled = true;
 
-    soundDobbel.currentTime = 0;
-    soundDobbel.play().catch(() => {});
 
-    const roll = Math.floor(Math.random() * 6) + 1;
+    // =========================
+    // GELUID
+    // =========================
+
+    soundDobbel.currentTime = 0;
+
+    soundDobbel.play()
+        .catch(() => {});
+
+
+    // =========================
+    // WORP
+    // =========================
+
+    const roll =
+        Math.floor(Math.random() * 6) + 1;
+
     lastRoll = roll;
 
-    const actieveVragen = vragen.filter(
-        v => v.categorie === selectedCategory
-    );
+
+    // =========================
+    // VRAGEN VAN GEKOZEN CATEGORIE
+    // =========================
+
+    const actieveVragen =
+        vragen.filter(
+            v => v.categorie === selectedCategory
+        );
+
 
     if (!actieveVragen.length) {
+
         window.diceRolled = false;
-        statusMessage.innerText = "Geen vragen gevonden voor deze categorie.";
+
+        statusMessage.innerText =
+            "Geen vragen gevonden voor deze categorie.";
+
         return;
     }
 
-    const questionIndex = Math.floor(
-        Math.random() * actieveVragen.length
-    );
+
+    // =========================
+    // BESTAANDE GEBRUIKTE VRAGEN
+    // UIT FIREBASE OPHALEN
+    // =========================
+
+    let usedQuestions = {};
+
+    try {
+
+        const snapshot =
+            await firebase.database()
+                .ref(
+                    "games/" +
+                    window.currentGameCode +
+                    "/usedQuestions"
+                )
+                .once("value");
+
+        usedQuestions =
+            snapshot.val() || {};
+
+    } catch (error) {
+
+        console.error(
+            "❌ Fout bij ophalen gebruikte vragen:",
+            error
+        );
+
+        window.diceRolled = false;
+
+        statusMessage.innerText =
+            "Fout bij het ophalen van de vragen.";
+
+        return;
+    }
+
+
+    // =========================
+    // ALLEEN NOG NIET GEBRUIKTE
+    // VRAGEN BESCHIKBAAR MAKEN
+    // =========================
+
+    let beschikbareIndices = [];
+
+    for (
+        let i = 0;
+        i < actieveVragen.length;
+        i++
+    ) {
+
+        if (!usedQuestions[i]) {
+
+            beschikbareIndices.push(i);
+
+        }
+
+    }
+
+
+    // =========================
+    // ALLE VRAGEN GEBRUIKT?
+    // DAN NIEUWE RONDE
+    // =========================
+
+    if (
+        beschikbareIndices.length === 0
+    ) {
+
+        usedQuestions = {};
+
+        beschikbareIndices = [];
+
+        for (
+            let i = 0;
+            i < actieveVragen.length;
+            i++
+        ) {
+
+            beschikbareIndices.push(i);
+
+        }
+
+    }
+
+
+    // =========================
+    // WILLEKEURIGE VRAAG UIT
+    // DE OVERGEBLEVEN VRAGEN
+    // =========================
+
+    const questionIndex =
+        beschikbareIndices[
+            Math.floor(
+                Math.random() *
+                beschikbareIndices.length
+            )
+        ];
+
+
+    // =========================
+    // DEZE VRAAG ALS GEBRUIKT
+    // MARKEREN
+    // =========================
+
+    usedQuestions[questionIndex] = true;
+
+
+    // =========================
+    // FIREBASE BIJWERKEN
+    // =========================
 
     firebase.database()
-        .ref("games/" + window.currentGameCode)
+        .ref(
+            "games/" +
+            window.currentGameCode
+        )
         .update({
-            currentTurn: currentTeam,
-            roll: roll,
-            questionIndex: questionIndex,
-            phase: "rolled"
-        })
-        .then(() => {
 
-            // Na 3,5 seconden gaat IEDERE telefoon naar dezelfde vraag.
-            setTimeout(() => {
+            currentTurn:
+                currentTeam,
 
-                firebase.database()
-                    .ref("games/" + window.currentGameCode)
-                    .update({
-                        phase: "question"
-                    })
-                    .catch(error => {
-                        console.error(
-                            "❌ Fout bij overgang naar vraag:",
-                            error
-                        );
-                    });
+            roll:
+                roll,
 
-            }, 3500);
+            questionIndex:
+                questionIndex,
+
+            usedQuestions:
+                usedQuestions,
+
+            phase:
+                "question"
 
         })
         .catch(error => {
 
-            console.error("❌ Fout bij opslaan van worp:", error);
+            console.error(
+                "❌ Fout bij opslaan van worp/vraag:",
+                error
+            );
+
             window.diceRolled = false;
-            statusMessage.innerText = "Fout bij het gooien.";
+
+            statusMessage.innerText =
+                "Fout bij het gooien.";
 
         });
+
+
+    // =========================
+    // LOKALE WEERGAVE
+    // =========================
+
+    categorySelect.disabled = true;
+
+    statusMessage.innerText = "";
+
 }
 
 /* ===== VRAGEN ===== */
