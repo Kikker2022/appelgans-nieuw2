@@ -54,6 +54,28 @@ body{margin:0}
 }
 </style>
 
+
+<style>
+    .welcomeQr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.15rem auto 0.45rem;
+    }
+
+    .welcomeQr img {
+        display: block;
+        width: clamp(125px, 32vw, 190px);
+        height: auto;
+    }
+
+    @media (max-height: 700px) {
+        .welcomeQr img {
+            width: clamp(110px, 28vw, 165px);
+        }
+    }
+</style>
+
 </head>
 
 
@@ -61,6 +83,12 @@ body{margin:0}
 
 <h1 class="appTitle">🪿 Appelgans</h1>
 
+<div class="welcomeQr">
+    <img
+        src="public/Appelgans_qrcode.png"
+        alt="QR-code om Appelgans te openen"
+    >
+</div>
 
 <!-- =====================================================
      WELKOMSTSCHERM
