@@ -15,24 +15,41 @@
 <style>
 *{box-sizing:border-box}
 body{margin:0}
-.appTitle{
-  margin:.2rem 0 .35rem;
+
+#welcomeScreen{
+  width:100%;
+  min-height:calc(100dvh - .2rem);
+  padding:.15rem .75rem .75rem;
+  text-align:center;
+}
+
+#welcomeScreen .appTitle{
+  margin:.15rem 0 .45rem;
   text-align:center;
   font-size:clamp(1.9rem,8vw,2.8rem);
   line-height:1;
   white-space:nowrap;
 }
-#welcomeScreen{
-  width:100%;
-  min-height:calc(100dvh - .2rem);
-  padding:.1rem .75rem .75rem;
-  text-align:center;
+
+#welcomeScreen .welcomeQr{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:.45rem auto .55rem;
 }
+
+#welcomeScreen .welcomeQr img{
+  display:block;
+  width:clamp(125px,32vw,190px);
+  height:auto;
+}
+
 #welcomeScreen h2{
-  margin:.25rem 0 .55rem;
+  margin:.45rem 0 .55rem;
   font-size:clamp(1.15rem,5vw,1.65rem);
   line-height:1.15;
 }
+
 #welcomeScreen p{
   margin:0 auto .7rem;
   max-width:44rem;
@@ -40,40 +57,52 @@ body{margin:0}
   font-size:clamp(.75rem,3.5vw,.98rem);
   line-height:1.22;
 }
+
 #welcomeScreen .welcomeSentence{
   display:block;
   margin-bottom:.18rem;
 }
+
 #welcomeScreen button{margin-top:.15rem}
+
 @media (max-height:700px){
-  .appTitle{font-size:1.75rem;margin-top:.05rem;margin-bottom:.2rem}
-  #welcomeScreen h2{font-size:1.05rem;margin-bottom:.3rem}
-  #welcomeScreen p{font-size:.72rem;line-height:1.16;margin-bottom:.45rem}
-  #welcomeScreen .welcomeSentence{margin-bottom:.1rem}
-  #welcomeScreen button{margin-top:.05rem}
+  #welcomeScreen{
+    padding-top:.05rem;
+  }
+
+  #welcomeScreen .appTitle{
+    font-size:1.75rem;
+    margin-top:.02rem;
+    margin-bottom:.25rem;
+  }
+
+  #welcomeScreen .welcomeQr{
+    margin:.25rem auto .35rem;
+  }
+
+  #welcomeScreen .welcomeQr img{
+    width:clamp(110px,28vw,165px);
+  }
+
+  #welcomeScreen h2{
+    font-size:1.05rem;
+    margin-bottom:.3rem;
+  }
+
+  #welcomeScreen p{
+    font-size:.72rem;
+    line-height:1.16;
+    margin-bottom:.45rem;
+  }
+
+  #welcomeScreen .welcomeSentence{
+    margin-bottom:.1rem;
+  }
+
+  #welcomeScreen button{
+    margin-top:.05rem;
+  }
 }
-</style>
-
-
-<style>
-    .welcomeQr {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0.15rem auto 0.45rem;
-    }
-
-    .welcomeQr img {
-        display: block;
-        width: clamp(125px, 32vw, 190px);
-        height: auto;
-    }
-
-    @media (max-height: 700px) {
-        .welcomeQr img {
-            width: clamp(110px, 28vw, 165px);
-        }
-    }
 </style>
 
 </head>
@@ -81,20 +110,20 @@ body{margin:0}
 
 <body>
 
-<h1 class="appTitle">🪿 Appelgans</h1>
-
-<div class="welcomeQr">
-    <img
-        src="public/Appelgans_qrcode.png"
-        alt="QR-code om Appelgans te openen"
-    >
-</div>
-
 <!-- =====================================================
      WELKOMSTSCHERM
 ===================================================== -->
 
 <div id="welcomeScreen">
+
+    <h1 class="appTitle">🪿 Appelgans</h1>
+
+    <div class="welcomeQr">
+        <img
+            src="public/Appelgans_qrcode.png"
+            alt="QR-code om Appelgans te openen"
+        >
+    </div>
 
     <h2>
         Welkom bij het ganzenbordspel Appelgans
