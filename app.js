@@ -444,12 +444,24 @@ document.querySelectorAll(".cell")
 [team.position - 1];
 
 const pawn =
-document.createElement("div");
+    document.createElement("div");
 
 pawn.classList.add(
-"pawn",
-team.color
+    "pawn",
+    team.color
 );
+
+pawn.style.width =
+    "clamp(18px, 6vw, 28px)";
+
+pawn.style.height =
+    "clamp(18px, 6vw, 28px)";
+
+pawn.style.borderRadius =
+    "50%";
+
+pawn.style.display =
+    "block";
 
 cell
 .querySelector(".pawns")
@@ -588,10 +600,214 @@ function rollDice() {
         return;
     }
 
-    const questionIndex = Math.floor(
-        Math.random() * actieveVragen.length
-    );
+    async function rollDice() {
 
+    // =========================
+    // ALLEEN HET TEAM AAN DE BEURT
+    // =========================
+
+    if (
+        parseInt(currentTeam, 10) !==
+        parseInt(window.myTeam, 10)
+    ) {
+
+        statusMessage.innerText =
+            "⏳ Wacht op je beurt.";
+
+        return;
+    }
+
+
+    // =========================
+    // NIET TWEE KEER GOOIEN
+    // =========================
+
+    if (window.diceRolled) {
+        return;
+    }
+
+    window.diceRolled = true;
+
+
+    // =========================
+    // GELUID
+    // =========================
+
+    soundDobbel.currentTime = 0;
+
+    soundDobbel.play()
+        .catch(() => {});
+
+
+    // =========================
+    // WORP
+    // =========================
+
+    const roll =
+        Math.floor(Math.random() * 6) + 1;
+
+    lastRoll = roll;
+
+
+    // =========================
+    // VRAGEN VAN DE GEKOZEN CATEGORIE
+    // =========================
+
+    const actieveVragen =
+        vragen.filter(
+            v => v.categorie === selectedCategory
+        );
+
+
+    if (!actieveVragen.length) {
+
+        window.diceRolled = false;
+
+        statusMessage.innerText =
+            "Geen vragen gevonden voor deze categorie.";
+
+        return;
+    }
+
+
+    // =========================
+    // GEBRUIKTE VRAGEN OPHALEN
+    // =========================
+
+    let usedQuestions = {};
+
+    try {
+
+        const snapshot =
+            await firebase.database()
+                .ref(
+                    "games/" +
+                    window.currentGameCode +
+                    "/usedQuestions"
+                )
+                .once("value");
+
+        usedQuestions =
+            snapshot.val() || {};
+
+    } catch (error) {
+
+        console.error(
+            "❌ Gebruikte vragen ophalen mislukt:",
+            error
+        );
+
+        window.diceRolled = false;
+
+        return;
+    }
+
+
+    // =========================
+    // NOG NIET GEBRUIKTE VRAGEN
+    // =========================
+
+    let beschikbareIndices = [];
+
+    for (
+        let i = 0;
+        i < actieveVragen.length;
+        i++
+    ) {
+
+        if (!usedQuestions[i]) {
+
+            beschikbareIndices.push(i);
+
+        }
+
+    }
+
+
+    // =========================
+    // ALLES GEBRUIKT?
+    // NIEUWE RONDE BEGINNEN
+    // =========================
+
+    if (
+        beschikbareIndices.length === 0
+    ) {
+
+        usedQuestions = {};
+
+        for (
+            let i = 0;
+            i < actieveVragen.length;
+            i++
+        ) {
+
+            beschikbareIndices.push(i);
+
+        }
+
+    }
+
+
+    // =========================
+    // VRAAG KIEZEN
+    // =========================
+
+    const questionIndex =
+        beschikbareIndices[
+            Math.floor(
+                Math.random() *
+                beschikbareIndices.length
+            )
+        ];
+
+
+    // Deze vraag markeren als gebruikt
+    usedQuestions[questionIndex] = true;
+
+
+    // =========================
+    // FIREBASE
+    // =========================
+
+    firebase.database()
+        .ref(
+            "games/" +
+            window.currentGameCode
+        )
+        .update({
+
+            currentTurn:
+                currentTeam,
+
+            roll:
+                roll,
+
+            questionIndex:
+                questionIndex,
+
+            usedQuestions:
+                usedQuestions,
+
+            phase:
+                "question"
+
+        })
+        .catch(error => {
+
+            console.error(
+                "❌ Fout bij opslaan:",
+                error
+            );
+
+            window.diceRolled = false;
+
+        });
+
+
+    categorySelect.disabled = true;
+
+}
+    
     firebase.database()
         .ref("games/" + window.currentGameCode)
         .update({
