@@ -395,9 +395,37 @@ icon = "🏁";
 cell.innerHTML =
 `
 <div>${i}</div>
-<span>${icon}</span>
+<span class="tileIcon">${icon}</span>
 <div class="pawns"></div>
 `;
+
+const tileIcon =
+    cell.querySelector(".tileIcon");
+
+if (tileIcon) {
+
+    tileIcon.style.display =
+        "flex";
+
+    tileIcon.style.alignItems =
+        "center";
+
+    tileIcon.style.justifyContent =
+        "center";
+
+    tileIcon.style.width =
+        "100%";
+
+    tileIcon.style.height =
+        "100%";
+
+    tileIcon.style.fontSize =
+        "clamp(2rem, 9vw, 3.2rem)";
+
+    tileIcon.style.lineHeight =
+        "1";
+
+}
 
 board.appendChild(cell);
 
