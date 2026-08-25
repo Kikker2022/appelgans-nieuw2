@@ -100,21 +100,42 @@ document.getElementById("screen2");
 const screen3 =
 document.getElementById("screen3");
 
-/* ===== GELUIDEN ===== */
+/* ===== GELUIDEN =====
+   Alle geluiden staan in public/sounds/
+   De URL begint daarom met /sounds/
+*/
 
-const soundDobbel = new Audio("public/dobbel.mp3");
+const soundDobbel = new Audio("/sounds/dobbel.mp3");
+const soundGans = new Audio("/sounds/gans.mp3");
+const soundBridge = new Audio("/sounds/brug.mp3");
+const soundPut = new Audio("/sounds/put.mp3");
+const soundPrison = new Audio("/sounds/gevangenis.mp3");
+const soundInn = new Audio("/sounds/herberg.mp3");
+const soundWin = new Audio("/sounds/finish.mp3");
 
-const soundGans = new Audio("public/gans.mp3");
+/*
+ * Centrale functie voor alle geluiden.
+ * Door steeds currentTime op 0 te zetten kan een geluid
+ * opnieuw betrouwbaar worden gestart.
+ */
+function playGameSound(audio) {
+    if (!audio) return;
 
-const soundBridge = new Audio("public/brug.mp3");
+    try {
+        audio.pause();
+        audio.currentTime = 0;
 
-const soundPut = new Audio("public/put.mp3");
+        const promise = audio.play();
 
-const soundPrison = new Audio("public/gevangenis.mp3");
-
-const soundInn = new Audio("public/herberg.mp3");
-
-const soundWin = new Audio("public/finish.mp3");
+        if (promise !== undefined) {
+            promise.catch(error => {
+                console.warn("Geluid kon niet automatisch worden afgespeeld:", error);
+            });
+        }
+    } catch (error) {
+        console.warn("Fout bij afspelen geluid:", error);
+    }
+}
 
 /* ===== SPECIALE VAKKEN ===== */
 
@@ -586,8 +607,7 @@ function rollDice() {
 
     window.diceRolled = true;
 
-    soundDobbel.currentTime = 0;
-    soundDobbel.play().catch(() => {});
+    playGameSound(soundDobbel);
 
     const roll = Math.floor(Math.random() * 6) + 1;
     lastRoll = roll;
@@ -961,7 +981,7 @@ async function checkAnswer(choice) {
 
         if (team.position >= TOTAL_CELLS) {
 
-            soundWin.play().catch(() => {});
+            playGameSound(soundWin);
 
             showPopup(
                 team.icon +
@@ -1039,7 +1059,7 @@ return;
 
 if(type === "gans"){
 
-soundGans.play();
+playGameSound(soundGans);
 
 statusMessage.innerText =
 team.icon +
@@ -1067,7 +1087,7 @@ await sleep(600);
 
 if(type === "brug"){
 
-soundBridge.play();
+playGameSound(soundBridge);
 
 statusMessage.innerText =
 team.icon +
@@ -1091,7 +1111,7 @@ await sleep(450);
 
 if(type === "herberg"){
 
-soundInn.play();
+playGameSound(soundInn);
 
 team.skipTurns = 1;
 
@@ -1105,7 +1125,7 @@ team.icon +
 
 if(type === "put"){
 
-soundPut.play();
+playGameSound(soundPut);
 
 team.skipTurns = 1;
 
@@ -1119,7 +1139,7 @@ team.icon +
 
 if(type === "gevangenis"){
 
-soundPrison.play();
+playGameSound(soundPrison);
 
 team.skipTurns = 2;
 
