@@ -101,22 +101,24 @@ const screen3 =
 document.getElementById("screen3");
 
 /* ===== GELUIDEN =====
-   Alle geluiden staan in public/sounds/
-   De URL begint daarom met /sounds/
+   De geluidsbestanden staan in:
+   public/sounds/
+
+   In dit project gebruikt index.html ook expliciet
+   "public/..." voor bestanden, daarom gebruiken we
+   hier dezelfde structuur.
 */
 
-const soundDobbel = new Audio("/sounds/dobbel.mp3");
-const soundGans = new Audio("/sounds/gans.mp3");
-const soundBridge = new Audio("/sounds/brug.mp3");
-const soundPut = new Audio("/sounds/put.mp3");
-const soundPrison = new Audio("/sounds/gevangenis.mp3");
-const soundInn = new Audio("/sounds/herberg.mp3");
-const soundWin = new Audio("/sounds/finish.mp3");
+const soundDobbel = new Audio("public/sounds/dobbel.mp3");
+const soundGans = new Audio("public/sounds/gans.mp3");
+const soundBridge = new Audio("public/sounds/brug.mp3");
+const soundPut = new Audio("public/sounds/put.mp3");
+const soundPrison = new Audio("public/sounds/gevangenis.mp3");
+const soundInn = new Audio("public/sounds/herberg.mp3");
+const soundWin = new Audio("public/sounds/finish.mp3");
 
 /*
- * Centrale functie voor alle geluiden.
- * Door steeds currentTime op 0 te zetten kan een geluid
- * opnieuw betrouwbaar worden gestart.
+ * Eén centrale functie voor alle spelgeluiden.
  */
 function playGameSound(audio) {
     if (!audio) return;
@@ -129,7 +131,7 @@ function playGameSound(audio) {
 
         if (promise !== undefined) {
             promise.catch(error => {
-                console.warn("Geluid kon niet automatisch worden afgespeeld:", error);
+                console.warn("Geluid kon niet worden afgespeeld:", error);
             });
         }
     } catch (error) {
