@@ -5,7 +5,7 @@ const vragen = [
 {
 categorie:"Ooststellingwerf",
 
-vraag:"Welke plaats wordt vaak gezien als toeristisch hart van Ooststellingwerf?",
+vraag:"Welke plaats begint met een A en eindig met een a?",
 
 a:"Haulerwijk",
 b:"Appelscha",
@@ -13,7 +13,7 @@ c:"Oosterwolde",
 
 correct:"b",
 
-uitleg:"Appelscha is het bekendste toeristische dorp van Ooststellingwerf."
+uitleg:"Appelscha, ha ha, dit was een cadeautje van mij."
 },
 
 {
@@ -21,9 +21,9 @@ categorie:"Ooststellingwerf",
 
 vraag:"Waarom bezoeken veel mensen Appelscha tijdens vakanties?",
 
-a:"Vanwege de grote haven",
-b:"Door natuur, rust en recreatie",
-c:"Vanwege wolkenkrabbers",
+a:"Vanwege het mooie winkelcentrum",
+b:"Voor natuur, rust en recreatie",
+c:"Omdat Andries Oenema daar woonachtig is",
 
 correct:"b",
 
@@ -85,6 +85,21 @@ correct:"b",
 
 uitleg:"Het Drents-Friese Wold heeft populaire mountainbikeroutes."
 },
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke wereldberoemde schaatser is woonachtig in Appelscha?",
+
+a:"Rintje Ritsma",
+b:"Sven Kramer",
+c:"Hilbert van der Duim",
+
+correct:"c",
+
+uitleg:"Hilbert van der Duim woondt al vele jaren in Appelscha."
+},
+
 
 {
 categorie:"Ooststellingwerf",
@@ -1155,34 +1170,6 @@ uitleg:"Skûtsjesilen is in tradisjonele seilwedstriid mei skûtsjes (âld frach
 {
 categorie:"Fryslân",
 
-vraag:"Hokker Fryske fuotbalclub spilet tradisjoneel yn it Abe Lenstra Stadion?",
-
-a:"SC Cambuur",
-b:"SC Heerenveen",
-c:"FVC",
-
-correct:"b",
-
-uitleg:"SC Heerenveen spilet yn it Abe Lenstra Stadion yn Heerenveen."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker sport is keatsen, dat sterk ferbûn is mei Fryslân?",
-
-a:"In balspul mei de hân mei in keatsbal",
-b:"In foarm fan iishockey",
-c:"In fariant fan honkbal",
-
-correct:"a",
-
-uitleg:"Keatsen is in tradisjonele Fryske balsport mei de hân."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Hokker Fryske stêd is it startpunt fan de ferneamde Alvestêdetocht?",
 
 a:"Ljouwert",
@@ -1192,20 +1179,6 @@ c:"Dokkum",
 correct:"a",
 
 uitleg:"De Alvestêdetocht begjint en einiget tradisjoneel yn Ljouwert."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Yn hokker sport wurdt yn Fryslân it fierst sprongen oer wetter mei in stôk?",
-
-a:"Fierljeppen",
-b:"Skûtsjesilen",
-c:"Kaatsen",
-
-correct:"a",
-
-uitleg:"Fierljeppen is in tradisjonele Fryske sport wêrby't oer wetter sprongen wurdt mei in stôk."
 },
 
 {
@@ -1262,34 +1235,6 @@ c:"Handbal",
 correct:"a",
 
 uitleg:"Keatsen is in âlde Fryske balsport mei houten keatsers."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker club is bekend as 'de Superfriezen' yn it Nederlânsk fuotbal?",
-
-a:"SC Cambuur",
-b:"SC Heerenveen",
-c:"VV Heerenveen",
-
-correct:"b",
-
-uitleg:"SC Heerenveen wurdt faak de Superfriezen neamd."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker sport yn Fryslân wurdt tradisjoneel op natueriis spile en is sterk ferbûn mei de Alvestêdetocht?",
-
-a:"Iishockey",
-b:"Skeeleren",
-c:"Skeelerriden op iis (marathonskûtsen op iis is net in sport)",
-
-correct:"b",
-
-uitleg:"Skeeleren en langebaanriden binne sterk ferbûn mei de Alvestêdetocht en Fryske iistradysje."
 },
 
 {
@@ -1360,48 +1305,6 @@ c:"In berchmar",
 correct:"a",
 
 uitleg:"It netwurk fan fearten makke ynterne en eksterne hannel mooglik."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker fuotbalclub spilet tradisjoneel yn de Eredivisie út Fryslân?",
-
-a:"SC Heerenveen",
-b:"Cambuur Leeuwarden",
-c:"Beide binne ferkeard",
-
-correct:"a",
-
-uitleg:"SC Heerenveen spilet al jierren yn de Eredivisie."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker Fryske tradysje is ferbûn mei it brûken fan lange stokken om oer wetter te springen?",
-
-a:"Fierljeppen",
-b:"Skûtsjesilen",
-c:"Keatsen",
-
-correct:"a",
-
-uitleg:"Fierljeppen is in Fryske tradysje wêrby't men mei in stôk oer wetter springt."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker stêd wurdt beskôge as it histoaryske bestjoerssintrum fan Fryslân?",
-
-a:"Ljouwert",
-b:"Snits",
-c:"Frjentsjer",
-
-correct:"a",
-
-uitleg:"Ljouwert is al iuwen it bestjoerssintrum fan Fryslân."
 },
 
 {
@@ -1505,20 +1408,6 @@ uitleg:"Ljouwert waard it sintrum fan kulturele en taalaktiviteiten."
 {
 categorie:"Fryslân",
 
-vraag:"Hokker sport is sterk ferbûn mei de Fryske identiteit en wurdt spile mei in hurde bal en punten yn in fjild?",
-
-a:"Keatsen",
-b:"Volleybal",
-c:"Handbal",
-
-correct:"a",
-
-uitleg:"Keatsen is ien fan de âldste en meast tradisjonele Fryske sporten."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Hokker Fryske kustferoaring kaam troch it ynbrekken fan de see yn de midsiuwen?",
 
 a:"De ûntstean fan de Middelsee",
@@ -1528,48 +1417,6 @@ c:"De ôfsluting fan de Rijn",
 correct:"a",
 
 uitleg:"De Middelsee ûntstie troch see-ynbraak yn it lân."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker fuotbalclub is ferneamd om syn blauwe kleuren en stiet bekend as SC Heerenveen?",
-
-a:"SC Heerenveen",
-b:"Cambuur",
-c:"FVC",
-
-correct:"a",
-
-uitleg:"SC Heerenveen spilet yn blau en is in topclub út Fryslân."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker Fryske tradysje giet oer it springe oer wetter mei in lange stôk?",
-
-a:"Fierljeppen",
-b:"Skûtsjesilen",
-c:"Keatsen",
-
-correct:"a",
-
-uitleg:"Fierljeppen is in spektakulêre Fryske tradysje mei in polsstok."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker Fryske stêd waard yn de 17e iuw in wichtich bestjoerssintrum ûnder de Steaten fan Fryslân?",
-
-a:"Ljouwert",
-b:"Snits",
-c:"Dokkum",
-
-correct:"a",
-
-uitleg:"Ljouwert groeide út ta it politike en bestjoerlike sintrum fan Fryslân."
 },
 
 {
@@ -1606,8 +1453,8 @@ categorie:"Fryslân",
 vraag:"Hokker stêd is bekend as ien fan de Alve Stêden en hat in sterke hannelsskiednis?",
 
 a:"Snits",
-b:"Emmen",
-c:"Assen",
+b:"Drachten",
+c:"Heerenveen",
 
 correct:"a",
 
@@ -1673,20 +1520,6 @@ uitleg:"Terpen waarden boud om tsjin oerstreamings te beskermjen."
 {
 categorie:"Fryslân",
 
-vraag:"Hokker sport is ferneamd om de Alvestêdetocht?",
-
-a:"Skeeleren en iisreedriden",
-b:"Fuotbal",
-c:"Atletyk",
-
-correct:"a",
-
-uitleg:"De Alvestêdetocht is in lange iisreedridersroute troch Fryslân."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Hokker Fryske stêd hat in sterke histoaryske ferbining mei religy en Bonifatius?",
 
 a:"Dokkum",
@@ -1729,34 +1562,6 @@ uitleg:"De Waadeilannen ûntstienen troch sedimintaasje en feroarjende see-strea
 {
 categorie:"Fryslân",
 
-vraag:"Hokker sport wurdt yn Fryslân tradisjoneel spile mei in bal en houten slachters?",
-
-a:"Keatsen",
-b:"Golf",
-c:"Cricket",
-
-correct:"a",
-
-uitleg:"Keatsen is in âlde Fryske sport mei in bal en slachtechnyk."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker Fryske stêd hat in sterke ferbining mei skiednis fan Bonifatius?",
-
-a:"Dokkum",
-b:"Stavoren",
-c:"Ljouwert",
-
-correct:"a",
-
-uitleg:"Bonifatius waard fermoarde by Dokkum."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Hokker ekonomyske aktiviteit wie wichtich yn Fryslân yn de 17e iuw?",
 
 a:"Turfwinning",
@@ -1771,113 +1576,15 @@ uitleg:"Turfwinning wie essinsjeel foar enerzjy en hannel."
 {
 categorie:"Fryslân",
 
-vraag:"Hokker fuotbalclub is bekend as de Superfriezen?",
-
-a:"SC Heerenveen",
-b:"SC Cambuur",
-c:"FVC",
-
-correct:"a",
-
-uitleg:"SC Heerenveen wurdt de Superfriezen neamd."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker wettergebiet leit tusken Fryslân en de Waadeilannen?",
-
-a:"Waadsee",
-b:"IJsselmeer",
-c:"Noardsee",
-
-correct:"a",
-
-uitleg:"De Waadsee leit tusken de Fryske kust en de Waadeilannen."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker tradisjonele Fryske sport wurdt útfierd mei in lange stôk en wetter?",
-
-a:"Fierljeppen",
-b:"Skûtsjesilen",
-c:"Korfbal",
-
-correct:"a",
-
-uitleg:"Fierljeppen is springen oer wetter mei in polsstok."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker stêd is it bestjoerssintrum fan Fryslân?",
-
-a:"Ljouwert",
-b:"Snits",
-c:"Dokkum",
-
-correct:"a",
-
-uitleg:"Ljouwert is it bestjoerlike sintrum fan de provinsje."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker sportevenemint rint troch de alve Fryske stêden?",
-
-a:"Alvestêdetocht",
-b:"Tour de France",
-c:"Elfstedentocht Marathon",
-
-correct:"a",
-
-uitleg:"De Alvestêdetocht is in iisreedridersroute troch 11 stêden."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Hokker fysike skiednis hat grutte ynfloed hân op it ûntstean fan Fryske marren en fearten?",
 
 a:"Turfwinning en feanôfgraving",
 b:"Vulkanyske aktiviteit",
-c:"Gletsjerbergen",
+c:"iistiden",
 
 correct:"a",
 
 uitleg:"Troch turfwinning ûntstienen marren en feangebieten yn Fryslân."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker Fryske stêd is histoarysk ferbûn mei in sterke hannelsposysje yn wetterferkear?",
-
-a:"Snits",
-b:"Emmen",
-c:"Assen",
-
-correct:"a",
-
-uitleg:"Snits lei strategysk oan wetterwegen en wie in wichtich hannelsknooppunt."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker sport is yn Fryslân ferbûn mei in simmerkompetysje mei tradisjonele regels en teams?",
-
-a:"Keatsen",
-b:"Iishockey",
-c:"Rugby",
-
-correct:"a",
-
-uitleg:"Keatsen wurdt tradisjoneel yn de simmer spile yn doarpen en stêden."
 },
 
 {
@@ -1911,20 +1618,6 @@ uitleg:"Getij en sedimint foarmen de Waadeilannen oer tiid."
 {
 categorie:"Fryslân",
 
-vraag:"Hokker Fryske fuotbalclub spilet yn it Abe Lenstra Stadion?",
-
-a:"SC Heerenveen",
-b:"SC Cambuur",
-c:"FVC",
-
-correct:"a",
-
-uitleg:"SC Heerenveen spilet yn it Abe Lenstra Stadion."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Hokker stêd is bekend as ien fan de âldste hannelsstêden fan Fryslân?",
 
 a:"Stavoren",
@@ -1934,20 +1627,6 @@ c:"Heerenveen",
 correct:"a",
 
 uitleg:"Stavoren is ien fan de âldste stêden en eartiids in wichtich hannelsplak."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker sport is ferbûn mei lange ôfstannen op iis en de Alvestêdetocht?",
-
-a:"Skeeleren en iisreedriden",
-b:"Fuotbal",
-c:"Atletyk",
-
-correct:"a",
-
-uitleg:"De Alvestêdetocht is in lange iisreedridersroute troch Fryslân."
 },
 
 {
@@ -1990,20 +1669,6 @@ c:"Sint-Nikolaasfloed",
 correct:"b",
 
 uitleg:"De Allerhilligenfloed fan 1362 feroarsake grutte feroarings oan de Noardseekust."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker Fryske stêd wie yn de Saksyske tiid it wichtichste bestjoerssintrum?",
-
-a:"Ljouwert",
-b:"Snits",
-c:"Dokkum",
-
-correct:"a",
-
-uitleg:"Ljouwert groeide ûnder Saksysk bestjoer út ta it sintrum fan Fryslân."
 },
 
 {
@@ -2093,34 +1758,6 @@ uitleg:"De Sint-Nikolaasfloed feroare de kustline sterk."
 {
 categorie:"Fryslân",
 
-vraag:"Hokker tradisjonele Fryske sport giet oer oer wetter springen?",
-
-a:"Fierljeppen",
-b:"Skûtsjesilen",
-c:"Keatsen",
-
-correct:"a",
-
-uitleg:"Fierljeppen is in Fryske tradysjesport."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker stêd is ferbûn mei de dea fan Bonifatius yn 754?",
-
-a:"Dokkum",
-b:"Stavoren",
-c:"Ljouwert",
-
-correct:"a",
-
-uitleg:"Bonifatius waard yn Dokkum fermoarde."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Ta hokker taalfamylje heart it Frysk?",
 
 a:"West-Germaansk",
@@ -2200,20 +1837,6 @@ c:"Berchfoarming",
 correct:"a",
 
 uitleg:"Ynpoldering makke lân út wetter."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker stêd wie in wichtich Hânzesintrum?",
-
-a:"Snits",
-b:"Drachten",
-c:"Starum",
-
-correct:"a",
-
-uitleg:"Starum wie in wichtige hannelsstêd yn de Hanze."
 },
 
 {
@@ -7503,15 +7126,15 @@ uitleg:"Brazilië was vroeger een Portugese kolonie."
 {
 categorie:"Pubquiz",
 
-vraag:"Hoeveel minuten zitten er in een uur?",
+vraag:"Hoeveel seconden zitten er in een uur."
 
-a:"60",
-b:"90",
-c:"100",
+a:"3600",
+b:"60",
+c:"3600",
 
 correct:"a",
 
-uitleg:"Een uur bestaat uit zestig minuten."
+uitleg:"Een uur bestaat uit 3600 seconden."
 },
 
 {
