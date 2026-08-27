@@ -996,7 +996,7 @@ async function checkAnswer(choice) {
         }
 
         // Bord nog even zichtbaar laten.
-        await sleep(5000);
+        await sleep(2500);
 
         let nextTeam = currentTeam + 1;
 
