@@ -1,11 +1,9 @@
 const vragen = [
 
-// OOSTSTELLINGWERF
-
 {
 categorie:"Ooststellingwerf",
 
-vraag:"Welke plaats wordt vaak gezien als toeristisch hart van Ooststellingwerf?",
+vraag:"Welke plaats begint met een A en eindig met een a?",
 
 a:"Haulerwijk",
 b:"Appelscha",
@@ -13,7 +11,7 @@ c:"Oosterwolde",
 
 correct:"b",
 
-uitleg:"Appelscha is het bekendste toeristische dorp van Ooststellingwerf."
+uitleg:"Appelscha, ha ha, dit was een cadeautje van mij."
 },
 
 {
@@ -21,9 +19,9 @@ categorie:"Ooststellingwerf",
 
 vraag:"Waarom bezoeken veel mensen Appelscha tijdens vakanties?",
 
-a:"Vanwege de grote haven",
-b:"Door natuur, rust en recreatie",
-c:"Vanwege wolkenkrabbers",
+a:"Vanwege het mooie winkelcentrum",
+b:"Voor natuur, rust en recreatie",
+c:"Omdat Andries Oenema daar woonachtig is",
 
 correct:"b",
 
@@ -43,7 +41,7 @@ correct:"b",
 
 uitleg:"De toren steekt 33 meter boven de grond uit, maar omdat de Bosberg zelf zo'n 20 tot 26 meter hoog is, sta je op de top op ruim 50 meter boven NAP."
 },
-  
+
 {
 categorie:"Ooststellingwerf",
 
@@ -84,6 +82,20 @@ c:"Diepzeeduiken",
 correct:"b",
 
 uitleg:"Het Drents-Friese Wold heeft populaire mountainbikeroutes."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke wereldberoemde schaatser is woonachtig in Appelscha?",
+
+a:"Rintje Ritsma",
+b:"Sven Kramer",
+c:"Hilbert van der Duim",
+
+correct:"c",
+
+uitleg:"Hilbert van der Duim woondt al vele jaren in Appelscha."
 },
 
 {
@@ -142,8 +154,6 @@ correct:"b",
 uitleg:"Johan van der Velde woonde jarenlang in Appelscha."
 },
 
-// FRYSLAN
-
 {
 categorie:"Fryslân",
 
@@ -157,7 +167,7 @@ correct:"c",
 
 uitleg:"Jopie Huisman was een bekende schilder die vooral realistische, zeer gedetailleerde stillevens van simpele voorwerpen schilderde. Zijn geboorteplaats is waar tevens zijn museum is gevestigd: Workum."
 },
-  
+
 {
 categorie:"Fryslân",
 
@@ -1155,34 +1165,6 @@ uitleg:"Skûtsjesilen is in tradisjonele seilwedstriid mei skûtsjes (âld frach
 {
 categorie:"Fryslân",
 
-vraag:"Hokker Fryske fuotbalclub spilet tradisjoneel yn it Abe Lenstra Stadion?",
-
-a:"SC Cambuur",
-b:"SC Heerenveen",
-c:"FVC",
-
-correct:"b",
-
-uitleg:"SC Heerenveen spilet yn it Abe Lenstra Stadion yn Heerenveen."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker sport is keatsen, dat sterk ferbûn is mei Fryslân?",
-
-a:"In balspul mei de hân mei in keatsbal",
-b:"In foarm fan iishockey",
-c:"In fariant fan honkbal",
-
-correct:"a",
-
-uitleg:"Keatsen is in tradisjonele Fryske balsport mei de hân."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Hokker Fryske stêd is it startpunt fan de ferneamde Alvestêdetocht?",
 
 a:"Ljouwert",
@@ -1192,20 +1174,6 @@ c:"Dokkum",
 correct:"a",
 
 uitleg:"De Alvestêdetocht begjint en einiget tradisjoneel yn Ljouwert."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Yn hokker sport wurdt yn Fryslân it fierst sprongen oer wetter mei in stôk?",
-
-a:"Fierljeppen",
-b:"Skûtsjesilen",
-c:"Kaatsen",
-
-correct:"a",
-
-uitleg:"Fierljeppen is in tradisjonele Fryske sport wêrby't oer wetter sprongen wurdt mei in stôk."
 },
 
 {
@@ -1262,34 +1230,6 @@ c:"Handbal",
 correct:"a",
 
 uitleg:"Keatsen is in âlde Fryske balsport mei houten keatsers."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker club is bekend as 'de Superfriezen' yn it Nederlânsk fuotbal?",
-
-a:"SC Cambuur",
-b:"SC Heerenveen",
-c:"VV Heerenveen",
-
-correct:"b",
-
-uitleg:"SC Heerenveen wurdt faak de Superfriezen neamd."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker sport yn Fryslân wurdt tradisjoneel op natueriis spile en is sterk ferbûn mei de Alvestêdetocht?",
-
-a:"Iishockey",
-b:"Skeeleren",
-c:"Skeelerriden op iis (marathonskûtsen op iis is net in sport)",
-
-correct:"b",
-
-uitleg:"Skeeleren en langebaanriden binne sterk ferbûn mei de Alvestêdetocht en Fryske iistradysje."
 },
 
 {
@@ -1360,48 +1300,6 @@ c:"In berchmar",
 correct:"a",
 
 uitleg:"It netwurk fan fearten makke ynterne en eksterne hannel mooglik."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker fuotbalclub spilet tradisjoneel yn de Eredivisie út Fryslân?",
-
-a:"SC Heerenveen",
-b:"Cambuur Leeuwarden",
-c:"Beide binne ferkeard",
-
-correct:"a",
-
-uitleg:"SC Heerenveen spilet al jierren yn de Eredivisie."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker Fryske tradysje is ferbûn mei it brûken fan lange stokken om oer wetter te springen?",
-
-a:"Fierljeppen",
-b:"Skûtsjesilen",
-c:"Keatsen",
-
-correct:"a",
-
-uitleg:"Fierljeppen is in Fryske tradysje wêrby't men mei in stôk oer wetter springt."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker stêd wurdt beskôge as it histoaryske bestjoerssintrum fan Fryslân?",
-
-a:"Ljouwert",
-b:"Snits",
-c:"Frjentsjer",
-
-correct:"a",
-
-uitleg:"Ljouwert is al iuwen it bestjoerssintrum fan Fryslân."
 },
 
 {
@@ -1505,20 +1403,6 @@ uitleg:"Ljouwert waard it sintrum fan kulturele en taalaktiviteiten."
 {
 categorie:"Fryslân",
 
-vraag:"Hokker sport is sterk ferbûn mei de Fryske identiteit en wurdt spile mei in hurde bal en punten yn in fjild?",
-
-a:"Keatsen",
-b:"Volleybal",
-c:"Handbal",
-
-correct:"a",
-
-uitleg:"Keatsen is ien fan de âldste en meast tradisjonele Fryske sporten."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Hokker Fryske kustferoaring kaam troch it ynbrekken fan de see yn de midsiuwen?",
 
 a:"De ûntstean fan de Middelsee",
@@ -1528,48 +1412,6 @@ c:"De ôfsluting fan de Rijn",
 correct:"a",
 
 uitleg:"De Middelsee ûntstie troch see-ynbraak yn it lân."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker fuotbalclub is ferneamd om syn blauwe kleuren en stiet bekend as SC Heerenveen?",
-
-a:"SC Heerenveen",
-b:"Cambuur",
-c:"FVC",
-
-correct:"a",
-
-uitleg:"SC Heerenveen spilet yn blau en is in topclub út Fryslân."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker Fryske tradysje giet oer it springe oer wetter mei in lange stôk?",
-
-a:"Fierljeppen",
-b:"Skûtsjesilen",
-c:"Keatsen",
-
-correct:"a",
-
-uitleg:"Fierljeppen is in spektakulêre Fryske tradysje mei in polsstok."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker Fryske stêd waard yn de 17e iuw in wichtich bestjoerssintrum ûnder de Steaten fan Fryslân?",
-
-a:"Ljouwert",
-b:"Snits",
-c:"Dokkum",
-
-correct:"a",
-
-uitleg:"Ljouwert groeide út ta it politike en bestjoerlike sintrum fan Fryslân."
 },
 
 {
@@ -1606,8 +1448,8 @@ categorie:"Fryslân",
 vraag:"Hokker stêd is bekend as ien fan de Alve Stêden en hat in sterke hannelsskiednis?",
 
 a:"Snits",
-b:"Emmen",
-c:"Assen",
+b:"Drachten",
+c:"Heerenveen",
 
 correct:"a",
 
@@ -1673,20 +1515,6 @@ uitleg:"Terpen waarden boud om tsjin oerstreamings te beskermjen."
 {
 categorie:"Fryslân",
 
-vraag:"Hokker sport is ferneamd om de Alvestêdetocht?",
-
-a:"Skeeleren en iisreedriden",
-b:"Fuotbal",
-c:"Atletyk",
-
-correct:"a",
-
-uitleg:"De Alvestêdetocht is in lange iisreedridersroute troch Fryslân."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Hokker Fryske stêd hat in sterke histoaryske ferbining mei religy en Bonifatius?",
 
 a:"Dokkum",
@@ -1729,34 +1557,6 @@ uitleg:"De Waadeilannen ûntstienen troch sedimintaasje en feroarjende see-strea
 {
 categorie:"Fryslân",
 
-vraag:"Hokker sport wurdt yn Fryslân tradisjoneel spile mei in bal en houten slachters?",
-
-a:"Keatsen",
-b:"Golf",
-c:"Cricket",
-
-correct:"a",
-
-uitleg:"Keatsen is in âlde Fryske sport mei in bal en slachtechnyk."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker Fryske stêd hat in sterke ferbining mei skiednis fan Bonifatius?",
-
-a:"Dokkum",
-b:"Stavoren",
-c:"Ljouwert",
-
-correct:"a",
-
-uitleg:"Bonifatius waard fermoarde by Dokkum."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Hokker ekonomyske aktiviteit wie wichtich yn Fryslân yn de 17e iuw?",
 
 a:"Turfwinning",
@@ -1771,113 +1571,15 @@ uitleg:"Turfwinning wie essinsjeel foar enerzjy en hannel."
 {
 categorie:"Fryslân",
 
-vraag:"Hokker fuotbalclub is bekend as de Superfriezen?",
-
-a:"SC Heerenveen",
-b:"SC Cambuur",
-c:"FVC",
-
-correct:"a",
-
-uitleg:"SC Heerenveen wurdt de Superfriezen neamd."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker wettergebiet leit tusken Fryslân en de Waadeilannen?",
-
-a:"Waadsee",
-b:"IJsselmeer",
-c:"Noardsee",
-
-correct:"a",
-
-uitleg:"De Waadsee leit tusken de Fryske kust en de Waadeilannen."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker tradisjonele Fryske sport wurdt útfierd mei in lange stôk en wetter?",
-
-a:"Fierljeppen",
-b:"Skûtsjesilen",
-c:"Korfbal",
-
-correct:"a",
-
-uitleg:"Fierljeppen is springen oer wetter mei in polsstok."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker stêd is it bestjoerssintrum fan Fryslân?",
-
-a:"Ljouwert",
-b:"Snits",
-c:"Dokkum",
-
-correct:"a",
-
-uitleg:"Ljouwert is it bestjoerlike sintrum fan de provinsje."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker sportevenemint rint troch de alve Fryske stêden?",
-
-a:"Alvestêdetocht",
-b:"Tour de France",
-c:"Elfstedentocht Marathon",
-
-correct:"a",
-
-uitleg:"De Alvestêdetocht is in iisreedridersroute troch 11 stêden."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Hokker fysike skiednis hat grutte ynfloed hân op it ûntstean fan Fryske marren en fearten?",
 
 a:"Turfwinning en feanôfgraving",
 b:"Vulkanyske aktiviteit",
-c:"Gletsjerbergen",
+c:"iistiden",
 
 correct:"a",
 
 uitleg:"Troch turfwinning ûntstienen marren en feangebieten yn Fryslân."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker Fryske stêd is histoarysk ferbûn mei in sterke hannelsposysje yn wetterferkear?",
-
-a:"Snits",
-b:"Emmen",
-c:"Assen",
-
-correct:"a",
-
-uitleg:"Snits lei strategysk oan wetterwegen en wie in wichtich hannelsknooppunt."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker sport is yn Fryslân ferbûn mei in simmerkompetysje mei tradisjonele regels en teams?",
-
-a:"Keatsen",
-b:"Iishockey",
-c:"Rugby",
-
-correct:"a",
-
-uitleg:"Keatsen wurdt tradisjoneel yn de simmer spile yn doarpen en stêden."
 },
 
 {
@@ -1911,20 +1613,6 @@ uitleg:"Getij en sedimint foarmen de Waadeilannen oer tiid."
 {
 categorie:"Fryslân",
 
-vraag:"Hokker Fryske fuotbalclub spilet yn it Abe Lenstra Stadion?",
-
-a:"SC Heerenveen",
-b:"SC Cambuur",
-c:"FVC",
-
-correct:"a",
-
-uitleg:"SC Heerenveen spilet yn it Abe Lenstra Stadion."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Hokker stêd is bekend as ien fan de âldste hannelsstêden fan Fryslân?",
 
 a:"Stavoren",
@@ -1934,20 +1622,6 @@ c:"Heerenveen",
 correct:"a",
 
 uitleg:"Stavoren is ien fan de âldste stêden en eartiids in wichtich hannelsplak."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker sport is ferbûn mei lange ôfstannen op iis en de Alvestêdetocht?",
-
-a:"Skeeleren en iisreedriden",
-b:"Fuotbal",
-c:"Atletyk",
-
-correct:"a",
-
-uitleg:"De Alvestêdetocht is in lange iisreedridersroute troch Fryslân."
 },
 
 {
@@ -1990,20 +1664,6 @@ c:"Sint-Nikolaasfloed",
 correct:"b",
 
 uitleg:"De Allerhilligenfloed fan 1362 feroarsake grutte feroarings oan de Noardseekust."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker Fryske stêd wie yn de Saksyske tiid it wichtichste bestjoerssintrum?",
-
-a:"Ljouwert",
-b:"Snits",
-c:"Dokkum",
-
-correct:"a",
-
-uitleg:"Ljouwert groeide ûnder Saksysk bestjoer út ta it sintrum fan Fryslân."
 },
 
 {
@@ -2093,34 +1753,6 @@ uitleg:"De Sint-Nikolaasfloed feroare de kustline sterk."
 {
 categorie:"Fryslân",
 
-vraag:"Hokker tradisjonele Fryske sport giet oer oer wetter springen?",
-
-a:"Fierljeppen",
-b:"Skûtsjesilen",
-c:"Keatsen",
-
-correct:"a",
-
-uitleg:"Fierljeppen is in Fryske tradysjesport."
-},
-
-{
-categorie:"Fryslân",
-
-vraag:"Hokker stêd is ferbûn mei de dea fan Bonifatius yn 754?",
-
-a:"Dokkum",
-b:"Stavoren",
-c:"Ljouwert",
-
-correct:"a",
-
-uitleg:"Bonifatius waard yn Dokkum fermoarde."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Ta hokker taalfamylje heart it Frysk?",
 
 a:"West-Germaansk",
@@ -2205,20 +1837,6 @@ uitleg:"Ynpoldering makke lân út wetter."
 {
 categorie:"Fryslân",
 
-vraag:"Hokker stêd wie in wichtich Hânzesintrum?",
-
-a:"Snits",
-b:"Drachten",
-c:"Starum",
-
-correct:"a",
-
-uitleg:"Starum wie in wichtige hannelsstêd yn de Hanze."
-},
-
-{
-categorie:"Fryslân",
-
 vraag:"Hokker beweging kaam op foar Fryske kultuer yn de 20e iuw?",
 
 a:"Fryske Nasjonale Beweging",
@@ -2258,7 +1876,33 @@ correct:"a",
 uitleg:"Terpen waarden boud tsjin heech wetter."
 },
 
-// Algemeen
+{
+categorie:"Algemeen",
+
+vraag:"Wat is de hoofdstad van Groningen?",
+
+a:"Veendam",
+b:"Winschoten",
+c:"Groningen",
+
+correct:"c",
+
+uitleg:"De stad Groningen is de hoofdstad van de provincie."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke universiteit staat in Groningen?",
+
+a:"TU Groningen",
+b:"Rijksuniversiteit Groningen",
+c:"Noordelijke Universiteit",
+
+correct:"b",
+
+uitleg:"De Rijksuniversiteit Groningen bestaat sinds 1614."
+},
 
 {
 categorie:"Algemeen",
@@ -2295,11 +1939,39 @@ vraag:"Welke zee grenst aan Groningen?",
 
 a:"Noordzee",
 b:"Waddenzee",
-c:"Oostzee",
+c:"Zwarte Zee",
 
 correct:"b",
 
 uitleg:"De Waddenzee ligt aan de noordkant van Groningen."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke voetbalclub speelt betaald voetbal in Groningen?",
+
+a:"FC Emmen",
+b:"SC Cambuur",
+c:"FC Groningen",
+
+correct:"c",
+
+uitleg:"FC Groningen speelt in het betaalde voetbal."
+},
+
+{
+categorie:"Algemeen",
+
+vraag:"Welke provincie grenst aan Groningen?",
+
+a:"Drenthe",
+b:"Limburg",
+c:"Zeeland",
+
+correct:"a",
+
+uitleg:"Drenthe ligt direct onder Groningen."
 },
 
 {
@@ -2330,7 +2002,19 @@ correct:"b",
 uitleg:"Kraanvogels broeden weer in het Fochteloërveen."
 },
 
-// DRENTHE
+{
+categorie:"Algemeen",
+
+vraag:"Welke stad staat bekend als studentenstad?",
+
+a:"Assen",
+b:"Algemeen",
+c:"Drachten",
+
+correct:"b",
+
+uitleg:"Groningen heeft veel studenten."
+},
 
 {
 categorie:"Drenthe",
@@ -4659,20 +4343,6 @@ uitleg:"Borger ligt op de Hondsrug."
 {
 categorie:"Drenthe",
 
-vraag:"Welke rivier vormt deels de grens tussen Drenthe en Overijssel?",
-
-a:"Reest",
-b:"Hunze",
-c:"Linde",
-
-correct:"a",
-
-uitleg:"De Reest vormt een natuurlijke grens."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke Drentse plaats is bekend om het jaarlijkse TT-motorsportevenement?",
 
 a:"Assen",
@@ -5326,20 +4996,6 @@ c:"Dood",
 correct:"a",
 
 uitleg:"'Droad' betekent draad."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats werd belangrijk door de aardappelzetmeelindustrie van Avebe?",
-
-a:"Veendam",
-b:"Emmen",
-c:"Assen",
-
-correct:"b",
-
-uitleg:"Emmen speelde een grote rol in deze industrie."
 },
 
 {
@@ -6152,356 +5808,6 @@ c:"Goudwinning",
 correct:"a",
 
 uitleg:"Na WOII groeide vooral dienstverlening en industrie."
-},  
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats kreeg in 2024 landelijke aandacht door de uitbreiding van het TT Circuit met nieuwe infrastructuurplannen?",
-
-a:"Assen",
-b:"Emmen",
-c:"Hoogeveen",
-
-correct:"a",
-
-uitleg:"Assen is de thuisbasis van het TT Circuit en regelmatig onderwerp van uitbreidingsplannen."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke verzetsgroep in Drenthe stond bekend om het vervalsen van persoonsbewijzen tijdens de Tweede Wereldoorlog?",
-
-a:"De LO Drenthe",
-b:"De Friese Raad",
-c:"De Noordelijke Brigade",
-
-correct:"a",
-
-uitleg:"De Landelijke Organisatie (LO) had sterke regionale afdelingen in Drenthe."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Nederlandse voetbalclub promoveerde in 2023 naar de Eredivisie vanuit Drenthe?",
-
-a:"FC Emmen",
-b:"SC Heerenveen",
-c:"FC Groningen",
-
-correct:"a",
-
-uitleg:"FC Emmen speelt op het hoogste niveau en is de belangrijkste profclub uit Drenthe."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke provincie heeft traditioneel de meeste esdorpenstructuren?",
-
-a:"Drenthe",
-b:"Groningen",
-c:"Zuid-Holland",
-
-correct:"a",
-
-uitleg:"Drenthe staat bekend om zijn esdorpenlandschap."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke economische sector groeide sterk in Drenthe na de afname van turfwinning in de 20e eeuw?",
-
-a:"Dienstensector en landbouw",
-b:"Scheepsbouw",
-c:"Zware staalindustrie",
-
-correct:"a",
-
-uitleg:"Drenthe verschoof van turf naar landbouw en diensten."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse stad was in de jaren 50 een belangrijk centrum van militaire aanwezigheid (kazerne en oefenterreinen)?",
-
-a:"Assen",
-b:"Meppel",
-c:"Coevorden",
-
-correct:"a",
-
-uitleg:"Assen had en heeft een belangrijke militaire functie."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke taalterm hoort bij het Drents binnen het Nedersaksisch?",
-
-a:"Drèents",
-b:"Bildts",
-c:"Stellingwerfs",
-
-correct:"a",
-
-uitleg:"Drèents is de regionale variant van het Nedersaksisch in Drenthe."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke rivier speelde historisch een belangrijke rol als handelsroute in Zuid-Drenthe?",
-
-a:"De Hunze",
-b:"De Maas",
-c:"De IJssel",
-
-correct:"a",
-
-uitleg:"De Hunze was belangrijk voor waterafvoer en handel."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse gemeente staat bekend om het Hunebedcentrum?",
-
-a:"Borger-Odoorn",
-b:"Emmen",
-c:"Tynaarlo",
-
-correct:"a",
-
-uitleg:"Het Hunebedcentrum ligt in Borger."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke politieke partij had in de 20e eeuw sterke wortels in de Drentse veenkoloniën?",
-
-a:"SDAP / PvdA",
-b:"VVD",
-c:"D66",
-
-correct:"a",
-
-uitleg:"De sociaaldemocratie was sterk in de veenkoloniën."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke sport is historisch sterk verbonden met de noordelijke zand- en veengebieden?",
-
-a:"Fierljeppen",
-b:"Hockey",
-c:"Golf",
-
-correct:"a",
-
-uitleg:"Fierljeppen komt uit de veen- en waterrijke regio’s."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats staat bekend om een voormalig Kamp Westerbork terrein in de omgeving?",
-
-a:"Hooghalen",
-b:"Assen",
-c:"Beilen",
-
-correct:"a",
-
-uitleg:"Kamp Westerbork lag bij Hooghalen."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke economische ontwikkeling is typisch voor Zuidoost-Drenthe in de 19e eeuw?",
-
-a:"Veenontginning en turfexport",
-b:"Havenindustrie",
-c:"Visserij",
-
-correct:"a",
-
-uitleg:"Turfwinning was de belangrijkste economische motor."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke stad in Groningen groeide sterk door gaswinning vanaf de jaren 60?",
-
-a:"Slochteren (regio)",
-b:"Stadskanaal",
-c:"Winschoten",
-
-correct:"a",
-
-uitleg:"De gasbel lag bij Slochteren."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke provincie heeft het Nationaal Park Dwingelderveld?",
-
-a:"Drenthe",
-b:"Friesland",
-c:"Groningen",
-
-correct:"a",
-
-uitleg:"Dwingelderveld ligt in Drenthe."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse stad speelde een belangrijke rol in de opkomst van de veenkoloniën?",
-
-a:"Hoogeveen",
-b:"Assen",
-c:"Emmen",
-
-correct:"a",
-
-uitleg:"Hoogeveen ontstond als veenkoloniecentrum."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke verzetsactiviteit was in Drenthe tijdens WOII relatief sterk ontwikkeld?",
-
-a:"Onderduiknetwerken",
-b:"Zeeoorlogvoering",
-c:"Luchtvaartindustrie",
-
-correct:"a",
-
-uitleg:"Drenthe had veel onderduikadressen door het landelijke karakter."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke voetbaltrainer uit Drenthe werd landskampioen met Ajax in 2019?",
-
-a:"Erik ten Hag",
-b:"Ron Jans",
-c:"Johnny Jansen",
-
-correct:"a",
-
-uitleg:"Erik ten Hag is afkomstig uit Haaksbergen maar actief in Noordelijke voetbalcontext; veel Eredivisie-invloeden."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke infrastructuur was cruciaal voor turftransport in Drenthe?",
-
-a:"Kanalen en wijken",
-b:"Spoorbruggen over rivieren",
-c:"Snelwegen",
-
-correct:"a",
-
-uitleg:"Turf werd via kanalen vervoerd."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke stad wordt gezien als centrum van de Drentse provinciepolitiek?",
-
-a:"Assen",
-b:"Emmen",
-c:"Meppel",
-
-correct:"a",
-
-uitleg:"Assen is de provinciehoofdstad."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse sportevenement is internationaal bekend?",
-
-a:"TT Assen",
-b:"Elfstedentocht",
-c:"Groninger 500",
-
-correct:"a",
-
-uitleg:"De TT van Assen is een MotoGP-evenement."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke landbouwsector domineert in modern Drenthe?",
-
-a:"Melkveehouderij",
-b:"Wijnbouw",
-c:"Rijstteelt",
-
-correct:"a",
-
-uitleg:"Melkveehouderij is dominant in het landschap."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke streektaalvariant hoort bij Groningen?",
-
-a:"Gronings",
-b:"Drèents",
-c:"Stellingwerfs",
-
-correct:"a",
-
-uitleg:"Gronings is Nedersaksisch dialect."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke historische ontwikkeling veranderde Drenthe het meest in de 19e eeuw?",
-
-a:"Veenontginning",
-b:"Industrialisatie havensteden",
-c:"Mijnbouw",
-
-correct:"a",
-
-uitleg:"Het veenlandschap werd grootschalig ontgonnen."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke provincie ligt direct ten westen van Drenthe?",
-
-a:"Friesland",
-b:"Overijssel",
-c:"Gelderland",
-
-correct:"a",
-
-uitleg:"Friesland ligt westelijk van Drenthe."
 },
 
 {
@@ -6867,7 +6173,7 @@ correct:"a",
 
 uitleg:"Meppel is een belangrijk distributiecentrum."
 },
-  
+
 {
 categorie:"Drenthe",
 
@@ -6881,7 +6187,7 @@ correct:"a",
 
 uitleg:"Nieuw-Amsterdam ontstond als veenkolonie rond de turfwinning."
 },
-  
+
 {
 categorie:"Drenthe",
 
@@ -7231,7 +6537,7 @@ correct:"b",
 
 uitleg:"Coevorden kreeg stadsrechten in 1408."
 },
-  
+
 {
 categorie:"Drenthe",
 
@@ -7344,8 +6650,6 @@ correct:"a",
 uitleg:"Het Pieterpad loopt door meerdere Drentse gebieden."
 },
 
-// Pupquiz
-
 {
 categorie:"Pubquiz",
 
@@ -7373,7 +6677,7 @@ correct:"a",
 
 uitleg:"Het was een koe: de koe werd aan een touw om zijn hals naar boven getrokken. Halverwege zijn tong ver uit de mond hangen, waardoor de inwoners dachten dat hij zin had aan het malse gras. Bij aankomst bovenin bleek de koe gestikt te zijn en het lugubere voorval wordt nog jaarlijks herdacht."
 },
-  
+
 {
 categorie:"Pubquiz",
 
@@ -7433,15 +6737,15 @@ uitleg:"Brazilië was vroeger een Portugese kolonie."
 {
 categorie:"Pubquiz",
 
-vraag:"Hoeveel minuten zitten er in een uur?",
+vraag:"Hoeveel seconden zitten er in een uur.",
 
-a:"60",
-b:"90",
-c:"100",
+a:"3600",
+b:"60",
+c:"3600",
 
 correct:"a",
 
-uitleg:"Een uur bestaat uit zestig minuten."
+uitleg:"Een uur bestaat uit 3600 seconden."
 },
 
 {
@@ -8833,20 +8137,6 @@ uitleg:"Pando in de VS is een gigantisch klonaal populierenstelsel."
 {
 categorie:"Pubquiz",
 
-vraag:"Welke Franse leider kroonde zichzelf tot keizer in 1804?",
-
-a:"Lodewijk XVI",
-b:"Napoleon Bonaparte",
-c:"Charles de Gaulle",
-
-correct:"b",
-
-uitleg:"Napoleon kroonde zichzelf in de Notre-Dame."
-},
-
-{
-categorie:"Pubquiz",
-
 vraag:"Welke oceaan is het diepst ter wereld?",
 
 a:"Atlantische Oceaan",
@@ -9192,20 +8482,6 @@ c:"Yangtze",
 correct:"b",
 
 uitleg:"De Amazone wordt vaak als langste of water rijkste rivier beschouwd, afhankelijk van meetmethode."
-},
-
-{
-categorie:"Pubquiz",
-
-vraag:"Welke componist schreef de 'Vier Jaargetijden'?",
-
-a:"Vivaldi",
-b:"Bach",
-c:"Mozart",
-
-correct:"a",
-
-uitleg:"Antonio Vivaldi componeerde 'Le quattro stagioni'."
 },
 
 {
@@ -10009,20 +9285,6 @@ uitleg:"Michael Phelps domineerde het zwemmen in 2008."
 {
 categorie:"Pubquiz",
 
-vraag:"Welke zee ligt tussen Afrika en het Arabisch Schiereiland?",
-
-a:"Rode Zee",
-b:"Zwarte Zee",
-c:"Caribische Zee",
-
-correct:"a",
-
-uitleg:"De Rode Zee scheidt Afrika en Azië."
-},
-
-{
-categorie:"Pubquiz",
-
 vraag:"Welke schilder maakte 'Het Laatste Avondmaal'?",
 
 a:"Leonardo da Vinci",
@@ -10247,20 +9509,6 @@ uitleg:"De Tiber stroomt door Rome en mondt uit in de Tyrreense Zee."
 {
 categorie:"Pubquiz",
 
-vraag:"Welke componist schreef 'Boléro'?",
-
-a:"Ravel",
-b:"Debussy",
-c:"Saint-Saëns",
-
-correct:"a",
-
-uitleg:"Maurice Ravel componeerde de beroemde 'Boléro'."
-},
-
-{
-categorie:"Pubquiz",
-
 vraag:"Welke oorlog begon in 1756 en eindigde in 1763?",
 
 a:"Zevenjarige Oorlog",
@@ -10303,20 +9551,6 @@ uitleg:"Neptunus is de verste officiële planeet."
 {
 categorie:"Pubquiz",
 
-vraag:"Welke band maakte 'Bohemian Rhapsody'?",
-
-a:"Queen",
-b:"The Beatles",
-c:"Led Zeppelin",
-
-correct:"a",
-
-uitleg:"Queen bracht dit iconische nummer uit in 1975."
-},
-
-{
-categorie:"Pubquiz",
-
 vraag:"Welke diersoort is de grootste haai?",
 
 a:"Walvishaai",
@@ -10354,34 +9588,6 @@ c:"Novak Djokovic",
 correct:"b",
 
 uitleg:"Nadal domineert op gravelbanen."
-},
-
-{
-categorie:"Pubquiz",
-
-vraag:"Welke zee ligt tussen Italië en de Balkan?",
-
-a:"Adriatische Zee",
-b:"Ionische Zee",
-c:"Tyrreense Zee",
-
-correct:"a",
-
-uitleg:"De Adriatische Zee scheidt Italië en de Balkan."
-},
-
-{
-categorie:"Pubquiz",
-
-vraag:"Welke schilder maakte 'De Nachtwacht'?",
-
-a:"Rembrandt",
-b:"Vermeer",
-c:"Frans Hals",
-
-correct:"a",
-
-uitleg:"Rembrandt schilderde dit meesterwerk in 1642."
 },
 
 {
@@ -10625,20 +9831,6 @@ uitleg:"De Mexicaanse Revolutie was een grote sociale en politieke omwenteling."
 {
 categorie:"Pubquiz",
 
-vraag:"Welke stad is de hoofdstad van Australië?",
-
-a:"Sydney",
-b:"Melbourne",
-c:"Canberra",
-
-correct:"c",
-
-uitleg:"Canberra is speciaal gebouwd als hoofdstad."
-},
-
-{
-categorie:"Pubquiz",
-
 vraag:"Welke planeet heeft de sterkste winden in het zonnestelsel?",
 
 a:"Neptunus",
@@ -10849,20 +10041,6 @@ uitleg:"Lima is de hoofdstad van Peru."
 {
 categorie:"Pubquiz",
 
-vraag:"Welke sport wordt gespeeld op Wimbledon?",
-
-a:"Tennis",
-b:"Golf",
-c:"Cricket",
-
-correct:"a",
-
-uitleg:"Wimbledon is het oudste tennistoernooi ter wereld."
-},
-
-{
-categorie:"Pubquiz",
-
 vraag:"Welke oorlog eindigde in 1815?",
 
 a:"Napoleontische Oorlogen",
@@ -10975,20 +10153,6 @@ uitleg:"De Amerikaanse Burgeroorlog ging over slavernij en staatsrechten."
 {
 categorie:"Pubquiz",
 
-vraag:"Welke stad is de hoofdstad van Egypte?",
-
-a:"Caïro",
-b:"Alexandrië",
-c:"Gizeh",
-
-correct:"a",
-
-uitleg:"Caïro is de grootste stad en hoofdstad van Egypte."
-},
-
-{
-categorie:"Pubquiz",
-
 vraag:"Welke planeet staat bekend om zijn extreem sterke magnetisch veld?",
 
 a:"Jupiter",
@@ -11054,20 +10218,6 @@ c:"Eddy Merckx",
 correct:"a",
 
 uitleg:"Armstrong werd later gediskwalificeerd wegens doping."
-},
-
-{
-categorie:"Pubquiz",
-
-vraag:"Welke zee ligt tussen Japan en Korea?",
-
-a:"Japanse Zee",
-b:"Oost-Chinese Zee",
-c:"Filipijnse Zee",
-
-correct:"a",
-
-uitleg:"De Japanse Zee ligt tussen Japan en het Koreaanse schiereiland."
 },
 
 {
@@ -11157,20 +10307,6 @@ uitleg:"Beethoven schreef deze wereldberoemde symfonie."
 {
 categorie:"Pubquiz",
 
-vraag:"Welke rivier stroomt door Londen?",
-
-a:"Theems",
-b:"Severn",
-c:"Tyne",
-
-correct:"a",
-
-uitleg:"De Theems stroomt door Londen."
-},
-
-{
-categorie:"Pubquiz",
-
 vraag:"Welke dier is het meest giftige ter wereld?",
 
 a:"Pijlgifkikker",
@@ -11208,20 +10344,6 @@ c:"Baseball",
 correct:"a",
 
 uitleg:"De Super Bowl is de finale van de NFL."
-},
-
-{
-categorie:"Pubquiz",
-
-vraag:"Welke oorlog eindigde in 1945?",
-
-a:"Tweede Wereldoorlog",
-b:"Eerste Wereldoorlog",
-c:"Koreaanse Oorlog",
-
-correct:"a",
-
-uitleg:"De Tweede Wereldoorlog eindigde in 1945."
 },
 
 {
