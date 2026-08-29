@@ -2263,34 +2263,6 @@ uitleg:"Terpen waarden boud tsjin heech wetter."
 {
 categorie:"Algemeen",
 
-vraag:"Wat is de hoofdstad van Groningen?",
-
-a:"Veendam",
-b:"Winschoten",
-c:"Groningen",
-
-correct:"c",
-
-uitleg:"De stad Groningen is de hoofdstad van de provincie."
-},
-
-{
-categorie:"Algemeen",
-
-vraag:"Welke universiteit staat in Groningen?",
-
-a:"TU Groningen",
-b:"Rijksuniversiteit Groningen",
-c:"Noordelijke Universiteit",
-
-correct:"b",
-
-uitleg:"De Rijksuniversiteit Groningen bestaat sinds 1614."
-},
-
-{
-categorie:"Algemeen",
-
 vraag:"Welke toren staat bekend als de Olle Grieze?",
 
 a:"Martinitoren",
@@ -2323,39 +2295,11 @@ vraag:"Welke zee grenst aan Groningen?",
 
 a:"Noordzee",
 b:"Waddenzee",
-c:"Zwarte Zee",
+c:"Oostzee",
 
 correct:"b",
 
 uitleg:"De Waddenzee ligt aan de noordkant van Groningen."
-},
-
-{
-categorie:"Algemeen",
-
-vraag:"Welke voetbalclub speelt betaald voetbal in Groningen?",
-
-a:"FC Emmen",
-b:"SC Cambuur",
-c:"FC Groningen",
-
-correct:"c",
-
-uitleg:"FC Groningen speelt in het betaalde voetbal."
-},
-
-{
-categorie:"Algemeen",
-
-vraag:"Welke provincie grenst aan Groningen?",
-
-a:"Drenthe",
-b:"Limburg",
-c:"Zeeland",
-
-correct:"a",
-
-uitleg:"Drenthe ligt direct onder Groningen."
 },
 
 {
@@ -2384,20 +2328,6 @@ c:"Flamingo",
 correct:"b",
 
 uitleg:"Kraanvogels broeden weer in het Fochteloërveen."
-},
-
-{
-categorie:"Algemeen",
-
-vraag:"Welke stad staat bekend als studentenstad?",
-
-a:"Assen",
-b:"Algemeen",
-c:"Drachten",
-
-correct:"b",
-
-uitleg:"Groningen heeft veel studenten."
 },
 
 // DRENTHE
