@@ -18,9 +18,28 @@ function createGame() {
         color: "blue"
     };
 
-    firebase.database()
-        .ref("games/" + code)
-        .set({
+    const gameRef = firebase.database().ref("games/" + code);
+
+    /*
+     * BEVEILIGING TEGEN DUBBELE SPELCODES
+     *
+     * We gebruiken een Firebase transaction.
+     * Bestaat deze spelcode al, dan wordt de bestaande
+     * spelinformatie NIET overschreven.
+     *
+     * Daardoor kan een tweede ploeg niet per ongeluk
+     * een bestaand spel vervangen door een nieuw spel
+     * met dezelfde code.
+     */
+    gameRef.transaction(currentData => {
+
+        if (currentData !== null) {
+            // Code is al in gebruik.
+            return;
+        }
+
+        // Code is nog vrij: maak het nieuwe spel aan.
+        return {
             gameState: "lobby",
             currentTurn: 0,
             activeTeams: 4,
@@ -28,34 +47,47 @@ function createGame() {
             phase: "lobby",
             roll: null,
             questionIndex: null,
-            teamPositions: {0:0,1:0,2:0,3:0},
+            teamPositions: {0: 0, 1: 0, 2: 0, 3: 0},
             players: {
                 host: hostPlayer
             }
-        })
-        .then(() => {
+        };
 
-            window.currentGameCode = code;
-            window.isHost = true;
-            window.myPlayerId = "host";
-            window.myTeam = 0;
-            window.myColor = "blue";
+    }).then(result => {
 
-            const teamInputs = document.getElementById("teamInputs");
-            if (teamInputs) teamInputs.style.display = "block";
+        if (!result.committed) {
+            alert(
+                "Deze code is in gebruik.\n\n" +
+                "Gebruik een andere code."
+            );
+            return;
+        }
 
-            const startButton = document.getElementById("startGameButton");
-            if (startButton) startButton.style.display = "block";
+        window.currentGameCode = code;
+        window.isHost = true;
+        window.myPlayerId = "host";
+        window.myTeam = 0;
+        window.myColor = "blue";
 
-            listenToPlayers(code);
-            listenToGameState();
+        const teamInputs = document.getElementById("teamInputs");
+        if (teamInputs) teamInputs.style.display = "block";
 
-            alert("Spel aangemaakt: " + code);
-        })
-        .catch(error => {
-            console.error("FOUT BIJ CREATE GAME:", error);
-            alert("Spel kon niet worden aangemaakt:\n\n" + error.message);
-        });
+        const startButton = document.getElementById("startGameButton");
+        if (startButton) startButton.style.display = "block";
+
+        listenToPlayers(code);
+        listenToGameState();
+
+        alert("Spel aangemaakt: " + code);
+
+    }).catch(error => {
+
+        console.error("FOUT BIJ CREATE GAME:", error);
+        alert(
+            "Spel kon niet worden aangemaakt:\n\n" +
+            error.message
+        );
+    });
 }
 
 function joinGame() {
