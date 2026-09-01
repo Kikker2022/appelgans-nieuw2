@@ -2002,20 +2002,6 @@ correct:"b",
 uitleg:"Kraanvogels broeden weer in het Fochteloërveen."
 },
 
-{
-categorie:"Drenthe",
-
-vraag:"Wat is de hoofdstad van Drenthe?",
-
-a:"Emmen",
-b:"Assen",
-c:"Hoogeveen",
-
-correct:"b",
-
-uitleg:"Assen is de hoofdstad van Drenthe."
-},
-
   {
   categorie:"Drenthe",
 
@@ -2366,8 +2352,6 @@ uitleg:"Assen is de hoofdstad van Drenthe."
 
   uitleg:"De gereformeerde kerk in Bovensmilde werd in 1953 gebouwd naar ontwerp van A. Smallenbroek."
   },
-
-
 
 {
 categorie:"Drenthe",
