@@ -23,24 +23,45 @@ function createGame() {
     /*
      * BEVEILIGING TEGEN DUBBELE SPELCODES
      *
-     * We gebruiken een Firebase transaction.
-     * Bestaat deze spelcode al, dan wordt de bestaande
-     * spelinformatie NIET overschreven.
+     * Een spelcode blijft 24 uur in gebruik.
+     * Binnen die 24 uur kan een tweede Host de code
+     * niet opnieuw gebruiken.
      *
-     * Daardoor kan een tweede ploeg niet per ongeluk
-     * een bestaand spel vervangen door een nieuw spel
-     * met dezelfde code.
+     * Na 24 uur wordt het oude spel als verlopen beschouwd
+     * en mag dezelfde code opnieuw worden gebruikt.
+     *
+     * We gebruiken hiervoor een Firebase transaction,
+     * zodat twee Hosts niet tegelijk dezelfde vrije code
+     * kunnen claimen.
      */
+    const CODE_GELDIGHEID_MS = 24 * 60 * 60 * 1000;
+
     gameRef.transaction(currentData => {
 
         if (currentData !== null) {
-            // Code is al in gebruik.
-            return;
+            /*
+             * Oude spellen uit een eerdere versie hebben mogelijk
+             * nog geen createdAt. Die behandelen we als actief,
+             * zodat ze niet per ongeluk worden overschreven.
+             */
+            if (typeof currentData.createdAt !== "number") {
+                return;
+            }
+
+            const leeftijd = Date.now() - currentData.createdAt;
+
+            if (leeftijd < CODE_GELDIGHEID_MS) {
+                // Code is nog geen 24 uur oud en dus in gebruik.
+                return;
+            }
+
+            // Code is 24 uur of ouder: oud spel mag worden vervangen.
         }
 
-        // Code is nog vrij: maak het nieuwe spel aan.
+        // Code is vrij of het oude spel is verlopen.
         return {
             gameState: "lobby",
+            createdAt: Date.now(),
             currentTurn: 0,
             activeTeams: 4,
             selectedCategory: null,
