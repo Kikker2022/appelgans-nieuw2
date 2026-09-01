@@ -2002,356 +2002,356 @@ correct:"b",
 uitleg:"Kraanvogels broeden weer in het Fochteloërveen."
 },
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"In welk jaar begon de Compagnie van de Dieverder en Leggeler Smildervenen onder leiding van Adriaan Pauw met de ontginning van       het veengebied bij Hoogersmilde?",
+vraag:"In welk jaar begon de Compagnie van de Dieverder en Leggeler Smildervenen onder leiding van Adriaan Pauw met de ontginning van       het veengebied bij Hoogersmilde?",
   
-  "a:1608",
-  "b:1618",
-  "c:1635",
+a:"1608",
+b:"1618",
+c:"1635",
    
-  correct:"b",
+correct:"b",
 
-  uitleg:"Onder leiding van de latere raadspensionaris Adriaan Pauw begon de compagnie in 1618 met de ontginning van de Smildervenen bij    Hoogersmilde."
-  },
+uitleg:"Onder leiding van de latere raadspensionaris Adriaan Pauw begon de compagnie in 1618 met de ontginning van de Smildervenen bij    Hoogersmilde."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Welke van de drie dorpen Smilde, Hoogersmilde en Bovensmilde is historisch gezien de oudste kern?",
+vraag:"Welke van de drie dorpen Smilde, Hoogersmilde en Bovensmilde is historisch gezien de oudste kern?",
    
-  "a:Smilde",
-  "b:Hoogersmilde",
-  "c:Bovensmilde",
+a:"Smilde",
+b:"Hoogersmilde",
+c:"Bovensmilde",
 
-  correct:"b",
+correct:"b",
 
-  uitleg:"Hoogersmilde is de oudste kern van de voormalige gemeente Smilde. De eerste woningen werden er in 1635 gebouwd."
-  },
+uitleg:"Hoogersmilde is de oudste kern van de voormalige gemeente Smilde. De eerste woningen werden er in 1635 gebouwd."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
     
-  vraag:"Hoeveel dubbele woningen liet de compagnie in 1635 in Hoogersmilde bouwen?",
+vraag:"Hoeveel dubbele woningen liet de compagnie in 1635 in Hoogersmilde bouwen?",
    
-  "a:5",
-  "b:10",
-  "c:20",
+a:"5",
+b:"10",
+c:"20",
 
-  correct:"b",
+correct:"b",
 
-  uitleg:"Op 11 januari 1635 werd besloten om tien dubbele woningen te bouwen. Op 1 mei konden de woningen worden betrokken."
-  },
+uitleg:"Op 11 januari 1635 werd besloten om tien dubbele woningen te bouwen. Op 1 mei konden de woningen worden betrokken."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Waar stonden de eerste woningen van Hoogersmilde?",
+vraag:"Waar stonden de eerste woningen van Hoogersmilde?",
  
-  "a:Aan de oostzijde van de Drentse Hoofdvaart",
-  "b:Langs de westzijde van de Grift, bovenstrooms van de Lotengracht",
-  "c:Aan de Norgervaart",
+a:"Aan de oostzijde van de Drentse Hoofdvaart",
+b:"Langs de westzijde van de Grift, bovenstrooms van de Lotengracht",
+c:"Aan de Norgervaart",
  
-  correct:"b",
+correct:"b",
 
-  uitleg:"De eerste woningen stonden langs de westzijde van de Grift, ongeveer bovenstrooms van de Lotengracht."
-  },
+uitleg:"De eerste woningen stonden langs de westzijde van de Grift, ongeveer bovenstrooms van de Lotengracht."
+},
 
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Welke historische naam werd voor het jonge dorp Smilde gebruikt?",
+vraag:"Welke historische naam werd voor het jonge dorp Smilde gebruikt?",
     
-  "a:Kloosterveen",
-  "b:Dieverveen",
-  "c:Smilderveen",
+a:"Kloosterveen",
+b:"Dieverveen",
+c:"Smilderveen",
   
-  correct:"a",
+correct:"a",
 
-  uitleg:"Het jonge dorp Smilde werd aanvankelijk ook Kloosterveen genoemd."
-  },
+uitleg:"Het jonge dorp Smilde werd aanvankelijk ook Kloosterveen genoemd."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Rond welk jaar ontstond het kanaaldorp Smilde?",
+vraag:"Rond welk jaar ontstond het kanaaldorp Smilde?",
   
-  "a:Rond 1670",
-  "b:Rond 1770",
-  "c:Rond 1870",
+a:"Rond 1670",
+b:"Rond 1770",
+c:"Rond 1870",
 
-  correct:"b",
+correct:"b",
 
-  uitleg:"Het kanaaldorp Smilde ontstond rond 1770 toen de ontginning van de Smildervenen een nieuwe impuls kreeg."
-  },
+uitleg:"Het kanaaldorp Smilde ontstond rond 1770 toen de ontginning van de Smildervenen een nieuwe impuls kreeg."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Welke waterweg gaf de vervening van de Smildervenen in de tweede helft van de achttiende eeuw een grote nieuwe impuls?",
+vraag:"Welke waterweg gaf de vervening van de Smildervenen in de tweede helft van de achttiende eeuw een grote nieuwe impuls?",
     
-  "a:De Hoogeveense Vaart",
-  "b:De Drentse Hoofdvaart",
-  "c:Het Oranjekanaal",
+a:"De Hoogeveense Vaart",
+b:"De Drentse Hoofdvaart",
+c:"Het Oranjekanaal",
    
-  correct:"b",
+correct:"b",
 
-  uitleg:"De aanleg van de Drentse Hoofdvaart gaf de ontginning van het noordelijke deel van de Smildervenen een nieuwe impuls."
-  },
+uitleg:"De aanleg van de Drentse Hoofdvaart gaf de ontginning van het noordelijke deel van de Smildervenen een nieuwe impuls."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Tussen welke plaatsen werd de Drentse Hoofdvaart aangelegd?",
+vraag:"Tussen welke plaatsen werd de Drentse Hoofdvaart aangelegd?",
    
-  "a:Meppel en Assen",
-  "b:Hoogeveen en Beilen",
-  "c:Diever en Oosterwolde",
+a:"Meppel en Assen",
+b:"Hoogeveen en Beilen",
+c:"Diever en Oosterwolde",
   
-  correct:"a",
+correct:"a",
 
-  uitleg:"De Drentse Hoofdvaart werd aangelegd als verbinding tussen het Meppeler Diep en Assen."
-  },
+uitleg:"De Drentse Hoofdvaart werd aangelegd als verbinding tussen het Meppeler Diep en Assen."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"In welke periode werd de Drentse Hoofdvaart tussen Meppel en Assen aangelegd?",
+vraag:"In welke periode werd de Drentse Hoofdvaart tussen Meppel en Assen aangelegd?",
     
-  "a:1668-1680",
-  "b:1769-1780",
-  "c:1869-1880",
+a:"1668-1680",
+b:"1769-1780",
+c:"1869-1880",
   
-  correct:"b",
+correct:"b",
 
-  uitleg:"De aanleg van de Drentse Hoofdvaart vond plaats tussen 1769 en 1780."
-  },
+uitleg:"De aanleg van de Drentse Hoofdvaart vond plaats tussen 1769 en 1780."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Welke aftakking van de Drentse Hoofdvaart kwam in 1790 gereed?",
+vraag:"Welke aftakking van de Drentse Hoofdvaart kwam in 1790 gereed?",
   
-  "a:De Beilervaart",
-  "b:De Norgervaart",
-  "c:De Witte Wijk",
+a:"De Beilervaart",
+b:"De Norgervaart",
+c:"De Witte Wijk",
 
-  correct:"a",
+correct:"a",
 
-  uitleg:"De Beilervaart kwam in 1790 gereed. De Norgervaart volgde in 1808."
-  },
+uitleg:"De Beilervaart kwam in 1790 gereed. De Norgervaart volgde in 1808."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"In welk jaar kwam de Norgervaart als aftakking van de Drentse Hoofdvaart gereed?",
+vraag:"In welk jaar kwam de Norgervaart als aftakking van de Drentse Hoofdvaart gereed?",
     
-  "a:1790",
-  "b:1808",
-  "c:1825",
+a:"1790",
+b:"1808",
+c:"1825",
  
-  correct:"b",
+correct:"b",
 
-  uitleg:"De Norgervaart kwam in 1808 gereed."
-  },
+uitleg:"De Norgervaart kwam in 1808 gereed."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Welke van deze drie dorpen is het meest noordelijk gelegen?",
+vraag:"Welke van deze drie dorpen is het meest noordelijk gelegen?",
    
-  "a:Hoogersmilde",
-  "b:Smilde",
-  "c:Bovensmilde",
+a:"Hoogersmilde",
+b:"Smilde",
+c:"Bovensmilde",
 
-  correct:"c",
+correct:"c",
 
-  uitleg:"Bovensmilde is het jongste en meest noordelijke deel van de voormalige gemeente Smilde."
-  },
+uitleg:"Bovensmilde is het jongste en meest noordelijke deel van de voormalige gemeente Smilde."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Welke historische benaming werd ook gebruikt voor Bovensmilde?",
+vraag:"Welke historische benaming werd ook gebruikt voor Bovensmilde?",
   
-  "a:Nieuw-Smilde",
-  "b:Boven-Kloosterveen",
-  "c:Smilde-Noord",
+a:"Nieuw-Smilde",
+b:"Boven-Kloosterveen",
+c:"Smilde-Noord",
 
-  correct:"a",
+correct:"a",
 
-  uitleg:"Bovensmilde werd in historische beschrijvingen ook Nieuw-Smilde genoemd."
-  },
+uitleg:"Bovensmilde werd in historische beschrijvingen ook Nieuw-Smilde genoemd."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"In welk jaar werd de opvallende achtkante hervormde kerk aan de Veenhoopsweg in Smilde gebouwd?",
+vraag:"In welk jaar werd de opvallende achtkante hervormde kerk aan de Veenhoopsweg in Smilde gebouwd?",
   
-  "a:1778",
-  "b:1788",
-  "c:1798",
+a:"1778",
+b:"1788",
+c:"1798",
    
-  correct:"b",
+correct:"b",
 
-  uitleg:"De hervormde kerk van Smilde werd in 1788 gebouwd."
-  },
+uitleg:"De hervormde kerk van Smilde werd in 1788 gebouwd."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Wie ontwierp de achtkante hervormde kerk aan de Veenhoopsweg in Smilde?",
+vraag:"Wie ontwierp de achtkante hervormde kerk aan de Veenhoopsweg in Smilde?",
     
-  "a:Abraham Sorg",
-  "b:P. Dijkstra",
-  "c:A. Smallenbroek",
+a:"Abraham Sorg",
+b:"P. Dijkstra",
+c:"A. Smallenbroek",
    
-  correct:"a",
+correct:"a",
 
-  uitleg:"De opvallende achtkante kerk werd ontworpen door Abraham Sorg."
-  },
+uitleg:"De opvallende achtkante kerk werd ontworpen door Abraham Sorg."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Uit welk jaar dateert het orgel van de hervormde kerk in Smilde?",
+vraag:"Uit welk jaar dateert het orgel van de hervormde kerk in Smilde?",
     
-  "a:1788",
-  "b:1811",
-  "c:1841",
+a:"1788",
+b:"1811",
+c:"1841",
   
-  correct:"c",
+correct:"c",
 
-  uitleg:"Het orgel van de hervormde kerk in Smilde dateert uit 1841."
-  },
+uitleg:"Het orgel van de hervormde kerk in Smilde dateert uit 1841."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Vanaf welk jaar had Smilde een synagoge?",
+vraag:"Vanaf welk jaar had Smilde een synagoge?",
     
-  "a:1836",
-  "b:1846",
-  "c:1856",
+a:"1836",
+b:"1846",
+c:"1856",
    
-  correct:"b",
+correct:"b",
 
-  uitleg:"Vanaf 1846 had Smilde een synagoge. Het gebouw verloor vlak voor de Tweede Wereldoorlog zijn functie."
-  },
+uitleg:"Vanaf 1846 had Smilde een synagoge. Het gebouw verloor vlak voor de Tweede Wereldoorlog zijn functie."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Welke van de drie dorpen was rond 1850 qua inwonertal na Hoogeveen en Meppel de grootste plaats van Drenthe?",
+vraag:"Welke van de drie dorpen was rond 1850 qua inwonertal na Hoogeveen en Meppel de grootste plaats van Drenthe?",
    
-  "a:Smilde",
-  "b:Hoogersmilde",
-  "c:Bovensmilde",
+a:"Smilde",
+b:"Hoogersmilde",
+c:"Bovensmilde",
   
-  correct:"a",
+correct:"a",
 
-  uitleg:"Rond 1850 was Smilde na Hoogeveen en Meppel de grootste plaats van Drenthe."
-  },
+uitleg:"Rond 1850 was Smilde na Hoogeveen en Meppel de grootste plaats van Drenthe."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"In welk jaar kreeg Hoogersmilde een eigen hervormde kerk aan de Rijksweg?",
+vraag:"In welk jaar kreeg Hoogersmilde een eigen hervormde kerk aan de Rijksweg?",
     
-  "a:1835",
-  "b:1845",
-  "c:1855",
+a:"1835",
+b:"1845",
+c:"1855",
     
-  correct:"b",
+correct:"b",
 
-  uitleg:"Hoogersmilde kreeg in 1845 een eigen hervormde kerk, nadat het dorp zich kerkelijk van Diever had afgesplitst."
-  },
+uitleg:"Hoogersmilde kreeg in 1845 een eigen hervormde kerk, nadat het dorp zich kerkelijk van Diever had afgesplitst."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"In welk jaar verrees in Hoogersmilde een gereformeerde kerk naar ontwerp van P. Dijkstra?",
+vraag:"In welk jaar verrees in Hoogersmilde een gereformeerde kerk naar ontwerp van P. Dijkstra?",
     
-  "a:1906",
-  "b:1916",
-  "c:1926",
+a:"1906",
+b:"1916",
+c:"1926",
   
-  correct:"b",
+correct:"b",
 
-  uitleg:"In 1916 werd in Hoogersmilde een gereformeerde kerk gebouwd naar ontwerp van P. Dijkstra."
-  },
+uitleg:"In 1916 werd in Hoogersmilde een gereformeerde kerk gebouwd naar ontwerp van P. Dijkstra."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Hoe heette de coöperatieve zuivelfabriek en maalderij die in Hoogersmilde tot 1966 in bedrijf was?",
+vraag:"Hoe heette de coöperatieve zuivelfabriek en maalderij die in Hoogersmilde tot 1966 in bedrijf was?",
     
-  "a:Nooit Gedacht",
-  "b:De Smilde",
-  "c:Ons Belang",
+a:"Nooit Gedacht",
+b:"De Smilde",
+c:"Ons Belang",
  
-  correct:"a",
+correct:"a",
 
-  uitleg:"De coöperatieve zuivelfabriek en maalderij in Hoogersmilde heette Nooit Gedacht en bleef tot 1966 in bedrijf."
-  },
+uitleg:"De coöperatieve zuivelfabriek en maalderij in Hoogersmilde heette Nooit Gedacht en bleef tot 1966 in bedrijf."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"In welk jaar werd in Hoogersmilde de kalkzandsteenfabriek opgericht?",
+vraag:"In welk jaar werd in Hoogersmilde de kalkzandsteenfabriek opgericht?",
     
-  "a:1895",
-  "b:1905",
-  "c:1915",
+a:"1895",
+b:"1905",
+c:"1915",
   
-  correct:"b",
+correct:"b",
 
-  uitleg:"De kalkzandsteenfabriek werd in 1905 opgericht als kalkzandsteenfabriek Roelfsema."
-  },
+uitleg:"De kalkzandsteenfabriek werd in 1905 opgericht als kalkzandsteenfabriek Roelfsema."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"Vanaf welk jaar woonde de bekende predikant Hendrik de Cock in Bovensmilde?",
+vraag:"Vanaf welk jaar woonde de bekende predikant Hendrik de Cock in Bovensmilde?",
     
-  "a:1825",
-  "b:1835",
-  "c:1845",
+a:"1825",
+b:"1835",
+c:"1845",
    
-  correct:"b",
+correct:"b",
 
-  uitleg:"Hendrik de Cock woonde vanaf 1835 in Bovensmilde en verkondigde daar het gereformeerde gedachtegoed."
-  },
+uitleg:"Hendrik de Cock woonde vanaf 1835 in Bovensmilde en verkondigde daar het gereformeerde gedachtegoed."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"In welk jaar werd de hervormde kerk aan de Hoofdweg in Bovensmilde opgeleverd?",
+vraag:"In welk jaar werd de hervormde kerk aan de Hoofdweg in Bovensmilde opgeleverd?",
    
-  "a:1859",
-  "b:1869",
-  "c:1879",
+a:"1859",
+b:"1869",
+c:"1879",
    
-  correct:"b",
+correct:"b",
 
-  uitleg:"De hervormde kerk aan de Hoofdweg in Bovensmilde werd in 1869 opgeleverd."
-  },
+uitleg:"De hervormde kerk aan de Hoofdweg in Bovensmilde werd in 1869 opgeleverd."
+},
 
-  {
-  categorie:"Drenthe",
+{
+categorie:"Drenthe",
 
-  vraag:"In welk jaar werd de gereformeerde kerk aan de Ds. L. Dijkstrastraat in Bovensmilde gebouwd?",
+vraag:"In welk jaar werd de gereformeerde kerk aan de Ds. L. Dijkstrastraat in Bovensmilde gebouwd?",
    
-  "a:1943",
-  "b:1953",
-  "c:1963",
+a:"1943",
+b:"1953",
+c:"1963",
  
-  correct:"b",
+correct:"b",
 
-  uitleg:"De gereformeerde kerk in Bovensmilde werd in 1953 gebouwd naar ontwerp van A. Smallenbroek."
-  },
+uitleg:"De gereformeerde kerk in Bovensmilde werd in 1953 gebouwd naar ontwerp van A. Smallenbroek."
+},
 
 {
 categorie:"Drenthe",
