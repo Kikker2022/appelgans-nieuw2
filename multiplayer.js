@@ -39,23 +39,28 @@ function createGame() {
     gameRef.transaction(currentData => {
 
         if (currentData !== null) {
+
             /*
-             * Oude spellen uit een eerdere versie hebben mogelijk
-             * nog geen createdAt. Die behandelen we als actief,
-             * zodat ze niet per ongeluk worden overschreven.
+             * Controleer hoe oud het bestaande spel is.
+             *
+             * BELANGRIJK:
+             * Oude spellen van vóór de 24-uurs-beveiliging hebben
+             * geen createdAt. Die moeten NIET voor altijd een code
+             * blokkeren. Daarom worden zulke oude spellen hier als
+             * verlopen beschouwd en vervangen door het nieuwe spel.
              */
-            if (typeof currentData.createdAt !== "number") {
-                return;
+            if (typeof currentData.createdAt === "number") {
+
+                const leeftijd = Date.now() - currentData.createdAt;
+
+                if (leeftijd >= 0 && leeftijd < CODE_GELDIGHEID_MS) {
+                    // Code is nog geen 24 uur oud en dus in gebruik.
+                    return;
+                }
             }
 
-            const leeftijd = Date.now() - currentData.createdAt;
-
-            if (leeftijd < CODE_GELDIGHEID_MS) {
-                // Code is nog geen 24 uur oud en dus in gebruik.
-                return;
-            }
-
-            // Code is 24 uur of ouder: oud spel mag worden vervangen.
+            // Geen createdAt, een ongeldige datum of 24 uur of ouder:
+            // het oude spel is verlopen en mag worden vervangen.
         }
 
         // Code is vrij of het oude spel is verlopen.
@@ -78,7 +83,8 @@ function createGame() {
 
         if (!result.committed) {
             alert(
-                "Deze code is in gebruik.\n\n" +
+                "Deze code is nog in gebruik.\n\n" +
+                "Een spelcode blijft 24 uur gereserveerd.\n" +
                 "Gebruik een andere code."
             );
             return;
