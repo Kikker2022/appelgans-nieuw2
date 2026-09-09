@@ -3,6 +3,874 @@ const vragen = [
 {
 categorie:"Ooststellingwerf",
 
+vraag:"In welk jaar werd Haulerwijk officieel een zelfstandig dorp?",
+
+a:"1756",
+b:"1849",
+c:"1880",
+
+correct:"c",
+
+uitleg:"Haulerwijk werd in 1880 officieel een zelfstandig dorp. Daarvoor werd de bevolking bij Haule geteld."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke compagnie liet in 1756 de Haulerwijkstervaart graven?",
+
+a:"De Opsterlandse Compagnie",
+b:"De Drachtster Compagnie",
+c:"De Schoterlandse Compagnie",
+
+correct:"b",
+
+uitleg:"De Haulerwijkstervaart werd in 1756 door de Drachtster Compagnie gegraven."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Op wiens dorpsgebied werd de Haulerwijkstervaart oorspronkelijk gegraven?",
+
+a:"Haule",
+b:"Waskemeer",
+c:"Donkerbroek",
+
+correct:"a",
+
+uitleg:"De vaart werd gegraven op het dorpsgebied van Haule."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke drie vaarten waren historisch bepalend voor de ontwikkeling van Haulerwijk?",
+
+a:"De Compagnonsvaart, Haulerwijkstervaart en Kromme Elleboogvaart",
+b:"De Opsterlandse Vaart, Turfvaart en Linde",
+c:"De Haulervaart, Tjonger en Kolonievaart",
+
+correct:"a",
+
+uitleg:"Haulerwijk ontwikkelde zich als streekdorp langs de Compagnonsvaart, Haulerwijkstervaart en Kromme Elleboogvaart."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welk deel van het vroegere Haulerwijk werd later zelfstandig als Waskemeer?",
+
+a:"Haulerwijk Boven",
+b:"Haulerwijk Midden",
+c:"Haulerwijk Beneden",
+
+correct:"c",
+
+uitleg:"Beneden Haulerwijk ontwikkelde zich later tot het zelfstandige dorp Waskemeer."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd aan de noordzijde van de vaart een belangrijke weg aangelegd?",
+
+a:"1756",
+b:"1859",
+c:"1880",
+
+correct:"b",
+
+uitleg:"In 1859 werd aan de noordelijke oever van de vaart een weg aangelegd."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke kerk in Haulerwijk dateert uit 1852?",
+
+a:"De doopsgezinde kerk",
+b:"De hervormde kerk",
+c:"De gereformeerde kerk",
+
+correct:"b",
+
+uitleg:"De hervormde kerk werd in 1852 gebouwd."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd de doopsgezinde kerk in Haulerwijk gebouwd?",
+
+a:"1905",
+b:"1920",
+c:"1925",
+
+correct:"c",
+
+uitleg:"De doopsgezinde kerk werd in 1925 gebouwd."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Wie ontwierp de gereformeerde kerk die rond 1930 in Haulerwijk werd gebouwd?",
+
+a:"Jelle de Jong",
+b:"F. Offringa",
+c:"W.C. de Groot",
+
+correct:"b",
+
+uitleg:"De gereformeerde kerk werd ontworpen door architect F. Offringa en kwam in 1930 gereed."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bijzondere natuurgebeurtenis trof Haulerwijk in 1950?",
+
+a:"Een grote overstroming",
+b:"Een windhoos",
+c:"Een zware aardbeving",
+
+correct:"b",
+
+uitleg:"Op 23 augustus 1950 werd Haulerwijk getroffen door een zware windhoos."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd de Haulerwijkstervaart voor de scheepvaart afgesloten?",
+
+a:"1949",
+b:"1953",
+c:"1957",
+
+correct:"b",
+
+uitleg:"De Haulerwijkstervaart werd in 1953 voor de scheepvaart afgesloten."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bijzondere gebeurtenis vond in 1981 rond Haulerwijk plaats?",
+
+a:"Er werd een vijfdelige IKON-televisieserie over Haulerwijk gemaakt",
+b:"Haulerwijk kreeg een eigen radiostation",
+c:"De Haulerwijkstervaart werd opnieuw geopend",
+
+correct:"a",
+
+uitleg:"In 1981 werd een vijfdelige IKON-televisieserie over Haulerwijk gemaakt."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Bij welk dorp werden de inwoners van Haulerwijk vóór 1880 officieel geteld?",
+
+a:"Oosterwolde",
+b:"Haule",
+c:"Waskemeer",
+
+correct:"b",
+
+uitleg:"Voor 1880 werden de inwoners van Haulerwijk bij Haule geteld."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werden de eerste nog bestaande volkswoningen in Haulerwijk gebouwd?",
+
+a:"1890",
+b:"1905",
+c:"1920",
+
+correct:"c",
+
+uitleg:"De vroegste nog bestaande volkswoningen werden in 1920 aan de Meidoornlaan gebouwd."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke van deze waterwegen heeft géén historische relatie met de ontwikkeling van Haulerwijk?",
+
+a:"De Haulerwijkstervaart",
+b:"De Kromme Elleboogvaart",
+c:"De Dokkumer Ee",
+
+correct:"c",
+
+uitleg:"De Dokkumer Ee speelde geen rol in de historische ontwikkeling van Haulerwijk."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke gebeurtenis vond het eerst plaats in de geschiedenis van Haulerwijk?",
+
+a:"Haulerwijk werd zelfstandig",
+b:"De Haulerwijkstervaart werd gegraven",
+c:"De Haulerwijkstervaart werd voor de scheepvaart afgesloten",
+
+correct:"b",
+
+uitleg:"De Haulerwijkstervaart werd in 1756 gegraven. Haulerwijk werd in 1880 zelfstandig en de vaart werd in 1953 afgesloten."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Hoe lang was de Haulerwijkstervaart ongeveer toen Haulerwijk zich als lange nederzetting ontwikkelde?",
+
+a:"Ongeveer 2 kilometer",
+b:"Bijna 6 kilometer",
+c:"Ruim 12 kilometer",
+
+correct:"b",
+
+uitleg:"De Haulerwijkstervaart was bijna zes kilometer lang en langs de vaart ontstond een langgerekte nederzetting."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Hoe lang liep de bebouwing langs de Kromme Elleboogvaart ongeveer door?",
+
+a:"200 meter",
+b:"500 meter",
+c:"800 meter",
+
+correct:"c",
+
+uitleg:"Aan de oostzijde van Boven Haulerwijk maakte de vaart een haakse knik en liep als Kromme Elleboogvaart nog ongeveer 800 meter door."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke atlas uit 1849 laat zien dat Haulerwijk toen al over de volle lengte was ontwikkeld?",
+
+a:"De atlas van Eekhoff",
+b:"De atlas van Blaeu",
+c:"De atlas van Witkamp",
+
+correct:"a",
+
+uitleg:"Op het kaartbeeld van de grietenij in de atlas van Eekhoff uit 1849 is Haulerwijk over de volle lengte ontwikkeld."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Hoeveel inwoners telde Haulerwijk volgens het Aardrijkskundig Woordenboek van Van der Aa rond 1849?",
+
+a:"Ruim 500",
+b:"Ruim 1.000",
+c:"Ruim 2.000",
+
+correct:"b",
+
+uitleg:"Van der Aa vermeldde ruim 1.000 inwoners en 187 huizen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Waar stonden de vroegste nog bestaande volkswoningen van Haulerwijk?",
+
+a:"Aan de Meidoornlaan",
+b:"Aan de Leeksterweg",
+c:"Aan de Oosterwoldseweg",
+
+correct:"a",
+
+uitleg:"In 1920 werden de vroegste nog bestaande volkswoningen gebouwd aan de Meidoornlaan."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werden er nog enkele volkswoningen toegevoegd aan de Meidoornlaan en andere locaties?",
+
+a:"1927",
+b:"1937",
+c:"1947",
+
+correct:"b",
+
+uitleg:"In 1937 werden nog enkele woningen toegevoegd aan de Meidoornlaan, de Slotemaker de Bruïneweg, de Scheidingsreed en het Smidslaantje."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke ontwikkeling zorgde er na de Tweede Wereldoorlog voor dat Haulerwijk meer op een kruisdorp ging lijken?",
+
+a:"Bebouwing langs de Leeksterweg en Oosterwoldseweg",
+b:"De aanleg van de N381 en de Turfroute",
+c:"De aanleg van de spoorlijn naar Assen",
+
+correct:"a",
+
+uitleg:"Na de oorlog nam de bebouwing sterk toe langs de Leeksterweg naar het noorden en de Oosterwoldseweg naar het zuiden."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Aan welke zijde van de vaart is het oorspronkelijke agrarische karakter van Haulerwijk het best bewaard gebleven?",
+
+a:"Aan de noordzijde",
+b:"Aan de zuidzijde",
+c:"Aan beide zijden even sterk",
+
+correct:"b",
+
+uitleg:"Door de sterkere verdichting aan de noordzijde bleef het agrarische karakter vooral aan de zuidelijke oever behouden."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd de weg aan de noordzijde van de Haulerwijkstervaart een kunstweg?",
+
+a:"1899",
+b:"1911",
+c:"1925",
+
+correct:"b",
+
+uitleg:"De weg die in 1859 werd aangelegd, werd in 1911 een kunstweg."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Op welke datum in 1950 bereikte de tornado de grond in het Blauwe Bos bij Haulerwijk?",
+
+a:"23 augustus",
+b:"31 augustus",
+c:"5 september",
+
+correct:"a",
+
+uitleg:"Op 23 augustus 1950 bereikte de slurf van de tornado de grond in het Blauwe Bos."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Ongeveer hoe breed was het spoor van de tornado die in 1950 door Haulerwijk trok?",
+
+a:"Ongeveer 20 meter",
+b:"Ongeveer 50 meter",
+c:"Ongeveer 100 meter",
+
+correct:"b",
+
+uitleg:"Het spoor van de windhoos was ongeveer 50 meter breed."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Hoeveel woningen liepen tijdens de windhoos van 1950 ongeveer schade op?",
+
+a:"Een tiental",
+b:"Een twintigtal",
+c:"Ongeveer vijftig",
+
+correct:"b",
+
+uitleg:"Ongeveer twintig woningen liepen schade op. Twee huizen werden totaal verwoest."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Hoeveel geld werd uiteindelijk ongeveer ingezameld om de schade van de windhoos van 1950 te vergoeden?",
+
+a:"Ruim 20.000 gulden",
+b:"Ruim 50.000 gulden",
+c:"Ruim 80.000 gulden",
+
+correct:"c",
+
+uitleg:"Er werd in totaal ruim 80.000 gulden ingezameld, voldoende om alle schade te vergoeden."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke buitenlandse plaats leverde volgens het gemeentearchief ook financiële steun na de windhoos van 1950?",
+
+a:"Amerika",
+b:"Duitsland",
+c:"België",
+
+correct:"a",
+
+uitleg:"Ook uit Amerika kwam geld voor de hulpactie na de ramp."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke fabriek werd in 1980 failliet verklaard in Haulerwijk?",
+
+a:"De zuivelfabriek Haulerwijk",
+b:"Confectiefabriek Douma en Wolf",
+c:"De Drachtster Turfmaatschappij",
+
+correct:"b",
+
+uitleg:"In 1980 ging de Confectiefabriek Douma en Wolf in Haulerwijk failliet."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd de zuivelfabriek in Waskemeer/Beneden Haulerwijk opgericht?",
+
+a:"1887",
+b:"1897",
+c:"1907",
+
+correct:"b",
+
+uitleg:"In 1897 werd de zuivelfabriek in Waskemeer/Beneden Haulerwijk opgericht."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke straatnaam verwijst naar de voormalige busremise in Haulerwijk?",
+
+a:"Kade",
+b:"Nijverheidsweg",
+c:"Remise",
+
+correct:"c",
+
+uitleg:"De straatnaam Remise verwijst naar de busremise die hier jarenlang stond."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Sinds welk jaar stonden er volgens de Historische Vereniging Haulerwijk continu bedrijven op de locatie van de nieuwe wijk aan de Leeksterweg?",
+
+a:"1937",
+b:"1947",
+c:"1957",
+
+correct:"b",
+
+uitleg:"Volgens de Historische Vereniging Haulerwijk stonden er sinds 1947 continu bedrijven op deze locatie."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke busmaatschappij was onder andere verbonden aan de voormalige remise in Haulerwijk?",
+
+a:"E.S.A.",
+b:"L.A.B.",
+c:"NTM",
+
+correct:"a",
+
+uitleg:"De remise werd onder andere gebruikt door Elema & Stollenga, beter bekend als E.S.A."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werden de lijndiensten van E.S.A. uiteindelijk overgedragen aan de FRAM?",
+
+a:"1969",
+b:"1979",
+c:"1989",
+
+correct:"b",
+
+uitleg:"De lijndiensten van E.S.A. werden in 1979 overgedragen aan de FRAM."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Waar werd in 1950 een eenvoudige zwemgelegenheid ingericht voor inwoners van Beneden-Haulerwijk?",
+
+a:"In het Blauwe Bos",
+b:"In de veenplas 't Oude Leger, ook Waskmar genoemd",
+c:"In het Tjongerkanaal",
+
+correct:"b",
+
+uitleg:"De veenplas 't Oude Leger, ook Waskmar genoemd, werd ingericht als eenvoudige zwemgelegenheid."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd de Christelijke ULO, de voorloper van het latere voortgezet onderwijs in Waskemeer, opgericht?",
+
+a:"1944",
+b:"1946",
+c:"1948",
+
+correct:"b",
+
+uitleg:"In 1946 werd de Christelijke ULO opgericht in Boven-Haulerwijk."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd het eerste echte schoolgebouw van de Christelijke ULO in Beneden-Haulerwijk geopend?",
+
+a:"1949",
+b:"1951",
+c:"1954",
+
+correct:"b",
+
+uitleg:"Het eerste echte schoolgebouw aan de Willem Kroezestraat kwam in 1951 gereed en werd op 6 april officieel geopend."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke architecten ontwierpen het schoolgebouw aan de Willem Kroezestraat?",
+
+a:"Van Wijk en Broos",
+b:"F. Offringa en Jelle de Jong",
+c:"Eekhoff en Van der Aa",
+
+correct:"a",
+
+uitleg:"Het ontwerp van de school was van architecten Van Wijk en Broos uit Groningen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke gebeurtenis vond in 1945 zowel in Appelscha als in Haulerwijk plaats?",
+
+a:"De eerste geallieerde militairen kwamen er aan",
+b:"De eerste naoorlogse gemeenteraadsverkiezingen werden gehouden",
+c:"De Haulerwijkstervaart werd gedempt",
+
+correct:"a",
+
+uitleg:"In 1945 waren Franse en Belgische parachutisten de eerste geallieerde militairen die in Appelscha en Haulerwijk aankwamen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke uitspraak over Haulerwijk klopt volgens de historische beschrijving?",
+
+a:"Haulerwijk ontstond als brinkdorp op de zandgrond",
+b:"Haulerwijk ontstond als veenkolonie langs meerdere vaarten",
+c:"Haulerwijk ontstond rond een middeleeuws klooster",
+
+correct:"b",
+
+uitleg:"Haulerwijk ontstond door de vervening en ontwikkelde zich als een langgerekt veenkoloniedorp langs meerdere vaarten."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd de Haulerwijkstervaart, waaraan het latere Waskemeer ontstond, door de Drachtster Compagnie gegraven?",
+
+a:"1713",
+b:"1756",
+c:"1789",
+
+correct:"b",
+
+uitleg:"De Haulerwijkstervaart werd in 1756 door de Drachtster Compagnie gegraven op het dorpsgebied van Haule."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke naam droeg het huidige Waskemeer vanaf het einde van de 18e eeuw?",
+
+a:"Boven Haulerwijk",
+b:"Beneden Haulerwijk",
+c:"Nieuw-Haule",
+
+correct:"b",
+
+uitleg:"De nederzetting die later Waskemeer zou heten, werd vanaf het einde van de 18e eeuw Beneden Haulerwijk genoemd."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar kreeg Beneden Haulerwijk de status van zelfstandig dorp en de naam Waskemeer?",
+
+a:"1949",
+b:"1953",
+c:"1958",
+
+correct:"b",
+
+uitleg:"In 1953 kreeg het voormalige Beneden Haulerwijk de status van zelfstandig dorp en de naam Waskemeer."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Waarnaar is de naam Waskemeer vernoemd?",
+
+a:"Een oude boerderij bij Haule",
+b:"Een poel in de Duurswouder Heide",
+c:"Een verdwenen meer bij Haulerwijk",
+
+correct:"b",
+
+uitleg:"De naam Waskemeer verwijst naar een poel in de Duurswouder Heide, ten westen van het dorp op het grondgebied van Opsterland."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke twee historische namen werden gebruikt voor het gebied bij de kromming van de Haulerwijkstervaart?",
+
+a:"De Cruijmte en de Krompten",
+b:"De Breberg en de Stelling",
+c:"De Mande en de Wask",
+
+correct:"a",
+
+uitleg:"Het gebied werd ook de Cruijmte of de Krompten genoemd, naar de kromming van de vaart."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke kaart uit 1849 laat zien dat langs beide zijden van de Haulerwijkstervaart al kilometerslange bebouwing was ontstaan?",
+
+a:"De atlas van Eekhoff",
+b:"De kaart van Mercator",
+c:"De Grote Historische Atlas",
+
+correct:"a",
+
+uitleg:"Op de grietenijkaart van Ooststellingwerf in de atlas van Eekhoff uit 1849 is de regelmatige bebouwing langs de vaart zichtbaar."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Wat was de belangrijkste reden voor het graven van de Haulerwijkstervaart?",
+
+a:"Het vervoer van turf uit de veenontginningen",
+b:"Een snelle verbinding tussen Leeuwarden en Assen",
+c:"De aanleg van een militaire verdedigingslinie",
+
+correct:"a",
+
+uitleg:"De vaart werd aangelegd voor de veenontginningen en vooral voor de afvoer van de gewonnen turf."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd volgens de geschiedenis van Ooststellingwerf de eerste herberg in Waskemeer of Beneden Haulerwijk gebouwd?",
+
+a:"1722",
+b:"1765",
+c:"1770",
+
+correct:"b",
+
+uitleg:"In 1765 werd de eerste herberg gebouwd in Waskemeer, dat toen nog Beneden Haulerwijk heette."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd de eerste school gebouwd in het latere Waskemeer?",
+
+a:"1765",
+b:"1770",
+c:"1780",
+
+correct:"b",
+
+uitleg:"Volgens de historische tijdlijn van Ooststellingwerf werd in 1770 de eerste school in Waskemeer of Beneden Haulerwijk gebouwd."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke drie delen vormden historisch de langgerekte nederzetting langs de Haulerwijkstervaart?",
+
+a:"Beneden Haulerwijk, Haulerwijk en Boven Haulerwijk",
+b:"Haule, Waskemeer en Bakkeveen",
+c:"Beneden Haule, Middel Haule en Boven Haule",
+
+correct:"a",
+
+uitleg:"De lange nederzetting langs de vaart bestond uit Beneden Haulerwijk, het latere Waskemeer, Haulerwijk en Boven Haulerwijk."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Aan welke belangrijke weg werd Donkerbroek mogelijk al in de 13e eeuw gesticht?",
+
+a:"De weg van Heerenveen naar Assen",
+b:"De weg van Leeuwarden naar Groningen",
+c:"De weg van Drachten naar Emmen",
+
+correct:"a",
+
+uitleg:"Donkerbroek is een oud streekdorp dat mogelijk al in de 13e eeuw ontstond aan de weg van Heerenveen naar Assen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke waterweg zorgde vanaf het einde van de 18e eeuw voor grote veranderingen in Donkerbroek?",
+
+a:"De Drentse Hoofdvaart",
+b:"De Opsterlandse Compagnonsvaart",
+c:"Het Oranjekanaal",
+
+correct:"b",
+
+uitleg:"Met de aanleg van de Opsterlandse Compagnonsvaart veranderde de ontwikkeling en bereikbaarheid van Donkerbroek sterk."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd volgens de geschiedenis van Donkerbroek de eerste brug over de Opsterlandse Compagnonsvaart gebouwd?",
+
+a:"1789",
+b:"1798",
+c:"1816",
+
+correct:"b",
+
+uitleg:"De Compagnonsvaart verdeelde Donkerbroek enige jaren in tweeën; in 1798 kwam er een brug."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Waarom wordt Donkerbroek ondanks de veenexploitatie niet beschouwd als een typisch veenkoloniaal dorp?",
+
+a:"Er werd nooit turf gewonnen",
+b:"De geplande grootschalige vervening met wijken kwam niet volledig tot stand",
+c:"Het dorp lag te ver van alle waterwegen",
+
+correct:"b",
+
+uitleg:"Er waren plannen voor verdere veenontginning en wijken vanuit de vaart, maar die plannen zijn niet volledig uitgevoerd."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Aan welke heilige was de oudere kerk van Donkerbroek gewijd?",
+
+a:"Sint Laurentius",
+b:"Sint Martinus",
+c:"Sint Nicolaas",
+
+correct:"a",
+
+uitleg:"De oudere, middeleeuwse kerk van Donkerbroek was gewijd aan Sint Laurentius."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd de huidige hervormde kerk van Donkerbroek gebouwd?",
+
+a:"1684",
+b:"1714",
+c:"1744",
+
+correct:"b",
+
+uitleg:"De huidige hervormde kerk werd in 1714 gebouwd ter vervanging van de oudere, aan Sint Laurentius gewijde kerk."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd de oude draaibrug in Donkerbroek vervangen door een ijzeren draaibrug?",
+
+a:"1836",
+b:"1856",
+c:"1876",
+
+correct:"b",
+
+uitleg:"In 1856 werd de oude draaibrug vervangen door een ijzeren draaibrug."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke twee buurtschappen ontstonden ten noorden van Donkerbroek langs de Opsterlandse Compagnonsvaart?",
+
+a:"Petersburg en Moskou",
+b:"Berlijn en Parijs",
+c:"Kiev en Warschau",
+
+correct:"a",
+
+uitleg:"In de tijd van de veenexploitatie ontstonden langs de Compagnonsvaart de buurtschappen Petersburg en Moskou."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke coöperatieve instelling werd in 1911 in Donkerbroek opgericht?",
+
+a:"De Coöperatieve Raiffeisenbank Donkerbroek",
+b:"De Coöperatieve Zuiderzeebank",
+c:"De Friese Handelsbank",
+
+correct:"a",
+
+uitleg:"In 1911 werd in Donkerbroek de Coöperatieve Raiffeisenbank opgericht."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Wat gebeurde er op 26 oktober 1911 in Donkerbroek?",
+
+a:"De eerste tram reed het dorp binnen",
+b:"De Opsterlandse Compagnonsvaart werd geopend",
+c:"De eerste kerk werd ingewijd",
+
+correct:"a",
+
+uitleg:"Op 26 oktober 1911 werd de eerste tram feestelijk door de inwoners van Donkerbroek binnengehaald."
+}
+
+{
+categorie:"Ooststellingwerf",
+
 vraag:"Welke plaats begint met een A en eindig met een a?",
 
 a:"Haulerwijk",
