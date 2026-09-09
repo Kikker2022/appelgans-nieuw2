@@ -3,6 +3,21 @@ const vragen = [
 {
 categorie:"Ooststellingwerf",
 
+vraag:"In welk jaar werd Haulerwijk officieel een zelfstandig dorp?",
+
+a:"1756",
+b:"1849",
+c:"1880",
+
+correct:"c",
+
+uitleg:"Haulerwijk werd in 1880 officieel een zelfstandig dorp. Daarvoor werd de bevolking bij Haule geteld."
+},
+
+  
+{
+categorie:"Ooststellingwerf",
+
 vraag:"Welke plaats begint met een A en eindig met een a?",
 
 a:"Haulerwijk",
