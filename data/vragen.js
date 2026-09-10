@@ -922,7 +922,7 @@ c:"Veneburen",
 correct:"a",
 
 uitleg:"De molen stond van 1913 tot 1925 als korenmolen in Twytel voordat hij naar Makkinga werd verplaatst."
-}
+},
   
 {
 categorie:"Ooststellingwerf",
@@ -3640,7 +3640,7 @@ c:"Het werd het gemeentehuis van Veenhuizen",
 correct:"b",
 
 uitleg:"Toen Esserheem in 1901 de functie overnam, werd het oude Tweede Gesticht in gebruik genomen als 'de Arbeid'."
-}
+},
   
 {
 categorie:"Drenthe",
