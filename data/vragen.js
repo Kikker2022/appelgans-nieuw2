@@ -647,6 +647,286 @@ uitleg:"Het gebied werd ook de Cruijmte of de Krompten genoemd, naar de kromming
 {
 categorie:"Ooststellingwerf",
 
+vraag:"Onder welke naam werd Oldeberkoop voor het eerst vermeld in 1228?",
+
+a:"Brocope",
+b:"Berkoop",
+c:"Oldebroek",
+
+correct:"a",
+
+uitleg:"Oldeberkoop wordt in 1228 voor het eerst genoemd als Brocope."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Tussen welke twee rivierdalen ligt Oldeberkoop op een hogere rug?",
+
+a:"De Linde en de Tjonger",
+b:"De Tjonger en de Boorne",
+c:"De Linde en de Lauwers",
+
+correct:"a",
+
+uitleg:"De historische dorpsstructuur van Oldeberkoop ligt op de rug tussen de Tjongervallei en de Lindevallei."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke schans werd in 1593 aan de oostkant van Oldeberkoop aangelegd?",
+
+a:"De Bekhofschans",
+b:"De Breebergschans",
+c:"De Bisschopsschans",
+
+correct:"a",
+
+uitleg:"In 1593 werd aan de oostkant van Oldeberkoop de Bekhofschans aangelegd."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Wat gebeurde er in 1585 met de kerktoren van Oldeberkoop tijdens de Tachtigjarige Oorlog?",
+
+a:"Spaanse troepen ondergroeven de toren waardoor hij instortte",
+b:"De toren brandde af door blikseminslag",
+c:"De toren werd vrijwillig afgebroken",
+
+correct:"a",
+
+uitleg:"In 1585 werd de toren door Spaanse troepen ondergraven en stortte hij in."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Tot welk jaar was Oldeberkoop hoofdplaats van Ooststellingwerf?",
+
+a:"1848",
+b:"1856",
+c:"1886",
+
+correct:"a",
+
+uitleg:"Oldeberkoop bleef tot 1848 de hoofdplaats van Ooststellingwerf."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welk landhuis werd in 1842 in Oldeberkoop gesticht?",
+
+a:"Nieuw Friesburg",
+b:"Villa Nova",
+c:"Vredewoud",
+
+correct:"a",
+
+uitleg:"In 1842 werd het landhuis Nieuw Friesburg in Oldeberkoop gesticht."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar vond de eerste editie van de kunstroute Open Stal in Oldeberkoop plaats?",
+
+a:"1971",
+b:"1965",
+c:"1981",
+
+correct:"a",
+
+uitleg:"Open Stal vond voor het eerst plaats in 1971."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke heilige wordt volgens recenter onderzoek verbonden aan de oorspronkelijke kerk van Oldeberkoop?",
+
+a:"Sint Vitus",
+b:"Sint Bonifatius",
+c:"Sint Laurentius",
+
+correct:"a",
+
+uitleg:"Recent historisch onderzoek wijst erop dat de kerk oorspronkelijk aan Sint Vitus was gewijd."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke twee parallelle wegen bepaalden oorspronkelijk de structuur van Oldeberkoop?",
+
+a:"Binnenweg en Buitenweg",
+b:"Kerkweg en Vaartweg",
+c:"Heerenweg en Molenweg",
+
+correct:"a",
+
+uitleg:"Oldeberkoop ontwikkelde zich als streekdorp met Binnenweg en Buitenweg als belangrijke parallelle structuur."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke herberg was lange tijd verbonden met het bestuur van de grietenij in Oldeberkoop?",
+
+a:"De Zwaan",
+b:"De Gouden Klok",
+c:"Het Wapen van Friesland",
+
+correct:"a",
+
+uitleg:"In de voormalige herberg De Zwaan vergaderde het grietenijbestuur tot 1836."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welke oorkonden wordt Makkinga al in 1408 genoemd?",
+
+a:"Oorkonden over een geschil met de bisschop van Utrecht over de huur van hooiland",
+b:"Oorkonden over de aanleg van de Opsterlandse Compagnonsvaart",
+c:"Oorkonden over de stichting van de eerste school",
+
+correct:"a",
+
+uitleg:"Makkinga wordt in oorkonden uit 1408 genoemd in verband met een geschil met de bisschop van Utrecht over de huur van hooiland."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke vier historische kluften worden genoemd als onderdelen van het gegroeide Makkinga?",
+
+a:"Veurburen, Middelburen, Twytel en Veneburen",
+b:"Petersburg, Moskou, Twytel en Veenhuizen",
+c:"Bekhof, Deddingabuurt, Veneburen en Haulerwijk",
+
+correct:"a",
+
+uitleg:"Makkinga groeide vanuit ontginningshoeven uit tot onder meer Veurburen, Middelburen, Twytel en Veneburen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Hoeveel stemhebbende plaatsen telde Makkinga volgens het Cohier der Stemmen in 1640?",
+
+a:"34",
+b:"24",
+c:"44",
+
+correct:"a",
+
+uitleg:"Volgens het Cohier der Stemmen waren er in 1640 34 stemhebbende plaatsen in Makkinga."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke historische stins werd in 1829 in Makkinga afgebroken?",
+
+a:"De Lycklamastins",
+b:"De Bekhofstins",
+c:"De Willingestins",
+
+correct:"a",
+
+uitleg:"De Lycklamastins bij de kruising in Makkinga werd in 1829 afgebroken."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke bestuurlijke rol had Makkinga van 1848 tot 1886?",
+
+a:"Hoofdplaats van Ooststellingwerf",
+b:"Hoofdplaats van Opsterland",
+c:"Hoofdplaats van Weststellingwerf",
+
+correct:"a",
+
+uitleg:"Van 1848 tot 1886 was Makkinga de hoofdplaats van Ooststellingwerf."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"In welk jaar werd in Makkinga een nieuw gemeentehuis gerealiseerd?",
+
+a:"1856",
+b:"1848",
+c:"1886",
+
+correct:"a",
+
+uitleg:"In 1856 werd een nieuw gemeentehuis in Makkinga gerealiseerd."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke waterverbinding werd in 1887 voor Makkinga aangelegd richting de gekanaliseerde Tjonger?",
+
+a:"De Makkingaastervaart",
+b:"De Haulerwijkstervaart",
+c:"De Opsterlandse Compagnonsvaart",
+
+correct:"a",
+
+uitleg:"In 1887 werd de Makkingaastervaart aangelegd als verbinding met de gekanaliseerde Tjonger."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Welke tramlijn liep vanaf 1914 via Makkinga?",
+
+a:"Oosterwolde-Steenwijk",
+b:"Gorredijk-Assen",
+c:"Leeuwarden-Groningen",
+
+correct:"a",
+
+uitleg:"In 1914 kwam Makkinga aan de tramlijn Oosterwolde-Steenwijk te liggen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Waarvoor werd korenmolen De Weyert oorspronkelijk in 1868 in Gorredijk gebouwd?",
+
+a:"Als houtzaagmolen",
+b:"Als oliemolen",
+c:"Als papiermolen",
+
+correct:"a",
+
+uitleg:"De Weyert werd in 1868 in Gorredijk gebouwd als houtzaagmolen."
+},
+
+{
+categorie:"Ooststellingwerf",
+
+vraag:"Via welke buurtschap kwam De Weyert uiteindelijk in 1925 in Makkinga terecht?",
+
+a:"Twytel",
+b:"Middelburen",
+c:"Veneburen",
+
+correct:"a",
+
+uitleg:"De molen stond van 1913 tot 1925 als korenmolen in Twytel voordat hij naar Makkinga werd verplaatst."
+}
+  
+{
+categorie:"Ooststellingwerf",
+
 vraag:"Welke kaart uit 1849 laat zien dat langs beide zijden van de Haulerwijkstervaart al kilometerslange bebouwing was ontstaan?",
 
 a:"De atlas van Eekhoff",
@@ -2998,6 +3278,370 @@ correct:"b",
 uitleg:"De aanleg van de Drentse Hoofdvaart vond plaats tussen 1769 en 1780."
 },
 
+{
+categorie:"Drenthe",
+
+vraag:"In welk jaar werd Veenhuizen als onvrije kolonie opgericht?",
+
+a:"1818",
+b:"1823",
+c:"1828",
+
+correct:"b",
+
+uitleg:"Veenhuizen werd in 1823 opgericht als de zesde kolonie van de Maatschappij van Weldadigheid."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Wie was de belangrijkste initiatiefnemer achter de Maatschappij van Weldadigheid?",
+
+a:"Johannes van den Bosch",
+b:"Frederik van Eeden",
+c:"Johan Rudolph Thorbecke",
+
+correct:"a",
+
+uitleg:"Generaal Johannes van den Bosch richtte in 1818 de Maatschappij van Weldadigheid op."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Welke combinatie beschrijft de oorspronkelijke functie van Veenhuizen het best?",
+
+a:"Een vrije landbouwkolonie voor welgestelde boeren",
+b:"Een onvrije kolonie voor onder anderen wezen, bedelaars en landlopers",
+c:"Een militair oefenterrein voor het Nederlandse leger",
+
+correct:"b",
+
+uitleg:"Veenhuizen was de grootste onvrije kolonie, waar onder meer wezen, arme gezinnen, bedelaars en landlopers werden gehuisvest."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Hoeveel grote gestichten werden oorspronkelijk in Veenhuizen gebouwd?",
+
+a:"Twee",
+b:"Drie",
+c:"Vier",
+
+correct:"b",
+
+uitleg:"Er werden drie grote gestichten gebouwd: het Eerste, Tweede en Derde Gesticht."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Welk van de drie oorspronkelijke gestichten is tegenwoordig verbonden met het Gevangenismuseum?",
+
+a:"Het Eerste Gesticht",
+b:"Het Tweede Gesticht",
+c:"Het Derde Gesticht",
+
+correct:"b",
+
+uitleg:"Het Tweede Gesticht bleef behouden en werd later onder meer gebruikt als de Arbeid; sinds 2005 is hier het Gevangenismuseum gevestigd."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"In welk jaar kocht de Maatschappij van Weldadigheid de grond voor Veenhuizen?",
+
+a:"1820",
+b:"1822",
+c:"1824",
+
+correct:"b",
+
+uitleg:"De Maatschappij van Weldadigheid kocht in 1822 de grond waarop Veenhuizen zou worden ontwikkeld."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Waarom werden de drie gestichten van Veenhuizen aanvankelijk onder meer gebouwd?",
+
+a:"Om wezen uit de grote steden op te vangen",
+b:"Om buitenlandse arbeiders te huisvesten",
+c:"Om adel en bestuurders buiten de steden te laten wonen",
+
+correct:"a",
+
+uitleg:"De gestichten waren onder meer bedoeld voor weeskinderen uit de grote steden; later verbleven er ook bedelaars en landlopers."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Wat gebeurde er in 1859 met de Maatschappij van Weldadigheid en Veenhuizen?",
+
+a:"De maatschappij werd rijker en breidde Veenhuizen uit",
+b:"De maatschappij ging failliet en de Staat nam Veenhuizen over",
+c:"Veenhuizen werd een zelfstandige gemeente",
+
+correct:"b",
+
+uitleg:"In 1859 ging de Maatschappij van Weldadigheid failliet en nam de Staat der Nederlanden Veenhuizen over."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Vanaf welk jaar kwam het beheer van Veenhuizen bij Justitie te liggen?",
+
+a:"1865",
+b:"1875",
+c:"1885",
+
+correct:"b",
+
+uitleg:"Vanaf 1875 werd Veenhuizen door Justitie beheerd en veranderde het geleidelijk in een gevangenisdorp."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Wat was een opvallend kenmerk van Veenhuizen als gevangenisdorp?",
+
+a:"Het dorp was grotendeels zelfvoorzienend en sterk afgesloten",
+b:"Het dorp had geen eigen voorzieningen",
+c:"Alle bewoners moesten dagelijks buiten het dorp werken",
+
+correct:"a",
+
+uitleg:"Veenhuizen functioneerde lange tijd als een gesloten en zelfvoorzienend dorp met eigen voorzieningen en strikte regels."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Tot welk jaar bleef Veenhuizen een gesloten, zelfvoorzienend dorp?",
+
+a:"1973",
+b:"1983",
+c:"1993",
+
+correct:"b",
+
+uitleg:"Tot 1983 bleef Veenhuizen een gesloten en zelfvoorzienend gevangenisdorp."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Na welk jaar werden er geen nieuwe kolonisten meer naar Veenhuizen gestuurd?",
+
+a:"1945",
+b:"1953",
+c:"1963",
+
+correct:"b",
+
+uitleg:"Na 1953 werden geen nieuwe kolonisten meer naar Veenhuizen gestuurd en werden de gestichten geleidelijk gevangenissen."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Welke vijf plaatsen vormden de Koloniën van Weldadigheid in de Noordelijke Nederlanden?",
+
+a:"Frederiksoord, Willemsoord, Wilhelminaoord, Ommerschans en Veenhuizen",
+b:"Veenhuizen, Smilde, Assen, Meppel en Frederiksoord",
+c:"Frederiksoord, Veenhuizen, Merksplas, Wortel en Ommerschans",
+
+correct:"a",
+
+uitleg:"Van de zeven Koloniën van Weldadigheid lagen er vijf in de Noordelijke Nederlanden."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Welke van deze plaatsen maakte géén deel uit van de vijf kolonies in de Noordelijke Nederlanden?",
+
+a:"Ommerschans",
+b:"Willemsoord",
+c:"Wortel",
+
+correct:"c",
+
+uitleg:"Wortel lag in de Zuidelijke Nederlanden en behoort tegenwoordig tot België."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Welke Belgische plaats vormde samen met de Nederlandse kolonies een onderdeel van het systeem van Koloniën van Weldadigheid?",
+
+a:"Merksplas",
+b:"Turnhout",
+c:"Geel",
+
+correct:"a",
+
+uitleg:"Merksplas was, samen met Wortel, een van de kolonies in de Zuidelijke Nederlanden."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"In welk jaar werden de Koloniën van Weldadigheid UNESCO-Werelderfgoed?",
+
+a:"2018",
+b:"2021",
+c:"2024",
+
+correct:"b",
+
+uitleg:"De Koloniën van Weldadigheid werden in 2021 ingeschreven op de UNESCO-Werelderfgoedlijst."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Welke landschappelijke structuur is kenmerkend voor Veenhuizen?",
+
+a:"Een netwerk van kronkelende middeleeuwse straatjes",
+b:"Een strak geordend landschap met rechte wegen, lanen en vaste maatvoering",
+c:"Een middeleeuwse vestingstructuur met stadsmuren",
+
+correct:"b",
+
+uitleg:"Veenhuizen werd planmatig aangelegd met rechte structuren, zichtassen, lanen en een vast maatsysteem."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Welke twee woorden staan bekend als een van de moraliserende opschriften op gebouwen in Veenhuizen?",
+
+a:"Orde en Tucht",
+b:"Vrijheid en Handel",
+c:"Kunst en Wetenschap",
+
+correct:"a",
+
+uitleg:"Op verschillende gebouwen in Veenhuizen staan opvoedkundige of moraliserende teksten, waaronder 'Orde en Tucht'."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Welke architectenfamilie bepaalde vanaf de tweede helft van de 19e eeuw sterk het uiterlijk van Veenhuizen?",
+
+a:"De familie Metzelaar",
+b:"De familie Cuypers",
+c:"De familie Berlage",
+
+correct:"a",
+
+uitleg:"Johan Frederik Metzelaar en later zijn zoon Willem Cornelis Metzelaar ontwierpen veel gebouwen in Veenhuizen."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Hoeveel verschillende woningtypes werden gebruikt bij de aanleg van het latere gevangenisdorp?",
+
+a:"Vijf",
+b:"Zeven",
+c:"Twaalf",
+
+correct:"b",
+
+uitleg:"Met zeven woningtypes ontstond een grote architectonische eenheid; de woningen weerspiegelden bovendien de hiërarchie van Justitie."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Wat kon de plaats en grootte van een dienstwoning in Veenhuizen aangeven?",
+
+a:"De leeftijd van de woning",
+b:"De sociale rang van de bewoner",
+c:"Het aantal kinderen van de bewoner",
+
+correct:"b",
+
+uitleg:"De ligging, vorm, grootte en tuinaanleg van woningen waren verbonden met de rang en sociale positie van de bewoners."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Welke bijzondere indeling had het Tweede Gesticht oorspronkelijk?",
+
+a:"Een carrévorm met een buitenring en een binnenring",
+b:"Een ronde toren met daaromheen een gracht",
+c:"Een langgerekt gebouw met alleen afzonderlijke huisjes",
+
+correct:"a",
+
+uitleg:"Het Tweede Gesticht had een carrévorm. Rondom lagen onder meer 125 éénkamerwoningen; binnenin waren slaapzalen."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Hoeveel éénkamerwoningen lagen oorspronkelijk in de buitenring van het Tweede Gesticht?",
+
+a:"75",
+b:"125",
+c:"175",
+
+correct:"b",
+
+uitleg:"In de buitenring van het Tweede Gesticht lagen 125 éénkamerwoningen voor zelfstandige kolonistengezinnen."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Hoeveel mensen konden in het Tweede Gesticht ongeveer in de veertien slaapzalen slapen?",
+
+a:"500",
+b:"1.000",
+c:"1.500",
+
+correct:"b",
+
+uitleg:"In de veertien slaapzalen van het Tweede Gesticht sliepen verspreid over het complex ongeveer 1.000 mensen."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"In welk jaar werd Veenhuizen een officiële Rijkswerkinrichting?",
+
+a:"1875",
+b:"1886",
+c:"1901",
+
+correct:"b",
+
+uitleg:"Vanaf 1886 was Veenhuizen officieel een Rijkswerkinrichting."
+},
+
+{
+categorie:"Drenthe",
+
+vraag:"Welke ontwikkeling vond rond 1901 plaats met betrekking tot het Tweede Gesticht?",
+
+a:"Het werd een treinstation",
+b:"De Rijkswerkinrichting Esserheem nam de functie over en het oude gesticht werd 'de Arbeid'",
+c:"Het werd het gemeentehuis van Veenhuizen",
+
+correct:"b",
+
+uitleg:"Toen Esserheem in 1901 de functie overnam, werd het oude Tweede Gesticht in gebruik genomen als 'de Arbeid'."
+}
+  
 {
 categorie:"Drenthe",
 
