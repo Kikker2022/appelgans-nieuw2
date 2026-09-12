@@ -3026,132 +3026,6 @@ uitleg:"Terpen waarden boud tsjin heech wetter."
 },
 
 {
-categorie:"Algemeen",
-
-vraag:"Wat is de hoofdstad van Groningen?",
-
-a:"Veendam",
-b:"Winschoten",
-c:"Groningen",
-
-correct:"c",
-
-uitleg:"De stad Groningen is de hoofdstad van de provincie."
-},
-
-{
-categorie:"Algemeen",
-
-vraag:"Welke universiteit staat in Groningen?",
-
-a:"TU Groningen",
-b:"Rijksuniversiteit Groningen",
-c:"Noordelijke Universiteit",
-
-correct:"b",
-
-uitleg:"De Rijksuniversiteit Groningen bestaat sinds 1614."
-},
-
-{
-categorie:"Algemeen",
-
-vraag:"Welke toren staat bekend als de Olle Grieze?",
-
-a:"Martinitoren",
-b:"Achmeatoren",
-c:"Domtoren",
-
-correct:"a",
-
-uitleg:"De Martinitoren wordt lokaal Olle Grieze genoemd."
-},
-
-{
-categorie:"Algemeen",
-
-vraag:"Waar staat Groningen bekend om?",
-
-a:"Gaswinning",
-b:"Diamantwinning",
-c:"Goudmijnen",
-
-correct:"a",
-
-uitleg:"Groningen is bekend vanwege aardgaswinning."
-},
-
-{
-categorie:"Algemeen",
-
-vraag:"Welke zee grenst aan Groningen?",
-
-a:"Noordzee",
-b:"Waddenzee",
-c:"Zwarte Zee",
-
-correct:"b",
-
-uitleg:"De Waddenzee ligt aan de noordkant van Groningen."
-},
-
-{
-categorie:"Algemeen",
-
-vraag:"Welke voetbalclub speelt betaald voetbal in Groningen?",
-
-a:"FC Emmen",
-b:"SC Cambuur",
-c:"FC Groningen",
-
-correct:"c",
-
-uitleg:"FC Groningen speelt in het betaalde voetbal."
-},
-
-{
-categorie:"Algemeen",
-
-vraag:"Welke provincie grenst aan Groningen?",
-
-a:"Drenthe",
-b:"Limburg",
-c:"Zeeland",
-
-correct:"a",
-
-uitleg:"Drenthe ligt direct onder Groningen."
-},
-
-{
-categorie:"Algemeen",
-
-vraag:"Welke plaats won de titel Mooiste dorp van Nederland?",
-
-a:"Winsum",
-b:"Leek",
-c:"Bedum",
-
-correct:"a",
-
-uitleg:"Winsum won deze titel van de ANWB."
-},
-
-{
-categorie:"Algemeen",
-
-vraag:"Welke vogel broedt in het Fochteloërveen?",
-
-a:"Papegaai",
-b:"Kraanvogel",
-c:"Flamingo",
-
-correct:"b",
-
-uitleg:"Kraanvogels broeden weer in het Fochteloërveen."
-},
-
-{
 categorie:"Drenthe",
 
 vraag:"In welk jaar begon de Compagnie van de Dieverder en Leggeler Smildervenen onder leiding van Adriaan Pauw met de ontginning van       het veengebied bij Hoogersmilde?",
@@ -13475,9 +13349,9 @@ categorie:"Drenthe",
 
 vraag:"Welke sport trekt veel bezoekers naar Assen?",
 
-a:"Zeilen",
+a:"Snelwandelen",
 b:"Motorrennen",
-c:"Skiën",
+c:"Brommerskieken",
 
 correct:"b",
 
@@ -13491,11 +13365,361 @@ vraag:"Welke wandelroute loopt door Drenthe?",
 
 a:"Pieterpad",
 b:"Deltapad",
-c:"Kustroute",
+c:"Stellingenpad",
 
 correct:"a",
 
 uitleg:"Het Pieterpad loopt door meerdere Drentse gebieden."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is 15% van 240?",
+
+a:"24",
+b:"36",
+c:"48",
+
+correct:"b",
+
+uitleg:"15% van 240 is 0,15 × 240 = 36."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een trein vertrekt om 08:47 uur en komt aan om 10:23 uur. Hoe lang duurt de reis?",
+
+a:"1 uur en 26 minuten",
+b:"1 uur en 36 minuten",
+c:"1 uur en 46 minuten",
+
+correct:"b",
+
+uitleg:"Van 08:47 tot 09:47 is 1 uur en daarna nog 36 minuten tot 10:23."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke breuk is het grootst?",
+
+a:"3/5",
+b:"5/8",
+c:"2/3",
+
+correct:"c",
+
+uitleg:"3/5 = 0,60, 5/8 = 0,625 en 2/3 is ongeveer 0,667."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een jas kost €80. Er is 25% korting. Wat betaal je?",
+
+a:"€20",
+b:"€55",
+c:"€60",
+
+correct:"c",
+
+uitleg:"25% van €80 is €20 korting. Je betaalt dus €60."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is de omtrek van een rechthoek van 8 cm lang en 5 cm breed?",
+
+a:"13 cm",
+b:"26 cm",
+c:"40 cm",
+
+correct:"b",
+
+uitleg:"De omtrek is 2 × 8 + 2 × 5 = 26 cm."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke spelling is correct?",
+
+a:"gebeurd",
+b:"gebeurt",
+c:"gebeurtte",
+
+correct:"b",
+
+uitleg:"Bij 'het gebeurt' staat een t aan het einde van het werkwoord."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zin staat in de verleden tijd?",
+
+a:"Morgen fiets ik naar school.",
+b:"Gisteren fietste ik naar school.",
+c:"Ik fiets elke dag naar school.",
+
+correct:"b",
+
+uitleg:"'Fietste' is de verleden tijd van 'fietsen'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is het onderwerp in de zin: 'De kinderen spelen buiten op het plein.'",
+
+a:"spelen",
+b:"buiten",
+c:"De kinderen",
+
+correct:"c",
+
+uitleg:"Wie of wat speelt? De kinderen. Dat is het onderwerp."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke woordsoort is het woord 'snelle' in: 'De snelle hond rent weg.'",
+
+a:"zelfstandig naamwoord",
+b:"bijvoeglijk naamwoord",
+c:"werkwoord",
+
+correct:"b",
+
+uitleg:"'Snelle' zegt iets over de hond en is daarom een bijvoeglijk naamwoord."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat betekent het Engelse woord 'because'?",
+
+a:"omdat",
+b:"misschien",
+c:"altijd",
+
+correct:"a",
+
+uitleg:"'Because' betekent 'omdat'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke Engelse zin betekent: 'Ik heb gisteren mijn huiswerk gemaakt'?",
+
+a:"I make my homework yesterday.",
+b:"I did my homework yesterday.",
+c:"I do my homework tomorrow.",
+
+correct:"b",
+
+uitleg:"'I did my homework yesterday' betekent dat je gisteren je huiswerk hebt gemaakt."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke planeet staat het dichtst bij de zon?",
+
+a:"Venus",
+b:"Mercurius",
+c:"Mars",
+
+correct:"b",
+
+uitleg:"Mercurius is de planeet die het dichtst bij de zon staat."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat veroorzaakt de afwisseling van dag en nacht?",
+
+a:"De aarde draait om haar eigen as.",
+b:"De maan draait om de aarde.",
+c:"De zon draait elke dag om de aarde.",
+
+correct:"a",
+
+uitleg:"Door de draaiing van de aarde om haar eigen as is steeds een ander deel naar de zon gericht."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke rivier stroomt door Nederland en mondt uit in de Noordzee?",
+
+a:"De Rijn",
+b:"De Donau",
+c:"De Seine",
+
+correct:"a",
+
+uitleg:"De Rijn stroomt via Nederland naar de Noordzee."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is de hoofdstad van Australië?",
+
+a:"Sydney",
+b:"Canberra",
+c:"Melbourne",
+
+correct:"b",
+
+uitleg:"Canberra is de hoofdstad van Australië, niet Sydney of Melbourne."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"In welk jaar werd Nederland in de Tweede Wereldoorlog binnengevallen?",
+
+a:"1939",
+b:"1940",
+c:"1945",
+
+correct:"b",
+
+uitleg:"Nederland werd in mei 1940 door Duitsland binnengevallen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wie was de eerste president van de Verenigde Staten?",
+
+a:"Abraham Lincoln",
+b:"George Washington",
+c:"Thomas Jefferson",
+
+correct:"b",
+
+uitleg:"George Washington was de eerste president van de Verenigde Staten."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is democratie?",
+
+a:"Een land waarin één koning alle beslissingen neemt.",
+b:"Een bestuursvorm waarbij burgers invloed hebben op wie het land bestuurt.",
+c:"Een systeem zonder regels of bestuur.",
+
+correct:"b",
+
+uitleg:"In een democratie kiezen burgers vertegenwoordigers die meebeslissen over het bestuur."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke stof hebben planten nodig om met zonlicht voedsel te maken?",
+
+a:"Koolstofdioxide",
+b:"Zout",
+c:"IJzer",
+
+correct:"a",
+
+uitleg:"Planten gebruiken onder andere koolstofdioxide, water en zonlicht bij fotosynthese."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat gebeurt er met water als het bij 0 graden Celsius bevriest?",
+
+a:"Het wordt stoom.",
+b:"Het wordt ijs.",
+c:"Het verdwijnt.",
+
+correct:"b",
+
+uitleg:"Bij het vriespunt verandert vloeibaar water in vast ijs."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk orgaan pompt bloed door je lichaam?",
+
+a:"De longen",
+b:"De maag",
+c:"Het hart",
+
+correct:"c",
+
+uitleg:"Het hart pompt het bloed door het lichaam."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een boek heeft 240 pagina's. Sam leest elke dag 30 pagina's. Na hoeveel dagen is het boek uit?",
+
+a:"6 dagen",
+b:"8 dagen",
+c:"10 dagen",
+
+correct:"b",
+
+uitleg:"240 gedeeld door 30 is 8."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is 3,5 kilometer in meters?",
+
+a:"35 meter",
+b:"350 meter",
+c:"3500 meter",
+
+correct:"c",
+
+uitleg:"1 kilometer is 1000 meter. Dus 3,5 kilometer is 3500 meter."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke breuk is gelijk aan 0,75?",
+
+a:"1/2",
+b:"3/4",
+c:"2/5",
+
+correct:"b",
+
+uitleg:"0,75 betekent 75 van de 100, oftewel 3/4."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een driehoek heeft hoeken van 50 graden en 60 graden. Hoe groot is de derde hoek?",
+
+a:"60 graden",
+b:"70 graden",
+c:"80 graden",
+
+correct:"b",
+
+uitleg:"De hoeken van een driehoek zijn samen 180 graden. 180 - 50 - 60 = 70."
 },
 
 {
@@ -14882,6 +15106,76 @@ c:"Utrecht",
 correct:"b",
 
 uitleg:"'Mokum' is Jiddisch voor 'stad', vaak gebruikt voor Amsterdam."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke toren staat bekend als de Olle Grieze?",
+
+a:"Martinitoren",
+b:"Achmeatoren",
+c:"Domtoren",
+
+correct:"a",
+
+uitleg:"De Martinitoren wordt lokaal Olle Grieze genoemd."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Waar staat Groningen bekend om?",
+
+a:"Gaswinning",
+b:"Turfwinning",
+c:"Zoutwinning",
+
+correct:"a",
+
+uitleg:"Groningen is bekend vanwege aardgaswinning."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke zee grenst aan Groningen?",
+
+a:"Noordzee",
+b:"Waddenzee",
+c:"Oostzee",
+
+correct:"b",
+
+uitleg:"De Waddenzee ligt aan de noordkant van Groningen."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke plaats won de titel Mooiste dorp van Nederland?",
+
+a:"Winsum",
+b:"Leek",
+c:"Bedum",
+
+correct:"a",
+
+uitleg:"Winsum won deze titel van de ANWB."
+},
+
+{
+categorie:"Pubquiz",
+
+vraag:"Welke vogel broedt in het Fochteloërveen?",
+
+a:"Papegaai",
+b:"Kraanvogel",
+c:"Flamingo",
+
+correct:"b",
+
+uitleg:"Kraanvogels broeden weer in het Fochteloërveen."
 },
 
 {
