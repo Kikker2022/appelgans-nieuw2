@@ -13375,6 +13375,356 @@ uitleg:"Het Pieterpad loopt door meerdere Drentse gebieden."
 {
 categorie:"Kids groep 8 Lagere school",
 
+vraag:"Een rechthoekig zwembad is 12 meter lang en 5 meter breed. Hoeveel vierkante meter is de oppervlakte?",
+
+a:"17 m²",
+b:"34 m²",
+c:"60 m²",
+
+correct:"c",
+
+uitleg:"De oppervlakte is lengte × breedte: 12 × 5 = 60 m²."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is 2/5 als kommagetal?",
+
+a:"0,25",
+b:"0,4",
+c:"0,5",
+
+correct:"b",
+
+uitleg:"2 gedeeld door 5 is 0,4."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een winkelier koopt 48 potloden en verdeelt ze gelijk over 6 dozen. Hoeveel potloden zitten er in elke doos?",
+
+a:"6",
+b:"8",
+c:"9",
+
+correct:"b",
+
+uitleg:"48 gedeeld door 6 is 8."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is 1,25 uur in minuten?",
+
+a:"75 minuten",
+b:"85 minuten",
+c:"125 minuten",
+
+correct:"a",
+
+uitleg:"1 uur is 60 minuten en 0,25 uur is 15 minuten. Samen 75 minuten."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zin bevat een bijwoord?",
+
+a:"De hond is groot.",
+b:"De hond rent snel.",
+c:"De hond heeft een bal.",
+
+correct:"b",
+
+uitleg:"'Snel' zegt iets over de manier waarop de hond rent."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is het gezegde in de zin: 'Mijn broer heeft gisteren een nieuwe fiets gekocht.'",
+
+a:"Mijn broer",
+b:"gisteren",
+c:"heeft gekocht",
+
+correct:"c",
+
+uitleg:"Het gezegde bestaat hier uit de werkwoorden 'heeft gekocht'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke spelling is correct?",
+
+a:"onmiddelijk",
+b:"onmiddellijk",
+c:"onmidelijk",
+
+correct:"b",
+
+uitleg:"De correcte spelling is 'onmiddellijk'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is een synoniem van 'enorm'?",
+
+a:"heel groot",
+b:"heel klein",
+c:"heel oud",
+
+correct:"a",
+
+uitleg:"'Enorm' betekent onder andere heel groot."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat betekent het Engelse woord 'enough'?",
+
+a:"genoeg",
+b:"nooit",
+c:"vroeger",
+
+correct:"a",
+
+uitleg:"'Enough' betekent 'genoeg'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke Engelse vraag betekent: 'Hoe laat is het?'",
+
+a:"Where are you?",
+b:"What time is it?",
+c:"How old are you?",
+
+correct:"b",
+
+uitleg:"'What time is it?' betekent 'Hoe laat is het?'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke denkbeeldige lijn verdeelt de aarde in een noordelijk en zuidelijk halfrond?",
+
+a:"De Kreeftskeerkring",
+b:"De evenaar",
+c:"De nulmeridiaan",
+
+correct:"b",
+
+uitleg:"De evenaar verdeelt de aarde in een noordelijk en zuidelijk halfrond."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is de hoofdstad van Canada?",
+
+a:"Toronto",
+b:"Vancouver",
+c:"Ottawa",
+
+correct:"c",
+
+uitleg:"Ottawa is de hoofdstad van Canada."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zee ligt tussen Groot-Brittannië en Nederland?",
+
+a:"De Noordzee",
+b:"De Middellandse Zee",
+c:"De Oostzee",
+
+correct:"a",
+
+uitleg:"Nederland en Groot-Brittannië worden van elkaar gescheiden door de Noordzee."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke gebeurtenis vond het eerst plaats?",
+
+a:"De Beeldenstorm",
+b:"De Vrede van Münster",
+c:"De Franse Revolutie",
+
+correct:"a",
+
+uitleg:"De Beeldenstorm was in 1566, eerder dan de andere gebeurtenissen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wie was de Nederlandse leider die in de Tweede Wereldoorlog vanuit Londen toespraken hield voor Nederland?",
+
+a:"Koningin Wilhelmina",
+b:"Willem van Oranje",
+c:"Johan van Oldenbarnevelt",
+
+correct:"a",
+
+uitleg:"Koningin Wilhelmina sprak tijdens de oorlog via Radio Oranje het Nederlandse volk toe."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat was een belangrijke uitvinding van Johannes Gutenberg?",
+
+a:"De stoommachine",
+b:"De boekdrukkunst met losse letters",
+c:"De telefoon",
+
+correct:"b",
+
+uitleg:"Gutenberg ontwikkelde in Europa een drukpers met losse metalen letters."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk deel van een plant neemt meestal water en mineralen uit de grond op?",
+
+a:"De wortels",
+b:"De bloembladeren",
+c:"De vruchten",
+
+correct:"a",
+
+uitleg:"Via de wortels neemt een plant water en mineralen uit de bodem op."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke kracht zorgt ervoor dat voorwerpen naar de aarde vallen?",
+
+a:"Magnetische kracht",
+b:"Zwaartekracht",
+c:"Windkracht",
+
+correct:"b",
+
+uitleg:"Door de zwaartekracht worden voorwerpen naar de aarde toe getrokken."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is de functie van rode bloedcellen?",
+
+a:"Zuurstof vervoeren",
+b:"Voedsel verteren",
+c:"Botten sterker maken",
+
+correct:"a",
+
+uitleg:"Rode bloedcellen vervoeren zuurstof door het lichaam."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk materiaal geleidt elektriciteit meestal goed?",
+
+a:"Rubber",
+b:"Glas",
+c:"Koper",
+
+correct:"c",
+
+uitleg:"Koper is een metaal en geleidt elektriciteit goed."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een spaarrekening bevat €350. Er wordt €85 opgenomen en daarna €120 gestort. Hoeveel staat er nu op de rekening?",
+
+a:"€385",
+b:"€435",
+c:"€555",
+
+correct:"a",
+
+uitleg:"350 - 85 + 120 = 385."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een film begint om 19:35 uur en duurt 1 uur en 48 minuten. Hoe laat is de film afgelopen?",
+
+a:"21:13 uur",
+b:"21:23 uur",
+c:"22:13 uur",
+
+correct:"b",
+
+uitleg:"19:35 + 1 uur en 48 minuten is 21:23 uur."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke breuk is het kleinst?",
+
+a:"5/6",
+b:"3/4",
+c:"7/8",
+
+correct:"b",
+
+uitleg:"3/4 = 0,75; 5/6 is ongeveer 0,833 en 7/8 = 0,875."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat betekent 'exporteren'?",
+
+a:"Goederen naar het buitenland verkopen",
+b:"Goederen uit het buitenland kopen",
+c:"Goederen gratis weggeven",
+
+correct:"a",
+
+uitleg:"Exporteren betekent goederen of diensten naar een ander land verkopen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke energievorm ontstaat door stromend water?",
+
+a:"Waterkracht",
+b:"Aardwarmte",
+c:"Steenkoolenergie",
+
+correct:"a",
+
+uitleg:"Bij waterkracht wordt de beweging van stromend of vallend water gebruikt om energie op te wekken."
+},
+  
+{
+categorie:"Kids groep 8 Lagere school",
+
 vraag:"Wat is 15% van 240?",
 
 a:"24",
