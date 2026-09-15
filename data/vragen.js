@@ -13375,6 +13375,356 @@ uitleg:"Het Pieterpad loopt door meerdere Drentse gebieden."
 {
 categorie:"Kids groep 8 Lagere school",
 
+vraag:"Een school heeft 360 leerlingen. Drie vijfde deel gaat met de fiets naar school. Hoeveel leerlingen zijn dat?",
+
+a:"180",
+b:"216",
+c:"240",
+
+correct:"b",
+
+uitleg:"360 ÷ 5 × 3 = 216."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een rechthoek heeft een oppervlakte van 72 cm² en is 9 cm lang. Hoe breed is de rechthoek?",
+
+a:"7 cm",
+b:"8 cm",
+c:"9 cm",
+
+correct:"b",
+
+uitleg:"72 ÷ 9 = 8 cm."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een jas van €120 wordt met 30% afgeprijsd. Hoeveel euro korting krijg je?",
+
+a:"€30",
+b:"€36",
+c:"€40",
+
+correct:"b",
+
+uitleg:"30% van €120 is €36."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke verhouding is gelijk aan 2 : 5?",
+
+a:"4 : 10",
+b:"6 : 10",
+c:"8 : 15",
+
+correct:"a",
+
+uitleg:"2 : 5 vermenigvuldigd met 2 is 4 : 10."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zin bevat een lijdend voorwerp?",
+
+a:"Lisa slaapt.",
+b:"Lisa leest een boek.",
+c:"Lisa is vrolijk.",
+
+correct:"b",
+
+uitleg:"'Een boek' is wat Lisa leest en is het lijdend voorwerp."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke spelling is correct?",
+
+a:"verassend",
+b:"verrassend",
+c:"verrasend",
+
+correct:"b",
+
+uitleg:"De correcte spelling is 'verrassend'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is het tegenovergestelde van 'zeldzaam'?",
+
+a:"bijzonder",
+b:"gewoon",
+c:"kostbaar",
+
+correct:"b",
+
+uitleg:"Het tegenovergestelde van zeldzaam is gewoon of algemeen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zin heeft de juiste werkwoordsvorm?",
+
+a:"Wordt jij morgen twaalf?",
+b:"Word jij morgen twaalf?",
+c:"Word jij morgen twaalfd?",
+
+correct:"b",
+
+uitleg:"Bij 'jij' na het werkwoord schrijf je 'word' zonder t."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat betekent het Engelse woord 'borrow'?",
+
+a:"lenen",
+b:"uitlenen",
+c:"breken",
+
+correct:"a",
+
+uitleg:"'Borrow' betekent iets lenen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke Engelse zin is grammaticaal juist?",
+
+a:"There is three apples.",
+b:"There are three apples.",
+c:"There be three apples.",
+
+correct:"b",
+
+uitleg:"Bij 'three apples' hoort het meervoud 'there are'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom zijn veel grote steden ontstaan langs rivieren?",
+
+a:"Rivieren maakten vervoer en handel gemakkelijker.",
+b:"Rivieren zorgden altijd voor warm weer.",
+c:"Rivieren maakten landbouw onmogelijk.",
+
+correct:"a",
+
+uitleg:"Rivieren waren belangrijk voor vervoer, handel en vestiging."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is de hoofdstad van Noorwegen?",
+
+a:"Stockholm",
+b:"Oslo",
+c:"Helsinki",
+
+correct:"b",
+
+uitleg:"Oslo is de hoofdstad van Noorwegen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke provincie ligt aan de Waddenzee?",
+
+a:"Limburg",
+b:"Utrecht",
+c:"Friesland",
+
+correct:"c",
+
+uitleg:"Friesland ligt aan de Waddenzee."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat was de Nederlandse Opstand?",
+
+a:"De opstand tegen de Spaanse overheersing.",
+b:"Een oorlog tussen Nederland en Engeland in de twintigste eeuw.",
+c:"Een opstand van boeren tegen de Romeinen.",
+
+correct:"a",
+
+uitleg:"De Nederlandse Opstand begon in de zestiende eeuw tegen de Spaanse overheersing."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"In welke eeuw vond de Gouden Eeuw van Nederland grotendeels plaats?",
+
+a:"De 15e eeuw",
+b:"De 17e eeuw",
+c:"De 19e eeuw",
+
+correct:"b",
+
+uitleg:"De Gouden Eeuw wordt vooral met de zeventiende eeuw verbonden."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat was een belangrijke oorzaak van de Industriële Revolutie?",
+
+a:"De toepassing van machines en stoomkracht.",
+b:"De uitvinding van de boekdrukkunst.",
+c:"De ontdekking van Amerika.",
+
+correct:"a",
+
+uitleg:"Machines en nieuwe energiebronnen zoals stoomkracht veranderden de productie."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke uitspraak over de maan is juist?",
+
+a:"De maan geeft zelf licht.",
+b:"De maan weerkaatst licht van de zon.",
+c:"De maan is een ster.",
+
+correct:"b",
+
+uitleg:"De maan weerkaatst licht van de zon."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat gebeurt er meestal met een schaduw als een lichtbron dichter bij een voorwerp komt?",
+
+a:"De schaduw wordt groter.",
+b:"De schaduw verdwijnt.",
+c:"De schaduw wordt kleiner.",
+
+correct:"a",
+
+uitleg:"Een lichtbron die dichter bij het voorwerp staat, veroorzaakt meestal een grotere schaduw."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke combinatie bestaat alleen uit hernieuwbare energiebronnen?",
+
+a:"Zon en wind",
+b:"Steenkool en aardolie",
+c:"Aardgas en uranium",
+
+correct:"a",
+
+uitleg:"Zon en wind zijn hernieuwbare energiebronnen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom hebben mensen longen?",
+
+a:"Om zuurstof op te nemen en koolstofdioxide af te geven.",
+b:"Om voedsel te verteren.",
+c:"Om bloed te maken.",
+
+correct:"a",
+
+uitleg:"De longen zorgen voor de gaswisseling tussen lucht en bloed."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een winkel geeft 1/4 korting op een product van €64. Wat kost het product na de korting?",
+
+a:"€16",
+b:"€48",
+c:"€52",
+
+correct:"b",
+
+uitleg:"Een kwart van €64 is €16. €64 - €16 = €48."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een fietser legt 18 kilometer af in 45 minuten. Hoeveel kilometer legt hij af in 15 minuten als hij even snel blijft rijden?",
+
+a:"6 kilometer",
+b:"8 kilometer",
+c:"12 kilometer",
+
+correct:"a",
+
+uitleg:"15 minuten is een derde van 45 minuten. Een derde van 18 is 6 kilometer."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een klas verzamelt 1250 lege flessen en verdeelt deze gelijk over 25 dozen. Hoeveel flessen zitten er per doos?",
+
+a:"40",
+b:"50",
+c:"60",
+
+correct:"b",
+
+uitleg:"1250 ÷ 25 = 50."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is 4,8 × 5?",
+
+a:"20",
+b:"24",
+c:"28",
+
+correct:"b",
+
+uitleg:"4,8 × 5 = 24."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is 1,25 uur in minuten?",
+
+a:"75 minuten",
+b:"85 minuten",
+c:"125 minuten",
+
+correct:"a",
+
+uitleg:"1 uur is 60 minuten en 0,25 uur is 15 minuten. Samen 75 minuten."
+},
+  
+{
+categorie:"Kids groep 8 Lagere school",
+
 vraag:"Een rechthoekig zwembad is 12 meter lang en 5 meter breed. Hoeveel vierkante meter is de oppervlakte?",
 
 a:"17 m²",
