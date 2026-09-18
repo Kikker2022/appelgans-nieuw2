@@ -13375,6 +13375,356 @@ uitleg:"Het Pieterpad loopt door meerdere Drentse gebieden."
 {
 categorie:"Kids groep 8 Lagere school",
 
+vraag:"Een rugzak kost €75 en krijgt 20% korting. Wat betaal je?",
+
+a:"€55",
+b:"€60",
+c:"€65",
+
+correct:"b",
+
+uitleg:"20% van €75 is €15. €75 - €15 = €60."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een recept voor 4 personen gebruikt 300 gram rijst. Hoeveel is nodig voor 10 personen?",
+
+a:"600 gram",
+b:"750 gram",
+c:"900 gram",
+
+correct:"b",
+
+uitleg:"300 ÷ 4 × 10 = 750 gram."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een getal wordt met 6 vermenigvuldigd en daarna wordt 8 opgeteld. De uitkomst is 50. Welk getal was het?",
+
+a:"7",
+b:"8",
+c:"9",
+
+correct:"a",
+
+uitleg:"50 - 8 = 42 en 42 ÷ 6 = 7."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een grasveld is 18 meter lang en 7 meter breed. Wat is de oppervlakte?",
+
+a:"50 m²",
+b:"126 m²",
+c:"252 m²",
+
+correct:"b",
+
+uitleg:"18 × 7 = 126 m²."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een bus vertrekt om 09:18 uur en komt om 11:02 uur aan. Hoe lang duurt de rit?",
+
+a:"1 uur en 34 minuten",
+b:"1 uur en 44 minuten",
+c:"2 uur en 14 minuten",
+
+correct:"b",
+
+uitleg:"De rit duurt 1 uur en 44 minuten."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke breuk is het grootst?",
+
+a:"7/10",
+b:"2/3",
+c:"3/5",
+
+correct:"a",
+
+uitleg:"7/10 = 0,70 en is groter dan ongeveer 0,67 en 0,60."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zin bevat een bijvoeglijk naamwoord?",
+
+a:"De vrolijke kinderen zingen.",
+b:"De kinderen zingen luid.",
+c:"De kinderen zingen.",
+
+correct:"a",
+
+uitleg:"'Vrolijke' zegt iets over de kinderen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke spelling is correct?",
+
+a:"interessant",
+b:"interresant",
+c:"intressant",
+
+correct:"a",
+
+uitleg:"De correcte spelling is 'interessant'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat betekent 'concluderen'?",
+
+a:"Een begin maken",
+b:"Een conclusie trekken",
+c:"Iets vergeten",
+
+correct:"b",
+
+uitleg:"Concluderen betekent een conclusie trekken."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke Engelse zin staat in de verleden tijd?",
+
+a:"They play football.",
+b:"They played football.",
+c:"They are playing football tomorrow.",
+
+correct:"b",
+
+uitleg:"'Played' is de verleden tijd van 'play'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat betekent het Engelse woord 'careful'?",
+
+a:"voorzichtig",
+b:"gevaarlijk",
+c:"verdrietig",
+
+correct:"a",
+
+uitleg:"'Careful' betekent 'voorzichtig'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke lijn loopt van de Noordpool naar de Zuidpool?",
+
+a:"De evenaar",
+b:"Een meridiaan",
+c:"De Kreeftskeerkring",
+
+correct:"b",
+
+uitleg:"Een meridiaan loopt van pool tot pool."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom zijn bossen belangrijk voor het klimaat?",
+
+a:"Bomen nemen onder andere koolstofdioxide op.",
+b:"Bomen maken alle regen overbodig.",
+c:"Bomen verhogen altijd de temperatuur.",
+
+correct:"a",
+
+uitleg:"Bomen nemen onder andere koolstofdioxide op."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke provincie ligt het meest zuidelijk?",
+
+a:"Gelderland",
+b:"Limburg",
+c:"Drenthe",
+
+correct:"b",
+
+uitleg:"Limburg ligt het meest zuidelijk."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is een polder?",
+
+a:"Een beschermd en meestal drooggelegd gebied",
+b:"Een hoge bergtop",
+c:"Een tropisch regenwoud",
+
+correct:"a",
+
+uitleg:"Een polder is een door waterbeheer drooggehouden gebied."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"In welk werelddeel ligt Egypte grotendeels?",
+
+a:"Afrika",
+b:"Azië",
+c:"Zuid-Amerika",
+
+correct:"a",
+
+uitleg:"Het grootste deel van Egypte ligt in Afrika."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke gebeurtenis wordt vaak als overgang naar de nieuwe tijd gezien?",
+
+a:"De val van het West-Romeinse Rijk",
+b:"De ontdekking van Amerika in 1492",
+c:"De bouw van hunebedden",
+
+correct:"b",
+
+uitleg:"1492 wordt vaak als overgangsmoment gebruikt."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom trokken mensen tijdens de Industriële Revolutie naar steden?",
+
+a:"Daar ontstonden fabrieken en werkgelegenheid.",
+b:"Landbouw werd overal verboden.",
+c:"Steden hadden geen wegen.",
+
+correct:"a",
+
+uitleg:"Fabrieken zorgden in steden voor extra werk."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke energiebron gebruikt warmte uit het binnenste van de aarde?",
+
+a:"Geothermische energie",
+b:"Windenergie",
+c:"Zonne-energie",
+
+correct:"a",
+
+uitleg:"Geothermische energie gebruikt aardwarmte."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat gebeurt er met veel materialen als ze worden verwarmd?",
+
+a:"Ze krimpen altijd.",
+b:"Ze zetten meestal uit.",
+c:"Ze verdwijnen.",
+
+correct:"b",
+
+uitleg:"Veel materialen zetten bij verwarming uit."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke organen filteren afvalstoffen uit het bloed?",
+
+a:"De nieren",
+b:"De longen",
+c:"De spieren",
+
+correct:"a",
+
+uitleg:"De nieren filteren afvalstoffen uit het bloed."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een klas heeft 32 leerlingen. Een kwart is afwezig. Hoeveel zijn aanwezig?",
+
+a:"8",
+b:"24",
+c:"28",
+
+correct:"b",
+
+uitleg:"Een kwart van 32 is 8; 32 - 8 = 24."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een trein rijdt 240 kilometer in 3 uur. Wat is de gemiddelde snelheid?",
+
+a:"60 km per uur",
+b:"80 km per uur",
+c:"120 km per uur",
+
+correct:"b",
+
+uitleg:"240 ÷ 3 = 80 km per uur."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een kubus heeft ribben van 4 cm. Wat is de inhoud?",
+
+a:"16 cm³",
+b:"48 cm³",
+c:"64 cm³",
+
+correct:"c",
+
+uitleg:"4 × 4 × 4 = 64 cm³."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een getal wordt afgerond op tientallen 470. Welk getal kan het oorspronkelijke getal zijn?",
+
+a:"463",
+b:"474",
+c:"486",
+
+correct:"b",
+
+uitleg:"Getallen van 465 tot en met 474 worden afgerond op 470."
+}
+  
+{
+categorie:"Kids groep 8 Lagere school",
+
 vraag:"Een school heeft 360 leerlingen. Drie vijfde deel gaat met de fiets naar school. Hoeveel leerlingen zijn dat?",
 
 a:"180",
