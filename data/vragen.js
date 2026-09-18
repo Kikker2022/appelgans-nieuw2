@@ -13720,7 +13720,7 @@ c:"486",
 correct:"b",
 
 uitleg:"Getallen van 465 tot en met 474 worden afgerond op 470."
-}
+},
   
 {
 categorie:"Kids groep 8 Lagere school",
