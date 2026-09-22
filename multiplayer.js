@@ -2,6 +2,165 @@
    APPELGANS - MULTIPLAYER.JS
    ========================================================= */
 
+/* =========================================================
+   APPELGANS - HERSTART / VERBINDING BEVEILIGING
+   ========================================================= */
+
+const PLAYER_STORAGE_PREFIX = "appelgansPlayer_";
+const DISCONNECTED_TURN_WAIT_MS = 30000;
+
+function getPlayerStorageKey(code) {
+    return PLAYER_STORAGE_PREFIX + String(code).trim();
+}
+
+function getSavedPlayerId(code) {
+    try {
+        return localStorage.getItem(getPlayerStorageKey(code));
+    } catch (error) {
+        console.warn("Lokale speler-ID kon niet worden gelezen:", error);
+        return null;
+    }
+}
+
+function savePlayerId(code, playerId) {
+    try {
+        localStorage.setItem(getPlayerStorageKey(code), playerId);
+    } catch (error) {
+        console.warn("Lokale speler-ID kon niet worden opgeslagen:", error);
+    }
+}
+
+function setupPlayerPresence(code, playerId) {
+
+    if (!code || !playerId) return;
+
+    const playerRef = firebase.database()
+        .ref("games/" + code + "/players/" + playerId);
+
+    firebase.database().ref(".info/connected").on("value", snapshot => {
+
+        if (snapshot.val() !== true) return;
+
+        playerRef.onDisconnect().update({
+            connected: false,
+            lastSeen: firebase.database.ServerValue.TIMESTAMP
+        }).catch(error => {
+            console.warn("onDisconnect kon niet worden ingesteld:", error);
+        });
+
+        playerRef.update({
+            connected: true,
+            lastSeen: firebase.database.ServerValue.TIMESTAMP
+        }).catch(error => {
+            console.warn("Aanwezigheid kon niet worden opgeslagen:", error);
+        });
+    });
+}
+
+function findConnectedPlayerForTeam(players, team) {
+
+    if (!players) return null;
+
+    const keys = Object.keys(players);
+
+    for (const key of keys) {
+        const player = players[key];
+
+        if (
+            player &&
+            parseInt(player.team, 10) === parseInt(team, 10) &&
+            player.connected !== false
+        ) {
+            return key;
+        }
+    }
+
+    return null;
+}
+
+function advancePastDisconnectedTeam(code) {
+
+    if (!code) return;
+
+    firebase.database()
+        .ref("games/" + code)
+        .transaction(game => {
+
+            if (!game || game.gameState !== "playing") {
+                return;
+            }
+
+            if (game.phase !== "turn" && game.phase !== "rolled" && game.phase !== "question") {
+                return;
+            }
+
+            const teamCount = parseInt(game.activeTeams, 10) || 0;
+            const current = parseInt(game.currentTurn, 10);
+
+            if (teamCount < 1 || !Number.isInteger(current)) {
+                return;
+            }
+
+            // Alleen overslaan als de huidige speler echt offline is.
+            if (findConnectedPlayerForTeam(game.players, current)) {
+                return;
+            }
+
+            let next = current;
+
+            for (let i = 1; i <= teamCount; i++) {
+                const candidate = (current + i) % teamCount;
+
+                if (findConnectedPlayerForTeam(game.players, candidate)) {
+                    next = candidate;
+                    break;
+                }
+            }
+
+            if (next === current) {
+                return;
+            }
+
+            return {
+                ...game,
+                currentTurn: next,
+                phase: "turn",
+                roll: null,
+                questionIndex: null,
+                disconnectedTurnSkippedAt: Date.now()
+            };
+        })
+        .catch(error => {
+            console.warn("Offline beurt kon niet worden overgeslagen:", error);
+        });
+}
+
+function monitorCurrentPlayer(code, game) {
+
+    if (!code || !game || game.gameState !== "playing") return;
+
+    const current = parseInt(game.currentTurn, 10);
+    const playerId = findConnectedPlayerForTeam(game.players, current);
+
+    if (playerId) return;
+
+    // Geef een korte herstelperiode. Daardoor kan een telefoon met
+    // een tijdelijke verbinding niet direct zijn beurt verliezen.
+    const marker =
+        String(code) + "_" +
+        String(current) + "_" +
+        String(game.phase || "");
+
+    if (window._disconnectTimerMarker === marker) return;
+
+    window._disconnectTimerMarker = marker;
+
+    setTimeout(() => {
+        window._disconnectTimerMarker = null;
+        advancePastDisconnectedTeam(code);
+    }, DISCONNECTED_TURN_WAIT_MS);
+}
+
 function createGame() {
 
     const code = document.getElementById("gameCode").value.trim();
@@ -15,7 +174,9 @@ function createGame() {
     const hostPlayer = {
         name: hostName,
         team: 0,
-        color: "blue"
+        color: "blue",
+        connected: true,
+        lastSeen: firebase.database.ServerValue.TIMESTAMP
     };
 
     const gameRef = firebase.database().ref("games/" + code);
@@ -95,6 +256,8 @@ function createGame() {
         window.myPlayerId = "host";
         window.myTeam = 0;
         window.myColor = "blue";
+        savePlayerId(code, "host");
+        setupPlayerPresence(code, "host");
 
         const teamInputs = document.getElementById("teamInputs");
         if (teamInputs) teamInputs.style.display = "block";
@@ -139,12 +302,73 @@ function joinGame() {
                 return;
             }
 
+            const players = game.players || {};
+            const savedPlayerId = getSavedPlayerId(code);
+
+            // ---------------------------------------------------------
+            // BESTAANDE SPELER OPNIEUW VERBINDEN
+            // ---------------------------------------------------------
+            if (
+                savedPlayerId &&
+                players[savedPlayerId]
+            ) {
+
+                const existingPlayer = players[savedPlayerId];
+                const team = parseInt(existingPlayer.team, 10);
+                const color = existingPlayer.color ||
+                    ["blue", "red", "green", "purple"][team];
+
+                return gameRef
+                    .child("players")
+                    .child(savedPlayerId)
+                    .update({
+                        name: name,
+                        connected: true,
+                        lastSeen: firebase.database.ServerValue.TIMESTAMP
+                    })
+                    .then(() => {
+
+                        window.currentGameCode = code;
+                        window.isHost = savedPlayerId === "host";
+                        window.myPlayerId = savedPlayerId;
+                        window.myTeam = team;
+                        window.myColor = color;
+
+                        setupPlayerPresence(code, savedPlayerId);
+
+                        if (savedPlayerId === "host" && game.gameState === "lobby") {
+                            const teamInputs = document.getElementById("teamInputs");
+                            if (teamInputs) teamInputs.style.display = "block";
+
+                            const startButton = document.getElementById("startGameButton");
+                            if (startButton) startButton.style.display = "block";
+                        } else {
+                            prepareJoinedPlayerScreen();
+                        }
+
+                        listenToPlayers(code);
+                        listenToGameState();
+
+                        alert(
+                            "Je bent opnieuw verbonden!\n\n" +
+                            "Team: " + (team + 1) +
+                            "\nKleur: " + color +
+                            "\n\nJe gaat verder vanaf je bestaande spelpositie."
+                        );
+                    });
+            }
+
+            // ---------------------------------------------------------
+            // EEN NIEUWE SPELER MAG ALLEEN IN DE LOBBY INSTAPPEN
+            // ---------------------------------------------------------
             if (game.gameState && game.gameState !== "lobby") {
-                alert("Dit spel is al gestart.");
+                alert(
+                    "Dit spel is al gestart.\n\n" +
+                    "Als je al eerder met deze telefoon meespeelde, gebruik dan dezelfde spelcode en naam om opnieuw te verbinden."
+                );
                 return;
             }
 
-            const players = game.players || {};
             const playerIds = Object.keys(players);
 
             if (playerIds.length >= 4) {
@@ -152,20 +376,31 @@ function joinGame() {
                 return;
             }
 
-            const usedTeams = playerIds.map(id => players[id].team);
+            const usedTeams = playerIds.map(id =>
+                parseInt(players[id].team, 10)
+            );
+
             let team = 0;
 
             while (usedTeams.includes(team) && team < 4) {
                 team++;
             }
 
+            if (team >= 4) {
+                alert("Alle teams zijn al bezet.");
+                return;
+            }
+
             const colors = ["blue", "red", "green", "purple"];
-            const playerId = "p" + Date.now();
+            const playerId = "p" + Date.now() + "_" +
+                Math.random().toString(36).slice(2, 8);
 
             const player = {
                 name: name,
                 team: team,
-                color: colors[team]
+                color: colors[team],
+                connected: true,
+                lastSeen: firebase.database.ServerValue.TIMESTAMP
             };
 
             return gameRef
@@ -174,25 +409,16 @@ function joinGame() {
                 .set(player)
                 .then(() => {
 
+                    savePlayerId(code, playerId);
+
                     window.currentGameCode = code;
                     window.isHost = false;
                     window.myPlayerId = playerId;
                     window.myTeam = team;
                     window.myColor = colors[team];
 
-                    // Deelnemer mag de instellingen niet wijzigen.
-                    const teamInputs = document.getElementById("teamInputs");
-                    if (teamInputs) teamInputs.style.display = "none";
-
-                    const teamCount = document.getElementById("teamCount");
-                    if (teamCount) teamCount.style.display = "none";
-
-                    const categorySelect = document.getElementById("categorySelect");
-                    if (categorySelect) categorySelect.style.display = "none";
-
-                    const startButton = document.getElementById("startGameButton");
-                    if (startButton) startButton.style.display = "none";
-
+                    setupPlayerPresence(code, playerId);
+                    prepareJoinedPlayerScreen();
                     listenToPlayers(code);
                     listenToGameState();
 
@@ -207,6 +433,21 @@ function joinGame() {
             console.error("FOUT BIJ JOIN GAME:", error);
             alert("Deelnemen mislukt:\n\n" + error.message);
         });
+}
+
+function prepareJoinedPlayerScreen() {
+
+    const teamInputs = document.getElementById("teamInputs");
+    if (teamInputs) teamInputs.style.display = "none";
+
+    const teamCount = document.getElementById("teamCount");
+    if (teamCount) teamCount.style.display = "none";
+
+    const categorySelect = document.getElementById("categorySelect");
+    if (categorySelect) categorySelect.style.display = "none";
+
+    const startButton = document.getElementById("startGameButton");
+    if (startButton) startButton.style.display = "none";
 }
 
 function listenToPlayers(code) {
@@ -228,10 +469,15 @@ function listenToPlayers(code) {
                 const player = players[key];
                 const div = document.createElement("div");
 
+                const onlineText =
+                    player.connected === false
+                        ? " — offline"
+                        : " — online";
+
                 div.innerText =
                     key === "host"
-                        ? "👑 Host: " + player.name
-                        : "👤 " + player.name;
+                        ? "👑 Host: " + player.name + onlineText
+                        : "👤 " + player.name + onlineText;
 
                 list.appendChild(div);
             });
@@ -264,6 +510,11 @@ function listenToGameState() {
             }
 
             console.log("🔥 GAME DATA:", game);
+
+            // Als de huidige speler offline is, geef hem eerst 30 seconden
+            // om opnieuw te verbinden. Daarna gaat het spel automatisch
+            // verder met het eerstvolgende verbonden team.
+            monitorCurrentPlayer(window.currentGameCode, game);
 
 
             // =========================
@@ -352,6 +603,25 @@ function listenToGameState() {
                                 game.teamPositions[i],
                                 10
                             );
+                    }
+                }
+            }
+
+
+            // =========================
+            // BEURTEN OVERSLAAN
+            // =========================
+
+            if (game.teamSkipTurns) {
+
+                for (let i = 0; i < 4; i++) {
+
+                    if (
+                        game.teamSkipTurns[i] !== undefined &&
+                        teams[i]
+                    ) {
+                        teams[i].skipTurns =
+                            parseInt(game.teamSkipTurns[i], 10) || 0;
                     }
                 }
             }
