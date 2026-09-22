@@ -267,6 +267,12 @@ function startGame() {
                         3: teams[3].name
                     },
                     teamPositions: positions,
+                    teamSkipTurns: {
+                        0: 0,
+                        1: 0,
+                        2: 0,
+                        3: 0
+                    },
                     usedQuestions: {}
                 })
                 .then(() => {
@@ -893,6 +899,41 @@ function showBoardDice(roll) {
 
 /* ===== ANTWOORD CONTROLEREN ===== */
 
+function getNextTeamAfterCurrent() {
+
+    const teamCount = parseInt(activeTeams, 10);
+
+    if (!Number.isInteger(teamCount) || teamCount < 1) {
+        return 0;
+    }
+
+    let nextTeam = parseInt(currentTeam, 10) + 1;
+
+    for (let i = 0; i < teamCount; i++) {
+
+        if (nextTeam >= teamCount) {
+            nextTeam = 0;
+        }
+
+        const team = teams[nextTeam];
+
+        if (!team) {
+            nextTeam++;
+            continue;
+        }
+
+        if (team.skipTurns > 0) {
+            team.skipTurns--;
+            nextTeam++;
+            continue;
+        }
+
+        return nextTeam;
+    }
+
+    return 0;
+}
+
 async function saveBoardPositions() {
 
     if (!window.currentGameCode) {
@@ -900,15 +941,18 @@ async function saveBoardPositions() {
     }
 
     const positions = {};
+    const skipTurns = {};
 
     for (let i = 0; i < activeTeams; i++) {
         positions[i] = teams[i].position || 0;
+        skipTurns[i] = teams[i].skipTurns || 0;
     }
 
     return firebase.database()
         .ref("games/" + window.currentGameCode)
         .update({
-            teamPositions: positions
+            teamPositions: positions,
+            teamSkipTurns: skipTurns
         });
 }
 
@@ -998,11 +1042,9 @@ async function checkAnswer(choice) {
         // Bord nog even zichtbaar laten.
         await sleep(2500);
 
-        let nextTeam = currentTeam + 1;
+        const nextTeam = getNextTeamAfterCurrent();
 
-        if (nextTeam >= activeTeams) {
-            nextTeam = 0;
-        }
+        await saveBoardPositions();
 
         await firebase.database()
             .ref("games/" + window.currentGameCode)
@@ -1030,11 +1072,9 @@ async function checkAnswer(choice) {
 
     await sleep(3000);
 
-    let nextTeam = currentTeam + 1;
+    const nextTeam = getNextTeamAfterCurrent();
 
-    if (nextTeam >= activeTeams) {
-        nextTeam = 0;
-    }
+    await saveBoardPositions();
 
     await firebase.database()
         .ref("games/" + window.currentGameCode)
