@@ -13375,6 +13375,1406 @@ uitleg:"Het Pieterpad loopt door meerdere Drentse gebieden."
 {
 categorie:"Kids groep 8 Lagere school",
 
+vraag:"Een museum ontvangt op zaterdag 840 bezoekers. Op zondag komen er 15% meer. Hoeveel bezoekers komen er zondag?",
+
+a:"936",
+b:"966",
+c:"996",
+
+correct:"b",
+
+uitleg:"15% van 840 is 126. 840 + 126 = 966 bezoekers."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een plank van 3,6 meter wordt in 9 even lange stukken gezaagd. Hoe lang is elk stuk?",
+
+a:"35 cm",
+b:"40 cm",
+c:"45 cm",
+
+correct:"b",
+
+uitleg:"3,6 meter is 360 centimeter. 360 ÷ 9 = 40 centimeter."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Sanne heeft €50. Ze koopt een boek van €17,95 en een spel van €24,60. Hoeveel geld houdt ze over?",
+
+a:"€6,45",
+b:"€7,45",
+c:"€8,45",
+
+correct:"b",
+
+uitleg:"€17,95 + €24,60 = €42,55. €50 - €42,55 = €7,45."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een rechthoek heeft een omtrek van 50 cm. De lengte is 16 cm. Hoe breed is de rechthoek?",
+
+a:"8 cm",
+b:"9 cm",
+c:"10 cm",
+
+correct:"b",
+
+uitleg:"Twee lengtes zijn samen 32 cm. Voor twee breedtes blijft 18 cm over, dus één breedte is 9 cm."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een trein vertrekt om 21:48 uur en komt 2 uur en 37 minuten later aan. Hoe laat komt de trein aan?",
+
+a:"00:15 uur",
+b:"00:25 uur",
+c:"00:35 uur",
+
+correct:"b",
+
+uitleg:"21:48 + 2 uur = 23:48. Nog 37 minuten later is het 00:25 uur."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een school heeft 600 leerlingen. De verhouding onderbouw : bovenbouw is 2 : 3. Hoeveel leerlingen zitten in de onderbouw?",
+
+a:"200",
+b:"240",
+c:"360",
+
+correct:"b",
+
+uitleg:"De verhouding heeft 5 delen. 600 ÷ 5 = 120. De onderbouw heeft 2 × 120 = 240 leerlingen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk woord is het onderwerp in de zin: 'Na de pauze begint de spannende voorstelling'?",
+
+a:"pauze",
+b:"voorstelling",
+c:"spannende",
+
+correct:"b",
+
+uitleg:"Vraag: wie of wat begint? De voorstelling begint, dus 'voorstelling' is het onderwerp."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zin bevat een voegwoord?",
+
+a:"Omdat het regent, nemen we een paraplu mee.",
+b:"De natte straat glanst.",
+c:"Mijn jas hangt aan de kapstok.",
+
+correct:"a",
+
+uitleg:"'Omdat' verbindt twee delen van de zin en is een voegwoord."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is het meervoud van 'museum'?",
+
+a:"museums",
+b:"musea",
+c:"museumen",
+
+correct:"b",
+
+uitleg:"Het gebruikelijke meervoud van 'museum' is 'musea'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat betekent het woord 'objectief' wanneer het over een verslag gaat?",
+
+a:"Gebaseerd op feiten en zo min mogelijk op persoonlijke mening",
+b:"Vol met grappige opmerkingen",
+c:"Geschreven vanuit één persoonlijke voorkeur",
+
+correct:"a",
+
+uitleg:"Een objectief verslag probeert feiten centraal te stellen en persoonlijke meningen te vermijden."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke Engelse vraag past bij het antwoord: 'I go to school by bike'?",
+
+a:"Where do you go to school?",
+b:"How do you go to school?",
+c:"When do you go to school?",
+
+correct:"b",
+
+uitleg:"'How' vraagt naar de manier waarop iemand naar school gaat."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke Engelse zin betekent: 'Mijn broer is ouder dan ik'?",
+
+a:"My brother is old as me.",
+b:"My brother is older than me.",
+c:"My brother is oldest than me.",
+
+correct:"b",
+
+uitleg:"Voor een vergelijking gebruik je 'older than'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk werelddeel wordt zowel door de evenaar als door de nulmeridiaan doorsneden?",
+
+a:"Afrika",
+b:"Noord-Amerika",
+c:"Australië",
+
+correct:"a",
+
+uitleg:"Zowel de evenaar als de nulmeridiaan loopt door Afrika."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom liggen veel grote havens aan de monding van een rivier of aan zee?",
+
+a:"Omdat goederen daar gemakkelijk tussen schepen en het achterland kunnen worden vervoerd",
+b:"Omdat rivieren altijd zoet drinkwater voor schepen leveren",
+c:"Omdat er aan de kust geen wegen nodig zijn",
+
+correct:"a",
+
+uitleg:"Zo'n ligging maakt vervoer over zee én naar het achterland mogelijk."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke Nederlandse provincie bestaat voor een groot deel uit land dat in de twintigste eeuw uit het IJsselmeer is gewonnen?",
+
+a:"Flevoland",
+b:"Zeeland",
+c:"Drenthe",
+
+correct:"a",
+
+uitleg:"Een groot deel van Flevoland bestaat uit drooggelegde polders in het voormalige IJsselmeer."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom trokken Europese ontdekkingsreizigers in de vijftiende en zestiende eeuw over zee naar Azië?",
+
+a:"Ze zochten onder andere nieuwe handelsroutes naar kostbare producten",
+b:"Ze wilden uitsluitend nieuwe landbouwgrond in Europa vinden",
+c:"Ze probeerden de Noordzee droog te leggen",
+
+correct:"a",
+
+uitleg:"Een belangrijke drijfveer was het vinden van handelsroutes naar onder meer specerijen en andere waardevolle goederen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat was de belangrijkste functie van een hunebed?",
+
+a:"Het was een grafmonument",
+b:"Het was een middeleeuwse gevangenis",
+c:"Het was een Romeinse wachttoren",
+
+correct:"a",
+
+uitleg:"Hunebedden werden in de prehistorie gebruikt als grafmonumenten."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke ontwikkeling hoort bij de periode van de Koude Oorlog?",
+
+a:"Spanningen tussen het Westen en het communistische Oostblok",
+b:"De bouw van de eerste hunebedden",
+c:"De opkomst van middeleeuwse gilden",
+
+correct:"a",
+
+uitleg:"De Koude Oorlog werd gekenmerkt door langdurige politieke en militaire spanningen tussen twee machtsblokken."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom blijft een houten blok meestal op water drijven?",
+
+a:"De gemiddelde dichtheid van het hout is kleiner dan die van water",
+b:"Hout heeft geen massa",
+c:"Water duwt alleen metalen voorwerpen omlaag",
+
+correct:"a",
+
+uitleg:"Een materiaal met een lagere gemiddelde dichtheid dan water kan blijven drijven."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke vorm van energie heeft een bewegende fiets?",
+
+a:"Bewegingsenergie",
+b:"Chemische energie",
+c:"Kernenergie",
+
+correct:"a",
+
+uitleg:"Een bewegend voorwerp heeft bewegingsenergie."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke functie hebben rode bloedcellen vooral?",
+
+a:"Zuurstof vervoeren",
+b:"Voedsel verteren",
+c:"Botten laten groeien",
+
+correct:"a",
+
+uitleg:"Rode bloedcellen vervoeren met behulp van hemoglobine vooral zuurstof door het lichaam."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat gebeurt er bij fotosynthese in groene planten?",
+
+a:"Met behulp van licht worden onder andere glucose en zuurstof gevormd uit water en koolstofdioxide",
+b:"Zuurstof wordt zonder licht volledig omgezet in stikstof",
+c:"De wortels maken zonlicht uit mineralen",
+
+correct:"a",
+
+uitleg:"Bij fotosynthese gebruikt een plant lichtenergie om uit water en koolstofdioxide glucose te maken; daarbij komt zuurstof vrij."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een fietser legt de eerste 18 km af in 45 minuten en daarna 12 km in 30 minuten. Wat is zijn gemiddelde snelheid over de hele rit?",
+
+a:"20 km/u",
+b:"24 km/u",
+c:"30 km/u",
+
+correct:"b",
+
+uitleg:"De totale afstand is 30 km en de totale tijd 75 minuten = 1,25 uur. 30 ÷ 1,25 = 24 km/u."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een winkel verhoogt een prijs van €80 eerst met 10% en geeft daarna 10% korting op de nieuwe prijs. Wat is de uiteindelijke prijs?",
+
+a:"€79,20",
+b:"€80,00",
+c:"€80,80",
+
+correct:"a",
+
+uitleg:"Na 10% verhoging kost het €88. Daarna gaat daar 10% van €88 af: €8,80. De prijs wordt €79,20."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een bak heeft de vorm van een balk en is 5 dm lang, 4 dm breed en 3 dm hoog. Hoeveel liter past er maximaal in?",
+
+a:"12 liter",
+b:"60 liter",
+c:"120 liter",
+
+correct:"b",
+
+uitleg:"De inhoud is 5 × 4 × 3 = 60 dm³. Eén dm³ is één liter, dus er past 60 liter in."
+},
+  
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een pretpark verkoopt 1.250 kaartjes. 18% daarvan zijn kinderkaartjes. Hoeveel kinderkaartjes zijn verkocht?",
+
+a:"205",
+b:"225",
+c:"250",
+
+correct:"b",
+
+uitleg:"18% van 1.250 is 0,18 × 1.250 = 225."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een kan bevat 2,4 liter limonade. De limonade wordt verdeeld over 8 even grote bekers. Hoeveel milliliter zit er in elke beker?",
+
+a:"30 ml",
+b:"300 ml",
+c:"320 ml",
+
+correct:"b",
+
+uitleg:"2,4 liter is 2.400 ml. 2.400 ÷ 8 = 300 ml."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een getal wordt gedeeld door 4 en daarna wordt er 7 bij opgeteld. De uitkomst is 16. Welk getal was het?",
+
+a:"28",
+b:"32",
+c:"36",
+
+correct:"c",
+
+uitleg:"16 - 7 = 9. Het oorspronkelijke getal is 9 × 4 = 36."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een driehoek heeft een basis van 12 cm en een hoogte van 7 cm. Wat is de oppervlakte?",
+
+a:"42 cm²",
+b:"84 cm²",
+c:"19 cm²",
+
+correct:"a",
+
+uitleg:"De oppervlakte is 12 × 7 ÷ 2 = 42 cm²."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een bus vertrekt om 08:36 uur. De rit duurt 2 uur en 49 minuten. Hoe laat komt de bus aan?",
+
+a:"11:15 uur",
+b:"11:25 uur",
+c:"11:35 uur",
+
+correct:"b",
+
+uitleg:"08:36 + 2 uur = 10:36 en 49 minuten later is het 11:25 uur."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke van deze breuken heeft de laagste waarde: 5/6, 7/9 of 4/5?",
+
+a:"5/6",
+b:"7/9",
+c:"4/5",
+
+correct:"b",
+
+uitleg:"5/6 is ongeveer 0,833; 7/9 ongeveer 0,778 en 4/5 is 0,8. Dus 7/9 is het kleinst."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is de persoonsvorm in de zin: 'Morgen vertrekken de leerlingen vroeg naar Amsterdam'?",
+
+a:"Morgen",
+b:"vertrekken",
+c:"leerlingen",
+
+correct:"b",
+
+uitleg:"Als je de zin in een andere tijd zet, verandert 'vertrekken'. Dat is de persoonsvorm."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zin bevat een bezittelijk voornaamwoord?",
+
+a:"Dat boek ligt op tafel.",
+b:"Onze fietsen staan buiten.",
+c:"Wie komt er vanavond?",
+
+correct:"b",
+
+uitleg:"'Onze' geeft aan van wie de fietsen zijn en is een bezittelijk voornaamwoord."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Hoe schrijf je het woord dat betekent 'naar alle waarschijnlijkheid' correct?",
+
+a:"waarschijnlijk",
+b:"waarschijnelijk",
+c:"waarschijndelijk",
+
+correct:"a",
+
+uitleg:"De juiste spelling is 'waarschijnlijk'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat betekent het woord 'argument' in een discussie?",
+
+a:"Een reden waarmee je een mening ondersteunt",
+b:"Een vraag waarop niemand antwoordt",
+c:"Een grap om het gesprek af te sluiten",
+
+correct:"a",
+
+uitleg:"Een argument is een reden waarmee je een standpunt of mening ondersteunt."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zin beschrijft in correct Engels iets dat gisteren gebeurde?",
+
+a:"Yesterday we visit our grandparents.",
+b:"Yesterday we visited our grandparents.",
+c:"Yesterday we are visiting our grandparents.",
+
+correct:"b",
+
+uitleg:"Voor een afgeronde gebeurtenis gisteren gebruik je hier de verleden tijd 'visited'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is de beste Engelse vertaling van 'Hoe vaak sport jij?'?",
+
+a:"How long do you sport?",
+b:"How often do you exercise?",
+c:"How many do you exercise?",
+
+correct:"b",
+
+uitleg:"'How often' betekent 'hoe vaak'; 'exercise' betekent hier sporten."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zee ligt ten oosten van Groot-Brittannië en ten westen van Nederland?",
+
+a:"De Noordzee",
+b:"De Oostzee",
+c:"De Middellandse Zee",
+
+correct:"a",
+
+uitleg:"Tussen Groot-Brittannië en Nederland ligt de Noordzee."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom zijn de temperaturen aan de Nederlandse kust vaak minder extreem dan verder landinwaarts?",
+
+a:"Zeewater warmt en koelt langzamer op dan land",
+b:"Aan de kust schijnt de zon nooit rechtstreeks",
+c:"De kust ligt overal hoger dan het binnenland",
+
+correct:"a",
+
+uitleg:"De zee verandert langzamer van temperatuur en tempert daardoor warmte en kou langs de kust."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke rivier stroomt door de Duitse stad Keulen en bereikt later Nederland?",
+
+a:"De Rijn",
+b:"De Seine",
+c:"De Theems",
+
+correct:"a",
+
+uitleg:"De Rijn stroomt door Keulen en verder richting Nederland."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat was een belangrijke reden voor het ontstaan van steden in de late middeleeuwen?",
+
+a:"Groei van handel en ambachten",
+b:"Het verdwijnen van alle landbouw",
+c:"Een verbod op markten op het platteland",
+
+correct:"a",
+
+uitleg:"Door groeiende handel en ambachten ontstonden en groeiden veel steden."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat veranderde er in Nederland in 1919 voor vrouwen bij landelijke verkiezingen?",
+
+a:"Vrouwen kregen algemeen kiesrecht",
+b:"Vrouwen verloren hun kiesrecht",
+c:"Alleen vrouwelijke landeigenaren mochten stemmen",
+
+correct:"a",
+
+uitleg:"In 1919 werd het algemeen kiesrecht voor vrouwen wettelijk ingevoerd."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarvoor werd het Marshallplan na de Tweede Wereldoorlog gebruikt?",
+
+a:"Voor economische hulp bij de wederopbouw van Europese landen",
+b:"Voor het bouwen van middeleeuwse stadsmuren",
+c:"Voor het verdelen van kolonies in Zuid-Amerika",
+
+correct:"a",
+
+uitleg:"Via het Marshallplan gaf de Verenigde Staten economische hulp aan Europese landen voor herstel en wederopbouw."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke kracht trekt een losgelaten bal richting de grond?",
+
+a:"Zwaartekracht",
+b:"Wrijvingskracht",
+c:"Magnetisme",
+
+correct:"a",
+
+uitleg:"De zwaartekracht trekt voorwerpen naar de aarde."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat gebeurt er met de toonhoogte wanneer een snaar per seconde vaker gaat trillen?",
+
+a:"De toon wordt hoger",
+b:"De toon wordt lager",
+c:"De toon verdwijnt",
+
+correct:"a",
+
+uitleg:"Een hogere trillingsfrequentie geeft een hogere toon."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk orgaan zorgt door samentrekken voor het rondpompen van bloed?",
+
+a:"De lever",
+b:"Het hart",
+c:"De maag",
+
+correct:"b",
+
+uitleg:"Het hart trekt ritmisch samen en pompt zo bloed door het lichaam."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke rol spelen bijen bij de voortplanting van veel bloeiende planten?",
+
+a:"Ze vervoeren stuifmeel tussen bloemen",
+b:"Ze maken mineralen in de bodem",
+c:"Ze laten wortels sneller groeien",
+
+correct:"a",
+
+uitleg:"Bijen brengen stuifmeel van bloem naar bloem en helpen zo bij de bestuiving."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een jas kost na 25% korting €54. Wat was de oorspronkelijke prijs?",
+
+a:"€67,50",
+b:"€72",
+c:"€81",
+
+correct:"b",
+
+uitleg:"Na 25% korting betaal je 75%. €54 ÷ 0,75 = €72."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een auto rijdt 156 kilometer in 2 uur en 10 minuten. Wat is de gemiddelde snelheid?",
+
+a:"68 km/u",
+b:"72 km/u",
+c:"78 km/u",
+
+correct:"b",
+
+uitleg:"2 uur en 10 minuten is 13/6 uur. 156 ÷ 13/6 = 72 km/u."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"In een klas is de verhouding jongens : meisjes gelijk aan 3 : 5. Er zijn 32 leerlingen. Hoeveel meisjes zijn er?",
+
+a:"12",
+b:"18",
+c:"20",
+
+correct:"c",
+
+uitleg:"De verhouding bestaat uit 8 delen. 32 ÷ 8 = 4 per deel. 5 × 4 = 20 meisjes."
+},
+  
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een sportclub heeft 450 leden. 40% daarvan is jonger dan 18 jaar. Hoeveel leden zijn 18 jaar of ouder?",
+
+a:"180",
+b:"270",
+c:"290",
+
+correct:"b",
+
+uitleg:"40% van 450 is 180. Dus 450 - 180 = 270 leden zijn 18 jaar of ouder."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een fles bevat 1,5 liter sap. Er worden 6 glazen van 175 milliliter gevuld. Hoeveel milliliter sap blijft over?",
+
+a:"350 ml",
+b:"450 ml",
+c:"550 ml",
+
+correct:"b",
+
+uitleg:"1,5 liter is 1.500 ml. 6 × 175 = 1.050 ml. Er blijft 450 ml over."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een getal wordt eerst verdubbeld en daarna wordt er 9 bij opgeteld. De uitkomst is 35. Welk getal was het?",
+
+a:"13",
+b:"17",
+c:"22",
+
+correct:"a",
+
+uitleg:"35 - 9 = 26 en 26 ÷ 2 = 13."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een vierkant heeft een omtrek van 36 centimeter. Wat is de oppervlakte?",
+
+a:"36 cm²",
+b:"72 cm²",
+c:"81 cm²",
+
+correct:"c",
+
+uitleg:"Elke zijde is 36 ÷ 4 = 9 cm. De oppervlakte is 9 × 9 = 81 cm²."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een film begint om 14:47 uur en duurt 1 uur en 38 minuten. Hoe laat is de film afgelopen?",
+
+a:"16:15 uur",
+b:"16:25 uur",
+c:"16:35 uur",
+
+correct:"b",
+
+uitleg:"14:47 + 1 uur = 15:47 en 38 minuten later is het 16:25 uur."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke breuk is gelijk aan 0,375?",
+
+a:"3/8",
+b:"3/5",
+c:"5/8",
+
+correct:"a",
+
+uitleg:"3 ÷ 8 = 0,375."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"In welke zin is het onderstreepte woord een bijwoord? Denk bij elk antwoord aan het woord tussen sterretjes.",
+
+a:"De *snelle* fietser wint.",
+b:"De fietser rijdt *snel*.",
+c:"De *snelheid* is hoog.",
+
+correct:"b",
+
+uitleg:"In 'De fietser rijdt snel' zegt 'snel' iets over het werkwoord 'rijdt' en is het een bijwoord."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zin staat in de lijdende vorm?",
+
+a:"De kok bereidt de maaltijd.",
+b:"De maaltijd wordt door de kok bereid.",
+c:"De kok gaat de maaltijd bereiden.",
+
+correct:"b",
+
+uitleg:"In de lijdende vorm ondergaat het onderwerp de handeling: de maaltijd wordt bereid."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk woord is correct gespeld?",
+
+a:"onmiddelijk",
+b:"onmiddellijk",
+c:"onmidellijk",
+
+correct:"b",
+
+uitleg:"De juiste spelling is 'onmiddellijk'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat betekent 'een uitzondering bevestigt de regel' het best?",
+
+a:"Een afwijkend geval laat zien dat er blijkbaar een algemene regel bestaat",
+b:"Iedere regel moet minstens één keer worden overtreden",
+c:"Een regel is pas geldig als niemand zich eraan houdt",
+
+correct:"a",
+
+uitleg:"De uitdrukking wijst erop dat het noemen van een uitzondering het bestaan van een algemene regel veronderstelt."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke Engelse zin is grammaticaal correct?",
+
+a:"He don't like carrots.",
+b:"He doesn't like carrots.",
+c:"He doesn't likes carrots.",
+
+correct:"b",
+
+uitleg:"Na 'doesn't' gebruik je het hele werkwoord zonder -s: 'like'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is de beste Engelse vertaling van 'Ik ben mijn sleutel kwijt'?",
+
+a:"I have lost my key.",
+b:"I am lose my key.",
+c:"I did lost my key.",
+
+correct:"a",
+
+uitleg:"'I have lost my key' is een correcte vertaling wanneer de sleutel nog steeds kwijt is."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke denkbeeldige lijn verdeelt de aarde in een noordelijk en een zuidelijk halfrond?",
+
+a:"De evenaar",
+b:"De nulmeridiaan",
+c:"De poolcirkel",
+
+correct:"a",
+
+uitleg:"De evenaar ligt rond het midden van de aarde en verdeelt haar in een noordelijk en zuidelijk halfrond."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom is het in Nederland in juni gemiddeld langer licht dan in december?",
+
+a:"Omdat de aarde in juni veel dichter bij de zon staat",
+b:"Door de schuine stand van de aardas tijdens de omloop om de zon",
+c:"Omdat de zon in juni langzamer draait",
+
+correct:"b",
+
+uitleg:"Door de schuine stand van de aardas is het noordelijk halfrond in juni langer naar de zon gericht."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke combinatie bestaat alleen uit landen die aan Nederland grenzen?",
+
+a:"België en Duitsland",
+b:"Frankrijk en Duitsland",
+c:"België en Luxemburg",
+
+correct:"a",
+
+uitleg:"Nederland heeft landgrenzen met België en Duitsland."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat was een belangrijk gevolg van de uitvinding van de boekdrukkunst in Europa?",
+
+a:"Boeken en ideeën konden sneller en op grotere schaal worden verspreid",
+b:"Mensen stopten met het schrijven van teksten",
+c:"Alle boeken werden voortaan gratis",
+
+correct:"a",
+
+uitleg:"Door drukwerk konden teksten in grotere aantallen worden gemaakt en verspreid."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom werden na de Tweede Wereldoorlog de Verenigde Naties opgericht?",
+
+a:"Om samenwerking tussen landen en internationale vrede te bevorderen",
+b:"Om alle landen één regering te geven",
+c:"Om uitsluitend handel in Europa te regelen",
+
+correct:"a",
+
+uitleg:"De Verenigde Naties werden opgericht om internationale samenwerking en vrede te bevorderen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke gebeurtenis vond het vroegst plaats?",
+
+a:"De eerste maanlanding",
+b:"De uitvinding van de stoommachine",
+c:"De Tweede Wereldoorlog",
+
+correct:"b",
+
+uitleg:"De ontwikkeling van bruikbare stoommachines vond al in de 18e eeuw plaats, ruim vóór de Tweede Wereldoorlog en de maanlanding."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat gebeurt er met waterdamp wanneer die afkoelt en weer vloeibaar water wordt?",
+
+a:"Verdamping",
+b:"Condensatie",
+c:"Bevriezing",
+
+correct:"b",
+
+uitleg:"De overgang van gas naar vloeistof heet condensatie."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom kan een metalen lepel in hete soep na een tijdje ook warm worden aan het handvat?",
+
+a:"Metaal geleidt warmte",
+b:"Metaal maakt zelf warmte aan",
+c:"De zwaartekracht trekt warmte omhoog",
+
+correct:"a",
+
+uitleg:"Metaal geleidt warmte, waardoor warmte zich door de lepel verplaatst."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke organen nemen het grootste deel van de voedingsstoffen uit verteerd voedsel op?",
+
+a:"De longen",
+b:"De dunne darm",
+c:"De nieren",
+
+correct:"b",
+
+uitleg:"In de dunne darm worden de meeste voedingsstoffen via de darmwand in het lichaam opgenomen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is de belangrijkste functie van wortels van een plant?",
+
+a:"Water en mineralen opnemen en de plant vastzetten",
+b:"Zuurstof produceren voor de hele aarde",
+c:"Bloemen bestuiven",
+
+correct:"a",
+
+uitleg:"Wortels nemen water en mineralen uit de bodem op en zorgen voor stevigheid."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een winkel koopt een spel in voor €32 en verkoopt het voor €44. Hoeveel procent van de inkoopprijs is de winst?",
+
+a:"25%",
+b:"37,5%",
+c:"50%",
+
+correct:"b",
+
+uitleg:"De winst is €12. 12 ÷ 32 × 100% = 37,5%."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een trein rijdt gemiddeld 90 kilometer per uur. Hoeveel kilometer legt hij in 2 uur en 20 minuten af bij die gemiddelde snelheid?",
+
+a:"180 kilometer",
+b:"200 kilometer",
+c:"210 kilometer",
+
+correct:"c",
+
+uitleg:"2 uur en 20 minuten is 2⅓ uur. 90 × 2⅓ = 210 kilometer."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"In een doos zitten rode, blauwe en gele knikkers. De helft is rood, een kwart is blauw en er zijn 15 gele knikkers. Hoeveel knikkers zitten er in totaal?",
+
+a:"45",
+b:"60",
+c:"75",
+
+correct:"b",
+
+uitleg:"Rood en blauw vormen samen 3/4. Geel is dus 1/4. Als 1/4 gelijk is aan 15, is het totaal 60."
+},
+  
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een bibliotheek heeft 960 boeken. Daarvan is 3/8 deel een jeugdboek. Hoeveel jeugdboeken zijn dat?",
+
+a:"320",
+b:"360",
+c:"400",
+
+correct:"b",
+
+uitleg:"Drie achtste van 960 is 960 ÷ 8 × 3 = 360."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een wandelroute is 7,2 kilometer lang. Noor heeft 4.650 meter gelopen. Hoeveel meter moet zij nog?",
+
+a:"2.450 meter",
+b:"2.550 meter",
+c:"2.650 meter",
+
+correct:"b",
+
+uitleg:"7,2 kilometer is 7.200 meter. 7.200 - 4.650 = 2.550 meter."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een rechthoekige kamer is 6,5 meter lang en 4 meter breed. Wat is de oppervlakte?",
+
+a:"10,5 m²",
+b:"21 m²",
+c:"26 m²",
+
+correct:"c",
+
+uitleg:"De oppervlakte is 6,5 × 4 = 26 m²."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Op een kaart is 1 centimeter gelijk aan 5 kilometer. Twee plaatsen liggen 7 centimeter uit elkaar. Wat is de werkelijke afstand?",
+
+a:"12 kilometer",
+b:"35 kilometer",
+c:"70 kilometer",
+
+correct:"b",
+
+uitleg:"7 centimeter × 5 kilometer per centimeter = 35 kilometer."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een tank bevat 24 liter water. Er wordt 3,75 liter uitgehaald. Hoeveel liter blijft over?",
+
+a:"20,25 liter",
+b:"20,75 liter",
+c:"21,25 liter",
+
+correct:"a",
+
+uitleg:"24 - 3,75 = 20,25 liter."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zin bevat een meewerkend voorwerp?",
+
+a:"De hond slaapt in zijn mand.",
+b:"Mila geeft haar opa een tekening.",
+c:"De regen valt de hele middag.",
+
+correct:"b",
+
+uitleg:"In 'Mila geeft haar opa een tekening' is 'haar opa' het meewerkend voorwerp."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"In welke zin is 'lopen' als voltooid deelwoord gebruikt?",
+
+a:"Wij lopen iedere dag naar school.",
+b:"Zij liepen gisteren naar huis.",
+c:"We hebben tien kilometer gelopen.",
+
+correct:"c",
+
+uitleg:"Na 'hebben' staat hier het voltooid deelwoord 'gelopen'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk woord is een samenstelling?",
+
+a:"vriendelijk",
+b:"boekenkast",
+c:"wandelen",
+
+correct:"b",
+
+uitleg:"Boekenkast bestaat uit de woorden 'boeken' en 'kast' en is daarom een samenstelling."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zin is correct geschreven?",
+
+a:"Morgen gebeurd er iets bijzonders.",
+b:"Morgen gebeurt er iets bijzonders.",
+c:"Morgen gebeurt er iets bijzonderds.",
+
+correct:"b",
+
+uitleg:"Bij 'er' als onderwerp hoort hier de persoonsvorm 'gebeurt'; 'bijzonders' is met één d."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat betekent het spreekwoord 'de kat uit de boom kijken'?",
+
+a:"Eerst afwachten voordat je iets doet",
+b:"Heel snel een beslissing nemen",
+c:"Iemand expres laten schrikken",
+
+correct:"a",
+
+uitleg:"Het spreekwoord betekent dat je eerst rustig afwacht en kijkt wat er gebeurt."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat betekent het Engelse woord 'although'?",
+
+a:"daarom",
+b:"hoewel",
+c:"misschien",
+
+correct:"b",
+
+uitleg:"'Although' betekent 'hoewel'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke Engelse zin betekent: 'Zij is nog nooit in Londen geweest'?",
+
+a:"She never goes to London.",
+b:"She has never been to London.",
+c:"She did never went to London.",
+
+correct:"b",
+
+uitleg:"'She has never been to London' drukt uit dat zij er tot nu toe nooit is geweest."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke oceaan ligt tussen Europa en Noord-Amerika?",
+
+a:"Atlantische Oceaan",
+b:"Indische Oceaan",
+c:"Stille Oceaan",
+
+correct:"a",
+
+uitleg:"Tussen Europa en Noord-Amerika ligt de Atlantische Oceaan."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke Nederlandse provincie heeft geen grens met een ander land?",
+
+a:"Groningen",
+b:"Overijssel",
+c:"Noord-Holland",
+
+correct:"c",
+
+uitleg:"Noord-Holland grenst niet aan Duitsland of België; Groningen en Overijssel grenzen aan Duitsland."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat geeft de schaal 1 : 100.000 op een kaart aan?",
+
+a:"1 cm op de kaart is 1 km in werkelijkheid",
+b:"1 cm op de kaart is 100 km in werkelijkheid",
+c:"1 km op de kaart is 100.000 km in werkelijkheid",
+
+correct:"a",
+
+uitleg:"100.000 centimeter is 1 kilometer, dus 1 cm op de kaart stelt 1 km voor."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom werden in de middeleeuwen veel kastelen op een hoge plek of bij water gebouwd?",
+
+a:"Om ze beter te kunnen verdedigen",
+b:"Om dichter bij akkers te liggen",
+c:"Om meer zonlicht in de kamers te krijgen",
+
+correct:"a",
+
+uitleg:"Een hoge ligging of water rondom een kasteel maakte aanvallen moeilijker."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat was een belangrijk doel van de Nederlandse grondwet van 1848?",
+
+a:"De koning kreeg alle politieke macht",
+b:"Het parlement kreeg meer invloed op het bestuur",
+c:"Nederland werd een republiek",
+
+correct:"b",
+
+uitleg:"De grondwet van 1848 vergrootte de invloed van het parlement en beperkte de politieke macht van de koning."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke uitvinding maakte het mogelijk om berichten snel over grote afstand via elektrische signalen te versturen?",
+
+a:"De telescoop",
+b:"De telegraaf",
+c:"De stoomlocomotief",
+
+correct:"b",
+
+uitleg:"Met de telegraaf konden gecodeerde elektrische signalen snel over grote afstanden worden verzonden."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom zie je bliksem meestal eerder dan je donder hoort?",
+
+a:"Licht beweegt veel sneller dan geluid",
+b:"Geluid ontstaat pas minuten na de bliksem",
+c:"Donder wordt eerst door wolken tegengehouden",
+
+correct:"a",
+
+uitleg:"Licht bereikt je vrijwel direct, terwijl geluid veel langzamer door de lucht reist."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke verandering is een chemische verandering?",
+
+a:"Een ijsblokje smelt",
+b:"Papier wordt in stukken geknipt",
+c:"Een ijzeren spijker gaat roesten",
+
+correct:"c",
+
+uitleg:"Bij roesten ontstaan nieuwe stoffen; daarom is dit een chemische verandering."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk onderdeel van het bloed helpt vooral bij het stoppen van een bloeding?",
+
+a:"Bloedplaatjes",
+b:"Witte bloedcellen",
+c:"Bloedplasma",
+
+correct:"a",
+
+uitleg:"Bloedplaatjes helpen bij de bloedstolling en het sluiten van een wond."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom hebben veel bladeren huidmondjes?",
+
+a:"Voor de uitwisseling van gassen en verdamping van water",
+b:"Om zonlicht volledig tegen te houden",
+c:"Om mineralen rechtstreeks uit de lucht op te nemen",
+
+correct:"a",
+
+uitleg:"Via huidmondjes wisselt een blad gassen uit en kan waterdamp ontsnappen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een zaklamp werkt op twee batterijen. Welke energieomzetting vindt uiteindelijk vooral plaats in het lampje?",
+
+a:"Lichtenergie wordt chemische energie",
+b:"Elektrische energie wordt onder andere lichtenergie",
+c:"Bewegingsenergie wordt zwaarte-energie",
+
+correct:"b",
+
+uitleg:"In het lampje wordt elektrische energie vooral omgezet in licht en ook in warmte."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een schoolplein is getekend op schaal 1 : 200. Op de tekening is een zijde 8,5 cm. Hoe lang is die zijde in werkelijkheid?",
+
+a:"8,5 meter",
+b:"17 meter",
+c:"170 meter",
+
+correct:"b",
+
+uitleg:"8,5 × 200 = 1.700 centimeter, en dat is 17 meter."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een bakker bakt 144 broodjes. Hij verpakt ze in zakken van 8. Daarna verkoopt hij 11 volle zakken. Hoeveel broodjes blijven over?",
+
+a:"48",
+b:"56",
+c:"64",
+
+correct:"b",
+
+uitleg:"144 ÷ 8 = 18 zakken. Na verkoop van 11 zakken blijven 7 zakken over: 7 × 8 = 56 broodjes."
+},
+  
+{
+categorie:"Kids groep 8 Lagere school",
+
 vraag:"Een rugzak kost €75 en krijgt 20% korting. Wat betaal je?",
 
 a:"€55",
@@ -14686,20 +16086,6 @@ c:"IJzer",
 correct:"a",
 
 uitleg:"Planten gebruiken onder andere koolstofdioxide, water en zonlicht bij fotosynthese."
-},
-
-{
-categorie:"Kids groep 8 Lagere school",
-
-vraag:"Wat gebeurt er met water als het bij 0 graden Celsius bevriest?",
-
-a:"Het wordt stoom.",
-b:"Het wordt ijs.",
-c:"Het verdwijnt.",
-
-correct:"b",
-
-uitleg:"Bij het vriespunt verandert vloeibaar water in vast ijs."
 },
 
 {
