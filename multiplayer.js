@@ -838,6 +838,11 @@ function listenToGameState() {
                 currentQuestion = null;
                 explanationText.innerText = "";
                 diceText.innerText = "";
+                diceText.style.fontSize = "";
+                diceText.style.fontWeight = "";
+                diceText.style.lineHeight = "";
+                diceText.style.textAlign = "";
+                diceText.style.margin = "";
                 window.diceRolled = false;
 
                 showScreen(screen1);
@@ -874,8 +879,18 @@ function listenToGameState() {
                         parseInt(game.roll, 10);
 
                     diceText.innerText =
-                        "🎲 Je gooide: " +
-                        lastRoll;
+                        "🎲 " + lastRoll;
+
+                    diceText.style.fontSize =
+                        "clamp(4rem, 22vw, 8rem)";
+                    diceText.style.fontWeight =
+                        "900";
+                    diceText.style.lineHeight =
+                        "1";
+                    diceText.style.textAlign =
+                        "center";
+                    diceText.style.margin =
+                        "18px auto";
                 }
 
                 showScreen(screen1);
