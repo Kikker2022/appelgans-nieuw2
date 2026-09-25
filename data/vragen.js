@@ -13375,6 +13375,1056 @@ uitleg:"Het Pieterpad loopt door meerdere Drentse gebieden."
 {
 categorie:"Kids groep 8 Lagere school",
 
+vraag:"Welke hoofdstad ligt aan de rivier de Tiber?",
+
+a:"Rome",
+b:"Madrid",
+c:"Athene",
+
+correct:"a",
+
+uitleg:"Rome, de hoofdstad van Italië, ligt aan de rivier de Tiber."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk land ligt tussen Frankrijk en Spanje in de Pyreneeën?",
+
+a:"Andorra",
+b:"Monaco",
+c:"Liechtenstein",
+
+correct:"a",
+
+uitleg:"Andorra is een klein land in de Pyreneeën tussen Frankrijk en Spanje."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke rivier stroomt door de Nederlandse stad Maastricht?",
+
+a:"De Maas",
+b:"De IJssel",
+c:"De Waal",
+
+correct:"a",
+
+uitleg:"De Maas stroomt door Maastricht en verder door Nederland."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk werelddeel heeft de meeste landen?",
+
+a:"Afrika",
+b:"Europa",
+c:"Zuid-Amerika",
+
+correct:"a",
+
+uitleg:"Afrika telt meer onafhankelijke landen dan de andere werelddelen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke hoofdstad hoort bij Nieuw-Zeeland?",
+
+a:"Auckland",
+b:"Wellington",
+c:"Sydney",
+
+correct:"b",
+
+uitleg:"Wellington is de hoofdstad van Nieuw-Zeeland; Auckland is de grootste stad."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk land wordt door de evenaar doorsneden?",
+
+a:"Ecuador",
+b:"Spanje",
+c:"Canada",
+
+correct:"a",
+
+uitleg:"De evenaar loopt door Ecuador in Zuid-Amerika."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom is er op de top van een zeer hoge berg minder zuurstof beschikbaar voor je lichaam?",
+
+a:"Omdat de luchtdruk lager is en er per ademteug minder zuurstofmoleculen binnenkomen",
+b:"Omdat zuurstof alleen dicht bij zee wordt gemaakt",
+c:"Omdat koude lucht helemaal geen zuurstof bevat",
+
+correct:"a",
+
+uitleg:"Op grote hoogte is de luchtdruk lager. Daardoor bevat eenzelfde volume ingeademde lucht minder zuurstofmoleculen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zeestraat scheidt Spanje van Marokko?",
+
+a:"De Straat van Gibraltar",
+b:"Het Kanaal",
+c:"De Bosporus",
+
+correct:"a",
+
+uitleg:"De Straat van Gibraltar ligt tussen Zuid-Spanje en Noord-Marokko."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat geeft een schaal van 1 : 50.000 op een kaart aan?",
+
+a:"1 cm op de kaart is 500 meter in werkelijkheid",
+b:"1 cm op de kaart is 50 meter in werkelijkheid",
+c:"1 cm op de kaart is 5 kilometer in werkelijkheid",
+
+correct:"a",
+
+uitleg:"Bij schaal 1 : 50.000 is 1 cm gelijk aan 50.000 cm, oftewel 500 meter."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke richting ligt precies tegenover het zuidoosten?",
+
+a:"Noordwesten",
+b:"Noordoosten",
+c:"Zuidwesten",
+
+correct:"a",
+
+uitleg:"De tegenovergestelde windrichting van zuidoost is noordwest."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Which sentence correctly describes something happening right now?",
+
+a:"I read a book right now.",
+b:"I am reading a book right now.",
+c:"I have read a book tomorrow.",
+
+correct:"b",
+
+uitleg:"Voor iets dat op dit moment bezig is, gebruik je vaak de present continuous: 'I am reading'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"What does 'borrow' mean?",
+
+a:"lenen",
+b:"betalen",
+c:"vergeten",
+
+correct:"a",
+
+uitleg:"'Borrow' betekent iets lenen van iemand."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Choose the correct word: 'There isn't ___ milk left in the fridge.'",
+
+a:"many",
+b:"much",
+c:"few",
+
+correct:"b",
+
+uitleg:"Bij een niet-telbaar zelfstandig naamwoord zoals 'milk' gebruik je 'much'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Which sentence means 'Wij waren te laat voor de bus'?",
+
+a:"We were too late for the bus.",
+b:"We are too late for the bus yesterday.",
+c:"We was late to the bus.",
+
+correct:"a",
+
+uitleg:"'We were too late for the bus' is de correcte Engelse vertaling."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"What is the opposite of 'dangerous'?",
+
+a:"safe",
+b:"difficult",
+c:"strong",
+
+correct:"a",
+
+uitleg:"'Safe' betekent veilig en is het tegenovergestelde van 'dangerous'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Which word completes the sentence: 'If it rains, I ___ my umbrella.'?",
+
+a:"use",
+b:"used yesterday",
+c:"am use",
+
+correct:"a",
+
+uitleg:"In deze eenvoudige voorwaardelijke zin kan 'use' in de tegenwoordige tijd worden gebruikt."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"What does 'Could you help me, please?' mean?",
+
+a:"Kun je me alsjeblieft helpen?",
+b:"Heb je mij gisteren geholpen?",
+c:"Waarom help je niemand?",
+
+correct:"a",
+
+uitleg:"'Could you help me, please?' is een beleefde manier om hulp te vragen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Which English word means 'omgeving' in the sense of the natural world around us?",
+
+a:"environment",
+b:"appointment",
+c:"equipment",
+
+correct:"a",
+
+uitleg:"'Environment' betekent omgeving of milieu."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een zwembad is 25 meter lang. Noor zwemt 18 banen. Welke afstand zwemt zij?",
+
+a:"400 meter",
+b:"450 meter",
+c:"500 meter",
+
+correct:"b",
+
+uitleg:"18 × 25 meter = 450 meter."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een tablet kost €320. De prijs stijgt met 5%. Wat is de nieuwe prijs?",
+
+a:"€325",
+b:"€336",
+c:"€340",
+
+correct:"b",
+
+uitleg:"5% van €320 is €16. De nieuwe prijs is €336."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"In welke zin is 'die' een aanwijzend voornaamwoord?",
+
+a:"Die fiets is van mijn broer.",
+b:"De jongen die daar loopt, zwaait.",
+c:"Ik weet niet wie die jongen is.",
+
+correct:"a",
+
+uitleg:"In 'Die fiets' wijst 'die' rechtstreeks een zelfstandig naamwoord aan en is het een aanwijzend voornaamwoord."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is een kenmerk van een betrouwbare informatieve tekst?",
+
+a:"De informatie is controleerbaar en bronnen kunnen worden genoemd",
+b:"De schrijver gebruikt zoveel mogelijk uitroeptekens",
+c:"De tekst bevat alleen persoonlijke meningen",
+
+correct:"a",
+
+uitleg:"Bij een betrouwbare informatieve tekst moet informatie controleerbaar zijn en kunnen bronnen de informatie ondersteunen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom zien we verschillende maanfasen, zoals eerste kwartier en volle maan?",
+
+a:"Omdat we vanaf de aarde verschillende delen van de verlichte helft van de maan zien",
+b:"Omdat de maan elke week van vorm verandert",
+c:"Omdat de aarde telkens een stuk van de maan afdekt",
+
+correct:"a",
+
+uitleg:"De zon verlicht steeds ongeveer de helft van de maan. Door de veranderende stand van maan, aarde en zon zien wij verschillende delen daarvan."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een doos bevat 48 potloden. Drie achtste deel daarvan is rood. Hoeveel rode potloden zijn er?",
+
+a:"16",
+b:"18",
+c:"20",
+
+correct:"b",
+
+uitleg:"48 ÷ 8 = 6 en 3 × 6 = 18 rode potloden."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Op een kaart met schaal 1 : 25.000 liggen twee plaatsen 6 cm uit elkaar. Hoe groot is de werkelijke afstand?",
+
+a:"750 meter",
+b:"1.500 meter",
+c:"15 kilometer",
+
+correct:"b",
+
+uitleg:"1 cm is bij schaal 1 : 25.000 gelijk aan 250 meter. 6 × 250 = 1.500 meter."
+},
+  
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke hoofdstad ligt aan de rivier de Donau en is de hoofdstad van Hongarije?",
+
+a:"Boedapest",
+b:"Praag",
+c:"Warschau",
+
+correct:"a",
+
+uitleg:"Boedapest is de hoofdstad van Hongarije en ligt aan de Donau."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk gebergte loopt door onder andere Zwitserland en Oostenrijk?",
+
+a:"De Alpen",
+b:"De Oeral",
+c:"De Apennijnen",
+
+correct:"a",
+
+uitleg:"De Alpen strekken zich uit over meerdere Europese landen, waaronder Zwitserland en Oostenrijk."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zee ligt tussen Zuid-Europa en Noord-Afrika?",
+
+a:"De Middellandse Zee",
+b:"De Noordzee",
+c:"De Kaspische Zee",
+
+correct:"a",
+
+uitleg:"De Middellandse Zee ligt tussen Europa, Afrika en Azië."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk land ligt direct ten noorden van Duitsland?",
+
+a:"Denemarken",
+b:"Zwitserland",
+c:"Tsjechië",
+
+correct:"a",
+
+uitleg:"Denemarken grenst aan de noordkant van Duitsland."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke grote woestijn ligt in het noorden van Afrika?",
+
+a:"De Gobi",
+b:"De Sahara",
+c:"De Kalahari",
+
+correct:"b",
+
+uitleg:"De Sahara beslaat een groot deel van Noord-Afrika."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke Canadese stad is de zetel van de federale regering?",
+
+a:"Toronto",
+b:"Ottawa",
+c:"Calgary",
+
+correct:"b",
+
+uitleg:"Ottawa is de hoofdstad van Canada en de zetel van de federale regering."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom zijn dag en nacht rond de evenaar gedurende het jaar ongeveer even lang?",
+
+a:"Omdat de evenaar het hele jaar relatief gelijkmatig door de zon wordt belicht",
+b:"Omdat de aarde bij de evenaar niet draait",
+c:"Omdat de zon alleen boven de evenaar beweegt",
+
+correct:"a",
+
+uitleg:"Door de ligging rond 0 graden breedte varieert de daglengte bij de evenaar veel minder dan op hogere breedtegraden."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke oceaan ligt ten oosten van Afrika en ten westen van Australië?",
+
+a:"De Atlantische Oceaan",
+b:"De Indische Oceaan",
+c:"De Noordelijke IJszee",
+
+correct:"b",
+
+uitleg:"De Indische Oceaan ligt tussen Afrika, Azië en Australië."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat betekent een bevolkingsdichtheid van 200 inwoners per km²?",
+
+a:"Er wonen gemiddeld 200 mensen op elke vierkante kilometer",
+b:"Iedere plaats heeft precies 200 inwoners",
+c:"Er wonen 200 mensen langs elke kilometer weg",
+
+correct:"a",
+
+uitleg:"Bevolkingsdichtheid geeft het gemiddelde aantal inwoners per vierkante kilometer aan."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke Nederlandse provincie heeft Leeuwarden als hoofdstad?",
+
+a:"Groningen",
+b:"Friesland",
+c:"Overijssel",
+
+correct:"b",
+
+uitleg:"Leeuwarden is de hoofdstad van de provincie Friesland."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Choose the correct word: 'My sister is ___ than I am.'",
+
+a:"tall",
+b:"taller",
+c:"tallest",
+
+correct:"b",
+
+uitleg:"Bij een vergelijking tussen twee personen gebruik je 'taller than'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"What does 'usually' mean in Dutch?",
+
+a:"gewoonlijk",
+b:"plotseling",
+c:"zelden",
+
+correct:"a",
+
+uitleg:"'Usually' betekent 'gewoonlijk' of 'meestal'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Which sentence is correct?",
+
+a:"They were at home last night.",
+b:"They was at home last night.",
+c:"They are at home last night.",
+
+correct:"a",
+
+uitleg:"Bij 'they' gebruik je in de verleden tijd van 'to be' het woord 'were'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"What is the English word for 'bibliotheek'?",
+
+a:"bookshop",
+b:"library",
+c:"classroom",
+
+correct:"b",
+
+uitleg:"Het Engelse woord voor 'bibliotheek' is 'library'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Choose the correct answer: 'How much water do you drink?'",
+
+a:"About two litres a day.",
+b:"At seven o'clock.",
+c:"With my brother.",
+
+correct:"a",
+
+uitleg:"'How much' vraagt naar een hoeveelheid; 'about two litres a day' geeft een hoeveelheid aan."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"What does the sentence 'Turn left at the traffic lights' mean?",
+
+a:"Ga bij de verkeerslichten rechtdoor",
+b:"Sla bij de verkeerslichten linksaf",
+c:"Stop vóór de verkeerslichten",
+
+correct:"b",
+
+uitleg:"'Turn left' betekent 'sla linksaf' en 'traffic lights' betekent 'verkeerslichten'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Which word completes the sentence: 'We have lived here ___ 2022.'?",
+
+a:"for",
+b:"since",
+c:"during",
+
+correct:"b",
+
+uitleg:"'Since' gebruik je bij een specifiek beginpunt in de tijd, zoals 2022."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"What is the plural of 'child'?",
+
+a:"childs",
+b:"childes",
+c:"children",
+
+correct:"c",
+
+uitleg:"'Children' is het onregelmatige meervoud van 'child'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een winkel verkoopt 240 schriften. Daarvan wordt 35% op maandag verkocht. Hoeveel schriften zijn dat?",
+
+a:"74",
+b:"84",
+c:"94",
+
+correct:"b",
+
+uitleg:"35% van 240 is 0,35 × 240 = 84."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een rechthoekig schoolplein is 25 meter lang en 18 meter breed. Hoeveel meter hek is nodig om het hele plein?",
+
+a:"43 meter",
+b:"86 meter",
+c:"450 meter",
+
+correct:"b",
+
+uitleg:"De omtrek is 2 × 25 + 2 × 18 = 86 meter."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zin bevat een persoonlijk voornaamwoord?",
+
+a:"Zij leest elke avond een boek.",
+b:"De vrolijke leerling leest.",
+c:"Het dikke boek ligt boven.",
+
+correct:"a",
+
+uitleg:"'Zij' verwijst naar een persoon en is een persoonlijk voornaamwoord."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat betekent 'samenvatten'?",
+
+a:"De belangrijkste informatie kort weergeven",
+b:"Een tekst woord voor woord overschrijven",
+c:"Alle moeilijke woorden verwijderen",
+
+correct:"a",
+
+uitleg:"Bij samenvatten geef je de belangrijkste informatie uit een tekst kort weer."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke planeet heeft de kortste omlooptijd rond de zon?",
+
+a:"Mercurius",
+b:"Venus",
+c:"Mars",
+
+correct:"a",
+
+uitleg:"Mercurius staat het dichtst bij de zon en voltooit van de planeten het snelst een omloop: in ongeveer 88 dagen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom ontstaat er wind?",
+
+a:"Door verschillen in luchtdruk",
+b:"Doordat bomen de lucht wegduwen",
+c:"Omdat wolken de aarde ronddraaien",
+
+correct:"a",
+
+uitleg:"Lucht stroomt van gebieden met hogere luchtdruk naar gebieden met lagere luchtdruk; dat ervaren we als wind."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een auto gebruikt 6 liter brandstof per 100 kilometer. Hoeveel liter gebruikt hij voor 350 kilometer?",
+
+a:"18 liter",
+b:"21 liter",
+c:"24 liter",
+
+correct:"b",
+
+uitleg:"350 kilometer is 3,5 × 100 kilometer. 3,5 × 6 = 21 liter."
+},
+  
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke denkbeeldige lijn ligt op ongeveer 23,5 graden noorderbreedte?",
+
+a:"De Kreeftskeerkring",
+b:"De Steenbokskeerkring",
+c:"De nulmeridiaan",
+
+correct:"a",
+
+uitleg:"De Kreeftskeerkring ligt op ongeveer 23,5 graden noorderbreedte."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke rivier stroomt door Parijs?",
+
+a:"De Donau",
+b:"De Seine",
+c:"De Elbe",
+
+correct:"b",
+
+uitleg:"De Seine stroomt door de Franse hoofdstad Parijs."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk land ligt op het Iberisch Schiereiland?",
+
+a:"Portugal",
+b:"Polen",
+c:"Oostenrijk",
+
+correct:"a",
+
+uitleg:"Portugal en Spanje liggen op het Iberisch Schiereiland."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke bergketen vormt een natuurlijke grens tussen Frankrijk en Spanje?",
+
+a:"De Alpen",
+b:"De Pyreneeën",
+c:"De Karpaten",
+
+correct:"b",
+
+uitleg:"De Pyreneeën liggen tussen Frankrijk en Spanje."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke hoofdstad ligt aan de rivier de Theems?",
+
+a:"Dublin",
+b:"Londen",
+c:"Brussel",
+
+correct:"b",
+
+uitleg:"De Theems stroomt door Londen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"In welk werelddeel ligt het grootste deel van het Amazonegebied?",
+
+a:"Zuid-Amerika",
+b:"Afrika",
+c:"Azië",
+
+correct:"a",
+
+uitleg:"Het Amazonegebied ligt grotendeels in Zuid-Amerika, vooral in Brazilië."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk land heeft de vorm van een lange, smalle strook langs de westkust van Zuid-Amerika?",
+
+a:"Chili",
+b:"Peru",
+c:"Uruguay",
+
+correct:"a",
+
+uitleg:"Chili strekt zich als een lange, smalle strook uit langs de westkant van Zuid-Amerika."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom is het op hoge bergen meestal kouder dan in het dal?",
+
+a:"Omdat de luchttemperatuur gemiddeld daalt met de hoogte",
+b:"Omdat bergen verder van de maan staan",
+c:"Omdat er op bergen geen zonlicht komt",
+
+correct:"a",
+
+uitleg:"In de onderste laag van de atmosfeer neemt de temperatuur gemiddeld af naarmate je hoger komt."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke Nederlandse provincie grenst zowel aan Duitsland als aan België?",
+
+a:"Gelderland",
+b:"Limburg",
+c:"Noord-Brabant",
+
+correct:"b",
+
+uitleg:"Limburg grenst in het oosten aan Duitsland en in het zuiden en westen aan België."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Wat is een delta bij een rivier?",
+
+a:"Een gebied bij de monding waar een rivier zich vaak in meerdere takken splitst",
+b:"Het hoogste punt waar een rivier begint",
+c:"Een ondergrondse tunnel waardoor een rivier stroomt",
+
+correct:"a",
+
+uitleg:"Een delta ontstaat bij de monding wanneer sediment wordt afgezet en de rivier zich vaak vertakt."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Choose the correct sentence.",
+
+a:"She can swims very fast.",
+b:"She can swim very fast.",
+c:"She cans swim very fast.",
+
+correct:"b",
+
+uitleg:"Na het hulpwerkwoord 'can' gebruik je het hele werkwoord zonder -s: 'swim'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"What does 'I am looking forward to the holiday' mean?",
+
+a:"Ik zie op tegen de vakantie",
+b:"Ik verheug me op de vakantie",
+c:"Ik zoek naar een vakantiewoning",
+
+correct:"b",
+
+uitleg:"'To look forward to' betekent dat je je ergens op verheugt."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Which word correctly completes the sentence: 'There ___ many people in the park yesterday'?",
+
+a:"was",
+b:"were",
+c:"is",
+
+correct:"b",
+
+uitleg:"Bij het meervoud 'many people' gebruik je in de verleden tijd 'were'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"What is the opposite of 'expensive'?",
+
+a:"cheap",
+b:"heavy",
+c:"empty",
+
+correct:"a",
+
+uitleg:"'Cheap' betekent goedkoop en is het tegenovergestelde van 'expensive'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Which sentence asks for permission?",
+
+a:"May I open the window?",
+b:"I opened the window.",
+c:"The window is open.",
+
+correct:"a",
+
+uitleg:"'May I ...?' wordt gebruikt om beleefd toestemming te vragen."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"What does the English word 'neighbour' mean?",
+
+a:"reiziger",
+b:"buurman of buurvrouw",
+c:"leraar",
+
+correct:"b",
+
+uitleg:"'Neighbour' betekent buurman of buurvrouw."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Choose the correct past tense of: 'We see a rainbow.'",
+
+a:"We saw a rainbow.",
+b:"We seed a rainbow.",
+c:"We seen a rainbow.",
+
+correct:"a",
+
+uitleg:"De verleden tijd van het onregelmatige werkwoord 'see' is 'saw'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Which question matches the answer: 'Because I was tired'?",
+
+a:"Why did you go to bed early?",
+b:"Where did you sleep?",
+c:"What time is breakfast?",
+
+correct:"a",
+
+uitleg:"Een antwoord dat met 'because' begint, geeft een reden en past bij een vraag met 'why'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een watertank is voor 65% gevuld. Er zit 390 liter water in. Hoeveel liter kan de tank bevatten als hij helemaal vol is?",
+
+a:"500 liter",
+b:"600 liter",
+c:"650 liter",
+
+correct:"b",
+
+uitleg:"390 liter is 65%. 390 ÷ 0,65 = 600 liter."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een hardloper loopt 5 rondes van 800 meter. Hoeveel kilometer heeft hij gelopen?",
+
+a:"3 kilometer",
+b:"4 kilometer",
+c:"4,8 kilometer",
+
+correct:"b",
+
+uitleg:"5 × 800 meter = 4.000 meter = 4 kilometer."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welke zin bevat een voltooid deelwoord?",
+
+a:"De kinderen bouwen een hut.",
+b:"De kinderen hebben een hut gebouwd.",
+c:"De kinderen bouwen morgen een hut.",
+
+correct:"b",
+
+uitleg:"'Gebouwd' is het voltooid deelwoord van 'bouwen'."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk woord past het best bij de betekenis 'iets nauwkeurig onderzoeken'?",
+
+a:"analyseren",
+b:"versieren",
+c:"verplaatsen",
+
+correct:"a",
+
+uitleg:"'Analyseren' betekent iets zorgvuldig onderzoeken en in onderdelen bekijken."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Waarom ontstaan de seizoenen op aarde?",
+
+a:"Door de schuine stand van de aardas en de omloop van de aarde om de zon",
+b:"Doordat de afstand tot de zon elke maand sterk verandert",
+c:"Doordat de maan de aarde afwisselend verwarmt en afkoelt",
+
+correct:"a",
+
+uitleg:"De schuine aardas zorgt tijdens de jaarlijkse omloop om de zon voor verschillen in invalshoek en daglengte."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Welk verschijnsel zorgt ervoor dat water uit zeeën en meren in de lucht terechtkomt?",
+
+a:"Condensatie",
+b:"Verdamping",
+c:"Neerslag",
+
+correct:"b",
+
+uitleg:"Door verdamping verandert vloeibaar water in waterdamp en komt het in de lucht terecht."
+},
+
+{
+categorie:"Kids groep 8 Lagere school",
+
+vraag:"Een klas zamelt €288 in. Het bedrag wordt gelijk verdeeld over 12 goede doelen. Hoeveel krijgt elk goed doel?",
+
+a:"€22",
+b:"€24",
+c:"€26",
+
+correct:"b",
+
+uitleg:"€288 ÷ 12 = €24 per goed doel."
+},
+  
+{
+categorie:"Kids groep 8 Lagere school",
+
 vraag:"Een museum ontvangt op zaterdag 840 bezoekers. Op zondag komen er 15% meer. Hoeveel bezoekers komen er zondag?",
 
 a:"936",
