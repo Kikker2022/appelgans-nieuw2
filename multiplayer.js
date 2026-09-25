@@ -8,6 +8,7 @@
 
 const PLAYER_STORAGE_PREFIX = "appelgansPlayer_";
 const DISCONNECTED_TURN_WAIT_MS = 30000;
+const HOST_SKIP_DECISION_MS = 30000;
 
 function getPlayerStorageKey(code) {
     return PLAYER_STORAGE_PREFIX + String(code).trim();
@@ -78,17 +79,128 @@ function findConnectedPlayerForTeam(players, team) {
     return null;
 }
 
-function advancePastDisconnectedTeam(code) {
+function getOfflineTeamLabel(team) {
+    const colors = ["🔵 Blauw", "🔴 Rood", "🟢 Groen", "🟣 Paars"];
+    return colors[parseInt(team, 10)] || ("Team " + (parseInt(team, 10) + 1));
+}
 
+function removeOfflineWaitBanner() {
+    const banner = document.getElementById("offlineWaitBanner");
+    if (banner) banner.remove();
+}
+
+function renderOfflineWaitBanner(game) {
+    const wait = game && game.offlineTurnWait;
+
+    if (!wait || parseInt(wait.team, 10) !== parseInt(game.currentTurn, 10)) {
+        removeOfflineWaitBanner();
+        return;
+    }
+
+    let banner = document.getElementById("offlineWaitBanner");
+    if (!banner) {
+        banner = document.createElement("div");
+        banner.id = "offlineWaitBanner";
+        banner.style.position = "fixed";
+        banner.style.left = "50%";
+        banner.style.bottom = "18px";
+        banner.style.transform = "translateX(-50%)";
+        banner.style.zIndex = "99999";
+        banner.style.width = "min(92vw, 520px)";
+        banner.style.padding = "14px";
+        banner.style.borderRadius = "14px";
+        banner.style.background = "rgba(255,255,255,0.97)";
+        banner.style.boxShadow = "0 4px 18px rgba(0,0,0,0.28)";
+        banner.style.textAlign = "center";
+        banner.style.fontWeight = "700";
+        document.body.appendChild(banner);
+    }
+
+    const remaining = Math.max(0, Math.ceil((Number(wait.deadline) - Date.now()) / 1000));
+    const label = getOfflineTeamLabel(wait.team);
+
+    banner.innerHTML = "";
+
+    const text = document.createElement("div");
+    text.innerText = "⚠️ " + label + " is nog offline. Host kan dit team nog " + remaining + " sec. de tijd geven of nu overslaan.";
+    banner.appendChild(text);
+
+    if (window.isHost) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.innerText = "Team nu overslaan";
+        button.style.marginTop = "10px";
+        button.style.padding = "10px 16px";
+        button.style.fontWeight = "700";
+        button.onclick = () => advancePastDisconnectedTeam(window.currentGameCode, wait.team);
+        banner.appendChild(button);
+    }
+}
+
+function clearOfflineTurnWait(code, expectedTeam) {
     if (!code) return;
 
     firebase.database()
         .ref("games/" + code)
         .transaction(game => {
+            if (!game || !game.offlineTurnWait) return;
 
-            if (!game || game.gameState !== "playing") {
+            if (
+                expectedTeam !== undefined &&
+                parseInt(game.offlineTurnWait.team, 10) !== parseInt(expectedTeam, 10)
+            ) {
                 return;
             }
+
+            const copy = { ...game };
+            delete copy.offlineTurnWait;
+            return copy;
+        })
+        .catch(error => console.warn("Offline wachttijd kon niet worden gewist:", error));
+}
+
+function startHostDecisionWindow(code, expectedTeam) {
+    if (!code) return;
+
+    firebase.database()
+        .ref("games/" + code)
+        .transaction(game => {
+            if (!game || game.gameState !== "playing") return;
+
+            const current = parseInt(game.currentTurn, 10);
+            if (current !== parseInt(expectedTeam, 10)) return;
+
+            // Telefoon is binnen de eerste 30 seconden teruggekomen.
+            if (findConnectedPlayerForTeam(game.players, current)) return;
+
+            // Tweede wachttijd bestaat al.
+            if (
+                game.offlineTurnWait &&
+                parseInt(game.offlineTurnWait.team, 10) === current
+            ) {
+                return;
+            }
+
+            const now = Date.now();
+            return {
+                ...game,
+                offlineTurnWait: {
+                    team: current,
+                    startedAt: now,
+                    deadline: now + HOST_SKIP_DECISION_MS
+                }
+            };
+        })
+        .catch(error => console.warn("Tweede offline wachttijd kon niet starten:", error));
+}
+
+function advancePastDisconnectedTeam(code, expectedTeam) {
+    if (!code) return;
+
+    firebase.database()
+        .ref("games/" + code)
+        .transaction(game => {
+            if (!game || game.gameState !== "playing") return;
 
             if (game.phase !== "turn" && game.phase !== "rolled" && game.phase !== "question") {
                 return;
@@ -97,31 +209,28 @@ function advancePastDisconnectedTeam(code) {
             const teamCount = parseInt(game.activeTeams, 10) || 0;
             const current = parseInt(game.currentTurn, 10);
 
-            if (teamCount < 1 || !Number.isInteger(current)) {
-                return;
-            }
+            if (teamCount < 1 || !Number.isInteger(current)) return;
+            if (expectedTeam !== undefined && current !== parseInt(expectedTeam, 10)) return;
 
-            // Alleen overslaan als de huidige speler echt offline is.
+            // Nooit overslaan als de telefoon inmiddels weer online is.
             if (findConnectedPlayerForTeam(game.players, current)) {
-                return;
+                const copy = { ...game };
+                delete copy.offlineTurnWait;
+                return copy;
             }
 
             let next = current;
-
             for (let i = 1; i <= teamCount; i++) {
                 const candidate = (current + i) % teamCount;
-
                 if (findConnectedPlayerForTeam(game.players, candidate)) {
                     next = candidate;
                     break;
                 }
             }
 
-            if (next === current) {
-                return;
-            }
+            if (next === current) return;
 
-            return {
+            const updated = {
                 ...game,
                 currentTurn: next,
                 phase: "turn",
@@ -129,35 +238,64 @@ function advancePastDisconnectedTeam(code) {
                 questionIndex: null,
                 disconnectedTurnSkippedAt: Date.now()
             };
+            delete updated.offlineTurnWait;
+            return updated;
         })
-        .catch(error => {
-            console.warn("Offline beurt kon niet worden overgeslagen:", error);
-        });
+        .catch(error => console.warn("Offline beurt kon niet worden overgeslagen:", error));
 }
 
 function monitorCurrentPlayer(code, game) {
-
-    if (!code || !game || game.gameState !== "playing") return;
+    if (!code || !game || game.gameState !== "playing") {
+        removeOfflineWaitBanner();
+        return;
+    }
 
     const current = parseInt(game.currentTurn, 10);
     const playerId = findConnectedPlayerForTeam(game.players, current);
 
-    if (playerId) return;
+    // Speler is terug: een eventuele tweede wachttijd vervalt direct.
+    if (playerId) {
+        window._disconnectTimerMarker = null;
+        window._autoSkipTimerMarker = null;
+        removeOfflineWaitBanner();
+        if (game.offlineTurnWait) clearOfflineTurnWait(code, current);
+        return;
+    }
 
-    // Geef een korte herstelperiode. Daardoor kan een telefoon met
-    // een tijdelijke verbinding niet direct zijn beurt verliezen.
-    const marker =
-        String(code) + "_" +
-        String(current) + "_" +
-        String(game.phase || "");
+    // FASE 2: na de eerste 30 seconden krijgt de host nog 30 seconden.
+    if (
+        game.offlineTurnWait &&
+        parseInt(game.offlineTurnWait.team, 10) === current
+    ) {
+        renderOfflineWaitBanner(game);
 
+        const deadline = Number(game.offlineTurnWait.deadline) || 0;
+        const remaining = Math.max(0, deadline - Date.now());
+        const marker = String(code) + "_auto_" + String(current) + "_" + String(deadline);
+
+        if (window._autoSkipTimerMarker !== marker) {
+            window._autoSkipTimerMarker = marker;
+            setTimeout(() => {
+                window._autoSkipTimerMarker = null;
+                advancePastDisconnectedTeam(code, current);
+            }, remaining);
+        }
+        return;
+    }
+
+    removeOfflineWaitBanner();
+
+    // FASE 1: eerst 30 seconden alleen tijd geven om opnieuw te verbinden.
+    const marker = String(code) + "_reconnect_" + String(current);
     if (window._disconnectTimerMarker === marker) return;
 
     window._disconnectTimerMarker = marker;
 
     setTimeout(() => {
-        window._disconnectTimerMarker = null;
-        advancePastDisconnectedTeam(code);
+        if (window._disconnectTimerMarker === marker) {
+            window._disconnectTimerMarker = null;
+            startHostDecisionWindow(code, current);
+        }
     }, DISCONNECTED_TURN_WAIT_MS);
 }
 
