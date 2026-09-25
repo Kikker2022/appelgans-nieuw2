@@ -84,6 +84,48 @@ function getOfflineTeamLabel(team) {
     return colors[parseInt(team, 10)] || ("Team " + (parseInt(team, 10) + 1));
 }
 
+function showClearTurnIndicator(isMyTurn) {
+
+    if (!statusMessage) return;
+
+    const teamIndex = parseInt(currentTeam, 10);
+    const team = teams[teamIndex];
+
+    if (!team) return;
+
+    const teamName = team.name || ("Team " + (teamIndex + 1));
+    const colorName = (team.colorName || "").toUpperCase();
+    const icon = team.icon || "";
+
+    statusMessage.style.display = "block";
+    statusMessage.style.width = "min(92vw, 520px)";
+    statusMessage.style.boxSizing = "border-box";
+    statusMessage.style.margin = "14px auto";
+    statusMessage.style.padding = "14px 12px";
+    statusMessage.style.borderRadius = "14px";
+    statusMessage.style.textAlign = "center";
+    statusMessage.style.fontSize = "clamp(1.05rem, 4.8vw, 1.45rem)";
+    statusMessage.style.fontWeight = "800";
+    statusMessage.style.lineHeight = "1.35";
+    statusMessage.style.background = "rgba(255,255,255,0.96)";
+    statusMessage.style.border = "3px solid " + (team.color || "#333");
+    statusMessage.style.boxShadow = "0 3px 12px rgba(0,0,0,0.16)";
+
+    if (isMyTurn) {
+        statusMessage.innerText =
+            icon + " " +
+            colorName + " – " +
+            teamName +
+            "\n🎲 JIJ BENT AAN DE BEURT";
+    } else {
+        statusMessage.innerText =
+            "⏳ Wachten op " +
+            icon + " " +
+            colorName + " – " +
+            teamName;
+    }
+}
+
 function removeOfflineWaitBanner() {
     const banner = document.getElementById("offlineWaitBanner");
     if (banner) banner.remove();
@@ -805,13 +847,11 @@ function listenToGameState() {
                     parseInt(window.myTeam, 10)
                 ) {
 
-                    statusMessage.innerText =
-                        "🎲 Jij bent aan de beurt.";
+                    showClearTurnIndicator(true);
 
                 } else {
 
-                    statusMessage.innerText =
-                        "⏳ Wacht op je beurt.";
+                    showClearTurnIndicator(false);
                 }
 
                 renderSynchronizedBoard();
