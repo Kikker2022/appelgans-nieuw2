@@ -812,6 +812,26 @@ function listenToGameState() {
 
             console.log("🔥 GAME DATA:", game);
 
+            if (
+                game.gameState === "finished" &&
+                game.winnerTeam !== undefined
+            ) {
+                const winnerIndex =
+                    parseInt(game.winnerTeam,10);
+
+                if (
+                    teams[winnerIndex] &&
+                    typeof showFinishCelebration === "function"
+                ) {
+                    showScreen(screen3);
+                    showFinishCelebration(
+                        teams[winnerIndex]
+                    );
+                }
+
+                return;
+            }
+
             window.gamePaused = game.gamePaused === true;
             window.gameSoundEnabled = game.soundEnabled !== false;
 
