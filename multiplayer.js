@@ -664,6 +664,110 @@ function listenToPlayers(code) {
         });
 }
 
+
+/* ===== PUNT 7: HOST-INSTELLINGEN ===== */
+function isAppelgansHost(){
+    return window.myPlayerId === "host";
+}
+
+function ensureHostSettingsPanel(){
+    let button=document.getElementById("hostSettingsButton");
+    let panel=document.getElementById("hostSettingsPanel");
+
+    if(!isAppelgansHost()){
+        if(button) button.style.display="none";
+        if(panel) panel.style.display="none";
+        return;
+    }
+
+    if(!button){
+        button=document.createElement("button");
+        button.id="hostSettingsButton";
+        button.innerText="⚙️ Instellingen";
+        button.style.cssText="position:fixed;right:12px;bottom:12px;z-index:9997;padding:10px 14px;border-radius:12px;font-weight:800;";
+        button.onclick=()=>{
+            const p=document.getElementById("hostSettingsPanel");
+            if(p) p.style.display=p.style.display==="block"?"none":"block";
+        };
+        document.body.appendChild(button);
+    }
+    button.style.display="block";
+
+    if(!panel){
+        panel=document.createElement("div");
+        panel.id="hostSettingsPanel";
+        panel.style.cssText="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(90vw,420px);box-sizing:border-box;padding:18px;background:white;border:3px solid #333;border-radius:16px;z-index:9998;box-shadow:0 8px 30px rgba(0,0,0,.35);text-align:center;";
+        panel.innerHTML=`
+        <div style="font-size:1.35rem;font-weight:900;margin-bottom:14px;">⚙️ Host-instellingen</div>
+        <div id="hostSettingsInfo" style="margin-bottom:14px;line-height:1.5;font-weight:700;"></div>
+        <button id="hostSkipCurrentTeam" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">⏭️ Huidig team overslaan</button>
+        <button id="hostPauseGame" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">⏸️ Spel pauzeren</button>
+        <button id="hostSoundToggle" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">🔊 Geluid aan</button>
+        <button id="hostCloseSettings" style="width:100%;padding:12px;margin-top:12px;font-weight:800;">Sluiten</button>`;
+        document.body.appendChild(panel);
+
+        document.getElementById("hostCloseSettings").onclick=()=>panel.style.display="none";
+        document.getElementById("hostSkipCurrentTeam").onclick=hostSkipCurrentTeam;
+        document.getElementById("hostPauseGame").onclick=hostTogglePause;
+        document.getElementById("hostSoundToggle").onclick=hostToggleSound;
+    }
+}
+
+function refreshHostSettings(game){
+    ensureHostSettingsPanel();
+    if(!isAppelgansHost()) return;
+
+    const info=document.getElementById("hostSettingsInfo");
+    const pauseButton=document.getElementById("hostPauseGame");
+    const soundButton=document.getElementById("hostSoundToggle");
+    const teamIndex=parseInt(game.currentTurn,10)||0;
+    const team=teams[teamIndex];
+
+    if(info){
+        info.innerText="Spelcode: "+window.currentGameCode+
+        "\nAan de beurt: "+(team?team.icon+" "+team.name:"onbekend");
+    }
+    if(pauseButton){
+        pauseButton.innerText=game.gamePaused?"▶️ Spel hervatten":"⏸️ Spel pauzeren";
+    }
+    if(soundButton){
+        soundButton.innerText=game.soundEnabled===false?"🔇 Geluid uit":"🔊 Geluid aan";
+    }
+}
+
+function hostSkipCurrentTeam(){
+    if(!isAppelgansHost()||!window.currentGameCode) return;
+
+    firebase.database().ref("games/"+window.currentGameCode).transaction(game=>{
+        if(!game||game.gameState!=="playing") return game;
+
+        const current=parseInt(game.currentTurn,10)||0;
+        const count=parseInt(game.activeTeams,10)||activeTeams||1;
+
+        game.currentTurn=(current+1)%count;
+        game.phase="turn";
+        game.roll=null;
+        game.questionIndex=null;
+        game.offlineTurnWait=null;
+        return game;
+    });
+
+    const panel=document.getElementById("hostSettingsPanel");
+    if(panel) panel.style.display="none";
+}
+
+function hostTogglePause(){
+    if(!isAppelgansHost()||!window.currentGameCode) return;
+    const ref=firebase.database().ref("games/"+window.currentGameCode+"/gamePaused");
+    ref.once("value").then(s=>ref.set(!s.val()));
+}
+
+function hostToggleSound(){
+    if(!isAppelgansHost()||!window.currentGameCode) return;
+    const ref=firebase.database().ref("games/"+window.currentGameCode+"/soundEnabled");
+    ref.once("value").then(s=>ref.set(s.val()===false));
+}
+
 function renderSynchronizedBoard() {
 
     if (typeof updateBoard === "function") {
@@ -690,6 +794,18 @@ function listenToGameState() {
             }
 
             console.log("🔥 GAME DATA:", game);
+
+            window.gamePaused = game.gamePaused === true;
+            window.gameSoundEnabled = game.soundEnabled !== false;
+
+            refreshHostSettings(game);
+
+            if (window.gamePaused) {
+                if (statusMessage) {
+                    statusMessage.innerText = "⏸️ SPEL GEPAUZEERD DOOR DE HOST";
+                }
+                return;
+            }
 
             // Als de huidige speler offline is, geef hem eerst 30 seconden
             // om opnieuw te verbinden. Daarna gaat het spel automatisch
