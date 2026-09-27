@@ -942,8 +942,8 @@ function ensureHostSettingsPanel(){
         <button id="hostCloseSettingsX"
                 type="button"
                 aria-label="Instellingen sluiten"
-                style="position:absolute;right:8px;top:6px;border:2px solid #333;background:white;border-radius:50%;width:42px;height:42px;font-size:2rem;font-weight:900;line-height:34px;cursor:pointer;padding:0;z-index:2;">
-            ×
+                style="position:absolute;right:8px;top:6px;border:3px solid #333;background:white;border-radius:50%;width:46px;height:46px;cursor:pointer;padding:0;z-index:2;display:flex;align-items:center;justify-content:center;">
+            <span style="display:block;font-family:Arial,sans-serif;font-size:34px;font-weight:900;line-height:1;color:#111;transform:translateY(-1px);">×</span>
         </button>
 
         <div style="font-size:1.35rem;font-weight:900;margin-bottom:14px;padding-right:42px;">
