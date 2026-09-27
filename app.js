@@ -439,6 +439,13 @@ function startGame() {
         updateTurn();
         showScreen(screen1);
 
+        // Na de start is de grote QR niet meer nodig.
+        // De host kan hem later via ⚙️ Instellingen weer tonen.
+        window.hostQrManuallyShown = false;
+        if (typeof hideGameQrCode === "function") {
+            hideGameQrCode(true);
+        }
+
         console.log("✅ startGame() uitgevoerd");
 
     } catch (e) {
