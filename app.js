@@ -123,6 +123,10 @@ const soundWin = new Audio("public/sounds/finish.mp3");
 function playGameSound(audio) {
     if (!audio) return;
 
+    if (window.gameSoundEnabled === false) {
+        return;
+    }
+
     try {
         audio.pause();
         audio.currentTime = 0;
@@ -699,6 +703,11 @@ function nextTurn() {
 /* ===== DOBBELEN ===== */
 
 function rollDice() {
+
+    if (window.gamePaused === true) {
+        statusMessage.innerText = "⏸️ Het spel is gepauzeerd door de host.";
+        return;
+    }
 
     if (parseInt(currentTeam, 10) !== parseInt(window.myTeam, 10)) {
         statusMessage.innerText = "⏳ Wacht op je beurt.";
