@@ -367,14 +367,20 @@ showScreen(screen0);
 
 }
 
-function showPopup(text){
+function showPopup(text, duration = 4000){
 
 popup.innerText = text;
 popup.style.display = "block";
+popup.style.fontSize = "clamp(1.25rem, 6vw, 2rem)";
+popup.style.fontWeight = "900";
+popup.style.lineHeight = "1.35";
+popup.style.textAlign = "center";
+popup.style.padding = "18px";
+popup.style.zIndex = "9999";
 
 setTimeout(()=>{
 popup.style.display = "none";
-},3000);
+},duration);
 
 }
 
@@ -449,10 +455,30 @@ if (tileIcon) {
         "100%";
 
     tileIcon.style.fontSize =
-        "clamp(2rem, 9vw, 3.2rem)";
+        "clamp(2.8rem, 11vw, 4.6rem)";
 
     tileIcon.style.lineHeight =
         "1";
+
+    tileIcon.style.position = "absolute";
+    tileIcon.style.inset = "0";
+    tileIcon.style.pointerEvents = "none";
+    tileIcon.style.zIndex = "1";
+
+    cell.style.position = "relative";
+
+    const numberDiv = cell.querySelector("div");
+    if (numberDiv) {
+        numberDiv.style.position = "relative";
+        numberDiv.style.zIndex = "2";
+        numberDiv.style.fontWeight = "bold";
+    }
+
+    const pawnsDiv = cell.querySelector(".pawns");
+    if (pawnsDiv) {
+        pawnsDiv.style.position = "relative";
+        pawnsDiv.style.zIndex = "3";
+    }
 
 }
 
@@ -1107,6 +1133,8 @@ statusMessage.innerText =
 team.icon +
 " landde op een gans! +6";
 
+showPopup("🪿 GANS!\n" + team.icon + " " + team.name + "\n6 vakken vooruit", 4000);
+
 await sleep(1500);
 
 for(let i=0; i<6; i++){
@@ -1135,6 +1163,8 @@ statusMessage.innerText =
 team.icon +
 " over de brug naar vak 30!";
 
+showPopup("🌉 BRUG!\n" + team.icon + " " + team.name + "\nGa door naar vak 30", 4000);
+
 await sleep(2000);
 
 while(team.position < 30){
@@ -1161,6 +1191,8 @@ statusMessage.innerText =
 team.icon +
 " moet 1 beurt overslaan.";
 
+showPopup("🍺 HERBERG!\n" + team.icon + " " + team.name + "\n1 beurt overslaan", 4000);
+
 }
 
 /* PUT */
@@ -1175,6 +1207,8 @@ statusMessage.innerText =
 team.icon +
 " zit in de put!";
 
+showPopup("🕳 PUT!\n" + team.icon + " " + team.name + "\n1 beurt overslaan", 4000);
+
 }
 
 /* GEVANGENIS */
@@ -1188,6 +1222,8 @@ team.skipTurns = 2;
 statusMessage.innerText =
 team.icon +
 " zit in de gevangenis!";
+
+showPopup("🔒 GEVANGENIS!\n" + team.icon + " " + team.name + "\n2 beurten overslaan", 4000);
 
 }
 
