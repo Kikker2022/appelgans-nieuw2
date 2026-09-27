@@ -895,6 +895,22 @@ function isAppelgansHost(){
     return window.myPlayerId === "host";
 }
 
+function closeHostSettings(event){
+    if(event){
+        event.preventDefault();
+        event.stopPropagation();
+    }
+
+    const panel =
+        document.getElementById("hostSettingsPanel");
+
+    if(panel){
+        panel.style.display = "none";
+    }
+
+    return false;
+}
+
 function ensureHostSettingsPanel(){
     let button=document.getElementById("hostSettingsButton");
     let panel=document.getElementById("hostSettingsPanel");
@@ -926,29 +942,30 @@ function ensureHostSettingsPanel(){
         <button id="hostCloseSettingsX"
                 type="button"
                 aria-label="Instellingen sluiten"
-                style="position:absolute;right:10px;top:8px;border:none;background:transparent;font-size:2rem;font-weight:900;line-height:1;cursor:pointer;padding:4px 8px;">
+                style="position:absolute;right:8px;top:6px;border:2px solid #333;background:white;border-radius:50%;width:42px;height:42px;font-size:2rem;font-weight:900;line-height:34px;cursor:pointer;padding:0;z-index:2;">
             ×
         </button>
-        <div style="font-size:1.35rem;font-weight:900;margin-bottom:14px;padding-right:32px;">⚙️ Host-instellingen</div>
+
+        <div style="font-size:1.35rem;font-weight:900;margin-bottom:14px;padding-right:42px;">
+            ⚙️ Host-instellingen
+        </div>
+
         <div id="hostSettingsInfo" style="margin-bottom:14px;line-height:1.5;font-weight:700;"></div>
-        <button id="hostSkipCurrentTeam" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">⏭️ Huidig team overslaan</button>
-        <button id="hostPauseGame" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">⏸️ Spel pauzeren</button>
-        <button id="hostSoundToggle" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">🔊 Geluid aan</button>
-        <button id="hostQrToggle" type="button" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">📱 QR-code tonen / verbergen</button>
-        <button id="hostCloseSettings" type="button" style="width:100%;padding:12px;margin-top:12px;font-weight:800;">Sluiten</button>`;
+
+        <button type="button" id="hostSkipCurrentTeam" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">⏭️ Huidig team overslaan</button>
+        <button type="button" id="hostPauseGame" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">⏸️ Spel pauzeren</button>
+        <button type="button" id="hostSoundToggle" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">🔊 Geluid aan</button>
+        <button type="button" id="hostQrToggle" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">📱 QR-code tonen / verbergen</button>
+
+        <button type="button" id="hostCloseSettings"
+                style="width:100%;padding:12px;margin-top:12px;font-weight:900;border:2px solid #333;border-radius:10px;">
+            Alleen instellingen sluiten
+        </button>`
         document.body.appendChild(panel);
 
-        document.getElementById("hostCloseSettingsX").onclick=(event)=>{
-            event.preventDefault();
-            event.stopPropagation();
-            panel.style.display="none";
-        };
+        document.getElementById("hostCloseSettingsX").onclick=closeHostSettings;
 
-        document.getElementById("hostCloseSettings").onclick=(event)=>{
-            event.preventDefault();
-            event.stopPropagation();
-            panel.style.display="none";
-        };
+        document.getElementById("hostCloseSettings").onclick=closeHostSettings;
 
         document.getElementById("hostSkipCurrentTeam").onclick=hostSkipCurrentTeam;
         document.getElementById("hostPauseGame").onclick=hostTogglePause;
