@@ -143,6 +143,145 @@ function playGameSound(audio) {
     }
 }
 
+
+/* ===== PUNT 8: FINISHFEEST ===== */
+
+function showFinishCelebration(winnerTeam){
+
+    let overlay =
+        document.getElementById("finishCelebration");
+
+    if(!overlay){
+
+        overlay =
+            document.createElement("div");
+
+        overlay.id =
+            "finishCelebration";
+
+        overlay.style.position = "fixed";
+        overlay.style.inset = "0";
+        overlay.style.zIndex = "10000";
+        overlay.style.background = "rgba(255,255,255,0.96)";
+        overlay.style.display = "flex";
+        overlay.style.flexDirection = "column";
+        overlay.style.alignItems = "center";
+        overlay.style.justifyContent = "center";
+        overlay.style.textAlign = "center";
+        overlay.style.padding = "20px";
+        overlay.style.boxSizing = "border-box";
+        overlay.style.overflow = "hidden";
+
+        document.body.appendChild(overlay);
+    }
+
+    const ranking =
+        teams
+        .slice(0,activeTeams)
+        .map((team,index)=>({
+            team,
+            index,
+            position:
+                Math.min(
+                    TOTAL_CELLS,
+                    parseInt(team.position,10) || 0
+                )
+        }))
+        .sort((a,b)=>b.position-a.position);
+
+    const medals =
+        ["🥇","🥈","🥉","4️⃣"];
+
+    const rankingHtml =
+        ranking
+        .map((item,index)=>
+            `<div style="
+                margin:5px 0;
+                font-size:clamp(1rem,4.5vw,1.35rem);
+                font-weight:800;">
+                ${medals[index] || "•"}
+                ${item.team.icon}
+                ${item.team.name}
+                — ${item.position} / ${TOTAL_CELLS}
+            </div>`
+        )
+        .join("");
+
+    overlay.innerHTML = `
+        <div style="
+            font-size:clamp(3rem,18vw,7rem);
+            line-height:1;">
+            🎉🏁🎉
+        </div>
+
+        <div style="
+            margin-top:12px;
+            font-size:clamp(2rem,9vw,3.5rem);
+            font-weight:900;">
+            HOERA!
+        </div>
+
+        <div style="
+            margin:10px 0 18px;
+            font-size:clamp(1.35rem,6vw,2rem);
+            font-weight:900;">
+            ${winnerTeam.icon}
+            ${winnerTeam.name}
+            heeft Appelgans gewonnen!
+        </div>
+
+        <div style="
+            width:min(92vw,430px);
+            background:#fff;
+            border:2px solid #333;
+            border-radius:14px;
+            padding:12px;
+            box-sizing:border-box;">
+            <div style="
+                font-size:1.15rem;
+                font-weight:900;
+                margin-bottom:8px;">
+                🏆 Eindstand
+            </div>
+            ${rankingHtml}
+        </div>
+
+        <div style="
+            margin-top:16px;
+            font-size:clamp(1rem,4vw,1.25rem);
+            font-weight:800;">
+            Jammer voor de andere teams — volgende keer beter!
+        </div>
+    `;
+
+    // Eenvoudige confetti, zonder extra bibliotheek.
+    const confetti =
+        ["🎉","🎊","✨","⭐","🪿"];
+
+    for(let i=0;i<28;i++){
+
+        const piece =
+            document.createElement("div");
+
+        piece.innerText =
+            confetti[i % confetti.length];
+
+        piece.style.position = "absolute";
+        piece.style.left =
+            ((i * 37) % 96) + "%";
+        piece.style.top =
+            ((i * 53) % 88) + "%";
+        piece.style.fontSize =
+            (18 + (i % 5) * 5) + "px";
+        piece.style.transform =
+            "rotate(" + ((i * 47) % 360) + "deg)";
+        piece.style.pointerEvents =
+            "none";
+
+        overlay.appendChild(piece);
+    }
+}
+
 /* ===== SPECIALE VAKKEN ===== */
 
 const specialTiles = {
@@ -1132,14 +1271,23 @@ async function checkAnswer(choice) {
 
         if (team.position >= TOTAL_CELLS) {
 
+            team.position = TOTAL_CELLS;
+
+            updateBoard();
+            await saveBoardPositions();
+
             playGameSound(soundWin);
 
-            showPopup(
-                team.icon +
-                " " +
-                team.name +
-                " heeft gewonnen!"
-            );
+            await firebase.database()
+                .ref("games/" + window.currentGameCode)
+                .update({
+                    gameState: "finished",
+                    phase: "finished",
+                    winnerTeam: currentTeam,
+                    winnerName: team.name
+                });
+
+            showFinishCelebration(team);
 
             return;
         }
