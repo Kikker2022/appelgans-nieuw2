@@ -341,6 +341,102 @@ function monitorCurrentPlayer(code, game) {
     }, DISCONNECTED_TURN_WAIT_MS);
 }
 
+
+/* ===== PUNT 9: QR-CODE MET SPELCODE ===== */
+
+function getAppelgansJoinUrl(code){
+
+    const url = new URL(window.location.href);
+
+    // Oude parameters verwijderen en alleen de spelcode meegeven.
+    url.search = "";
+    url.searchParams.set("game", code);
+
+    return url.toString();
+}
+
+function showGameQrCode(code){
+
+    let box = document.getElementById("gameQrBox");
+
+    if(!box){
+        box = document.createElement("div");
+        box.id = "gameQrBox";
+        box.style.cssText =
+            "width:min(90vw,360px);margin:16px auto;padding:14px;" +
+            "box-sizing:border-box;background:white;border:3px solid #333;" +
+            "border-radius:16px;text-align:center;";
+
+        const startButton =
+            document.getElementById("startGameBtn");
+
+        if(startButton && startButton.parentNode){
+            startButton.parentNode.insertBefore(box,startButton);
+        }else{
+            document.body.appendChild(box);
+        }
+    }
+
+    const joinUrl = getAppelgansJoinUrl(code);
+
+    const qrUrl =
+        "https://api.qrserver.com/v1/create-qr-code/" +
+        "?size=240x240&data=" +
+        encodeURIComponent(joinUrl);
+
+    box.innerHTML = `
+        <div style="font-size:1.15rem;font-weight:900;margin-bottom:8px;">
+            📱 Scan om mee te doen
+        </div>
+
+        <img
+            src="${qrUrl}"
+            alt="QR-code voor spel ${code}"
+            width="240"
+            height="240"
+            style="max-width:72vw;height:auto;background:white;padding:5px;box-sizing:border-box;"
+        >
+
+        <div style="margin-top:8px;font-size:1rem;font-weight:800;">
+            Spelcode: ${code}
+        </div>
+
+        <div style="margin-top:5px;font-size:.9rem;">
+            Na het scannen staat de spelcode al ingevuld.
+        </div>
+    `;
+}
+
+function fillGameCodeFromQr(){
+
+    const params =
+        new URLSearchParams(window.location.search);
+
+    const code = params.get("game");
+
+    if(!code || !/^\d{4}$/.test(code)){
+        return;
+    }
+
+    const joinCode =
+        document.getElementById("joinCode");
+
+    if(joinCode){
+        joinCode.value = code;
+    }
+
+    window.scannedGameCode = code;
+}
+
+if(document.readyState === "loading"){
+    document.addEventListener(
+        "DOMContentLoaded",
+        fillGameCodeFromQr
+    );
+}else{
+    fillGameCodeFromQr();
+}
+
 function createGame() {
 
     const code = document.getElementById("gameCode").value.trim();
@@ -435,6 +531,9 @@ function createGame() {
         window.isHost = true;
         window.myPlayerId = "host";
         window.myTeam = 0;
+
+        // Toon voor de andere teams een QR met deze spelcode.
+        showGameQrCode(code);
         window.myColor = "blue";
         savePlayerId(code, "host");
         setupPlayerPresence(code, "host");
