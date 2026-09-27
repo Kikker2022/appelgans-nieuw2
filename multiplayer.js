@@ -698,7 +698,13 @@ function ensureHostSettingsPanel(){
         panel.id="hostSettingsPanel";
         panel.style.cssText="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(90vw,420px);box-sizing:border-box;padding:18px;background:white;border:3px solid #333;border-radius:16px;z-index:9998;box-shadow:0 8px 30px rgba(0,0,0,.35);text-align:center;";
         panel.innerHTML=`
-        <div style="font-size:1.35rem;font-weight:900;margin-bottom:14px;">⚙️ Host-instellingen</div>
+        <button id="hostCloseSettingsX"
+                type="button"
+                aria-label="Instellingen sluiten"
+                style="position:absolute;right:10px;top:8px;border:none;background:transparent;font-size:2rem;font-weight:900;line-height:1;cursor:pointer;padding:4px 8px;">
+            ×
+        </button>
+        <div style="font-size:1.35rem;font-weight:900;margin-bottom:14px;padding-right:32px;">⚙️ Host-instellingen</div>
         <div id="hostSettingsInfo" style="margin-bottom:14px;line-height:1.5;font-weight:700;"></div>
         <button id="hostSkipCurrentTeam" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">⏭️ Huidig team overslaan</button>
         <button id="hostPauseGame" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">⏸️ Spel pauzeren</button>
@@ -706,7 +712,18 @@ function ensureHostSettingsPanel(){
         <button id="hostCloseSettings" style="width:100%;padding:12px;margin-top:12px;font-weight:800;">Sluiten</button>`;
         document.body.appendChild(panel);
 
-        document.getElementById("hostCloseSettings").onclick=()=>panel.style.display="none";
+        document.getElementById("hostCloseSettingsX").onclick=(event)=>{
+            event.preventDefault();
+            event.stopPropagation();
+            panel.style.display="none";
+        };
+
+        document.getElementById("hostCloseSettings").onclick=(event)=>{
+            event.preventDefault();
+            event.stopPropagation();
+            panel.style.display="none";
+        };
+
         document.getElementById("hostSkipCurrentTeam").onclick=hostSkipCurrentTeam;
         document.getElementById("hostPauseGame").onclick=hostTogglePause;
         document.getElementById("hostSoundToggle").onclick=hostToggleSound;
