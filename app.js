@@ -486,6 +486,74 @@ board.appendChild(cell);
 
 }
 
+
+/* ===== VOORTGANG TEAMS ===== */
+
+function updateTeamProgressDisplay(){
+
+let progressBox =
+document.getElementById("teamProgressBox");
+
+if(!progressBox){
+
+progressBox =
+document.createElement("div");
+
+progressBox.id = "teamProgressBox";
+
+progressBox.style.width = "min(92vw, 520px)";
+progressBox.style.margin = "10px auto 14px auto";
+progressBox.style.padding = "10px 12px";
+progressBox.style.boxSizing = "border-box";
+progressBox.style.background = "rgba(255,255,255,0.96)";
+progressBox.style.border = "2px solid rgba(0,0,0,0.16)";
+progressBox.style.borderRadius = "12px";
+progressBox.style.fontWeight = "800";
+progressBox.style.fontSize = "clamp(0.9rem, 3.8vw, 1.05rem)";
+progressBox.style.lineHeight = "1.55";
+progressBox.style.textAlign = "left";
+
+if(board && board.parentNode){
+board.parentNode.insertBefore(
+progressBox,
+board
+);
+}
+
+}
+
+const lines = [];
+
+teams
+.slice(0, activeTeams)
+.forEach((team,index)=>{
+
+const position =
+Math.max(
+0,
+Math.min(
+TOTAL_CELLS,
+parseInt(team.position,10) || 0
+)
+);
+
+lines.push(
+team.icon +
+" " +
+(team.name || ("Team " + (index + 1))) +
+": " +
+position +
+" / " +
+TOTAL_CELLS
+);
+
+});
+
+progressBox.innerText =
+lines.join("\n");
+
+}
+
 /* ===== UPDATE BORD ===== */
 
 function updateBoard(){
@@ -527,6 +595,8 @@ cell
 }
 
 });
+
+updateTeamProgressDisplay();
 
 }
 
