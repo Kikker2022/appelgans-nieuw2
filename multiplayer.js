@@ -346,10 +346,11 @@ function monitorCurrentPlayer(code, game) {
 
 function getAppelgansJoinUrl(code){
 
-    const url = new URL(window.location.href);
+    // Altijd het vaste openbare Appelgans-adres gebruiken.
+    // Daardoor verwijst de QR nooit naar een Vercel preview/login-pagina.
+    const url =
+        new URL("https://appelgans-nieuw2.vercel.app/");
 
-    // Oude parameters verwijderen en alleen de spelcode meegeven.
-    url.search = "";
     url.searchParams.set("game", code);
 
     return url.toString();
