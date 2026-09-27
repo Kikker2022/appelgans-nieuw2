@@ -26,8 +26,17 @@ function getSavedPlayerId(code) {
 function savePlayerId(code, playerId) {
     try {
         localStorage.setItem(getPlayerStorageKey(code), playerId);
+        localStorage.setItem("appelgansLastGameCode", String(code).trim());
     } catch (error) {
         console.warn("Lokale speler-ID kon niet worden opgeslagen:", error);
+    }
+}
+
+function getLastGameCode() {
+    try {
+        return localStorage.getItem("appelgansLastGameCode");
+    } catch (error) {
+        return null;
     }
 }
 
@@ -342,6 +351,82 @@ function monitorCurrentPlayer(code, game) {
 }
 
 
+
+/* ===== AUTOMATISCH TERUGKEREN NA UITVAL ===== */
+
+function tryAutomaticReconnect(){
+
+    // Een QR-link met ?game=... krijgt voorrang.
+    const params = new URLSearchParams(window.location.search);
+    if(params.get("game")) return;
+
+    const code = getLastGameCode();
+    if(!code) return;
+
+    const playerId = getSavedPlayerId(code);
+    if(!playerId) return;
+
+    const gameRef =
+        firebase.database().ref("games/" + code);
+
+    gameRef.once("value").then(snapshot=>{
+
+        const game = snapshot.val();
+
+        if(
+            !game ||
+            !game.players ||
+            !game.players[playerId] ||
+            (
+                game.gameState !== "playing" &&
+                game.gameState !== "lobby"
+            )
+        ){
+            return;
+        }
+
+        const player = game.players[playerId];
+        const team = parseInt(player.team,10);
+        const colors = ["blue","red","green","purple"];
+
+        window.currentGameCode = code;
+        window.isHost = playerId === "host";
+        window.myPlayerId = playerId;
+        window.myTeam = team;
+        window.myColor = player.color || colors[team];
+
+        gameRef
+            .child("players")
+            .child(playerId)
+            .update({
+                connected: true,
+                lastSeen:
+                    firebase.database.ServerValue.TIMESTAMP
+            });
+
+        setupPlayerPresence(code,playerId);
+
+        if(playerId !== "host"){
+            prepareJoinedPlayerScreen();
+        }
+
+        listenToPlayers(code);
+        listenToGameState();
+
+        console.log(
+            "✅ Automatisch teruggekeerd naar spel " +
+            code +
+            " als " +
+            playerId
+        );
+    }).catch(error=>{
+        console.warn(
+            "Automatisch terugkeren lukte niet:",
+            error
+        );
+    });
+}
+
 /* ===== PUNT 9: QR-CODE MET SPELCODE ===== */
 
 function getAppelgansJoinUrl(code){
@@ -378,6 +463,8 @@ function showGameQrCode(code){
         }
     }
 
+    box.style.display = "block";
+
     const joinUrl = getAppelgansJoinUrl(code);
 
     const qrUrl =
@@ -408,6 +495,40 @@ function showGameQrCode(code){
     `;
 }
 
+
+function hideGameQrCode(force = false){
+    if(window.hostQrManuallyShown && !force){
+        return;
+    }
+
+    const box = document.getElementById("gameQrBox");
+    if(box){
+        box.style.display = "none";
+    }
+}
+
+function toggleHostQrCode(){
+    if(!window.currentGameCode) return;
+
+    let box = document.getElementById("gameQrBox");
+
+    if(!box){
+        showGameQrCode(window.currentGameCode);
+        box = document.getElementById("gameQrBox");
+    }
+
+    if(!box) return;
+
+    if(box.style.display === "none"){
+        window.hostQrManuallyShown = true;
+        showGameQrCode(window.currentGameCode);
+        box.style.display = "block";
+    }else{
+        window.hostQrManuallyShown = false;
+        box.style.display = "none";
+    }
+}
+
 function fillGameCodeFromQr(){
 
     const params =
@@ -432,10 +553,14 @@ function fillGameCodeFromQr(){
 if(document.readyState === "loading"){
     document.addEventListener(
         "DOMContentLoaded",
-        fillGameCodeFromQr
+        ()=>{
+            fillGameCodeFromQr();
+            tryAutomaticReconnect();
+        }
     );
 }else{
     fillGameCodeFromQr();
+    tryAutomaticReconnect();
 }
 
 function createGame() {
@@ -809,7 +934,8 @@ function ensureHostSettingsPanel(){
         <button id="hostSkipCurrentTeam" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">⏭️ Huidig team overslaan</button>
         <button id="hostPauseGame" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">⏸️ Spel pauzeren</button>
         <button id="hostSoundToggle" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">🔊 Geluid aan</button>
-        <button id="hostCloseSettings" style="width:100%;padding:12px;margin-top:12px;font-weight:800;">Sluiten</button>`;
+        <button id="hostQrToggle" type="button" style="width:100%;padding:12px;margin:5px 0;font-weight:800;">📱 QR-code tonen / verbergen</button>
+        <button id="hostCloseSettings" type="button" style="width:100%;padding:12px;margin-top:12px;font-weight:800;">Sluiten</button>`;
         document.body.appendChild(panel);
 
         document.getElementById("hostCloseSettingsX").onclick=(event)=>{
@@ -827,6 +953,11 @@ function ensureHostSettingsPanel(){
         document.getElementById("hostSkipCurrentTeam").onclick=hostSkipCurrentTeam;
         document.getElementById("hostPauseGame").onclick=hostTogglePause;
         document.getElementById("hostSoundToggle").onclick=hostToggleSound;
+        document.getElementById("hostQrToggle").onclick=(event)=>{
+            event.preventDefault();
+            event.stopPropagation();
+            toggleHostQrCode();
+        };
     }
 }
 
@@ -936,6 +1067,13 @@ function listenToGameState() {
             window.gameSoundEnabled = game.soundEnabled !== false;
 
             refreshHostSettings(game);
+
+            if (
+                game.gameState === "playing" &&
+                isAppelgansHost()
+            ) {
+                hideGameQrCode();
+            }
 
             if (window.gamePaused) {
                 if (statusMessage) {
