@@ -547,6 +547,10 @@ function fillGameCodeFromQr(){
         joinCode.value = code;
     }
 
+    // Dit is een deelnemer die via de QR binnenkomt.
+    // Daarom meteen alleen de deelnemer-invoer tonen.
+    prepareJoinedPlayerScreen();
+
     window.scannedGameCode = code;
 }
 
@@ -842,17 +846,32 @@ function joinGame() {
 
 function prepareJoinedPlayerScreen() {
 
-    const teamInputs = document.getElementById("teamInputs");
-    if (teamInputs) teamInputs.style.display = "none";
+    // Deelnemerstelefoons mogen de host-instellingen niet zien of wijzigen.
+    // Alleen naam + (automatisch ingevulde) spelcode blijven beschikbaar.
+    const idsToHide = [
+        "teamInputs",
+        "teamCount",
+        "categorySelect",
+        "startGameButton",
+        "startGameBtn",
+        "team1Name",
+        "team2Name",
+        "team3Name",
+        "team4Name"
+    ];
 
-    const teamCount = document.getElementById("teamCount");
-    if (teamCount) teamCount.style.display = "none";
+    idsToHide.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.style.display = "none";
+        }
 
-    const categorySelect = document.getElementById("categorySelect");
-    if (categorySelect) categorySelect.style.display = "none";
-
-    const startButton = document.getElementById("startGameButton");
-    if (startButton) startButton.style.display = "none";
+        // Verberg ook een eventueel los HTML-label bij dit invoerveld.
+        const label = document.querySelector('label[for="' + id + '"]');
+        if (label) {
+            label.style.display = "none";
+        }
+    });
 }
 
 function listenToPlayers(code) {
