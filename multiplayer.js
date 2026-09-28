@@ -386,6 +386,16 @@ function tryAutomaticReconnect(){
         }
 
         const player = game.players[playerId];
+        const firebaseUid = getCurrentFirebaseUid();
+
+        if (
+            !firebaseUid ||
+            (player.uid && player.uid !== firebaseUid)
+        ) {
+            console.warn("Automatisch terugkeren geweigerd: Firebase UID komt niet overeen.");
+            return;
+        }
+
         const team = parseInt(player.team,10);
         const colors = ["blue","red","green","purple"];
 
@@ -399,6 +409,7 @@ function tryAutomaticReconnect(){
             .child("players")
             .child(playerId)
             .update({
+                uid: firebaseUid,
                 connected: true,
                 lastSeen:
                     firebase.database.ServerValue.TIMESTAMP
@@ -567,13 +578,30 @@ if(document.readyState === "loading"){
     tryAutomaticReconnect();
 }
 
+function getCurrentFirebaseUid() {
+    const user = firebase.auth().currentUser;
+
+    if (!user || !user.uid) {
+        return null;
+    }
+
+    return user.uid;
+}
+
+
 function createGame() {
 
     const code = document.getElementById("gameCode").value.trim();
     const hostName = document.getElementById("hostName").value.trim();
+    const firebaseUid = getCurrentFirebaseUid();
 
     if (!code || !hostName) {
         alert("Vul naam en spelcode in");
+        return;
+    }
+
+    if (!firebaseUid) {
+        alert("Firebase-beveiliging is nog niet gereed. Wacht een paar seconden en probeer opnieuw.");
         return;
     }
 
@@ -581,6 +609,7 @@ function createGame() {
         name: hostName,
         team: 0,
         color: "blue",
+        uid: firebaseUid,
         connected: true,
         lastSeen: firebase.database.ServerValue.TIMESTAMP
     };
@@ -634,6 +663,7 @@ function createGame() {
         return {
             gameState: "lobby",
             createdAt: Date.now(),
+            hostUid: firebaseUid,
             currentTurn: 0,
             activeTeams: 4,
             selectedCategory: null,
@@ -693,9 +723,15 @@ function joinGame() {
 
     const code = document.getElementById("joinCode").value.trim();
     const name = document.getElementById("joinName").value.trim();
+    const firebaseUid = getCurrentFirebaseUid();
 
     if (!code || !name) {
         alert("Vul naam en spelcode in");
+        return;
+    }
+
+    if (!firebaseUid) {
+        alert("Firebase-beveiliging is nog niet gereed. Wacht een paar seconden en probeer opnieuw.");
         return;
     }
 
@@ -719,7 +755,11 @@ function joinGame() {
             // ---------------------------------------------------------
             if (
                 savedPlayerId &&
-                players[savedPlayerId]
+                players[savedPlayerId] &&
+                (
+                    !players[savedPlayerId].uid ||
+                    players[savedPlayerId].uid === firebaseUid
+                )
             ) {
 
                 const existingPlayer = players[savedPlayerId];
@@ -732,6 +772,7 @@ function joinGame() {
                     .child(savedPlayerId)
                     .update({
                         name: name,
+                        uid: firebaseUid,
                         connected: true,
                         lastSeen: firebase.database.ServerValue.TIMESTAMP
                     })
@@ -808,6 +849,7 @@ function joinGame() {
                 name: name,
                 team: team,
                 color: colors[team],
+                uid: firebaseUid,
                 connected: true,
                 lastSeen: firebase.database.ServerValue.TIMESTAMP
             };
