@@ -19,6 +19,36 @@ firebase.initializeApp(firebaseConfig);
 // Database openen
 const db = firebase.database();
 
+// ===============================
+// Anonieme Firebase Authentication
+// ===============================
+//
+// Iedere telefoon krijgt automatisch een eigen Firebase-identiteit.
+// De speler hoeft hiervoor geen account, e-mailadres of wachtwoord
+// in te vullen.
+
+firebase.auth().onAuthStateChanged((user) => {
+
+  if (user) {
+
+    window.firebaseUser = user;
+    window.firebaseUid = user.uid;
+
+    console.log("🔐 Anoniem aangemeld");
+    console.log("Firebase UID:", user.uid);
+
+  } else {
+
+    firebase.auth().signInAnonymously()
+      .catch((error) => {
+        console.error(
+          "❌ Anoniem aanmelden mislukt:",
+          error
+        );
+      });
+  }
+});
+
 // Verbinding testen
 db.ref("test").set({
   bericht: "Firebase werkt!",
