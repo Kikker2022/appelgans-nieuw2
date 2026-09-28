@@ -47,6 +47,29 @@ function setupPlayerPresence(code, playerId) {
     const playerRef = firebase.database()
         .ref("games/" + code + "/players/" + playerId);
 
+    const presenceKey = String(code).trim() + "_" + String(playerId);
+
+    window._appelgansPresence = window._appelgansPresence || {};
+
+    if (window._appelgansPresence[presenceKey]) {
+        return;
+    }
+
+    const presenceState = {
+        heartbeatTimer: null
+    };
+
+    window._appelgansPresence[presenceKey] = presenceState;
+
+    function writeOnlineStatus() {
+        return playerRef.update({
+            connected: true,
+            lastSeen: firebase.database.ServerValue.TIMESTAMP
+        }).catch(error => {
+            console.warn("Aanwezigheid kon niet worden opgeslagen:", error);
+        });
+    }
+
     firebase.database().ref(".info/connected").on("value", snapshot => {
 
         if (snapshot.val() !== true) return;
@@ -58,12 +81,15 @@ function setupPlayerPresence(code, playerId) {
             console.warn("onDisconnect kon niet worden ingesteld:", error);
         });
 
-        playerRef.update({
-            connected: true,
-            lastSeen: firebase.database.ServerValue.TIMESTAMP
-        }).catch(error => {
-            console.warn("Aanwezigheid kon niet worden opgeslagen:", error);
-        });
+        writeOnlineStatus();
+
+        if (presenceState.heartbeatTimer) {
+            clearInterval(presenceState.heartbeatTimer);
+        }
+
+        presenceState.heartbeatTimer = setInterval(() => {
+            writeOnlineStatus();
+        }, 10000);
     });
 }
 
@@ -388,10 +414,7 @@ function tryAutomaticReconnect(){
         const player = game.players[playerId];
         const firebaseUid = getCurrentFirebaseUid();
 
-        if (
-            !firebaseUid ||
-            (player.uid && player.uid !== firebaseUid)
-        ) {
+        if (!firebaseUid || (player.uid && player.uid !== firebaseUid)) {
             console.warn("Automatisch terugkeren geweigerd: Firebase UID komt niet overeen.");
             return;
         }
@@ -580,11 +603,7 @@ if(document.readyState === "loading"){
 
 function getCurrentFirebaseUid() {
     const user = firebase.auth().currentUser;
-
-    if (!user || !user.uid) {
-        return null;
-    }
-
+    if (!user || !user.uid) return null;
     return user.uid;
 }
 
@@ -756,10 +775,7 @@ function joinGame() {
             if (
                 savedPlayerId &&
                 players[savedPlayerId] &&
-                (
-                    !players[savedPlayerId].uid ||
-                    players[savedPlayerId].uid === firebaseUid
-                )
+                (!players[savedPlayerId].uid || players[savedPlayerId].uid === firebaseUid)
             ) {
 
                 const existingPlayer = players[savedPlayerId];
