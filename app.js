@@ -1236,7 +1236,7 @@ async function checkAnswer(choice) {
         explanationText.innerText =
             "✅ Goed! " + currentQuestion.uitleg;
 
-        await sleep(2500);
+        await sleep(3333);
 
         const team = teams[currentTeam];
 
@@ -1330,7 +1330,7 @@ async function checkAnswer(choice) {
     explanationText.innerText =
         "❌ Fout! " + currentQuestion.uitleg;
 
-    await sleep(3000);
+    await sleep(4000);
 
     const nextTeam = getNextTeamAfterCurrent();
 
@@ -1464,6 +1464,35 @@ showPopup("🔒 GEVANGENIS!\n" + team.icon + " " + team.name + "\n2 beurten over
 }
 
 /* ===== START ===== */
+
+// Op het welkomstscherm is geen QR-code meer nodig.
+// De QR die de host na het aanmaken van een spel toont,
+// blijft gewoon beschikbaar voor telefoon 2, 3 en 4.
+if (welcomeScreen) {
+    const welcomeQrBox =
+        welcomeScreen.querySelector("#gameQrBox");
+
+    if (welcomeQrBox) {
+        welcomeQrBox.remove();
+    }
+
+    const welcomeQrImages =
+        welcomeScreen.querySelectorAll(
+            'img[src*="qrserver"], img[alt*="QR"], img[alt*="qr"]'
+        );
+
+    welcomeQrImages.forEach(img => {
+        const wrapper = img.closest(
+            ".qr-code, .qr-container, .qr-box"
+        );
+
+        if (wrapper) {
+            wrapper.remove();
+        } else {
+            img.remove();
+        }
+    });
+}
 
 updateTurn();
 updateBoard();
