@@ -438,6 +438,11 @@ function tryAutomaticReconnect(){
             return;
         }
 
+        // Herstel/registreer membership ook bij automatisch terugkeren.
+        firebase.database()
+            .ref("games/" + code + "/members/" + firebaseUid)
+            .set(true);
+
         const team = parseInt(player.team,10);
         const colors = ["blue","red","green","purple"];
 
@@ -702,6 +707,9 @@ function createGame() {
             gameState: "lobby",
             createdAt: Date.now(),
             hostUid: firebaseUid,
+            members: {
+                [firebaseUid]: true
+            },
             currentTurn: 0,
             activeTeams: 4,
             selectedCategory: null,
@@ -786,6 +794,12 @@ function joinGame() {
             }
 
             const players = game.players || {};
+
+            // Registreer deze Firebase-gebruiker als lid van dit spel.
+            // Dit wordt straks door de Realtime Database Rules gebruikt.
+            firebase.database()
+                .ref("games/" + code + "/members/" + firebaseUid)
+                .set(true);
             const savedPlayerId = getSavedPlayerId(code);
 
             // ---------------------------------------------------------
