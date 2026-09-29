@@ -997,8 +997,56 @@ function joinGame() {
 
 function prepareJoinedPlayerScreen() {
 
-    // Deelnemerstelefoons mogen de host-instellingen niet zien of wijzigen.
-    // Alleen naam + (automatisch ingevulde) spelcode blijven beschikbaar.
+    // ---------------------------------------------------------
+    // DEELNEMERSTELEFOON: ALLEEN HET DEELNEMERSVAK TONEN
+    // ---------------------------------------------------------
+    // De host-invoer bovenaan scherm 0 wordt volledig verborgen.
+    // Het deelnemersvak (joinName, joinCode en "Doe mee") blijft zichtbaar.
+
+    const hostName = document.getElementById("hostName");
+    const gameCode = document.getElementById("gameCode");
+
+    if (hostName) {
+        hostName.style.display = "none";
+    }
+
+    if (gameCode) {
+        gameCode.style.display = "none";
+    }
+
+    // Verberg de knop "Maak spel".
+    const createGameButton =
+        document.querySelector('button[onclick="createGame()"]');
+
+    if (createGameButton) {
+        createGameButton.style.display = "none";
+    }
+
+    // Verberg alleen de host-titel "👑 Host spel maken".
+    const screen0 = document.getElementById("screen0");
+
+    if (screen0) {
+        const headings = screen0.querySelectorAll("h3");
+
+        headings.forEach(heading => {
+            const text = (heading.textContent || "").toLowerCase();
+
+            if (text.includes("host spel maken")) {
+                heading.style.display = "none";
+            }
+        });
+
+        // Verberg de scheidingslijn direct na het hostvak.
+        // Hierdoor begint de deelnemerstelefoon netjes met "📱 Deelnemen".
+        const horizontalRules = screen0.querySelectorAll("hr");
+
+        if (horizontalRules.length > 0) {
+            horizontalRules[0].style.display = "none";
+        }
+    }
+
+    // Deelnemerstelefoons mogen ook de overige host-instellingen
+    // niet zien of wijzigen.
     const idsToHide = [
         "teamInputs",
         "teamCount",
@@ -1013,12 +1061,14 @@ function prepareJoinedPlayerScreen() {
 
     idsToHide.forEach(id => {
         const element = document.getElementById(id);
+
         if (element) {
             element.style.display = "none";
         }
 
-        // Verberg ook een eventueel los HTML-label bij dit invoerveld.
-        const label = document.querySelector('label[for="' + id + '"]');
+        const label =
+            document.querySelector('label[for="' + id + '"]');
+
         if (label) {
             label.style.display = "none";
         }
