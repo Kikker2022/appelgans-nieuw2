@@ -487,7 +487,7 @@ function tryAutomaticReconnect(){
 
 /* ===== PUNT 9: QR-CODE MET SPELCODE ===== */
 
-function getAppelgansJoinUrl(code){
+function getAppelgansJoinUrl(code, joinToken){
 
     // Altijd het vaste openbare Appelgans-adres gebruiken.
     // Daardoor verwijst de QR nooit naar een Vercel preview/login-pagina.
@@ -495,6 +495,10 @@ function getAppelgansJoinUrl(code){
         new URL("https://appelgans-nieuw2.vercel.app/");
 
     url.searchParams.set("game", code);
+
+        if (joinToken) {
+            url.searchParams.set("join", joinToken);
+        }
 
     return url.toString();
 }
@@ -523,7 +527,11 @@ function showGameQrCode(code){
 
     box.style.display = "block";
 
-    const joinUrl = getAppelgansJoinUrl(code);
+    const gameDataRef = firebase.database().ref("games/" + code + "/joinToken");
+
+    gameDataRef.once("value").then(tokenSnapshot => {
+        const joinToken = tokenSnapshot.val() || "";
+        const joinUrl = getAppelgansJoinUrl(code, joinToken);
 
     const qrUrl =
         "https://api.qrserver.com/v1/create-qr-code/" +
@@ -551,6 +559,9 @@ function showGameQrCode(code){
             Na het scannen staat de spelcode al ingevuld.
         </div>
     `;
+    }).catch(error => {
+        console.error("QR-code kon niet worden gemaakt:", error);
+    });
 }
 
 
@@ -625,6 +636,36 @@ if(document.readyState === "loading"){
     tryAutomaticReconnect();
 }
 
+function createSecureJoinToken() {
+    const bytes = new Uint8Array(16);
+
+    if (window.crypto && window.crypto.getRandomValues) {
+        window.crypto.getRandomValues(bytes);
+        return Array.from(bytes)
+            .map(b => b.toString(16).padStart(2, "0"))
+            .join("");
+    }
+
+    // Fallback voor zeer oude browsers.
+    return (
+        Date.now().toString(36) +
+        "_" +
+        Math.random().toString(36).slice(2) +
+        Math.random().toString(36).slice(2)
+    );
+}
+
+
+function getJoinTokenFromUrl() {
+    try {
+        const params = new URLSearchParams(window.location.search);
+        return (params.get("join") || "").trim();
+    } catch (error) {
+        return "";
+    }
+}
+
+
 function getCurrentFirebaseUid() {
     const user = firebase.auth().currentUser;
     if (!user || !user.uid) return null;
@@ -637,6 +678,7 @@ function createGame() {
     const code = document.getElementById("gameCode").value.trim();
     const hostName = document.getElementById("hostName").value.trim();
     const firebaseUid = getCurrentFirebaseUid();
+    const joinToken = createSecureJoinToken();
 
     if (!code || !hostName) {
         alert("Vul naam en spelcode in");
@@ -707,6 +749,7 @@ function createGame() {
             gameState: "lobby",
             createdAt: Date.now(),
             hostUid: firebaseUid,
+            joinToken: joinToken,
             members: {
                 [firebaseUid]: true
             },
@@ -770,6 +813,7 @@ function joinGame() {
     const code = document.getElementById("joinCode").value.trim();
     const name = document.getElementById("joinName").value.trim();
     const firebaseUid = getCurrentFirebaseUid();
+    const joinToken = getJoinTokenFromUrl();
 
     if (!code || !name) {
         alert("Vul naam en spelcode in");
@@ -795,11 +839,6 @@ function joinGame() {
 
             const players = game.players || {};
 
-            // Registreer deze Firebase-gebruiker als lid van dit spel.
-            // Dit wordt straks door de Realtime Database Rules gebruikt.
-            firebase.database()
-                .ref("games/" + code + "/members/" + firebaseUid)
-                .set(true);
             const savedPlayerId = getSavedPlayerId(code);
 
             // ---------------------------------------------------------
@@ -858,6 +897,19 @@ function joinGame() {
             }
 
             // ---------------------------------------------------------
+            // BEVEILIGDE TOETREDING VOOR EEN NIEUWE SPELER
+            // ---------------------------------------------------------
+            // De 4-cijferige spelcode alleen is niet genoeg.
+            // Een nieuwe telefoon moet ook de geheime join-token uit de QR-link hebben.
+            if (!joinToken || joinToken !== game.joinToken) {
+                alert(
+                    "Deze telefoon heeft geen geldige deelname-link.\n\n" +
+                    "Scan de QR-code van de host opnieuw."
+                );
+                return;
+            }
+
+            // ---------------------------------------------------------
             // EEN NIEUWE SPELER MAG ALLEEN IN DE LOBBY INSTAPPEN
             // ---------------------------------------------------------
             if (game.gameState && game.gameState !== "lobby") {
@@ -903,10 +955,12 @@ function joinGame() {
                 lastSeen: firebase.database.ServerValue.TIMESTAMP
             };
 
+            const joinUpdates = {};
+            joinUpdates["members/" + firebaseUid] = true;
+            joinUpdates["players/" + playerId] = player;
+
             return gameRef
-                .child("players")
-                .child(playerId)
-                .set(player)
+                .update(joinUpdates)
                 .then(() => {
 
                     savePlayerId(code, playerId);
