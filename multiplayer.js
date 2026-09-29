@@ -51,11 +51,18 @@ function setupPlayerPresence(code, playerId) {
 
     window._appelgansPresence = window._appelgansPresence || {};
 
+    // Als deze pagina al een presence-bewaking voor deze speler heeft,
+    // maken we niet nog een tweede listener/timer aan.
     if (window._appelgansPresence[presenceKey]) {
         return;
     }
 
+    const sessionId =
+        Date.now().toString(36) + "_" +
+        Math.random().toString(36).slice(2, 10);
+
     const presenceState = {
+        sessionId: sessionId,
         heartbeatTimer: null
     };
 
@@ -64,6 +71,7 @@ function setupPlayerPresence(code, playerId) {
     function writeOnlineStatus() {
         return playerRef.update({
             connected: true,
+            presenceSession: sessionId,
             lastSeen: firebase.database.ServerValue.TIMESTAMP
         }).catch(error => {
             console.warn("Aanwezigheid kon niet worden opgeslagen:", error);
@@ -72,10 +80,21 @@ function setupPlayerPresence(code, playerId) {
 
     firebase.database().ref(".info/connected").on("value", snapshot => {
 
-        if (snapshot.val() !== true) return;
+        if (snapshot.val() !== true) {
+            return;
+        }
 
+        /*
+         * BELANGRIJK:
+         * We laten een oude browser/Firebase-verbinding niet meer rechtstreeks
+         * connected:false schrijven. Een oude onDisconnect kon anders een
+         * nieuwere verbinding van dezelfde telefoon ten onrechte offline zetten.
+         *
+         * De actieve telefoon bevestigt elke 10 seconden zijn aanwezigheid.
+         * De bestaande 30+30-logica gebruikt lastSeen om een werkelijk verdwenen
+         * speler pas na de ingestelde wachttijd over te slaan.
+         */
         playerRef.onDisconnect().update({
-            connected: false,
             lastSeen: firebase.database.ServerValue.TIMESTAMP
         }).catch(error => {
             console.warn("onDisconnect kon niet worden ingesteld:", error);
