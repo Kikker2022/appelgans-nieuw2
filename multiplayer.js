@@ -956,6 +956,12 @@ function joinGame() {
             };
 
             const joinUpdates = {};
+
+            // Bewijs voor Firebase Rules dat deze telefoon de geheime
+            // join-token uit de QR-link daadwerkelijk bezit.
+            // Dit bewijs, membership en speler worden in ÉÉN atomische
+            // Firebase-update geschreven.
+            joinUpdates["pendingJoins/" + firebaseUid] = joinToken;
             joinUpdates["members/" + firebaseUid] = true;
             joinUpdates["players/" + playerId] = player;
 
