@@ -627,13 +627,20 @@ if(document.readyState === "loading"){
     document.addEventListener(
         "DOMContentLoaded",
         ()=>{
+            // Bij een nieuwe normale browserstart altijd op het
+            // welkomstscherm blijven.
+            //
+            // Alleen een echte QR-link (?game=...) vult de spelcode in
+            // en toont het deelnemersvak.
+            //
+            // tryAutomaticReconnect() wordt hier bewust NIET meer gestart.
+            // Een tijdelijke internetonderbreking tijdens een geopend spel
+            // wordt al door Firebase/presence zelf hersteld.
             fillGameCodeFromQr();
-            tryAutomaticReconnect();
         }
     );
 }else{
     fillGameCodeFromQr();
-    tryAutomaticReconnect();
 }
 
 function createSecureJoinToken() {
