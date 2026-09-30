@@ -692,6 +692,11 @@ function createGame() {
         return;
     }
 
+    if (!/^\d{4}$/.test(code)) {
+        alert("Gebruik een spelcode van precies 4 cijfers.");
+        return;
+    }
+
     if (!firebaseUid) {
         alert("Firebase-beveiliging is nog niet gereed. Wacht een paar seconden en probeer opnieuw.");
         return;
@@ -709,49 +714,25 @@ function createGame() {
     const gameRef = firebase.database().ref("games/" + code);
 
     /*
-     * BEVEILIGING TEGEN DUBBELE SPELCODES
+     * VEILIG EEN NIEUW SPEL AANMAKEN
      *
-     * Een spelcode blijft 24 uur in gebruik.
-     * Binnen die 24 uur kan een tweede Host de code
-     * niet opnieuw gebruiken.
+     * Iedere telefoon mag Host worden van een NIEUWE, vrije spelcode.
+     * Een bestaand spel wordt hier nooit meer overschreven.
      *
-     * Na 24 uur wordt het oude spel als verlopen beschouwd
-     * en mag dezelfde code opnieuw worden gebruikt.
+     * Dit past bij de Firebase Rules:
+     * - een nieuw /games/{code} mag door de nieuwe Host worden gemaakt;
+     * - een bestaand spel blijft beschermd tegen een andere telefoon.
      *
-     * We gebruiken hiervoor een Firebase transaction,
-     * zodat twee Hosts niet tegelijk dezelfde vrije code
-     * kunnen claimen.
+     * De transaction voorkomt dat twee telefoons tegelijk dezelfde
+     * vrije code kunnen claimen.
      */
-    const CODE_GELDIGHEID_MS = 24 * 60 * 60 * 1000;
-
     gameRef.transaction(currentData => {
 
         if (currentData !== null) {
-
-            /*
-             * Controleer hoe oud het bestaande spel is.
-             *
-             * BELANGRIJK:
-             * Oude spellen van vóór de 24-uurs-beveiliging hebben
-             * geen createdAt. Die moeten NIET voor altijd een code
-             * blokkeren. Daarom worden zulke oude spellen hier als
-             * verlopen beschouwd en vervangen door het nieuwe spel.
-             */
-            if (typeof currentData.createdAt === "number") {
-
-                const leeftijd = Date.now() - currentData.createdAt;
-
-                if (leeftijd >= 0 && leeftijd < CODE_GELDIGHEID_MS) {
-                    // Code is nog geen 24 uur oud en dus in gebruik.
-                    return;
-                }
-            }
-
-            // Geen createdAt, een ongeldige datum of 24 uur of ouder:
-            // het oude spel is verlopen en mag worden vervangen.
+            // Deze code bestaat al. Niet overschrijven.
+            return;
         }
 
-        // Code is vrij of het oude spel is verlopen.
         return {
             gameState: "lobby",
             createdAt: Date.now(),
@@ -776,9 +757,8 @@ function createGame() {
 
         if (!result.committed) {
             alert(
-                "Deze code is nog in gebruik.\n\n" +
-                "Een spelcode blijft 24 uur gereserveerd.\n" +
-                "Gebruik een andere code."
+                "Deze spelcode bestaat al.\n\n" +
+                "Kies een andere code van 4 cijfers."
             );
             return;
         }
@@ -808,6 +788,21 @@ function createGame() {
     }).catch(error => {
 
         console.error("FOUT BIJ CREATE GAME:", error);
+
+        if (
+            error &&
+            (
+                error.code === "PERMISSION_DENIED" ||
+                String(error.message || "").toLowerCase().includes("permission_denied")
+            )
+        ) {
+            alert(
+                "Deze spelcode kan niet worden gebruikt.\n\n" +
+                "Kies een andere code van 4 cijfers."
+            );
+            return;
+        }
+
         alert(
             "Spel kon niet worden aangemaakt:\n\n" +
             error.message
