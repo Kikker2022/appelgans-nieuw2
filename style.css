@@ -312,3 +312,36 @@ font-size:15px;
 }
 
 }
+
+/* ===== ACTIEBEELDEN VOLLEDIG IN DE TEGEL ===== */
+
+.tileIcon{
+    box-sizing:border-box;
+    overflow:visible;
+    white-space:nowrap;
+    text-align:center;
+}
+
+.cell > div:first-child{
+    position:relative;
+    z-index:2;
+}
+
+
+/* ===== VOORTGANG OOK OP VRAGENSCHERM ===== */
+
+#questionProgressBox{
+    width:min(92vw,520px);
+    margin:8px auto 10px auto;
+    padding:8px 12px;
+    box-sizing:border-box;
+    background:rgba(255,255,255,0.96);
+    border:2px solid rgba(0,0,0,0.16);
+    border-radius:12px;
+    font-weight:800;
+    font-size:clamp(0.85rem,3.6vw,1rem);
+    line-height:1.45;
+    text-align:left;
+    white-space:pre-line;
+}
+
