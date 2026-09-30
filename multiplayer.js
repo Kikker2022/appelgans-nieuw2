@@ -503,6 +503,54 @@ function getAppelgansJoinUrl(code, joinToken){
     return url.toString();
 }
 
+function prepareHostLobbyScreen() {
+
+    // ---------------------------------------------------------
+    // HOSTSCHERM COMPACT MAKEN
+    // ---------------------------------------------------------
+    // Na "Maak spel" hoeft de Host niet meer zelf deel te nemen.
+    // Daarom verbergen we alleen de invoer van het deelnemersblok.
+    // playersList blijft zichtbaar zodat Host en deelnemers online
+    // in hetzelfde scherm te zien blijven.
+
+    const screen0 = document.getElementById("screen0");
+
+    if (screen0) {
+        const headings = screen0.querySelectorAll("h3");
+
+        headings.forEach(heading => {
+            const label = (heading.textContent || "").toLowerCase();
+
+            if (label.includes("deelnemen")) {
+                heading.style.display = "none";
+            }
+        });
+    }
+
+    const joinName = document.getElementById("joinName");
+    const joinCode = document.getElementById("joinCode");
+
+    if (joinName) joinName.style.display = "none";
+    if (joinCode) joinCode.style.display = "none";
+
+    const joinButton =
+        document.querySelector('button[onclick="joinGame()"]');
+
+    if (joinButton) {
+        joinButton.style.display = "none";
+    }
+
+    // Verberg de scheidingslijn tussen Host en Deelnemen.
+    // De latere scheidingslijn vóór de teaminstellingen blijft staan.
+    if (screen0) {
+        const horizontalRules = screen0.querySelectorAll("hr");
+
+        if (horizontalRules.length > 0) {
+            horizontalRules[0].style.display = "none";
+        }
+    }
+}
+
 function showGameQrCode(code){
 
     let box = document.getElementById("gameQrBox");
@@ -511,15 +559,16 @@ function showGameQrCode(code){
         box = document.createElement("div");
         box.id = "gameQrBox";
         box.style.cssText =
-            "width:min(90vw,360px);margin:16px auto;padding:14px;" +
+            "width:min(78vw,230px);margin:8px auto;padding:8px;" +
             "box-sizing:border-box;background:white;border:3px solid #333;" +
             "border-radius:16px;text-align:center;";
 
-        const startButton =
-            document.getElementById("startGameBtn");
+        const playersList =
+            document.getElementById("playersList");
 
-        if(startButton && startButton.parentNode){
-            startButton.parentNode.insertBefore(box,startButton);
+        if(playersList && playersList.parentNode){
+            // Op het hostscherm staat de QR direct boven de online namen.
+            playersList.parentNode.insertBefore(box, playersList);
         }else{
             document.body.appendChild(box);
         }
@@ -535,29 +584,27 @@ function showGameQrCode(code){
 
     const qrUrl =
         "https://api.qrserver.com/v1/create-qr-code/" +
-        "?size=240x240&data=" +
+        "?size=175x175&data=" +
         encodeURIComponent(joinUrl);
 
     box.innerHTML = `
-        <div style="font-size:1.15rem;font-weight:900;margin-bottom:8px;">
+        <div style="font-size:1rem;font-weight:900;margin-bottom:5px;">
             📱 Scan om mee te doen
         </div>
 
         <img
             src="${qrUrl}"
             alt="QR-code voor spel ${code}"
-            width="240"
-            height="240"
-            style="max-width:72vw;height:auto;background:white;padding:5px;box-sizing:border-box;"
+            width="175"
+            height="175"
+            style="max-width:58vw;height:auto;background:white;padding:3px;box-sizing:border-box;"
         >
 
-        <div style="margin-top:8px;font-size:1rem;font-weight:800;">
+        <div style="margin-top:4px;font-size:.95rem;font-weight:800;">
             Spelcode: ${code}
         </div>
 
-        <div style="margin-top:5px;font-size:.9rem;">
-            Na het scannen staat de spelcode al ingevuld.
-        </div>
+        
     `;
     }).catch(error => {
         console.error("QR-code kon niet worden gemaakt:", error);
@@ -768,7 +815,9 @@ function createGame() {
         window.myPlayerId = "host";
         window.myTeam = 0;
 
-        // Toon voor de andere teams een QR met deze spelcode.
+        // Maak het Host-lobbyscherm compact en toon daarna
+        // de QR direct boven de online namenlijst.
+        prepareHostLobbyScreen();
         showGameQrCode(code);
         window.myColor = "blue";
         savePlayerId(code, "host");
