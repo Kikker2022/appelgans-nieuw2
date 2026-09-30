@@ -764,11 +764,13 @@ function createGame() {
      * VEILIG EEN NIEUW SPEL AANMAKEN
      *
      * Iedere telefoon mag Host worden van een NIEUWE, vrije spelcode.
-     * Een bestaand spel wordt hier nooit meer overschreven.
+     * Een bestaande spelcode blijft 24 uur gereserveerd.
+ * Na 24 uur mag dezelfde code veilig opnieuw worden gebruikt.
      *
      * Dit past bij de Firebase Rules:
      * - een nieuw /games/{code} mag door de nieuwe Host worden gemaakt;
-     * - een bestaand spel blijft beschermd tegen een andere telefoon.
+     * - een bestaand spel jonger dan 24 uur blijft beschermd;
+ * - een spel ouder dan 24 uur mag opnieuw worden aangemaakt.
      *
      * De transaction voorkomt dat twee telefoons tegelijk dezelfde
      * vrije code kunnen claimen.
@@ -776,8 +778,20 @@ function createGame() {
     gameRef.transaction(currentData => {
 
         if (currentData !== null) {
-            // Deze code bestaat al. Niet overschrijven.
-            return;
+
+            // Een spelcode blijft 24 uur gereserveerd.
+            // Daarna mag dezelfde 4-cijferige code opnieuw worden gebruikt.
+            const createdAt = Number(currentData.createdAt || 0);
+            const ageMs = Date.now() - createdAt;
+            const twentyFourHoursMs = 24 * 60 * 60 * 1000;
+
+            if (!createdAt || ageMs < twentyFourHoursMs) {
+                // Spel bestaat nog en is jonger dan 24 uur.
+                return;
+            }
+
+            // Ouder dan 24 uur: de volledige oude game wordt hieronder
+            // vervangen door een nieuw spel met een nieuwe host/joinToken.
         }
 
         return {
