@@ -598,20 +598,22 @@ if (tileIcon) {
     tileIcon.style.justifyContent =
         "center";
 
+    // Actiebeeld volledig binnen de tegel houden.
     tileIcon.style.width =
-        "100%";
+        "82%";
 
     tileIcon.style.height =
-        "100%";
+        "82%";
 
     tileIcon.style.fontSize =
-        "clamp(2.8rem, 11vw, 4.6rem)";
+        "clamp(1.35rem, 6.2vw, 2.35rem)";
 
     tileIcon.style.lineHeight =
         "1";
 
     tileIcon.style.position = "absolute";
-    tileIcon.style.inset = "0";
+    tileIcon.style.left = "9%";
+    tileIcon.style.top = "9%";
     tileIcon.style.pointerEvents = "none";
     tileIcon.style.zIndex = "1";
 
@@ -704,6 +706,57 @@ lines.join("\n");
 
 }
 
+
+function updateQuestionProgressDisplay(){
+
+    let progressBox =
+        document.getElementById("questionProgressBox");
+
+    if(!progressBox){
+
+        progressBox =
+            document.createElement("div");
+
+        progressBox.id = "questionProgressBox";
+
+        if(questionText && questionText.parentNode){
+            questionText.parentNode.insertBefore(
+                progressBox,
+                questionText
+            );
+        }
+    }
+
+    const lines = [];
+
+    teams
+    .slice(0, activeTeams)
+    .forEach((team,index)=>{
+
+        const position =
+            Math.max(
+                0,
+                Math.min(
+                    TOTAL_CELLS,
+                    parseInt(team.position,10) || 0
+                )
+            );
+
+        lines.push(
+            team.icon +
+            " " +
+            (team.name || ("Team " + (index + 1))) +
+            ": " +
+            position +
+            " / " +
+            TOTAL_CELLS
+        );
+    });
+
+    progressBox.innerText =
+        lines.join("\n");
+}
+
 /* ===== UPDATE BORD ===== */
 
 function updateBoard(){
@@ -747,6 +800,7 @@ cell
 });
 
 updateTeamProgressDisplay();
+    updateQuestionProgressDisplay();
 
 }
 
@@ -1119,6 +1173,9 @@ function loadSynchronizedQuestion(index) {
     btnC.disabled = false;
 
     explanationText.innerText = "";
+
+    // Actuele teamstand ook boven de vraag tonen.
+    updateQuestionProgressDisplay();
 
 }
 
