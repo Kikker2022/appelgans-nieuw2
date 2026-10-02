@@ -59,7 +59,7 @@ uitleg:"Beneden Haulerwijk ontwikkelde zich later tot het zelfstandige dorp Wask
 {
 categorie:"Ooststellingwerf",
 
-vraag:"In welk jaar werd aan de noordzijde van de vaart een belangrijke weg aangelegd?",
+vraag:"In welk jaar werd in Haulerwijk aan de noordzijde van de vaart een belangrijke weg aangelegd?",
 
 a:"1756",
 b:"1859",
@@ -67,7 +67,7 @@ c:"1880",
 
 correct:"b",
 
-uitleg:"In 1859 werd aan de noordelijke oever van de vaart een weg aangelegd."
+uitleg:"In 1859 werd in Haulerwijk aan de noordelijke oever van de vaart een weg aangelegd."
 },
 
 {
@@ -325,7 +325,7 @@ uitleg:"Door de sterkere verdichting aan de noordzijde bleef het agrarische kara
 {
 categorie:"Ooststellingwerf",
 
-vraag:"In welk jaar werd de weg aan de noordzijde van de Haulerwijkstervaart een kunstweg?",
+vraag:"In welk jaar werd de weg aan de noordzijde van de Haulerwijkstervaart een asfaltweg?",
 
 a:"1899",
 b:"1911",
@@ -333,7 +333,7 @@ c:"1925",
 
 correct:"b",
 
-uitleg:"De weg die in 1859 werd aangelegd, werd in 1911 een kunstweg."
+uitleg:"De weg die in 1859 werd aangelegd, werd in 1911 een asfaltweg."
 },
 
 {
@@ -367,7 +367,7 @@ uitleg:"Het spoor van de windhoos was ongeveer 50 meter breed."
 {
 categorie:"Ooststellingwerf",
 
-vraag:"Hoeveel woningen liepen tijdens de windhoos van 1950 ongeveer schade op?",
+vraag:"Hoeveel woningen in Haulerwijk liepen tijdens de windhoos van 1950 ongeveer schade op?",
 
 a:"Een tiental",
 b:"Een twintigtal",
@@ -381,7 +381,7 @@ uitleg:"Ongeveer twintig woningen liepen schade op. Twee huizen werden totaal ve
 {
 categorie:"Ooststellingwerf",
 
-vraag:"Hoeveel geld werd uiteindelijk ongeveer ingezameld om de schade van de windhoos van 1950 te vergoeden?",
+vraag:"Hoeveel geld werd uiteindelijk ongeveer ingezameld om de schade van de windhoos in Haulerwijk van 1950 te vergoeden?",
 
 a:"Ruim 20.000 gulden",
 b:"Ruim 50.000 gulden",
@@ -395,7 +395,7 @@ uitleg:"Er werd in totaal ruim 80.000 gulden ingezameld, voldoende om alle schad
 {
 categorie:"Ooststellingwerf",
 
-vraag:"Welke buitenlandse plaats leverde volgens het gemeentearchief ook financiële steun na de windhoos van 1950?",
+vraag:"Welke buitenlandse plaats leverde volgens het gemeentearchief ook financiële steun na de windhoos in Haulerwijk van 1950?",
 
 a:"Amerika",
 b:"Duitsland",
@@ -479,7 +479,7 @@ uitleg:"De remise werd onder andere gebruikt door Elema & Stollenga, beter beken
 {
 categorie:"Ooststellingwerf",
 
-vraag:"In welk jaar werden de lijndiensten van E.S.A. uiteindelijk overgedragen aan de FRAM?",
+vraag:"In welk jaar werden in Haulerwijk de lijndiensten van E.S.A. uiteindelijk overgedragen aan de FRAM?",
 
 a:"1969",
 b:"1979",
@@ -535,7 +535,7 @@ uitleg:"Het eerste echte schoolgebouw aan de Willem Kroezestraat kwam in 1951 ge
 {
 categorie:"Ooststellingwerf",
 
-vraag:"Welke architecten ontwierpen het schoolgebouw aan de Willem Kroezestraat?",
+vraag:"Welke architecten ontwierpen het schoolgebouw aan de Willem Kroezestraat in Waskemeer?",
 
 a:"Van Wijk en Broos",
 b:"F. Offringa en Jelle de Jong",
