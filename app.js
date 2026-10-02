@@ -896,6 +896,16 @@ function nextTurn() {
     }
 
     window.diceRolled = false;
+    window.diceRollBusy = false;
+
+    const diceButton =
+        document.querySelector('button[onclick="rollDice()"]');
+
+    if (diceButton) {
+        diceButton.disabled = false;
+        diceButton.innerText = "🎲 Dobbelen";
+    }
+
     diceText.innerText = "";
     updateTurn();
 }
@@ -914,16 +924,27 @@ function rollDice() {
         return;
     }
 
-    if (window.diceRolled) {
+    // Meteen lokaal blokkeren: een tweede snelle tik op dezelfde
+    // telefoon komt niet meer door.
+    if (window.diceRolled === true || window.diceRollBusy === true) {
         return;
     }
 
+    window.diceRollBusy = true;
     window.diceRolled = true;
 
-    playGameSound(soundDobbel);
+    const diceButton =
+        document.querySelector('button[onclick="rollDice()"]');
+
+    const originalDiceButtonText =
+        diceButton ? diceButton.innerText : "";
+
+    if (diceButton) {
+        diceButton.disabled = true;
+        diceButton.innerText = "🎲 Bezig...";
+    }
 
     const roll = Math.floor(Math.random() * 6) + 1;
-    lastRoll = roll;
 
     const actieveVragen = vragen.filter(
         v => v.categorie === selectedCategory
@@ -931,123 +952,139 @@ function rollDice() {
 
     if (!actieveVragen.length) {
         window.diceRolled = false;
+        window.diceRollBusy = false;
+
+        if (diceButton) {
+            diceButton.disabled = false;
+            diceButton.innerText =
+                originalDiceButtonText || "🎲 Dobbelen";
+        }
+
         statusMessage.innerText =
             "Geen vragen gevonden voor deze categorie.";
         return;
     }
 
-    // -----------------------------------------
-    // Gebruikte vragen van dit spel ophalen.
-    // De lijst wordt centraal in Firebase bijgehouden,
-    // zodat alle telefoons dezelfde vragen gebruiken.
-    // -----------------------------------------
+    const gameRef =
+        firebase.database()
+            .ref("games/" + window.currentGameCode);
 
-    firebase.database()
-        .ref(
-            "games/" +
-            window.currentGameCode +
-            "/usedQuestions"
-        )
-        .once("value")
-        .then(snapshot => {
+    /*
+     * FIREBASE IS DE DEFINITIEVE VERGRENDELING.
+     * Alleen phase "turn", het juiste team en roll === null
+     * mogen deze beurt claimen.
+     */
+    gameRef.transaction(game => {
 
-            let usedQuestions =
-                snapshot.val() || {};
+        if (!game) {
+            return;
+        }
 
-            let beschikbareIndices = [];
+        const firebaseTurn = parseInt(game.currentTurn, 10);
+        const myTeam = parseInt(window.myTeam, 10);
 
-            for (
-                let i = 0;
-                i < actieveVragen.length;
-                i++
-            ) {
+        if (
+            game.phase !== "turn" ||
+            firebaseTurn !== myTeam ||
+            game.roll !== null
+        ) {
+            return;
+        }
 
-                if (!usedQuestions[i]) {
-                    beschikbareIndices.push(i);
-                }
+        let usedQuestions = game.usedQuestions || {};
+        let beschikbareIndices = [];
+
+        for (let i = 0; i < actieveVragen.length; i++) {
+            if (!usedQuestions[i]) {
+                beschikbareIndices.push(i);
             }
+        }
 
-            // Alle vragen gebruikt?
-            // Dan start een nieuwe ronde.
-            if (!beschikbareIndices.length) {
+        if (!beschikbareIndices.length) {
+            usedQuestions = {};
 
-                usedQuestions = {};
-
-                for (
-                    let i = 0;
-                    i < actieveVragen.length;
-                    i++
-                ) {
-                    beschikbareIndices.push(i);
-                }
+            for (let i = 0; i < actieveVragen.length; i++) {
+                beschikbareIndices.push(i);
             }
+        }
 
-            const questionIndex =
-                beschikbareIndices[
-                    Math.floor(
-                        Math.random() *
-                        beschikbareIndices.length
-                    )
-                ];
-
-            // Deze vraag is vanaf nu gebruikt.
-            usedQuestions[questionIndex] = true;
-
-            return firebase.database()
-                .ref(
-                    "games/" +
-                    window.currentGameCode
+        const questionIndex =
+            beschikbareIndices[
+                Math.floor(
+                    Math.random() *
+                    beschikbareIndices.length
                 )
-                .update({
+            ];
 
-                    currentTurn: currentTeam,
-                    roll: roll,
-                    questionIndex: questionIndex,
-                    usedQuestions: usedQuestions,
-                    phase: "rolled"
+        usedQuestions[questionIndex] = true;
 
-                });
+        game.roll = roll;
+        game.questionIndex = questionIndex;
+        game.usedQuestions = usedQuestions;
+        game.phase = "rolled";
 
-        })
-        .then(() => {
+        return game;
 
-            // Na 3,5 seconden gaat iedere telefoon
-            // naar dezelfde vraag.
-            setTimeout(() => {
+    }).then(result => {
 
-                firebase.database()
-                    .ref(
-                        "games/" +
-                        window.currentGameCode
-                    )
-                    .update({
-                        phase: "question"
-                    })
-                    .catch(error => {
-
-                        console.error(
-                            "❌ Fout bij overgang naar vraag:",
-                            error
-                        );
-
-                    });
-
-            }, 3500);
-
-        })
-        .catch(error => {
-
-            console.error(
-                "❌ Fout bij opslaan van worp/vraag:",
-                error
-            );
-
-            window.diceRolled = false;
-
+        if (!result.committed) {
+            window.diceRollBusy = false;
             statusMessage.innerText =
-                "Fout bij het gooien.";
+                "🎲 Er is al gedobbeld voor deze beurt.";
+            return;
+        }
 
-        });
+        lastRoll = roll;
+        playGameSound(soundDobbel);
+
+        // Na 3,5 seconden gaat iedere telefoon naar dezelfde vraag.
+        setTimeout(() => {
+
+            gameRef.transaction(game => {
+
+                if (!game) {
+                    return;
+                }
+
+                if (
+                    game.phase !== "rolled" ||
+                    parseInt(game.currentTurn, 10) !==
+                        parseInt(window.myTeam, 10) ||
+                    parseInt(game.roll, 10) !== roll
+                ) {
+                    return;
+                }
+
+                game.phase = "question";
+                return game;
+
+            }).catch(error => {
+                console.error(
+                    "❌ Fout bij overgang naar vraag:",
+                    error
+                );
+            });
+
+        }, 3500);
+
+    }).catch(error => {
+
+        console.error(
+            "❌ Fout bij beveiligen van worp:",
+            error
+        );
+
+        window.diceRolled = false;
+        window.diceRollBusy = false;
+
+        if (diceButton) {
+            diceButton.disabled = false;
+            diceButton.innerText =
+                originalDiceButtonText || "🎲 Dobbelen";
+        }
+
+        statusMessage.innerText = "Fout bij het gooien.";
+    });
 }
 
 /* ===== VRAGEN ===== */
