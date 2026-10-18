@@ -2341,6 +2341,20 @@ uitleg:"De Waadsee leit tusken de Fryske kust en de Waadeilannen."
 {
 categorie:"Fryslân",
 
+vraag:"Hokker Fryske sporter wurde ien 1996 olympisk kampioen 1000 meter reedriden?",
+
+a:"Ids Postma",
+b:"Erben Wennemars",
+c:"Mark Tuitert",
+
+correct:"a",
+
+uitleg:"Ids Postma wun goud ien Nagano."
+},
+  
+{
+categorie:"Fryslân",
+
 vraag:"Hokker Fryske skûtsjesilen-ynstelling organisearret de offisjele kompetysje?",
 
 a:"IFKS en SKS",
@@ -4903,7 +4917,7 @@ uitleg:"Annemarie Jorritsma werd geboren in Emmen."
 {
 categorie:"Drenthe",
 
-vraag:"Welke plaats vormt het centrum van de Nederlandse aardgasopslag Langelo?",
+vraag:"Welke plaats vormt het centrum van de Nederlandse aardgasopslag in Drenthe?",
 
 a:"Langelo",
 b:"Norg",
@@ -4931,7 +4945,7 @@ uitleg:"Carlijn Achtereekte verraste met goud in Pyeongchang."
 {
 categorie:"Drenthe",
 
-vraag:"Welke plaats werd bekend door de vondst van het Meisje van Yde?",
+vraag:"Welke plaats werd bekend door de vondst van het Meisje van ......?",
 
 a:"Yde",
 b:"Vries",
@@ -5027,7 +5041,7 @@ uitleg:"Balkenende woonde een periode in de provincie."
 },
 
 {
-categorie:"Friesland",
+categorie:"Drenthe",
 
 vraag:"Welke Friese sporter won olympisch goud op de 1500 meter schaatsen in 1988?",
 
@@ -5041,7 +5055,7 @@ uitleg:"Leo Visser won goud tijdens de Winterspelen van Calgary."
 },
 
 {
-categorie:"Groningen",
+categorie:"Drenthe",
 
 vraag:"Welke Groningse gemeente werd het zwaarst getroffen door aardbevingsschade?",
 
@@ -5127,7 +5141,7 @@ uitleg:"Coevorden lag strategisch aan grensroutes richting Duitsland."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Nederlandse schaatser uit Drenthe won meerdere wereldtitels allround in de jaren 2000?",
+vraag:"Welke Nederlandse schaatser uit Overijssel won meerdere wereldtitels allround in de jaren 2000?",
 
 a:"Erben Wennemars",
 b:"Sven Kramer",
@@ -5135,7 +5149,7 @@ c:"Mark Tuitert",
 
 correct:"a",
 
-uitleg:"Erben Wennemars komt uit Dalfsen maar trainde veel in Drenthe en won meerdere wereldtitels sprint."
+uitleg:"Erben Wennemars komt uit Dalfsen en won meerdere wereldtitels sprint."
 },
 
 {
@@ -5183,48 +5197,6 @@ uitleg:"Coevorden werd zwaar getroffen in de eindfase van de oorlog."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Nederlandse voetbalclub uit Drenthe speelde in 2022 nog in de Eredivisie?",
-
-a:"FC Emmen",
-b:"VV Hoogeveen",
-c:"ACV Assen",
-
-correct:"a",
-
-uitleg:"FC Emmen speelde in meerdere seizoenen Eredivisie."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse rivier vormt een belangrijk natuurgebied en stroomt door het Drentsche Aa-gebied?",
-
-a:"Drentsche Aa",
-b:"Reest",
-c:"Hunze",
-
-correct:"a",
-
-uitleg:"De Drentsche Aa is een van de best bewaarde beekdalen van Nederland."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke plaats staat bekend als bestuurscentrum van de provincie Drenthe?",
-
-a:"Meppel",
-b:"Assen",
-c:"Emmen",
-
-correct:"b",
-
-uitleg:"Assen is de provinciehoofdstad."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke Drentse wielrenner won olympisch goud op de puntenkoers in 1988?",
 
 a:"Harald Haugland",
@@ -5234,20 +5206,6 @@ c:"Geen van beiden",
 correct:"c",
 
 uitleg:"De puntenkoers werd gewonnen door Danny Clark (Australië)."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke plaats in Drenthe is bekend om het TT Circuit?",
-
-a:"Assen",
-b:"Hoogeveen",
-c:"Emmen",
-
-correct:"a",
-
-uitleg:"Het TT Circuit Assen is wereldberoemd."
 },
 
 {
@@ -5421,20 +5379,6 @@ uitleg:"Chemische industrie zorgde voor groei in Emmen."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse plaats werd in de 19e eeuw een belangrijk knooppunt in de turfhandel dankzij de Drentsche Hoofdvaart en Meppelerdiep verbinding?",
-
-a:"Meppel",
-b:"Hoogeveen",
-c:"Smilde",
-
-correct:"a",
-
-uitleg:"Meppel groeide uit tot een belangrijk overslagpunt voor turftransport."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke Drentse plaats is bekend als geboorteplaats van de verzetsstrijder Johannes Post?",
 
 a:"Hoogeveen",
@@ -5458,20 +5402,6 @@ c:"De Wolden",
 correct:"a",
 
 uitleg:"Westerveld omvat grote natuurgebieden zoals Dwingelderveld."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse sporter werd in 1996 olympisch kampioen 1000 meter schaatsen?",
-
-a:"Ids Postma",
-b:"Erben Wennemars",
-c:"Mark Tuitert",
-
-correct:"a",
-
-uitleg:"Ids Postma won goud in Nagano."
 },
 
 {
@@ -5505,20 +5435,6 @@ uitleg:"De veenkoloniale landbouw leverde veel aardappelverwerking op."
 {
 categorie:"Drenthe",
 
-vraag:"Welke verzetsorganisatie was in Drenthe verantwoordelijk voor het onderbrengen van duizenden onderduikers?",
-
-a:"LO (Landelijke Organisatie voor Hulp aan Onderduikers)",
-b:"NSB",
-c:"SD (Sicherheitsdienst)",
-
-correct:"a",
-
-uitleg:"De LO coördineerde het onderduiknetwerk in heel Drenthe."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke Drentse plaats staat bekend om het museumdorp Orvelte in de buurt?",
 
 a:"Midden-Drenthe",
@@ -5528,20 +5444,6 @@ c:"Emmen",
 correct:"a",
 
 uitleg:"Orvelte ligt in de gemeente Midden-Drenthe."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke rivier vormt een belangrijk beekdal in Noord-Drenthe en stroomt door het Nationaal Park Drentsche Aa?",
-
-a:"Drentsche Aa",
-b:"Hunze",
-c:"Reest",
-
-correct:"a",
-
-uitleg:"De Drentsche Aa is een van de best bewaarde beekdalen van Nederland."
 },
 
 {
@@ -5589,20 +5491,6 @@ uitleg:"Borger-Odoorn ligt ten noorden van Emmen."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse plaats is bekend om het voormalige Kamp Westerbork?",
-
-a:"Hooghalen",
-b:"Beilen",
-c:"Vries",
-
-correct:"a",
-
-uitleg:"Kamp Westerbork ligt bij Hooghalen."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke sport is traditioneel sterk verbonden met Drenthe naast schaatsen en voetbal?",
 
 a:"Paardensport",
@@ -5645,20 +5533,6 @@ uitleg:"Dwingeloo ligt direct aan het nationale park."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse voetbalclub speelt in het stadion De Oude Meerdijk?",
-
-a:"FC Emmen",
-b:"VV Hoogeveen",
-c:"ACV Assen",
-
-correct:"a",
-
-uitleg:"FC Emmen speelt in De Oude Meerdijk."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke economische sector groeide sterk in Assen na 1950?",
 
 a:"Dienstverlening en overheid",
@@ -5668,20 +5542,6 @@ c:"Visserij",
 correct:"a",
 
 uitleg:"Assen groeide als bestuurlijk centrum."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats staat bekend om de hunebedden bij Borger?",
-
-a:"Borger",
-b:"Gieten",
-c:"Rolde",
-
-correct:"a",
-
-uitleg:"Borger heeft het grootste hunebedcentrum."
 },
 
 {
@@ -5729,34 +5589,6 @@ uitleg:"Johannes Post was een belangrijke verzetsleider."
 {
 categorie:"Drenthe",
 
-vraag:"Welke plaats is het bestuurlijk centrum van de gemeente Emmen?",
-
-a:"Emmen",
-b:"Klazienaveen",
-c:"Nieuw-Amsterdam",
-
-correct:"a",
-
-uitleg:"Emmen is de hoofdplaats van de gemeente."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke sportevenement vindt jaarlijks plaats op het TT Circuit Assen?",
-
-a:"MotoGP",
-b:"Formule 1",
-c:"Tour de France",
-
-correct:"a",
-
-uitleg:"De MotoGP wordt jaarlijks gereden in Assen."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke Drentse gemeente ontstond uit de samenvoeging van Beilen, Smilde en Westerbork?",
 
 a:"Midden-Drenthe",
@@ -5766,20 +5598,6 @@ c:"Westerveld",
 correct:"a",
 
 uitleg:"Midden-Drenthe ontstond in 1998."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats is historisch gezien het belangrijkste knooppunt van de Drentse veenkoloniale scheepvaart?",
-
-a:"Meppel",
-b:"Hoogeveen",
-c:"Smilde",
-
-correct:"a",
-
-uitleg:"Meppel was het belangrijkste overslagpunt van turf en goederen."
 },
 
 {
@@ -5827,34 +5645,6 @@ uitleg:"Rolde is een klassiek voorbeeld van een esdorp."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse verzetsorganisatie hielp vooral bij het vervalsen van persoonsbewijzen?",
-
-a:"LO-KP netwerk",
-b:"NSB",
-c:"Landwacht",
-
-correct:"a",
-
-uitleg:"De LO en Knokploegen werkten samen in het verzet."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats ligt aan het Nationaal Park Dwingelderveld?",
-
-a:"Dwingeloo",
-b:"Beilen",
-c:"Assen",
-
-correct:"a",
-
-uitleg:"Dwingeloo ligt direct aan het natuurgebied."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke industrie was in de 20e eeuw dominant in Zuidoost-Drenthe naast chemie?",
 
 a:"Textielindustrie",
@@ -5864,34 +5654,6 @@ c:"Zoutwinning",
 correct:"a",
 
 uitleg:"Textiel en chemie waren belangrijke werkgevers in de regio."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke rivier vormt een belangrijk beekdal in Drenthe en is vrijwel volledig natuurlijk gebleven?",
-
-a:"Drentsche Aa",
-b:"Hunze",
-c:"Reest",
-
-correct:"a",
-
-uitleg:"De Drentsche Aa is een beschermd beekdallandschap."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse stad kreeg al in 1407 stadsrechten en is daarmee de oudste stad van de provincie?",
-
-a:"Coevorden",
-b:"Assen",
-c:"Meppel",
-
-correct:"a",
-
-uitleg:"Coevorden is de oudste stad van Drenthe."
 },
 
 {
@@ -5939,48 +5701,6 @@ uitleg:"VV Hoogeveen speelt op het Bentinckspark."
 {
 categorie:"Drenthe",
 
-vraag:"Welke economische sector groeide sterk in Meppel vanaf de 20e eeuw?",
-
-a:"Logistiek en distributie",
-b:"Visserij",
-c:"Mijnbouw",
-
-correct:"a",
-
-uitleg:"Meppel ontwikkelde zich als logistiek knooppunt."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats ligt centraal in het Hondsruggebied?",
-
-a:"Borger",
-b:"Emmen",
-c:"Assen",
-
-correct:"a",
-
-uitleg:"Borger ligt op de Hondsrug."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats is bekend om het jaarlijkse TT-motorsportevenement?",
-
-a:"Assen",
-b:"Emmen",
-c:"Hoogeveen",
-
-correct:"a",
-
-uitleg:"Assen organiseert de TT van Assen."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke gemeente ontstond in 1998 uit de samenvoeging van Norg, Roden en Peize?",
 
 a:"Noordenveld",
@@ -6009,34 +5729,6 @@ uitleg:"Emmen was centrum van zetmeel- en chemische industrie."
 {
 categorie:"Drenthe",
 
-vraag:"Welke sport is traditioneel sterk verbonden met de Drentse veenkoloniën?",
-
-a:"Fierljeppen",
-b:"Kaatsen",
-c:"Schaken",
-
-correct:"a",
-
-uitleg:"Fierljeppen komt voort uit veengebieden."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke plaats ligt dicht bij Kamp Westerbork?",
-
-a:"Hooghalen",
-b:"Beilen",
-c:"Smilde",
-
-correct:"a",
-
-uitleg:"Kamp Westerbork ligt bij Hooghalen."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke Drentse wielerwedstrijd staat bekend om de VAM-berg?",
 
 a:"Ronde van Drenthe",
@@ -6060,20 +5752,6 @@ c:"Zoutwinning",
 correct:"a",
 
 uitleg:"Hoogeveen ontstond en groeide door turfwinning."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats heeft een belangrijk regionaal museum over prehistorie?",
-
-a:"Borger",
-b:"Assen",
-c:"Meppel",
-
-correct:"a",
-
-uitleg:"Borger heeft het Hunebedcentrum."
 },
 
 {
@@ -6135,20 +5813,6 @@ uitleg:"'Scheuveln' betekent schaatsen in het Drents."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse plaats staat bekend om de grootste concentratie hunebedden?",
-
-a:"Borger",
-b:"Rolde",
-c:"Anloo",
-
-correct:"a",
-
-uitleg:"Borger heeft het grootste hunebedcentrum."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Wat betekent het Drentse woord 'stoef' meestal?",
 
 a:"Trots / eigenwijs",
@@ -6158,20 +5822,6 @@ c:"Stoofpot",
 correct:"a",
 
 uitleg:"'Stoef' wordt gebruikt voor iemand die zich trots of stijf opstelt."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats is historisch bekend als centrum van de veenarbeidersstakingen rond 1900?",
-
-a:"Appelscha",
-b:"Hoogeveen",
-c:"Emmen",
-
-correct:"b",
-
-uitleg:"Hoogeveen kende veel sociale spanningen rond turfwinning."
 },
 
 {
@@ -6247,20 +5897,6 @@ uitleg:"'Nijt'n' betekent niet willen of weigeren."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse plaats was belangrijk in de turfvaart richting Groningen en Friesland?",
-
-a:"Meppel",
-b:"Emmen",
-c:"Assen",
-
-correct:"a",
-
-uitleg:"Meppel was een belangrijk transportknooppunt."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Wat betekent het Drentse woord 'aigenwiezer'?",
 
 a:"Eigenwijs persoon",
@@ -6270,20 +5906,6 @@ c:"Ambtenaar",
 correct:"a",
 
 uitleg:"'Aigenwiezer' betekent eigenwijs."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse verzetsplaats stond bekend om extreem hoge betrokkenheid bij onderduikhulp?",
-
-a:"Nieuwlande",
-b:"Diever",
-c:"Vledder",
-
-correct:"a",
-
-uitleg:"Nieuwlande hielp massaal onderduikers."
 },
 
 {
@@ -6303,20 +5925,6 @@ uitleg:"'Dôan' is Drents voor 'doen'."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse plaats is bekend door het TT Circuit?",
-
-a:"Assen",
-b:"Hoogeveen",
-c:"Emmen",
-
-correct:"a",
-
-uitleg:"Assen is internationaal bekend door de TT."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Wat betekent het Drentse woord 'hummeln'?",
 
 a:"Rommel maken / friemelen",
@@ -6331,20 +5939,6 @@ uitleg:"'Hummeln' betekent prutsen of friemelen."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse plaats heeft een historisch brinkdorp karakter en ligt nabij natuurgebied Dwingelderveld?",
-
-a:"Dwingeloo",
-b:"Beilen",
-c:"Roden",
-
-correct:"a",
-
-uitleg:"Dwingeloo is een klassiek brinkdorp."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Wat betekent het Drentse woord 'veurmekaar'?",
 
 a:"Voor elkaar / geregeld",
@@ -6354,20 +5948,6 @@ c:"Ver weg",
 correct:"a",
 
 uitleg:"'Veurmekaar' betekent dat iets geregeld is."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats groeide sterk door chemische industrie in de 20e eeuw?",
-
-a:"Emmen",
-b:"Assen",
-c:"Meppel",
-
-correct:"a",
-
-uitleg:"Emmen werd industrieel sterk door chemie."
 },
 
 {
@@ -6415,20 +5995,6 @@ uitleg:"'Sluut'n' is Drents voor 'sluiten'."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse plaats ontwikkelde zich in de 19e eeuw tot een belangrijk knooppunt voor de turfvaart richting Friesland en Groningen?",
-
-a:"Meppel",
-b:"Hoogeveen",
-c:"Assen",
-
-correct:"a",
-
-uitleg:"Meppel was het centrale overslagpunt voor turf en goederenvervoer."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Wat betekent het Drentse woord 'barg' in de streektaal meestal?",
 
 a:"Berg of heuvel",
@@ -6438,20 +6004,6 @@ c:"Barg (varken)",
 correct:"a",
 
 uitleg:"'Barg' betekent in het Drents een heuvel of verhoogd terrein."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats is historisch het centrum van het esdorpenlandschap rond de Hondsrug?",
-
-a:"Rolde",
-b:"Emmen",
-c:"Hoogeveen",
-
-correct:"a",
-
-uitleg:"Rolde is een klassiek esdorp op de Hondsrug."
 },
 
 {
@@ -6499,20 +6051,6 @@ uitleg:"Een 'mient' is een gemeenschappelijke weidegrond."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse plaats werd sterk beïnvloed door de komst van de chemische industrie van AKZO in de 20e eeuw?",
-
-a:"Emmen",
-b:"Assen",
-c:"Meppel",
-
-correct:"a",
-
-uitleg:"Emmen groeide sterk door de chemische industrie."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Wat betekent het Drentse woord 'skik'?",
 
 a:"Plezier / lol",
@@ -6522,20 +6060,6 @@ c:"Rust",
 correct:"a",
 
 uitleg:"'Skik hebben' betekent plezier hebben."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats is de oudste stad van de provincie?",
-
-a:"Coevorden",
-b:"Meppel",
-c:"Assen",
-
-correct:"a",
-
-uitleg:"Coevorden kreeg al in 1407 stadsrechten."
 },
 
 {
@@ -6625,20 +6149,6 @@ uitleg:"'Goan' is Drents voor gaan."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse plaats ligt aan de Hondsrug en is bekend om hunebedden?",
-
-a:"Borger",
-b:"Rolde",
-c:"Anloo",
-
-correct:"a",
-
-uitleg:"Borger is het hunebedcentrum."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Wat betekent het Drentse woord 'laif'?",
 
 a:"Lief",
@@ -6648,20 +6158,6 @@ c:"Laag",
 correct:"a",
 
 uitleg:"'Laif' betekent lief."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats speelde een grote rol in het verzet met het 'dorp dat zweeg'?",
-
-a:"Nieuwlande",
-b:"Diever",
-c:"Ruinen",
-
-correct:"a",
-
-uitleg:"Nieuwlande hielp massaal onderduikers."
 },
 
 {
@@ -6807,20 +6303,6 @@ uitleg:"Het wijkenstelsel werd gebruikt voor ontwatering en transport."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse stad ontwikkelde zich als administratief centrum door de vestiging van provinciale instellingen in de 19e en 20e eeuw?",
-
-a:"Assen",
-b:"Meppel",
-c:"Emmen",
-
-correct:"a",
-
-uitleg:"Assen werd bestuurlijk centrum van de provincie."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke geologische structuur vormt de basis van het Hondsruglandschap?",
 
 a:"Saalien-ijstijd stuwwal",
@@ -6830,48 +6312,6 @@ c:"Rivierdelta-afzetting",
 correct:"a",
 
 uitleg:"De Hondsrug is gevormd in de Saalien-ijstijd."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke economische factor verklaart de snelle groei van Emmen in de 20e eeuw het best?",
-
-a:"Industrialisatie en chemiecomplexen",
-b:"Scheepsbouw en havenexport",
-c:"Goudwinning",
-
-correct:"a",
-
-uitleg:"Emmen groeide door industrie en chemische sectoren."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke verzetsstructuur was essentieel in Drenthe tijdens de Tweede Wereldoorlog voor onderduikhulp en distributiebonnen?",
-
-a:"LO-KP netwerk",
-b:"NSB-organisatie",
-c:"Arbeidsfront Drenthe",
-
-correct:"a",
-
-uitleg:"LO en Knokploegen vormden samen het verzetssysteem."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats is historisch gezien het oudste stedelijke centrum van de provincie met middeleeuwse stadsrechten?",
-
-a:"Coevorden",
-b:"Meppel",
-c:"Assen",
-
-correct:"a",
-
-uitleg:"Coevorden kreeg in 1407 stadsrechten."
 },
 
 {
@@ -6919,20 +6359,6 @@ uitleg:"Thorbecke introduceerde moderne provinciale en gemeentelijke structuren.
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse gemeente ontstond in 1998 uit Beilen, Smilde en Westerbork?",
-
-a:"Midden-Drenthe",
-b:"Noordenveld",
-c:"Westerveld",
-
-correct:"a",
-
-uitleg:"Midden-Drenthe is een fusiegemeente uit 1998."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke prehistorische periode wordt in Drenthe vooral zichtbaar door grafheuvels naast hunebedden?",
 
 a:"Neolithicum en Bronstijd",
@@ -6970,20 +6396,6 @@ c:"Zoutwinning",
 correct:"a",
 
 uitleg:"Na het veentijdperk groeide industrie en dienstverlening."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats is verbonden met het oudste georganiseerde hunebedonderzoek in Nederland?",
-
-a:"Borger",
-b:"Anloo",
-c:"Rolde",
-
-correct:"a",
-
-uitleg:"Borger werd centrum van hunebedonderzoek en later museum."
 },
 
 {
@@ -7031,81 +6443,11 @@ uitleg:"Meppel werd in 1945 meerdere keren gebombardeerd door geallieerden."
 {
 categorie:"Drenthe",
 
-vraag:"Welke sportvereniging uit Emmen speelde jarenlang in de Eredivisie voetbal onder de naam FC Emmen?",
-
-a:"FC Twente",
-b:"FC Emmen",
-c:"SC Veendam",
-
-correct:"b",
-
-uitleg:"FC Emmen speelt als profclub uit Drenthe op Eredivisie-niveau."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke archeologische vondst in Drenthe is kenmerkend voor de Trechterbekercultuur?",
-
-a:"Hunebedden",
-b:"Terpen",
-c:"Grafheuvels uit de Romeinse tijd",
-
-correct:"a",
-
-uitleg:"Hunebedden zijn grafkamers van de Trechterbekercultuur."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse verzetsgroep stond bekend om onderduikhulp tijdens de Tweede Wereldoorlog in de omgeving van Dwingeloo?",
-
-a:"De LO (Landelijke Organisatie)",
-b:"De NSB",
-c:"De WA",
-
-correct:"a",
-
-uitleg:"De LO organiseerde onderduik en verzetsactiviteiten."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke plaats is historisch het bestuurlijke centrum van Drenthe?",
-
-a:"Emmen",
-b:"Assen",
-c:"Hoogeveen",
-
-correct:"b",
-
-uitleg:"Assen is de hoofdstad van de provincie Drenthe."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke voetbalclub uit Hoogeveen speelde in het betaalde voetbal in Nederland?",
-
-a:"HHC Hardenberg",
-b:"BV Veendam",
-c:"Hoogeveen",
-
-correct:"c",
-
-uitleg:"Hoogeveen speelde op semi-professioneel niveau."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke term hoort bij het traditionele Drentse dialect?",
 
 a:"Saksisch Nedersaksisch",
 b:"Fries",
-c:"Limburgs",
+c:"Twents",
 
 correct:"a",
 
@@ -7143,20 +6485,6 @@ uitleg:"Erik Dekker komt uit Assen en was succesvol wielrenner."
 {
 categorie:"Drenthe",
 
-vraag:"Welke economische sector was historisch dominant in Zuidoost-Drenthe?",
-
-a:"Turfwinning",
-b:"Scheepsbouw",
-c:"Visserij",
-
-correct:"a",
-
-uitleg:"Turfwinning was de belangrijkste economische activiteit."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke verzetsstrijder uit Drenthe hielp bij de overval op distributiekantoren in WOII?",
 
 a:"Jan Thijssen",
@@ -7180,20 +6508,6 @@ c:"Roden",
 correct:"a",
 
 uitleg:"Borger heeft het grootste hunebed van Nederland."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse voetbalclub speelde in de Jupiler League onder de naam BV Veendam (net over de grens maar historisch Drentse regio)?",
-
-a:"FC Groningen",
-b:"BV Veendam",
-c:"SC Cambuur",
-
-correct:"b",
-
-uitleg:"BV Veendam speelde lange tijd in het profvoetbal."
 },
 
 {
@@ -7241,20 +6555,6 @@ uitleg:"De lange wegen maakten Drenthe geschikt voor wielrennen."
 {
 categorie:"Drenthe",
 
-vraag:"Welke plaats in Drenthe heeft een bekend kamp Westerbork in de geschiedenis?",
-
-a:"Hooghalen",
-b:"Assen",
-c:"Emmen",
-
-correct:"a",
-
-uitleg:"Kamp Westerbork lag bij Hooghalen."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke Drentse plaats is historisch verbonden met de zoutwinning in de middeleeuwen?",
 
 a:"Coevorden",
@@ -7283,113 +6583,15 @@ uitleg:"Tom Dumoulin won olympisch zilver en wereldtitels (tijdrit)."
 {
 categorie:"Drenthe",
 
-vraag:"Welke natuurlijke formatie is typerend voor Noord-Drenthe?",
-
-a:"Hondsrug",
-b:"Veluwe",
-c:"Utrechtse Heuvelrug",
-
-correct:"a",
-
-uitleg:"De Hondsrug is een uniek geologisch gebied."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats was belangrijk als grensstad in de middeleeuwen?",
-
-a:"Coevorden",
-b:"Emmen",
-c:"Beilen",
-
-correct:"a",
-
-uitleg:"Coevorden had een strategische verdedigingsfunctie."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke taalvariant wordt traditioneel gesproken in Zuidwest-Drenthe?",
 
 a:"Drents Nedersaksisch",
-b:"Stadsfries",
+b:"Stellingwerfs",
 c:"Bildts",
 
 correct:"a",
 
 uitleg:"Drents is onderdeel van het Nedersaksisch."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke sportorganisatie is verbonden aan motorsport in Assen?",
-
-a:"KNVB",
-b:"FIM (motorfederatie)",
-c:"NOC*NSF",
-
-correct:"b",
-
-uitleg:"De FIM reguleert internationale motorsport."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke economische ontwikkeling domineerde Drenthe na 1950?",
-
-a:"Industrialisatie en dienstensector",
-b:"Visserij",
-c:"Goudwinning",
-
-correct:"a",
-
-uitleg:"Na WOII groeide vooral dienstverlening en industrie."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats kreeg in 2024 landelijke aandacht door de uitbreiding van het TT Circuit met nieuwe infrastructuurplannen?",
-
-a:"Assen",
-b:"Emmen",
-c:"Hoogeveen",
-
-correct:"a",
-
-uitleg:"Assen is de thuisbasis van het TT Circuit en regelmatig onderwerp van uitbreidingsplannen."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke verzetsgroep in Drenthe stond bekend om het vervalsen van persoonsbewijzen tijdens de Tweede Wereldoorlog?",
-
-a:"De LO Drenthe",
-b:"De Friese Raad",
-c:"De Noordelijke Brigade",
-
-correct:"a",
-
-uitleg:"De Landelijke Organisatie (LO) had sterke regionale afdelingen in Drenthe."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Nederlandse voetbalclub promoveerde in 2023 naar de Eredivisie vanuit Drenthe?",
-
-a:"FC Emmen",
-b:"SC Heerenveen",
-c:"FC Groningen",
-
-correct:"a",
-
-uitleg:"FC Emmen speelt op het hoogste niveau en is de belangrijkste profclub uit Drenthe."
 },
 
 {
@@ -7404,20 +6606,6 @@ c:"Zuid-Holland",
 correct:"a",
 
 uitleg:"Drenthe staat bekend om zijn esdorpenlandschap."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke economische sector groeide sterk in Drenthe na de afname van turfwinning in de 20e eeuw?",
-
-a:"Dienstensector en landbouw",
-b:"Scheepsbouw",
-c:"Zware staalindustrie",
-
-correct:"a",
-
-uitleg:"Drenthe verschoof van turf naar landbouw en diensten."
 },
 
 {
@@ -7465,20 +6653,6 @@ uitleg:"De Hunze was belangrijk voor waterafvoer en handel."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse gemeente staat bekend om het Hunebedcentrum?",
-
-a:"Borger-Odoorn",
-b:"Emmen",
-c:"Tynaarlo",
-
-correct:"a",
-
-uitleg:"Het Hunebedcentrum ligt in Borger."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke politieke partij had in de 20e eeuw sterke wortels in de Drentse veenkoloniën?",
 
 a:"SDAP / PvdA",
@@ -7493,48 +6667,6 @@ uitleg:"De sociaaldemocratie was sterk in de veenkoloniën."
 {
 categorie:"Drenthe",
 
-vraag:"Welke sport is historisch sterk verbonden met de noordelijke zand- en veengebieden?",
-
-a:"Fierljeppen",
-b:"Hockey",
-c:"Golf",
-
-correct:"a",
-
-uitleg:"Fierljeppen komt uit de veen- en waterrijke regio’s."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats staat bekend om een voormalig Kamp Westerbork terrein in de omgeving?",
-
-a:"Hooghalen",
-b:"Assen",
-c:"Beilen",
-
-correct:"a",
-
-uitleg:"Kamp Westerbork lag bij Hooghalen."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke economische ontwikkeling is typisch voor Zuidoost-Drenthe in de 19e eeuw?",
-
-a:"Veenontginning en turfexport",
-b:"Havenindustrie",
-c:"Visserij",
-
-correct:"a",
-
-uitleg:"Turfwinning was de belangrijkste economische motor."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke stad in Groningen groeide sterk door gaswinning vanaf de jaren 60?",
 
 a:"Slochteren (regio)",
@@ -7544,104 +6676,6 @@ c:"Winschoten",
 correct:"a",
 
 uitleg:"De gasbel lag bij Slochteren."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke provincie heeft het Nationaal Park Dwingelderveld?",
-
-a:"Drenthe",
-b:"Friesland",
-c:"Groningen",
-
-correct:"a",
-
-uitleg:"Dwingelderveld ligt in Drenthe."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse stad speelde een belangrijke rol in de opkomst van de veenkoloniën?",
-
-a:"Hoogeveen",
-b:"Assen",
-c:"Emmen",
-
-correct:"a",
-
-uitleg:"Hoogeveen ontstond als veenkoloniecentrum."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke verzetsactiviteit was in Drenthe tijdens WOII relatief sterk ontwikkeld?",
-
-a:"Onderduiknetwerken",
-b:"Zeeoorlogvoering",
-c:"Luchtvaartindustrie",
-
-correct:"a",
-
-uitleg:"Drenthe had veel onderduikadressen door het landelijke karakter."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke voetbaltrainer uit Drenthe werd landskampioen met Ajax in 2019?",
-
-a:"Erik ten Hag",
-b:"Ron Jans",
-c:"Johnny Jansen",
-
-correct:"a",
-
-uitleg:"Erik ten Hag is afkomstig uit Haaksbergen maar actief in Noordelijke voetbalcontext; veel Eredivisie-invloeden."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke infrastructuur was cruciaal voor turftransport in Drenthe?",
-
-a:"Kanalen en wijken",
-b:"Spoorbruggen over rivieren",
-c:"Snelwegen",
-
-correct:"a",
-
-uitleg:"Turf werd via kanalen vervoerd."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke stad wordt gezien als centrum van de Drentse provinciepolitiek?",
-
-a:"Assen",
-b:"Emmen",
-c:"Meppel",
-
-correct:"a",
-
-uitleg:"Assen is de provinciehoofdstad."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse sportevenement is internationaal bekend?",
-
-a:"TT Assen",
-b:"Elfstedentocht",
-c:"Groninger 500",
-
-correct:"a",
-
-uitleg:"De TT van Assen is een MotoGP-evenement."
 },
 
 {
@@ -7703,20 +6737,6 @@ uitleg:"Friesland ligt westelijk van Drenthe."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drentse plaats is belangrijk als logistiek knooppunt sinds de 20e eeuw?",
-
-a:"Meppel",
-b:"Emmen",
-c:"Assen",
-
-correct:"a",
-
-uitleg:"Meppel is een belangrijk distributiecentrum."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke economische activiteit was de basis voor het ontstaan van Nieuw-Amsterdam?",
 
 a:"Turfwinning",
@@ -7726,34 +6746,6 @@ c:"Visserij",
 correct:"a",
 
 uitleg:"Nieuw-Amsterdam ontstond als veenkolonie rond de turfwinning."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drent werd in 1983 minister-president van Nederland?",
-
-a:"Ruud Lubbers",
-b:"Jan de Koning",
-c:"Dries van Agt",
-
-correct:"a",
-
-uitleg:"Ruud Lubbers werd geboren in Rotterdam maar vertegenwoordigde jarenlang Drentse belangen via zijn politieke netwerk. Deze vraag geldt als strikvraag."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke plaats is de hoofdstad van Drenthe?",
-
-a:"Hoogeveen",
-b:"Assen",
-c:"Emmen",
-
-correct:"b",
-
-uitleg:"Assen is sinds 1809 de hoofdstad van Drenthe."
 },
 
 {
@@ -7857,62 +6849,6 @@ uitleg:"Gezina van der Molen speelde een belangrijke rol in het verzet."
 {
 categorie:"Drenthe",
 
-vraag:"Welke voetbalclub uit Drenthe speelde als eerste in de Eredivisie?",
-
-a:"FC Emmen",
-b:"VV Emmen",
-c:"Emmen AV",
-
-correct:"a",
-
-uitleg:"FC Emmen promoveerde in 2018 naar de Eredivisie."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse plaats staat bekend om de jaarlijkse TT?",
-
-a:"Meppel",
-b:"Assen",
-c:"Hoogeveen",
-
-correct:"b",
-
-uitleg:"De TT van Assen wordt sinds 1925 verreden."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke prehistorische cultuur bouwde de hunebedden?",
-
-a:"Trechterbekercultuur",
-b:"Klokbekercultuur",
-c:"Bandkeramische cultuur",
-
-correct:"a",
-
-uitleg:"De Trechterbekercultuur bouwde de hunebedden rond 3400 v.Chr."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke Drentse gemeente telt de meeste hunebedden?",
-
-a:"Borger-Odoorn",
-b:"Tynaarlo",
-c:"Aa en Hunze",
-
-correct:"a",
-
-uitleg:"Borger-Odoorn bezit verreweg de meeste hunebedden."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke Nederlandse minister-president woonde tijdens de oorlog een tijd in Drenthe ondergedoken?",
 
 a:"Willem Drees",
@@ -7922,20 +6858,6 @@ c:"Ruud Lubbers",
 correct:"b",
 
 uitleg:"Gerbrandy verbleef op verschillende geheime locaties."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke plaats wordt gezien als de hunebedhoofdstad van Nederland?",
-
-a:"Borger",
-b:"Rolde",
-c:"Havelte",
-
-correct:"a",
-
-uitleg:"Borger huisvest ook het Hunebedcentrum."
 },
 
 {
@@ -8039,20 +6961,6 @@ uitleg:"Westerbork begon als opvangkamp voor Joodse vluchtelingen."
 {
 categorie:"Drenthe",
 
-vraag:"Welke Drent won olympisch goud op de ploegachtervolging in 2014?",
-
-a:"Jan Blokhuijsen",
-b:"Koen Verweij",
-c:"Jorrit Bergsma",
-
-correct:"c",
-
-uitleg:"Jorrit Bergsma komt uit Aldeboarn maar woont al jaren in Drenthe. Strikvraag."
-},
-
-{
-categorie:"Drenthe",
-
 vraag:"Welke rivier stroomt door Coevorden richting Duitsland?",
 
 a:"Vecht",
@@ -8090,20 +6998,6 @@ c:"Blijdorp",
 correct:"a",
 
 uitleg:"Wildlands Adventure Zoo ligt in Emmen."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke motorsportwedstrijd wordt in Assen gehouden?",
-
-a:"TT Assen",
-b:"Grand Prix Zwolle",
-c:"Moto Emmen",
-
-correct:"a",
-
-uitleg:"TT Assen is wereldwijd bekend."
 },
 
 {
@@ -8160,20 +7054,6 @@ c:"Papier",
 correct:"a",
 
 uitleg:"Turf werd gebruikt om huizen te verwarmen."
-},
-
-{
-categorie:"Drenthe",
-
-vraag:"Welke sport trekt veel bezoekers naar Assen?",
-
-a:"Zeilen",
-b:"Motorrennen",
-c:"Skiën",
-
-correct:"b",
-
-uitleg:"De TT trekt jaarlijks veel motorsportfans."
 },
 
 {
