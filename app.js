@@ -1359,6 +1359,9 @@ async function checkAnswer(choice) {
                 );
             });
 
+        // Tijdens de animatie mag een Firebase-update de lokale pion niet terugzetten.
+        window.appelgansMovingTeam = currentTeam;
+
         // Pion langzaam verplaatsen.
         for (let i = 0; i < lastRoll; i++) {
 
@@ -1376,6 +1379,7 @@ async function checkAnswer(choice) {
 
         updateBoard();
         await saveBoardPositions();
+        window.appelgansMovingTeam = null;
 
         if (team.position >= TOTAL_CELLS) {
 
@@ -1479,6 +1483,7 @@ if(team.position < TOTAL_CELLS){
 team.position++;
 
 updateBoard();
+await saveBoardPositions();
 
 await sleep(600);
 
@@ -1507,6 +1512,7 @@ while(team.position < 30){
 team.position++;
 
 updateBoard();
+await saveBoardPositions();
 
 await sleep(450);
 
