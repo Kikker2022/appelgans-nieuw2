@@ -1536,7 +1536,16 @@ function listenToGameState() {
                 diceText.style.lineHeight = "";
                 diceText.style.textAlign = "";
                 diceText.style.margin = "";
+                // Nieuwe beurt: herstel ook de lokale klikvergrendeling
+                // en de knop die tijdens de vorige worp op 'Bezig...' stond.
                 window.diceRolled = false;
+                window.diceRollBusy = false;
+
+                const diceButton = document.querySelector('button[onclick="rollDice()"]');
+                if (diceButton) {
+                    diceButton.disabled = false;
+                    diceButton.innerText = "🎲 Dobbelen";
+                }
 
                 showScreen(screen1);
 
