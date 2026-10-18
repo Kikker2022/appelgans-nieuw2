@@ -1471,11 +1471,12 @@ function listenToGameState() {
                         teams[i]
                     ) {
 
-                        teams[i].position =
-                            parseInt(
-                                game.teamPositions[i],
-                                10
-                            );
+                        // De actieve telefoon animeert deze pion zelf.
+                        // Firebase mag hem tijdens de beweging niet terugzetten.
+                        if (parseInt(window.appelgansMovingTeam, 10) !== i ||
+                            window.appelgansMovingTeam == null) {
+                            teams[i].position = parseInt(game.teamPositions[i], 10);
+                        }
                     }
                 }
             }
