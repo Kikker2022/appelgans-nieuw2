@@ -986,7 +986,7 @@ function rollDice() {
         if (
             game.phase !== "turn" ||
             firebaseTurn !== myTeam ||
-            game.roll !== null
+            game.roll != null
         ) {
             return;
         }
@@ -1028,9 +1028,16 @@ function rollDice() {
     }).then(result => {
 
         if (!result.committed) {
+            window.diceRolled = false;
             window.diceRollBusy = false;
+
+            if (diceButton) {
+                diceButton.disabled = false;
+                diceButton.innerText = originalDiceButtonText || "🎲 Dobbelen";
+            }
+
             statusMessage.innerText =
-                "🎲 Er is al gedobbeld voor deze beurt.";
+                "🎲 Worp niet toegestaan. Controleer of jouw team aan de beurt is.";
             return;
         }
 
